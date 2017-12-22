@@ -1,18 +1,47 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+  <ion-navbar class="bar">
+    <button ion-button menuToggle end class="button button-clear">
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>
+      <div class="logo"></div>
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content padding class="home">
+    <div padding class="bubblescontainer">
+        <div class="bubbles">
+            <div (click)="selectBubble(1)" on-hold="removeProgramFromRoutine(1)" ng-style="bubblesCurrentState.bubble1 && {'background-image':'url(img/bubble-violet.png)'}" class="single-bubble-1"></div>
+            <div class="bubbles-program-name-1" (click)="selectBubble(1,true)">{{ bubblesNames1 }}</div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+            <div (click)="selectBubble(2)" on-hold="removeProgramFromRoutine(2)" ng-style="bubblesCurrentState.bubble2 && {'background-image':'url(img/bubble-red.png)'}" class="single-bubble-2"></div>
+            <div class="bubbles-program-name-2" (click)="selectBubble(2,true)">{{ bubblesNames2 }}</div>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+            <div (click)="selectBubble(3)" on-hold="removeProgramFromRoutine(3)" ng-style="bubblesCurrentState.bubble3 && {'background-image':'url(img/bubble-yellow.png)'}" class="single-bubble-3"></div>
+            <div class="bubbles-program-name-3" (click)="selectBubble(3,true)">{{ bubblesNames3 }}</div>
+
+            <div (click)="selectBubble(4)" on-hold="removeProgramFromRoutine(4)" ng-style="bubblesCurrentState.bubble4 && {'background-image':'url(img/bubble-green.png)'}" class="single-bubble-4"></div>
+            <div class="bubbles-program-name-4" (click)="selectBubble(4,true)">{{ bubblesNames4 }}</div>
+        </div>
+    </div>
+
+    <div class="bubbleexplain">
+        <br>
+        <b translate="tap-bubble">TAP A BUBBLE ( + ) TO ADD</b><br><br>
+        <!--<p translate="press-hold"> Press and hold a hearth to remove</p>-->
+        <button class="greenbtn" menu-close nav-transition="ios" nav-direction="forward" (click)="runRoutine()" href="#" translate="run-routine">RUN THIS ROUTINE</button>
+        <br><br>
+        <button class="graybtn" menu-close nav-transition="ios" nav-direction="forward" (click)="cleanRoutine()" href="#" translate="clean-routine">CLEAN THIS ROUTINE</button>
+      
+      <!--  <br>
+        <br>
+        <hr>
+        
+        <input type="text" ng-model="routine.name" placeholder="NAME YOUR ROUTINE" class="routinename">
+
+        <a class="bluebtn" (click)="saveCurrentRoutine()" >SAVE THIS ROUTINE</a>
+        <br>-->
+
+    </div>
 </ion-content>

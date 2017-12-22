@@ -32,6 +32,14 @@ module.exports = [
     "clobbers": [
       "cordova.exec"
     ]
+  },
+  {
+    "id": "cordova-sqlite-storage.SQLitePlugin",
+    "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
+    "pluginId": "cordova-sqlite-storage",
+    "clobbers": [
+      "SQLitePlugin"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -41,7 +49,8 @@ module.exports.metadata =
   "cordova-plugin-whitelist": "1.3.1",
   "cordova-plugin-device": "1.1.4",
   "cordova-plugin-splashscreen": "4.0.3",
-  "cordova-plugin-ionic-webview": "1.1.16"
+  "cordova-plugin-ionic-webview": "1.1.16",
+  "cordova-sqlite-storage": "2.1.3"
 };
 // BOTTOM OF METADATA
 });

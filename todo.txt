@@ -1,0 +1,4 @@
+- integrar translate
+- crear vista de rutinas
+- crear vista de wifi
+- crear vista de 
