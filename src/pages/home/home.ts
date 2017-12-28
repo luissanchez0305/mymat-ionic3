@@ -9,29 +9,30 @@ import { ProgramsPage } from '../programs/programs';
 })
 
 export class HomePage {
-  public bubblesNames1 : any;
-  public bubblesNames2 : any;
-  public bubblesNames3 : any;
-  public bubblesNames4 : any;
+  public bubblesNames1 : string;
+  public bubblesNames2 : string;
+  public bubblesNames3 : string;
+  public bubblesNames4 : string;
+  
   constructor(public navCtrl: NavController, private storage: Storage) {
     this.bubblesNames1 = '';
     this.bubblesNames2 = '';
     this.bubblesNames3 = '';
     this.bubblesNames4 = '';
     
-    storage.get('bubblesNames1').then((val)=>{
+    this.storage.get('MyMat_bubbleRoutineProgram1').then((val)=>{
       console.log(val);
     });
     
-    storage.get('bubblesNames2').then((val)=>{
+    this.storage.get('MyMat_bubbleRoutineProgram2').then((val)=>{
       console.log(val);
     });
     
-    storage.get('bubblesNames3').then((val)=>{
+    this.storage.get('MyMat_bubbleRoutineProgram3').then((val)=>{
       console.log(val);
     });
     
-    storage.get('bubblesNames4').then((val)=>{
+    this.storage.get('MyMat_bubbleRoutineProgram4').then((val)=>{
       console.log(val);
     });
   }
