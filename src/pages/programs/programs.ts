@@ -105,6 +105,8 @@ export class ProgramsPage {
     this.routines.insertPreSetProgram(routineName, objProgram1, objProgram2, objProgram3, objProgram4);
     this.navCtrl.pop();
     var bubbleNames = [objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name];
+    
+    this.routines.setPrograms(objProgram1.name, objProgram1.name, objProgram1.name, objProgram1.name);
     this.events.publish("sharesBubbles", bubbleNames);
   }
   
@@ -115,6 +117,9 @@ export class ProgramsPage {
     this.programName2 = this.program == 2 ? programName : (this.programName2.length > 0 ? this.programName2 : '');
     this.programName3 = this.program == 3 ? programName : (this.programName3.length > 0 ? this.programName3 : '');
     this.programName4 = this.program == 4 ? programName : (this.programName4.length > 0 ? this.programName4 : '');
+    
+    this.routines.setPrograms(this.programName1, this.programName2, this.programName3, this.programName4);
+    
     var bubbleNames = [ 
       this.programName1,
       this.programName2,

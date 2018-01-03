@@ -1,8 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>mymat</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+<widget 
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.esferasoluciones.mymat-light"
+        version   = "8"
+        versionCode = "42">
+    <name>MyMat - Light</name>
+    <description>MyMat 8</description>
+    <author href="https://www.esferasoluciones.com" email="lsanchez@esferasoluciones.com">
+        Luis Ricardo Sánchez.
+    </author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

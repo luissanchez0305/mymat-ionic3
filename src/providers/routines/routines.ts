@@ -10,11 +10,42 @@ import { Storage } from '@ionic/storage';
 */
 @Injectable()
 export class RoutinesProvider {
-
+  public program1 : string;
+  public program2 : string;
+  public program3 : string;
+  public program4 : string;
+  
   constructor(public http: Http, public storage: Storage) {
     console.log('Hello RoutinesProvider Provider');
   }
   
+  public setProgram(index,prog){
+    switch (index){
+      case 1:
+        this.program1 = prog;
+        break;
+      case 2:
+        this.program2 = prog;
+        break;
+      case 3:
+        this.program3 = prog;
+        break;
+      case 4:
+        this.program4 = prog;
+        break;
+    }
+  }
+  
+  public setPrograms(prog1, prog2, prog3, prog4){
+    this.program1 = prog1;
+    this.program2 = prog2;
+    this.program3 = prog3;
+    this.program4 = prog4;
+  }
+  
+  public getPrograms(){
+    return [ this.program1, this.program2, this.program3, this.program4 ];
+  }
   public async getKey(key:string){
     return await this.storage.get(key);
   }

@@ -9,10 +9,12 @@ import { HomePage } from '../pages/home/home';
 import { HelpPage } from '../pages/help/help';
 import { ContactPage } from '../pages/contact/contact';
 import { ProgramsPage } from '../pages/programs/programs';
+import { WifiPage } from '../pages/wifi/wifi';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RoutinesProvider } from '../providers/routines/routines';
+import { APIServiceProvider } from '../providers/api-service/api-service';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { RoutinesProvider } from '../providers/routines/routines';
     HomePage, 
     HelpPage,
     ContactPage,
-    ProgramsPage
+    ProgramsPage,
+    WifiPage
   ],
   imports: [
     BrowserModule,
@@ -34,13 +37,15 @@ import { RoutinesProvider } from '../providers/routines/routines';
     HomePage, 
     HelpPage,
     ContactPage,
-    ProgramsPage
+    ProgramsPage,
+    WifiPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     RoutinesProvider,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    APIServiceProvider
   ]
 })
 export class AppModule {}

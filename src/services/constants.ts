@@ -1,0 +1,1 @@
+export var Constants = { myMatApiAddress : 'http://192.168.1.3/index.htm' };

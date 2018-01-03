@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, Events } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { ProgramsPage } from '../programs/programs';
+import { WifiPage } from '../wifi/wifi';
 import { RoutinesProvider } from '../../providers/routines/routines';
 
 @Component({
@@ -19,10 +20,11 @@ export class HomePage {
   public bubblesCurrentState3 : boolean;
   public bubblesCurrentState4 : boolean;
   
-  constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider, public events: Events) {
+  constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider, 
+    public events: Events) {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
-      for(var i = 0; i < bubbles.length; i++){
+      for(var i = 1; i <= bubbles.length; i++){
         this.updateBubbles(i, bubbles[i]);
       }
     }); 
@@ -37,7 +39,13 @@ export class HomePage {
   }
   
   runRoutine(){
-    console.log('run');
+    var programs = this.routines.getPrograms();
+    if(typeof programs[0] !== 'undefined' &&
+    typeof programs[1] !== 'undefined' &&
+    typeof programs[2] !== 'undefined' &&
+    typeof programs[3] !== 'undefined'){
+      this.navCtrl.push(WifiPage);
+    }
   }
   
   cleanRoutine(){
@@ -45,15 +53,15 @@ export class HomePage {
     this.storage.set('MyMat_bubbleRoutineProgram2','');
     this.storage.set('MyMat_bubbleRoutineProgram3','');
     this.storage.set('MyMat_bubbleRoutineProgram4','');
-    this.updateBubbles(0,'');
     this.updateBubbles(1,'');
     this.updateBubbles(2,'');
     this.updateBubbles(3,'');
+    this.updateBubbles(4,'');
   }
   
   private updateBubbles(bubble,name){
     switch(bubble){
-      case 0:
+      case 1:
         if(typeof name !== 'undefined' && name.length > 0){
           this.bubblesCurrentState1 = true;
           this.bubblesNames1 = name;
@@ -63,7 +71,7 @@ export class HomePage {
           this.bubblesNames1 = '';
         }
         break;
-      case 1:
+      case 2:
         if(typeof name !== 'undefined' && name.length > 0){
           this.bubblesCurrentState2 = true;
           this.bubblesNames2 = name;
@@ -73,7 +81,7 @@ export class HomePage {
           this.bubblesNames2 = '';
         }
         break;
-      case 2:
+      case 3:
         if(typeof name !== 'undefined' && name.length > 0){
           this.bubblesCurrentState3 = true;
           this.bubblesNames3 = name;
@@ -83,7 +91,7 @@ export class HomePage {
           this.bubblesNames3 = '';
         }
         break;
-      case 3:
+      case 4:
         if(typeof name !== 'undefined' && name.length > 0){
           this.bubblesCurrentState4 = true;
           this.bubblesNames4 = name;
@@ -98,19 +106,35 @@ export class HomePage {
   
   private checkAllBubbles(){
     this.storage.get('MyMat_bubbleRoutineProgram1').then((val)=>{
-      this.updateBubbles(0,val.split('|')[1]);
+      if(val !== null){
+        var name = val.split('|')[1];
+        this.updateBubbles(1,name);
+        this.routines.setProgram(1,name)
+      }
     });
     
     this.storage.get('MyMat_bubbleRoutineProgram2').then((val)=>{
-      this.updateBubbles(1,val.split('|')[1]);
+      if(val !== null){
+        var name = val.split('|')[1];
+        this.updateBubbles(2,name);
+        this.routines.setProgram(2,name)
+      }
     });
     
     this.storage.get('MyMat_bubbleRoutineProgram3').then((val)=>{
-      this.updateBubbles(2,val.split('|')[1]);
+      if(val !== null){
+        var name = val.split('|')[1];
+        this.updateBubbles(3,name);
+        this.routines.setProgram(3,name)
+      }
     });
     
     this.storage.get('MyMat_bubbleRoutineProgram4').then((val)=>{
-      this.updateBubbles(3,val.split('|')[1]);
+      if(val !== null){
+        var name = val.split('|')[1];
+        this.updateBubbles(4,name);
+        this.routines.setProgram(4,name)
+      }
     });
   }
 }
