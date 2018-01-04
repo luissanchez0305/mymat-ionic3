@@ -28,20 +28,11 @@
 
     <div class="bubbleexplain">
         <br>
-        <b translate="tap-bubble">TAP A BUBBLE ( + ) TO ADD</b><br><br>
+        <b>{{ 'tap-bubble' | translate }}</b><br><br>
         <!--<p translate="press-hold"> Press and hold a hearth to remove</p>-->
-        <button class="greenbtn" menu-close nav-transition="ios" nav-direction="forward" (click)="runRoutine()" href="#" translate="run-routine">RUN THIS ROUTINE</button>
+        <button class="greenbtn" menu-close nav-transition="ios" nav-direction="forward" (click)="runRoutine()" href="#">{{ 'run-routine' | translate }}</button>
         <br><br>
-        <button class="graybtn" menu-close nav-transition="ios" nav-direction="forward" (click)="cleanRoutine()" href="#" translate="clean-routine">CLEAN THIS ROUTINE</button>
-      
-      <!--  <br>
-        <br>
-        <hr>
-        
-        <input type="text" ng-model="routine.name" placeholder="NAME YOUR ROUTINE" class="routinename">
-
-        <a class="bluebtn" (click)="saveCurrentRoutine()" >SAVE THIS ROUTINE</a>
-        <br>-->
+        <button class="graybtn" menu-close nav-transition="ios" nav-direction="forward" (click)="cleanRoutine()" href="#">{{ 'clean-routine' | translate }}</button>
 
     </div>
 </ion-content>

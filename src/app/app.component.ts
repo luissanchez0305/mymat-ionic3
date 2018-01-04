@@ -1,11 +1,14 @@
 import { Component, ViewChild } from '@angular/core';
+import { MenuController } from 'ionic-angular';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Storage } from '@ionic/storage';
 
 import { HomePage } from '../pages/home/home';
 import { HelpPage } from '../pages/help/help';
 import { ContactPage } from '../pages/contact/contact';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   templateUrl: 'app.html'
@@ -14,10 +17,17 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
+  lang_en : boolean;
+  lang_es : boolean;
+  lang_pt : boolean;
+  lang_fr : boolean;
+  lang_gr : boolean;
+  lang_it : boolean;
 
   pages: Array<{title: string, component: any, icon: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,
+    private translateService: TranslateService, public menuCtrl: MenuController, private storage: Storage) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -26,7 +36,16 @@ export class MyApp {
       { title: 'HELP', component: HelpPage, icon: 'menuitemhelp' },
       { title: 'CONTACT US', component: ContactPage, icon: 'menuitemcontact' }
     ];
-
+    platform.ready().then(() => {
+      this.storage.get('mymat_lang').then((value)=>{
+        if(!value){
+          value = navigator.language.split('-')[0];
+          translateService.setDefaultLang(value);  
+        }
+        translateService.use(value);  
+        this.switchLang(value);
+      });          
+    });
   }
 
   initializeApp() {
@@ -42,5 +61,61 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
+  }
+  
+  switchLang(lang){
+    switch(lang){
+      case 'es':
+        this.lang_en = true;
+        this.lang_es = false;
+        this.lang_pt = true;
+        this.lang_fr = true;
+        this.lang_gr = true;
+        this.lang_it = true;
+        break;
+      case 'en':
+        this.lang_en = false;
+        this.lang_es = true;
+        this.lang_pt = true;
+        this.lang_fr = true;
+        this.lang_gr = true;
+        this.lang_it = true;
+        break;
+      case 'pt':
+        this.lang_en = true;
+        this.lang_es = true;
+        this.lang_pt = false;
+        this.lang_fr = true;
+        this.lang_gr = true;
+        this.lang_it = true;
+        break;
+      case 'it':
+        this.lang_en = true;
+        this.lang_es = true;
+        this.lang_pt = true;
+        this.lang_fr = true;
+        this.lang_gr = true;
+        this.lang_it = false;
+        break;
+      case 'gr':
+        this.lang_en = true;
+        this.lang_es = true;
+        this.lang_pt = true;
+        this.lang_fr = true;
+        this.lang_gr = false;
+        this.lang_it = true;
+        break;
+      case 'fr':
+        this.lang_en = true;
+        this.lang_es = true;
+        this.lang_pt = true;
+        this.lang_fr = false;
+        this.lang_gr = true;
+        this.lang_it = true;
+        break;
+    }
+    this.translateService.use(lang);
+    this.storage.set('mymat_lang',lang);
+    this.menuCtrl.close();
   }
 }

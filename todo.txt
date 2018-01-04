@@ -1,4 +1,4 @@
 - integrar translate
-- crear vista de rutinas
-- crear vista de wifi
-- crear vista de 
+x crear vista de rutinas
+x crear vista de wifi
+- ajustar todos los diseños
