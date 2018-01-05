@@ -4,6 +4,7 @@ import { Storage } from '@ionic/storage';
 import { ProgramsPage } from '../programs/programs';
 import { WifiPage } from '../wifi/wifi';
 import { RoutinesProvider } from '../../providers/routines/routines';
+import { Constants } from '../../services/constants';
 
 @Component({
   selector: 'page-home',
@@ -49,10 +50,10 @@ export class HomePage {
   }
   
   cleanRoutine(){
-    this.storage.set('MyMat_bubbleRoutineProgram1','');
-    this.storage.set('MyMat_bubbleRoutineProgram2','');
-    this.storage.set('MyMat_bubbleRoutineProgram3','');
-    this.storage.set('MyMat_bubbleRoutineProgram4','');
+    this.storage.set(Constants.storageKeyBubble1,'');
+    this.storage.set(Constants.storageKeyBubble2,'');
+    this.storage.set(Constants.storageKeyBubble3,'');
+    this.storage.set(Constants.storageKeyBubble4,'');
     this.updateBubbles(1,'');
     this.updateBubbles(2,'');
     this.updateBubbles(3,'');
@@ -105,7 +106,7 @@ export class HomePage {
   }
   
   private checkAllBubbles(){
-    this.storage.get('MyMat_bubbleRoutineProgram1').then((val)=>{
+    this.storage.get(Constants.storageKeyBubble1).then((val)=>{
       if(val !== null){
         var name = val.split('|')[1];
         this.updateBubbles(1,name);
@@ -113,7 +114,7 @@ export class HomePage {
       }
     });
     
-    this.storage.get('MyMat_bubbleRoutineProgram2').then((val)=>{
+    this.storage.get(Constants.storageKeyBubble2).then((val)=>{
       if(val !== null){
         var name = val.split('|')[1];
         this.updateBubbles(2,name);
@@ -121,7 +122,7 @@ export class HomePage {
       }
     });
     
-    this.storage.get('MyMat_bubbleRoutineProgram3').then((val)=>{
+    this.storage.get(Constants.storageKeyBubble3).then((val)=>{
       if(val !== null){
         var name = val.split('|')[1];
         this.updateBubbles(3,name);
@@ -129,7 +130,7 @@ export class HomePage {
       }
     });
     
-    this.storage.get('MyMat_bubbleRoutineProgram4').then((val)=>{
+    this.storage.get(Constants.storageKeyBubble4).then((val)=>{
       if(val !== null){
         var name = val.split('|')[1];
         this.updateBubbles(4,name);

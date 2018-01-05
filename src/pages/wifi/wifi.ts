@@ -27,6 +27,7 @@ export class WifiPage {
   public coilText3 : string;
   public coilText4 : string;
   public intervalCount : number = 0;
+  public temp_current_status : string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public apiService : APIServiceProvider) {
     this.coilText = 'Antena';
@@ -43,13 +44,18 @@ export class WifiPage {
     var myMatTest = this.apiService.test();
     myMatTest.then((response) => {
             // if is connected quitar imagen, textos y loading y poner status del mat
-            if(this.verifyValues(response))
+            if(this.verifyValues(response)){
                 this.showStatus();
-            else
+                this.temp_current_status += 'success ';
+            }
+            else{
                 this.failVerification();
+                this.temp_current_status += 'fail else ';
+            }
             
     }, (response) => {
         this.failVerification();
+        this.temp_current_status += 'fail test ';
     });
   }
     

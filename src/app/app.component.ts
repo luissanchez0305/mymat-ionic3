@@ -4,6 +4,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Storage } from '@ionic/storage';
+import { Constants } from '../services/constants';
 
 import { HomePage } from '../pages/home/home';
 import { HelpPage } from '../pages/help/help';
@@ -37,7 +38,7 @@ export class MyApp {
       { title: 'CONTACT US', component: ContactPage, icon: 'menuitemcontact' }
     ];
     platform.ready().then(() => {
-      this.storage.get('mymat_lang').then((value)=>{
+      this.storage.get(Constants.storageKeyLang).then((value)=>{
         if(!value){
           value = navigator.language.split('-')[0];
           translateService.setDefaultLang(value);  
@@ -115,7 +116,7 @@ export class MyApp {
         break;
     }
     this.translateService.use(lang);
-    this.storage.set('mymat_lang',lang);
+    this.storage.set(Constants.storageKeyLang, lang);
     this.menuCtrl.close();
   }
 }
