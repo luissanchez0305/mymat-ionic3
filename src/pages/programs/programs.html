@@ -15,8 +15,8 @@
 
         <ion-content padding>
             <br>
-            <div class="modaltitle" translate="program-kits">Program Kits</div>
-            <div class="modaldesc" translate="popular-routines">Our most popular routines</div>
+            <div class="modaltitle">{{ 'program-kits' | translate }}</div>
+            <div class="modaldesc">{{ 'popular-routines' | translate }}</div>
             
             
             
@@ -26,7 +26,7 @@
 
     <div class="program" (click)="selectPreSetProgram('basic')" category-switcher="category-switcher">
         <div class="programpic"><img src="img/Basic.png"></div>
-        <div class="programdesc" translate="basic">BASIC<br><br></div>
+        <div class="programdesc" [innerHTML]="'basic' | translate"><br><br></div>
     </div>
     
   
@@ -34,29 +34,28 @@
 
         <div class="program opacity-50" (click)="selectPreSetProgram('business and travel')" category-switcher="category-switcher">
         <div class="programpic"><img src="img/BusinessTraveller.png"></div>
-        <div class="programdesc" translate="business-traveler">BUSINESS &
-            <br>TRAVELER</div>
+        <div class="programdesc" [innerHTML]="'business-traveler' | translate"></div>
     </div>
     
            <div class="program opacity-50" (click)="selectPreSetProgram('family')" category-switcher="category-switcher">
         <div class="programpic"><img src="img/family.png"></div>
-        <div class="programdesc" translate="family-kit">FAMILY <br>KIT</div>
+        <div class="programdesc" [innerHTML]="'family-kit' | translate"></div>
     </div>
     
       <div class="program opacity-50" (click)="selectPreSetProgram('athlete')" category-switcher="category-switcher" >
         <div class="programpic"><img src="img/Athlete.png"></div>
-        <div class="programdesc" translate="athlete">ATHLETE<br>&nbsp;<br></div>
+        <div class="programdesc" [innerHTML]="'athlete' | translate"></div>
     </div>
     
          <div class="program opacity-50" (click)="selectPreSetProgram('spa')" category-switcher="category-switcher">
         <div class="programpic"><img src="img/Spa.png"></div>
-        <div class="programdesc" translate="spa-wellness">SPA & WELLNESS<br><br></div>
+        <div class="programdesc" [innerHTML]="'spa-wellness' | translate"><br><br></div>
     </div>
     
     
      <div class="program opacity-50" (click)="selectPreSetProgram('stress relief')" category-switcher="category-switcher">
         <div class="programpic"><img src="img/stress.png"></div>
-        <div class="programdesc" translate="stress-relief">STRESS<br> RELIEF</div>
+        <div class="programdesc" [innerHTML]="'stress-relief' | translate"></div>
     </div>
     
      
@@ -68,12 +67,12 @@
     
         <div class="program opacity-50"  (click)="selectPreSetProgram('chakra balancing')" category-switcher="category-switcher">
         <div class="programpic"><img src="img/chakra.png"></div>
-        <div class="programdesc" translate="chakra-balancing">CHAKRA<br>BALANCING</div>
+        <div class="programdesc" [innerHTML]="'chakra-balancing' | translate"></div>
     </div>
     
         <div class="program opacity-50" (click)="selectPreSetProgram('elements')" category-switcher="category-switcher">
         <div class="programpic"><img src="img/Elements.png"></div>
-        <div class="programdesc" translate="elements-meridians">ELEMENTS &<br>MERIDIANS<br></div>
+        <div class="programdesc" [innerHTML]="'elements-meridians' | translate"><br></div>
     </div>
   
     
@@ -83,10 +82,10 @@
 </ion-scroll>
 
 
-<div class="modaltitle" translate="programs"> PROGRAMS</div>
+<div class="modaltitle">{{ 'programs' | translate }}</div>
 <div *ngFor="let routine of predefinedPrograms">
 
-{{ routine.name }}
+{{ routine.name | translate }}
 <!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->
 
 <div class="paddingmodal">
@@ -96,7 +95,7 @@
         routine.programs[2].apiName,routine.programs[3].apiName)">
         
         <ion-item *ngFor="let program of routine.programs" class="addiction">
-             {{ program.name }}
+             {{ program.name | translate }}
         </ion-item>
 
 
@@ -107,8 +106,8 @@
 </div>
 
             
-            <div class="modaltitle" translate="independent-programs">INDEPENDENT PROGRAMS</div>
-            <div class="modaldesc" translate="tap-program">Tap program to add to routine  |  Tap and hold to learn more</div>
+            <div class="modaltitle">{{ 'independent-programs' | translate }}</div>
+            <div class="modaldesc"> {{ 'tap-program' | translate }}</div>
             <div class="paddingmodal">
 <ion-list class="programlist">
 
@@ -117,12 +116,12 @@
 {{program.fields.name}} </ion-item>-->
     
 <ion-item class="addiction" on-hold="moreProgramInfo('', program.name, program.runningtime, program.description)" *ngFor="let program of programs" (click)="add1Program(program.name, program.runningtime, program.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines">
-{{program.name}} </ion-item>
+{{ program.name | translate }} </ion-item>
     
     
 </ion-list>
             </div>
            
-            <button class="bluebtn" (click)="hide()" translate="cancel">Cancel</button>
+            <button class="bluebtn" (click)="hide()">{{ 'cancel' | translate }}</button>
           <br><br><br><br><br><br><br><br>
         </ion-content>

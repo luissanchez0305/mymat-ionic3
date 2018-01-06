@@ -26,7 +26,7 @@ export class HomePage {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){
-        this.updateBubbles(i, bubbles[i]);
+        this.updateBubbles(i, bubbles[i - 1]);
       }
     }); 
   }

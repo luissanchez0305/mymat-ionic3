@@ -26304,6 +26304,7 @@ input.routinename {
 .programdesc {
   width: 100%;
   text-align: center;
+  word-wrap: break-word;
 }
 
 .program-running-title {

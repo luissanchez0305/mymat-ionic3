@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
 import { Data } from '../../services/offline_data';
 import { RoutinesProvider } from '../../providers/routines/routines';
+import { Constants } from '../../services/constants';
 
 /**
  * Generated class for the ProgramsPage page.
@@ -30,7 +31,7 @@ export class ProgramsPage {
       this.programs = Data.Programs;
       this.program = navParams.get('bubble');
     
-      this.routines.getKey('MyMat_bubbleRoutineProgram1').then(val => {
+      this.routines.getKey(Constants.storageKeyBubble1).then(val => {
         if(this.program != 1 && val.length > 0){
           this.programName1 = val.split('|')[1];
         }
@@ -38,7 +39,7 @@ export class ProgramsPage {
           this.programName1 = '';
         }
       });
-      this.routines.getKey('MyMat_bubbleRoutineProgram2').then(val => {
+      this.routines.getKey(Constants.storageKeyBubble2).then(val => {
         if(this.program != 2 && val.length > 0){
           this.programName2 = val.split('|')[1];
         }
@@ -46,7 +47,7 @@ export class ProgramsPage {
           this.programName2 = '';
         }
       });
-      this.routines.getKey('MyMat_bubbleRoutineProgram3').then(val => {
+      this.routines.getKey(Constants.storageKeyBubble3).then(val => {
         if(this.program != 3 && val.length > 0){
           this.programName3 = val.split('|')[1];
         }
@@ -54,7 +55,7 @@ export class ProgramsPage {
           this.programName3 = '';
         }
       });
-      this.routines.getKey('MyMat_bubbleRoutineProgram4').then(val => {
+      this.routines.getKey(Constants.storageKeyBubble4).then(val => {
         if(this.program != 4 && val.length > 0){
           this.programName4 = val.split('|')[1];
         }
@@ -106,7 +107,7 @@ export class ProgramsPage {
     this.navCtrl.pop();
     var bubbleNames = [objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name];
     
-    this.routines.setPrograms(objProgram1.name, objProgram1.name, objProgram1.name, objProgram1.name);
+    this.routines.setPrograms(objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name);
     this.events.publish("sharesBubbles", bubbleNames);
   }
   
