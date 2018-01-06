@@ -5,6 +5,7 @@ import { ProgramsPage } from '../programs/programs';
 import { WifiPage } from '../wifi/wifi';
 import { RoutinesProvider } from '../../providers/routines/routines';
 import { Constants } from '../../services/constants';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'page-home',
@@ -22,7 +23,7 @@ export class HomePage {
   public bubblesCurrentState4 : boolean;
   
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider, 
-    public events: Events) {
+    private translateService: TranslateService, public events: Events) {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){
@@ -65,7 +66,11 @@ export class HomePage {
       case 1:
         if(typeof name !== 'undefined' && name.length > 0){
           this.bubblesCurrentState1 = true;
-          this.bubblesNames1 = name;
+          this.storage.get(Constants.storageKeyLang).then((lang)=>{
+            this.translateService.getTranslation(lang).subscribe((value) =>{
+              this.bubblesNames1 = typeof value[name] === 'undefined' ? name : value[name];
+            });
+          });
         }
         else{
           this.bubblesCurrentState1 = false;
@@ -75,7 +80,11 @@ export class HomePage {
       case 2:
         if(typeof name !== 'undefined' && name.length > 0){
           this.bubblesCurrentState2 = true;
-          this.bubblesNames2 = name;
+          this.storage.get(Constants.storageKeyLang).then((lang)=>{
+            this.translateService.getTranslation(lang).subscribe((value) =>{
+              this.bubblesNames2 = typeof value[name] === 'undefined' ? name : value[name];
+            });
+          });
         }
         else{
           this.bubblesCurrentState2 = false;
@@ -85,7 +94,11 @@ export class HomePage {
       case 3:
         if(typeof name !== 'undefined' && name.length > 0){
           this.bubblesCurrentState3 = true;
-          this.bubblesNames3 = name;
+          this.storage.get(Constants.storageKeyLang).then((lang)=>{
+            this.translateService.getTranslation(lang).subscribe((value) =>{
+              this.bubblesNames3 = typeof value[name] === 'undefined' ? name : value[name];
+            });
+          });
         }
         else{
           this.bubblesCurrentState3 = false;
@@ -95,7 +108,11 @@ export class HomePage {
       case 4:
         if(typeof name !== 'undefined' && name.length > 0){
           this.bubblesCurrentState4 = true;
-          this.bubblesNames4 = name;
+          this.storage.get(Constants.storageKeyLang).then((lang)=>{
+            this.translateService.getTranslation(lang).subscribe((value) =>{
+              this.bubblesNames4 = typeof value[name] === 'undefined' ? name : value[name];
+            });
+          });
         }
         else{
           this.bubblesCurrentState4 = false;

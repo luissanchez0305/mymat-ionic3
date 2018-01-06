@@ -1,6 +1,6 @@
 webpackJsonp([4],{
 
-/***/ 106:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -45,7 +45,7 @@ var ContactPage = (function () {
 
 /***/ }),
 
-/***/ 107:
+/***/ 108:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -90,7 +90,7 @@ var HelpPage = (function () {
 
 /***/ }),
 
-/***/ 108:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -233,14 +233,14 @@ var ProgramsPage = (function () {
 
 /***/ }),
 
-/***/ 109:
+/***/ 110:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WifiPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_api_service_api_service__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_api_service_api_service__ = __webpack_require__(166);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -373,7 +373,7 @@ var WifiPage = (function () {
 
 /***/ }),
 
-/***/ 121:
+/***/ 122:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -386,11 +386,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 121;
+webpackEmptyAsyncContext.id = 122;
 
 /***/ }),
 
-/***/ 164:
+/***/ 165:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -422,12 +422,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 164;
+webpackAsyncContext.id = 165;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 165:
+/***/ 166:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -486,10 +486,11 @@ var APIServiceProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_programs__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wifi_wifi__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_programs__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wifi_wifi__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_routines_routines__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_constants__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(105);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -506,12 +507,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var HomePage = (function () {
-    function HomePage(navCtrl, storage, routines, events) {
+    function HomePage(navCtrl, storage, routines, translateService, events) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.storage = storage;
         this.routines = routines;
+        this.translateService = translateService;
         this.events = events;
         this.checkAllBubbles();
         this.events.subscribe('sharesBubbles', function (bubbles) {
@@ -546,11 +549,16 @@ var HomePage = (function () {
         this.updateBubbles(4, '');
     };
     HomePage.prototype.updateBubbles = function (bubble, name) {
+        var _this = this;
         switch (bubble) {
             case 1:
                 if (typeof name !== 'undefined' && name.length > 0) {
                     this.bubblesCurrentState1 = true;
-                    this.bubblesNames1 = name;
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                        _this.translateService.getTranslation(lang).subscribe(function (value) {
+                            _this.bubblesNames1 = typeof value[name] === 'undefined' ? name : value[name];
+                        });
+                    });
                 }
                 else {
                     this.bubblesCurrentState1 = false;
@@ -560,7 +568,11 @@ var HomePage = (function () {
             case 2:
                 if (typeof name !== 'undefined' && name.length > 0) {
                     this.bubblesCurrentState2 = true;
-                    this.bubblesNames2 = name;
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                        _this.translateService.getTranslation(lang).subscribe(function (value) {
+                            _this.bubblesNames2 = typeof value[name] === 'undefined' ? name : value[name];
+                        });
+                    });
                 }
                 else {
                     this.bubblesCurrentState2 = false;
@@ -570,7 +582,11 @@ var HomePage = (function () {
             case 3:
                 if (typeof name !== 'undefined' && name.length > 0) {
                     this.bubblesCurrentState3 = true;
-                    this.bubblesNames3 = name;
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                        _this.translateService.getTranslation(lang).subscribe(function (value) {
+                            _this.bubblesNames3 = typeof value[name] === 'undefined' ? name : value[name];
+                        });
+                    });
                 }
                 else {
                     this.bubblesCurrentState3 = false;
@@ -580,7 +596,11 @@ var HomePage = (function () {
             case 4:
                 if (typeof name !== 'undefined' && name.length > 0) {
                     this.bubblesCurrentState4 = true;
-                    this.bubblesNames4 = name;
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                        _this.translateService.getTranslation(lang).subscribe(function (value) {
+                            _this.bubblesNames4 = typeof value[name] === 'undefined' ? name : value[name];
+                        });
+                    });
                 }
                 else {
                     this.bubblesCurrentState4 = false;
@@ -625,7 +645,7 @@ var HomePage = (function () {
             selector: 'page-home',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="home">\n    <div padding class="bubblescontainer">\n        <div class="bubbles">\n            <div (click)="selectBubble(1)" on-hold="removeProgramFromRoutine(1)" [ngStyle]="bubblesCurrentState1 && {\'background-image\':\'url(img/bubble-violet.png)\'}" class="single-bubble-1"></div>\n            <div class="bubbles-program-name-1" (click)="selectBubble(1,true)">{{ bubblesNames1 }}</div>\n\n            <div (click)="selectBubble(2)" on-hold="removeProgramFromRoutine(2)" [ngStyle]="bubblesCurrentState2 && {\'background-image\':\'url(img/bubble-red.png)\'}" class="single-bubble-2"></div>\n            <div class="bubbles-program-name-2" (click)="selectBubble(2,true)">{{ bubblesNames2 }}</div>\n\n            <div (click)="selectBubble(3)" on-hold="removeProgramFromRoutine(3)" [ngStyle]="bubblesCurrentState3 && {\'background-image\':\'url(img/bubble-yellow.png)\'}" class="single-bubble-3"></div>\n            <div class="bubbles-program-name-3" (click)="selectBubble(3,true)">{{ bubblesNames3 }}</div>\n\n            <div (click)="selectBubble(4)" on-hold="removeProgramFromRoutine(4)" [ngStyle]="bubblesCurrentState4 && {\'background-image\':\'url(img/bubble-green.png)\'}" class="single-bubble-4"></div>\n            <div class="bubbles-program-name-4" (click)="selectBubble(4,true)">{{ bubblesNames4 }}</div>\n        </div>\n    </div>\n\n    <div class="bubbleexplain">\n        <br>\n        <b>{{ \'tap-bubble\' | translate }}</b><br><br>\n        <!--<p translate="press-hold"> Press and hold a hearth to remove</p>-->\n        <button class="greenbtn" menu-close nav-transition="ios" nav-direction="forward" (click)="runRoutine()" href="#">{{ \'run-routine\' | translate }}</button>\n        <br><br>\n        <button class="graybtn" menu-close nav-transition="ios" nav-direction="forward" (click)="cleanRoutine()" href="#">{{ \'clean-routine\' | translate }}</button>\n\n    </div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_5__providers_routines_routines__["a" /* RoutinesProvider */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Events */]])
+            __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Events */]])
     ], HomePage);
     return HomePage;
 }());
@@ -660,18 +680,18 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_http_loader__ = __webpack_require__(290);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(292);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_help_help__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_programs_programs__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_wifi_wifi__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_help_help__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_programs_programs__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_wifi_wifi__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_status_bar__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_splash_screen__ = __webpack_require__(211);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_routines_routines__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_api_service_api_service__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_api_service_api_service__ = __webpack_require__(166);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3591,9 +3611,9 @@ var Data = { Groups: [
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_help_help__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contact_contact__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ngx_translate_core__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_help_help__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contact_contact__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ngx_translate_core__ = __webpack_require__(105);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
