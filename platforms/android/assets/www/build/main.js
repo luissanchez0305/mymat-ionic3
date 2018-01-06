@@ -461,7 +461,7 @@ var APIServiceProvider = (function () {
         var _this = this;
         return new Promise(function (resolve, reject) {
             _this.http.get(__WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiAddress).subscribe(function (res) {
-                resolve(res.json());
+                resolve(res);
             }, function (err) {
                 reject(err);
             });

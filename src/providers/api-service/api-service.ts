@@ -17,7 +17,7 @@ export class APIServiceProvider {
   test(){
     return new Promise((resolve, reject) => {
       this.http.get(Constants.myMatApiAddress).subscribe(res => {
-          resolve(res.json());
+          resolve(res);
         }, (err) => {
           reject(err);
         });
