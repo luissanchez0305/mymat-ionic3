@@ -11,7 +11,6 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class APIServiceProvider {
-  users : any;
   constructor(public http: Http) {
     
   }
