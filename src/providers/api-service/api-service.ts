@@ -16,20 +16,20 @@ export class APIServiceProvider {
   
     // watch network for a connection
     let connectSubscription = this.network.onConnect().subscribe(() => {
-      console.log('network connected!');
+      alert('network connected!');
       // We just got a connection but we need to wait briefly
        // before we determine the connection type. Might need to wait.
       // prior to doing any api requests as well.
       setTimeout(() => {
         if (this.network.type === 'wifi') {
-          console.log('we got a wifi connection, woohoo!');
+          alert('we got a wifi connection, woohoo!');
         }
       }, 3000);
     });
     
   }
   test(){
-    /*return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       this.http.get(Constants.myMatApiAddress)
       .map(res => res.text())
       .subscribe(res => {
@@ -37,9 +37,9 @@ export class APIServiceProvider {
       }, (err) => {
         reject(err);
       });
-    });*/
-    return new Promise((resolve, reject) => {
-      
     });
+    /*return new Promise((resolve, reject) => {
+      
+    });*/
   }
 }

@@ -46,11 +46,11 @@ export class WifiPage {
             // if is connected quitar imagen, textos y loading y poner status del mat
             if(this.verifyValues(response)){
                 this.showStatus();
-                this.current_status = 'success';
+                /*this.current_status = 'success';
             }
             else{
                 this.failVerification();
-                this.current_status = 'fail else ';
+                this.current_status = response;*/
             }
             
     }, (response) => {
@@ -114,11 +114,11 @@ export class WifiPage {
       failMyMatTest.then((response) => {
         if(this.verifyValues(response)){
           this.showStatus();
-          this.current_status = 'success 2';
+          /*this.current_status = 'success 2';
         }
         else if(this.intervalCount >= 60){
           this.showNoStatus();
-          this.current_status = 'fail else 2';
+          this.current_status = response;*/
         }
       }, (response) => {
         if(this.intervalCount >= 60){
