@@ -21,6 +21,9 @@
     },
     "ionic-plugin-keyboard": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },
   "dependent_plugins": {}
