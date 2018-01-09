@@ -27,7 +27,6 @@ export class WifiPage {
   public coilText3 : string;
   public coilText4 : string;
   public intervalCount : number = 0;
-  public current_status : string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public apiService : APIServiceProvider) {
     this.coilText = 'Antena';
@@ -45,17 +44,11 @@ export class WifiPage {
     myMatTest.then((response) => {
             // if is connected quitar imagen, textos y loading y poner status del mat
             if(this.verifyValues(response)){
-                this.showStatus();
-                /*this.current_status = 'success';
-            }
-            else{
-                this.failVerification();
-                this.current_status = response;*/
+              this.showStatus();
             }
             
     }, (response) => {
         this.failVerification();
-        this.current_status = 'fail test';
     });
   }
     
@@ -81,7 +74,6 @@ export class WifiPage {
       coil3 = coil3[2].split("</td></tr>");
       var coil4 = response.split("<tr><td>4.</td><td>");
       coil4 = coil4[2].split("</td></tr>");
-      //gapAlert(power[0] + ' ' + coil1[0] + ' ' + coil2[0] + ' ' + coil3[0] + ' ' + coil4[0]);
       this.batteryCharge = power[0];
       
       var powerVal = power[0].substr(0,power[0].length-1);
@@ -114,16 +106,10 @@ export class WifiPage {
       failMyMatTest.then((response) => {
         if(this.verifyValues(response)){
           this.showStatus();
-          /*this.current_status = 'success 2';
-        }
-        else if(this.intervalCount >= 60){
-          this.showNoStatus();
-          this.current_status = response;*/
         }
       }, (response) => {
         if(this.intervalCount >= 60){
           this.showNoStatus();
-          this.current_status = 'fail test 2';
         }
       });
       this.intervalCount += 1;
