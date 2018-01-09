@@ -36,7 +36,6 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     HttpModule,
-    Network,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
@@ -59,6 +58,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   providers: [
     StatusBar,
+    Network,
     SplashScreen,
     RoutinesProvider,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
