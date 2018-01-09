@@ -24,7 +24,7 @@ export class APIServiceProvider {
     });*/
     return new Promise((resolve, reject) => {
       this.http.get('http://www.esferasoluciones.com')
-      //.map(res => res.json())
+      .map(res => res.text())
       .subscribe(res => {
         resolve(res);
       }, (err) => {

@@ -469,6 +469,7 @@ var APIServiceProvider = (function () {
         });*/
         return new Promise(function (resolve, reject) {
             _this.http.get('http://www.esferasoluciones.com')
+                .map(function (res) { return res.text(); })
                 .subscribe(function (res) {
                 resolve(res);
             }, function (err) {
