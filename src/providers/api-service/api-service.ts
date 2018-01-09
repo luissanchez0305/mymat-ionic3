@@ -23,7 +23,7 @@ export class APIServiceProvider {
         });
     });*/
     return new Promise((resolve, reject) => {
-      this.http.get('http://www.esferasoluciones.com')
+      this.http.get(Constants.myMatApiAddress)
       .map(res => res.text())
       .subscribe(res => {
         resolve(res);
