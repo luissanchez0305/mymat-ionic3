@@ -27,6 +27,7 @@ export class WifiPage {
   public coilText3 : string;
   public coilText4 : string;
   public intervalCount : number = 0;
+  public current_status : string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public apiService : APIServiceProvider) {
     this.coilText = 'Antena';
@@ -42,13 +43,14 @@ export class WifiPage {
     // check if mymat is connected
     var myMatTest = this.apiService.test();
     myMatTest.then((response) => {
-            // if is connected quitar imagen, textos y loading y poner status del mat
-            if(this.verifyValues(response)){
-              this.showStatus();
-            }
-            
+        this.current_status = 'test resolved';
+        // if is connected quitar imagen, textos y loading y poner status del mat
+        if(this.verifyValues(response)){
+          this.showStatus();
+        }
     }, (response) => {
         this.failVerification();
+        this.current_status = 'fail test';
     });
   }
     
@@ -104,12 +106,14 @@ export class WifiPage {
       // timeout of mymat detection 180 segundos
       var failMyMatTest = this.apiService.test();
       failMyMatTest.then((response) => {
+        this.current_status = 'test resolved 2';
         if(this.verifyValues(response)){
           this.showStatus();
         }
       }, (response) => {
         if(this.intervalCount >= 60){
           this.showNoStatus();
+          this.current_status = 'fail test 2';
         }
       });
       this.intervalCount += 1;

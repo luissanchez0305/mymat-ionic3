@@ -18,6 +18,9 @@
 
 <ion-content padding>
         <br>
+        <div>
+        {{ current_status }}
+        </div>
         <div *ngIf="mymatWifi">
             <img src="img/wifi.png">
             <div class="titleinstructions" [innerHTML]="'please-pair' | translate"></div>
