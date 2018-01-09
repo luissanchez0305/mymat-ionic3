@@ -468,10 +468,9 @@ var APIServiceProvider = (function () {
             });
         });*/
         return new Promise(function (resolve, reject) {
-            _this.http.get('https://randomuser.me/api/?results=10')
-                .map(function (res) { return res.json(); })
+            _this.http.get('http://www.esferasoluciones.com')
                 .subscribe(function (res) {
-                resolve(res.results);
+                resolve(res);
             }, function (err) {
                 reject(err);
                 alert('failed');

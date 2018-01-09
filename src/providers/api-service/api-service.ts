@@ -23,10 +23,10 @@ export class APIServiceProvider {
         });
     });*/
     return new Promise((resolve, reject) => {
-      this.http.get('https://randomuser.me/api/?results=10')
-      .map(res => res.json())
+      this.http.get('http://www.esferasoluciones.com')
+      //.map(res => res.json())
       .subscribe(res => {
-        resolve(res.results);
+        resolve(res);
       }, (err) => {
         reject(err);
         alert('failed');
