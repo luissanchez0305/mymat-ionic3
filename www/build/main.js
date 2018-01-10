@@ -405,6 +405,7 @@ var WifiPage = (function () {
         this.mymatWifi = true;
         this.intervalCount = 0;
         // check if mymat is connected
+        this.current_status = 'ready';
         var myMatTest = this.apiService.test();
         myMatTest.then(function (response) {
             _this.current_status = 'test resolved';

@@ -44,6 +44,7 @@ export class WifiPage {
     this.mymatWifi = true;
     this.intervalCount = 0;
     // check if mymat is connected
+    this.current_status = 'ready';
     var myMatTest = this.apiService.test();
     myMatTest.then((response) => {
         this.current_status = 'test resolved';
