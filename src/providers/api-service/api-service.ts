@@ -20,10 +20,8 @@ export class APIServiceProvider {
       this.http.get(Constants.myMatApiAddress)
       .map(res => res.text())
       .subscribe(res => {
-        alert('resolve');
         resolve(res);
       }, (err) => {
-        alert(err);
         reject(err);
       });
     });
