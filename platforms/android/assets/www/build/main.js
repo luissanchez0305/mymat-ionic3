@@ -479,6 +479,7 @@ var WifiPage = (function () {
         }, 3000);
     };
     WifiPage.prototype.startRoutine = function () {
+        this.current_status = 'start1';
         var program1Obj;
         var program2Obj;
         var program3Obj;
