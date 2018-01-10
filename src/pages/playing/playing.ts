@@ -40,7 +40,7 @@ export class PlayingPage {
         case 1:
           this.storage.get(Constants.storageKeyBubble1).then((val) => {
             var value = val.split('|');
-            this.program1CurrentTimeDecreasingAsTime = this.convertSecondsToTime(value[2]);
+            this.program1CurrentTimeDecreasingAsTime = value[2]; //this.convertSecondsToTime(value[2]);
             program1CurrentTimeDecreasing = value[2];
             
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
@@ -53,7 +53,7 @@ export class PlayingPage {
         case 2:
           this.storage.get(Constants.storageKeyBubble2).then((val) => {
             var value = val.split('|');
-            this.program2CurrentTimeDecreasingAsTime = this.convertSecondsToTime(value[2]);
+            this.program2CurrentTimeDecreasingAsTime = value[2]; //this.convertSecondsToTime(value[2]);
             program2CurrentTimeDecreasing = value[2];
             
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
@@ -66,7 +66,7 @@ export class PlayingPage {
         case 3:
           this.storage.get(Constants.storageKeyBubble3).then((val) => {
             var value = val.split('|');
-            this.program3CurrentTimeDecreasingAsTime = this.convertSecondsToTime(value[2]);
+            this.program3CurrentTimeDecreasingAsTime = value[2]; //this.convertSecondsToTime(value[2]);
             program3CurrentTimeDecreasing = value[2];
             
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
@@ -79,7 +79,7 @@ export class PlayingPage {
         case 4:
           this.storage.get(Constants.storageKeyBubble4).then((val) => {
             var value = val.split('|');
-            this.program4CurrentTimeDecreasingAsTime = this.convertSecondsToTime(value[2]);
+            this.program4CurrentTimeDecreasingAsTime = value[2]; //this.convertSecondsToTime(value[2]);
             program4CurrentTimeDecreasing = value[2];
             
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
@@ -89,13 +89,13 @@ export class PlayingPage {
             });
             
             if(program1CurrentTimeDecreasing > program2CurrentTimeDecreasing && program1CurrentTimeDecreasing > program3CurrentTimeDecreasing && program1CurrentTimeDecreasing > program4CurrentTimeDecreasing)
-                this.displayRunningTime = this.convertSecondsToTime(program1CurrentTimeDecreasing);
+                this.displayRunningTime = program1CurrentTimeDecreasing; //this.convertSecondsToTime(program1CurrentTimeDecreasing);
             else if(program2CurrentTimeDecreasing > program3CurrentTimeDecreasing && program2CurrentTimeDecreasing > program4CurrentTimeDecreasing)
-                this.displayRunningTime = this.convertSecondsToTime(program2CurrentTimeDecreasing);
+                this.displayRunningTime = program2CurrentTimeDecreasing; //this.convertSecondsToTime(program2CurrentTimeDecreasing);
             else if(program3CurrentTimeDecreasing > program4CurrentTimeDecreasing)
-                this.displayRunningTime = this.convertSecondsToTime(program3CurrentTimeDecreasing);
+                this.displayRunningTime = program3CurrentTimeDecreasing; //this.convertSecondsToTime(program3CurrentTimeDecreasing);
             else
-                this.displayRunningTime = this.convertSecondsToTime(program4CurrentTimeDecreasing);
+                this.displayRunningTime = program4CurrentTimeDecreasing; //this.convertSecondsToTime(program4CurrentTimeDecreasing);
           });
           break;
       }
