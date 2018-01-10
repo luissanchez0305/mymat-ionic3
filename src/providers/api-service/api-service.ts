@@ -17,6 +17,7 @@ export class APIServiceProvider {
   }
   test(){
     return new Promise((resolve, reject) => {
+      alert('ready');
       this.http.get(Constants.myMatApiAddress)
       .map(res => res.text())
       .subscribe(res => {

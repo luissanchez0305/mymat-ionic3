@@ -635,6 +635,7 @@ var APIServiceProvider = (function () {
     APIServiceProvider.prototype.test = function () {
         var _this = this;
         return new Promise(function (resolve, reject) {
+            alert('ready');
             _this.http.get(__WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiAddress)
                 .map(function (res) { return res.text(); })
                 .subscribe(function (res) {
