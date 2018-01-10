@@ -15,12 +15,8 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
         <br>
-        <div>
-        {{ current_status }}
-        </div>
         <div *ngIf="mymatWifi">
             <img src="img/wifi.png">
             <div class="titleinstructions" [innerHTML]="'please-pair' | translate"></div>
@@ -31,6 +27,9 @@
             <p [innerHTML]="'activate-wifi-3' | translate">3. Connect your device's WiFi with your MyMat network</p>
             <p [innerHTML]="'activate-wifi-4' | translate">4. Once is connected, return to the MyMat app</p>
             <!--<p class="interval-counter">0</p>-->
+        <div>
+        {{ current_status }}
+        </div>
             <br/>
             <div *ngIf="mymatNoStatus">
                 <p [innerHTML]="'no-detect-1' | translate">We were unable to detect your MyMat</p>
