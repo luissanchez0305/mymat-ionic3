@@ -38,9 +38,9 @@ export class APIServiceProvider {
       this.http.get(url)
       .map(res => res.text())
       .subscribe(res => {
-        resolve(res);
+        resolve('success: ' + url);
       }, (err) => {
-        reject(err);
+        reject('error: ' + url);
       });
     });
   }

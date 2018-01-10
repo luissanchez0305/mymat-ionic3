@@ -124,7 +124,6 @@ export class WifiPage {
   }
   
   startRoutine(){
-    this.current_status = 'start1';
     var program1Obj;
     var program2Obj;
     var program3Obj;
@@ -162,7 +161,11 @@ export class WifiPage {
         program4Obj
     ];
     
-    this.apiService.start(programs);
+    this.apiService.start(programs).then((response) => {
+      this.current_status = response + '';
+    }, (response) =>{
+      this.current_status = response + '';
+    });
     
     this.navCtrl.push(PlayingPage);
   }

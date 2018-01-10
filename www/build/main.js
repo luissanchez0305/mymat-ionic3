@@ -479,7 +479,7 @@ var WifiPage = (function () {
         }, 3000);
     };
     WifiPage.prototype.startRoutine = function () {
-        this.current_status = 'start1';
+        var _this = this;
         var program1Obj;
         var program2Obj;
         var program3Obj;
@@ -514,7 +514,11 @@ var WifiPage = (function () {
             program3Obj,
             program4Obj
         ];
-        this.apiService.start(programs);
+        this.apiService.start(programs).then(function (response) {
+            _this.current_status = response + '';
+        }, function (response) {
+            _this.current_status = response + '';
+        });
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__playing_playing__["a" /* PlayingPage */]);
     };
     WifiPage.prototype.stop = function () {
@@ -650,9 +654,9 @@ var APIServiceProvider = (function () {
             _this.http.get(url)
                 .map(function (res) { return res.text(); })
                 .subscribe(function (res) {
-                resolve(res);
+                resolve('success: ' + url);
             }, function (err) {
-                reject(err);
+                reject('error: ' + url);
             });
         });
     };
