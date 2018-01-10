@@ -23,7 +23,7 @@ export class APIServiceProvider {
         alert('resolve');
         resolve(res);
       }, (err) => {
-        alert('error');
+        alert(err);
         reject(err);
       });
     });
