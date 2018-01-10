@@ -17,12 +17,13 @@ export class APIServiceProvider {
   }
   test(){
     return new Promise((resolve, reject) => {
-      alert('ready');
       this.http.get(Constants.myMatApiAddress)
       .map(res => res.text())
       .subscribe(res => {
+        alert('resolve');
         resolve(res);
       }, (err) => {
+        alert('error');
         reject(err);
       });
     });
