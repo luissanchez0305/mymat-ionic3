@@ -14,6 +14,7 @@ import { HelpPage } from '../pages/help/help';
 import { ContactPage } from '../pages/contact/contact';
 import { ProgramsPage } from '../pages/programs/programs';
 import { WifiPage } from '../pages/wifi/wifi';
+import { PlayingPage } from '../pages/playing/playing';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -31,7 +32,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HelpPage,
     ContactPage,
     ProgramsPage,
-    WifiPage
+    WifiPage,
+    PlayingPage
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HelpPage,
     ContactPage,
     ProgramsPage,
-    WifiPage
+    WifiPage,
+    PlayingPage
   ],
   providers: [
     StatusBar,

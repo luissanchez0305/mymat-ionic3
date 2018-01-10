@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
+import { PlayingPage } from '../playing/playing';
+import { Constants } from '../../services/constants';
 
 /**
  * Generated class for the WifiPage page.
@@ -29,7 +32,7 @@ export class WifiPage {
   public intervalCount : number = 0;
   public current_status : string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public apiService : APIServiceProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider) {
     this.coilText = 'Antena';
   }
   
@@ -118,6 +121,49 @@ export class WifiPage {
       });
       this.intervalCount += 1;
     }, 3000);
+  }
+  
+  startRoutine(){
+    var program1Obj;
+    var program2Obj;
+    var program3Obj;
+    var program4Obj;
+    
+    for(var i = 1; i <= 4; i++){
+      switch(i){
+        case 1:
+          this.storage.get(Constants.storageKeyBubble1).then((val) => {
+            program1Obj = val;
+          });
+          break;
+        case 2:
+          this.storage.get(Constants.storageKeyBubble2).then((val) => {
+            program2Obj = val;
+          });
+          break;
+        case 3:
+          this.storage.get(Constants.storageKeyBubble3).then((val) => {
+            program3Obj = val;
+          });
+          break;
+        case 4:
+          this.storage.get(Constants.storageKeyBubble4).then((val) => {
+            program4Obj = val;
+          });
+          break;
+      }
+    }
+    
+    var programs = [
+        program1Obj,
+        program2Obj,
+        program3Obj,
+        program4Obj
+    ];
+    
+    this.apiService.start(programs);
+    
+    this.navCtrl.push(PlayingPage);
   }
   
   stop(){

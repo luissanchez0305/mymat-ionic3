@@ -1,4 +1,5 @@
 export var Constants = { 
+  	myMatApiUrl:'http://192.168.1.3/start.htm',
     myMatApiAddress : 'http://192.168.1.3/index.htm',
     storageKeyLang : 'mymat_lang',
     storageKeyBubble1 : 'MyMat_bubbleRoutineProgram1',
