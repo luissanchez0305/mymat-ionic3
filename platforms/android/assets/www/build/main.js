@@ -49,6 +49,51 @@ var ContactPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HelpPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the HelpPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var HelpPage = (function () {
+    function HelpPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    HelpPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HelpPage');
+    };
+    HelpPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-help',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/help/help.html"*/'<!--\n  Generated template for the HelpPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n    <ion-header>\n      <ion-navbar class="bar">\n        <button ion-button menuToggle end class="button button-clear">\n          <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n          <div class="logo"></div>\n        </ion-title>\n      </ion-navbar>\n    </ion-header>\n\n    <ion-content padding class="home">\n\n        <div class="list card cardprogram">\n\n            <div class="item">\n\n                <h2 padding translate="help-text">Help</h2>\n\n            </div>\n\n            <div padding class="item item-body">\n                <div class="" translate="help-text1">How do I know which programs to choose?</div>\n                <p class="lorems" translate="help-text2">\n                    It is always good to start with balancing the System. These are some ways you could start this with:\n                    Energy Balancing, E-Smog, Joy, Vitality<br><br>\n                    \n                    If you would like to enhance your sleeping pattern – choose:<br>\n                    Energy Balancing, E-Smog, Relax, Sleep<br><br>\n                    \n                    If you would like some extra energy in the morning:<br>\n                    Energy Balancing, Energy Booster, Concentration (and any program connected to a problem you are dealing with – as Pain, Muscle, Joints, Headache etc.) <br><br>\n                    \n                    For a full list of programs and their uses regarding symptoms refer to the user’s manual included with your purchase or available for free online.\n                </p>\n                <div class="" translate="help-text3">Which programs should I avoid in the evening?</div>\n                <p class="lorems" translate="help-text4">\n                    If you want to have a good night’s sleep it is better not to over stimulate your organism. If you are used to drinking coffee in the evening and still can sleep you may use any programs but if you are more sensitive – better do not to use the following programs before bed time: Circulation, Immune System, Adrenal, Exhaustion, Concentration and Energy Booster\n                </p>\n                <div class="" translate="help-text5">How do electromagnetic fields affect my body?</div>\n                <p class="lorems" translate="help-text6">\n                    Everything in our bodies is electric, our cells communicate with electromagnetic frequencies, our heart generates electromagnetic waves with every beat, our nervous system communicated when neurons react to electro magnetic signals through synapses. With this in mind we can understand how external magnetic, electric and electromagnetic fields react with every aspect of our body. By regulating specific low intensity frequencies we can chose exactly what we want to react with, acting on specified cells, organs and tissues.\n                </p>\n                <div class="" translate="help-text7">How does treatment at the cellular level help me?</div>\n                <p class="lorems" translate="help-text8">\n                    By charging magnetic fields surrounding cell membranes channels open up for better nutrient penetration. Opening the channels also promotes easier waste elimination, efficiently restoring proper cell function. An efficient system of cells creates efficient tissue, which come together to make organs. Restoring proper function from the cellular level brings beneficial long term effects to all related problems and improves overall well being. Healthy cell function also diminishes the need for cell replacement, slowing down aging processes and energy waste.\n                </p>\n                \n                <div class="" translate="help-text9">Can PEMF therapy protect me from future illnesses?</div>\n                <p class="lorems" translate="help-text10"> Operating effectively at a systematic level will reduce opportunities for diseases to develop. Diseases begin at a cellular level and injuries have to start healing at a cellular level. By using Pulsed Electromagnetic Frequencies one can improve general circulation thus accelerating reparation processes. By improving general cellular health they break down/wear out less often. Healthy operating cells will accelerate recuperation and balance bodily functions. </p>\n\n                <div class="" translate="help-text11">Aren’t Magnetic Fields bad for me?</div>\n                <p class="lorems" translate="help-text12"> The MyMat has a frequency range between 1Hz to 200 kHz and EMF strength wont exceed 10 micro Tesla per channel. The MyMat can operate up to 4 channels simultaneously due to its 4 antennae’s, thus a maximum of 40 micro Tesla. Magnetic fields outside of the low and extremely low frequencies such as microwave, infrared, radio and ultraviolet frequencies do have varied detrimental effects on our cells and body. Most of our exposure risk comes from higher frequencies such as power lines and cell phones attached to our heads daily. These frequencies pose higher risks because we are constantly exposed to them and they can induce tissue damage, alter cellular function and create general cellular damage. It is practically impossible to live a life avoiding these frequencies, they are everywhere and penetrate everything. We cant escape E-smog, but we can use the MyMat which has several programs that can help reduce damaging effects from all our constant electronic bombardment by adding frequencies that mantain our bodies in balance, mantaining the healthy, natural frequencies. </p>\n\n                <div class="" translate="help-text13">Will PEMF therapy replace my medication?</div>\n                <p class="lorems" translate="help-text14"> Therapy with the Pulsed Electromagnetic Frequencies can make a significant improvement in overall well-being and diminish many negative symptoms. It can be used alongside treatments and medication to improve results. It is important to discuss with medical professionals before replacing any treatments or medication. Once a proper plan is created and results are seen it is possible to reduce or eliminate treatments or medication. Always make sure to ask for medical advise or consultation before changing or replacing existing treatments. </p>\n\n                <div class="" translate="help-text15">How do electromagnetic fields affect my body?</div>\n                <p class="lorems" translate="help-text16">Everything in our bodies is electric, our cells communicate with electromagnetic frequencies, our heart generates electromagnetic waves with every beat, our nervous system communicated when neurons react to electro magnetic signals through synapses. With this in mind we can understand how external magnetic, electric and electromagnetic fields react with every aspect of our body. By regulating specific low intensity frequencies we can chose exactly what we want to react with, acting on specified cells, organs and tissues. </p>\n\n                <div class="" translate="help-text17" >How does treatment at the cellular level help me?</div>\n\n                <p class="lorems" translate="help-text18">By charging magnetic fields surrounding cell membranes channels open up for better nutrient penetration. Opening the channels also promotes easier waste elimination, efficiently restoring proper cell function. An efficient system of cells creates efficient tissue, which come together to make organs. Restoring proper function from the cellular level brings beneficial long term effects to all related problems and improves overall well being. Healthy cell function also diminishes the need for cell replacement, slowing down aging processes and energy waste. </p>\n\n                <div class="" translate="help-text19">Can PEMF therapy protect me from future illnesses?</div>\n                <p class="lorems" translate="help-text20"> Operating effectively at a systematic level will reduce opportunities for diseases to develop. Diseases begin at a cellular level and injuries have to start healing at a cellular level. By using Pulsed Electromagnetic Frequencies one can improve general circulation thus accelerating reparation processes. By improving general cellular health they break down/wear out less often. Healthy operating cells will accelerate recuperation and balance bodily functions. </p>\n\n                <div class="" translate="help-text21">Aren’t Magnetic Fields bad for me? </div>\n                <p class="lorems" translate="help-text22"> The MyMat has a frequency range between 1Hz to 200 kHz and EMF strength wont exceed 10 micro Tesla per channel. The MyMat can operate up to 4 channels simultaneously due to its 4 antennae’s, thus a maximum of 40 micro Tesla. Magnetic fields outside of the low and extremely low frequencies such as microwave, infrared, radio and ultraviolet frequencies do have varied detrimental effects on our cells and body. Most of our exposure risk comes from higher frequencies such as power lines and cell phones attached to our heads daily. These frequencies pose higher risks because we are constantly exposed to them and they can induce tissue damage, alter cellular function and create general cellular damage. It is practically impossible to live a life avoiding these frequencies, they are everywhere and penetrate everything. We cant escape E-smog, but we can use the MyMat which has several programs that can help reduce damaging effects from all our constant electronic bombardment by adding frequencies that mantain our bodies in balance, mantaining the healthy, natural frequencies. </p>\n\n                <div class="" translate="help-text23">Can I overdose on a magnetic field?</div>\n                <p class="lorems" translate="help-text24"> The MyMat operates with very low intensity pulsed magnetic fields. A healthy cell operates at ideal capacity so has no need for more energy and cannot accept more energy, so it ignores these frequencies. A damaged or malfunctioning cell can absorb some of this energy but it is impossible for it to overcharge because there is no possibility of storing any more energy than is needed. </p>\n\n                <div class="" translate="help-text25">What are some of the basic beneficial actions PEMFs will have in my body?</div>\n                <p class="lorems" translate="help-text26">Improving tissue healing \n         Reducing pain<br>\nIncreasing energy<br>\nImproving sleep<br>\nMaking soft tissue more flexible<br>\nMeridian Stimulation<br>\nReducing Blood Pressure<br>\nImproving clotting factors<br>\nReducing Arthritis ontake<br>\nImmune system stimulation<br>\nDetox<br>\nHelping nerve function<br>\nImproving Nutrient Absorbtion<br>\nReducing Muscle tension</p>\n            </div>\n        </div>\n\n    </ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/help/help.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    ], HelpPage);
+    return HelpPage;
+}());
+
+//# sourceMappingURL=help.js.map
+
+/***/ }),
+
+/***/ 111:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PlayingPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
@@ -168,13 +213,16 @@ var PlayingPage = (function () {
 
 /***/ }),
 
-/***/ 111:
+/***/ 112:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HelpPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -186,34 +234,129 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
+
 /**
- * Generated class for the HelpPage page.
+ * Generated class for the ProgramsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var HelpPage = (function () {
-    function HelpPage(navCtrl, navParams) {
+var ProgramsPage = (function () {
+    function ProgramsPage(navCtrl, navParams, routines, events) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.routines = routines;
+        this.events = events;
+        this.getPrograms('basic');
+        this.programs = __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs;
+        this.program = navParams.get('bubble');
+        this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble1).then(function (val) {
+            if (_this.program != 1 && val.length > 0) {
+                _this.programName1 = val.split('|')[1];
+            }
+            else {
+                _this.programName1 = '';
+            }
+        });
+        this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble2).then(function (val) {
+            if (_this.program != 2 && val.length > 0) {
+                _this.programName2 = val.split('|')[1];
+            }
+            else {
+                _this.programName2 = '';
+            }
+        });
+        this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble3).then(function (val) {
+            if (_this.program != 3 && val.length > 0) {
+                _this.programName3 = val.split('|')[1];
+            }
+            else {
+                _this.programName3 = '';
+            }
+        });
+        this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble4).then(function (val) {
+            if (_this.program != 4 && val.length > 0) {
+                _this.programName4 = val.split('|')[1];
+            }
+            else {
+                _this.programName4 = '';
+            }
+        });
     }
-    HelpPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad HelpPage');
+    ProgramsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ProgramsPage');
     };
-    HelpPage = __decorate([
+    ProgramsPage.prototype.selectPreSetProgram = function (category) {
+        this.getPrograms(category);
+    };
+    ProgramsPage.prototype.getProgram = function (name) {
+        for (var i = 0; i < __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs.length; i++) {
+            var program = __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs[i];
+            if (program.apiName == name)
+                return program;
+        }
+    };
+    ProgramsPage.prototype.getPrograms = function (category) {
+        var groups = [];
+        var groupIndex = 0;
+        for (var i = 0; i < __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Groups.length; i++) {
+            var group = __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Groups[i];
+            if (group.category == category) {
+                groups[groupIndex] = group;
+                for (var j = 0; j < group.programs.length; j++) {
+                    var program = group.programs[j];
+                    group.programs[j] = this.getProgram(program.apiName);
+                }
+                groupIndex++;
+            }
+        }
+        this.predefinedPrograms = groups;
+    };
+    ProgramsPage.prototype.addPrograms = function (routineName, program1, program2, program3, program4) {
+        var objProgram1 = this.getProgram(program1);
+        var objProgram2 = this.getProgram(program2);
+        var objProgram3 = this.getProgram(program3);
+        var objProgram4 = this.getProgram(program4);
+        this.routines.insertPreSetProgram(routineName, objProgram1, objProgram2, objProgram3, objProgram4);
+        this.navCtrl.pop();
+        var bubbleNames = [objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name];
+        this.routines.setPrograms(objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name);
+        this.events.publish("sharesBubbles", bubbleNames);
+    };
+    ProgramsPage.prototype.add1Program = function (programName, programRunningTime, programApiName) {
+        this.routines.addProgramToRoutine(this.program, '', programName, programRunningTime, programApiName);
+        this.programName1 = this.program == 1 ? programName : (this.programName1.length > 0 ? this.programName1 : '');
+        this.programName2 = this.program == 2 ? programName : (this.programName2.length > 0 ? this.programName2 : '');
+        this.programName3 = this.program == 3 ? programName : (this.programName3.length > 0 ? this.programName3 : '');
+        this.programName4 = this.program == 4 ? programName : (this.programName4.length > 0 ? this.programName4 : '');
+        this.routines.setPrograms(this.programName1, this.programName2, this.programName3, this.programName4);
+        var bubbleNames = [
+            this.programName1,
+            this.programName2,
+            this.programName3,
+            this.programName4
+        ];
+        this.events.publish("sharesBubbles", bubbleNames);
+        this.navCtrl.pop();
+    };
+    ProgramsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-help',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/help/help.html"*/'<!--\n  Generated template for the HelpPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n    <ion-header>\n      <ion-navbar class="bar">\n        <button ion-button menuToggle end class="button button-clear">\n          <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n          <div class="logo"></div>\n        </ion-title>\n      </ion-navbar>\n    </ion-header>\n\n    <ion-content padding class="home">\n\n        <div class="list card cardprogram">\n\n            <div class="item">\n\n                <h2 padding translate="help-text">Help</h2>\n\n            </div>\n\n            <div padding class="item item-body">\n                <div class="" translate="help-text1">How do I know which programs to choose?</div>\n                <p class="lorems" translate="help-text2">\n                    It is always good to start with balancing the System. These are some ways you could start this with:\n                    Energy Balancing, E-Smog, Joy, Vitality<br><br>\n                    \n                    If you would like to enhance your sleeping pattern – choose:<br>\n                    Energy Balancing, E-Smog, Relax, Sleep<br><br>\n                    \n                    If you would like some extra energy in the morning:<br>\n                    Energy Balancing, Energy Booster, Concentration (and any program connected to a problem you are dealing with – as Pain, Muscle, Joints, Headache etc.) <br><br>\n                    \n                    For a full list of programs and their uses regarding symptoms refer to the user’s manual included with your purchase or available for free online.\n                </p>\n                <div class="" translate="help-text3">Which programs should I avoid in the evening?</div>\n                <p class="lorems" translate="help-text4">\n                    If you want to have a good night’s sleep it is better not to over stimulate your organism. If you are used to drinking coffee in the evening and still can sleep you may use any programs but if you are more sensitive – better do not to use the following programs before bed time: Circulation, Immune System, Adrenal, Exhaustion, Concentration and Energy Booster\n                </p>\n                <div class="" translate="help-text5">How do electromagnetic fields affect my body?</div>\n                <p class="lorems" translate="help-text6">\n                    Everything in our bodies is electric, our cells communicate with electromagnetic frequencies, our heart generates electromagnetic waves with every beat, our nervous system communicated when neurons react to electro magnetic signals through synapses. With this in mind we can understand how external magnetic, electric and electromagnetic fields react with every aspect of our body. By regulating specific low intensity frequencies we can chose exactly what we want to react with, acting on specified cells, organs and tissues.\n                </p>\n                <div class="" translate="help-text7">How does treatment at the cellular level help me?</div>\n                <p class="lorems" translate="help-text8">\n                    By charging magnetic fields surrounding cell membranes channels open up for better nutrient penetration. Opening the channels also promotes easier waste elimination, efficiently restoring proper cell function. An efficient system of cells creates efficient tissue, which come together to make organs. Restoring proper function from the cellular level brings beneficial long term effects to all related problems and improves overall well being. Healthy cell function also diminishes the need for cell replacement, slowing down aging processes and energy waste.\n                </p>\n                \n                <div class="" translate="help-text9">Can PEMF therapy protect me from future illnesses?</div>\n                <p class="lorems" translate="help-text10"> Operating effectively at a systematic level will reduce opportunities for diseases to develop. Diseases begin at a cellular level and injuries have to start healing at a cellular level. By using Pulsed Electromagnetic Frequencies one can improve general circulation thus accelerating reparation processes. By improving general cellular health they break down/wear out less often. Healthy operating cells will accelerate recuperation and balance bodily functions. </p>\n\n                <div class="" translate="help-text11">Aren’t Magnetic Fields bad for me?</div>\n                <p class="lorems" translate="help-text12"> The MyMat has a frequency range between 1Hz to 200 kHz and EMF strength wont exceed 10 micro Tesla per channel. The MyMat can operate up to 4 channels simultaneously due to its 4 antennae’s, thus a maximum of 40 micro Tesla. Magnetic fields outside of the low and extremely low frequencies such as microwave, infrared, radio and ultraviolet frequencies do have varied detrimental effects on our cells and body. Most of our exposure risk comes from higher frequencies such as power lines and cell phones attached to our heads daily. These frequencies pose higher risks because we are constantly exposed to them and they can induce tissue damage, alter cellular function and create general cellular damage. It is practically impossible to live a life avoiding these frequencies, they are everywhere and penetrate everything. We cant escape E-smog, but we can use the MyMat which has several programs that can help reduce damaging effects from all our constant electronic bombardment by adding frequencies that mantain our bodies in balance, mantaining the healthy, natural frequencies. </p>\n\n                <div class="" translate="help-text13">Will PEMF therapy replace my medication?</div>\n                <p class="lorems" translate="help-text14"> Therapy with the Pulsed Electromagnetic Frequencies can make a significant improvement in overall well-being and diminish many negative symptoms. It can be used alongside treatments and medication to improve results. It is important to discuss with medical professionals before replacing any treatments or medication. Once a proper plan is created and results are seen it is possible to reduce or eliminate treatments or medication. Always make sure to ask for medical advise or consultation before changing or replacing existing treatments. </p>\n\n                <div class="" translate="help-text15">How do electromagnetic fields affect my body?</div>\n                <p class="lorems" translate="help-text16">Everything in our bodies is electric, our cells communicate with electromagnetic frequencies, our heart generates electromagnetic waves with every beat, our nervous system communicated when neurons react to electro magnetic signals through synapses. With this in mind we can understand how external magnetic, electric and electromagnetic fields react with every aspect of our body. By regulating specific low intensity frequencies we can chose exactly what we want to react with, acting on specified cells, organs and tissues. </p>\n\n                <div class="" translate="help-text17" >How does treatment at the cellular level help me?</div>\n\n                <p class="lorems" translate="help-text18">By charging magnetic fields surrounding cell membranes channels open up for better nutrient penetration. Opening the channels also promotes easier waste elimination, efficiently restoring proper cell function. An efficient system of cells creates efficient tissue, which come together to make organs. Restoring proper function from the cellular level brings beneficial long term effects to all related problems and improves overall well being. Healthy cell function also diminishes the need for cell replacement, slowing down aging processes and energy waste. </p>\n\n                <div class="" translate="help-text19">Can PEMF therapy protect me from future illnesses?</div>\n                <p class="lorems" translate="help-text20"> Operating effectively at a systematic level will reduce opportunities for diseases to develop. Diseases begin at a cellular level and injuries have to start healing at a cellular level. By using Pulsed Electromagnetic Frequencies one can improve general circulation thus accelerating reparation processes. By improving general cellular health they break down/wear out less often. Healthy operating cells will accelerate recuperation and balance bodily functions. </p>\n\n                <div class="" translate="help-text21">Aren’t Magnetic Fields bad for me? </div>\n                <p class="lorems" translate="help-text22"> The MyMat has a frequency range between 1Hz to 200 kHz and EMF strength wont exceed 10 micro Tesla per channel. The MyMat can operate up to 4 channels simultaneously due to its 4 antennae’s, thus a maximum of 40 micro Tesla. Magnetic fields outside of the low and extremely low frequencies such as microwave, infrared, radio and ultraviolet frequencies do have varied detrimental effects on our cells and body. Most of our exposure risk comes from higher frequencies such as power lines and cell phones attached to our heads daily. These frequencies pose higher risks because we are constantly exposed to them and they can induce tissue damage, alter cellular function and create general cellular damage. It is practically impossible to live a life avoiding these frequencies, they are everywhere and penetrate everything. We cant escape E-smog, but we can use the MyMat which has several programs that can help reduce damaging effects from all our constant electronic bombardment by adding frequencies that mantain our bodies in balance, mantaining the healthy, natural frequencies. </p>\n\n                <div class="" translate="help-text23">Can I overdose on a magnetic field?</div>\n                <p class="lorems" translate="help-text24"> The MyMat operates with very low intensity pulsed magnetic fields. A healthy cell operates at ideal capacity so has no need for more energy and cannot accept more energy, so it ignores these frequencies. A damaged or malfunctioning cell can absorb some of this energy but it is impossible for it to overcharge because there is no possibility of storing any more energy than is needed. </p>\n\n                <div class="" translate="help-text25">What are some of the basic beneficial actions PEMFs will have in my body?</div>\n                <p class="lorems" translate="help-text26">Improving tissue healing \n         Reducing pain<br>\nIncreasing energy<br>\nImproving sleep<br>\nMaking soft tissue more flexible<br>\nMeridian Stimulation<br>\nReducing Blood Pressure<br>\nImproving clotting factors<br>\nReducing Arthritis ontake<br>\nImmune system stimulation<br>\nDetox<br>\nHelping nerve function<br>\nImproving Nutrient Absorbtion<br>\nReducing Muscle tension</p>\n            </div>\n        </div>\n\n    </ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/help/help.html"*/,
+            selector: 'page-programs',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/programs/programs.html"*/'<!--\n  Generated template for the ProgramsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Programs</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n        <ion-content padding>\n            <br>\n            <div class="modaltitle">{{ \'program-kits\' | translate }}</div>\n            <div class="modaldesc">{{ \'popular-routines\' | translate }}</div>\n            \n            \n            \n<ion-scroll scrollX="true" scrollY="false" class="wide-as-needed">\n  \n<div class="programs">\n\n    <div class="program" (click)="selectPreSetProgram(\'basic\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/Basic.png"></div>\n        <div class="programdesc" [innerHTML]="\'basic\' | translate"><br><br></div>\n    </div>\n    \n  \n\n\n        <div class="program opacity-50" (click)="selectPreSetProgram(\'business and travel\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/BusinessTraveller.png"></div>\n        <div class="programdesc" [innerHTML]="\'business-traveler\' | translate"></div>\n    </div>\n    \n           <div class="program opacity-50" (click)="selectPreSetProgram(\'family\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/family.png"></div>\n        <div class="programdesc" [innerHTML]="\'family-kit\' | translate"></div>\n    </div>\n    \n      <div class="program opacity-50" (click)="selectPreSetProgram(\'athlete\')" category-switcher="category-switcher" >\n        <div class="programpic"><img src="img/Athlete.png"></div>\n        <div class="programdesc" [innerHTML]="\'athlete\' | translate"></div>\n    </div>\n    \n         <div class="program opacity-50" (click)="selectPreSetProgram(\'spa\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/Spa.png"></div>\n        <div class="programdesc" [innerHTML]="\'spa-wellness\' | translate"><br><br></div>\n    </div>\n    \n    \n     <div class="program opacity-50" (click)="selectPreSetProgram(\'stress relief\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/stress.png"></div>\n        <div class="programdesc" [innerHTML]="\'stress-relief\' | translate"></div>\n    </div>\n    \n     \n        <div class="program opacity-50" (click)="selectPreSetProgram(\'senior\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/Senior.png"></div>\n        <div class="programdesc">SENIOR<br><br></div>\n    </div>\n    \n    \n        <div class="program opacity-50"  (click)="selectPreSetProgram(\'chakra balancing\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/chakra.png"></div>\n        <div class="programdesc" [innerHTML]="\'chakra-balancing\' | translate"></div>\n    </div>\n    \n        <div class="program opacity-50" (click)="selectPreSetProgram(\'elements\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/Elements.png"></div>\n        <div class="programdesc" [innerHTML]="\'elements-meridians\' | translate"><br></div>\n    </div>\n  \n    \n\n</div>\n                   \n</ion-scroll>\n\n\n<div class="modaltitle">{{ \'programs\' | translate }}</div>\n<div *ngFor="let routine of predefinedPrograms">\n\n{{ routine.name | translate }}\n<!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->\n\n<div class="paddingmodal">\n\n   \n    <ion-list (click)="addPrograms(routine.name, routine.programs[0].apiName, routine.programs[1].apiName, \n        routine.programs[2].apiName,routine.programs[3].apiName)">\n        \n        <ion-item *ngFor="let program of routine.programs" class="addiction">\n             {{ program.name | translate }}\n        </ion-item>\n\n\n    </ion-list>\n\n</div>\n\n</div>\n\n            \n            <div class="modaltitle">{{ \'independent-programs\' | translate }}</div>\n            <div class="modaldesc"> {{ \'tap-program\' | translate }}</div>\n            <div class="paddingmodal">\n<ion-list class="programlist">\n\n    \n  <!--<ion-item class="addiction" on-hold="moreProgramInfo(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.description)" ng-repeat="program in programs" (click)="addProgramToRoutine(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines" (click)="modal.hide()">\n{{program.fields.name}} </ion-item>-->\n    \n<ion-item class="addiction" on-hold="moreProgramInfo(\'\', program.name, program.runningtime, program.description)" *ngFor="let program of programs" (click)="add1Program(program.name, program.runningtime, program.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines">\n{{ program.name | translate }} </ion-item>\n    \n    \n</ion-list>\n            </div>\n           \n            <button class="bluebtn" (click)="hide()">{{ \'cancel\' | translate }}</button>\n          <br><br><br><br><br><br><br><br>\n        </ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/programs/programs.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
-    ], HelpPage);
-    return HelpPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__["a" /* RoutinesProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Events */]])
+    ], ProgramsPage);
+    return ProgramsPage;
 }());
 
-//# sourceMappingURL=help.js.map
+//# sourceMappingURL=programs.js.map
 
 /***/ }),
 
-/***/ 112:
+/***/ 113:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -222,7 +365,7 @@ var HelpPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__ = __webpack_require__(171);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__playing_playing__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__playing_playing__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -372,7 +515,7 @@ var WifiPage = (function () {
                         }, function (response) {
                             _this.current_status = response + '';
                         });
-                        _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__playing_playing__["a" /* PlayingPage */]);
+                        _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__playing_playing__["a" /* PlayingPage */]);
                     });
                     break;
             }
@@ -391,149 +534,6 @@ var WifiPage = (function () {
 }());
 
 //# sourceMappingURL=wifi.js.map
-
-/***/ }),
-
-/***/ 113:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(33);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-/**
- * Generated class for the ProgramsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ProgramsPage = (function () {
-    function ProgramsPage(navCtrl, navParams, routines, events) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.routines = routines;
-        this.events = events;
-        this.getPrograms('basic');
-        this.programs = __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs;
-        this.program = navParams.get('bubble');
-        this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble1).then(function (val) {
-            if (_this.program != 1 && val.length > 0) {
-                _this.programName1 = val.split('|')[1];
-            }
-            else {
-                _this.programName1 = '';
-            }
-        });
-        this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble2).then(function (val) {
-            if (_this.program != 2 && val.length > 0) {
-                _this.programName2 = val.split('|')[1];
-            }
-            else {
-                _this.programName2 = '';
-            }
-        });
-        this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble3).then(function (val) {
-            if (_this.program != 3 && val.length > 0) {
-                _this.programName3 = val.split('|')[1];
-            }
-            else {
-                _this.programName3 = '';
-            }
-        });
-        this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble4).then(function (val) {
-            if (_this.program != 4 && val.length > 0) {
-                _this.programName4 = val.split('|')[1];
-            }
-            else {
-                _this.programName4 = '';
-            }
-        });
-    }
-    ProgramsPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ProgramsPage');
-    };
-    ProgramsPage.prototype.selectPreSetProgram = function (category) {
-        this.getPrograms(category);
-    };
-    ProgramsPage.prototype.getProgram = function (name) {
-        for (var i = 0; i < __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs.length; i++) {
-            var program = __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs[i];
-            if (program.apiName == name)
-                return program;
-        }
-    };
-    ProgramsPage.prototype.getPrograms = function (category) {
-        var groups = [];
-        var groupIndex = 0;
-        for (var i = 0; i < __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Groups.length; i++) {
-            var group = __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Groups[i];
-            if (group.category == category) {
-                groups[groupIndex] = group;
-                for (var j = 0; j < group.programs.length; j++) {
-                    var program = group.programs[j];
-                    group.programs[j] = this.getProgram(program.apiName);
-                }
-                groupIndex++;
-            }
-        }
-        this.predefinedPrograms = groups;
-    };
-    ProgramsPage.prototype.addPrograms = function (routineName, program1, program2, program3, program4) {
-        var objProgram1 = this.getProgram(program1);
-        var objProgram2 = this.getProgram(program2);
-        var objProgram3 = this.getProgram(program3);
-        var objProgram4 = this.getProgram(program4);
-        this.routines.insertPreSetProgram(routineName, objProgram1, objProgram2, objProgram3, objProgram4);
-        this.navCtrl.pop();
-        var bubbleNames = [objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name];
-        this.routines.setPrograms(objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name);
-        this.events.publish("sharesBubbles", bubbleNames);
-    };
-    ProgramsPage.prototype.add1Program = function (programName, programRunningTime, programApiName) {
-        this.routines.addProgramToRoutine(this.program, '', programName, programRunningTime, programApiName);
-        this.programName1 = this.program == 1 ? programName : (this.programName1.length > 0 ? this.programName1 : '');
-        this.programName2 = this.program == 2 ? programName : (this.programName2.length > 0 ? this.programName2 : '');
-        this.programName3 = this.program == 3 ? programName : (this.programName3.length > 0 ? this.programName3 : '');
-        this.programName4 = this.program == 4 ? programName : (this.programName4.length > 0 ? this.programName4 : '');
-        this.routines.setPrograms(this.programName1, this.programName2, this.programName3, this.programName4);
-        var bubbleNames = [
-            this.programName1,
-            this.programName2,
-            this.programName3,
-            this.programName4
-        ];
-        this.events.publish("sharesBubbles", bubbleNames);
-        this.navCtrl.pop();
-    };
-    ProgramsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-programs',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/programs/programs.html"*/'<!--\n  Generated template for the ProgramsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Programs</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n        <ion-content padding>\n            <br>\n            <div class="modaltitle">{{ \'program-kits\' | translate }}</div>\n            <div class="modaldesc">{{ \'popular-routines\' | translate }}</div>\n            \n            \n            \n<ion-scroll scrollX="true" scrollY="false" class="wide-as-needed">\n  \n<div class="programs">\n\n    <div class="program" (click)="selectPreSetProgram(\'basic\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/Basic.png"></div>\n        <div class="programdesc" [innerHTML]="\'basic\' | translate"><br><br></div>\n    </div>\n    \n  \n\n\n        <div class="program opacity-50" (click)="selectPreSetProgram(\'business and travel\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/BusinessTraveller.png"></div>\n        <div class="programdesc" [innerHTML]="\'business-traveler\' | translate"></div>\n    </div>\n    \n           <div class="program opacity-50" (click)="selectPreSetProgram(\'family\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/family.png"></div>\n        <div class="programdesc" [innerHTML]="\'family-kit\' | translate"></div>\n    </div>\n    \n      <div class="program opacity-50" (click)="selectPreSetProgram(\'athlete\')" category-switcher="category-switcher" >\n        <div class="programpic"><img src="img/Athlete.png"></div>\n        <div class="programdesc" [innerHTML]="\'athlete\' | translate"></div>\n    </div>\n    \n         <div class="program opacity-50" (click)="selectPreSetProgram(\'spa\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/Spa.png"></div>\n        <div class="programdesc" [innerHTML]="\'spa-wellness\' | translate"><br><br></div>\n    </div>\n    \n    \n     <div class="program opacity-50" (click)="selectPreSetProgram(\'stress relief\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/stress.png"></div>\n        <div class="programdesc" [innerHTML]="\'stress-relief\' | translate"></div>\n    </div>\n    \n     \n        <div class="program opacity-50" (click)="selectPreSetProgram(\'senior\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/Senior.png"></div>\n        <div class="programdesc">SENIOR<br><br></div>\n    </div>\n    \n    \n        <div class="program opacity-50"  (click)="selectPreSetProgram(\'chakra balancing\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/chakra.png"></div>\n        <div class="programdesc" [innerHTML]="\'chakra-balancing\' | translate"></div>\n    </div>\n    \n        <div class="program opacity-50" (click)="selectPreSetProgram(\'elements\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/Elements.png"></div>\n        <div class="programdesc" [innerHTML]="\'elements-meridians\' | translate"><br></div>\n    </div>\n  \n    \n\n</div>\n                   \n</ion-scroll>\n\n\n<div class="modaltitle">{{ \'programs\' | translate }}</div>\n<div *ngFor="let routine of predefinedPrograms">\n\n{{ routine.name | translate }}\n<!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->\n\n<div class="paddingmodal">\n\n   \n    <ion-list (click)="addPrograms(routine.name, routine.programs[0].apiName, routine.programs[1].apiName, \n        routine.programs[2].apiName,routine.programs[3].apiName)">\n        \n        <ion-item *ngFor="let program of routine.programs" class="addiction">\n             {{ program.name | translate }}\n        </ion-item>\n\n\n    </ion-list>\n\n</div>\n\n</div>\n\n            \n            <div class="modaltitle">{{ \'independent-programs\' | translate }}</div>\n            <div class="modaldesc"> {{ \'tap-program\' | translate }}</div>\n            <div class="paddingmodal">\n<ion-list class="programlist">\n\n    \n  <!--<ion-item class="addiction" on-hold="moreProgramInfo(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.description)" ng-repeat="program in programs" (click)="addProgramToRoutine(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines" (click)="modal.hide()">\n{{program.fields.name}} </ion-item>-->\n    \n<ion-item class="addiction" on-hold="moreProgramInfo(\'\', program.name, program.runningtime, program.description)" *ngFor="let program of programs" (click)="add1Program(program.name, program.runningtime, program.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines">\n{{ program.name | translate }} </ion-item>\n    \n    \n</ion-list>\n            </div>\n           \n            <button class="bluebtn" (click)="hide()">{{ \'cancel\' | translate }}</button>\n          <br><br><br><br><br><br><br><br>\n        </ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/programs/programs.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__["a" /* RoutinesProvider */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Events */]])
-    ], ProgramsPage);
-    return ProgramsPage;
-}());
-
-//# sourceMappingURL=programs.js.map
 
 /***/ }),
 
@@ -563,19 +563,19 @@ var map = {
 		4
 	],
 	"../pages/help/help.module": [
-		307,
+		306,
 		3
 	],
 	"../pages/playing/playing.module": [
-		306,
+		307,
 		2
 	],
 	"../pages/programs/programs.module": [
-		309,
+		308,
 		1
 	],
 	"../pages/wifi/wifi.module": [
-		308,
+		309,
 		0
 	]
 };
@@ -601,10 +601,10 @@ module.exports = webpackAsyncContext;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return APIServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_constants__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_network__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(279);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -679,9 +679,9 @@ var APIServiceProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_programs__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wifi_wifi__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_routines_routines__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_programs__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wifi_wifi__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_routines_routines__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_constants__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(52);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -871,21 +871,21 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__(297);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(302);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__(304);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_home__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_help_help__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_help_help__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_contact_contact__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_programs_programs__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_wifi_wifi__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_playing_playing__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_programs_programs__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_wifi_wifi__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_playing_playing__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_status_bar__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_splash_screen__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_routines_routines__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_routines_routines__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_api_service_api_service__ = __webpack_require__(171);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -937,10 +937,10 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/playing/playing.module#PlayingPageModule', name: 'PlayingPage', segment: 'playing', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/help/help.module#HelpPageModule', name: 'HelpPage', segment: 'help', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/wifi/wifi.module#WifiPageModule', name: 'WifiPage', segment: 'wifi', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/programs/programs.module#ProgramsPageModule', name: 'ProgramsPage', segment: 'programs', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/playing/playing.module#PlayingPageModule', name: 'PlayingPage', segment: 'playing', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/programs/programs.module#ProgramsPageModule', name: 'ProgramsPage', segment: 'programs', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/wifi/wifi.module#WifiPageModule', name: 'WifiPage', segment: 'wifi', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
@@ -979,7 +979,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 279:
+/***/ 269:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3812,7 +3812,7 @@ var Data = { Groups: [
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_help_help__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_help_help__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contact_contact__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ngx_translate_core__ = __webpack_require__(52);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3967,12 +3967,12 @@ var Constants = {
 
 /***/ }),
 
-/***/ 87:
+/***/ 84:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoutinesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

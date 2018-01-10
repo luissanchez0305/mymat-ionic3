@@ -163,7 +163,7 @@ export class WifiPage {
               this.current_status = response + '';
             });
             
-            this.navCtrl.push(PlayingPage);
+            this.navCtrl.setRoot(PlayingPage);
           });
           break;
       }
