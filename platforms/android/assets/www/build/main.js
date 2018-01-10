@@ -504,22 +504,22 @@ var WifiPage = (function () {
                 case 4:
                     this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble4).then(function (val) {
                         program4Obj = val;
+                        var programs = [
+                            program1Obj,
+                            program2Obj,
+                            program3Obj,
+                            program4Obj
+                        ];
+                        _this.apiService.start(programs).then(function (response) {
+                            _this.current_status = response + '';
+                        }, function (response) {
+                            _this.current_status = response + '';
+                        });
+                        _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__playing_playing__["a" /* PlayingPage */]);
                     });
                     break;
             }
         }
-        var programs = [
-            program1Obj,
-            program2Obj,
-            program3Obj,
-            program4Obj
-        ];
-        this.apiService.start(programs).then(function (response) {
-            _this.current_status = response + '';
-        }, function (response) {
-            _this.current_status = response + '';
-        });
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__playing_playing__["a" /* PlayingPage */]);
     };
     WifiPage.prototype.stop = function () {
         clearInterval(this.testInterval);

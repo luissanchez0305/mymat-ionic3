@@ -149,25 +149,25 @@ export class WifiPage {
         case 4:
           this.storage.get(Constants.storageKeyBubble4).then((val) => {
             program4Obj = val;
+    
+            var programs = [
+                program1Obj,
+                program2Obj,
+                program3Obj,
+                program4Obj
+            ];
+            
+            this.apiService.start(programs).then((response) => {
+              this.current_status = response + '';
+            }, (response) =>{
+              this.current_status = response + '';
+            });
+            
+            this.navCtrl.push(PlayingPage);
           });
           break;
       }
     }
-    
-    var programs = [
-        program1Obj,
-        program2Obj,
-        program3Obj,
-        program4Obj
-    ];
-    
-    this.apiService.start(programs).then((response) => {
-      this.current_status = response + '';
-    }, (response) =>{
-      this.current_status = response + '';
-    });
-    
-    this.navCtrl.push(PlayingPage);
   }
   
   stop(){
