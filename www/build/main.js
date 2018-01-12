@@ -204,7 +204,8 @@ var PlayingPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-playing',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/playing/playing.html"*/'<!--\n  Generated template for the PlayingPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <div class="list card">\n      <div class="item">\n\n          <h2>{{ \'running-time\' | translate }} </h2>\n          <h3 style="color:white;">{{ displayRunningTime }}</h3>\n       \n      </div>\n\n      <div class="item item-body">\n          <div class="program-running-left">\n            <div class="program-running-title">{{ programTitle1 }}</div>\n            <div class="program-running-duration">{{ program1CurrentTimeDecreasingAsTime }}</div>\n          </div>\n      </div>\n      \n      <div class="item item-body">\n          <div class="program-running-left">\n            <div class="program-running-title">{{ programTitle2 }}</div>\n            <div class="program-running-duration">{{  program2CurrentTimeDecreasingAsTime }}</div>\n          </div>\n      </div>\n\n       <div class="item item-body">\n          <div class="program-running-left">\n            <div class="program-running-title">{{ programTitle3 }}</div>\n            <div class="program-running-duration">{{  program3CurrentTimeDecreasingAsTime }}</div>\n          </div>\n      </div>\n      \n      <div class="item item-body">\n          <div class="program-running-left">\n            <div class="program-running-title">{{ programTitle4 }}</div>\n            <div class="program-running-duration">{{  program4CurrentTimeDecreasingAsTime }}</div>\n          </div>\n      </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/playing/playing.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */]])
     ], PlayingPage);
     return PlayingPage;
 }());
@@ -220,7 +221,7 @@ var PlayingPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(268);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -364,7 +365,7 @@ var ProgramsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__playing_playing__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -405,18 +406,20 @@ var WifiPage = (function () {
         this.mymatWifi = true;
         this.intervalCount = 0;
         // check if mymat is connected
-        this.current_status = 'ready';
         var myMatTest = this.apiService.test();
         myMatTest.then(function (response) {
-            _this.current_status = 'test resolved';
-            // if is connected quitar imagen, textos y loading y poner status del mat
-            if (_this.verifyValues(response)) {
-                _this.showStatus();
-            }
-        }, function (response) {
-            _this.failVerification();
-            _this.current_status = 'fail test';
+            _this.current_status = response;
         });
+        /*myMatTest.then((response) => {
+            this.current_status = 'test resolved';
+            // if is connected quitar imagen, textos y loading y poner status del mat
+            if(this.verifyValues(response)){
+              this.showStatus();
+            }
+        }, (response) => {
+            this.failVerification();
+            this.current_status = 'fail test';
+        });*/
     };
     WifiPage.prototype.showNoStatus = function () {
         this.mymatNoStatus = true;
@@ -466,16 +469,19 @@ var WifiPage = (function () {
             // timeout of mymat detection 180 segundos
             var failMyMatTest = _this.apiService.test();
             failMyMatTest.then(function (response) {
-                _this.current_status = 'test resolved 2';
-                if (_this.verifyValues(response)) {
-                    _this.showStatus();
-                }
-            }, function (response) {
-                if (_this.intervalCount >= 60) {
-                    _this.showNoStatus();
-                    _this.current_status = 'fail test 2';
-                }
+                _this.current_status = response;
             });
+            /*failMyMatTest.then((response) => {
+              this.current_status = 'test resolved 2';
+              if(this.verifyValues(response)){
+                this.showStatus();
+              }
+            }, (response) => {
+              if(this.intervalCount >= 60){
+                this.showNoStatus();
+                this.current_status = 'fail test 2';
+              }
+            });*/
             _this.intervalCount += 1;
         }, 3000);
     };
@@ -538,7 +544,7 @@ var WifiPage = (function () {
 
 /***/ }),
 
-/***/ 126:
+/***/ 125:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -551,32 +557,32 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 126;
+webpackEmptyAsyncContext.id = 125;
 
 /***/ }),
 
-/***/ 168:
+/***/ 167:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/contact/contact.module": [
-		305,
+		304,
 		4
 	],
 	"../pages/help/help.module": [
-		306,
+		305,
 		3
 	],
 	"../pages/playing/playing.module": [
-		307,
+		306,
 		2
 	],
 	"../pages/programs/programs.module": [
-		308,
+		307,
 		1
 	],
 	"../pages/wifi/wifi.module": [
-		309,
+		308,
 		0
 	]
 };
@@ -591,12 +597,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 168;
+webpackAsyncContext.id = 167;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 171:
+/***/ 170:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -604,8 +610,8 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_constants__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_network__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_network_interface__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(278);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -628,20 +634,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
   and Angular DI.
 */
 var APIServiceProvider = (function () {
-    function APIServiceProvider(http, network) {
+    function APIServiceProvider(http, networkInterface) {
         this.http = http;
-        this.network = network;
+        this.networkInterface = networkInterface;
     }
     APIServiceProvider.prototype.test = function () {
+        /*return new Promise((resolve, reject) => {
+          this.http.get(Constants.myMatApiAddress)
+          .map(res => res.text())
+          .subscribe(res => {
+            resolve(res);
+          }, (err) => {
+            reject(err);
+          });
+        });*/
         var _this = this;
         return new Promise(function (resolve, reject) {
-            _this.http.get(__WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiAddress)
-                .map(function (res) { return res.text(); })
-                .subscribe(function (res) {
-                resolve(res);
-            }, function (err) {
-                reject(err);
-            });
+            resolve(_this.networkInterface.getWiFiIPAddress());
         });
     };
     APIServiceProvider.prototype.start = function (programs) {
@@ -663,7 +672,7 @@ var APIServiceProvider = (function () {
     };
     APIServiceProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_network__["a" /* Network */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_network_interface__["a" /* NetworkInterface */]])
     ], APIServiceProvider);
     return APIServiceProvider;
 }());
@@ -672,7 +681,7 @@ var APIServiceProvider = (function () {
 
 /***/ }),
 
-/***/ 215:
+/***/ 213:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -848,13 +857,13 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 216:
+/***/ 214:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(234);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -862,7 +871,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 235:
+/***/ 234:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -873,21 +882,20 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__(297);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(302);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__(304);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_home_home__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_help_help__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_contact_contact__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_programs_programs__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_wifi_wifi__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_playing_playing__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_status_bar__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_splash_screen__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_routines_routines__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_api_service_api_service__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_http_loader__ = __webpack_require__(301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_help_help__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_programs_programs__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_wifi_wifi__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_playing_playing__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_status_bar__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_splash_screen__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_routines_routines__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_api_service_api_service__ = __webpack_require__(170);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -913,9 +921,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
 function HttpLoaderFactory(http) {
-    return new __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http);
+    return new __WEBPACK_IMPORTED_MODULE_7__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http);
 }
 var AppModule = (function () {
     function AppModule() {
@@ -923,19 +930,19 @@ var AppModule = (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_help_help__["a" /* HelpPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_contact_contact__["a" /* ContactPage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_programs_programs__["a" /* ProgramsPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_wifi_wifi__["a" /* WifiPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_playing_playing__["a" /* PlayingPage */]
+                __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_help_help__["a" /* HelpPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__["a" /* ContactPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_programs_programs__["a" /* ProgramsPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_wifi_wifi__["a" /* WifiPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_playing_playing__["a" /* PlayingPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* HttpModule */],
-                __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["b" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_5__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/help/help.module#HelpPageModule', name: 'HelpPage', segment: 'help', priority: 'low', defaultHistory: [] },
@@ -945,31 +952,30 @@ var AppModule = (function () {
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["b" /* TranslateModule */].forRoot({
+                __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["b" /* TranslateModule */].forRoot({
                     loader: {
-                        provide: __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["a" /* TranslateLoader */],
+                        provide: __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["a" /* TranslateLoader */],
                         useFactory: HttpLoaderFactory,
-                        deps: [__WEBPACK_IMPORTED_MODULE_6__angular_common_http__["a" /* HttpClient */]]
+                        deps: [__WEBPACK_IMPORTED_MODULE_5__angular_common_http__["a" /* HttpClient */]]
                     }
                 })
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["b" /* IonicApp */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_10__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_help_help__["a" /* HelpPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_contact_contact__["a" /* ContactPage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_programs_programs__["a" /* ProgramsPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_wifi_wifi__["a" /* WifiPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_playing_playing__["a" /* PlayingPage */]
+                __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_9__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_help_help__["a" /* HelpPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__["a" /* ContactPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_programs_programs__["a" /* ProgramsPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_wifi_wifi__["a" /* WifiPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_playing_playing__["a" /* PlayingPage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_16__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__["a" /* Network */],
-                __WEBPACK_IMPORTED_MODULE_17__ionic_native_splash_screen__["a" /* SplashScreen */],
-                __WEBPACK_IMPORTED_MODULE_18__providers_routines_routines__["a" /* RoutinesProvider */],
+                __WEBPACK_IMPORTED_MODULE_15__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_16__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_17__providers_routines_routines__["a" /* RoutinesProvider */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["c" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_19__providers_api_service_api_service__["a" /* APIServiceProvider */]
+                __WEBPACK_IMPORTED_MODULE_18__providers_api_service_api_service__["a" /* APIServiceProvider */]
             ]
         })
     ], AppModule);
@@ -980,7 +986,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 269:
+/***/ 268:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3801,18 +3807,18 @@ var Data = { Groups: [
 
 /***/ }),
 
-/***/ 304:
+/***/ 303:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_help_help__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contact_contact__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ngx_translate_core__ = __webpack_require__(52);
@@ -4102,5 +4108,5 @@ var RoutinesProvider = (function () {
 
 /***/ })
 
-},[216]);
+},[214]);
 //# sourceMappingURL=main.js.map

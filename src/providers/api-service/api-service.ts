@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { Constants } from '../../services/constants';
-import { Network } from '@ionic-native/network';
+import { NetworkInterface } from '@ionic-native/network-interface';
 import 'rxjs/add/operator/map';
 
 /*
@@ -12,11 +12,11 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class APIServiceProvider {
-  constructor(public http: Http, private network: Network) {
+  constructor(public http: Http, private networkInterface: NetworkInterface) {
     
   }
   test(){
-    return new Promise((resolve, reject) => {
+    /*return new Promise((resolve, reject) => {
       this.http.get(Constants.myMatApiAddress)
       .map(res => res.text())
       .subscribe(res => {
@@ -24,6 +24,10 @@ export class APIServiceProvider {
       }, (err) => {
         reject(err);
       });
+    });*/
+    
+    return new Promise((resolve, reject) => { 
+      resolve (this.networkInterface.getWiFiIPAddress());
     });
   }
   start(programs){

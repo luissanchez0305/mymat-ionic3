@@ -41,6 +41,14 @@ module.exports = [
     "clobbers": [
       "Connection"
     ]
+  },
+  {
+    "id": "cordova-plugin-networkinterface.networkinterface",
+    "file": "plugins/cordova-plugin-networkinterface/www/networkinterface.js",
+    "pluginId": "cordova-plugin-networkinterface",
+    "clobbers": [
+      "window.networkinterface"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -51,7 +59,8 @@ module.exports.metadata =
   "cordova-plugin-splashscreen": "4.0.3",
   "cordova-plugin-whitelist": "1.3.1",
   "ionic-plugin-keyboard": "2.2.1",
-  "cordova-plugin-network-information": "2.0.1"
+  "cordova-plugin-network-information": "2.0.1",
+  "cordova-plugin-networkinterface": "1.2.0"
 };
 // BOTTOM OF METADATA
 });

@@ -18,6 +18,9 @@
     <feature name="NetworkStatus">
         <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
     </feature>
+    <feature name="networkinterface">
+        <param name="android-package" value="com.albahra.plugin.networkinterface.networkinterface" />
+    </feature>
     <name>MyMat - Light</name>
     <description>MyMat 8</description>
     <author email="lsanchez@esferasoluciones.com" href="https://www.esferasoluciones.com">

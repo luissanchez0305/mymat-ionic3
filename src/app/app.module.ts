@@ -3,7 +3,6 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicStorageModule } from '@ionic/storage';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpModule } from '@angular/http';
-import { Network } from '@ionic-native/network';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -61,7 +60,6 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   providers: [
     StatusBar,
-    Network,
     SplashScreen,
     RoutinesProvider,
     { provide: ErrorHandler, useClass: IonicErrorHandler },

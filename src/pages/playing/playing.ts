@@ -27,7 +27,8 @@ export class PlayingPage {
   public programTitle4 : string;
   public displayRunningTime : string;
   
-  constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage, public translateService: TranslateService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage, 
+    public translateService: TranslateService) {
   }
 
   ionViewDidLoad() {

@@ -42,6 +42,7 @@
 		9E4A4FF4460F49FC97A4737E /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BB3CA813564453B1259313 /* CDVReachability.m */; };
 		1F2848BEFD8F4AAF86BBBD73 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E611A74CFB4D51BEE5CFFF /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1721B19C0CC6427B88C11F94 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD6E1BF07E545849F67FD7E /* CoreTelephony.framework */; };
+		E220FDBFCA144A4FA91ED102 /* CDVNetworkInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = FC79273D9D184715BE7161A1 /* CDVNetworkInterface.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,8 @@
 		1FC4700D8BE942C782D7DFAE /* CDVReachability.h */ = {isa = PBXFileReference; name = "CDVReachability.h"; path = "cordova-plugin-network-information/CDVReachability.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		E3E611A74CFB4D51BEE5CFFF /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		DCD6E1BF07E545849F67FD7E /* CoreTelephony.framework */ = {isa = PBXFileReference; name = "CoreTelephony.framework"; path = "System/Library/Frameworks/CoreTelephony.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		FC79273D9D184715BE7161A1 /* CDVNetworkInterface.m */ = {isa = PBXFileReference; name = "CDVNetworkInterface.m"; path = "cordova-plugin-networkinterface/CDVNetworkInterface.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		02CD8888AC0141DBA979A284 /* CDVNetworkInterface.h */ = {isa = PBXFileReference; name = "CDVNetworkInterface.h"; path = "cordova-plugin-networkinterface/CDVNetworkInterface.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +292,8 @@
 				B5BB3CA813564453B1259313 /* CDVReachability.m */,
 				86FCBAE010ED40528BE7CE64 /* CDVConnection.h */,
 				1FC4700D8BE942C782D7DFAE /* CDVReachability.h */,
+				FC79273D9D184715BE7161A1 /* CDVNetworkInterface.m */,
+				02CD8888AC0141DBA979A284 /* CDVNetworkInterface.h */,
 			);
 			name = Plugins;
 			path = "MyMat - Light/Plugins";
@@ -423,6 +428,7 @@
 				4BDB7401672146529E8D3452 /* IonicKeyboard.m in Sources */,
 				56F363FD605E41068A895689 /* CDVConnection.m in Sources */,
 				9E4A4FF4460F49FC97A4737E /* CDVReachability.m in Sources */,
+				E220FDBFCA144A4FA91ED102 /* CDVNetworkInterface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

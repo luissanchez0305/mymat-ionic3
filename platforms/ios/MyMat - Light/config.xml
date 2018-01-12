@@ -36,6 +36,9 @@
     <feature name="NetworkStatus">
         <param name="ios-package" value="CDVConnection" />
     </feature>
+    <feature name="networkinterface">
+        <param name="ios-package" onload="true" value="CDVNetworkInterface" />
+    </feature>
     <name>MyMat - Light</name>
     <description>MyMat 8</description>
     <author email="lsanchez@esferasoluciones.com" href="https://www.esferasoluciones.com">
