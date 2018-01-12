@@ -407,7 +407,7 @@ var WifiPage = (function () {
     WifiPage.prototype.ionViewDidLoad = function () {
         this.mymatWifi = true;
         this.intervalCount = 0;
-        this.current_status = this.networkInterface.getWiFiIPAddress();
+        this.current_status = this.networkInterface.getIPAddress();
         this.failVerification();
         // check if mymat is connected
         /*var myMatTest = this.apiService.test();
@@ -467,7 +467,7 @@ var WifiPage = (function () {
     WifiPage.prototype.failVerification = function () {
         var _this = this;
         this.testInterval = setInterval(function () {
-            _this.current_status = _this.networkInterface.getWiFiIPAddress();
+            _this.current_status = _this.networkInterface.getIPAddress();
             // timeout of mymat detection 180 segundos
             /*var failMyMatTest = this.apiService.test();
             failMyMatTest.then((response) => {

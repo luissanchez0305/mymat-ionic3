@@ -44,7 +44,7 @@ export class WifiPage {
   ionViewDidLoad() {
     this.mymatWifi = true;
     this.intervalCount = 0;
-    this.current_status = this.networkInterface.getWiFiIPAddress();
+    this.current_status = this.networkInterface.getIPAddress();
     this.failVerification();
     // check if mymat is connected
     /*var myMatTest = this.apiService.test();
@@ -109,7 +109,7 @@ export class WifiPage {
   
   failVerification(){
     this.testInterval = setInterval(() => {
-      this.current_status = this.networkInterface.getWiFiIPAddress();
+      this.current_status = this.networkInterface.getIPAddress();
       // timeout of mymat detection 180 segundos
       /*var failMyMatTest = this.apiService.test();
       failMyMatTest.then((response) => {
