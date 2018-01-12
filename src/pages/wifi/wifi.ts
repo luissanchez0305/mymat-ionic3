@@ -4,6 +4,7 @@ import { Storage } from '@ionic/storage';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { PlayingPage } from '../playing/playing';
 import { Constants } from '../../services/constants';
+import { NetworkInterface } from '@ionic-native/network-interface';
 
 /**
  * Generated class for the WifiPage page.
@@ -32,7 +33,8 @@ export class WifiPage {
   public intervalCount : number = 0;
   public current_status : any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider,
+    public networkInterface : NetworkInterface) {
     this.coilText = 'Antena';
   }
   
@@ -41,6 +43,11 @@ export class WifiPage {
   }
 
   ionViewDidLoad() {
+    this.networkInterface.getWiFiIPAddress().then((response)=>{
+      alert(response);
+    },(response)=>{
+      alert('error ' + response);
+    });
     this.mymatWifi = true;
     this.intervalCount = 0;
     // check if mymat is connected
