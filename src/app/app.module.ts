@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { NetworkInterface } from '@ionic-native/network-interface';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -63,7 +62,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     StatusBar,
     SplashScreen,
     RoutinesProvider,
-    NetworkInterface,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     APIServiceProvider
   ]
