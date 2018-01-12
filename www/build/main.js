@@ -406,27 +406,33 @@ var WifiPage = (function () {
     };
     WifiPage.prototype.ionViewDidLoad = function () {
         var _this = this;
-        this.networkInterface.getCarrierIPAddress().then(function (response) {
-            alert(response);
+        this.showStartButton = false;
+        this.networkInterface.getWiFiIPAddress().then(function (response) {
+            if (response == __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress) {
+                _this.showIPButton();
+            }
+            else
+                _this.failIPVerification();
         }, function (response) {
-            alert('error ' + response);
+            _this.failIPVerification();
         });
         this.mymatWifi = true;
         this.intervalCount = 0;
+    };
+    WifiPage.prototype.showIPButton = function () {
+        var _this = this;
+        this.showStartButton = true;
         // check if mymat is connected
-        this.current_status = 'ready';
         var myMatTest = this.apiService.test();
         myMatTest.then(function (response) {
-            console.log(response);
             // if is connected quitar imagen, textos y loading y poner status del mat
             if (_this.verifyValues(response)) {
                 _this.showStatus();
             }
             else
-                _this.failVerification();
+                _this.failStatusVerification();
         }, function (response) {
-            _this.failVerification();
-            _this.current_status = 'fail test';
+            _this.failStatusVerification();
         });
     };
     WifiPage.prototype.showNoStatus = function () {
@@ -435,7 +441,8 @@ var WifiPage = (function () {
     WifiPage.prototype.showStatus = function () {
         this.mymatWifi = false;
         this.mymatStatus = true;
-        clearInterval(this.testInterval);
+        clearInterval(this.testStatusInterval);
+        clearInterval(this.testIPInterval);
     };
     WifiPage.prototype.verifyValues = function (response) {
         if (response.indexOf("<p><h4>Power: ") > -1) {
@@ -471,9 +478,18 @@ var WifiPage = (function () {
             return false;
         }
     };
-    WifiPage.prototype.failVerification = function () {
+    WifiPage.prototype.failIPVerification = function () {
         var _this = this;
-        this.testInterval = setInterval(function () {
+        this.testIPInterval = setInterval(function () {
+            _this.networkInterface.getWiFiIPAddress().then(function (response) {
+                if (response == __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress)
+                    _this.showIPButton();
+            });
+        }, 3000);
+    };
+    WifiPage.prototype.failStatusVerification = function () {
+        var _this = this;
+        this.testStatusInterval = setInterval(function () {
             // timeout of mymat detection 180 segundos
             var failMyMatTest = _this.apiService.test();
             failMyMatTest.then(function (response) {
@@ -484,7 +500,6 @@ var WifiPage = (function () {
             }, function (response) {
                 if (_this.intervalCount >= 60) {
                     _this.showNoStatus();
-                    _this.current_status = 'fail test 2';
                 }
             });
             _this.intervalCount += 1;
@@ -492,6 +507,8 @@ var WifiPage = (function () {
     };
     WifiPage.prototype.startRoutine = function () {
         var _this = this;
+        clearInterval(this.testStatusInterval);
+        clearInterval(this.testIPInterval);
         var program1Obj;
         var program2Obj;
         var program3Obj;
@@ -523,9 +540,9 @@ var WifiPage = (function () {
                             program4Obj
                         ];
                         _this.apiService.start(programs).then(function (response) {
-                            _this.current_status = response + '';
+                            console.log(response + '');
                         }, function (response) {
-                            _this.current_status = response + '';
+                            console.log(response + '');
                         });
                         _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__playing_playing__["a" /* PlayingPage */]);
                     });
@@ -534,11 +551,12 @@ var WifiPage = (function () {
         }
     };
     WifiPage.prototype.stop = function () {
-        clearInterval(this.testInterval);
+        clearInterval(this.testStatusInterval);
+        clearInterval(this.testIPInterval);
     };
     WifiPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-wifi',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/'<!--\n  Generated template for the WifiPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n        <br>\n        <div *ngIf="mymatWifi">\n            <img src="img/wifi.png">\n            <div class="titleinstructions" [innerHTML]="\'please-pair\' | translate"></div>\n            <br>  \n            <p [innerHTML]="\'activate-wifi\' | translate">Steps to pair your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-1\' | translate">1. Turn on your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-2\' | translate">2. On your device, navigate to your Wi-Fi settings</p>\n            <p [innerHTML]="\'activate-wifi-3\' | translate">3. Connect your device\'s WiFi with your MyMat network</p>\n            <p [innerHTML]="\'activate-wifi-4\' | translate">4. Once is connected, return to the MyMat app</p>\n            <!--<p class="interval-counter">0</p>-->\n        <div>\n        {{ current_status }}\n        </div>\n            <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="\'tart-routine\' | translate">LAUNCH MYMAT</a>\n            <br/>\n            <div *ngIf="mymatNoStatus">\n                <p [innerHTML]="\'no-detect-1\' | translate">We were unable to detect your MyMat</p>\n                <p [innerHTML]="\'no-detect-2\' | translate">Please follow the steps to do so</p>\n            </div>\n            <img src="img/loading.gif" width="200" />\n        </div>\n        <div *ngIf="mymatStatus">\n            <div class="status-table divTable">\n                <div class="divTableHeading">\n                    <div class="divTableRow">\n                        <div class="divTableHead divTableCellFirstLeft">\n                            <h4 [innerHTML]="\'battery-power\' | translate"></h4>\n                        </div>\n                        <div class="divTableHead divTableCellFirstRight">\n                            <h4 id="battery">{{ batteryCharge }} <img src="{{ batteryImg }}" height="16"></h4>\n                            \n                        </div>\n                    </div>\n                </div>\n                <div class="divTableBody">\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 1</div>\n                        <div class="divTableCell" id="coil1">{{ coilText1 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd">{{ coilText }} 2</div>\n                        <div class="divTableCell coilOdd" id="coil2">{{ coilText2 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 3</div>\n                        <div class="divTableCell" id="coil3">{{ coilText3 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd divTableCellLastLeft">{{ coilText }} 4</div>\n                        <div class="divTableCell coilOdd divTableCellLastRight" id="coil4">{{ coilText4 }}</div>\n                    </div>\n                </div>\n            </div>\n            <p>&nbsp;</p>\n            <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="\'tart-routine\' | translate">LAUNCH MYMAT</a>\n        </div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/,
+            selector: 'page-wifi',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/'<!--\n  Generated template for the WifiPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n        <br>\n        <div *ngIf="mymatWifi">\n            <img src="img/wifi.png">\n            <div class="titleinstructions" [innerHTML]="\'please-pair\' | translate"></div>\n            <br>  \n            <p [innerHTML]="\'activate-wifi\' | translate">Steps to pair your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-1\' | translate">1. Turn on your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-2\' | translate">2. On your device, navigate to your Wi-Fi settings</p>\n            <p [innerHTML]="\'activate-wifi-3\' | translate">3. Connect your device\'s WiFi with your MyMat network</p>\n            <p [innerHTML]="\'activate-wifi-4\' | translate">4. Once is connected, return to the MyMat app</p>\n            <!--<p class="interval-counter">0</p>-->\n            <a *ngIf="showStartButton" class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="\'start-routine\' | translate">LAUNCH MYMAT</a>\n            <br/>\n            <div *ngIf="mymatNoStatus">\n                <p [innerHTML]="\'no-detect-1\' | translate">We were unable to detect your MyMat</p>\n                <p [innerHTML]="\'no-detect-2\' | translate">Please follow the steps to do so</p>\n            </div>\n            <img src="img/loading.gif" width="200" />\n        </div>\n        <div *ngIf="mymatStatus">\n            <div class="status-table divTable">\n                <div class="divTableHeading">\n                    <div class="divTableRow">\n                        <div class="divTableHead divTableCellFirstLeft">\n                            <h4 [innerHTML]="\'battery-power\' | translate"></h4>\n                        </div>\n                        <div class="divTableHead divTableCellFirstRight">\n                            <h4 id="battery">{{ batteryCharge }} <img src="{{ batteryImg }}" height="16"></h4>\n                            \n                        </div>\n                    </div>\n                </div>\n                <div class="divTableBody">\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 1</div>\n                        <div class="divTableCell" id="coil1">{{ coilText1 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd">{{ coilText }} 2</div>\n                        <div class="divTableCell coilOdd" id="coil2">{{ coilText2 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 3</div>\n                        <div class="divTableCell" id="coil3">{{ coilText3 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd divTableCellLastLeft">{{ coilText }} 4</div>\n                        <div class="divTableCell coilOdd divTableCellLastRight" id="coil4">{{ coilText4 }}</div>\n                    </div>\n                </div>\n            </div>\n            <p>&nbsp;</p>\n            <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="\'start-routine\' | translate">LAUNCH MYMAT</a>\n        </div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__["a" /* APIServiceProvider */],
             __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__["a" /* NetworkInterface */]])
@@ -3965,6 +3983,7 @@ var MyApp = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Constants; });
 var Constants = {
+    localIPAddress: '192.168.0.100',
     myMatApiUrl: 'http://192.168.1.3/start.htm',
     myMatApiAddress: 'http://192.168.1.3/index.htm',
     storageKeyLang: 'mymat_lang',

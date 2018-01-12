@@ -1,4 +1,5 @@
 export var Constants = { 
+    localIPAddress: '192.168.0.100',
   	myMatApiUrl:'http://192.168.1.3/start.htm',
     myMatApiAddress : 'http://192.168.1.3/index.htm',
     storageKeyLang : 'mymat_lang',

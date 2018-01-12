@@ -19,7 +19,9 @@ import { NetworkInterface } from '@ionic-native/network-interface';
   templateUrl: 'wifi.html',
 })
 export class WifiPage {
-  public testInterval : any;
+  public testIPInterval : any;
+  public testStatusInterval : any;
+  public intervalCount : number = 0;
   public mymatStatus : boolean;
   public mymatWifi : boolean;
   public mymatNoStatus : boolean;
@@ -30,8 +32,7 @@ export class WifiPage {
   public coilText2 : string;
   public coilText3 : string;
   public coilText4 : string;
-  public intervalCount : number = 0;
-  public current_status : any;
+  public showStartButton : boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider,
     public networkInterface : NetworkInterface) {
@@ -43,28 +44,35 @@ export class WifiPage {
   }
 
   ionViewDidLoad() {
-    this.networkInterface.getCarrierIPAddress().then((response)=>{
-      alert(response);
+    this.showStartButton = false;
+    this.networkInterface.getWiFiIPAddress().then((response)=>{
+      if(response == Constants.localIPAddress){
+        this.showIPButton();
+      }
+      else
+        this.failIPVerification();
     },(response)=>{
-      alert('error ' + response);
+      this.failIPVerification();
     });
     this.mymatWifi = true;
     this.intervalCount = 0;
-    // check if mymat is connected
-    this.current_status = 'ready';
-    var myMatTest = this.apiService.test();
-    myMatTest.then((response) => {
-        console.log(response);
+  }
+  
+  showIPButton(){
+      this.showStartButton = true;
+      
+      // check if mymat is connected
+      var myMatTest = this.apiService.test();
+      myMatTest.then((response) => {
         // if is connected quitar imagen, textos y loading y poner status del mat
         if(this.verifyValues(response)){
           this.showStatus();
         }
         else
-          this.failVerification();
-    }, (response) => {
-        this.failVerification();
-        this.current_status = 'fail test';
-    });
+          this.failStatusVerification();
+      }, (response) => {
+        this.failStatusVerification();
+      });
   }
     
   showNoStatus(){
@@ -74,7 +82,8 @@ export class WifiPage {
   showStatus(){
       this.mymatWifi = false;
       this.mymatStatus = true;
-      clearInterval(this.testInterval);
+      clearInterval(this.testStatusInterval);
+      clearInterval(this.testIPInterval);
   }
   
   verifyValues(response){
@@ -114,8 +123,17 @@ export class WifiPage {
       }
   }
   
-  failVerification(){
-    this.testInterval = setInterval(() => {
+  failIPVerification(){
+      this.testIPInterval = setInterval(() => {
+        this.networkInterface.getWiFiIPAddress().then((response)=>{
+            if(response == Constants.localIPAddress)
+              this.showIPButton();
+          });
+      }, 3000);
+  }
+  
+  failStatusVerification(){
+    this.testStatusInterval = setInterval(() => {
       // timeout of mymat detection 180 segundos
       var failMyMatTest = this.apiService.test();
       failMyMatTest.then((response) => {
@@ -126,7 +144,6 @@ export class WifiPage {
       }, (response) => {
         if(this.intervalCount >= 60){
           this.showNoStatus();
-          this.current_status = 'fail test 2';
         }
       });
       this.intervalCount += 1;
@@ -134,6 +151,8 @@ export class WifiPage {
   }
   
   startRoutine(){
+    clearInterval(this.testStatusInterval);
+    clearInterval(this.testIPInterval);
     var program1Obj;
     var program2Obj;
     var program3Obj;
@@ -168,9 +187,9 @@ export class WifiPage {
             ];
             
             this.apiService.start(programs).then((response) => {
-              this.current_status = response + '';
+              console.log(response + '');
             }, (response) =>{
-              this.current_status = response + '';
+              console.log(response + '');
             });
             
             this.navCtrl.setRoot(PlayingPage);
@@ -181,7 +200,8 @@ export class WifiPage {
   }
   
   stop(){
-    clearInterval(this.testInterval);
+    clearInterval(this.testStatusInterval);
+    clearInterval(this.testIPInterval);
   }
 
 }
