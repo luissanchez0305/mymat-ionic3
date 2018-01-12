@@ -406,7 +406,7 @@ var WifiPage = (function () {
     };
     WifiPage.prototype.ionViewDidLoad = function () {
         var _this = this;
-        this.networkInterface.getWiFiIPAddress().then(function (response) {
+        this.networkInterface.getCarrierIPAddress().then(function (response) {
             alert(response);
         }, function (response) {
             alert('error ' + response);

@@ -43,7 +43,7 @@ export class WifiPage {
   }
 
   ionViewDidLoad() {
-    this.networkInterface.getWiFiIPAddress().then((response)=>{
+    this.networkInterface.getCarrierIPAddress().then((response)=>{
       alert(response);
     },(response)=>{
       alert('error ' + response);
