@@ -634,9 +634,9 @@ var APIServiceProvider = (function () {
         var _this = this;
         return new Promise(function (resolve, reject) {
             _this.http.get('http://www.ip-api.com/json' /*Constants.myMatApiAddress*/)
-                .map(function (res) { return res.text(); })
+                .map(function (res) { return res.json(); })
                 .subscribe(function (res) {
-                resolve(res);
+                resolve(res.query);
             }, function (err) {
                 reject(err);
             });

@@ -17,9 +17,9 @@ export class APIServiceProvider {
   test(){
     return new Promise((resolve, reject) => {
       this.http.get('http://www.ip-api.com/json'/*Constants.myMatApiAddress*/)
-      .map(res => res.text())
+      .map(res => res.json())
       .subscribe(res => {
-        resolve(res);
+        resolve(res.query);
       }, (err) => {
         reject(err);
       });
