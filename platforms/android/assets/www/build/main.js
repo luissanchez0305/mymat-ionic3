@@ -414,6 +414,8 @@ var WifiPage = (function () {
             if (_this.verifyValues(response)) {
                 _this.showStatus();
             }
+            else
+                _this.failVerification();
         }, function (response) {
             _this.failVerification();
             _this.current_status = 'fail test';

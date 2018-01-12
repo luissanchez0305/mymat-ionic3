@@ -52,6 +52,8 @@ export class WifiPage {
         if(this.verifyValues(response)){
           this.showStatus();
         }
+        else
+          this.failVerification();
     }, (response) => {
         this.failVerification();
         this.current_status = 'fail test';
