@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { Constants } from '../../services/constants';
-import { NetworkInterface } from '@ionic-native/network-interface';
 import 'rxjs/add/operator/map';
 
 /*
@@ -12,7 +11,7 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class APIServiceProvider {
-  constructor(public http: Http, private networkInterface: NetworkInterface) {
+  constructor(public http: Http) {
     
   }
   test(){
@@ -25,10 +24,6 @@ export class APIServiceProvider {
         reject(err);
       });
     });*/
-    
-    return new Promise((resolve, reject) => { 
-      resolve (this.networkInterface.getWiFiIPAddress());
-    });
   }
   start(programs){
     var program1 = programs[0].split("|")[3];

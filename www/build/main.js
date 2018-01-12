@@ -368,6 +368,7 @@ var ProgramsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__playing_playing__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__ = __webpack_require__(171);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -383,6 +384,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the WifiPage page.
  *
@@ -390,11 +392,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var WifiPage = (function () {
-    function WifiPage(navCtrl, navParams, storage, apiService) {
+    function WifiPage(navCtrl, navParams, storage, apiService, networkInterface) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.storage = storage;
         this.apiService = apiService;
+        this.networkInterface = networkInterface;
         this.intervalCount = 0;
         this.coilText = 'Antena';
     }
@@ -402,15 +405,13 @@ var WifiPage = (function () {
         this.stop();
     };
     WifiPage.prototype.ionViewDidLoad = function () {
-        var _this = this;
         this.mymatWifi = true;
         this.intervalCount = 0;
+        this.current_status = this.networkInterface.getWiFiIPAddress();
+        this.failVerification();
         // check if mymat is connected
-        var myMatTest = this.apiService.test();
-        myMatTest.then(function (response) {
-            _this.current_status = response;
-        });
-        /*myMatTest.then((response) => {
+        /*var myMatTest = this.apiService.test();
+        myMatTest.then((response) => {
             this.current_status = 'test resolved';
             // if is connected quitar imagen, textos y loading y poner status del mat
             if(this.verifyValues(response)){
@@ -466,12 +467,10 @@ var WifiPage = (function () {
     WifiPage.prototype.failVerification = function () {
         var _this = this;
         this.testInterval = setInterval(function () {
+            _this.current_status = _this.networkInterface.getWiFiIPAddress();
             // timeout of mymat detection 180 segundos
-            var failMyMatTest = _this.apiService.test();
-            failMyMatTest.then(function (response) {
-                _this.current_status = response;
-            });
-            /*failMyMatTest.then((response) => {
+            /*var failMyMatTest = this.apiService.test();
+            failMyMatTest.then((response) => {
               this.current_status = 'test resolved 2';
               if(this.verifyValues(response)){
                 this.showStatus();
@@ -535,7 +534,7 @@ var WifiPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-wifi',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/'<!--\n  Generated template for the WifiPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n        <br>\n        <div *ngIf="mymatWifi">\n            <img src="img/wifi.png">\n            <div class="titleinstructions" [innerHTML]="\'please-pair\' | translate"></div>\n            <br>  \n            <p [innerHTML]="\'activate-wifi\' | translate">Steps to pair your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-1\' | translate">1. Turn on your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-2\' | translate">2. On your device, navigate to your Wi-Fi settings</p>\n            <p [innerHTML]="\'activate-wifi-3\' | translate">3. Connect your device\'s WiFi with your MyMat network</p>\n            <p [innerHTML]="\'activate-wifi-4\' | translate">4. Once is connected, return to the MyMat app</p>\n            <!--<p class="interval-counter">0</p>-->\n        <div>\n        {{ current_status }}\n        </div>\n            <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="\'tart-routine\' | translate">LAUNCH MYMAT</a>\n            <br/>\n            <div *ngIf="mymatNoStatus">\n                <p [innerHTML]="\'no-detect-1\' | translate">We were unable to detect your MyMat</p>\n                <p [innerHTML]="\'no-detect-2\' | translate">Please follow the steps to do so</p>\n            </div>\n            <img src="img/loading.gif" width="200" />\n        </div>\n        <div *ngIf="mymatStatus">\n            <div class="status-table divTable">\n                <div class="divTableHeading">\n                    <div class="divTableRow">\n                        <div class="divTableHead divTableCellFirstLeft">\n                            <h4 [innerHTML]="\'battery-power\' | translate"></h4>\n                        </div>\n                        <div class="divTableHead divTableCellFirstRight">\n                            <h4 id="battery">{{ batteryCharge }} <img src="{{ batteryImg }}" height="16"></h4>\n                            \n                        </div>\n                    </div>\n                </div>\n                <div class="divTableBody">\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 1</div>\n                        <div class="divTableCell" id="coil1">{{ coilText1 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd">{{ coilText }} 2</div>\n                        <div class="divTableCell coilOdd" id="coil2">{{ coilText2 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 3</div>\n                        <div class="divTableCell" id="coil3">{{ coilText3 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd divTableCellLastLeft">{{ coilText }} 4</div>\n                        <div class="divTableCell coilOdd divTableCellLastRight" id="coil4">{{ coilText4 }}</div>\n                    </div>\n                </div>\n            </div>\n            <p>&nbsp;</p>\n            <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="\'tart-routine\' | translate">LAUNCH MYMAT</a>\n        </div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__["a" /* APIServiceProvider */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__["a" /* APIServiceProvider */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__["a" /* NetworkInterface */]])
     ], WifiPage);
     return WifiPage;
 }());
@@ -610,9 +609,8 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_constants__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_network_interface__ = __webpack_require__(171);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -626,7 +624,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 /*
   Generated class for the AuthServiceProvider provider.
 
@@ -634,9 +631,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
   and Angular DI.
 */
 var APIServiceProvider = (function () {
-    function APIServiceProvider(http, networkInterface) {
+    function APIServiceProvider(http) {
         this.http = http;
-        this.networkInterface = networkInterface;
     }
     APIServiceProvider.prototype.test = function () {
         /*return new Promise((resolve, reject) => {
@@ -648,10 +644,6 @@ var APIServiceProvider = (function () {
             reject(err);
           });
         });*/
-        var _this = this;
-        return new Promise(function (resolve, reject) {
-            resolve(_this.networkInterface.getWiFiIPAddress());
-        });
     };
     APIServiceProvider.prototype.start = function (programs) {
         var _this = this;
@@ -672,7 +664,7 @@ var APIServiceProvider = (function () {
     };
     APIServiceProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_network_interface__["a" /* NetworkInterface */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
     ], APIServiceProvider);
     return APIServiceProvider;
 }());

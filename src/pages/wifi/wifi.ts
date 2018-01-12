@@ -4,6 +4,7 @@ import { Storage } from '@ionic/storage';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { PlayingPage } from '../playing/playing';
 import { Constants } from '../../services/constants';
+import { NetworkInterface } from '@ionic-native/network-interface';
 
 /**
  * Generated class for the WifiPage page.
@@ -32,7 +33,7 @@ export class WifiPage {
   public intervalCount : number = 0;
   public current_status : any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider, public networkInterface : NetworkInterface) {
     this.coilText = 'Antena';
   }
   
@@ -43,12 +44,11 @@ export class WifiPage {
   ionViewDidLoad() {
     this.mymatWifi = true;
     this.intervalCount = 0;
+    this.current_status = this.networkInterface.getWiFiIPAddress();
+    this.failVerification();
     // check if mymat is connected
-    var myMatTest = this.apiService.test();
+    /*var myMatTest = this.apiService.test();
     myMatTest.then((response) => {
-      this.current_status = response;
-    });
-    /*myMatTest.then((response) => {
         this.current_status = 'test resolved';
         // if is connected quitar imagen, textos y loading y poner status del mat
         if(this.verifyValues(response)){
@@ -109,12 +109,10 @@ export class WifiPage {
   
   failVerification(){
     this.testInterval = setInterval(() => {
+      this.current_status = this.networkInterface.getWiFiIPAddress();
       // timeout of mymat detection 180 segundos
-      var failMyMatTest = this.apiService.test();
+      /*var failMyMatTest = this.apiService.test();
       failMyMatTest.then((response) => {
-        this.current_status = response;
-      });
-      /*failMyMatTest.then((response) => {
         this.current_status = 'test resolved 2';
         if(this.verifyValues(response)){
           this.showStatus();
