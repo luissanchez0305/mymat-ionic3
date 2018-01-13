@@ -27,13 +27,13 @@
             <p [innerHTML]="'activate-wifi-3' | translate">3. Connect your device's WiFi with your MyMat network</p>
             <p [innerHTML]="'activate-wifi-4' | translate">4. Once is connected, return to the MyMat app</p>
             <!--<p class="interval-counter">0</p>-->
-            <a *ngIf="showStartButton" class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="'start-routine' | translate">LAUNCH MYMAT</a>
             <br/>
             <div *ngIf="mymatNoStatus">
                 <p [innerHTML]="'no-detect-1' | translate">We were unable to detect your MyMat</p>
                 <p [innerHTML]="'no-detect-2' | translate">Please follow the steps to do so</p>
             </div>
-            <img src="img/loading.gif" width="200" />
+            <a *ngIf="showStartButton" class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="'start-routine' | translate">LAUNCH MYMAT</a>
+            <img *ngIf="showLoading" src="img/loading.gif" width="200" />
         </div>
         <div *ngIf="mymatStatus">
             <div class="status-table divTable">

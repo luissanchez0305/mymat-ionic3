@@ -33,6 +33,7 @@ export class WifiPage {
   public coilText3 : string;
   public coilText4 : string;
   public showStartButton : boolean;
+  public showLoading : boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider,
     public networkInterface : NetworkInterface) {
@@ -45,6 +46,7 @@ export class WifiPage {
 
   ionViewDidLoad() {
     this.showStartButton = false;
+    this.showLoading = true;
     this.networkInterface.getWiFiIPAddress().then((response)=>{
       if(response == Constants.localIPAddress){
         this.showIPButton();
@@ -59,20 +61,21 @@ export class WifiPage {
   }
   
   showIPButton(){
-      this.showStartButton = true;
-      
-      // check if mymat is connected
-      var myMatTest = this.apiService.test();
-      myMatTest.then((response) => {
-        // if is connected quitar imagen, textos y loading y poner status del mat
-        if(this.verifyValues(response)){
-          this.showStatus();
-        }
-        else
-          this.failStatusVerification();
-      }, (response) => {
+    this.showStartButton = true;
+    this.showLoading = false;
+    
+    // check if mymat is connected
+    var myMatTest = this.apiService.test();
+    myMatTest.then((response) => {
+      // if is connected quitar imagen, textos y loading y poner status del mat
+      if(this.verifyValues(response)){
+        this.showStatus();
+      }
+      else
         this.failStatusVerification();
-      });
+    }, (response) => {
+      this.failStatusVerification();
+    });
   }
     
   showNoStatus(){
@@ -142,7 +145,7 @@ export class WifiPage {
           this.showStatus();
         }
       }, (response) => {
-        if(this.intervalCount >= 60){
+        if(this.intervalCount >= 5){
           this.showNoStatus();
         }
       });
