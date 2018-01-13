@@ -34,6 +34,7 @@ export class WifiPage {
   public coilText4 : string;
   public showStartButton : boolean;
   public showLoading : boolean;
+  public current_status : string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider,
     public networkInterface : NetworkInterface) {
@@ -71,10 +72,14 @@ export class WifiPage {
       if(this.verifyValues(response)){
         this.showStatus();
       }
-      else
+      else{
         this.failStatusVerification();
+        this.current_status = 'fail ' + this.intervalCount;
+      }
+      this.current_status = 'fail 0';
     }, (response) => {
       this.failStatusVerification();
+      this.current_status = 'fail ' + this.intervalCount;
     });
   }
     
@@ -144,10 +149,14 @@ export class WifiPage {
         if(this.verifyValues(response)){
           this.showStatus();
         }
+        else
+          this.current_status = 'fail ' + this.intervalCount;
       }, (response) => {
         if(this.intervalCount >= 5){
           this.showNoStatus();
         }
+        else
+          this.current_status = 'fail ' + this.intervalCount;
       });
       this.intervalCount += 1;
     }, 3000);
