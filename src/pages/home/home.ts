@@ -30,6 +30,11 @@ export class HomePage {
         this.updateBubbles(i, bubbles[i - 1]);
       }
     }); 
+    this.events.subscribe('switchLangEvent',(lang) => {
+        //call methods to refresh content
+        this.storage.set(Constants.storageKeyLang, lang)
+        this.checkAllBubbles();
+    });
   }
   
   removeProgramFromRoutine(prg){

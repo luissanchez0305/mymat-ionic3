@@ -25978,18 +25978,21 @@ input.routinename {
 }
 
 .bubblescontainer {
-  width: 80%;
+  width: 100%;
   margin: auto;
   text-align: center;
   margin-bottom: 20px;
+  display: inline-block;
 }
 
 .bubbles {
   background-image: url(../img/empty-bubbles.png);
   background-repeat: no-repeat;
+  margin-top: 75px;
   background-size: 100%;
   width: 275px;
   height: 275px;
+  margin: auto;
 }
 
 .empty-single-bubble {
@@ -26093,7 +26096,7 @@ input.routinename {
   display: none;
 }
 
-.home {
+.home, .programs {
   background-image: url(../img/fondo.png) !important;
   background-size: cover;
 }

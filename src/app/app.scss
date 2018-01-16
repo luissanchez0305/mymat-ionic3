@@ -317,19 +317,22 @@ left: -2px !important;
 }
 
 .bubblescontainer{
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     margin-bottom: 20px;
+    display: inline-block;
 }
 
 .bubbles{
 background-image: url(../img/empty-bubbles.png);
 background-repeat: no-repeat;
+
+margin-top: 75px;
 background-size: 100%;
 width: 275px;
-height: 275px;
-
+height: 275px; 
+margin: auto;
 }
 .empty-single-bubble {
     background-image: url("../img/single-bubble.png");
@@ -424,7 +427,7 @@ display:none;
 display:none;
 }
 
-.home {
+.home, .programs {
     background-image: url(../img/fondo.png)!important;
     -webkit-background-size: cover;
     -moz-background-size: cover;

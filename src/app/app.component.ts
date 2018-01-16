@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { MenuController } from 'ionic-angular';
+import { MenuController, Events } from 'ionic-angular';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -28,7 +28,8 @@ export class MyApp {
   pages: Array<{title: string, component: any, icon: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,
-    private translateService: TranslateService, public menuCtrl: MenuController, private storage: Storage) {
+    private translateService: TranslateService, public menuCtrl: MenuController, private storage: Storage,
+    public events : Events) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -65,6 +66,7 @@ export class MyApp {
   }
   
   switchLang(lang){
+	  this.events.publish('switchLangEvent',lang);
     switch(lang){
       case 'es':
         this.lang_en = true;
