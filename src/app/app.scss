@@ -113,11 +113,11 @@ hr {
     opacity: 0.5;
 }
 
-.item-time:nth-child(even) {
+.item-time, .item:nth-child(even) {
     background-color: #fff !important;
 }
 
-.item-time:nth-child(odd) {
+.item-time, .item:nth-child(odd) {
     background-color: #BBE1F1 !important;
 }
 
@@ -135,6 +135,10 @@ hr {
 
 
 .programlist {}
+
+.addiction{
+  color: #666 !important;
+}
 
 .center {
     text-align: center;

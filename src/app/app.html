@@ -10,7 +10,7 @@
         <img *ngIf="lang_fr" src="img/flag-france.png" width="35" height="35" (click)="switchLang('fr')">
         <img *ngIf="lang_pt" src="img/flag-brazil.png" width="35" height="35" (click)="switchLang('pt')">
       </ion-item>
-      <button menuClose ion-item class="item item-block item-md {{ p.icon }}" *ngFor="let p of pages" (click)="openPage(p)">
+      <button menuClose ion-item class="item-button item-block item-md {{ p.icon }}" *ngFor="let p of pages" (click)="openPage(p)">
         <label class="item-content"></label>
         {{p.title}}
       </button>
