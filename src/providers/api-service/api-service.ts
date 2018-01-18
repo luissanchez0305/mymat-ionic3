@@ -14,6 +14,18 @@ export class APIServiceProvider {
   constructor(public http: Http) {
     
   }
+  test_language(){
+    return new Promise((resolve, reject) => {
+      this.http.get(Constants.myMatApiAddress)
+      .map(res => res.text())
+      .subscribe(res => {
+        resolve(res);
+      }, (err) => {
+        reject(err);
+      });
+    });
+  }
+  
   test(){
     return new Promise((resolve, reject) => {
       this.http.get(Constants.myMatApiAddress)

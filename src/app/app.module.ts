@@ -22,7 +22,7 @@ import { RoutinesProvider } from '../providers/routines/routines';
 import { APIServiceProvider } from '../providers/api-service/api-service';
 
 export function HttpLoaderFactory(http: HttpClient) {
-    return new TranslateHttpLoader(http);
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
  
 @NgModule({
