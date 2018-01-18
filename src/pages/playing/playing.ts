@@ -97,12 +97,33 @@ export class PlayingPage {
                 this.displayRunningTime = program3CurrentTimeDecreasing; //this.convertSecondsToTime(program3CurrentTimeDecreasing);
             else
                 this.displayRunningTime = program4CurrentTimeDecreasing; //this.convertSecondsToTime(program4CurrentTimeDecreasing);
+               
+            var currentTime = this.displayRunningTime; 
+            setInterval(() => {
+              this.displayRunningTime = this.decreaseSecond(currentTime)
+              currentTime = this.displayRunningTime;
+            }, 1000);
           });
           break;
       }
     }
   }
-
+  
+  decreaseSecond(time){
+    var minutesStr = time.substr(0,time.indexOf(':'));
+    var minutes = minutesStr[0] == '0' ? parseInt(minutesStr[1]) : parseInt(minutesStr);
+    var secondsStr = time.substr(time.indexOf(':') + 1);
+    var seconds = secondsStr[0] == '0' ? parseInt(secondsStr[1]) : parseInt(secondsStr);
+    if(seconds - 1 == -1){
+      minutesStr = minutes - 1 < 10 ? '0' + (minutes - 1) : '' + (minutes - 1);
+      secondsStr = '59';
+    }
+    else{
+      secondsStr = seconds - 1 < 10 ? '0' + (seconds - 1) : '' + (seconds - 1);
+    }
+    return minutesStr + ':' + secondsStr;
+  }
+  
   convertSecondsToTime(timeInSeconds) {
     var minutes = Math.floor(timeInSeconds / 60);
     var minutesStr = "0" + minutes;
