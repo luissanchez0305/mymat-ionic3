@@ -25776,11 +25776,11 @@ hr {
   opacity: 0.5;
 }
 
-.item:nth-child(even) {
+.item-time:nth-child(even) {
   background-color: #fff !important;
 }
 
-.item:nth-child(odd) {
+.item-time:nth-child(odd) {
   background-color: #BBE1F1 !important;
 }
 
@@ -25806,7 +25806,7 @@ hr {
   padding-top: 50px;
 }
 
-.paddingSmall {
+.paddingSmall .item {
   padding: 20px;
   padding-top: 20px;
 }
