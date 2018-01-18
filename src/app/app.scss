@@ -112,7 +112,7 @@ hr {
 .opacity-50 {
     opacity: 0.5;
 }
-/*
+
 .item:nth-child(even) {
     background-color: #fff !important;
 }
@@ -120,7 +120,7 @@ hr {
 .item:nth-child(odd) {
     background-color: #BBE1F1 !important;
 }
-*/
+
 .item-complex .item-content {
     position: relative;
     z-index: 2;
@@ -143,6 +143,11 @@ hr {
 .padding {
     padding: 30px;
     padding-top: 50px;
+}
+
+.paddingSmall {
+    padding: 20px;
+    padding-top: 20px;
 }
 
 .paddingmodal {

@@ -32,7 +32,7 @@ export class ProgramsPage {
       this.program = navParams.get('bubble');
     
       this.routines.getKey(Constants.storageKeyBubble1).then(val => {
-        if(this.program != 1 && val.length > 0){
+        if(this.program != 1 && val != null && val.length > 0){
           this.programName1 = val.split('|')[1];
         }
         else{
@@ -40,7 +40,7 @@ export class ProgramsPage {
         }
       });
       this.routines.getKey(Constants.storageKeyBubble2).then(val => {
-        if(this.program != 2 && val.length > 0){
+        if(this.program != 2 && val != null && val.length > 0){
           this.programName2 = val.split('|')[1];
         }
         else{
@@ -48,7 +48,7 @@ export class ProgramsPage {
         }
       });
       this.routines.getKey(Constants.storageKeyBubble3).then(val => {
-        if(this.program != 3 && val.length > 0){
+        if(this.program != 3 && val != null && val.length > 0){
           this.programName3 = val.split('|')[1];
         }
         else{
@@ -56,7 +56,7 @@ export class ProgramsPage {
         }
       });
       this.routines.getKey(Constants.storageKeyBubble4).then(val => {
-        if(this.program != 4 && val.length > 0){
+        if(this.program != 4 && val != null && val.length > 0){
           this.programName4 = val.split('|')[1];
         }
         else{
