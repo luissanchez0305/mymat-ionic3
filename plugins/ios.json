@@ -27,6 +27,9 @@
     },
     "cordova-plugin-networkinterface": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+    "cordova-plugin-background-mode": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },
   "dependent_plugins": {}

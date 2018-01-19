@@ -16,9 +16,6 @@
 </ion-header>
 
 <ion-content padding class="home center">
-        <div> 
-        {{ current_status }}
-        </div>
         <br>
         <div *ngIf="mymatWifi">
             <img src="img/wifi.png">
@@ -35,8 +32,8 @@
                 <p [innerHTML]="'no-detect-1' | translate">We were unable to detect your MyMat</p>
                 <p [innerHTML]="'no-detect-2' | translate">Please follow the steps to do so</p>
             </div>
-            <img *ngIf="showLoading" src="img/loading.gif" width="200" />
             <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="'start-routine' | translate">LAUNCH MYMAT</a>
+            <img *ngIf="showLoading" src="img/loading.gif" width="200" />
         </div>
         <div *ngIf="mymatStatus">
             <div class="status-table divTable">

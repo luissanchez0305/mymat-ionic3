@@ -26,9 +26,21 @@ export class PlayingPage {
   public programTitle3 : string;
   public programTitle4 : string;
   public displayRunningTime : string;
+  public finishTime : any;
+  public timerInterval : any;
   
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage, 
     public translateService: TranslateService) {
+      
+      document.addEventListener('resume', () => {
+          let t = +new Date();
+          if(t > this.finishTime)
+            this.displayRunningTime = '00:00';
+          else{
+            var secondsSlept = Math.abs(Math.abs(this.finishTime - t) / 1000);
+            this.displayRunningTime = this.convertSecondsToTime(this.getSeconds(this.displayRunningTime) - secondsSlept);
+          }
+      });
   }
 
   ionViewDidLoad() {
@@ -98,10 +110,15 @@ export class PlayingPage {
             else
                 this.displayRunningTime = program4CurrentTimeDecreasing; //this.convertSecondsToTime(program4CurrentTimeDecreasing);
                
-            var currentTime = this.displayRunningTime; 
-            setInterval(() => {
-              this.displayRunningTime = this.decreaseSecond(currentTime)
-              currentTime = this.displayRunningTime;
+            this.displayRunningTime = this.displayRunningTime; 
+            var t = new Date();
+            this.finishTime = t.setSeconds(t.getSeconds() + this.getSeconds(this.displayRunningTime));
+            
+            this.timerInterval = setInterval(() => {
+              this.displayRunningTime = this.decreaseSecond(this.displayRunningTime);
+              if(this.displayRunningTime == '00:00'){
+                clearInterval(this.timerInterval);
+              }
             }, 1000);
           });
           break;
@@ -122,6 +139,14 @@ export class PlayingPage {
       secondsStr = seconds - 1 < 10 ? '0' + (seconds - 1) : '' + (seconds - 1);
     }
     return minutesStr + ':' + secondsStr;
+  }
+  
+  getSeconds(time){
+    var minutesStr = time.substr(0,time.indexOf(':'));
+    var minutes = minutesStr[0] == '0' ? parseInt(minutesStr[1]) : parseInt(minutesStr);
+    var secondsStr = time.substr(time.indexOf(':') + 1);
+    var seconds = secondsStr[0] == '0' ? parseInt(secondsStr[1]) : parseInt(secondsStr);
+    return (minutes * 60) + seconds;
   }
   
   convertSecondsToTime(timeInSeconds) {

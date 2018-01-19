@@ -21,6 +21,9 @@
     <feature name="networkinterface">
         <param name="android-package" value="com.albahra.plugin.networkinterface.networkinterface" />
     </feature>
+    <feature name="BackgroundMode">
+        <param name="android-package" value="de.appplant.cordova.plugin.background.BackgroundMode" />
+    </feature>
     <name>MyMat - Light</name>
     <description>MyMat 8</description>
     <author email="lsanchez@esferasoluciones.com" href="https://www.esferasoluciones.com">
@@ -48,6 +51,7 @@
     <splash density="port-xxhdpi" src="resources/android/splash/splash-port-xxhdpi.png" />
     <splash density="port-xxxhdpi" src="resources/android/splash/splash-port-xxxhdpi.png" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="KeepRunning" value="true" />
     <preference name="ScrollEnabled" value="false" />
     <preference name="android-minSdkVersion" value="16" />
     <preference name="BackupWebStorage" value="none" />
