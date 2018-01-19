@@ -37,8 +37,8 @@ export class PlayingPage {
           if(Math.round(t.getTime() / 1000) > this.finishTime)
             this.displayRunningTime = '00:00';
           else{
-            var secondsSlept = this.finishTime - Math.round(t.getTime() / 1000);
-            this.displayRunningTime = this.convertSecondsToTime(this.getSeconds(this.displayRunningTime) - secondsSlept);
+            var secondsLeft = this.finishTime - Math.round(t.getTime() / 1000);
+            this.displayRunningTime = this.convertSecondsToTime(secondsLeft);
           }
       });
   }

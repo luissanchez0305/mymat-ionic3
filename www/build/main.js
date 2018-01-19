@@ -132,8 +132,8 @@ var PlayingPage = (function () {
             if (Math.round(t.getTime() / 1000) > _this.finishTime)
                 _this.displayRunningTime = '00:00';
             else {
-                var secondsSlept = _this.finishTime - Math.round(t.getTime() / 1000);
-                _this.displayRunningTime = _this.convertSecondsToTime(_this.getSeconds(_this.displayRunningTime) - secondsSlept);
+                var secondsLeft = _this.finishTime - Math.round(t.getTime() / 1000);
+                _this.displayRunningTime = _this.convertSecondsToTime(secondsLeft);
             }
         });
     }
