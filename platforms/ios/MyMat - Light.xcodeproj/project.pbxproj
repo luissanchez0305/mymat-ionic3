@@ -43,9 +43,6 @@
 		1F2848BEFD8F4AAF86BBBD73 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E611A74CFB4D51BEE5CFFF /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1721B19C0CC6427B88C11F94 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD6E1BF07E545849F67FD7E /* CoreTelephony.framework */; };
 		E220FDBFCA144A4FA91ED102 /* CDVNetworkInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = FC79273D9D184715BE7161A1 /* CDVNetworkInterface.m */; };
-		F3923F0B41604A16B7B61FDF /* APPBackgroundMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 242FE1E7C6ED45FD9D0DECA4 /* APPBackgroundMode.m */; };
-		F82DEB047FC74A549449E054 /* APPMethodMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D3BF36E9B34E26975B9D3B /* APPMethodMagic.m */; };
-		9B15A16BB7E946F1A66E39F0 /* appbeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = E0B67349A5794EBEB4B35021 /* appbeep.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,11 +135,6 @@
 		DCD6E1BF07E545849F67FD7E /* CoreTelephony.framework */ = {isa = PBXFileReference; name = "CoreTelephony.framework"; path = "System/Library/Frameworks/CoreTelephony.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		FC79273D9D184715BE7161A1 /* CDVNetworkInterface.m */ = {isa = PBXFileReference; name = "CDVNetworkInterface.m"; path = "cordova-plugin-networkinterface/CDVNetworkInterface.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		02CD8888AC0141DBA979A284 /* CDVNetworkInterface.h */ = {isa = PBXFileReference; name = "CDVNetworkInterface.h"; path = "cordova-plugin-networkinterface/CDVNetworkInterface.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		242FE1E7C6ED45FD9D0DECA4 /* APPBackgroundMode.m */ = {isa = PBXFileReference; name = "APPBackgroundMode.m"; path = "cordova-plugin-background-mode/APPBackgroundMode.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		A6D3BF36E9B34E26975B9D3B /* APPMethodMagic.m */ = {isa = PBXFileReference; name = "APPMethodMagic.m"; path = "cordova-plugin-background-mode/APPMethodMagic.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		7E9D797F0E444F23940B3E9F /* APPBackgroundMode.h */ = {isa = PBXFileReference; name = "APPBackgroundMode.h"; path = "cordova-plugin-background-mode/APPBackgroundMode.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		5C066A1E13904CC78AADC96D /* APPMethodMagic.h */ = {isa = PBXFileReference; name = "APPMethodMagic.h"; path = "cordova-plugin-background-mode/APPMethodMagic.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		E0B67349A5794EBEB4B35021 /* appbeep.wav */ = {isa = PBXFileReference; name = "appbeep.wav"; path = "appbeep.wav"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,7 +209,6 @@
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* MyMat - Light-Info.plist */,
 				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
-				E0B67349A5794EBEB4B35021 /* appbeep.wav */,
 			);
 			name = Resources;
 			path = "MyMat - Light/Resources";
@@ -303,10 +294,6 @@
 				1FC4700D8BE942C782D7DFAE /* CDVReachability.h */,
 				FC79273D9D184715BE7161A1 /* CDVNetworkInterface.m */,
 				02CD8888AC0141DBA979A284 /* CDVNetworkInterface.h */,
-				242FE1E7C6ED45FD9D0DECA4 /* APPBackgroundMode.m */,
-				A6D3BF36E9B34E26975B9D3B /* APPMethodMagic.m */,
-				7E9D797F0E444F23940B3E9F /* APPBackgroundMode.h */,
-				5C066A1E13904CC78AADC96D /* APPMethodMagic.h */,
 			);
 			name = Plugins;
 			path = "MyMat - Light/Plugins";
@@ -388,7 +375,6 @@
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
-				9B15A16BB7E946F1A66E39F0 /* appbeep.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,8 +429,6 @@
 				56F363FD605E41068A895689 /* CDVConnection.m in Sources */,
 				9E4A4FF4460F49FC97A4737E /* CDVReachability.m in Sources */,
 				E220FDBFCA144A4FA91ED102 /* CDVNetworkInterface.m in Sources */,
-				F3923F0B41604A16B7B61FDF /* APPBackgroundMode.m in Sources */,
-				F82DEB047FC74A549449E054 /* APPMethodMagic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

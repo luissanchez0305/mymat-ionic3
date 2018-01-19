@@ -49,15 +49,6 @@ module.exports = [
     "clobbers": [
       "window.networkinterface"
     ]
-  },
-  {
-    "id": "cordova-plugin-background-mode.BackgroundMode",
-    "file": "plugins/cordova-plugin-background-mode/www/background-mode.js",
-    "pluginId": "cordova-plugin-background-mode",
-    "clobbers": [
-      "cordova.plugins.backgroundMode",
-      "plugin.backgroundMode"
-    ]
   }
 ];
 module.exports.metadata = 
@@ -69,8 +60,7 @@ module.exports.metadata =
   "cordova-plugin-whitelist": "1.3.1",
   "ionic-plugin-keyboard": "2.2.1",
   "cordova-plugin-network-information": "2.0.1",
-  "cordova-plugin-networkinterface": "1.2.0",
-  "cordova-plugin-background-mode": "0.7.2"
+  "cordova-plugin-networkinterface": "1.2.0"
 };
 // BOTTOM OF METADATA
 });
