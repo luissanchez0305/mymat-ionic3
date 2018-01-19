@@ -110,7 +110,7 @@ export class PlayingPage {
             else
                 this.displayRunningTime = program4CurrentTimeDecreasing; //this.convertSecondsToTime(program4CurrentTimeDecreasing);
                
-            this.displayRunningTime = '02:30'; //this.displayRunningTime; 
+            this.displayRunningTime = this.displayRunningTime; 
             var t = new Date();
             this.finishTime = Math.round(t.getTime() / 1000) + this.getSeconds(this.displayRunningTime);
             
