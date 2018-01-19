@@ -128,11 +128,11 @@ var PlayingPage = (function () {
         this.storage = storage;
         this.translateService = translateService;
         document.addEventListener('resume', function () {
-            var t = +new Date();
-            if (t > _this.finishTime)
+            var t = new Date();
+            if (Math.round(t.getTime() / 1000) > _this.finishTime)
                 _this.displayRunningTime = '00:00';
             else {
-                var secondsSlept = Math.abs(Math.abs(_this.finishTime - t) / 1000);
+                var secondsSlept = _this.finishTime - Math.round(t.getTime() / 1000);
                 _this.displayRunningTime = _this.convertSecondsToTime(_this.getSeconds(_this.displayRunningTime) - secondsSlept);
             }
         });
@@ -199,9 +199,9 @@ var PlayingPage = (function () {
                             _this.displayRunningTime = program3CurrentTimeDecreasing; //this.convertSecondsToTime(program3CurrentTimeDecreasing);
                         else
                             _this.displayRunningTime = program4CurrentTimeDecreasing; //this.convertSecondsToTime(program4CurrentTimeDecreasing);
-                        _this.displayRunningTime = _this.displayRunningTime;
+                        _this.displayRunningTime = '02:30'; //this.displayRunningTime; 
                         var t = new Date();
-                        _this.finishTime = t.setSeconds(t.getSeconds() + _this.getSeconds(_this.displayRunningTime));
+                        _this.finishTime = Math.round(t.getTime() / 1000) + _this.getSeconds(_this.displayRunningTime);
                         _this.timerInterval = setInterval(function () {
                             _this.displayRunningTime = _this.decreaseSecond(_this.displayRunningTime);
                             if (_this.displayRunningTime == '00:00') {

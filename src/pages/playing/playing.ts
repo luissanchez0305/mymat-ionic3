@@ -33,11 +33,11 @@ export class PlayingPage {
     public translateService: TranslateService) {
       
       document.addEventListener('resume', () => {
-          let t = +new Date();
-          if(t > this.finishTime)
+          var t = new Date();
+          if(Math.round(t.getTime() / 1000) > this.finishTime)
             this.displayRunningTime = '00:00';
           else{
-            var secondsSlept = Math.abs(Math.abs(this.finishTime - t) / 1000);
+            var secondsSlept = this.finishTime - Math.round(t.getTime() / 1000);
             this.displayRunningTime = this.convertSecondsToTime(this.getSeconds(this.displayRunningTime) - secondsSlept);
           }
       });
@@ -110,9 +110,9 @@ export class PlayingPage {
             else
                 this.displayRunningTime = program4CurrentTimeDecreasing; //this.convertSecondsToTime(program4CurrentTimeDecreasing);
                
-            this.displayRunningTime = this.displayRunningTime; 
+            this.displayRunningTime = '02:30'; //this.displayRunningTime; 
             var t = new Date();
-            this.finishTime = t.setSeconds(t.getSeconds() + this.getSeconds(this.displayRunningTime));
+            this.finishTime = Math.round(t.getTime() / 1000) + this.getSeconds(this.displayRunningTime);
             
             this.timerInterval = setInterval(() => {
               this.displayRunningTime = this.decreaseSecond(this.displayRunningTime);
