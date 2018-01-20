@@ -202,7 +202,7 @@ var PlayingPage = (function () {
                             _this.displayRunningTime = program3CurrentTimeDecreasing; //this.convertSecondsToTime(program3CurrentTimeDecreasing);
                         else
                             _this.displayRunningTime = program4CurrentTimeDecreasing; //this.convertSecondsToTime(program4CurrentTimeDecreasing);
-                        _this.displayRunningTime = _this.displayRunningTime;
+                        _this.displayRunningTime = '01:00'; //this.displayRunningTime; 
                         var t = new Date();
                         _this.finishTime = Math.round(t.getTime() / 1000) + _this.getSeconds(_this.displayRunningTime);
                         _this.timerInterval = setInterval(function () {
