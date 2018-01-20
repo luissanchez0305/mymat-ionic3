@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { Storage } from '@ionic/storage';
 import { Constants } from '../../services/constants';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 
 /**
  * Generated class for the PlayingPage page.
@@ -30,7 +31,7 @@ export class PlayingPage {
   public timerInterval : any;
   
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage, 
-    public translateService: TranslateService) {
+    public translateService: TranslateService, private localNotifications : LocalNotifications) {
       
       document.addEventListener('resume', () => {
           var t = new Date();
@@ -109,7 +110,7 @@ export class PlayingPage {
                 this.displayRunningTime = program3CurrentTimeDecreasing; //this.convertSecondsToTime(program3CurrentTimeDecreasing);
             else
                 this.displayRunningTime = program4CurrentTimeDecreasing; //this.convertSecondsToTime(program4CurrentTimeDecreasing);
-               
+            
             this.displayRunningTime = this.displayRunningTime; 
             var t = new Date();
             this.finishTime = Math.round(t.getTime() / 1000) + this.getSeconds(this.displayRunningTime);
@@ -120,6 +121,12 @@ export class PlayingPage {
                 clearInterval(this.timerInterval);
               }
             }, 1000);
+            this.localNotifications.schedule({
+              id: 1,
+              title: 'MyMat Light',
+              text: 'Su rutina ha terminado',
+              at: new Date(t.getTime() + this.getSeconds(this.displayRunningTime) * 1000)
+            });
           });
           break;
       }
