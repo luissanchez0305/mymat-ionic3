@@ -13,9 +13,6 @@
     "cordova-plugin-ionic-webview": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
-    "cordova-plugin-local-notification": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
     "cordova-plugin-network-information": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
@@ -30,10 +27,13 @@
     },
     "ionic-plugin-keyboard": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+    "de.appplant.cordova.plugin.local-notification": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-badge": {
+    "cordova-plugin-app-event": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   }
