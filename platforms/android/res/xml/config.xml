@@ -3,6 +3,9 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
+    <feature name="LocalNotification">
+        <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
+    </feature>
     <feature name="NetworkStatus">
         <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
     </feature>
@@ -20,9 +23,6 @@
     <feature name="Keyboard">
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
-    </feature>
-    <feature name="LocalNotification">
-        <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
     </feature>
     <name>MyMat - Light</name>
     <description>MyMat 8</description>

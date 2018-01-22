@@ -28,7 +28,7 @@
     "ionic-plugin-keyboard": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
-    "de.appplant.cordova.plugin.local-notification": {
+    "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },

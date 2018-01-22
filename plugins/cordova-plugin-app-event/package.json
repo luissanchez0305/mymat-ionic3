@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "cordova-plugin-app-event@^1.2.1",
+        "raw": "cordova-plugin-app-event",
         "scope": null,
         "escapedName": "cordova-plugin-app-event",
         "name": "cordova-plugin-app-event",
-        "rawSpec": "^1.2.1",
-        "spec": ">=1.2.1 <2.0.0",
-        "type": "range"
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
       },
       "/home/ubuntu/workspace"
     ]
   ],
-  "_from": "cordova-plugin-app-event@>=1.2.1 <2.0.0",
+  "_from": "cordova-plugin-app-event@latest",
   "_id": "cordova-plugin-app-event@1.2.1",
   "_inCache": true,
   "_location": "/cordova-plugin-app-event",
@@ -29,23 +29,23 @@
   "_npmVersion": "4.6.1",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "cordova-plugin-app-event@^1.2.1",
+    "raw": "cordova-plugin-app-event",
     "scope": null,
     "escapedName": "cordova-plugin-app-event",
     "name": "cordova-plugin-app-event",
-    "rawSpec": "^1.2.1",
-    "spec": ">=1.2.1 <2.0.0",
-    "type": "range"
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
   },
   "_requiredBy": [
     "#USER",
     "/",
-    "/de.appplant.cordova.plugin.local-notification"
+    "/cordova-plugin-local-notification"
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-app-event/-/cordova-plugin-app-event-1.2.1.tgz",
   "_shasum": "0eebb14132aa43bb2e5c081a9abdbd97ca2d8132",
   "_shrinkwrap": null,
-  "_spec": "cordova-plugin-app-event@^1.2.1",
+  "_spec": "cordova-plugin-app-event",
   "_where": "/home/ubuntu/workspace",
   "author": {
     "name": "Sebastián Katzer"
