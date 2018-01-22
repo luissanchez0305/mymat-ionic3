@@ -33,7 +33,7 @@
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-app-event": {
+    "cordova-plugin-badge": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   }

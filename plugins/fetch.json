@@ -74,7 +74,7 @@
   "cordova-plugin-local-notification": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-local-notification@0.8"
+      "id": "cordova-plugin-local-notification"
     },
     "is_top_level": true,
     "variables": {}
