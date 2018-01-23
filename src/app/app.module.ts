@@ -7,7 +7,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NetworkInterface } from '@ionic-native/network-interface';
-import { PhonegapLocalNotification } from '@ionic-native/phonegap-local-notification';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -65,7 +65,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SplashScreen,
     RoutinesProvider,
     NetworkInterface,
-    PhonegapLocalNotification,
+    LocalNotifications,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     APIServiceProvider
   ]

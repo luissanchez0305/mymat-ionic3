@@ -71,10 +71,10 @@
     "is_top_level": false,
     "variables": {}
   },
-  "phonegap-plugin-local-notification": {
+  "cordova-plugin-local-notification": {
     "source": {
       "type": "registry",
-      "id": "phonegap-plugin-local-notification"
+      "id": "cordova-plugin-local-notification@^0.9.0-beta.2"
     },
     "is_top_level": true,
     "variables": {}
