@@ -39,13 +39,6 @@
     <feature name="Keyboard">
         <param name="ios-package" onload="true" value="IonicKeyboard" />
     </feature>
-    <feature name="Badge">
-        <param name="ios-package" value="APPBadge" />
-    </feature>
-    <feature name="LocalNotification">
-        <param name="ios-package" onload="true" value="APPLocalNotification" />
-        <param name="onload" value="true" />
-    </feature>
     <name>MyMat - Light</name>
     <description>MyMat 8</description>
     <author email="lsanchez@esferasoluciones.com" href="https://www.esferasoluciones.com">

@@ -31,10 +31,8 @@
     "@ngx-translate/http-loader": "^2.0.1",
     "cordova-android": "6.3.0",
     "cordova-ios": "4.5.4",
-    "cordova-plugin-badge": "^0.8.6",
     "cordova-plugin-device": "^1.1.4",
     "cordova-plugin-ionic-webview": "^1.1.16",
-    "cordova-plugin-local-notification": "git+https://github.com/katzer/cordova-plugin-local-notifications.git",
     "cordova-plugin-local-notifications": "git+https://github.com/katzer/cordova-plugin-local-notifications.git#ios10",
     "cordova-plugin-network-information": "^2.0.1",
     "cordova-plugin-networkinterface": "^1.2.0",
@@ -64,8 +62,7 @@
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-network-information": {},
-      "cordova-plugin-networkinterface": {},
-      "cordova-plugin-local-notification": {}
+      "cordova-plugin-networkinterface": {}
     },
     "platforms": [
       "ios",

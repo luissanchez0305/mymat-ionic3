@@ -21,12 +21,6 @@
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="Badge">
-        <param name="android-package" value="de.appplant.cordova.plugin.badge.Badge" />
-    </feature>
-    <feature name="LocalNotification">
-        <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
-    </feature>
     <name>MyMat - Light</name>
     <description>MyMat 8</description>
     <author email="lsanchez@esferasoluciones.com" href="https://www.esferasoluciones.com">
