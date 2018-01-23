@@ -57,6 +57,14 @@ module.exports = [
       "cordova.plugins.Keyboard"
     ],
     "runs": true
+  },
+  {
+    "id": "phonegap-plugin-local-notification.Notification",
+    "file": "plugins/phonegap-plugin-local-notification/www/notification.js",
+    "pluginId": "phonegap-plugin-local-notification",
+    "clobbers": [
+      "Notification"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -68,7 +76,8 @@ module.exports.metadata =
   "cordova-plugin-networkinterface": "1.2.0",
   "cordova-plugin-splashscreen": "4.0.3",
   "cordova-plugin-whitelist": "1.3.1",
-  "ionic-plugin-keyboard": "2.2.1"
+  "ionic-plugin-keyboard": "2.2.1",
+  "phonegap-plugin-local-notification": "1.0.1"
 };
 // BOTTOM OF METADATA
 });

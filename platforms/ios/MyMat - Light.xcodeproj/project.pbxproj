@@ -43,6 +43,8 @@
 		2CD08D16156042C49D88C43C /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 95244DF7BC9D402EB3883639 /* CDVSplashScreen.m */; };
 		95EEA72D78B44F14B17F191C /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C19568307E4C189EC19FB9 /* CDVViewController+SplashScreen.m */; };
 		0C4249285FE84C488E46F9B0 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 197BB5F0EDB34821AC073F73 /* IonicKeyboard.m */; };
+		4F414DA945304B72B6ED47AB /* AppDelegate+LocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F6854F20D24FB99D5C2424 /* AppDelegate+LocalNotification.m */; };
+		B6E170ABCC364E9496B4C0A8 /* W3CLocalNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AAA468EB954FB9A4077208 /* W3CLocalNotifications.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +137,10 @@
 		596852F0EC4048FAB49DF92D /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		197BB5F0EDB34821AC073F73 /* IonicKeyboard.m */ = {isa = PBXFileReference; name = "IonicKeyboard.m"; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		952D6503743147DCA18A385F /* IonicKeyboard.h */ = {isa = PBXFileReference; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		91F6854F20D24FB99D5C2424 /* AppDelegate+LocalNotification.m */ = {isa = PBXFileReference; name = "AppDelegate+LocalNotification.m"; path = "phonegap-plugin-local-notification/AppDelegate+LocalNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E2AAA468EB954FB9A4077208 /* W3CLocalNotifications.m */ = {isa = PBXFileReference; name = "W3CLocalNotifications.m"; path = "phonegap-plugin-local-notification/W3CLocalNotifications.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		17224CE47F794F60A81A6379 /* AppDelegate+LocalNotification.h */ = {isa = PBXFileReference; name = "AppDelegate+LocalNotification.h"; path = "phonegap-plugin-local-notification/AppDelegate+LocalNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EEC5422C13574DBC8782EBC5 /* W3CLocalNotifications.h */ = {isa = PBXFileReference; name = "W3CLocalNotifications.h"; path = "phonegap-plugin-local-notification/W3CLocalNotifications.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +300,10 @@
 				596852F0EC4048FAB49DF92D /* CDVViewController+SplashScreen.h */,
 				197BB5F0EDB34821AC073F73 /* IonicKeyboard.m */,
 				952D6503743147DCA18A385F /* IonicKeyboard.h */,
+				91F6854F20D24FB99D5C2424 /* AppDelegate+LocalNotification.m */,
+				E2AAA468EB954FB9A4077208 /* W3CLocalNotifications.m */,
+				17224CE47F794F60A81A6379 /* AppDelegate+LocalNotification.h */,
+				EEC5422C13574DBC8782EBC5 /* W3CLocalNotifications.h */,
 			);
 			name = Plugins;
 			path = "MyMat - Light/Plugins";
@@ -429,6 +439,8 @@
 				2CD08D16156042C49D88C43C /* CDVSplashScreen.m in Sources */,
 				95EEA72D78B44F14B17F191C /* CDVViewController+SplashScreen.m in Sources */,
 				0C4249285FE84C488E46F9B0 /* IonicKeyboard.m in Sources */,
+				4F414DA945304B72B6ED47AB /* AppDelegate+LocalNotification.m in Sources */,
+				B6E170ABCC364E9496B4C0A8 /* W3CLocalNotifications.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

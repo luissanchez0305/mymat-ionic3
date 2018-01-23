@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { Storage } from '@ionic/storage';
 import { Constants } from '../../services/constants';
-//import { LocalNotifications } from '@ionic-native/local-notifications';
+import { PhonegapLocalNotification } from '@ionic-native/phonegap-local-notification';
 
 /**
  * Generated class for the PlayingPage page.
@@ -31,7 +31,7 @@ export class PlayingPage {
   public timerInterval : any;
   
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage, 
-    public translateService: TranslateService/*, private localNotifications : LocalNotifications*/) {
+    public translateService: TranslateService, private localNotification: PhonegapLocalNotification) {
       
       document.addEventListener('resume', () => {
           var t = new Date();
@@ -119,6 +119,19 @@ export class PlayingPage {
               this.displayRunningTime = this.decreaseSecond(this.displayRunningTime);
               if(this.displayRunningTime == '00:00'){
                 clearInterval(this.timerInterval);
+                this.localNotification.requestPermission().then(
+                  (permission) => {
+                    if (permission === 'granted') {
+                
+                      // Create the notification
+                      this.localNotification.create('My Title', {
+                        tag: 'MyMat Ligh',
+                        body: 'Su rutina ha terminado',
+                        icon: 'assets/icon/favicon.ico'
+                      });
+                
+                    }
+                });
               }
             }, 1000);
             /*this.localNotifications.schedule({
