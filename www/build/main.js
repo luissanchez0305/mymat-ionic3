@@ -290,7 +290,7 @@ var PlayingPage = (function () {
         var secondsStr = time.substr(time.indexOf(':') + 1);
         var seconds = secondsStr[0] == '0' ? parseInt(secondsStr[1]) : parseInt(secondsStr);
         if (seconds - 1 == -1) {
-            minutesStr = minutes - 1 < 10 && minutes - 1 >= 1 ? '0' + (minutes - 1) : minutes - 1 == -1 ? '00' : '' + (minutes - 1);
+            minutesStr = minutes - 1 < 10 && minutes - 1 >= 0 ? '0' + (minutes - 1) : minutes - 1 == -1 ? '00' : '' + (minutes - 1);
             secondsStr = '59';
         }
         else {
