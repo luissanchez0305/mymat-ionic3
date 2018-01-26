@@ -2471,43 +2471,43 @@ export var Data = { Groups : [
             description: 'urinary-bladder-meridian-description'
         },            
         {
-            name: "1st CHAKRA",
+            name: "first-chakra-upper",
             apiName: "Root_Chakra",
             runningtime: "14:34",
             description: '1-chakra-description'
         },
         {
-            name: "2number-nd CHAKRA",
+            name: "second-chakra-upper",
             apiName: "Sacral_Chakra",
             runningtime: "12:06",
             description: '2-chakra-description'
         },
         {
-            name: "3rd CHAKRA",
+            name: "third-chakra-upper",
             apiName: "Solar_Plexus_Chakra",
             runningtime: "15:18",
             description: '3-chakra-description'
         },
         {
-            name: "4th CHAKRA",
+            name: "fourth-chakra-upper",
             apiName: "Heart_Chakra",
             runningtime: "17:01",
             description: '4-chakra-description'
         },
         {
-            name: "5th CHAKRA",
+            name: "fifth-chakra-upper",
             apiName: "Throat_Chakra",
             runningtime: "15:50",
             description: '5-chakra-description'
         },
         {
-            name: "6th CHAKRA",
+            name: "sixth-chakra-upper",
             apiName: "Brow_Chakra",
             runningtime: "14:40",
             description: '6-chakra-description'
         },
         {
-            name: "7th CHAKRA",
+            name: "seventh-chakra-upper",
             apiName: "Crown_Chakra",
             runningtime: "12:12",
             description: '7-chakra-description'

@@ -7,7 +7,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NetworkInterface } from '@ionic-native/network-interface';
-import { LocalNotifications } from '@ionic-native/local-notifications';
+//import { LocalNotifications } from '@ionic-native/local-notifications';
+import { EmailComposer } from '@ionic-native/email-composer';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -65,7 +66,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SplashScreen,
     RoutinesProvider,
     NetworkInterface,
-    LocalNotifications,
+//    LocalNotifications,
+    EmailComposer,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     APIServiceProvider
   ]

@@ -6,7 +6,6 @@ import { WifiPage } from '../wifi/wifi';
 import { RoutinesProvider } from '../../providers/routines/routines';
 import { Constants } from '../../services/constants';
 import { TranslateService } from '@ngx-translate/core';
-import { APIServiceProvider } from '../../providers/api-service/api-service';
 
 @Component({
   selector: 'page-home',
@@ -24,7 +23,7 @@ export class HomePage {
   public bubblesCurrentState4 : boolean;
   
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider, 
-    private translateService: TranslateService, public events: Events, public apiService : APIServiceProvider) {
+    private translateService: TranslateService, public events: Events) {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){

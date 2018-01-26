@@ -71,10 +71,10 @@
     "is_top_level": false,
     "variables": {}
   },
-  "cordova-plugin-local-notification": {
+  "cordova-plugin-email-composer": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-local-notification@^0.9.0-beta.2"
+      "id": "cordova-plugin-email-composer@^0.8.12"
     },
     "is_top_level": true,
     "variables": {}

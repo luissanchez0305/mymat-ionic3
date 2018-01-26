@@ -25834,6 +25834,43 @@ hr {
   font-size: 14px !important;
 }
 
+.input-cover {
+  display: none;
+}
+
+.item-input.contact input {
+  width: 80%;
+  height: 35px;
+  margin: 0px 0px 10px 0px;
+}
+
+.button-contact {
+  border-color: transparent;
+  background-color: #f8f8f8;
+  color: #444;
+  position: relative;
+  display: inline-block;
+  margin: 20px 0px 0px 0px;
+  padding: 0 12px;
+  min-width: 52px;
+  min-height: 47px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  vertical-align: top;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 42px;
+  cursor: pointer;
+}
+
+.button-contact.button-calm {
+  border-color: transparent;
+  background-color: #11c1f3;
+  color: #fff;
+}
+
 input {
   color: #000 !important;
   background-color: #f1f1f1 !important;

@@ -28,13 +28,9 @@
     "ionic-plugin-keyboard": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
-    "cordova-plugin-local-notification": {
+    "cordova-plugin-email-composer": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },
-  "dependent_plugins": {
-    "cordova-plugin-badge": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    }
-  }
+  "dependent_plugins": {}
 }
