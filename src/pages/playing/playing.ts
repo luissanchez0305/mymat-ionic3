@@ -125,6 +125,7 @@ export class PlayingPage {
               id: 1,
               title: 'MyMat Light',
               text: 'Su rutina ha terminado',
+              sound: 'file://assets/sounds/good-morning.mp3',
               at: new Date(t.getTime() + this.getSeconds(this.displayRunningTime) * 1000)
             });
           });
