@@ -130,4 +130,8 @@ export class ProgramsPage {
     this.events.publish("sharesBubbles", bubbleNames);
     this.navCtrl.pop();
   }
+  
+  moreProgramInfo(name, runTime, description){
+    
+  }
 }

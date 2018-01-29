@@ -8,6 +8,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NetworkInterface } from '@ionic-native/network-interface';
 import { LocalNotifications } from '@ionic-native/local-notifications';
+import { LongPressModule } from 'ionic-long-press';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -40,6 +41,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     HttpModule,
     HttpClientModule,
+    LongPressModule,
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
     TranslateModule.forRoot({
