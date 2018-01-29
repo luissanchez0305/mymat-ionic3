@@ -458,7 +458,7 @@ var ProgramsPage = (function () {
         this.navCtrl.pop();
     };
     ProgramsPage.prototype.moreProgramInfo = function (name, runTime, description) {
-        console.log('long press');
+        alert('long press');
     };
     ProgramsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({

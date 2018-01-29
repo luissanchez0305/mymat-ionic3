@@ -132,6 +132,6 @@ export class ProgramsPage {
   }
   
   moreProgramInfo(name, runTime, description){
-    console.log('long press');
+    alert('long press');
   }
 }
