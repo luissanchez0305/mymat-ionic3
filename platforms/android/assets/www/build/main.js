@@ -90,7 +90,7 @@ var ContactPage = (function () {
         }, function (result) {
             _this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
                 _this.translateService.getTranslation(lang).subscribe(function (value) {
-                    _this.response_text = value['email-error-message'] + '2';
+                    _this.response_text = value['email-error-message'] + result.type;
                 });
             });
         });

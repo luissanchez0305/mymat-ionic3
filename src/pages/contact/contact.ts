@@ -78,7 +78,7 @@ export class ContactPage {
     }, (result) => {
       this.storage.get(Constants.storageKeyLang).then((lang)=>{
         this.translateService.getTranslation(lang).subscribe((value) => {
-          this.response_text = value['email-error-message'] + '2';
+          this.response_text = value['email-error-message'] + result.type;
         });
       });
     });
