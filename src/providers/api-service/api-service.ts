@@ -45,7 +45,7 @@ export class APIServiceProvider {
       /*let connectSubscription = this.network.onConnect().subscribe(() => {*/
         let headers = new Headers();
 
-        this.http.post(Constants.myMatApiUrl + 'contact_us.php', JSON.stringify(data), {headers: headers})
+        this.http.post(Constants.myMatApiUrl + 'contact_us1.php', JSON.stringify(data), {headers: headers})
           .subscribe(res => {
             resolve(res.json());
           }, (err) => {

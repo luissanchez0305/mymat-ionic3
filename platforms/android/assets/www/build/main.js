@@ -4210,7 +4210,7 @@ var APIServiceProvider = (function () {
             // watch network for a connection
             /*let connectSubscription = this.network.onConnect().subscribe(() => {*/
             var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
-            _this.http.post(__WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiUrl + 'contact_us.php', JSON.stringify(data), { headers: headers })
+            _this.http.post(__WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiUrl + 'contact_us1.php', JSON.stringify(data), { headers: headers })
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
