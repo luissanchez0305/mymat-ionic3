@@ -1,4 +1,4 @@
-webpackJsonp([5],{
+webpackJsonp([6],{
 
 /***/ 110:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6,12 +6,12 @@ webpackJsonp([5],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_constants__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_constants__ = __webpack_require__(28);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -83,14 +83,14 @@ var ContactPage = (function () {
             else {
                 _this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
                     _this.translateService.getTranslation(lang).subscribe(function (value) {
-                        _this.response_text = value['email-error-message'];
+                        _this.response_text = value['email-error-message'] + '1';
                     });
                 });
             }
         }, function (result) {
             _this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
                 _this.translateService.getTranslation(lang).subscribe(function (value) {
-                    _this.response_text = value['email-error-message'];
+                    _this.response_text = value['email-error-message'] + '2';
                 });
             });
         });
@@ -115,7 +115,7 @@ var ContactPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HelpPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -160,11 +160,11 @@ var HelpPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PlayingPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_local_notifications__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_local_notifications__ = __webpack_require__(172);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -180,6 +180,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the PlayingPage page.
  *
@@ -187,23 +188,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var PlayingPage = (function () {
-    function PlayingPage(navCtrl, navParams, storage, translateService, localNotifications) {
+    function PlayingPage(navCtrl, navParams, storage, translateService, localNotifications, plt) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.storage = storage;
         this.translateService = translateService;
         this.localNotifications = localNotifications;
+        this.plt = plt;
         document.addEventListener('resume', function () {
             var t = new Date();
-            if (Math.round(t.getTime() / 1000) > _this.finishTime)
-                _this.displayRunningTime = '00:00';
-            else {
-                var secondsLeft = _this.finishTime - Math.round(t.getTime() / 1000);
-                _this.displayRunningTime = _this.convertSecondsToTime(secondsLeft);
-            }
+            _this.resume(t.getTime());
         });
     }
+    PlayingPage.prototype.simulateResume = function () {
+        var t = new Date();
+        this.resume(t.getTime() + 10);
+    };
+    PlayingPage.prototype.resume = function (now) {
+        if (Math.round(now / 1000) > this.finishTime) {
+            this.displayRunningTime = '00:00';
+            clearInterval(this.timerInterval);
+        }
+        else {
+            var secondsLeft = this.finishTime - Math.round(now / 1000);
+            this.displayRunningTime = this.convertSecondsToTime(secondsLeft);
+        }
+    };
     PlayingPage.prototype.ionViewDidLoad = function () {
         var _this = this;
         var program1CurrentTimeDecreasing;
@@ -275,12 +286,16 @@ var PlayingPage = (function () {
                                 clearInterval(_this.timerInterval);
                             }
                         }, 1000);
-                        _this.localNotifications.schedule({
-                            id: 1,
-                            title: 'MyMat Light',
-                            text: 'Su rutina ha terminado',
-                            sound: 'file://assets/sounds/good-morning.mp3',
-                            at: new Date(t.getTime() + _this.getSeconds(_this.displayRunningTime) * 1000)
+                        _this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                            _this.translateService.getTranslation(lang).subscribe(function (prog) {
+                                _this.localNotifications.schedule({
+                                    id: 1,
+                                    title: 'MyMat Light',
+                                    text: prog['time-expire-text'],
+                                    sound: 'file://assets/sounds/' + (_this.plt.is('ios') ? 'good-morning.m4r' : 'good-morning.mp3'),
+                                    at: new Date(t.getTime() + _this.getSeconds(_this.displayRunningTime) * 1000)
+                                });
+                            });
                         });
                     });
                     break;
@@ -316,10 +331,10 @@ var PlayingPage = (function () {
     };
     PlayingPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-playing',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/playing/playing.html"*/'<!--\n  Generated template for the PlayingPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="home center">\n  <div class="list card paddingSmall">\n      <div class="item">\n\n          <h2>{{ \'running-time\' | translate }} </h2>\n          <h3 style="color:white;">{{ displayRunningTime }}</h3>\n       \n      </div>\n\n      <div class="item item-time item-body">\n          <div class="program-running-left">\n            <div class="program-running-title">{{ programTitle1 }}</div>\n            <div class="program-running-duration">{{ program1CurrentTimeDecreasingAsTime }}</div>\n          </div>\n      </div>\n      \n      <div class="item item-time item-body">\n          <div class="program-running-left">\n            <div class="program-running-title">{{ programTitle2 }}</div>\n            <div class="program-running-duration">{{  program2CurrentTimeDecreasingAsTime }}</div>\n          </div>\n      </div>\n\n       <div class="item item-time item-body">\n          <div class="program-running-left">\n            <div class="program-running-title">{{ programTitle3 }}</div>\n            <div class="program-running-duration">{{  program3CurrentTimeDecreasingAsTime }}</div>\n          </div>\n      </div>\n      \n      <div class="item item-time item-body">\n          <div class="program-running-left">\n            <div class="program-running-title">{{ programTitle4 }}</div>\n            <div class="program-running-duration">{{  program4CurrentTimeDecreasingAsTime }}</div>\n          </div>\n      </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/playing/playing.html"*/,
+            selector: 'page-playing',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/playing/playing.html"*/'<!--\n  Generated template for the PlayingPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="home center">\n  <div class="list card paddingSmall">\n      <div class="item">\n\n          <h2>{{ \'remaining-time\' | translate }} </h2>\n          <h3 style="color:white;">{{ displayRunningTime }}</h3>\n          \n      </div>\n\n      <div class="item item-time item-body">\n          <div class="program-running-left">\n            <div class="program-running-title">{{ programTitle1 }}</div>\n            <div class="program-running-duration">{{ program1CurrentTimeDecreasingAsTime }}</div>\n          </div>\n      </div>\n      \n      <div class="item item-time item-body">\n          <div class="program-running-left">\n            <div class="program-running-title">{{ programTitle2 }}</div>\n            <div class="program-running-duration">{{  program2CurrentTimeDecreasingAsTime }}</div>\n          </div>\n      </div>\n\n       <div class="item item-time item-body">\n          <div class="program-running-left">\n            <div class="program-running-title">{{ programTitle3 }}</div>\n            <div class="program-running-duration">{{  program3CurrentTimeDecreasingAsTime }}</div>\n          </div>\n      </div>\n      \n      <div class="item item-time item-body">\n          <div class="program-running-left">\n            <div class="program-running-title">{{ programTitle4 }}</div>\n            <div class="program-running-duration">{{  program4CurrentTimeDecreasingAsTime }}</div>\n          </div>\n      </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/playing/playing.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_local_notifications__["a" /* LocalNotifications */]])
+            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_local_notifications__["a" /* LocalNotifications */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]])
     ], PlayingPage);
     return PlayingPage;
 }());
@@ -332,12 +347,12 @@ var PlayingPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramsPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_constants__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(23);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -347,6 +362,67 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
+
+
+
+/**
+ * Generated class for the ProgramPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ProgramPage = (function () {
+    function ProgramPage(navCtrl, navParams, storage, translateService) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.storage = storage;
+        this.translateService = translateService;
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+            _this.translateService.getTranslation(lang).subscribe(function (prog) {
+                _this.programName = typeof prog[navParams.get('name')] === 'undefined' ? navParams.get('name') : prog[navParams.get('name')];
+                _this.programRunningTime = typeof prog[navParams.get('runTime')] === 'undefined' ? navParams.get('runTime') : prog[navParams.get('runTime')];
+                _this.programDescription = typeof prog[navParams.get('description')] === 'undefined' ? navParams.get('description') : prog[navParams.get('description')];
+            });
+        });
+    }
+    ProgramPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-program',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/program/program.html"*/'<!--\n  Generated template for the ProgramPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ programName }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="home center">\n\n    <div class="program-info-modal-holder">\n        <div class="program-info-modal-header">\n          <h2 class="program-info-modal-running-time-title">{{ \'running-time\' | translate }} </h2>\n        	<h2 class="program-info-modal-running-time">\n             {{ programRunningTime  }} \n        	</h2>\n        </div>\n       \n        <div class="program-info-modal-mainbody">\n          <ion-scroll style="height:100%;">\n            <div style="height:100%; line-height:25px;">{{ programDescription }}</div>\n          </ion-scroll>\n        </div>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/program/program.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */]])
+    ], ProgramPage);
+    return ProgramPage;
+}());
+
+//# sourceMappingURL=program.js.map
+
+/***/ }),
+
+/***/ 114:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__program_program__ = __webpack_require__(113);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 
 
@@ -458,11 +534,11 @@ var ProgramsPage = (function () {
         this.navCtrl.pop();
     };
     ProgramsPage.prototype.moreProgramInfo = function (name, runTime, description) {
-        alert('long press');
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__program_program__["a" /* ProgramPage */], { name: name, runTime: runTime, description: description });
     };
     ProgramsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-programs',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/programs/programs.html"*/'<!--\n  Generated template for the ProgramsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Programs</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n        <ion-content padding class="home center">\n            <br>\n            <div class="modaltitle">{{ \'program-kits\' | translate }}</div>\n            <div class="modaldesc">{{ \'popular-routines\' | translate }}</div>\n            \n            \n            \n<ion-scroll scrollX="true" scrollY="false" class="wide-as-needed">\n  \n<div class="programs">\n\n    <div class="program" (click)="selectPreSetProgram(\'basic\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/Basic.png"></div>\n        <div class="programdesc" [innerHTML]="\'basic\' | translate"><br><br></div>\n    </div>\n    \n  \n\n\n        <div class="program opacity-50" (click)="selectPreSetProgram(\'business and travel\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/BusinessTraveller.png"></div>\n        <div class="programdesc" [innerHTML]="\'business-traveler\' | translate"></div>\n    </div>\n    \n           <div class="program opacity-50" (click)="selectPreSetProgram(\'family\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/family.png"></div>\n        <div class="programdesc" [innerHTML]="\'family-kit\' | translate"></div>\n    </div>\n    \n      <div class="program opacity-50" (click)="selectPreSetProgram(\'athlete\')" category-switcher="category-switcher" >\n        <div class="programpic"><img src="img/Athlete.png"></div>\n        <div class="programdesc" [innerHTML]="\'athlete\' | translate"></div>\n    </div>\n    \n         <div class="program opacity-50" (click)="selectPreSetProgram(\'spa\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/Spa.png"></div>\n        <div class="programdesc" [innerHTML]="\'spa-wellness\' | translate"><br><br></div>\n    </div>\n    \n    \n     <div class="program opacity-50" (click)="selectPreSetProgram(\'stress relief\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/stress.png"></div>\n        <div class="programdesc" [innerHTML]="\'stress-relief\' | translate"></div>\n    </div>\n    \n     \n        <div class="program opacity-50" (click)="selectPreSetProgram(\'senior\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/Senior.png"></div>\n        <div class="programdesc">SENIOR<br><br></div>\n    </div>\n    \n    \n        <div class="program opacity-50"  (click)="selectPreSetProgram(\'chakra balancing\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/chakra.png"></div>\n        <div class="programdesc" [innerHTML]="\'chakra-balancing\' | translate"></div>\n    </div>\n    \n        <div class="program opacity-50" (click)="selectPreSetProgram(\'elements\')" category-switcher="category-switcher">\n        <div class="programpic"><img src="img/Elements.png"></div>\n        <div class="programdesc" [innerHTML]="\'elements-meridians\' | translate"><br></div>\n    </div>\n  \n    \n\n</div>\n                   \n</ion-scroll>\n\n\n<div class="modaltitle">{{ \'programs\' | translate }}</div>\n<div *ngFor="let routine of predefinedPrograms">\n\n{{ routine.name | translate }}\n<!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->\n\n<div class="paddingmodal">\n\n   \n    <ion-list (click)="addPrograms(routine.name, routine.programs[0].apiName, routine.programs[1].apiName, \n        routine.programs[2].apiName,routine.programs[3].apiName)">\n        \n        <ion-item *ngFor="let program of routine.programs" class="addiction center">\n             {{ program.name | translate }}\n        </ion-item>\n\n\n    </ion-list>\n\n</div>\n\n</div>\n\n            \n            <div class="modaltitle">{{ \'independent-programs\' | translate }}</div>\n            <div class="modaldesc"> {{ \'tap-program\' | translate }}</div>\n            <div class="paddingmodal">\n<ion-list class="programlist">\n\n    \n  <!--<ion-item class="addiction" on-hold="moreProgramInfo(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.description)" ng-repeat="program in programs" (click)="addProgramToRoutine(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines" (click)="modal.hide()">\n{{program.fields.name}} </ion-item>-->\n    \n<ion-item class="addiction center" ion-long-press [interval]="700" (onPressEnd)="moreProgramInfo(program.name, program.runningtime, program.description)" *ngFor="let program of programs" (click)="add1Program(program.name, program.runningtime, program.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines">\n{{ program.name | translate }} </ion-item>\n    \n    \n</ion-list>\n            </div>\n           \n            <button class="bluebtn" (click)="hide()">{{ \'cancel\' | translate }}</button>\n          <br><br><br><br><br><br><br><br>\n        </ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/programs/programs.html"*/,
+            selector: 'page-programs',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/programs/programs.html"*/'<!--\n  Generated template for the ProgramsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Programs</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="home center">\n    <br>\n    <div class="modaltitle">{{ \'program-kits\' | translate }}</div>\n    <div class="modaldesc">{{ \'popular-routines\' | translate }}</div>\n            \n    <ion-scroll scrollX="true" scrollY="false" class="wide-as-needed">\n    \n        <div class="programs">\n    \n            <div class="program" (click)="selectPreSetProgram(\'basic\')" category-switcher="category-switcher">\n                <div class="programpic"><img src="img/Basic.png"></div>\n                <div class="programdesc" [innerHTML]="\'basic\' | translate"><br><br></div>\n            </div>\n            \n            <div class="program opacity-50" (click)="selectPreSetProgram(\'business and travel\')" category-switcher="category-switcher">\n                <div class="programpic"><img src="img/BusinessTraveller.png"></div>\n                <div class="programdesc" [innerHTML]="\'business-traveler\' | translate"></div>\n            </div>\n            \n           <div class="program opacity-50" (click)="selectPreSetProgram(\'family\')" category-switcher="category-switcher">\n                <div class="programpic"><img src="img/family.png"></div>\n                <div class="programdesc" [innerHTML]="\'family-kit\' | translate"></div>\n            </div>\n            \n            <div class="program opacity-50" (click)="selectPreSetProgram(\'athlete\')" category-switcher="category-switcher" >\n                <div class="programpic"><img src="img/Athlete.png"></div>\n                <div class="programdesc" [innerHTML]="\'athlete\' | translate"></div>\n            </div>\n            \n            <div class="program opacity-50" (click)="selectPreSetProgram(\'spa\')" category-switcher="category-switcher">\n                <div class="programpic"><img src="img/Spa.png"></div>\n                <div class="programdesc" [innerHTML]="\'spa-wellness\' | translate"><br><br></div>\n            </div>\n            \n            \n            <div class="program opacity-50" (click)="selectPreSetProgram(\'stress relief\')" category-switcher="category-switcher">\n                <div class="programpic"><img src="img/stress.png"></div>\n                <div class="programdesc" [innerHTML]="\'stress-relief\' | translate"></div>\n            </div>\n            \n             \n            <div class="program opacity-50" (click)="selectPreSetProgram(\'senior\')" category-switcher="category-switcher">\n                <div class="programpic"><img src="img/Senior.png"></div>\n                <div class="programdesc">SENIOR<br><br></div>\n            </div>\n            \n            \n            <div class="program opacity-50"  (click)="selectPreSetProgram(\'chakra balancing\')" category-switcher="category-switcher">\n                <div class="programpic"><img src="img/chakra.png"></div>\n                <div class="programdesc" [innerHTML]="\'chakra-balancing\' | translate"></div>\n            </div>\n            \n            <div class="program opacity-50" (click)="selectPreSetProgram(\'elements\')" category-switcher="category-switcher">\n                <div class="programpic"><img src="img/Elements.png"></div>\n                <div class="programdesc" [innerHTML]="\'elements-meridians\' | translate"><br></div>\n            </div>\n          \n            \n        \n        </div>\n                       \n    </ion-scroll>\n    \n    \n    <div class="modaltitle">{{ \'programs\' | translate }}</div>\n    <div *ngFor="let routine of predefinedPrograms">\n        \n        {{ routine.name | translate }}\n        <!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->\n        \n        <div class="paddingmodal">\n        \n           \n            <ion-list (click)="addPrograms(routine.name, routine.programs[0].apiName, routine.programs[1].apiName, \n                routine.programs[2].apiName,routine.programs[3].apiName)">\n                \n                <ion-item *ngFor="let program of routine.programs" class="addiction center">\n                     {{ program.name | translate }}\n                </ion-item>\n        \n        \n            </ion-list>\n        \n        </div>\n\n    </div>\n\n            \n    <div class="modaltitle">{{ \'independent-programs\' | translate }}</div>\n    <div class="modaldesc"> {{ \'tap-program\' | translate }}</div>\n    <div class="paddingmodal">\n        <ion-list class="programlist">\n        \n            \n              <!--<ion-item class="addiction" on-hold="moreProgramInfo(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.description)" ng-repeat="program in programs" (click)="addProgramToRoutine(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines" (click)="modal.hide()">\n            {{program.fields.name}} </ion-item>-->\n                \n            <ion-item class="addiction center" ion-long-press [interval]="700" (onPressing)="moreProgramInfo(program.name, program.runningtime, program.description)" *ngFor="let program of programs" (click)="add1Program(program.name, program.runningtime, program.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines">\n            {{ program.name | translate }} </ion-item>\n            \n            \n        </ion-list>\n    </div>\n           \n    <button class="bluebtn" (click)="hide()">{{ \'cancel\' | translate }}</button>\n  <br><br><br><br><br><br><br><br>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/programs/programs.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__["a" /* RoutinesProvider */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Events */]])
@@ -474,18 +550,18 @@ var ProgramsPage = (function () {
 
 /***/ }),
 
-/***/ 114:
+/***/ 115:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WifiPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__playing_playing__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__ = __webpack_require__(174);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -676,7 +752,7 @@ var WifiPage = (function () {
     };
     WifiPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-wifi',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/'<!--\n  Generated template for the WifiPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="home center">\n        <br>\n        <div *ngIf="mymatWifi">\n            <img src="img/wifi.png">\n            <div class="titleinstructions" [innerHTML]="\'please-pair\' | translate"></div>\n            <br>  \n            <p [innerHTML]="\'activate-wifi\' | translate">Steps to pair your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-1\' | translate">1. Turn on your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-2\' | translate">2. On your device, navigate to your Wi-Fi settings</p>\n            <p [innerHTML]="\'activate-wifi-3\' | translate">3. Connect your device\'s WiFi with your MyMat network</p>\n            <p [innerHTML]="\'activate-wifi-4\' | translate">4. Once is connected, return to the MyMat app</p>\n            <!--<p class="interval-counter">0</p>-->\n            <br/>\n            <div *ngIf="mymatNoStatus">\n                <p [innerHTML]="\'no-detect-1\' | translate">We were unable to detect your MyMat</p>\n                <p [innerHTML]="\'no-detect-2\' | translate">Please follow the steps to do so</p>\n            </div>\n            <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="\'start-routine\' | translate">LAUNCH MYMAT</a>\n            <img *ngIf="showLoading" src="img/loading.gif" width="200" />\n        </div>\n        <div *ngIf="mymatStatus">\n            <div class="status-table divTable">\n                <div class="divTableHeading">\n                    <div class="divTableRow">\n                        <div class="divTableHead divTableCellFirstLeft">\n                            <h4 [innerHTML]="\'battery-power\' | translate"></h4>\n                        </div>\n                        <div class="divTableHead divTableCellFirstRight">\n                            <h4 id="battery">{{ batteryCharge }} <img src="{{ batteryImg }}" height="16"></h4>\n                            \n                        </div>\n                    </div>\n                </div>\n                <div class="divTableBody">\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 1</div>\n                        <div class="divTableCell" id="coil1">{{ coilText1 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd">{{ coilText }} 2</div>\n                        <div class="divTableCell coilOdd" id="coil2">{{ coilText2 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 3</div>\n                        <div class="divTableCell" id="coil3">{{ coilText3 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd divTableCellLastLeft">{{ coilText }} 4</div>\n                        <div class="divTableCell coilOdd divTableCellLastRight" id="coil4">{{ coilText4 }}</div>\n                    </div>\n                </div>\n            </div>\n            <p>&nbsp;</p>\n            <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="\'start-routine\' | translate">LAUNCH MYMAT</a>\n        </div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/,
+            selector: 'page-wifi',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/'<!--\n  Generated template for the WifiPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="home center">\n        <br>\n        <div *ngIf="mymatWifi">\n            <img src="img/wifi.png">\n            <div class="titleinstructions" [innerHTML]="\'please-pair\' | translate"></div>\n            <br>  \n            <p [innerHTML]="\'activate-wifi\' | translate">Steps to pair your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-1\' | translate">1. Turn on your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-2\' | translate">2. On your device, navigate to your Wi-Fi settings</p>\n            <p [innerHTML]="\'activate-wifi-3\' | translate">3. Connect your device\'s WiFi with your MyMat network</p>\n            <p [innerHTML]="\'activate-wifi-4\' | translate">4. Once is connected, return to the MyMat app</p>\n            <!--<p class="interval-counter">0</p>-->\n            <br/>\n            <div *ngIf="mymatNoStatus">\n                <p [innerHTML]="\'no-detect-1\' | translate">We were unable to detect your MyMat</p>\n                <p [innerHTML]="\'no-detect-2\' | translate">Please follow the steps to do so</p>\n            </div>\n            <img *ngIf="showLoading" src="img/loading.gif" width="200" />\n        </div>\n        <div *ngIf="mymatStatus">\n            <div class="status-table divTable">\n                <div class="divTableHeading">\n                    <div class="divTableRow">\n                        <div class="divTableHead divTableCellFirstLeft">\n                            <h4 [innerHTML]="\'battery-power\' | translate"></h4>\n                        </div>\n                        <div class="divTableHead divTableCellFirstRight">\n                            <h4 id="battery">{{ batteryCharge }} <img src="{{ batteryImg }}" height="16"></h4>\n                            \n                        </div>\n                    </div>\n                </div>\n                <div class="divTableBody">\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 1</div>\n                        <div class="divTableCell" id="coil1">{{ coilText1 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd">{{ coilText }} 2</div>\n                        <div class="divTableCell coilOdd" id="coil2">{{ coilText2 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 3</div>\n                        <div class="divTableCell" id="coil3">{{ coilText3 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd divTableCellLastLeft">{{ coilText }} 4</div>\n                        <div class="divTableCell coilOdd divTableCellLastRight" id="coil4">{{ coilText4 }}</div>\n                    </div>\n                </div>\n            </div>\n            <p>&nbsp;</p>\n            <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="\'start-routine\' | translate">LAUNCH MYMAT</a>\n        </div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__["a" /* APIServiceProvider */],
             __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__["a" /* NetworkInterface */]])
@@ -688,7 +764,7 @@ var WifiPage = (function () {
 
 /***/ }),
 
-/***/ 126:
+/***/ 127:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -701,32 +777,36 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 126;
+webpackEmptyAsyncContext.id = 127;
 
 /***/ }),
 
-/***/ 168:
+/***/ 169:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/contact/contact.module": [
-		308,
-		4
+		309,
+		5
 	],
 	"../pages/help/help.module": [
-		309,
-		3
+		310,
+		4
 	],
 	"../pages/playing/playing.module": [
-		310,
+		311,
+		3
+	],
+	"../pages/program/program.module": [
+		312,
 		2
 	],
 	"../pages/programs/programs.module": [
-		311,
+		313,
 		1
 	],
 	"../pages/wifi/wifi.module": [
-		312,
+		314,
 		0
 	]
 };
@@ -741,24 +821,24 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 168;
+webpackAsyncContext.id = 169;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 217:
+/***/ 218:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_programs__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wifi_wifi__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_programs__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wifi_wifi__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_routines_routines__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_constants__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_constants__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(35);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -927,13 +1007,13 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 218:
+/***/ 219:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(239);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -941,35 +1021,36 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 238:
+/***/ 239:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export HttpLoaderFactory */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(298);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_http_loader__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_network_interface__ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_local_notifications__ = __webpack_require__(171);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ionic_long_press__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_http_loader__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_network_interface__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_local_notifications__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ionic_long_press__ = __webpack_require__(306);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_ionic_long_press___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_ionic_long_press__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_component__ = __webpack_require__(307);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_component__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_help_help__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_contact_contact__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_programs_programs__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_wifi_wifi__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_programs_programs__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_wifi_wifi__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_playing_playing__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_status_bar__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_splash_screen__ = __webpack_require__(216);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_routines_routines__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_api_service_api_service__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_program_program__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_status_bar__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_splash_screen__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_routines_routines__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_api_service_api_service__ = __webpack_require__(85);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -984,6 +1065,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+//import { Network } from '@ionic-native/network';
 
 
 
@@ -1013,7 +1096,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_14__pages_contact_contact__["a" /* ContactPage */],
                 __WEBPACK_IMPORTED_MODULE_15__pages_programs_programs__["a" /* ProgramsPage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_wifi_wifi__["a" /* WifiPage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_playing_playing__["a" /* PlayingPage */]
+                __WEBPACK_IMPORTED_MODULE_17__pages_playing_playing__["a" /* PlayingPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_program_program__["a" /* ProgramPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -1025,6 +1109,7 @@ var AppModule = (function () {
                         { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/help/help.module#HelpPageModule', name: 'HelpPage', segment: 'help', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/playing/playing.module#PlayingPageModule', name: 'PlayingPage', segment: 'playing', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/program/program.module#ProgramPageModule', name: 'ProgramPage', segment: 'program', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/programs/programs.module#ProgramsPageModule', name: 'ProgramsPage', segment: 'programs', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wifi/wifi.module#WifiPageModule', name: 'WifiPage', segment: 'wifi', priority: 'low', defaultHistory: [] }
                     ]
@@ -1046,16 +1131,18 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_14__pages_contact_contact__["a" /* ContactPage */],
                 __WEBPACK_IMPORTED_MODULE_15__pages_programs_programs__["a" /* ProgramsPage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_wifi_wifi__["a" /* WifiPage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_playing_playing__["a" /* PlayingPage */]
+                __WEBPACK_IMPORTED_MODULE_17__pages_playing_playing__["a" /* PlayingPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_program_program__["a" /* ProgramPage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_18__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_19__ionic_native_splash_screen__["a" /* SplashScreen */],
-                __WEBPACK_IMPORTED_MODULE_20__providers_routines_routines__["a" /* RoutinesProvider */],
+                __WEBPACK_IMPORTED_MODULE_19__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_20__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_21__providers_routines_routines__["a" /* RoutinesProvider */],
                 __WEBPACK_IMPORTED_MODULE_8__ionic_native_network_interface__["a" /* NetworkInterface */],
+                //    Network,
                 __WEBPACK_IMPORTED_MODULE_9__ionic_native_local_notifications__["a" /* LocalNotifications */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["ErrorHandler"], useClass: __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["c" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_21__providers_api_service_api_service__["a" /* APIServiceProvider */]
+                __WEBPACK_IMPORTED_MODULE_22__providers_api_service_api_service__["a" /* APIServiceProvider */]
             ]
         })
     ], AppModule);
@@ -1066,7 +1153,27 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 281:
+/***/ 28:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Constants; });
+var Constants = {
+    localIPAddress: '192.168.0.100',
+    myMatApiStartUrl: 'http://192.168.1.3/start.htm',
+    myMatApiIndexUrl: 'http://192.168.1.3/index.htm',
+    myMatApiUrl: 'http://www.mymat.life/api/',
+    storageKeyLang: 'mymat_lang',
+    storageKeyBubble1: 'MyMat_bubbleRoutineProgram1',
+    storageKeyBubble2: 'MyMat_bubbleRoutineProgram2',
+    storageKeyBubble3: 'MyMat_bubbleRoutineProgram3',
+    storageKeyBubble4: 'MyMat_bubbleRoutineProgram4'
+};
+//# sourceMappingURL=constants.js.map
+
+/***/ }),
+
+/***/ 282:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3887,21 +3994,21 @@ var Data = { Groups: [
 
 /***/ }),
 
-/***/ 307:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(216);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_help_help__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_contact_contact__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ngx_translate_core__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ngx_translate_core__ = __webpack_require__(35);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4039,26 +4146,6 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 31:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Constants; });
-var Constants = {
-    localIPAddress: '192.168.0.100',
-    myMatApiStartUrl: 'http://192.168.1.3/start.htm',
-    myMatApiIndexUrl: 'http://192.168.1.3/index.htm',
-    myMatApiUrl: 'http://www.mymat.life/api/',
-    storageKeyLang: 'mymat_lang',
-    storageKeyBubble1: 'MyMat_bubbleRoutineProgram1',
-    storageKeyBubble2: 'MyMat_bubbleRoutineProgram2',
-    storageKeyBubble3: 'MyMat_bubbleRoutineProgram3',
-    storageKeyBubble4: 'MyMat_bubbleRoutineProgram4'
-};
-//# sourceMappingURL=constants.js.map
-
-/***/ }),
-
 /***/ 85:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4066,8 +4153,8 @@ var Constants = {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return APIServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_constants__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_constants__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(266);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4081,6 +4168,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+//import { Network } from '@ionic-native/network';
 
 /*
   Generated class for the AuthServiceProvider provider.
@@ -4089,8 +4177,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
   and Angular DI.
 */
 var APIServiceProvider = (function () {
-    function APIServiceProvider(http) {
-        this.http = http;
+    function APIServiceProvider(http /*, private network: Network*/) {
+        this.http = http; /*, private network: Network*/
     }
     APIServiceProvider.prototype.test_language = function () {
         var _this = this;
@@ -4119,13 +4207,16 @@ var APIServiceProvider = (function () {
     APIServiceProvider.prototype.sendEmail = function (data) {
         var _this = this;
         return new Promise(function (resolve, reject) {
+            // watch network for a connection
+            /*let connectSubscription = this.network.onConnect().subscribe(() => {*/
             var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
-            _this.http.post(__WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiUrl + 'contact_us1.php', JSON.stringify(data), { headers: headers })
+            _this.http.post(__WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiUrl + 'contact_us.php', JSON.stringify(data), { headers: headers })
                 .subscribe(function (res) {
                 resolve(res.json());
             }, function (err) {
                 reject(err);
             });
+            /*});*/
         });
     };
     APIServiceProvider.prototype.start = function (programs) {
@@ -4147,7 +4238,7 @@ var APIServiceProvider = (function () {
     };
     APIServiceProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] /*, private network: Network*/])
     ], APIServiceProvider);
     return APIServiceProvider;
 }());
@@ -4163,7 +4254,7 @@ var APIServiceProvider = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoutinesProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(23);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4290,5 +4381,5 @@ var RoutinesProvider = (function () {
 
 /***/ })
 
-},[218]);
+},[219]);
 //# sourceMappingURL=main.js.map

@@ -7,6 +7,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NetworkInterface } from '@ionic-native/network-interface';
+//import { Network } from '@ionic-native/network';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 import { LongPressModule } from 'ionic-long-press';
 
@@ -17,6 +18,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { ProgramsPage } from '../pages/programs/programs';
 import { WifiPage } from '../pages/wifi/wifi';
 import { PlayingPage } from '../pages/playing/playing';
+import { ProgramPage } from '../pages/program/program';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -35,7 +37,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactPage,
     ProgramsPage,
     WifiPage,
-    PlayingPage
+    PlayingPage,
+    ProgramPage
   ],
   imports: [
     BrowserModule,
@@ -60,13 +63,15 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactPage,
     ProgramsPage,
     WifiPage,
-    PlayingPage
+    PlayingPage,
+    ProgramPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     RoutinesProvider,
     NetworkInterface,
+//    Network,
     LocalNotifications,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     APIServiceProvider

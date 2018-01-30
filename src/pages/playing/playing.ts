@@ -4,6 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Storage } from '@ionic/storage';
 import { Constants } from '../../services/constants';
 import { LocalNotifications } from '@ionic-native/local-notifications';
+import { Platform } from 'ionic-angular';
 
 /**
  * Generated class for the PlayingPage page.
@@ -31,17 +32,28 @@ export class PlayingPage {
   public timerInterval : any;
   
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage, 
-    public translateService: TranslateService, private localNotifications : LocalNotifications) {
+    public translateService: TranslateService, private localNotifications : LocalNotifications, public plt: Platform) {
       
       document.addEventListener('resume', () => {
-          var t = new Date();
-          if(Math.round(t.getTime() / 1000) > this.finishTime)
-            this.displayRunningTime = '00:00';
-          else{
-            var secondsLeft = this.finishTime - Math.round(t.getTime() / 1000);
-            this.displayRunningTime = this.convertSecondsToTime(secondsLeft);
-          }
+        var t = new Date();
+        this.resume(t.getTime());
       });
+  }
+  
+  simulateResume(){
+    var t = new Date();
+    this.resume(t.getTime() + 10);
+  }
+  
+  resume(now){
+    if(Math.round(now / 1000) > this.finishTime){
+      this.displayRunningTime = '00:00';
+      clearInterval(this.timerInterval);
+    }
+    else{
+      var secondsLeft = this.finishTime - Math.round(now / 1000);
+      this.displayRunningTime = this.convertSecondsToTime(secondsLeft);
+    }
   }
 
   ionViewDidLoad() {
@@ -121,12 +133,16 @@ export class PlayingPage {
                 clearInterval(this.timerInterval);
               }
             }, 1000);
-            this.localNotifications.schedule({
-              id: 1,
-              title: 'MyMat Light',
-              text: 'Su rutina ha terminado',
-              sound: 'file://assets/sounds/good-morning.mp3',
-              at: new Date(t.getTime() + this.getSeconds(this.displayRunningTime) * 1000)
+            this.storage.get(Constants.storageKeyLang).then((lang)=>{
+              this.translateService.getTranslation(lang).subscribe((prog) =>{
+                this.localNotifications.schedule({
+                  id: 1,
+                  title: 'MyMat Light',
+                  text: prog['time-expire-text'],
+                  sound: 'file://assets/sounds/' + (this.plt.is('ios') ? 'good-morning.m4r' : 'good-morning.mp3'),
+                  at: new Date(t.getTime() + this.getSeconds(this.displayRunningTime) * 1000)
+                });
+              });     
             });
           });
           break;

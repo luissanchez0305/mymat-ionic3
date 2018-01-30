@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
 import { Constants } from '../../services/constants';
+//import { Network } from '@ionic-native/network';
 import 'rxjs/add/operator/map';
 
 /*
@@ -11,7 +12,7 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class APIServiceProvider {
-  constructor(public http: Http) {
+  constructor(public http: Http/*, private network: Network*/) {
     
   }
   test_language(){
@@ -40,15 +41,18 @@ export class APIServiceProvider {
   
   sendEmail(data){
     return new Promise((resolve, reject) => {
-      let headers = new Headers();
+      // watch network for a connection
+      /*let connectSubscription = this.network.onConnect().subscribe(() => {*/
+        let headers = new Headers();
 
-      this.http.post(Constants.myMatApiUrl + 'contact_us1.php', JSON.stringify(data), {headers: headers})
-        .subscribe(res => {
-          resolve(res.json());
-        }, (err) => {
-          reject(err);
-        });
-    })
+        this.http.post(Constants.myMatApiUrl + 'contact_us.php', JSON.stringify(data), {headers: headers})
+          .subscribe(res => {
+            resolve(res.json());
+          }, (err) => {
+            reject(err);
+          }); 
+      /*});*/
+    });
   }
   
   start(programs){

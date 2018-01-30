@@ -71,14 +71,14 @@ export class ContactPage {
         } else {
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((value) => {
-                this.response_text = value['email-error-message'];
+                this.response_text = value['email-error-message'] + '1';
               });
             });
         }
     }, (result) => {
       this.storage.get(Constants.storageKeyLang).then((lang)=>{
         this.translateService.getTranslation(lang).subscribe((value) => {
-          this.response_text = value['email-error-message'];
+          this.response_text = value['email-error-message'] + '2';
         });
       });
     });

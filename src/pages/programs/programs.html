@@ -13,115 +13,110 @@
 </ion-header>
 
 
-        <ion-content padding class="home center">
-            <br>
-            <div class="modaltitle">{{ 'program-kits' | translate }}</div>
-            <div class="modaldesc">{{ 'popular-routines' | translate }}</div>
+<ion-content padding class="home center">
+    <br>
+    <div class="modaltitle">{{ 'program-kits' | translate }}</div>
+    <div class="modaldesc">{{ 'popular-routines' | translate }}</div>
             
-            
-            
-<ion-scroll scrollX="true" scrollY="false" class="wide-as-needed">
-  
-<div class="programs">
-
-    <div class="program" (click)="selectPreSetProgram('basic')" category-switcher="category-switcher">
-        <div class="programpic"><img src="img/Basic.png"></div>
-        <div class="programdesc" [innerHTML]="'basic' | translate"><br><br></div>
-    </div>
+    <ion-scroll scrollX="true" scrollY="false" class="wide-as-needed">
     
-  
-
-
-        <div class="program opacity-50" (click)="selectPreSetProgram('business and travel')" category-switcher="category-switcher">
-        <div class="programpic"><img src="img/BusinessTraveller.png"></div>
-        <div class="programdesc" [innerHTML]="'business-traveler' | translate"></div>
-    </div>
+        <div class="programs">
     
-           <div class="program opacity-50" (click)="selectPreSetProgram('family')" category-switcher="category-switcher">
-        <div class="programpic"><img src="img/family.png"></div>
-        <div class="programdesc" [innerHTML]="'family-kit' | translate"></div>
-    </div>
-    
-      <div class="program opacity-50" (click)="selectPreSetProgram('athlete')" category-switcher="category-switcher" >
-        <div class="programpic"><img src="img/Athlete.png"></div>
-        <div class="programdesc" [innerHTML]="'athlete' | translate"></div>
-    </div>
-    
-         <div class="program opacity-50" (click)="selectPreSetProgram('spa')" category-switcher="category-switcher">
-        <div class="programpic"><img src="img/Spa.png"></div>
-        <div class="programdesc" [innerHTML]="'spa-wellness' | translate"><br><br></div>
-    </div>
-    
-    
-     <div class="program opacity-50" (click)="selectPreSetProgram('stress relief')" category-switcher="category-switcher">
-        <div class="programpic"><img src="img/stress.png"></div>
-        <div class="programdesc" [innerHTML]="'stress-relief' | translate"></div>
-    </div>
-    
-     
-        <div class="program opacity-50" (click)="selectPreSetProgram('senior')" category-switcher="category-switcher">
-        <div class="programpic"><img src="img/Senior.png"></div>
-        <div class="programdesc">SENIOR<br><br></div>
-    </div>
-    
-    
-        <div class="program opacity-50"  (click)="selectPreSetProgram('chakra balancing')" category-switcher="category-switcher">
-        <div class="programpic"><img src="img/chakra.png"></div>
-        <div class="programdesc" [innerHTML]="'chakra-balancing' | translate"></div>
-    </div>
-    
-        <div class="program opacity-50" (click)="selectPreSetProgram('elements')" category-switcher="category-switcher">
-        <div class="programpic"><img src="img/Elements.png"></div>
-        <div class="programdesc" [innerHTML]="'elements-meridians' | translate"><br></div>
-    </div>
-  
-    
-
-</div>
-                   
-</ion-scroll>
-
-
-<div class="modaltitle">{{ 'programs' | translate }}</div>
-<div *ngFor="let routine of predefinedPrograms">
-
-{{ routine.name | translate }}
-<!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->
-
-<div class="paddingmodal">
-
-   
-    <ion-list (click)="addPrograms(routine.name, routine.programs[0].apiName, routine.programs[1].apiName, 
-        routine.programs[2].apiName,routine.programs[3].apiName)">
-        
-        <ion-item *ngFor="let program of routine.programs" class="addiction center">
-             {{ program.name | translate }}
-        </ion-item>
-
-
-    </ion-list>
-
-</div>
-
-</div>
-
-            
-            <div class="modaltitle">{{ 'independent-programs' | translate }}</div>
-            <div class="modaldesc"> {{ 'tap-program' | translate }}</div>
-            <div class="paddingmodal">
-<ion-list class="programlist">
-
-    
-  <!--<ion-item class="addiction" on-hold="moreProgramInfo(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.description)" ng-repeat="program in programs" (click)="addProgramToRoutine(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines" (click)="modal.hide()">
-{{program.fields.name}} </ion-item>-->
-    
-<ion-item class="addiction center" ion-long-press [interval]="700" (onPressEnd)="moreProgramInfo(program.name, program.runningtime, program.description)" *ngFor="let program of programs" (click)="add1Program(program.name, program.runningtime, program.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines">
-{{ program.name | translate }} </ion-item>
-    
-    
-</ion-list>
+            <div class="program" (click)="selectPreSetProgram('basic')" category-switcher="category-switcher">
+                <div class="programpic"><img src="img/Basic.png"></div>
+                <div class="programdesc" [innerHTML]="'basic' | translate"><br><br></div>
             </div>
+            
+            <div class="program opacity-50" (click)="selectPreSetProgram('business and travel')" category-switcher="category-switcher">
+                <div class="programpic"><img src="img/BusinessTraveller.png"></div>
+                <div class="programdesc" [innerHTML]="'business-traveler' | translate"></div>
+            </div>
+            
+           <div class="program opacity-50" (click)="selectPreSetProgram('family')" category-switcher="category-switcher">
+                <div class="programpic"><img src="img/family.png"></div>
+                <div class="programdesc" [innerHTML]="'family-kit' | translate"></div>
+            </div>
+            
+            <div class="program opacity-50" (click)="selectPreSetProgram('athlete')" category-switcher="category-switcher" >
+                <div class="programpic"><img src="img/Athlete.png"></div>
+                <div class="programdesc" [innerHTML]="'athlete' | translate"></div>
+            </div>
+            
+            <div class="program opacity-50" (click)="selectPreSetProgram('spa')" category-switcher="category-switcher">
+                <div class="programpic"><img src="img/Spa.png"></div>
+                <div class="programdesc" [innerHTML]="'spa-wellness' | translate"><br><br></div>
+            </div>
+            
+            
+            <div class="program opacity-50" (click)="selectPreSetProgram('stress relief')" category-switcher="category-switcher">
+                <div class="programpic"><img src="img/stress.png"></div>
+                <div class="programdesc" [innerHTML]="'stress-relief' | translate"></div>
+            </div>
+            
+             
+            <div class="program opacity-50" (click)="selectPreSetProgram('senior')" category-switcher="category-switcher">
+                <div class="programpic"><img src="img/Senior.png"></div>
+                <div class="programdesc">SENIOR<br><br></div>
+            </div>
+            
+            
+            <div class="program opacity-50"  (click)="selectPreSetProgram('chakra balancing')" category-switcher="category-switcher">
+                <div class="programpic"><img src="img/chakra.png"></div>
+                <div class="programdesc" [innerHTML]="'chakra-balancing' | translate"></div>
+            </div>
+            
+            <div class="program opacity-50" (click)="selectPreSetProgram('elements')" category-switcher="category-switcher">
+                <div class="programpic"><img src="img/Elements.png"></div>
+                <div class="programdesc" [innerHTML]="'elements-meridians' | translate"><br></div>
+            </div>
+          
+            
+        
+        </div>
+                       
+    </ion-scroll>
+    
+    
+    <div class="modaltitle">{{ 'programs' | translate }}</div>
+    <div *ngFor="let routine of predefinedPrograms">
+        
+        {{ routine.name | translate }}
+        <!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->
+        
+        <div class="paddingmodal">
+        
            
-            <button class="bluebtn" (click)="hide()">{{ 'cancel' | translate }}</button>
-          <br><br><br><br><br><br><br><br>
-        </ion-content>
+            <ion-list (click)="addPrograms(routine.name, routine.programs[0].apiName, routine.programs[1].apiName, 
+                routine.programs[2].apiName,routine.programs[3].apiName)">
+                
+                <ion-item *ngFor="let program of routine.programs" class="addiction center">
+                     {{ program.name | translate }}
+                </ion-item>
+        
+        
+            </ion-list>
+        
+        </div>
+
+    </div>
+
+            
+    <div class="modaltitle">{{ 'independent-programs' | translate }}</div>
+    <div class="modaldesc"> {{ 'tap-program' | translate }}</div>
+    <div class="paddingmodal">
+        <ion-list class="programlist">
+        
+            
+              <!--<ion-item class="addiction" on-hold="moreProgramInfo(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.description)" ng-repeat="program in programs" (click)="addProgramToRoutine(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines" (click)="modal.hide()">
+            {{program.fields.name}} </ion-item>-->
+                
+            <ion-item class="addiction center" ion-long-press [interval]="700" (onPressing)="moreProgramInfo(program.name, program.runningtime, program.description)" *ngFor="let program of programs" (click)="add1Program(program.name, program.runningtime, program.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines">
+            {{ program.name | translate }} </ion-item>
+            
+            
+        </ion-list>
+    </div>
+           
+    <button class="bluebtn" (click)="hide()">{{ 'cancel' | translate }}</button>
+  <br><br><br><br><br><br><br><br>
+</ion-content>

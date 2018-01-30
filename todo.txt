@@ -1,4 +1,4 @@
-- terminar contacto
-- hacer evento de long press para mostrar info de cada programa
-- translate de los nombres de los programas
+x terminar contacto
+x hacer evento de long press para mostrar info de cada programa
+x translate de los nombres de los programas
 - poner verificacion de conexion a internet en envio de correo

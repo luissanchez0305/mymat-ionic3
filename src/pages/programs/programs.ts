@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
 import { Data } from '../../services/offline_data';
 import { RoutinesProvider } from '../../providers/routines/routines';
 import { Constants } from '../../services/constants';
+import { ProgramPage } from '../program/program';
 
 /**
  * Generated class for the ProgramsPage page.
@@ -132,6 +133,6 @@ export class ProgramsPage {
   }
   
   moreProgramInfo(name, runTime, description){
-    alert('long press');
+    this.navCtrl.push(ProgramPage, { name: name, runTime: runTime, description: description });
   }
 }
