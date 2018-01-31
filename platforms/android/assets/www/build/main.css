@@ -25844,6 +25844,13 @@ hr {
   margin: 0px 0px 10px 0px;
 }
 
+.item-input.contact textarea {
+  width: 100%;
+  height: 100px;
+  margin: 0px 0px 10px 0px;
+  background-color: #f1f1f1;
+}
+
 .button-contact {
   border-color: transparent;
   background-color: #f8f8f8;
@@ -26492,13 +26499,29 @@ input.routinename {
   width: 100%;
 }
 
+.toolbar-background-ios {
+  background-color: #262261 !important;
+}
+
+.toolbar-title-ios {
+  margin: 10px 0px;
+  color: #fff;
+}
+
+.bar-button-default-ios {
+  color: #fff !important;
+}
+
 .program-info-modal-mainbody {
   color: #707070;
   width: 90%;
   margin: 5% auto 0px;
   padding: 0px;
-  height: 100%;
-  overflow: hidden;
+  height: 80%;
+}
+
+ion-scroll .scroll-content {
+  overflow-y: scroll !important;
 }
 
 .program-info-modal-close-button {
@@ -26542,10 +26565,6 @@ input.routinename {
   height: 30px;
 }
 
-.program-info-modal-running-time-title {
-  padding-top: 20px;
-}
-
 .program-info-modal-running-time {
   text-transform: uppercase;
   color: #ffffff;
@@ -26553,6 +26572,10 @@ input.routinename {
   font-weight: normal;
   width: 100%;
   height: 30px;
+}
+
+.program-info-modal-header h2.program-info-modal-running-time-title {
+  padding-top: 1.8rem;
 }
 
 .program-info-modal-button-holder {

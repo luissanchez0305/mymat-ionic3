@@ -1,4 +1,4 @@
-x terminar contacto
-x hacer evento de long press para mostrar info de cada programa
-x translate de los nombres de los programas
-x poner verificacion de conexion a internet en envio de correo
+iOS
+- header con fondo blanco
+- boton de disable no funciona en contact
+- scroll de descripcion del programa

@@ -20,7 +20,7 @@ import { Constants } from '../../services/constants';
 })
 export class ContactPage {
   private contactForm : FormGroup;
-  public contactSent : boolean;
+  public contactDisabled : boolean;
   public  name_value : string;
   public  email_value : string;
   public  message_value : string;
@@ -37,10 +37,7 @@ export class ContactPage {
   }
 
   ionViewDidLoad() {
-    this.contactSent = false;
-    this.name_value = '';
-    this.email_value = '';
-    this.message_value = '';
+    this.cleanForm();
     this.response_text = '';
     this.storage.get(Constants.storageKeyLang).then((lang)=>{
       this.translateService.getTranslation(lang).subscribe((value) => {
@@ -48,6 +45,13 @@ export class ContactPage {
         // Mostrar texto en label debajo del boton
       });
     });
+  }
+  
+  cleanForm(){
+    this.contactDisabled = true;
+    this.name_value = '';
+    this.email_value = '';
+    this.message_value = '';
   }
   
   attemptSendMail(){
@@ -60,25 +64,25 @@ export class ContactPage {
                 this.response_text = value['email-success-message'];
               });
             });
-            this.contactSent = true;
             
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((value) => {
                 this.button_send = value['sent-text'];
+                this.cleanForm();
               });
             });
             
         } else {
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((value) => {
-                this.response_text = value['email-error-message'] + '1';
+                this.response_text = value['email-error-message'];
               });
             });
         }
     }, (result) => {
       this.storage.get(Constants.storageKeyLang).then((lang)=>{
         this.translateService.getTranslation(lang).subscribe((value) => {
-          this.response_text = value['email-error-message'] + result.type;
+          this.response_text = value['email-error-message'];
         });
       });
     });

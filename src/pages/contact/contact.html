@@ -31,12 +31,12 @@
           <ion-input type="text" placeholder="{{ 'name-text' | translate }}" formControlName="name" value="{{ name_value }}"></ion-input>
         </label><br>
         <label class="item-input contact">
-          <ion-input type="text" placeholder="Email"  autocapitalize="none"formControlName="email" value="{{ email_value }}"></ion-input>
+          <ion-input type="email" placeholder="Email"  autocapitalize="none"formControlName="email" value="{{ email_value }}"></ion-input>
         </label><br>
         <label class="item-input contact">
-          <ion-input type="text" placeholder="{{ 'message-text' | translate }}" formControlName="message" value="{{ message_value }}"></ion-input>
+          <ion-textarea placeholder="{{ 'message-text' | translate }}" formControlName="message" value="{{ message_value }}"></ion-textarea>
         </label><br>
-        <button type="submit" ion-button [disabled]="!contactForm.valid" [disabled]="contactSent" class="button-contact button-calm">{{ button_send }}</button>
+        <button type="submit" ion-button [disabled]="!contactForm.valid" [disabled]="contactDisabled" class="button-contact button-calm">{{ button_send }}</button>
         <div padding>
           {{ response_text }}
         </div>
