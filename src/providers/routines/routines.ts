@@ -36,6 +36,13 @@ export class RoutinesProvider {
     }
   }
   
+  public cleanPrograms(){
+    this.program1 = null;
+    this.program2 = null;
+    this.program3 = null;
+    this.program4 = null;
+  }
+  
   public setPrograms(prog1, prog2, prog3, prog4){
     this.program1 = prog1;
     this.program2 = prog2;

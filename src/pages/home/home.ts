@@ -17,6 +17,7 @@ export class HomePage {
   public bubblesNames2 : string;
   public bubblesNames3 : string;
   public bubblesNames4 : string;
+  public EnableRunRoutine : boolean;
   public bubblesCurrentState1 : boolean;
   public bubblesCurrentState2 : boolean;
   public bubblesCurrentState3 : boolean;
@@ -29,12 +30,14 @@ export class HomePage {
       for(var i = 1; i <= bubbles.length; i++){
         this.updateBubbles(i, bubbles[i - 1]);
       }
+      this.AllBubblesChecked(this.routines.getPrograms());
     }); 
     this.events.subscribe('switchLangEvent',(lang) => {
         //call methods to refresh content
         this.storage.set(Constants.storageKeyLang, lang)
         this.checkAllBubbles();
     });
+    this.AllBubblesChecked(this.routines.getPrograms());
   }
   
   removeProgramFromRoutine(prg){
@@ -47,15 +50,28 @@ export class HomePage {
   
   runRoutine(){
     var programs = this.routines.getPrograms();
-    if(typeof programs[0] !== 'undefined' &&
-    typeof programs[1] !== 'undefined' &&
-    typeof programs[2] !== 'undefined' &&
-    typeof programs[3] !== 'undefined'){
+    if(this.AllBubblesChecked(programs)){
       this.navCtrl.push(WifiPage);
     }
   }
   
+  private AllBubblesChecked(programs){
+    
+    if(typeof programs[0] !== 'undefined' && programs[0] != null && programs[0].length > 0 &&
+    typeof programs[1] !== 'undefined' && programs[1] != null && programs[1].length > 0 &&
+    typeof programs[2] !== 'undefined' && programs[2] != null && programs[2].length > 0 &&
+    typeof programs[3] !== 'undefined' && programs[3] != null && programs[3].length > 0){
+        this.EnableRunRoutine = true;
+      }
+      else{
+        this.EnableRunRoutine = false;
+      }
+      return this.EnableRunRoutine;
+  }
+  
   cleanRoutine(){
+    this.routines.cleanPrograms();
+    this.AllBubblesChecked(this.routines.getPrograms());
     this.storage.set(Constants.storageKeyBubble1,'');
     this.storage.set(Constants.storageKeyBubble2,'');
     this.storage.set(Constants.storageKeyBubble3,'');
@@ -158,6 +174,7 @@ export class HomePage {
         this.updateBubbles(4,name);
         this.routines.setProgram(4,name)
       }
+      this.AllBubblesChecked(this.routines.getPrograms())
     });
   }
 }

@@ -30,7 +30,7 @@
         <br>
         <b>{{ 'tap-bubble' | translate }}</b><br><br>
         <!--<p translate="press-hold"> Press and hold a hearth to remove</p>-->
-        <button class="greenbtn" menu-close nav-transition="ios" nav-direction="forward" (click)="runRoutine()" href="#">{{ 'run-routine' | translate }}</button>
+        <button [disabled]="!EnableRunRoutine" class="greenbtn" menu-close nav-transition="ios" nav-direction="forward" (click)="runRoutine()" href="#">{{ 'run-routine' | translate }}</button>
         <br><br>
         <button class="graybtn" menu-close nav-transition="ios" nav-direction="forward" (click)="cleanRoutine()" href="#">{{ 'clean-routine' | translate }}</button>
 

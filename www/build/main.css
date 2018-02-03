@@ -25816,12 +25816,10 @@ hr {
 
 .paddingSmall .item {
   padding: 20px;
-  padding-top: 20px;
 }
 
 .paddingmodal {
   padding: 30px;
-  padding-top: 20px;
 }
 
 .menuitemhome img {
@@ -26384,8 +26382,9 @@ input.routinename {
 
 .program-running-left {
   width: 100%;
-  margin-top: 3%;
+  margin-top: 10px;
   float: left;
+  display: block;
 }
 
 .program-running-right {

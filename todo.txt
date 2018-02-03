@@ -2,4 +2,5 @@ x envio de correo de contacto vacio
 x no cambia a idioma frances e italiano
 x no cambia programas individualmente
 x no se selecciona la categoria escogida en los programas
-- pantalla de tiempos no se ve bien
+x pantalla de tiempos no se ve bien
+- validar que se escogio los 4 programas
