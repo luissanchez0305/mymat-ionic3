@@ -1,4 +1,5 @@
-iOS
-- header con fondo blanco
-- boton de disable no funciona en contact
-- scroll de descripcion del programa
+x envio de correo de contacto vacio
+x no cambia a idioma frances e italiano
+x no cambia programas individualmente
+x no se selecciona la categoria escogida en los programas
+- pantalla de tiempos no se ve bien

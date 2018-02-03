@@ -5,6 +5,7 @@ import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { PlayingPage } from '../playing/playing';
 import { Constants } from '../../services/constants';
 import { NetworkInterface } from '@ionic-native/network-interface';
+import { TranslateService } from '@ngx-translate/core';
 
 /**
  * Generated class for the WifiPage page.
@@ -36,8 +37,12 @@ export class WifiPage {
   public showLoading : boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider,
-    public networkInterface : NetworkInterface) {
-    this.coilText = 'Antena';
+    private translateService: TranslateService, public networkInterface : NetworkInterface) {
+      this.storage.get(Constants.storageKeyLang).then((lang)=>{
+        this.translateService.getTranslation(lang).subscribe((value) =>{
+          this.coilText = typeof value['coil'] === 'undefined' ? 'Antena' : value['coil'];
+        });
+      });
   }
   
   ionViewDidLeave(){

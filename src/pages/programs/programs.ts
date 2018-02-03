@@ -25,6 +25,15 @@ export class ProgramsPage {
   public programName2 : string;
   public programName3 : string;
   public programName4 : string;
+  public basicButton : boolean;
+  public businessTravelButton : boolean;
+  public familiyButton : boolean;
+  public athleteButton : boolean;
+  public spaButton : boolean;
+  public stressButton : boolean;
+  public seniorButton : boolean;
+  public chakraButton : boolean;
+  public elementsButton : boolean;
   
   constructor(public navCtrl: NavController, public navParams: NavParams, public routines: RoutinesProvider, 
     public events: Events) {
@@ -66,10 +75,6 @@ export class ProgramsPage {
       });
   }
 
-  ionViewDidLoad() {
-      console.log('ionViewDidLoad ProgramsPage');
-  }
-
   selectPreSetProgram(category){
       this.getPrograms(category);
   }
@@ -83,6 +88,44 @@ export class ProgramsPage {
   }
   
   getPrograms(category){
+    this.basicButton = false;
+    this.businessTravelButton = false;
+    this.familiyButton = false;
+    this.athleteButton = false;
+    this.spaButton = false;
+    this.stressButton = false;
+    this.seniorButton = false;
+    this.chakraButton = false;
+    this.elementsButton = false;
+    switch(category){
+      case 'basic':
+        this.basicButton = true;
+        break;
+      case 'business and travel':
+        this.businessTravelButton = true;
+        break;
+      case 'family':
+        this.familiyButton = true;
+        break;
+      case 'athlete':
+        this.athleteButton = true;
+        break;
+      case 'spa':
+        this.spaButton = true;
+        break;
+      case 'stress relief':
+        this.stressButton = true;
+        break;
+      case 'senior':
+        this.seniorButton = true;
+        break;
+      case 'chakra balancing':
+        this.chakraButton = true;
+        break;
+      case 'elements':
+        this.elementsButton = true;
+        break;
+    }
     var groups = [];
     var groupIndex = 0;
     for(var i = 0; i < Data.Groups.length; i++){

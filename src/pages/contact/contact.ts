@@ -55,7 +55,7 @@ export class ContactPage {
   }
   
   attemptSendMail(){
-    var emailData = { e : this.contactForm.value.email, p : this.contactForm.value.name, m : this.contactForm.value.message };
+    var emailData = { email : this.contactForm.value.email, name : this.contactForm.value.name, message : this.contactForm.value.message };
     this.apiService.sendEmail(emailData).then((result) => {
         var obj : any = result;
         if (obj.status == "ok") {
