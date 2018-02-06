@@ -25816,6 +25816,7 @@ hr {
 
 .paddingSmall .item {
   padding: 20px;
+  height: 90px;
 }
 
 .paddingmodal {
@@ -25954,6 +25955,10 @@ input.routinename {
   margin-right: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+button[disabled].greenbtn {
+  opacity: 0.75;
 }
 
 .greenbtn {
@@ -26323,6 +26328,7 @@ input.routinename {
   width: 80%;
   margin: auto;
   text-align: center;
+  color: #fff;
 }
 
 .modaltitle {
@@ -26584,22 +26590,18 @@ ion-scroll .scroll-content {
 }
 
 .bubbles-program-name-1 {
-  color: #FFF;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #999;
   width: 110px;
   overflow: hidden;
   height: 60px;
   margin-left: 85px;
-  margin-top: -60px;
+  margin-top: -73px;
   text-align: center;
   position: absolute;
 }
 
 .bubbles-program-name-2 {
-  color: #FFF;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #999;
   width: 110px;
   overflow: hidden;
   height: 60px;
@@ -26610,9 +26612,7 @@ ion-scroll .scroll-content {
 }
 
 .bubbles-program-name-3 {
-  color: #FFF;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #999;
   width: 110px;
   overflow: hidden;
   height: 60px;
@@ -26623,9 +26623,7 @@ ion-scroll .scroll-content {
 }
 
 .bubbles-program-name-4 {
-  color: #FFF;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #999;
   width: 110px;
   overflow: hidden;
   height: 60px;
