@@ -26597,7 +26597,7 @@ ion-scroll .scroll-content {
   overflow: hidden;
   height: 60px;
   margin-left: 85px;
-  margin-top: -60px;
+  margin-top: -54px;
   text-align: center;
   position: absolute;
 }
@@ -26611,7 +26611,7 @@ ion-scroll .scroll-content {
   height: 60px;
   text-align: center;
   margin-left: 197px;
-  margin-top: -60px;
+  margin-top: -54px;
   position: absolute;
 }
 
@@ -26623,7 +26623,7 @@ ion-scroll .scroll-content {
   overflow: hidden;
   height: 60px;
   margin-left: 85px;
-  margin-top: -60px;
+  margin-top: -54px;
   text-align: center;
   position: absolute;
 }
@@ -26637,7 +26637,7 @@ ion-scroll .scroll-content {
   height: 60px;
   text-align: center;
   margin-left: -25px;
-  margin-top: -60px;
+  margin-top: -54px;
   position: absolute;
 }
 
