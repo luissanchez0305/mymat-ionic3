@@ -563,6 +563,18 @@ display:none;
     background-position: 7% 0px;
 }
 
+.programAddButton{
+    float: left;
+    width: 80%;
+    text-align: center;
+}
+
+.programInfoButton{
+    float: right;
+    width: 10%;
+    text-align: right;
+}
+
 .menuitemfav .item-content {
     background-color: #FFF!important;
     background-image: url(../img/menufav.png)!important;

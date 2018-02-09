@@ -100,12 +100,15 @@
     <div class="paddingmodal">
         <ion-list class="programlist">
         
-            
-              <!--<ion-item class="addiction" on-hold="moreProgramInfo(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.description)" ng-repeat="program in programs" (click)="addProgramToRoutine(program.sys.id, program.fields.name, program.fields.runningtime, program.fields.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines" (click)="modal.hide()">
-            {{program.fields.name}} </ion-item>-->
                 
-            <ion-item class="addiction center" ion-long-press [interval]="700" (onPressing)="moreProgramInfo(program.name, program.runningtime, program.description)" *ngFor="let program of programs" (click)="add1Program(program.name, program.runningtime, program.apiName)" nav-transition="ios" nav-direction="forward" href="#/app/routines">
-            {{ program.name | translate }} </ion-item>
+            <ion-item class="addiction center" *ngFor="let program of programs" nav-transition="ios" nav-direction="forward" href="#/app/routines">
+                <div class="programAddButton" (click)="add1Program(program.name, program.runningtime, program.apiName)">
+                    {{ program.name | translate }} 
+                </div>
+                <div class="programInfoButton" end (click)="moreProgramInfo(program.name, program.runningtime, program.description)">
+                    <ion-icon ios="ios-information-circle" md="md-information-circle"></ion-icon>
+                </div>
+            </ion-item>
             
             
         </ion-list>

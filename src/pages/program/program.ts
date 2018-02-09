@@ -23,12 +23,13 @@ export class ProgramPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage, 
     public translateService: TranslateService) {
-      
+  }
+  ionViewDidLoad(){
       this.storage.get(Constants.storageKeyLang).then((lang)=>{
         this.translateService.getTranslation(lang).subscribe((prog) =>{
-          this.programName = typeof prog[navParams.get('name')] === 'undefined' ? navParams.get('name') : prog[navParams.get('name')];
-          this.programRunningTime = typeof prog[navParams.get('runTime')] === 'undefined' ? navParams.get('runTime') : prog[navParams.get('runTime')];
-          this.programDescription = typeof prog[navParams.get('description')] === 'undefined' ? navParams.get('description') : prog[navParams.get('description')];
+          this.programName = typeof prog[this.navParams.get('name')] === 'undefined' ? this.navParams.get('name') : prog[this.navParams.get('name')];
+          this.programRunningTime = typeof prog[this.navParams.get('runTime')] === 'undefined' ? this.navParams.get('runTime') : prog[this.navParams.get('runTime')];
+          this.programDescription = typeof prog[this.navParams.get('description')] === 'undefined' ? this.navParams.get('description') : prog[this.navParams.get('description')];
         });     
       });
   }
