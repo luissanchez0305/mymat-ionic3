@@ -34,9 +34,9 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'HOME', component: HomePage, icon: 'menuitemhome' },
-      { title: 'HELP', component: HelpPage, icon: 'menuitemhelp' },
-      { title: 'CONTACT US', component: ContactPage, icon: 'menuitemcontact' }
+      { title: 'home-title', component: HomePage, icon: 'menuitemhome' },
+      { title: 'help-title', component: HelpPage, icon: 'menuitemhelp' },
+      { title: 'contact-title', component: ContactPage, icon: 'menuitemcontact' }
     ];
     platform.ready().then(() => {
       this.storage.get(Constants.storageKeyLang).then((value)=>{

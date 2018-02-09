@@ -12,7 +12,7 @@
       </ion-item>
       <button menuClose ion-item class="item-button item-block item-md {{ p.icon }}" *ngFor="let p of pages" (click)="openPage(p)">
         <label class="item-content"></label>
-        {{p.title}}
+        {{p.title | translate}}
       </button>
     </ion-list>
   </ion-content>

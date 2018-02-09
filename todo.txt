@@ -4,5 +4,9 @@ x no cambia programas individualmente
 x no se selecciona la categoria escogida en los programas
 x pantalla de tiempos no se ve bien
 x validar que se escogio los 4 programas
-- cambiar color de texto en home
-- poner gris el boton disabled en home
+x revisar texto de boton de "empezar rutina" en español
+x cambiar mensaje de mensaje enviado a "su mensaje fue enviado. Muy pronto estaremos contactándolo." y que sea permanente
+x revisar cambio de idioma en el menu
+- revisar texto de help e info, aparecen elementos de html
+- en la info de los programas forzar scroll
+- revisar al abrir info de programas que no se esten acumulando los click
