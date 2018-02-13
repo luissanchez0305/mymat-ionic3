@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
 import { Constants } from '../../services/constants';
 import { TranslateService } from '@ngx-translate/core';
 import { Storage } from '@ionic/storage';
@@ -20,9 +20,11 @@ export class ProgramPage {
   public programName : string;
   public programRunningTime : string;
   public programDescription : string;
+  public programApiName : string;
+  public programNumber : number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage, 
-    public translateService: TranslateService) {
+    public translateService: TranslateService, public events: Events) {
   }
   ionViewDidLoad(){
       this.storage.get(Constants.storageKeyLang).then((lang)=>{
@@ -30,7 +32,13 @@ export class ProgramPage {
           this.programName = typeof prog[this.navParams.get('name')] === 'undefined' ? this.navParams.get('name') : prog[this.navParams.get('name')];
           this.programRunningTime = typeof prog[this.navParams.get('runTime')] === 'undefined' ? this.navParams.get('runTime') : prog[this.navParams.get('runTime')];
           this.programDescription = typeof prog[this.navParams.get('description')] === 'undefined' ? this.navParams.get('description') : prog[this.navParams.get('description')];
+          this.programApiName = this.navParams.get('apiName');
+          this.programNumber = this.navParams.get('programNumber')
         });     
       });
+  }
+  
+  add1Program(programName, programRunningTime, programApiName){
+    this.events.publish("add1ProgramEvent", this.programNumber, this.programName, this.programRunningTime, this.programApiName);
   }
 }

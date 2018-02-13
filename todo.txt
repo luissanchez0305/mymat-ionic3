@@ -10,3 +10,6 @@ x revisar cambio de idioma en el menu
 x revisar texto de help e info, aparecen elementos de html
 x en la info de los programas forzar scroll
 x revisar al abrir info de programas que no se esten acumulando los click
+- html en titulo de programas
+- quitar boton de cancel de programas
+- abreviar los nombres mas largos de programas

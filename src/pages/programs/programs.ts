@@ -73,6 +73,12 @@ export class ProgramsPage {
           this.programName4 = '';
         }
       });
+      
+      this.events.subscribe('add1ProgramEvent', (programNumber, programName, programRunningTime, programApiName) => {
+        this.program = programNumber;
+        this.add1Program(programName, programRunningTime, programApiName);
+        this.navCtrl.pop();
+      });
   }
 
   selectPreSetProgram(category){
@@ -175,7 +181,7 @@ export class ProgramsPage {
     this.navCtrl.pop();
   }
   
-  moreProgramInfo(name, runTime, description){
-    this.navCtrl.push(ProgramPage, { name: name, runTime: runTime, description: description });
+  moreProgramInfo(name, runTime, description, apiName){
+    this.navCtrl.push(ProgramPage, { programNumber: this.program, name: name, runTime: runTime, description: description, apiName: apiName });
   }
 }
