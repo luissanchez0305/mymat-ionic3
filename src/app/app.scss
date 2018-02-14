@@ -878,12 +878,15 @@ border: 5px solid #262261;
 }
 
 .program-info-modal-mainbody {
-color: #707070;
-width: 90%;
-margin: 5% auto 0px;
-padding: 0px;
-height: 80%;
+    color: #707070;
+    width: 90%;
+    margin: 5% auto 0px;
+    padding: 0px;
+    height: 80%;
+}
 
+.program-info-modal-mainbody button{
+    margin: 0 0 15px 0;
 }
 
 ion-scroll .scroll-content{

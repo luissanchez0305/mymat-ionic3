@@ -26537,6 +26537,10 @@ button[disabled].greenbtn {
   height: 80%;
 }
 
+.program-info-modal-mainbody button {
+  margin: 0 0 15px 0;
+}
+
 ion-scroll .scroll-content {
   overflow-y: scroll !important;
 }
