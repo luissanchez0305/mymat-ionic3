@@ -103,7 +103,7 @@
                 
             <ion-item class="addiction center" *ngFor="let program of programs" nav-transition="ios" nav-direction="forward" href="#/app/routines">
                 <div class="programAddButton" (click)="add1Program(program.name, program.runningtime, program.apiName)">
-                    {{ program.name | translate }} 
+                    {{ program.name | translate }}
                 </div>
                 <div class="programInfoButton" end (click)="moreProgramInfo(program.name, program.runningtime, program.description, program.apiName)">
                     <ion-icon ios="ios-information-circle" md="md-information-circle"></ion-icon>

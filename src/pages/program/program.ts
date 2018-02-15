@@ -22,6 +22,7 @@ export class ProgramPage {
   public programDescription : string;
   public programApiName : string;
   public programNumber : number;
+  public programRealName : string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage, 
     public translateService: TranslateService, public events: Events) {
@@ -29,6 +30,7 @@ export class ProgramPage {
   ionViewDidLoad(){
       this.storage.get(Constants.storageKeyLang).then((lang)=>{
         this.translateService.getTranslation(lang).subscribe((prog) =>{
+          this.programRealName = this.navParams.get('name');
           this.programName = typeof prog[this.navParams.get('name')] === 'undefined' ? this.navParams.get('name') : prog[this.navParams.get('name')];
           this.programRunningTime = typeof prog[this.navParams.get('runTime')] === 'undefined' ? this.navParams.get('runTime') : prog[this.navParams.get('runTime')];
           this.programDescription = typeof prog[this.navParams.get('description')] === 'undefined' ? this.navParams.get('description') : prog[this.navParams.get('description')];
@@ -39,6 +41,6 @@ export class ProgramPage {
   }
   
   add1Program(programName, programRunningTime, programApiName){
-    this.events.publish("add1ProgramEvent", this.programNumber, this.programName, this.programRunningTime, this.programApiName);
+    this.events.publish("add1ProgramEvent", this.programNumber, this.programRealName, this.programRunningTime, this.programApiName);
   }
 }
