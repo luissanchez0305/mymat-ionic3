@@ -16,6 +16,8 @@ x html en titulo de programas
 x quitar boton de cancel de programas
 x abreviar los nombres mas largos de programas
 
-pendientes
+febrero 15
 - traducciones de descripcion de programas en aleman algunas estan en italiano
+
+pendientes
 - 
