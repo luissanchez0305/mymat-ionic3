@@ -53,7 +53,6 @@ export class WifiPage {
     this.mymatStatus = false;
     this.showLoading = true;
     this.networkInterface.getWiFiIPAddress().then((response)=>{
-      alert(response);
       if(response === Constants.localIPAddress){
         this.showIPButton();
       }
@@ -69,6 +68,7 @@ export class WifiPage {
   showIPButton(){
     this.mymatStatus = true;
     this.showStatusTable = false;
+    this.mymatWifi = false;
     this.showLoading = false;
     clearInterval(this.testIPInterval);
     
@@ -83,7 +83,6 @@ export class WifiPage {
         this.failStatusVerification();
       }
     }, (response) => {
-      alert('showIPButton' + response);
       this.failStatusVerification();
     });
   }
@@ -140,7 +139,6 @@ export class WifiPage {
   failIPVerification(){
       this.testIPInterval = setInterval(() => {
         this.networkInterface.getWiFiIPAddress().then((response)=>{
-          alert(response);
             if(response === Constants.localIPAddress)
               this.showIPButton();
           });
@@ -156,7 +154,6 @@ export class WifiPage {
           this.showStatus();
         }
       }, (response) => {
-        alert('failStatus' + response);
         if(this.intervalCount >= 5){
           this.showNoStatus();
         }

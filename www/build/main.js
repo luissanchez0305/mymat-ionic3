@@ -662,7 +662,6 @@ var WifiPage = (function () {
         this.mymatStatus = false;
         this.showLoading = true;
         this.networkInterface.getWiFiIPAddress().then(function (response) {
-            alert(response);
             if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress) {
                 _this.showIPButton();
             }
@@ -678,6 +677,7 @@ var WifiPage = (function () {
         var _this = this;
         this.mymatStatus = true;
         this.showStatusTable = false;
+        this.mymatWifi = false;
         this.showLoading = false;
         clearInterval(this.testIPInterval);
         // check if mymat is connected
@@ -691,7 +691,6 @@ var WifiPage = (function () {
                 _this.failStatusVerification();
             }
         }, function (response) {
-            alert('showIPButton' + response);
             _this.failStatusVerification();
         });
     };
@@ -743,7 +742,6 @@ var WifiPage = (function () {
         var _this = this;
         this.testIPInterval = setInterval(function () {
             _this.networkInterface.getWiFiIPAddress().then(function (response) {
-                alert(response);
                 if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress)
                     _this.showIPButton();
             });
@@ -759,7 +757,6 @@ var WifiPage = (function () {
                     _this.showStatus();
                 }
             }, function (response) {
-                alert('failStatus' + response);
                 if (_this.intervalCount >= 5) {
                     _this.showNoStatus();
                 }
