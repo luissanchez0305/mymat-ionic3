@@ -681,6 +681,7 @@ var WifiPage = (function () {
         // check if mymat is connected
         var myMatTest = this.apiService.test();
         myMatTest.then(function (response) {
+            alert(response);
             // if is connected quitar imagen, textos y loading y poner status del mat
             if (_this.verifyValues(response)) {
                 _this.showStatus();
@@ -751,7 +752,7 @@ var WifiPage = (function () {
             // timeout of mymat detection 180 segundos
             var failMyMatTest = _this.apiService.test();
             failMyMatTest.then(function (response) {
-                console.log(response);
+                alert(response);
                 if (_this.verifyValues(response)) {
                     _this.showStatus();
                 }
