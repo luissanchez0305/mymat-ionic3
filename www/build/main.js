@@ -678,10 +678,11 @@ var WifiPage = (function () {
         var _this = this;
         this.showStartButton = true;
         this.showLoading = false;
+        clearInterval(this.testIPInterval);
         // check if mymat is connected
         var myMatTest = this.apiService.test();
         myMatTest.then(function (response) {
-            alert(response);
+            alert('showIPButton' + response);
             // if is connected quitar imagen, textos y loading y poner status del mat
             if (_this.verifyValues(response)) {
                 _this.showStatus();
@@ -752,7 +753,7 @@ var WifiPage = (function () {
             // timeout of mymat detection 180 segundos
             var failMyMatTest = _this.apiService.test();
             failMyMatTest.then(function (response) {
-                alert(response);
+                alert('failStatus' + response);
                 if (_this.verifyValues(response)) {
                     _this.showStatus();
                 }
@@ -761,7 +762,6 @@ var WifiPage = (function () {
                     _this.showNoStatus();
                 }
             });
-            console.log(_this.intervalCount);
             _this.intervalCount += 1;
         }, 3000);
     };
