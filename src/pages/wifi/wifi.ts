@@ -33,7 +33,7 @@ export class WifiPage {
   public coilText2 : string;
   public coilText3 : string;
   public coilText4 : string;
-  public showStartButton : boolean;
+  public showStatusTable : boolean;
   public showLoading : boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider,
@@ -50,7 +50,7 @@ export class WifiPage {
   }
 
   ionViewDidLoad() {
-    this.showStartButton = false;
+    this.mymatStatus = false;
     this.showLoading = true;
     this.networkInterface.getWiFiIPAddress().then((response)=>{
       alert(response);
@@ -67,7 +67,8 @@ export class WifiPage {
   }
   
   showIPButton(){
-    this.showStartButton = true;
+    this.mymatStatus = true;
+    this.showStatusTable = false;
     this.showLoading = false;
     clearInterval(this.testIPInterval);
     
@@ -94,6 +95,7 @@ export class WifiPage {
   showStatus(){
       this.mymatWifi = false;
       this.mymatStatus = true;
+      this.showStatusTable = true;
       clearInterval(this.testStatusInterval);
       clearInterval(this.testIPInterval);
   }
