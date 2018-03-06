@@ -33,6 +33,7 @@
                 <p [innerHTML]="'no-detect-2' | translate">Please follow the steps to do so</p>
             </div>
             <img *ngIf="showLoading" src="img/loading.gif" width="200" />
+            <a *ngIf="showStartButton" class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="'start-routine' | translate">LAUNCH MYMAT</a>
         </div>
         <div *ngIf="mymatStatus">
             <div class="status-table divTable">
