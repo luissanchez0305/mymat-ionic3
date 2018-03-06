@@ -663,7 +663,7 @@ var WifiPage = (function () {
         this.showLoading = true;
         this.networkInterface.getWiFiIPAddress().then(function (response) {
             alert(response);
-            if (response == __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress) {
+            if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress) {
                 _this.showIPButton();
             }
             else
@@ -741,7 +741,7 @@ var WifiPage = (function () {
         this.testIPInterval = setInterval(function () {
             _this.networkInterface.getWiFiIPAddress().then(function (response) {
                 alert(response);
-                if (response == __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress)
+                if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress)
                     _this.showIPButton();
             });
         }, 3000);

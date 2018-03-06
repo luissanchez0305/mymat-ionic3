@@ -54,7 +54,7 @@ export class WifiPage {
     this.showLoading = true;
     this.networkInterface.getWiFiIPAddress().then((response)=>{
       alert(response);
-      if(response == Constants.localIPAddress){
+      if(response === Constants.localIPAddress){
         this.showIPButton();
       }
       else
@@ -138,7 +138,7 @@ export class WifiPage {
       this.testIPInterval = setInterval(() => {
         this.networkInterface.getWiFiIPAddress().then((response)=>{
           alert(response);
-            if(response == Constants.localIPAddress)
+            if(response === Constants.localIPAddress)
               this.showIPButton();
           });
       }, 3000);
