@@ -662,7 +662,7 @@ var WifiPage = (function () {
         this.showStartButton = false;
         this.showLoading = true;
         this.networkInterface.getWiFiIPAddress().then(function (response) {
-            console.log(response);
+            alert(response);
             if (response == __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress) {
                 _this.showIPButton();
             }
@@ -739,7 +739,7 @@ var WifiPage = (function () {
         var _this = this;
         this.testIPInterval = setInterval(function () {
             _this.networkInterface.getWiFiIPAddress().then(function (response) {
-                console.log(response);
+                alert(response);
                 if (response == __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress)
                     _this.showIPButton();
             });

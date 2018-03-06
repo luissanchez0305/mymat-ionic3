@@ -53,7 +53,7 @@ export class WifiPage {
     this.showStartButton = false;
     this.showLoading = true;
     this.networkInterface.getWiFiIPAddress().then((response)=>{
-      console.log(response);
+      alert(response);
       if(response == Constants.localIPAddress){
         this.showIPButton();
       }
@@ -136,7 +136,7 @@ export class WifiPage {
   failIPVerification(){
       this.testIPInterval = setInterval(() => {
         this.networkInterface.getWiFiIPAddress().then((response)=>{
-          console.log(response);
+          alert(response);
             if(response == Constants.localIPAddress)
               this.showIPButton();
           });
