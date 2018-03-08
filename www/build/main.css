@@ -26734,6 +26734,10 @@ ion-scroll .scroll-content {
   background-color: transparent;
 }
 
+.toolbar-ios {
+  min-height: 110px !important;
+}
+
 page-help .item {
   background-color: #FFF;
 }
