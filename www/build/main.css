@@ -26521,7 +26521,7 @@ button[disabled].greenbtn {
 }
 
 .toolbar-title-ios {
-  /*margin: 20px 0px;*/
+  margin: 10px 0px;
   color: #fff;
 }
 
@@ -26735,7 +26735,7 @@ ion-scroll .scroll-content {
 }
 
 .toolbar-ios {
-  min-height: 110px !important;
+  min-height: 100px !important;
 }
 
 page-help .item {
