@@ -67,7 +67,7 @@ export class WifiPage {
   
   showIPButton(){
     this.mymatStatus = true;
-    this.showStatusTable = false;
+    this.showStatusTable = true;
     
     this.batteryImg = 'img/b100.png';
     this.coilText1 = 'OK';
