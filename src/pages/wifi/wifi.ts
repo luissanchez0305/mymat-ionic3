@@ -68,6 +68,13 @@ export class WifiPage {
   showIPButton(){
     this.mymatStatus = true;
     this.showStatusTable = false;
+    
+    this.batteryImg = 'img/b100.png';
+    this.coilText1 = 'OK';
+    this.coilText2 = 'OK';
+    this.coilText3 = 'OK';
+    this.coilText4 = 'OK';
+    
     this.mymatWifi = false;
     this.showLoading = false;
     clearInterval(this.testIPInterval);
