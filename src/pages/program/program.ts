@@ -31,7 +31,10 @@ export class ProgramPage {
       this.storage.get(Constants.storageKeyLang).then((lang)=>{
         this.translateService.getTranslation(lang).subscribe((prog) =>{
           this.programRealName = this.navParams.get('name');
-          this.programName = typeof prog[this.navParams.get('name')] === 'undefined' ? this.navParams.get('name') : prog[this.navParams.get('name')];
+          var programTranslateName = this.navParams.get('name');
+          if(this.isNameOnArray(Constants.shortTitles, programTranslateName))
+            programTranslateName = programTranslateName.replace('-upper', '-short');
+          this.programName = typeof prog[programTranslateName] === 'undefined' ? programTranslateName : prog[programTranslateName];
           this.programRunningTime = typeof prog[this.navParams.get('runTime')] === 'undefined' ? this.navParams.get('runTime') : prog[this.navParams.get('runTime')];
           this.programDescription = typeof prog[this.navParams.get('description')] === 'undefined' ? this.navParams.get('description') : prog[this.navParams.get('description')];
           this.programApiName = this.navParams.get('apiName');
@@ -42,5 +45,14 @@ export class ProgramPage {
   
   add1Program(programName, programRunningTime, programApiName){
     this.events.publish("add1ProgramEvent", this.programNumber, this.programRealName, this.programRunningTime, this.programApiName);
+  }
+  
+  isNameOnArray(names, name){
+    for(var i = 0; i < names.length; i++){
+      if(names[i] == name){
+        return true;
+      }
+    }
+    return false;
   }
 }

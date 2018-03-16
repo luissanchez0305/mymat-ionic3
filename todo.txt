@@ -20,4 +20,5 @@ febrero 15
 x traducciones de descripcion de programas en aleman algunas estan en italiano
 
 pendientes
-- 
+- Modificar el nombre del titulo en la descripcion de los programas para elementos y meridianos
+- guardar en memoria (por tiempo limitado) el utlimo kit que se metio
