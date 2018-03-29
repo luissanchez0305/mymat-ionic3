@@ -774,7 +774,7 @@ var WifiPage = (function () {
                     _this.showStatus();
                 }
             }, function (response) {
-                alert('external error');
+                alert(response);
                 if (_this.intervalCount >= 5) {
                     _this.showNoStatus();
                 }
