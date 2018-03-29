@@ -70,10 +70,10 @@ export class WifiPage {
     this.showStatusTable = true;
     
     this.batteryImg = 'img/b100.png';
-    this.coilText1 = 'OK';
-    this.coilText2 = 'OK';
-    this.coilText3 = 'OK';
-    this.coilText4 = 'OK';
+    this.coilText1 = 'N/A';
+    this.coilText2 = 'N/A';
+    this.coilText3 = 'N/A';
+    this.coilText4 = 'N/A';
     
     this.mymatWifi = false;
     this.showLoading = false;
