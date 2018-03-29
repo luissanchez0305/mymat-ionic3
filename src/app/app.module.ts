@@ -3,7 +3,6 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicStorageModule } from '@ionic/storage';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpModule } from '@angular/http';
-import { HTTP } from  '@ionic-native/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -70,7 +69,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     SplashScreen,
     RoutinesProvider,
     NetworkInterface,
-    HTTP,
 //    Network,
     LocalNotifications,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
