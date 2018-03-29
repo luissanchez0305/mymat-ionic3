@@ -3,13 +3,13 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicStorageModule } from '@ionic/storage';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpModule } from '@angular/http';
+import { HTTP } from  '@ionic-native/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NetworkInterface } from '@ionic-native/network-interface';
 //import { Network } from '@ionic-native/network';
 import { LocalNotifications } from '@ionic-native/local-notifications';
-import { LongPressModule } from 'ionic-long-press';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -44,7 +44,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     HttpModule,
     HttpClientModule,
-    LongPressModule,
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
     TranslateModule.forRoot({
@@ -71,6 +70,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SplashScreen,
     RoutinesProvider,
     NetworkInterface,
+    HTTP,
 //    Network,
     LocalNotifications,
     { provide: ErrorHandler, useClass: IonicErrorHandler },

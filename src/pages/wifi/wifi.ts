@@ -162,7 +162,6 @@ export class WifiPage {
           this.showStatus();
         }
       }, (response) => {
-        alert(response)
         if(this.intervalCount >= 5){
           this.showNoStatus();
         }

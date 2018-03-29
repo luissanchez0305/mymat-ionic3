@@ -31,11 +31,17 @@
     "cordova-plugin-email-composer": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
     "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },
   "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
     "cordova-plugin-badge": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
