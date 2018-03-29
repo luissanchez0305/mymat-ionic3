@@ -721,6 +721,7 @@ var WifiPage = (function () {
         clearInterval(this.testIPInterval);
     };
     WifiPage.prototype.verifyValues = function (response) {
+        alert(response);
         if (response.indexOf("<p><h4>Power: ") > -1) {
             var power = response.split("<p><h4>Power: ");
             power = power[1].split("</h4></p>");
@@ -773,6 +774,7 @@ var WifiPage = (function () {
                     _this.showStatus();
                 }
             }, function (response) {
+                alert('external error');
                 if (_this.intervalCount >= 5) {
                     _this.showNoStatus();
                 }

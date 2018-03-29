@@ -107,6 +107,7 @@ export class WifiPage {
   }
   
   verifyValues(response){
+    alert(response);
     if(response.indexOf("<p><h4>Power: ") > -1){
       var power = response.split("<p><h4>Power: ");
       power = power[1].split("</h4></p>");
@@ -161,6 +162,7 @@ export class WifiPage {
           this.showStatus();
         }
       }, (response) => {
+        alert('external error')
         if(this.intervalCount >= 5){
           this.showNoStatus();
         }
