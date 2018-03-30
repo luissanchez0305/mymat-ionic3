@@ -773,7 +773,7 @@ var WifiPage = (function () {
                     _this.showStatus();
                 }
             }, function (response) {
-                alert(response);
+                console.log(response);
                 if (_this.intervalCount >= 5) {
                     _this.showNoStatus();
                 }
@@ -4304,7 +4304,10 @@ var APIServiceProvider = (function () {
     APIServiceProvider.prototype.test = function () {
         var _this = this;
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
-        headers.append('Content-Type', 'text/html; charset=UTF-8');
+        headers.append('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8');
+        headers.append('Accept-Encoding', 'gzip, deflate');
+        headers.append('Accept-Language', 'en-US,en;q=0.9,es-PA;q=0.8,es;q=0.7');
+        headers.append('Upgrade-Insecure-Requests', '1');
         return new Promise(function (resolve, reject) {
             _this.http.get(__WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiIndexUrl, { headers: headers })
                 .map(function (res) { return res.text(); })
