@@ -52,7 +52,7 @@ export class WifiPage {
   ionViewDidLoad() {
     this.mymatStatus = false;
     this.showLoading = true;
-    this.networkInterface.getWiFiIPAddress().then((response)=>{
+    /*this.networkInterface.getWiFiIPAddress().then((response)=>{
       if(response === Constants.localIPAddress){
         this.showIPButton();
       }
@@ -60,7 +60,8 @@ export class WifiPage {
         this.failIPVerification();
     },(response)=>{
       this.failIPVerification();
-    });
+    });*/
+    this.showIPButton();
     this.mymatWifi = true;
     this.intervalCount = 0;
   }
@@ -107,7 +108,6 @@ export class WifiPage {
   }
   
   verifyValues(response){
-    alert(response);
     if(response.indexOf("<p><h4>Power: ") > -1){
       var power = response.split("<p><h4>Power: ");
       power = power[1].split("</h4></p>");
