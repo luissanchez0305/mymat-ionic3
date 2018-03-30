@@ -61,7 +61,16 @@ export class WifiPage {
     },(response)=>{
       this.failIPVerification();
     });*/
-    this.showIPButton();
+    /*this.showIPButton();*/
+    
+      var xhr = new XMLHttpRequest(); xhr.open('GET', Constants.myMatApiIndexUrl, true); 
+      xhr.onreadystatechange = function () { 
+        if (xhr.readyState == 4) { 
+          console.log(xhr.responseText) 
+        } 
+      }; 
+      xhr.withCredentials = true; 
+      xhr.send('{}');
     this.mymatWifi = true;
     this.intervalCount = 0;
   }
