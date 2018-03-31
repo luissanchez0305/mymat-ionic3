@@ -669,18 +669,18 @@ var WifiPage = (function () {
         this.stop();
     };
     WifiPage.prototype.ionViewDidLoad = function () {
-        var _this = this;
         this.mymatStatus = false;
         this.showLoading = true;
-        this.networkInterface.getWiFiIPAddress().then(function (response) {
-            if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress) {
-                _this.showIPButton();
-            }
-            else
-                _this.failIPVerification();
-        }, function (response) {
-            _this.failIPVerification();
-        });
+        /*this.networkInterface.getWiFiIPAddress().then((response)=>{
+          if(response === Constants.localIPAddress){
+            this.showIPButton();
+          }
+          else
+            this.failIPVerification();
+        },(response)=>{
+          this.failIPVerification();
+        });*/
+        this.showIPButton();
         this.mymatWifi = true;
         this.intervalCount = 0;
     };
