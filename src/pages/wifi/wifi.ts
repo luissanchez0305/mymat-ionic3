@@ -6,6 +6,7 @@ import { PlayingPage } from '../playing/playing';
 import { Constants } from '../../services/constants';
 import { NetworkInterface } from '@ionic-native/network-interface';
 import { TranslateService } from '@ngx-translate/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 /**
  * Generated class for the WifiPage page.
@@ -35,14 +36,20 @@ export class WifiPage {
   public coilText4 : string;
   public showStatusTable : boolean;
   public showLoading : boolean;
+  
+  public my_url: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider,
-    private translateService: TranslateService, public networkInterface : NetworkInterface) {
+    private translateService: TranslateService, public networkInterface : NetworkInterface, private sanitize: DomSanitizer) {
       this.storage.get(Constants.storageKeyLang).then((lang)=>{
         this.translateService.getTranslation(lang).subscribe((value) =>{
           this.coilText = typeof value['coil'] === 'undefined' ? 'Antena' : value['coil'];
         });
       });
+  }
+  urlpaste(){
+    this.my_url = Constants.myMatApiIndexUrl;
+    return this.sanitize.bypassSecurityTrustResourceUrl(this.my_url);
   }
   
   ionViewDidLeave(){
@@ -61,7 +68,7 @@ export class WifiPage {
     },(response)=>{
       this.failIPVerification();
     });*/
-    this.showIPButton();
+    
     this.mymatWifi = true;
     this.intervalCount = 0;
   }
