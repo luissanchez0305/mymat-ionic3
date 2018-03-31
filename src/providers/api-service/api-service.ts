@@ -3,6 +3,7 @@ import { Http, Headers } from '@angular/http';
 import { Constants } from '../../services/constants';
 //import { Network } from '@ionic-native/network';
 import 'rxjs/add/operator/map';
+import * as $ from "jquery";
 
 /*
   Generated class for the AuthServiceProvider provider.
@@ -34,13 +35,16 @@ export class APIServiceProvider {
     headers.append('Accept-Language', 'en-US,en;q=0.9,es-PA;q=0.8,es;q=0.7');
     headers.append('Upgrade-Insecure-Requests', '1');
     return new Promise((resolve, reject) => {
-      this.http.get(Constants.myMatApiIndexUrl, { headers: headers })
+      /*this.http.get(Constants.myMatApiIndexUrl, { headers: headers })
       .map(res => res.text())
       .subscribe(res => {
         resolve(res);
       }, (err) => {
         reject(err);
-      });
+      });*/
+      $.ajax({ url: Constants.myMatApiIndexUrl, timeout: 5000 })
+        .done(function(response){ resolve(response); })
+        .fail(function(response){ reject(response); });
     });
   }
   

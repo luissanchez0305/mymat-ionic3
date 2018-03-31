@@ -52,7 +52,7 @@ export class WifiPage {
   ionViewDidLoad() {
     this.mymatStatus = false;
     this.showLoading = true;
-    /*this.networkInterface.getWiFiIPAddress().then((response)=>{
+    this.networkInterface.getWiFiIPAddress().then((response)=>{
       if(response === Constants.localIPAddress){
         this.showIPButton();
       }
@@ -60,17 +60,7 @@ export class WifiPage {
         this.failIPVerification();
     },(response)=>{
       this.failIPVerification();
-    });*/
-    /*this.showIPButton();*/
-    
-      var xhr = new XMLHttpRequest(); xhr.open('GET', Constants.myMatApiIndexUrl, true); 
-      xhr.onreadystatechange = function () { 
-        if (xhr.readyState == 4) { 
-          console.log(xhr.responseText) 
-        } 
-      }; 
-      xhr.withCredentials = true; 
-      xhr.send('{}');
+    });
     this.mymatWifi = true;
     this.intervalCount = 0;
   }
@@ -171,7 +161,6 @@ export class WifiPage {
           this.showStatus();
         }
       }, (response) => {
-        console.log(response);
         if(this.intervalCount >= 5){
           this.showNoStatus();
         }
