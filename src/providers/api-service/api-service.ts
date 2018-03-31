@@ -43,8 +43,20 @@ export class APIServiceProvider {
         reject(err);
       });*/
       $.ajax({ url: Constants.myMatApiIndexUrl, timeout: 5000 })
-        .done(function(response){ alert(response); resolve(response); })
-        .fail(function(response){ alert(response); reject(response); });
+        .done(function(response){ 
+          var values = '';
+          for(var key in response) {
+            values += key + ',' + response[key] + ';';
+          }
+          alert('good: ' + values); 
+          resolve(response); })
+        .fail(function(response){
+          var values = '';
+          for(var key in response) {
+            values += key + ',' + response[key] + ';';
+          }
+          alert('error: ' + values); 
+          reject(response); });
     });
   }
   

@@ -4318,8 +4318,22 @@ var APIServiceProvider = (function () {
               reject(err);
             });*/
             __WEBPACK_IMPORTED_MODULE_4_jquery__["ajax"]({ url: __WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiIndexUrl, timeout: 5000 })
-                .done(function (response) { alert(response); resolve(response); })
-                .fail(function (response) { alert(response); reject(response); });
+                .done(function (response) {
+                var values = '';
+                for (var key in response) {
+                    values += key + ',' + response[key] + ';';
+                }
+                alert('good: ' + values);
+                resolve(response);
+            })
+                .fail(function (response) {
+                var values = '';
+                for (var key in response) {
+                    values += key + ',' + response[key] + ';';
+                }
+                alert('error: ' + values);
+                reject(response);
+            });
         });
     };
     APIServiceProvider.prototype.sendEmail = function (data) {
