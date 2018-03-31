@@ -34,6 +34,7 @@
             </div>
             <img *ngIf="showLoading" src="img/loading.gif" width="200" />
         </div>
+        <iframe  height="100%" width="100%" [src]="urlpaste()"></iframe>
         <div *ngIf="mymatStatus">
             <div *ngIf="showStatusTable" class="status-table divTable">
                 <div class="divTableHeading">
@@ -65,7 +66,6 @@
                         <div class="divTableCell coilOdd divTableCellLastRight" id="coil4">{{ coilText4 }}</div>
                     </div>
                 </div>
-                <iframe  height="100%" width="100%" [src]="urlpaste()"></iframe>
             </div>
             <p>&nbsp;</p>
             <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="'start-routine' | translate">LAUNCH MYMAT</a>
