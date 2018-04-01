@@ -26741,3 +26741,7 @@ ion-scroll .scroll-content {
 page-help .item {
   background-color: #FFF;
 }
+
+page-wifi iframe .h3, page-wifi iframe table {
+  display: none !important;
+}

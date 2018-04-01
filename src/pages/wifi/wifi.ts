@@ -47,6 +47,7 @@ export class WifiPage {
         });
       });
   }
+  
   urlpaste(){
     this.my_url = Constants.myMatApiIndexUrl;
     return this.sanitize.bypassSecurityTrustResourceUrl(this.my_url);
