@@ -69,7 +69,7 @@ export class WifiPage {
       });
     }
     else{
-      
+      this.failIPVerification();
     }
     this.mymatWifi = true;
     this.intervalCount = 0;
