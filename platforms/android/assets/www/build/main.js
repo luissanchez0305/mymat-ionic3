@@ -690,22 +690,22 @@ var WifiPage = (function () {
             switch (i) {
                 case 1:
                     this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble1).then(function (val) {
-                        programs += "?P1=" + val[0].split("|")[3] + '&';
+                        programs += "?P1=" + val.split("|")[3] + '&';
                     });
                     break;
                 case 2:
                     this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble2).then(function (val) {
-                        programs += "P2=" + val[0].split("|")[3] + '&';
+                        programs += "P2=" + val.split("|")[3] + '&';
                     });
                     break;
                 case 3:
                     this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble3).then(function (val) {
-                        programs += "P3=" + val[0].split("|")[3] + '&';
+                        programs += "P3=" + val.split("|")[3] + '&';
                     });
                     break;
                 case 4:
                     this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble4).then(function (val) {
-                        programs += "P4=" + val[0].split("|")[3];
+                        programs += "P4=" + val.split("|")[3];
                         _this.showIframeStatus = true;
                         _this.iframeUrl = _this.sanitize.bypassSecurityTrustResourceUrl(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].myMatApiIndexUrl + programs);
                     });
