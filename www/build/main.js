@@ -672,6 +672,7 @@ var WifiPage = (function () {
         this.stop();
     };
     WifiPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
         this.mymatStatus = false;
         this.showIframeStatus = false;
         this.showLoading = true;
@@ -684,9 +685,34 @@ var WifiPage = (function () {
         },(response)=>{
           this.failIPVerification();
         });*/
-        this.showStatus();
-        this.showIframeStatus = true;
-        this.iframeUrl = this.sanitize.bypassSecurityTrustResourceUrl(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].myMatApiIndexUrl);
+        programs[0].split("|")[3];
+        var programs = '';
+        for (var i = 1; i <= 4; i++) {
+            switch (i) {
+                case 1:
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble1).then(function (val) {
+                        programs += "?P1=" + val[0].split("|")[3] + '&';
+                    });
+                    break;
+                case 2:
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble2).then(function (val) {
+                        programs += "P2=" + val[0].split("|")[3] + '&';
+                    });
+                    break;
+                case 3:
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble3).then(function (val) {
+                        programs += "P3=" + val[0].split("|")[3] + '&';
+                    });
+                    break;
+                case 4:
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble4).then(function (val) {
+                        programs += "P4=" + val[0].split("|")[3];
+                        _this.showIframeStatus = true;
+                        _this.iframeUrl = _this.sanitize.bypassSecurityTrustResourceUrl(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].myMatApiIndexUrl + programs);
+                    });
+                    break;
+            }
+        }
         this.mymatWifi = true;
         this.intervalCount = 0;
     };

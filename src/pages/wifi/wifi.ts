@@ -66,9 +66,36 @@ export class WifiPage {
     },(response)=>{
       this.failIPVerification();
     });*/
-    this.showStatus();
-    this.showIframeStatus = true;
-    this.iframeUrl = this.sanitize.bypassSecurityTrustResourceUrl(Constants.myMatApiIndexUrl);
+    programs[0].split("|")[3];
+    var programs = '';
+    
+    for(var i = 1; i <= 4; i++){
+      switch(i){
+        case 1:
+          this.storage.get(Constants.storageKeyBubble1).then((val) => {
+            programs += "?P1=" + val[0].split("|")[3] + '&';
+          });
+          break;
+        case 2:
+          this.storage.get(Constants.storageKeyBubble2).then((val) => {
+            programs += "P2=" + val[0].split("|")[3] + '&';
+          });
+          break;
+        case 3:
+          this.storage.get(Constants.storageKeyBubble3).then((val) => {
+            programs += "P3=" + val[0].split("|")[3] + '&';
+          });
+          break;
+        case 4:
+          this.storage.get(Constants.storageKeyBubble4).then((val) => {
+            programs += "P4=" + val[0].split("|")[3];
+            
+            this.showIframeStatus = true;
+            this.iframeUrl = this.sanitize.bypassSecurityTrustResourceUrl(Constants.myMatApiIndexUrl + programs);
+          });
+          break;
+      }
+    }
     this.mymatWifi = true;
     this.intervalCount = 0;
   }
