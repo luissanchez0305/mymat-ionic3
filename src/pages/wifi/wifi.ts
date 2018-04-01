@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { PlayingPage } from '../playing/playing';
@@ -22,7 +22,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class WifiPage {
   public testIPInterval : any;
-  public testStatusInterval : any;
+  //public testStatusInterval : any;
   public intervalCount : number = 0;
   public mymatStatus : boolean;
   public mymatWifi : boolean;
@@ -41,7 +41,7 @@ export class WifiPage {
   public showIframeStatus : boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider,
-    private translateService: TranslateService, public networkInterface : NetworkInterface, private sanitize: DomSanitizer) {
+    private translateService: TranslateService, public networkInterface : NetworkInterface, private sanitize: DomSanitizer, public platform: Platform) {
       this.storage.get(Constants.storageKeyLang).then((lang)=>{
         this.translateService.getTranslation(lang).subscribe((value) =>{
           this.coilText = typeof value['coil'] === 'undefined' ? 'Antena' : value['coil'];
@@ -57,43 +57,19 @@ export class WifiPage {
     this.mymatStatus = false;
     this.showIframeStatus = false;
     this.showLoading = true;
-    /*this.networkInterface.getWiFiIPAddress().then((response)=>{
-      if(response === Constants.localIPAddress){
-        this.showIPButton();
-      }
-      else
+    if(this.platform.is('cordova')){
+      this.networkInterface.getWiFiIPAddress().then((response)=>{
+        if(response === Constants.localIPAddress){
+          this.showIPButton();
+        }
+        else
+          this.failIPVerification();
+      },(response)=>{
         this.failIPVerification();
-    },(response)=>{
-      this.failIPVerification();
-    });*/
-    var programs = '';
-    
-    for(var i = 1; i <= 4; i++){
-      switch(i){
-        case 1:
-          this.storage.get(Constants.storageKeyBubble1).then((val) => {
-            programs += "?P1=" + val.split("|")[3] + '&';
-          });
-          break;
-        case 2:
-          this.storage.get(Constants.storageKeyBubble2).then((val) => {
-            programs += "P2=" + val.split("|")[3] + '&';
-          });
-          break;
-        case 3:
-          this.storage.get(Constants.storageKeyBubble3).then((val) => {
-            programs += "P3=" + val.split("|")[3] + '&';
-          });
-          break;
-        case 4:
-          this.storage.get(Constants.storageKeyBubble4).then((val) => {
-            programs += "P4=" + val.split("|")[3];
-            
-            this.showIframeStatus = true;
-            this.iframeUrl = this.sanitize.bypassSecurityTrustResourceUrl(Constants.myMatApiIndexUrl + programs);
-          });
-          break;
-      }
+      });
+    }
+    else{
+      
     }
     this.mymatWifi = true;
     this.intervalCount = 0;
@@ -136,7 +112,7 @@ export class WifiPage {
       this.mymatWifi = false;
       this.mymatStatus = true;
       this.showStatusTable = true;
-      clearInterval(this.testStatusInterval);
+      //clearInterval(this.testStatusInterval);
       clearInterval(this.testIPInterval);
   }
   
@@ -187,7 +163,7 @@ export class WifiPage {
   }
   
   failStatusVerification(){
-    this.testStatusInterval = setInterval(() => {
+    /*this.testStatusInterval = setInterval(() => {
       // timeout of mymat detection 180 segundos
       var failMyMatTest = this.apiService.test();
       failMyMatTest.then((response) => {
@@ -201,11 +177,44 @@ export class WifiPage {
       });
       
       this.intervalCount += 1;
-    }, 3000);
+    }, 3000);*/
+    
+    var programs = '';
+    
+    for(var i = 1; i <= 4; i++){
+      switch(i){
+        case 1:
+          this.storage.get(Constants.storageKeyBubble1).then((val) => {
+            programs += "?P1=" + val.split("|")[3] + '&';
+          });
+          break;
+        case 2:
+          this.storage.get(Constants.storageKeyBubble2).then((val) => {
+            programs += "P2=" + val.split("|")[3] + '&';
+          });
+          break;
+        case 3:
+          this.storage.get(Constants.storageKeyBubble3).then((val) => {
+            programs += "P3=" + val.split("|")[3] + '&';
+          });
+          break;
+        case 4:
+          this.storage.get(Constants.storageKeyBubble4).then((val) => {
+            programs += "P4=" + val.split("|")[3];
+            
+            this.showIframeStatus = true;
+            this.mymatWifi = false;
+            this.mymatStatus = true;
+            this.showStatusTable = false;
+            this.iframeUrl = this.sanitize.bypassSecurityTrustResourceUrl(Constants.myMatApiIndexUrl + programs);
+          });
+          break;
+      }
+    }
   }
   
   startRoutine(){
-    clearInterval(this.testStatusInterval);
+    //clearInterval(this.testStatusInterval);
     clearInterval(this.testIPInterval);
     var program1Obj;
     var program2Obj;
@@ -254,7 +263,7 @@ export class WifiPage {
   }
   
   stop(){
-    clearInterval(this.testStatusInterval);
+    //clearInterval(this.testStatusInterval);
     clearInterval(this.testIPInterval);
   }
 
