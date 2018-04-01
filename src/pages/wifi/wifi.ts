@@ -6,7 +6,7 @@ import { PlayingPage } from '../playing/playing';
 import { Constants } from '../../services/constants';
 import { NetworkInterface } from '@ionic-native/network-interface';
 import { TranslateService } from '@ngx-translate/core';
-//import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 
 /**
  * Generated class for the WifiPage page.
