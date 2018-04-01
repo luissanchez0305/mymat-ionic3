@@ -4353,10 +4353,10 @@ var APIServiceProvider = (function () {
     };
     APIServiceProvider.prototype.test = function () {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
-        //headers.append('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8');
-        /*headers.append('Accept-Encoding', 'gzip, deflate');
+        headers.append('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8');
+        headers.append('Accept-Encoding', 'gzip, deflate');
         headers.append('Accept-Language', 'en-US,en;q=0.9,es-PA;q=0.8,es;q=0.7');
-        headers.append('Upgrade-Insecure-Requests', '1');*/
+        headers.append('Upgrade-Insecure-Requests', '1');
         return new Promise(function (resolve, reject) {
             /*this.http.get(Constants.myMatApiIndexUrl, { headers: headers })
             .map(res => res.text())
@@ -4366,7 +4366,12 @@ var APIServiceProvider = (function () {
               reject(err);
             });*/
             __WEBPACK_IMPORTED_MODULE_4_jquery__["ajax"]({
-                crossDomain: true,
+                crossDomain: false,
+                headers: {
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+                    'Accept-Encoding': 'gzip, deflate',
+                    'Upgrade-Insecure-Requests': '1'
+                },
                 url: __WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiIndexUrl,
                 success: function (data) {
                     console.log('success');
