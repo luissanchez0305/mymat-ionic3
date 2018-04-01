@@ -206,7 +206,7 @@ export class WifiPage {
             this.mymatWifi = false;
             this.mymatStatus = true;
             this.showStatusTable = false;
-            //this.iframeUrl = this.sanitize.bypassSecurityTrustResourceUrl(Constants.myMatApiIndexUrl + programs);
+            this.iframeUrl = this.sanitize.bypassSecurityTrustResourceUrl(Constants.myMatApiIndexUrl + programs);
           });
           break;
       }

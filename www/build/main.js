@@ -816,7 +816,7 @@ var WifiPage = (function () {
                         _this.mymatWifi = false;
                         _this.mymatStatus = true;
                         _this.showStatusTable = false;
-                        //this.iframeUrl = this.sanitize.bypassSecurityTrustResourceUrl(Constants.myMatApiIndexUrl + programs);
+                        _this.iframeUrl = _this.sanitize.bypassSecurityTrustResourceUrl(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].myMatApiIndexUrl + programs);
                     });
                     break;
             }
