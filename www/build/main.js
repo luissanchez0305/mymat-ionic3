@@ -682,10 +682,13 @@ var WifiPage = (function () {
                 if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress) {
                     _this.showIPButton();
                 }
-                else
+                else {
                     _this.failIPVerification();
+                    console.log('error wifi 1');
+                }
             }, function (response) {
                 _this.failIPVerification();
+                console.log('error wifi 2');
             });
         }
         else {
@@ -715,9 +718,11 @@ var WifiPage = (function () {
             }
             else {
                 _this.failStatusVerification();
+                console.log('error wifi 3');
             }
         }, function (response) {
             _this.failStatusVerification();
+            console.log('error wifi 4');
         });
     };
     WifiPage.prototype.showNoStatus = function () {
@@ -768,8 +773,9 @@ var WifiPage = (function () {
         var _this = this;
         this.testIPInterval = setInterval(function () {
             _this.networkInterface.getWiFiIPAddress().then(function (response) {
-                if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress)
+                if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress) {
                     _this.showIPButton();
+                }
             });
         }, 3000);
     };
@@ -4363,9 +4369,11 @@ var APIServiceProvider = (function () {
                 crossDomain: false,
                 url: __WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiIndexUrl,
                 success: function (data) {
+                    console.log('success');
                     resolve(data);
                 },
                 error: function (data) {
+                    console.log('error');
                     reject(data);
                 }
             });

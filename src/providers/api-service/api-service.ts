@@ -46,9 +46,11 @@ export class APIServiceProvider {
         crossDomain: false,
         url: Constants.myMatApiIndexUrl,
         success: function(data){
+          console.log('success');
           resolve(data);
         },
         error: function(data){
+          console.log('error');
           reject(data);
         }
       })

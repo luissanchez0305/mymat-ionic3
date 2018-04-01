@@ -62,10 +62,13 @@ export class WifiPage {
         if(response === Constants.localIPAddress){
           this.showIPButton();
         }
-        else
+        else{
           this.failIPVerification();
+          console.log('error wifi 1');
+        }
       },(response)=>{
         this.failIPVerification();
+        console.log('error wifi 2');
       });
     }
     else{
@@ -98,9 +101,11 @@ export class WifiPage {
       }
       else{
         this.failStatusVerification();
+        console.log('error wifi 3');
       }
     }, (response) => {
       this.failStatusVerification();
+      console.log('error wifi 4');
     });
   }
     
@@ -156,8 +161,9 @@ export class WifiPage {
   failIPVerification(){
       this.testIPInterval = setInterval(() => {
         this.networkInterface.getWiFiIPAddress().then((response)=>{
-            if(response === Constants.localIPAddress)
+            if(response === Constants.localIPAddress){
               this.showIPButton();
+            }
           });
       }, 3000);
   }
