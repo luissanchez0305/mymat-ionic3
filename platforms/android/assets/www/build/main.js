@@ -685,7 +685,6 @@ var WifiPage = (function () {
         },(response)=>{
           this.failIPVerification();
         });*/
-        programs[0].split("|")[3];
         var programs = '';
         for (var i = 1; i <= 4; i++) {
             switch (i) {
