@@ -37,7 +37,8 @@ export class WifiPage {
   public showStatusTable : boolean;
   public showLoading : boolean;
   
-  public my_url: any;
+  public iframeUrl: any;
+  public showIframeStatus : boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider,
     private translateService: TranslateService, public networkInterface : NetworkInterface, private sanitize: DomSanitizer) {
@@ -48,17 +49,13 @@ export class WifiPage {
       });
   }
   
-  urlpaste(){
-    this.my_url = Constants.myMatApiIndexUrl;
-    return this.sanitize.bypassSecurityTrustResourceUrl(this.my_url);
-  }
-  
   ionViewDidLeave(){
     this.stop();
   }
 
   ionViewDidLoad() {
     this.mymatStatus = false;
+    this.showIframeStatus = false;
     this.showLoading = true;
     /*this.networkInterface.getWiFiIPAddress().then((response)=>{
       if(response === Constants.localIPAddress){
@@ -69,7 +66,9 @@ export class WifiPage {
     },(response)=>{
       this.failIPVerification();
     });*/
-    
+    this.showStatus();
+    this.showIframeStatus = true;
+    this.iframeUrl = this.sanitize.bypassSecurityTrustResourceUrl(Constants.myMatApiIndexUrl);
     this.mymatWifi = true;
     this.intervalCount = 0;
   }

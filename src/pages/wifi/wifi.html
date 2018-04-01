@@ -34,7 +34,7 @@
             </div>
             <img *ngIf="showLoading" src="img/loading.gif" width="200" />
         </div>
-        <iframe  height="100%" width="100%" [src]="urlpaste()"></iframe>
+        <iframe *ngIf="showIframeStatus" height="100%" width="100%" [src]="iframeUrl"></iframe>
         <div *ngIf="mymatStatus">
             <div *ngIf="showStatusTable" class="status-table divTable">
                 <div class="divTableHeading">
