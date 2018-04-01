@@ -4366,7 +4366,7 @@ var APIServiceProvider = (function () {
               reject(err);
             });*/
             __WEBPACK_IMPORTED_MODULE_4_jquery__["ajax"]({
-                crossDomain: false,
+                crossDomain: true,
                 url: __WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiIndexUrl,
                 success: function (data) {
                     console.log('success');

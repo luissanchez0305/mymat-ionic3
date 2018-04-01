@@ -43,7 +43,7 @@ export class APIServiceProvider {
         reject(err);
       });*/
       $.ajax({
-        crossDomain: false,
+        crossDomain: true,
         url: Constants.myMatApiIndexUrl,
         success: function(data){
           console.log('success');
