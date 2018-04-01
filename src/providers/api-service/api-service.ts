@@ -30,18 +30,28 @@ export class APIServiceProvider {
   
   test(){
     let headers = new Headers();
-    headers.append('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8');
-    headers.append('Accept-Encoding', 'gzip, deflate');
+    //headers.append('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8');
+    /*headers.append('Accept-Encoding', 'gzip, deflate');
     headers.append('Accept-Language', 'en-US,en;q=0.9,es-PA;q=0.8,es;q=0.7');
-    headers.append('Upgrade-Insecure-Requests', '1');
+    headers.append('Upgrade-Insecure-Requests', '1');*/
     return new Promise((resolve, reject) => {
-      this.http.get(Constants.myMatApiIndexUrl, { headers: headers })
+      /*this.http.get(Constants.myMatApiIndexUrl, { headers: headers })
       .map(res => res.text())
       .subscribe(res => {
         resolve(res);
       }, (err) => {
         reject(err);
-      });
+      });*/
+      $.ajax({
+        crossDomain: false,
+        url: Constants.myMatApiIndexUrl,
+        success: function(data){
+          resolve(data);
+        },
+        error: function(data){
+          reject(data);
+        }
+      })
     });
   }
   
