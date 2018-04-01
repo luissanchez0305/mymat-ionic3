@@ -690,7 +690,7 @@ var WifiPage = (function () {
             });
         }
         else {
-            this.failIPVerification();
+            this.showIPButton();
         }
         this.mymatWifi = true;
         this.intervalCount = 0;
