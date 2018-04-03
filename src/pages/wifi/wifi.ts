@@ -22,7 +22,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class WifiPage {
   public testIPInterval : any;
-  public testStatusInterval : any;
+  //public testStatusInterval : any;
   public intervalCount : number = 0;
   public mymatStatus : boolean;
   public mymatWifi : boolean;
@@ -62,13 +62,10 @@ export class WifiPage {
         if(response === Constants.localIPAddress){
           this.showIPButton();
         }
-        else{
+        else
           this.failIPVerification();
-          console.log('error wifi 1');
-        }
       },(response)=>{
         this.failIPVerification();
-        console.log('error wifi 2');
       });
     }
     else{
@@ -101,11 +98,9 @@ export class WifiPage {
       }
       else{
         this.failStatusVerification();
-        console.log('error wifi 3');
       }
     }, (response) => {
       this.failStatusVerification();
-      console.log('error wifi 4');
     });
   }
     
@@ -117,7 +112,7 @@ export class WifiPage {
       this.mymatWifi = false;
       this.mymatStatus = true;
       this.showStatusTable = true;
-      clearInterval(this.testStatusInterval);
+      //clearInterval(this.testStatusInterval);
       clearInterval(this.testIPInterval);
   }
   
@@ -161,15 +156,14 @@ export class WifiPage {
   failIPVerification(){
       this.testIPInterval = setInterval(() => {
         this.networkInterface.getWiFiIPAddress().then((response)=>{
-            if(response === Constants.localIPAddress){
+            if(response === Constants.localIPAddress)
               this.showIPButton();
-            }
           });
       }, 3000);
   }
   
   failStatusVerification(){
-    this.testStatusInterval = setInterval(() => {
+    /*this.testStatusInterval = setInterval(() => {
       // timeout of mymat detection 180 segundos
       var failMyMatTest = this.apiService.test();
       failMyMatTest.then((response) => {
@@ -183,9 +177,9 @@ export class WifiPage {
       });
       
       this.intervalCount += 1;
-    }, 3000);
+    }, 3000);*/
     
-    /*var programs = '';
+    var programs = '';
     
     for(var i = 1; i <= 4; i++){
       switch(i){
@@ -216,11 +210,11 @@ export class WifiPage {
           });
           break;
       }
-    }*/
+    }
   }
   
   startRoutine(){
-    clearInterval(this.testStatusInterval);
+    //clearInterval(this.testStatusInterval);
     clearInterval(this.testIPInterval);
     var program1Obj;
     var program2Obj;
@@ -269,7 +263,7 @@ export class WifiPage {
   }
   
   stop(){
-    clearInterval(this.testStatusInterval);
+    //clearInterval(this.testStatusInterval);
     clearInterval(this.testIPInterval);
   }
 
