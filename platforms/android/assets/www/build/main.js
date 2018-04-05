@@ -432,7 +432,7 @@ var ProgramPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(280);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__program_program__ = __webpack_require__(113);
@@ -682,13 +682,10 @@ var WifiPage = (function () {
                 if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress) {
                     _this.showIPButton();
                 }
-                else {
+                else
                     _this.failIPVerification();
-                    console.log('error wifi 1');
-                }
             }, function (response) {
                 _this.failIPVerification();
-                console.log('error wifi 2');
             });
         }
         else {
@@ -718,11 +715,9 @@ var WifiPage = (function () {
             }
             else {
                 _this.failStatusVerification();
-                console.log('error wifi 3');
             }
         }, function (response) {
             _this.failStatusVerification();
-            console.log('error wifi 4');
         });
     };
     WifiPage.prototype.showNoStatus = function () {
@@ -773,9 +768,8 @@ var WifiPage = (function () {
         var _this = this;
         this.testIPInterval = setInterval(function () {
             _this.networkInterface.getWiFiIPAddress().then(function (response) {
-                if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress) {
+                if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress)
                     _this.showIPButton();
-                }
             });
         }, 3000);
     };
@@ -913,27 +907,27 @@ webpackEmptyAsyncContext.id = 127;
 
 var map = {
 	"../pages/contact/contact.module": [
-		307,
+		306,
 		5
 	],
 	"../pages/help/help.module": [
-		308,
+		307,
 		4
 	],
 	"../pages/playing/playing.module": [
-		309,
+		308,
 		3
 	],
 	"../pages/program/program.module": [
-		310,
+		309,
 		2
 	],
 	"../pages/programs/programs.module": [
-		311,
+		310,
 		1
 	],
 	"../pages/wifi/wifi.module": [
-		312,
+		311,
 		0
 	]
 };
@@ -1173,12 +1167,12 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(86);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(298);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_http_loader__ = __webpack_require__(304);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_http_loader__ = __webpack_require__(303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_network_interface__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_local_notifications__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(305);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_home_home__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_help_help__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_contact_contact__ = __webpack_require__(110);
@@ -1290,7 +1284,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 281:
+/***/ 280:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4150,7 +4144,7 @@ var Constants = {
 
 /***/ }),
 
-/***/ 306:
+/***/ 305:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4312,8 +4306,6 @@ var MyApp = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_constants__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(264);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery__ = __webpack_require__(265);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_jquery__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4326,9 +4318,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 //import { Network } from '@ionic-native/network';
-
-
+//import * as $ from "jquery";
 /*
   Generated class for the AuthServiceProvider provider.
 
@@ -4352,35 +4344,19 @@ var APIServiceProvider = (function () {
         });
     };
     APIServiceProvider.prototype.test = function () {
+        var _this = this;
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
-        headers.append('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8');
-        headers.append('Accept-Encoding', 'gzip, deflate');
+        //headers.append('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8');
+        /*headers.append('Accept-Encoding', 'gzip, deflate');
         headers.append('Accept-Language', 'en-US,en;q=0.9,es-PA;q=0.8,es;q=0.7');
-        headers.append('Upgrade-Insecure-Requests', '1');
+        headers.append('Upgrade-Insecure-Requests', '1');*/
         return new Promise(function (resolve, reject) {
-            /*this.http.get(Constants.myMatApiIndexUrl, { headers: headers })
-            .map(res => res.text())
-            .subscribe(res => {
-              resolve(res);
-            }, (err) => {
-              reject(err);
-            });*/
-            __WEBPACK_IMPORTED_MODULE_4_jquery__["ajax"]({
-                crossDomain: false,
-                headers: {
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-                    'Accept-Encoding': 'gzip, deflate',
-                    'Upgrade-Insecure-Requests': '1'
-                },
-                url: __WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiIndexUrl,
-                success: function (data) {
-                    console.log('success');
-                    resolve(data);
-                },
-                error: function (data) {
-                    console.log('error');
-                    reject(data);
-                }
+            _this.http.get(__WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].myMatApiIndexUrl, { headers: headers })
+                .map(function (res) { return res.text(); })
+                .subscribe(function (res) {
+                resolve(res);
+            }, function (err) {
+                reject(err);
             });
         });
     };

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
 import { Constants } from '../../services/constants';
-//import { Network } from '@ionic-native/network';
 import 'rxjs/add/operator/map';
-import * as $ from "jquery";
+//import { Network } from '@ionic-native/network';
+//import * as $ from "jquery";
 
 /*
   Generated class for the AuthServiceProvider provider.
@@ -42,6 +42,7 @@ export class APIServiceProvider {
       }, (err) => {
         reject(err);
       });
+    });
   }
   
   sendEmail(data){
