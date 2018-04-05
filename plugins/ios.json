@@ -33,9 +33,6 @@
     },
     "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-wkwebview-engine": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },
   "dependent_plugins": {
