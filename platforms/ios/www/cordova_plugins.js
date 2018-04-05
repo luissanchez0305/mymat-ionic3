@@ -100,6 +100,22 @@ module.exports = [
       "cordova.plugins.notification.local.core",
       "plugin.notification.local.core"
     ]
+  },
+  {
+    "id": "cordova-plugin-wkwebview-engine.ios-wkwebview-exec",
+    "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview-exec.js",
+    "pluginId": "cordova-plugin-wkwebview-engine",
+    "clobbers": [
+      "cordova.exec"
+    ]
+  },
+  {
+    "id": "cordova-plugin-wkwebview-engine.ios-wkwebview",
+    "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview.js",
+    "pluginId": "cordova-plugin-wkwebview-engine",
+    "clobbers": [
+      "window.WkWebView"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -114,7 +130,8 @@ module.exports.metadata =
   "ionic-plugin-keyboard": "2.2.1",
   "cordova-plugin-email-composer": "0.8.12",
   "cordova-plugin-badge": "0.8.7",
-  "cordova-plugin-local-notification": "0.9.0-beta.2"
+  "cordova-plugin-local-notification": "0.9.0-beta.2",
+  "cordova-plugin-wkwebview-engine": "1.1.4"
 };
 // BOTTOM OF METADATA
 });
