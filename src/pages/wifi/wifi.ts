@@ -6,7 +6,6 @@ import { PlayingPage } from '../playing/playing';
 import { Constants } from '../../services/constants';
 import { NetworkInterface } from '@ionic-native/network-interface';
 import { TranslateService } from '@ngx-translate/core';
-import { DomSanitizer } from '@angular/platform-browser';
 
 /**
  * Generated class for the WifiPage page.
@@ -41,7 +40,7 @@ export class WifiPage {
   public showIframeStatus : boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider,
-    private translateService: TranslateService, public networkInterface : NetworkInterface, private sanitize: DomSanitizer, public platform: Platform) {
+    private translateService: TranslateService, public networkInterface : NetworkInterface, public platform: Platform) {
       this.storage.get(Constants.storageKeyLang).then((lang)=>{
         this.translateService.getTranslation(lang).subscribe((value) =>{
           this.coilText = typeof value['coil'] === 'undefined' ? 'Antena' : value['coil'];
@@ -98,9 +97,11 @@ export class WifiPage {
       }
       else{
         this.failStatusVerification();
+        alert('error 1: ' + response);
       }
     }, (response) => {
       this.failStatusVerification();
+        alert('error 2: ' + response);
     });
   }
     
@@ -174,6 +175,7 @@ export class WifiPage {
         if(this.intervalCount >= 5){
           this.showNoStatus();
         }
+        alert('error 3: ' + response);
       });
       
       this.intervalCount += 1;
