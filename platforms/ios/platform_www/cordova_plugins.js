@@ -26,14 +26,6 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-ionic-webview.ios-wkwebview-exec",
-    "file": "plugins/cordova-plugin-ionic-webview/src/www/ios/ios-wkwebview-exec.js",
-    "pluginId": "cordova-plugin-ionic-webview",
-    "clobbers": [
-      "cordova.exec"
-    ]
-  },
-  {
     "id": "cordova-plugin-local-notification.LocalNotification",
     "file": "plugins/cordova-plugin-local-notification/www/local-notification.js",
     "pluginId": "cordova-plugin-local-notification",
@@ -93,22 +85,6 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-wkwebview-engine.ios-wkwebview-exec",
-    "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview-exec.js",
-    "pluginId": "cordova-plugin-wkwebview-engine",
-    "clobbers": [
-      "cordova.exec"
-    ]
-  },
-  {
-    "id": "cordova-plugin-wkwebview-engine.ios-wkwebview",
-    "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview.js",
-    "pluginId": "cordova-plugin-wkwebview-engine",
-    "clobbers": [
-      "window.WkWebView"
-    ]
-  },
-  {
     "id": "ionic-plugin-keyboard.keyboard",
     "file": "plugins/ionic-plugin-keyboard/www/ios/keyboard.js",
     "pluginId": "ionic-plugin-keyboard",
@@ -124,13 +100,11 @@ module.exports.metadata =
   "cordova-plugin-badge": "0.8.7",
   "cordova-plugin-device": "1.1.4",
   "cordova-plugin-email-composer": "0.8.12",
-  "cordova-plugin-ionic-webview": "1.1.16",
   "cordova-plugin-local-notification": "0.9.0-beta.2",
   "cordova-plugin-network-information": "2.0.1",
   "cordova-plugin-networkinterface": "1.2.0",
   "cordova-plugin-splashscreen": "4.0.3",
   "cordova-plugin-whitelist": "1.3.1",
-  "cordova-plugin-wkwebview-engine": "1.1.4",
   "ionic-plugin-keyboard": "2.2.1"
 };
 // BOTTOM OF METADATA

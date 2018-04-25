@@ -13,9 +13,6 @@
     "cordova-plugin-email-composer": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
-    "cordova-plugin-ionic-webview": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
     "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
@@ -29,9 +26,6 @@
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-wkwebview-engine": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "ionic-plugin-keyboard": {
