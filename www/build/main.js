@@ -712,11 +712,9 @@ var WifiPage = (function () {
             }
             else {
                 _this.failStatusVerification();
-                alert('error 1: ' + response);
             }
         }, function (response) {
             _this.failStatusVerification();
-            alert('error 2: ' + response);
         });
     };
     WifiPage.prototype.showNoStatus = function () {
@@ -785,12 +783,11 @@ var WifiPage = (function () {
                 if (_this.intervalCount >= 5) {
                     _this.showNoStatus();
                 }
-                alert('error 3: ' + response);
             });
             _this.intervalCount += 1;
         }, 3000);
         /*var programs = '';
-        
+    
         for(var i = 1; i <= 4; i++){
           switch(i){
             case 1:
@@ -811,7 +808,7 @@ var WifiPage = (function () {
             case 4:
               this.storage.get(Constants.storageKeyBubble4).then((val) => {
                 programs += "P4=" + val.split("|")[3];
-                
+    
                 this.showIframeStatus = true;
                 this.mymatWifi = false;
                 this.mymatStatus = true;
