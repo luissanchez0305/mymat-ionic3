@@ -35,7 +35,7 @@ export class WifiPage {
   public coilText4 : string;
   public showStatusTable : boolean;
   public showLoading : boolean;
-  
+
   public iframeUrl: any;
   public showIframeStatus : boolean;
 
@@ -47,7 +47,7 @@ export class WifiPage {
         });
       });
   }
-  
+
   ionViewDidLeave(){
     this.stop();
   }
@@ -73,21 +73,21 @@ export class WifiPage {
     this.mymatWifi = true;
     this.intervalCount = 0;
   }
-  
+
   showIPButton(){
     this.mymatStatus = true;
     this.showStatusTable = true;
-    
+
     this.batteryImg = 'img/b100.png';
     this.coilText1 = 'N/A';
     this.coilText2 = 'N/A';
     this.coilText3 = 'N/A';
     this.coilText4 = 'N/A';
-    
+
     this.mymatWifi = false;
     this.showLoading = false;
     clearInterval(this.testIPInterval);
-    
+
     // check if mymat is connected
     var myMatTest = this.apiService.test();
     myMatTest.then((response) => {
@@ -97,18 +97,16 @@ export class WifiPage {
       }
       else{
         this.failStatusVerification();
-        alert('error 1: ' + response);
       }
     }, (response) => {
       this.failStatusVerification();
-        alert('error 2: ' + response);
     });
   }
-    
+
   showNoStatus(){
       this.mymatNoStatus = true;
   }
-    
+
   showStatus(){
       this.mymatWifi = false;
       this.mymatStatus = true;
@@ -116,7 +114,7 @@ export class WifiPage {
       clearInterval(this.testStatusInterval);
       clearInterval(this.testIPInterval);
   }
-  
+
   verifyValues(response){
     if(response.indexOf("<p><h4>Power: ") > -1){
       var power = response.split("<p><h4>Power: ");
@@ -130,7 +128,7 @@ export class WifiPage {
       var coil4 = response.split("<tr><td>4.</td><td>");
       coil4 = coil4[2].split("</td></tr>");
       this.batteryCharge = power[0];
-      
+
       var powerVal = power[0].substr(0,power[0].length-1);
       if(powerVal > 75)
           this.batteryImg = 'img/b100.png';
@@ -142,7 +140,7 @@ export class WifiPage {
           this.batteryImg = 'img/b25.png';
       else
           this.batteryImg = 'img/b10.png';
-          
+
       this.coilText1 = coil1[0];
       this.coilText2 = coil2[0];
       this.coilText3 = coil3[0];
@@ -153,7 +151,7 @@ export class WifiPage {
           return false;
       }
   }
-  
+
   failIPVerification(){
       this.testIPInterval = setInterval(() => {
         this.networkInterface.getWiFiIPAddress().then((response)=>{
@@ -162,7 +160,7 @@ export class WifiPage {
           });
       }, 3000);
   }
-  
+
   failStatusVerification(){
     this.testStatusInterval = setInterval(() => {
       // timeout of mymat detection 180 segundos
@@ -175,14 +173,13 @@ export class WifiPage {
         if(this.intervalCount >= 5){
           this.showNoStatus();
         }
-        alert('error 3: ' + response);
       });
-      
+
       this.intervalCount += 1;
     }, 3000);
-    
+
     /*var programs = '';
-    
+
     for(var i = 1; i <= 4; i++){
       switch(i){
         case 1:
@@ -203,7 +200,7 @@ export class WifiPage {
         case 4:
           this.storage.get(Constants.storageKeyBubble4).then((val) => {
             programs += "P4=" + val.split("|")[3];
-            
+
             this.showIframeStatus = true;
             this.mymatWifi = false;
             this.mymatStatus = true;
@@ -214,7 +211,7 @@ export class WifiPage {
       }
     }*/
   }
-  
+
   startRoutine(){
     clearInterval(this.testStatusInterval);
     clearInterval(this.testIPInterval);
@@ -222,7 +219,7 @@ export class WifiPage {
     var program2Obj;
     var program3Obj;
     var program4Obj;
-    
+
     for(var i = 1; i <= 4; i++){
       switch(i){
         case 1:
@@ -243,27 +240,27 @@ export class WifiPage {
         case 4:
           this.storage.get(Constants.storageKeyBubble4).then((val) => {
             program4Obj = val;
-    
+
             var programs = [
                 program1Obj,
                 program2Obj,
                 program3Obj,
                 program4Obj
             ];
-            
+
             this.apiService.start(programs).then((response) => {
               console.log(response + '');
             }, (response) =>{
               console.log(response + '');
             });
-            
+
             this.navCtrl.setRoot(PlayingPage);
           });
           break;
       }
     }
   }
-  
+
   stop(){
     clearInterval(this.testStatusInterval);
     clearInterval(this.testIPInterval);
