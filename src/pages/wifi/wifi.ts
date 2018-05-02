@@ -53,7 +53,7 @@ export class WifiPage {
   }
 
   ionViewDidLoad() {
-    this.mymatStatus = false;
+    /*this.mymatStatus = false;
     this.showIframeStatus = false;
     this.showLoading = true;
     if(this.platform.is('cordova')){
@@ -71,7 +71,8 @@ export class WifiPage {
       this.showIPButton();
     }
     this.mymatWifi = true;
-    this.intervalCount = 0;
+    this.intervalCount = 0;*/
+    this.showStatus();
   }
   
   showIPButton(){
