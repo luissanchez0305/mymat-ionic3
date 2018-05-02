@@ -10,7 +10,10 @@
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
-    "cordova-plugin-ionic-webview": {
+    "cordova-plugin-email-composer": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+    "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "cordova-plugin-network-information": {
@@ -26,15 +29,6 @@
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "ionic-plugin-keyboard": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-email-composer": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-local-notification": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-wkwebview-engine": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },

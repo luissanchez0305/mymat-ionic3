@@ -28,10 +28,6 @@
     <feature name="EmailComposer">
         <param name="ios-package" value="APPEmailComposer" />
     </feature>
-    <allow-navigation href="http://localhost:8080/*" />
-    <feature name="CDVWKWebViewEngine">
-        <param name="ios-package" value="CDVWKWebViewEngine" />
-    </feature>
     <feature name="LocalNotification">
         <param name="ios-package" value="APPLocalNotification" />
     </feature>
@@ -108,7 +104,6 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
-    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="ScrollEnabled" value="false" />
     <preference name="orientation" value="portrait" />
     <preference name="android-minSdkVersion" value="23" />
@@ -119,4 +114,5 @@
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="phonegap-version" value="cli-8.0.0" />
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="CordovaWebViewEngine" value="CDVUIWebViewEngine" />
 </widget>
