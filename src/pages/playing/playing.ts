@@ -30,21 +30,21 @@ export class PlayingPage {
   public displayRunningTime : string;
   public finishTime : any;
   public timerInterval : any;
-  
-  constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage, 
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage,
     public translateService: TranslateService, private localNotifications : LocalNotifications, public plt: Platform) {
-      
+      var _this = this;
       document.addEventListener('resume', () => {
         var t = new Date();
-        this.resume(t.getTime());
+        _this.resume(t.getTime());
       });
   }
-  
+
   simulateResume(){
     var t = new Date();
     this.resume(t.getTime() + 10);
   }
-  
+
   resume(now){
     if(Math.round(now / 1000) > this.finishTime){
       this.displayRunningTime = '00:00';
@@ -68,11 +68,11 @@ export class PlayingPage {
             var value = val.split('|');
             this.program1CurrentTimeDecreasingAsTime = value[2]; //this.convertSecondsToTime(value[2]);
             program1CurrentTimeDecreasing = value[2];
-            
+
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((prog) =>{
                 this.programTitle1 = typeof prog[value[1]] === 'undefined' ? value[1] : prog[value[1]];
-              });     
+              });
             });
           });
           break;
@@ -81,11 +81,11 @@ export class PlayingPage {
             var value = val.split('|');
             this.program2CurrentTimeDecreasingAsTime = value[2]; //this.convertSecondsToTime(value[2]);
             program2CurrentTimeDecreasing = value[2];
-            
+
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((prog) =>{
                 this.programTitle2 = typeof prog[value[1]] === 'undefined' ? value[1] : prog[value[1]];
-              });     
+              });
             });
           });
           break;
@@ -94,11 +94,11 @@ export class PlayingPage {
             var value = val.split('|');
             this.program3CurrentTimeDecreasingAsTime = value[2]; //this.convertSecondsToTime(value[2]);
             program3CurrentTimeDecreasing = value[2];
-            
+
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((prog) =>{
                 this.programTitle3 = typeof prog[value[1]] === 'undefined' ? value[1] : prog[value[1]];
-              });     
+              });
             });
           });
           break;
@@ -107,13 +107,13 @@ export class PlayingPage {
             var value = val.split('|');
             this.program4CurrentTimeDecreasingAsTime = value[2]; //this.convertSecondsToTime(value[2]);
             program4CurrentTimeDecreasing = value[2];
-            
+
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((prog) =>{
                 this.programTitle4 = typeof prog[value[1]] === 'undefined' ? value[1] : prog[value[1]];
-              });     
+              });
             });
-            
+
             if(program1CurrentTimeDecreasing > program2CurrentTimeDecreasing && program1CurrentTimeDecreasing > program3CurrentTimeDecreasing && program1CurrentTimeDecreasing > program4CurrentTimeDecreasing)
                 this.displayRunningTime = program1CurrentTimeDecreasing; //this.convertSecondsToTime(program1CurrentTimeDecreasing);
             else if(program2CurrentTimeDecreasing > program3CurrentTimeDecreasing && program2CurrentTimeDecreasing > program4CurrentTimeDecreasing)
@@ -122,11 +122,11 @@ export class PlayingPage {
                 this.displayRunningTime = program3CurrentTimeDecreasing; //this.convertSecondsToTime(program3CurrentTimeDecreasing);
             else
                 this.displayRunningTime = program4CurrentTimeDecreasing; //this.convertSecondsToTime(program4CurrentTimeDecreasing);
-            
-            this.displayRunningTime = this.displayRunningTime; 
+
+            this.displayRunningTime = this.displayRunningTime;
             var t = new Date();
             this.finishTime = Math.round(t.getTime() / 1000) + this.getSeconds(this.displayRunningTime);
-            
+
             this.timerInterval = setInterval(() => {
               this.displayRunningTime = this.decreaseSecond(this.displayRunningTime);
               if(this.displayRunningTime == '00:00'){
@@ -142,14 +142,14 @@ export class PlayingPage {
                   sound: 'file://assets/sounds/' + (this.plt.is('ios') ? 'good-morning.m4r' : 'good-morning.mp3'),
                   at: new Date(t.getTime() + this.getSeconds(this.displayRunningTime) * 1000)
                 });
-              });     
+              });
             });
           });
           break;
       }
     }
   }
-  
+
   decreaseSecond(time){
     var minutesStr = time.substr(0,time.indexOf(':'));
     var minutes = minutesStr[0] == '0' ? parseInt(minutesStr[1]) : parseInt(minutesStr);
@@ -164,7 +164,7 @@ export class PlayingPage {
     }
     return minutesStr + ':' + secondsStr;
   }
-  
+
   getSeconds(time){
     var minutesStr = time.substr(0,time.indexOf(':'));
     var minutes = minutesStr[0] == '0' ? parseInt(minutesStr[1]) : parseInt(minutesStr);
@@ -172,7 +172,7 @@ export class PlayingPage {
     var seconds = secondsStr[0] == '0' ? parseInt(secondsStr[1]) : parseInt(secondsStr);
     return (minutes * 60) + seconds;
   }
-  
+
   convertSecondsToTime(timeInSeconds) {
     var minutes = Math.floor(timeInSeconds / 60);
     var minutesStr = "0" + minutes;
