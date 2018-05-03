@@ -133,6 +133,7 @@ export class PlayingPage {
                 clearInterval(this.timerInterval);
               }
             }, 1000);
+            var $this = this;
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((prog) =>{
                 this.localNotifications.schedule({
@@ -141,6 +142,13 @@ export class PlayingPage {
                   text: prog['time-expire-text'],
                   sound: 'file://assets/sounds/' + (this.plt.is('ios') ? 'good-morning.m4r' : 'good-morning.mp3'),
                   at: new Date(t.getTime() + this.getSeconds(this.displayRunningTime) * 1000)
+                });
+
+                this.localNotifications.on("click", function (notification) {
+                    if (notification.id == 1) {
+                      var t = new Date();
+                      $this.resume(t.getTime());
+                    }
                 });
               });
             });

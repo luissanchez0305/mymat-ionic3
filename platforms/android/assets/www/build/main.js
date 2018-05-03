@@ -289,6 +289,7 @@ var PlayingPage = (function () {
                                 clearInterval(_this.timerInterval);
                             }
                         }, 1000);
+                        var $this = _this;
                         _this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
                             _this.translateService.getTranslation(lang).subscribe(function (prog) {
                                 _this.localNotifications.schedule({
@@ -297,6 +298,12 @@ var PlayingPage = (function () {
                                     text: prog['time-expire-text'],
                                     sound: 'file://assets/sounds/' + (_this.plt.is('ios') ? 'good-morning.m4r' : 'good-morning.mp3'),
                                     at: new Date(t.getTime() + _this.getSeconds(_this.displayRunningTime) * 1000)
+                                });
+                                _this.localNotifications.on("click", function (notification) {
+                                    if (notification.id == 1) {
+                                        var t = new Date();
+                                        $this.resume(t.getTime());
+                                    }
                                 });
                             });
                         });
