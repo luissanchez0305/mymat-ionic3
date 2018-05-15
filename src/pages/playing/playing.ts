@@ -140,7 +140,7 @@ export class PlayingPage {
                   id: 1,
                   title: 'MyMat Light',
                   text: prog['time-expire-text'],
-                  sound: 'file://assets/sounds/' + (this.plt.is('ios') ? 'good-morning.m4r' : 'good-morning.mp3'),
+                  sound: 'file://assets/sounds/' + (this.plt.is('ios') ? 'gong_c5.m4r' : 'gong_c5.mp3'),
                   at: new Date(t.getTime() + this.getSeconds(this.displayRunningTime) * 1000)
                 });
 
