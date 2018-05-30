@@ -2370,158 +2370,158 @@ export var Data = { Groups : [
         {
             name: 'earth-element-upper',
             apiName: "Earth_Element",
-            runningtime: "15:22",
+            runningtime: "16:55",
             description: 'earth-element-description'
         },
         {
             name: 'fire-element-upper',
             apiName: "Fire_Element",
-            runningtime: "16:05",
+            runningtime: "15:05",
             description: 'fire-element-description'
         },
         {
             name: 'metal-element-upper',
             apiName: "Metal_Element",
-            runningtime: "13:11",
+            runningtime: "12:39",
             description: 'metal-element-description'
         },
         {
             name: 'water-element-upper', 
             apiName: "Water_Element",
-            runningtime: "15:18",
+            runningtime: "17:20",
             description: 'water-element-description'
         },
         {
             name: 'wood-element-upper',
             apiName: "Wood_Element",
-            runningtime: "11:06",
+            runningtime: "17:09",
             description: 'wood-element-description'
         },   
         {
             name: 'gallbladder-meridian-upper',
             apiName: "Gallbladder_Meridian",
-            runningtime: "19:31",
+            runningtime: "20:39",
             description: 'gallbladder-meridian-description'
         },
         {
             name: 'heart-meridian-upper',
             apiName: "Heart_Meridian",
-            runningtime: "13:30",
+            runningtime: "14:45",
             description: 'heart-meridian-description'
         },
         {
             name: 'kidney-meridian-upper',
             apiName: "Kidney_Meridian",
-            runningtime: "14:54",
+            runningtime: "16:27",
             description: 'kidney-meridian-description'
         },
         {
             name: 'large-intestine-meridian-upper',
             apiName: "Large_Intestine_Meridian",
-            runningtime: "12:02",
+            runningtime: "13:53",
             description: 'large-intestine-meridian-description'
         },
         {
             name: 'liver-meridian-upper',
             apiName: "Liver_Meridian",
-            runningtime: "14:38",
+            runningtime: "16:11",
             description: 'liver-meridian-description'
         },
 
         {
             name: 'lung-meridian-upper',
             apiName: "Lung_Meridian",
-            runningtime: "15:23",
+            runningtime: "16:38",
             description: 'lung-meridian-description'
         }, 
         {
             name: 'pericardium-meridian-upper',
             apiName: "Pericardium_Meridian",
-            runningtime: "20:40",
+            runningtime: "21:55",
             description: 'pericardium-meridian-description'
         },
         {
             name: 'small-intestine-meridian-upper',
             apiName: "Small_Intestine_Meridian",
-            runningtime: "12:10",
+            runningtime: "13:25",
             description: 'small-intestine-meridian-description'
         },
         {
             name: 'spleen-pancreas-meridian-upper',
             apiName: "Spleen_Meridian",
-            runningtime: "14:22",
+            runningtime: "15:37",
             description: 'spleen-pancreas-meridian-description'
         },
         {
             name: 'stomach-meridian-upper',
             apiName: "Stomach_Meridian",
-            runningtime: "15:24",
+            runningtime: "17:15",
             description: 'stomach-meridian-description'
         },
         {
             name: 'triple-warmer-meridian-upper',
             apiName: "Triple_Warmer_Meridian",
-            runningtime: "12:05",
+            runningtime: "13:20",
             description: 'triple-warmer-meridian-description'
         },
         {
             name: 'urinary-bladder-meridian-upper',
             apiName: "Urinary_Bladder_Meridian",
-            runningtime: "13:04",
+            runningtime: "14:19",
             description: 'urinary-bladder-meridian-description'
         },            
         {
             name: "first-chakra-upper",
             apiName: "Root_Chakra",
-            runningtime: "14:34",
+            runningtime: "15:49",
             description: '1-chakra-description'
         },
         {
             name: "second-chakra-upper",
             apiName: "Sacral_Chakra",
-            runningtime: "12:06",
+            runningtime: "13:57",
             description: '2-chakra-description'
         },
         {
             name: "third-chakra-upper",
             apiName: "Solar_Plexus_Chakra",
-            runningtime: "15:18",
+            runningtime: "16:51",
             description: '3-chakra-description'
         },
         {
             name: "fourth-chakra-upper",
             apiName: "Heart_Chakra",
-            runningtime: "17:01",
+            runningtime: "18:16",
             description: '4-chakra-description'
         },
         {
             name: "fifth-chakra-upper",
             apiName: "Throat_Chakra",
-            runningtime: "15:50",
+            runningtime: "17:59",
             description: '5-chakra-description'
         },
         {
             name: "sixth-chakra-upper",
             apiName: "Brow_Chakra",
-            runningtime: "14:40",
+            runningtime: "16:13",
             description: '6-chakra-description'
         },
         {
             name: "seventh-chakra-upper",
             apiName: "Crown_Chakra",
-            runningtime: "12:12",
+            runningtime: "13:45",
             description: '7-chakra-description'
         },         
         {
             name: 'addiction-upper',
             apiName: "Addiction",
-            runningtime: "13:14",
+            runningtime: "15:05",
             description: 'addiction-description'
         },
         {
             name: 'adrenal-gland-upper',
             apiName: "Adrenal_Gland",
-            runningtime: "13:34",
+            runningtime: "15:07",
             description: 'adrenal-gland-description'
         },
         {
@@ -2534,341 +2534,341 @@ export var Data = { Groups : [
         {
             name: 'auditory-upper',
             apiName: "Auditory_System",
-            runningtime: "13:16",
+            runningtime: "14:31",
             description: 'auditory-description',
         },
         {
             name: 'backache-upper',
             apiName: "Backache",
-            runningtime: "15:15",
+            runningtime: "16:30",
             description: 'backache-description',
         },
         {
             name: 'bones-upper',
             apiName: "Bone_Tissues",
-            runningtime: "14:07",
+            runningtime: "15:04",
             description: 'bones-description'
         },
         {
             name: 'child-developement-upper',
             apiName: "Child_Development",
-            runningtime: "12:17",
+            runningtime: "13:50",
             description: 'child-developement-description',
         },
         {
             name: 'circulatory-system-upper',
             apiName: "Circulatory_System",
-            runningtime: "14:09",
+            runningtime: "15:06",
             description: 'circulatory-system-description',
         },
         {
             name:  'concentration-upper',
             apiName: "Concentration",
-            runningtime: "19:28",
+            runningtime: "21:19",
             description: 'concentration-description'
         },
         {
             name: 'connective-tissue-upper',
             apiName: "Connective_Tissues",
-            runningtime: "15:39",
+            runningtime: "16:54",
             description: 'connective-tissue-description',
         },
         {
             name: 'constipation-upper',
             apiName: "Constipation",
-            runningtime: "13:34",
+            runningtime: "14:49",
             description: 'constipation-description'
         },
         {
             name: 'detoxification-upper',
             apiName: "Detoxification",
-            runningtime: "14:22",
+            runningtime: "16:13",
             description: 'detoxification-description',
         },
         {
             name: 'diarrhea-upper',
             apiName: "Diarrhea",
-            runningtime: "13:02",
+            runningtime: "13:59",
             description: 'diarrhea-description'
         },
         {
             name: 'digestive-system-upper',
             apiName: "Digestive_System",
-            runningtime: "15:08",
+            runningtime: "16:41",
             description: 'digestive-system-description'
         },
         {
             name: 'discernment-upper',
             apiName: "Discernment",
-            runningtime: "12:40",
+            runningtime: "13:37",
             description: 'discernment-description'
         },
         {
             name: "E-SMOG",
             apiName: "Electro_Smog",
-            runningtime: "13:18",
+            runningtime: "14:51",
             description: 'e-smog-description'
         },
         {
             name: 'energy-balancing-upper',
             apiName: "Energy_Balancing",
-            runningtime: "15:28",
+            runningtime: "17:55",
             description: 'energy-balancing-description',
         },
         {
             name: 'energy-booster-upper',
             apiName: "Energy_Booster",
-            runningtime: "13:14",
+            runningtime: "13:53",
             description: 'energy-booster-description'
         },
         {
             name: 'exhaustion-upper',
             apiName: "Exhaustion",
-            runningtime: "13:08",
+            runningtime: "14:59",
             description: 'exhaustion-description'
         },
         {
             name: 'eyesight-upper',
             apiName: "Eyesight",
-            runningtime: "15:31",
+            runningtime: "16:11",
             description: 'eyesight-description'
         },
         {
             name: 'female-upper',
             apiName: "Female_Hormone_Balance",
-            runningtime: "12:40",
+            runningtime: "14:17",
             description: 'female-description'
         },
         {
             name: 'flu-upper',
             apiName: "Flu",
-            runningtime: "13:20",
+            runningtime: "13:59",
             description: 'flu-description'
         },
 
         {
             name: 'glucose-metabolic-disorders-upper',
             apiName: "Glucose_Metabolic_Disorders",
-            runningtime: "16:29",
+            runningtime: "16:28",
             description: 'glucose-metabolic-disorders-description',
         },
         {
             name: 'hair-growth-upper',
             apiName: "Hair_Growth",
-            runningtime: "18:10",
+            runningtime: "19:07",
             description: 'hair-growth-description'
         },
         {
             name: 'headache-upper',
             apiName: "Headache",
-            runningtime: "12:33",
+            runningtime: "18:38",
             description: 'headache-description'
         },
         {
             name: 'heart-function-upper',
             apiName: "Heart_Function",
-            runningtime: "12:33",
+            runningtime: "13:30",
             description: 'heart-function-description'
         },
 
         {
             name: 'hemorrhoids-upper',
             apiName: "Hemorrhoids",
-            runningtime: "14:16",
+            runningtime: "21:13",
             description: 'hemorrhoids-description'
         },
         {
             name: 'hypertension-upper',
             apiName: "Hypertension",
-            runningtime: "13:02",
+            runningtime: "18:53",
             description: 'hypertension-description'
         },
         {
             name: 'immune-system-upper',
             apiName: "Immune_System",
-            runningtime: "12:41",
+            runningtime: "14:50",
             description: 'immune-system-description'
         },
         {
             name: 'injury-upper',
             apiName: "Injury",
-            runningtime: "16:55",
+            runningtime: "18:46",
             description: 'injury-description'
         },
         {
             name: 'intestinal-flora-upper',
             apiName: "Intestinal_Flora",
-            runningtime: "11:16",
+            runningtime: "18:58",
             description: 'intestinal-flora-description'
         },
         {
             name: "JET-LAG",
             apiName: "Jet-Lag/Climate_Change",
-            runningtime: "14:23",
+            runningtime: "16:14",
             description: 'jet-lag-description'
         },
         {
             name: 'joints-upper',
             apiName: "Joints",
-            runningtime: "15:52",
+            runningtime: "17:07",
             description: 'joints-description'
         },
         {
             name: 'joy-upper',
             apiName: "Joy",
-            runningtime: "19:31",
+            runningtime: "21:04",
             description: 'joy-description'
         },
         {
             name: 'low-mental-drive-upper',
             apiName: "Low_Mental_Drive",
-            runningtime: "14:53",
+            runningtime: "15:49",
             description: 'low-mental-drive-description'
         },
         {
             name: 'low-physical-drive-upper',
             apiName: "Low_Physical_Drive",
-            runningtime: "16:10",
+            runningtime: "16:49",
             description: 'low-physical-drive-description'
         },
         {
             name: 'lymphatic-system-upper',
             apiName: "Lymphatic_System",
-            runningtime: "15:07",
+            runningtime: "16:04",
             description: 'lymphatic-system-description'
         },
         {
             name: 'male-upper',
             apiName: "Male_Hormone_Balance",
-            runningtime: "14:56",
+            runningtime: "12:31",
             description: 'male-description'
         },
         {
             name: 'meditation-1-upper',
             apiName: "Meditation_1",
-            runningtime: "31:51",
+            runningtime: "33:15",
             description: 'meditation-1-description'
         },
         {
             name: 'meditation-2-upper',
             apiName: "Meditation_2",
-            runningtime: "28:20",
+            runningtime: "29:43",
             description: 'meditation-2-description'
         },
         {
             name: 'meditation-3-upper',
             apiName: "Meditation_3",
-            runningtime: "21:27",
+            runningtime: "22:49",
             description: 'meditation-3-description'
         },
         {
             name: 'mineral-metabolic-activity-upper',
             apiName: "Mineral_Metabolic_Activity",
-            runningtime: "16:38",
+            runningtime: "17:25",
             description: 'mineral-metabolic-activity-description'
         },
         {
             name: 'muscle-tissue-upper',
             apiName: "Muscle_Tissues",
-            runningtime: "14:44",
+            runningtime: "15:59",
             description: 'muscle-tissue-description'
         },
         {
             name: 'neck-shoulder-upper',
             apiName: "Neck/Shoulder",
-            runningtime: "14:25",
+            runningtime: "16:16",
             description: 'neck-shoulder-description'
         },
         {
             name: 'nervous-system-upper',
             apiName: "Nervous_System",
-            runningtime: "18:13",
+            runningtime: "19:10",
             description: 'nervous-system-description'
         },
         {
             name: 'pain-upper',
             apiName: "Pain_Conditions",
-            runningtime: "13:45",
+            runningtime: "15:18",
             description: 'pain-description'
         },
         {
             name: 'peace-upper',
             apiName: "Peace",
-            runningtime: "19:23",
+            runningtime: "22:08",
             description: 'peace-description'
         },
         {
             name: 'regeneration-upper',
             apiName: "Regeneration",
-            runningtime: "15:39",
+            runningtime: "17:12",
             description: 'regeneration-description'
         },
         {
             name: 'relaxation-upper',
             apiName: "Relaxation",
-            runningtime: "18:40",
+            runningtime: "19:55",
             description: 'relaxation-description'
         },
         {
             name: 'respiratory-system-upper',
             apiName: "Respiratory_System",
-            runningtime: "14:37",
+            runningtime: "15:52",
             description: 'respiratory-system-description'
         },
         {
             name: 'sinus-cavities-upper',
             apiName: "Sinus_Cavities",
-            runningtime: "14:36",
+            runningtime: "15:33",
             description: 'sinus-cavities-description'
         },
         {
             name: 'skin-conditions-upper',
             apiName: "Skin_Conditions",
-            runningtime: "11:56",
+            runningtime: "15:50",
             description: 'skin-conditions-description'
         },
         {
             name: 'sleep-enhancer-upper',                       
             apiName: "Sleep_Enhancer",
-            runningtime: "18:43",
+            runningtime: "19:58",
             description: 'sleep-enhancer-description'
         },
         {
             name: 'stress-relief-upper',  
             apiName: "Frustration",
-            runningtime: "16:46",
+            runningtime: "18:55",
             description: 'stress-relief-description'
         },
         {
             name: 'thyroid-glands-upper',  
             apiName: "Thyroid_Glands",
-            runningtime: "17:43",
+            runningtime: "17:53",
             description: 'thyroid-glands-description'
         },
 
         {
             name: 'urinary-upper',  
             apiName: "Urinary_System/Cystitis",
-            runningtime: "12:24",
+            runningtime: "13:39",
             description: 'urinary-description'
         },
 
         {
             name: 'vertebrae-upper', 
             apiName: "Vertebrae",
-            runningtime: "17:20",
+            runningtime: "12:53",
             description: 'vertebrae-description'
         },
         {
             name: 'vitality-upper', 
             apiName: "Vitality",
-            runningtime: "12:45",
+            runningtime: "14:00",
             description: 'vitality-description'
         },
         {
             name: 'weight-control-upper',
             apiName: "Weight_Control",
-            runningtime: "17:43",
+            runningtime: "14:50",
             description: 'weight-control-description'
         }
     ]
