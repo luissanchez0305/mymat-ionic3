@@ -436,6 +436,276 @@ var ProgramPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WifiPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__playing_playing__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(32);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+/**
+ * Generated class for the WifiPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var WifiPage = (function () {
+    function WifiPage(navCtrl, navParams, storage, apiService, translateService, networkInterface, platform) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.storage = storage;
+        this.apiService = apiService;
+        this.translateService = translateService;
+        this.networkInterface = networkInterface;
+        this.platform = platform;
+        this.intervalCount = 0;
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+            _this.translateService.getTranslation(lang).subscribe(function (value) {
+                _this.coilText = typeof value['coil'] === 'undefined' ? 'Antena' : value['coil'];
+            });
+        });
+    }
+    WifiPage.prototype.ionViewDidLeave = function () {
+        this.stop();
+    };
+    WifiPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.mymatStatus = false;
+        this.showIframeStatus = false;
+        this.showLoading = true;
+        if (this.platform.is('cordova')) {
+            this.networkInterface.getWiFiIPAddress().then(function (response) {
+                if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress) {
+                    _this.showIPButton();
+                }
+                else
+                    _this.failIPVerification();
+            }, function (response) {
+                _this.failIPVerification();
+            });
+        }
+        else {
+            this.showIPButton();
+        }
+        this.mymatWifi = true;
+        this.intervalCount = 0;
+    };
+    WifiPage.prototype.showIPButton = function () {
+        //this.mymatStatus = true;
+        //this.showStatusTable = true;
+        var _this = this;
+        this.batteryImg = 'img/b100.png';
+        this.coilText1 = 'N/A';
+        this.coilText2 = 'N/A';
+        this.coilText3 = 'N/A';
+        this.coilText4 = 'N/A';
+        //this.mymatWifi = false;
+        //this.showLoading = false;
+        clearInterval(this.testIPInterval);
+        // check if mymat is connected
+        var myMatTest = this.apiService.test();
+        myMatTest.then(function (response) {
+            // if is connected quitar imagen, textos y loading y poner status del mat
+            if (_this.verifyValues(response)) {
+                _this.showStatus();
+            }
+            else {
+                _this.failStatusVerification();
+            }
+        }, function (response) {
+            _this.failStatusVerification();
+        });
+    };
+    WifiPage.prototype.showNoStatus = function () {
+        this.mymatNoStatus = true;
+    };
+    WifiPage.prototype.showStatus = function () {
+        this.mymatWifi = false;
+        this.mymatStatus = true;
+        this.showStatusTable = true;
+        this.showLoading = false;
+        clearInterval(this.testStatusInterval);
+        clearInterval(this.testIPInterval);
+    };
+    WifiPage.prototype.verifyValues = function (response) {
+        if (response.indexOf("<p><h4>Power: ") > -1) {
+            var power = response.split("<p><h4>Power: ");
+            power = power[1].split("</h4></p>");
+            var coil1 = response.split("<tr><td>1.</td><td>");
+            coil1 = coil1[2].split("</td></tr>");
+            var coil2 = response.split("<tr><td>2.</td><td>");
+            coil2 = coil2[2].split("</td></tr>");
+            var coil3 = response.split("<tr><td>3.</td><td>");
+            coil3 = coil3[2].split("</td></tr>");
+            var coil4 = response.split("<tr><td>4.</td><td>");
+            coil4 = coil4[2].split("</td></tr>");
+            this.batteryCharge = power[0];
+            var powerVal = power[0].substr(0, power[0].length - 1);
+            if (powerVal > 75)
+                this.batteryImg = 'img/b100.png';
+            else if (powerVal > 50)
+                this.batteryImg = 'img/b75.png';
+            else if (powerVal > 25)
+                this.batteryImg = 'img/b50.png';
+            else if (powerVal > 10)
+                this.batteryImg = 'img/b25.png';
+            else
+                this.batteryImg = 'img/b10.png';
+            this.coilText1 = coil1[0];
+            this.coilText2 = coil2[0];
+            this.coilText3 = coil3[0];
+            this.coilText4 = coil4[0];
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+    WifiPage.prototype.failIPVerification = function () {
+        var _this = this;
+        this.testIPInterval = setInterval(function () {
+            _this.networkInterface.getWiFiIPAddress().then(function (response) {
+                if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress)
+                    _this.showIPButton();
+            });
+        }, 3000);
+    };
+    WifiPage.prototype.failStatusVerification = function () {
+        var _this = this;
+        this.testStatusInterval = setInterval(function () {
+            // timeout of mymat detection 180 segundos
+            var failMyMatTest = _this.apiService.test();
+            failMyMatTest.then(function (response) {
+                if (_this.verifyValues(response)) {
+                    _this.showStatus();
+                }
+            }, function (response) {
+                if (_this.intervalCount >= 5) {
+                    _this.showNoStatus();
+                }
+            });
+            _this.intervalCount += 1;
+        }, 3000);
+        /*var programs = '';
+    
+        for(var i = 1; i <= 4; i++){
+          switch(i){
+            case 1:
+              this.storage.get(Constants.storageKeyBubble1).then((val) => {
+                programs += "?P1=" + val.split("|")[3] + '&';
+              });
+              break;
+            case 2:
+              this.storage.get(Constants.storageKeyBubble2).then((val) => {
+                programs += "P2=" + val.split("|")[3] + '&';
+              });
+              break;
+            case 3:
+              this.storage.get(Constants.storageKeyBubble3).then((val) => {
+                programs += "P3=" + val.split("|")[3] + '&';
+              });
+              break;
+            case 4:
+              this.storage.get(Constants.storageKeyBubble4).then((val) => {
+                programs += "P4=" + val.split("|")[3];
+    
+                this.showIframeStatus = true;
+                this.mymatWifi = false;
+                this.mymatStatus = true;
+                this.showStatusTable = false;
+                this.iframeUrl = this.sanitize.bypassSecurityTrustResourceUrl(Constants.myMatApiIndexUrl + programs);
+              });
+              break;
+          }
+        }*/
+    };
+    WifiPage.prototype.startRoutine = function () {
+        var _this = this;
+        clearInterval(this.testStatusInterval);
+        clearInterval(this.testIPInterval);
+        var program1Obj;
+        var program2Obj;
+        var program3Obj;
+        var program4Obj;
+        for (var i = 1; i <= 4; i++) {
+            switch (i) {
+                case 1:
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble1).then(function (val) {
+                        program1Obj = val;
+                    });
+                    break;
+                case 2:
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble2).then(function (val) {
+                        program2Obj = val;
+                    });
+                    break;
+                case 3:
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble3).then(function (val) {
+                        program3Obj = val;
+                    });
+                    break;
+                case 4:
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble4).then(function (val) {
+                        program4Obj = val;
+                        var programs = [
+                            program1Obj,
+                            program2Obj,
+                            program3Obj,
+                            program4Obj
+                        ];
+                        _this.apiService.start(programs).then(function (response) {
+                            console.log(response + '');
+                        }, function (response) {
+                            console.log(response + '');
+                        });
+                        _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__playing_playing__["a" /* PlayingPage */]);
+                    });
+                    break;
+            }
+        }
+    };
+    WifiPage.prototype.stop = function () {
+        clearInterval(this.testStatusInterval);
+        clearInterval(this.testIPInterval);
+    };
+    WifiPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-wifi',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/'<!--\n  Generated template for the WifiPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="home center">\n        <br>\n        <div *ngIf="mymatWifi">\n            <img src="img/wifi.png">\n            <div class="titleinstructions" [innerHTML]="\'please-pair\' | translate"></div>\n            <br>  \n            <p [innerHTML]="\'activate-wifi\' | translate">Steps to pair your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-1\' | translate">1. Turn on your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-2\' | translate">2. On your device, navigate to your Wi-Fi settings</p>\n            <p [innerHTML]="\'activate-wifi-3\' | translate">3. Connect your device\'s WiFi with your MyMat network</p>\n            <p [innerHTML]="\'activate-wifi-4\' | translate">4. Once is connected, return to the MyMat app</p>\n            <!--<p class="interval-counter">0</p>-->\n            <br/>\n            <div *ngIf="mymatNoStatus">\n                <p [innerHTML]="\'no-detect-1\' | translate">We were unable to detect your MyMat</p>\n                <p [innerHTML]="\'no-detect-2\' | translate">Please follow the steps to do so</p>\n            </div>\n            <img *ngIf="showLoading" src="img/loading.gif" width="200" />\n        </div>\n        <div *ngIf="mymatStatus">\n            <iframe *ngIf="showIframeStatus" height="100%" width="100%" [src]="iframeUrl" (click)="startRoutine()"></iframe>\n            <div *ngIf="showStatusTable" class="status-table divTable">\n                <div class="divTableHeading">\n                    <div class="divTableRow">\n                        <div class="divTableHead divTableCellFirstLeft">\n                            <h4 [innerHTML]="\'battery-power\' | translate"></h4>\n                        </div>\n                        <div class="divTableHead divTableCellFirstRight">\n                            <h4 id="battery">{{ batteryCharge }} <img src="{{ batteryImg }}" height="16"></h4>\n                            \n                        </div>\n                    </div>\n                </div>\n                <div class="divTableBody">\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 1</div>\n                        <div class="divTableCell" id="coil1">{{ coilText1 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd">{{ coilText }} 2</div>\n                        <div class="divTableCell coilOdd" id="coil2">{{ coilText2 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 3</div>\n                        <div class="divTableCell" id="coil3">{{ coilText3 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd divTableCellLastLeft">{{ coilText }} 4</div>\n                        <div class="divTableCell coilOdd divTableCellLastRight" id="coil4">{{ coilText4 }}</div>\n                    </div>\n                </div>\n            </div>\n            <p>&nbsp;</p>\n            <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="\'start-routine\' | translate">LAUNCH MYMAT</a>\n        </div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__["a" /* APIServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__["a" /* NetworkInterface */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]])
+    ], WifiPage);
+    return WifiPage;
+}());
+
+//# sourceMappingURL=wifi.js.map
+
+/***/ }),
+
+/***/ 115:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
@@ -620,275 +890,6 @@ var ProgramsPage = (function () {
 
 /***/ }),
 
-/***/ 115:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WifiPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__playing_playing__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__ = __webpack_require__(174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(32);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-/**
- * Generated class for the WifiPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var WifiPage = (function () {
-    function WifiPage(navCtrl, navParams, storage, apiService, translateService, networkInterface, platform) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.storage = storage;
-        this.apiService = apiService;
-        this.translateService = translateService;
-        this.networkInterface = networkInterface;
-        this.platform = platform;
-        this.intervalCount = 0;
-        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
-            _this.translateService.getTranslation(lang).subscribe(function (value) {
-                _this.coilText = typeof value['coil'] === 'undefined' ? 'Antena' : value['coil'];
-            });
-        });
-    }
-    WifiPage.prototype.ionViewDidLeave = function () {
-        this.stop();
-    };
-    WifiPage.prototype.ionViewDidLoad = function () {
-        var _this = this;
-        this.mymatStatus = false;
-        this.showIframeStatus = false;
-        this.showLoading = true;
-        if (this.platform.is('cordova')) {
-            this.networkInterface.getWiFiIPAddress().then(function (response) {
-                if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress) {
-                    _this.showIPButton();
-                }
-                else
-                    _this.failIPVerification();
-            }, function (response) {
-                _this.failIPVerification();
-            });
-        }
-        else {
-            this.showIPButton();
-        }
-        this.mymatWifi = true;
-        this.intervalCount = 0;
-    };
-    WifiPage.prototype.showIPButton = function () {
-        var _this = this;
-        this.mymatStatus = true;
-        this.showStatusTable = true;
-        this.batteryImg = 'img/b100.png';
-        this.coilText1 = 'N/A';
-        this.coilText2 = 'N/A';
-        this.coilText3 = 'N/A';
-        this.coilText4 = 'N/A';
-        this.mymatWifi = false;
-        this.showLoading = false;
-        clearInterval(this.testIPInterval);
-        // check if mymat is connected
-        var myMatTest = this.apiService.test();
-        myMatTest.then(function (response) {
-            // if is connected quitar imagen, textos y loading y poner status del mat
-            if (_this.verifyValues(response)) {
-                _this.showStatus();
-            }
-            else {
-                _this.failStatusVerification();
-            }
-        }, function (response) {
-            _this.failStatusVerification();
-        });
-    };
-    WifiPage.prototype.showNoStatus = function () {
-        this.mymatNoStatus = true;
-    };
-    WifiPage.prototype.showStatus = function () {
-        this.mymatWifi = false;
-        this.mymatStatus = true;
-        this.showStatusTable = true;
-        clearInterval(this.testStatusInterval);
-        clearInterval(this.testIPInterval);
-    };
-    WifiPage.prototype.verifyValues = function (response) {
-        if (response.indexOf("<p><h4>Power: ") > -1) {
-            var power = response.split("<p><h4>Power: ");
-            power = power[1].split("</h4></p>");
-            var coil1 = response.split("<tr><td>1.</td><td>");
-            coil1 = coil1[2].split("</td></tr>");
-            var coil2 = response.split("<tr><td>2.</td><td>");
-            coil2 = coil2[2].split("</td></tr>");
-            var coil3 = response.split("<tr><td>3.</td><td>");
-            coil3 = coil3[2].split("</td></tr>");
-            var coil4 = response.split("<tr><td>4.</td><td>");
-            coil4 = coil4[2].split("</td></tr>");
-            this.batteryCharge = power[0];
-            var powerVal = power[0].substr(0, power[0].length - 1);
-            if (powerVal > 75)
-                this.batteryImg = 'img/b100.png';
-            else if (powerVal > 50)
-                this.batteryImg = 'img/b75.png';
-            else if (powerVal > 25)
-                this.batteryImg = 'img/b50.png';
-            else if (powerVal > 10)
-                this.batteryImg = 'img/b25.png';
-            else
-                this.batteryImg = 'img/b10.png';
-            this.coilText1 = coil1[0];
-            this.coilText2 = coil2[0];
-            this.coilText3 = coil3[0];
-            this.coilText4 = coil4[0];
-            return true;
-        }
-        else {
-            return false;
-        }
-    };
-    WifiPage.prototype.failIPVerification = function () {
-        var _this = this;
-        this.testIPInterval = setInterval(function () {
-            _this.networkInterface.getWiFiIPAddress().then(function (response) {
-                if (response === __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress)
-                    _this.showIPButton();
-            });
-        }, 3000);
-    };
-    WifiPage.prototype.failStatusVerification = function () {
-        var _this = this;
-        this.testStatusInterval = setInterval(function () {
-            // timeout of mymat detection 180 segundos
-            var failMyMatTest = _this.apiService.test();
-            failMyMatTest.then(function (response) {
-                if (_this.verifyValues(response)) {
-                    _this.showStatus();
-                }
-            }, function (response) {
-                if (_this.intervalCount >= 5) {
-                    _this.showNoStatus();
-                }
-            });
-            _this.intervalCount += 1;
-        }, 3000);
-        /*var programs = '';
-    
-        for(var i = 1; i <= 4; i++){
-          switch(i){
-            case 1:
-              this.storage.get(Constants.storageKeyBubble1).then((val) => {
-                programs += "?P1=" + val.split("|")[3] + '&';
-              });
-              break;
-            case 2:
-              this.storage.get(Constants.storageKeyBubble2).then((val) => {
-                programs += "P2=" + val.split("|")[3] + '&';
-              });
-              break;
-            case 3:
-              this.storage.get(Constants.storageKeyBubble3).then((val) => {
-                programs += "P3=" + val.split("|")[3] + '&';
-              });
-              break;
-            case 4:
-              this.storage.get(Constants.storageKeyBubble4).then((val) => {
-                programs += "P4=" + val.split("|")[3];
-    
-                this.showIframeStatus = true;
-                this.mymatWifi = false;
-                this.mymatStatus = true;
-                this.showStatusTable = false;
-                this.iframeUrl = this.sanitize.bypassSecurityTrustResourceUrl(Constants.myMatApiIndexUrl + programs);
-              });
-              break;
-          }
-        }*/
-    };
-    WifiPage.prototype.startRoutine = function () {
-        var _this = this;
-        clearInterval(this.testStatusInterval);
-        clearInterval(this.testIPInterval);
-        var program1Obj;
-        var program2Obj;
-        var program3Obj;
-        var program4Obj;
-        for (var i = 1; i <= 4; i++) {
-            switch (i) {
-                case 1:
-                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble1).then(function (val) {
-                        program1Obj = val;
-                    });
-                    break;
-                case 2:
-                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble2).then(function (val) {
-                        program2Obj = val;
-                    });
-                    break;
-                case 3:
-                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble3).then(function (val) {
-                        program3Obj = val;
-                    });
-                    break;
-                case 4:
-                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble4).then(function (val) {
-                        program4Obj = val;
-                        var programs = [
-                            program1Obj,
-                            program2Obj,
-                            program3Obj,
-                            program4Obj
-                        ];
-                        _this.apiService.start(programs).then(function (response) {
-                            console.log(response + '');
-                        }, function (response) {
-                            console.log(response + '');
-                        });
-                        _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__playing_playing__["a" /* PlayingPage */]);
-                    });
-                    break;
-            }
-        }
-    };
-    WifiPage.prototype.stop = function () {
-        clearInterval(this.testStatusInterval);
-        clearInterval(this.testIPInterval);
-    };
-    WifiPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-wifi',template:/*ion-inline-start:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/'<!--\n  Generated template for the WifiPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="home center">\n        <br>\n        <div *ngIf="mymatWifi">\n            <img src="img/wifi.png">\n            <div class="titleinstructions" [innerHTML]="\'please-pair\' | translate"></div>\n            <br>  \n            <p [innerHTML]="\'activate-wifi\' | translate">Steps to pair your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-1\' | translate">1. Turn on your MyMat</p>\n            <p [innerHTML]="\'activate-wifi-2\' | translate">2. On your device, navigate to your Wi-Fi settings</p>\n            <p [innerHTML]="\'activate-wifi-3\' | translate">3. Connect your device\'s WiFi with your MyMat network</p>\n            <p [innerHTML]="\'activate-wifi-4\' | translate">4. Once is connected, return to the MyMat app</p>\n            <!--<p class="interval-counter">0</p>-->\n            <br/>\n            <div *ngIf="mymatNoStatus">\n                <p [innerHTML]="\'no-detect-1\' | translate">We were unable to detect your MyMat</p>\n                <p [innerHTML]="\'no-detect-2\' | translate">Please follow the steps to do so</p>\n            </div>\n            <img *ngIf="showLoading" src="img/loading.gif" width="200" />\n        </div>\n        <div *ngIf="mymatStatus">\n            <iframe *ngIf="showIframeStatus" height="100%" width="100%" [src]="iframeUrl" (click)="startRoutine()"></iframe>\n            <div *ngIf="showStatusTable" class="status-table divTable">\n                <div class="divTableHeading">\n                    <div class="divTableRow">\n                        <div class="divTableHead divTableCellFirstLeft">\n                            <h4 [innerHTML]="\'battery-power\' | translate"></h4>\n                        </div>\n                        <div class="divTableHead divTableCellFirstRight">\n                            <h4 id="battery">{{ batteryCharge }} <img src="{{ batteryImg }}" height="16"></h4>\n                            \n                        </div>\n                    </div>\n                </div>\n                <div class="divTableBody">\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 1</div>\n                        <div class="divTableCell" id="coil1">{{ coilText1 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd">{{ coilText }} 2</div>\n                        <div class="divTableCell coilOdd" id="coil2">{{ coilText2 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell">{{ coilText }} 3</div>\n                        <div class="divTableCell" id="coil3">{{ coilText3 }}</div>\n                    </div>\n                    <div class="divTableRow">\n                        <div class="divTableCell coilOdd divTableCellLastLeft">{{ coilText }} 4</div>\n                        <div class="divTableCell coilOdd divTableCellLastRight" id="coil4">{{ coilText4 }}</div>\n                    </div>\n                </div>\n            </div>\n            <p>&nbsp;</p>\n            <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="\'start-routine\' | translate">LAUNCH MYMAT</a>\n        </div>\n</ion-content>\n'/*ion-inline-end:"/home/ubuntu/workspace/src/pages/wifi/wifi.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__["a" /* APIServiceProvider */],
-            __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__["a" /* NetworkInterface */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]])
-    ], WifiPage);
-    return WifiPage;
-}());
-
-//# sourceMappingURL=wifi.js.map
-
-/***/ }),
-
 /***/ 127:
 /***/ (function(module, exports) {
 
@@ -927,11 +928,11 @@ var map = {
 		2
 	],
 	"../pages/programs/programs.module": [
-		310,
+		311,
 		1
 	],
 	"../pages/wifi/wifi.module": [
-		311,
+		310,
 		0
 	]
 };
@@ -959,8 +960,8 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_programs__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wifi_wifi__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__programs_programs__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wifi_wifi__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_routines_routines__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_constants__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(32);
@@ -1180,8 +1181,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_home_home__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_help_help__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_contact_contact__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_programs_programs__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_wifi_wifi__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_programs_programs__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_wifi_wifi__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_playing_playing__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_program_program__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_status_bar__ = __webpack_require__(214);
@@ -1245,8 +1246,8 @@ var AppModule = (function () {
                         { loadChildren: '../pages/help/help.module#HelpPageModule', name: 'HelpPage', segment: 'help', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/playing/playing.module#PlayingPageModule', name: 'PlayingPage', segment: 'playing', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/program/program.module#ProgramPageModule', name: 'ProgramPage', segment: 'program', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/programs/programs.module#ProgramsPageModule', name: 'ProgramsPage', segment: 'programs', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/wifi/wifi.module#WifiPageModule', name: 'WifiPage', segment: 'wifi', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/wifi/wifi.module#WifiPageModule', name: 'WifiPage', segment: 'wifi', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/programs/programs.module#ProgramsPageModule', name: 'ProgramsPage', segment: 'programs', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["a" /* IonicStorageModule */].forRoot(),

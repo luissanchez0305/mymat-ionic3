@@ -75,8 +75,8 @@ export class WifiPage {
   }
 
   showIPButton(){
-    this.mymatStatus = true;
-    this.showStatusTable = true;
+    //this.mymatStatus = true;
+    //this.showStatusTable = true;
 
     this.batteryImg = 'img/b100.png';
     this.coilText1 = 'N/A';
@@ -84,8 +84,8 @@ export class WifiPage {
     this.coilText3 = 'N/A';
     this.coilText4 = 'N/A';
 
-    this.mymatWifi = false;
-    this.showLoading = false;
+    //this.mymatWifi = false;
+    //this.showLoading = false;
     clearInterval(this.testIPInterval);
 
     // check if mymat is connected
@@ -111,6 +111,7 @@ export class WifiPage {
       this.mymatWifi = false;
       this.mymatStatus = true;
       this.showStatusTable = true;
+      this.showLoading = false;
       clearInterval(this.testStatusInterval);
       clearInterval(this.testIPInterval);
   }
@@ -146,10 +147,10 @@ export class WifiPage {
       this.coilText3 = coil3[0];
       this.coilText4 = coil4[0];
       return true;
-      }
-      else{
-          return false;
-      }
+    }
+    else{
+        return false;
+    }
   }
 
   failIPVerification(){
