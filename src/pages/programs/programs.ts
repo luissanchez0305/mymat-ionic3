@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Events, Content } from 'ionic-angular';
 import { Data } from '../../services/offline_data';
 import { RoutinesProvider } from '../../providers/routines/routines';
 import { Constants } from '../../services/constants';
 import { ProgramPage } from '../program/program';
+import { Storage } from '@ionic/storage';
 
 /**
  * Generated class for the ProgramsPage page.
@@ -18,6 +19,7 @@ import { ProgramPage } from '../program/program';
   templateUrl: 'programs.html',
 })
 export class ProgramsPage {
+  @ViewChild(Content) content: Content;
   public predefinedPrograms : any;
   public programs : any;
   public program : number;
@@ -34,13 +36,27 @@ export class ProgramsPage {
   public seniorButton : boolean;
   public chakraButton : boolean;
   public elementsButton : boolean;
-  
-  constructor(public navCtrl: NavController, public navParams: NavParams, public routines: RoutinesProvider, 
+
+  constructor(public navCtrl: NavController, private storage: Storage, public navParams: NavParams, public routines: RoutinesProvider,
     public events: Events) {
-      this.getPrograms('basic');
-      this.programs = Data.Programs;
       this.program = navParams.get('bubble');
-    
+
+      this.events.subscribe('add1ProgramEvent', (programNumber, programName, programRunningTime, programApiName) => {
+        this.program = programNumber;
+        this.add1Program(programName, programRunningTime, programApiName);
+        this.navCtrl.pop();
+      });
+  }
+  ionViewDidLeave(){
+    this.storage.set(Constants.storageKeyScrollTop, this.content.getContentDimensions().scrollTop);
+  }
+
+  ionViewDidLoad(){
+      this.storage.get(Constants.storageKeyCurrentProgram).then((program)=>{
+        this.getPrograms(program != null ? program : 'basic');
+      })
+      this.programs = Data.Programs;
+
       this.routines.getKey(Constants.storageKeyBubble1).then(val => {
         if(this.program != 1 && val != null && val.length > 0){
           this.programName1 = val.split('|')[1];
@@ -73,18 +89,17 @@ export class ProgramsPage {
           this.programName4 = '';
         }
       });
-      
-      this.events.subscribe('add1ProgramEvent', (programNumber, programName, programRunningTime, programApiName) => {
-        this.program = programNumber;
-        this.add1Program(programName, programRunningTime, programApiName);
-        this.navCtrl.pop();
-      });
+      setTimeout(() => {
+        this.storage.get(Constants.storageKeyScrollTop).then((scroll)=>{
+          this.content.scrollTo(0, scroll, 100);
+        });
+      }, 500);
   }
 
   selectPreSetProgram(category){
       this.getPrograms(category);
   }
-  
+
   private getProgram(name){
       for(var i = 0;  i < Data.Programs.length; i++){
         var program = Data.Programs[i];
@@ -92,8 +107,9 @@ export class ProgramsPage {
           return program;
       }
   }
-  
+
   getPrograms(category){
+    this.storage.set(Constants.storageKeyCurrentProgram, category);
     this.basicButton = false;
     this.businessTravelButton = false;
     this.familiyButton = false;
@@ -147,7 +163,7 @@ export class ProgramsPage {
     }
     this.predefinedPrograms = groups;
   }
-  
+
   addPrograms(routineName, program1, program2, program3, program4){
     var objProgram1 = this.getProgram(program1);
     var objProgram2 = this.getProgram(program2);
@@ -156,22 +172,22 @@ export class ProgramsPage {
     this.routines.insertPreSetProgram(routineName, objProgram1, objProgram2, objProgram3, objProgram4);
     this.navCtrl.pop();
     var bubbleNames = [objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name];
-    
+
     this.routines.setPrograms(objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name);
     this.events.publish("sharesBubbles", bubbleNames);
   }
-  
+
   add1Program(programName, programRunningTime, programApiName){
     this.routines.addProgramToRoutine(this.program, '', programName, programRunningTime, programApiName);
-    
+
     this.programName1 = this.program == 1 ? programName : (this.programName1.length > 0 ? this.programName1 : '');
     this.programName2 = this.program == 2 ? programName : (this.programName2.length > 0 ? this.programName2 : '');
     this.programName3 = this.program == 3 ? programName : (this.programName3.length > 0 ? this.programName3 : '');
     this.programName4 = this.program == 4 ? programName : (this.programName4.length > 0 ? this.programName4 : '');
-    
+
     this.routines.setPrograms(this.programName1, this.programName2, this.programName3, this.programName4);
-    
-    var bubbleNames = [ 
+
+    var bubbleNames = [
       this.programName1,
       this.programName2,
       this.programName3,
@@ -180,7 +196,7 @@ export class ProgramsPage {
     this.events.publish("sharesBubbles", bubbleNames);
     this.navCtrl.pop();
   }
-  
+
   moreProgramInfo(name, runTime, description, apiName){
     this.navCtrl.push(ProgramPage, { programNumber: this.program, name: name, runTime: runTime, description: description, apiName: apiName });
   }

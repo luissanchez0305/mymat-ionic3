@@ -22,8 +22,8 @@ export class HomePage {
   public bubblesCurrentState2 : boolean;
   public bubblesCurrentState3 : boolean;
   public bubblesCurrentState4 : boolean;
-  
-  constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider, 
+
+  constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
     private translateService: TranslateService, public events: Events) {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
@@ -31,7 +31,7 @@ export class HomePage {
         this.updateBubbles(i, bubbles[i - 1]);
       }
       this.AllBubblesChecked(this.routines.getPrograms());
-    }); 
+    });
     this.events.subscribe('switchLangEvent',(lang) => {
         //call methods to refresh content
         this.storage.set(Constants.storageKeyLang, lang)
@@ -39,7 +39,7 @@ export class HomePage {
     });
     this.AllBubblesChecked(this.routines.getPrograms());
   }
-  
+
   removeProgramFromRoutine(prg){
     console.log('hold: ' + prg);
   }
@@ -47,16 +47,16 @@ export class HomePage {
   selectBubble(prg, add){
     this.navCtrl.push(ProgramsPage, { bubble: prg });
   }
-  
+
   runRoutine(){
     var programs = this.routines.getPrograms();
     if(this.AllBubblesChecked(programs)){
       this.navCtrl.push(WifiPage);
     }
   }
-  
+
   private AllBubblesChecked(programs){
-    
+
     if(typeof programs[0] !== 'undefined' && programs[0] != null && programs[0].length > 0 &&
     typeof programs[1] !== 'undefined' && programs[1] != null && programs[1].length > 0 &&
     typeof programs[2] !== 'undefined' && programs[2] != null && programs[2].length > 0 &&
@@ -68,7 +68,7 @@ export class HomePage {
       }
       return this.EnableRunRoutine;
   }
-  
+
   cleanRoutine(){
     this.routines.cleanPrograms();
     this.AllBubblesChecked(this.routines.getPrograms());
@@ -81,7 +81,7 @@ export class HomePage {
     this.updateBubbles(3,'');
     this.updateBubbles(4,'');
   }
-  
+
   private updateBubbles(bubble,name){
     switch(bubble){
       case 1:
@@ -142,7 +142,7 @@ export class HomePage {
         break;
     }
   }
-  
+
   private checkAllBubbles(){
     this.storage.get(Constants.storageKeyBubble1).then((val)=>{
       if(val !== null){
@@ -151,7 +151,7 @@ export class HomePage {
         this.routines.setProgram(1,name)
       }
     });
-    
+
     this.storage.get(Constants.storageKeyBubble2).then((val)=>{
       if(val !== null){
         var name = val.split('|')[1];
@@ -159,7 +159,7 @@ export class HomePage {
         this.routines.setProgram(2,name)
       }
     });
-    
+
     this.storage.get(Constants.storageKeyBubble3).then((val)=>{
       if(val !== null){
         var name = val.split('|')[1];
@@ -167,7 +167,7 @@ export class HomePage {
         this.routines.setProgram(3,name)
       }
     });
-    
+
     this.storage.get(Constants.storageKeyBubble4).then((val)=>{
       if(val !== null){
         var name = val.split('|')[1];
