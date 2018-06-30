@@ -26608,7 +26608,8 @@ ion-scroll .scroll-content {
 .bubbles-program-name-1 {
   color: #FFF;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #999;
+  -webkit-text-stroke: 0.85px #444;
+  font-size: 127%;
   width: 110px;
   overflow: hidden;
   height: 60px;
@@ -26621,7 +26622,8 @@ ion-scroll .scroll-content {
 .bubbles-program-name-2 {
   color: #FFF;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #999;
+  -webkit-text-stroke: 0.85px #444;
+  font-size: 127%;
   width: 110px;
   overflow: hidden;
   height: 60px;
@@ -26634,7 +26636,8 @@ ion-scroll .scroll-content {
 .bubbles-program-name-3 {
   color: #FFF;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #999;
+  -webkit-text-stroke: 0.85px #444;
+  font-size: 127%;
   width: 110px;
   overflow: hidden;
   height: 60px;
@@ -26647,7 +26650,8 @@ ion-scroll .scroll-content {
 .bubbles-program-name-4 {
   color: #FFF;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #999;
+  -webkit-text-stroke: 0.85px #444;
+  font-size: 127%;
   width: 110px;
   overflow: hidden;
   height: 60px;
