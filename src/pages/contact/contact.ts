@@ -27,7 +27,7 @@ export class ContactPage {
   public button_send : string;
   public response_text : string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder, public apiService : APIServiceProvider, 
+  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder, public apiService : APIServiceProvider,
     private translateService: TranslateService, private storage: Storage) {
     this.contactForm = this.formBuilder.group({
       email: ['', Validators.required],
@@ -46,14 +46,14 @@ export class ContactPage {
       });
     });
   }
-  
+
   cleanForm(){
     this.contactDisabled = true;
     this.name_value = '';
     this.email_value = '';
     this.message_value = '';
   }
-  
+
   attemptSendMail(){
     var emailData = { email : this.contactForm.value.email, name : this.contactForm.value.name, message : this.contactForm.value.message };
     this.apiService.sendEmail(emailData).then((result) => {
@@ -64,14 +64,14 @@ export class ContactPage {
                 this.response_text = value['email-success-message'];
               });
             });
-            
+
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((value) => {
                 this.button_send = value['sent-text'];
                 this.cleanForm();
               });
             });
-            
+
         } else {
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((value) => {
