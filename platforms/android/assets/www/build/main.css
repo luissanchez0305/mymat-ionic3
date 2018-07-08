@@ -26608,12 +26608,12 @@ ion-scroll .scroll-content {
 .bubbles-program-name-1 {
   color: #FFF;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #999;
-  width: 110px;
+  -webkit-text-stroke: 0.85px #444;
+  font-size: 120%;
+  width: 75%;
   overflow: hidden;
   height: 60px;
-  margin-left: 85px;
-  margin-top: -54px;
+  margin-top: 0px;
   text-align: center;
   position: absolute;
 }
@@ -26621,25 +26621,26 @@ ion-scroll .scroll-content {
 .bubbles-program-name-2 {
   color: #FFF;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #999;
-  width: 110px;
+  -webkit-text-stroke: 0.85px #444;
+  font-size: 120%;
+  width: 45%;
   overflow: hidden;
   height: 60px;
-  text-align: center;
-  margin-left: 197px;
-  margin-top: -54px;
+  text-align: right;
+  margin-left: 120px;
+  margin-top: 0px;
   position: absolute;
 }
 
 .bubbles-program-name-3 {
   color: #FFF;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #999;
-  width: 110px;
+  -webkit-text-stroke: 0.85px #444;
+  font-size: 120%;
+  width: 75%;
   overflow: hidden;
   height: 60px;
-  margin-left: 85px;
-  margin-top: -54px;
+  margin-top: 0px;
   text-align: center;
   position: absolute;
 }
@@ -26647,13 +26648,14 @@ ion-scroll .scroll-content {
 .bubbles-program-name-4 {
   color: #FFF;
   font-weight: bolder;
-  -webkit-text-stroke: 1px #999;
-  width: 110px;
+  -webkit-text-stroke: 0.85px #444;
+  font-size: 120%;
+  width: 45%;
   overflow: hidden;
   height: 60px;
-  text-align: center;
+  text-align: left;
   margin-left: -25px;
-  margin-top: -54px;
+  margin-top: 0px;
   position: absolute;
 }
 
