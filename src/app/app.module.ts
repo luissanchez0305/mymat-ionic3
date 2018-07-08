@@ -31,13 +31,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    HelpPage,
-    ContactPage,
-    ProgramsPage,
-    WifiPage,
-    PlayingPage,
-    ProgramPage
+    HomePage
   ],
   imports: [
     BrowserModule,
