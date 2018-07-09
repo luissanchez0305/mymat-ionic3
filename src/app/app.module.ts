@@ -25,7 +25,7 @@ import { RoutinesProvider } from '../providers/routines/routines';
 import { APIServiceProvider } from '../providers/api-service/api-service';
 
 export function HttpLoaderFactory(http: HttpClient) {
-    return new TranslateHttpLoader(http, './assets/_i18n/', '.json');
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
