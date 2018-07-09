@@ -1,1 +1,59 @@
-webpackJsonp([0],{280:function(_,a,n){"use strict";function e(_){return new r.a(_,"./assets/_i18n/",".json")}Object.defineProperty(a,"__esModule",{value:!0});var o=n(0),t=(n(2),n(30),n(102)),i=n(18),u=n(143),r=n(213),c=function(){return function(){}}(),f=n(214),d=n(215),s=n(216),b=n(217),g=n(218),v=n(219),j=n(220),l=n(221),m=n(222),k=n(228),p=n(11),h=n(19),q=n(144),w=n(53);n.d(a,"WifiPageModuleNgFactory",function(){return y});var y=o._0(c,[],function(_){return o._14([o._15(512,o.i,o.W,[[8,[f.a,d.a,s.a,b.a,g.a,v.a,j.a,l.a,m.a,k.a]],[3,o.i],o.v]),o._15(4608,p.k,p.j,[o.u,[2,p.s]]),o._15(4608,h.q,h.q,[]),o._15(4608,h.d,h.d,[]),o._15(5120,i.f,e,[u.c]),o._15(4608,i.c,i.e,[]),o._15(4608,i.h,i.d,[]),o._15(4608,i.b,i.a,[]),o._15(4608,i.m,i.m,[]),o._15(4608,i.j,i.j,[i.m,i.f,i.c,i.h,i.b,i.k,i.l]),o._15(512,p.b,p.b,[]),o._15(512,h.o,h.o,[]),o._15(512,h.g,h.g,[]),o._15(512,h.m,h.m,[]),o._15(512,q.a,q.a,[]),o._15(512,q.b,q.b,[]),o._15(512,i.g,i.g,[]),o._15(512,c,c,[]),o._15(256,w.a,t.a,[]),o._15(256,i.l,void 0,[]),o._15(256,i.k,void 0,[])])})}});
+webpackJsonp([0],{
+
+/***/ 311:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["HttpLoaderFactory"] = HttpLoaderFactory;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WifiPageModule", function() { return WifiPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wifi__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_http_loader__ = __webpack_require__(218);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+function HttpLoaderFactory(http) {
+    return new __WEBPACK_IMPORTED_MODULE_5__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, './assets/_i18n/', '.json');
+}
+var WifiPageModule = (function () {
+    function WifiPageModule() {
+    }
+    WifiPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__wifi__["a" /* WifiPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__wifi__["a" /* WifiPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */].forRoot({
+                    loader: {
+                        provide: __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["a" /* TranslateLoader */],
+                        useFactory: HttpLoaderFactory,
+                        deps: [__WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */]]
+                    }
+                })
+            ],
+        })
+    ], WifiPageModule);
+    return WifiPageModule;
+}());
+
+//# sourceMappingURL=wifi.module.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=0.js.map
