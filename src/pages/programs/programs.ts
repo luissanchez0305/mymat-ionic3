@@ -36,6 +36,7 @@ export class ProgramsPage {
   public seniorButton : boolean;
   public chakraButton : boolean;
   public elementsButton : boolean;
+  public petsButton : boolean;
 
   constructor(public navCtrl: NavController, private storage: Storage, public navParams: NavParams, public routines: RoutinesProvider,
     public events: Events) {
@@ -119,6 +120,7 @@ export class ProgramsPage {
     this.seniorButton = false;
     this.chakraButton = false;
     this.elementsButton = false;
+    this.petsButton = false;
     switch(category){
       case 'basic':
         this.basicButton = true;
@@ -146,6 +148,9 @@ export class ProgramsPage {
         break;
       case 'elements':
         this.elementsButton = true;
+        break;
+      case 'pets':
+        this.petsButton = true;
         break;
     }
     var groups = [];

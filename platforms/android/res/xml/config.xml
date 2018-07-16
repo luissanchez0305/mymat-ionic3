@@ -70,4 +70,7 @@
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <preference name="CordovaWebViewEngine" value="CDVUIWebViewEngine" />
     <preference name="loadUrlTimeoutValue" value="700000" />
+    <feature name="UID">
+        <param name="android-package" value="org.hygieiasoft.cordova.uid.UID" />
+    </feature>
 </widget>

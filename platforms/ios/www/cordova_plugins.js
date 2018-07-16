@@ -92,6 +92,14 @@ module.exports = [
       "cordova.plugins.Keyboard"
     ],
     "runs": true
+  },
+  {
+    "id": "cordova-plugin-dreamover-uid.uid",
+    "file": "plugins/cordova-plugin-dreamover-uid/www/uid.js",
+    "pluginId": "cordova-plugin-dreamover-uid",
+    "clobbers": [
+      "cordova.plugins.uid"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -105,7 +113,8 @@ module.exports.metadata =
   "cordova-plugin-networkinterface": "1.2.0",
   "cordova-plugin-splashscreen": "4.0.3",
   "cordova-plugin-whitelist": "1.3.1",
-  "ionic-plugin-keyboard": "2.2.1"
+  "ionic-plugin-keyboard": "2.2.1",
+  "cordova-plugin-dreamover-uid": "1.3.0"
 };
 // BOTTOM OF METADATA
 });
