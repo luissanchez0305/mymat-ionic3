@@ -1,1 +1,59 @@
-webpackJsonp([5],{275:function(_,a,n){"use strict";function e(_){return new r.a(_,"./assets/i18n/",".json")}Object.defineProperty(a,"__esModule",{value:!0});var t=n(0),o=(n(2),n(30),n(18)),u=n(97),c=n(143),r=n(213),i=function(){return function(){}}(),d=n(214),f=n(215),s=n(216),b=n(217),g=n(218),v=n(219),j=n(220),l=n(221),m=n(222),k=n(223),p=n(11),h=n(19),q=n(144),w=n(53);n.d(a,"ContactPageModuleNgFactory",function(){return y});var y=t._0(i,[],function(_){return t._14([t._15(512,t.i,t.W,[[8,[d.a,f.a,s.a,b.a,g.a,v.a,j.a,l.a,m.a,k.a]],[3,t.i],t.v]),t._15(4608,p.k,p.j,[t.u,[2,p.s]]),t._15(4608,h.q,h.q,[]),t._15(4608,h.d,h.d,[]),t._15(5120,o.f,e,[c.c]),t._15(4608,o.c,o.e,[]),t._15(4608,o.h,o.d,[]),t._15(4608,o.b,o.a,[]),t._15(4608,o.m,o.m,[]),t._15(4608,o.j,o.j,[o.m,o.f,o.c,o.h,o.b,o.k,o.l]),t._15(512,p.b,p.b,[]),t._15(512,h.o,h.o,[]),t._15(512,h.g,h.g,[]),t._15(512,h.m,h.m,[]),t._15(512,q.a,q.a,[]),t._15(512,q.b,q.b,[]),t._15(512,o.g,o.g,[]),t._15(512,i,i,[]),t._15(256,w.a,u.a,[]),t._15(256,o.l,void 0,[]),t._15(256,o.k,void 0,[])])})}});
+webpackJsonp([5],{
+
+/***/ 306:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["HttpLoaderFactory"] = HttpLoaderFactory;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactPageModule", function() { return ContactPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contact__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_http_loader__ = __webpack_require__(218);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+function HttpLoaderFactory(http) {
+    return new __WEBPACK_IMPORTED_MODULE_5__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, './assets/i18n/', '.json');
+}
+var ContactPageModule = (function () {
+    function ContactPageModule() {
+    }
+    ContactPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_3__contact__["a" /* ContactPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__contact__["a" /* ContactPage */]),
+                __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateModule */].forRoot({
+                    loader: {
+                        provide: __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["a" /* TranslateLoader */],
+                        useFactory: HttpLoaderFactory,
+                        deps: [__WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */]]
+                    }
+                })
+            ],
+        })
+    ], ContactPageModule);
+    return ContactPageModule;
+}());
+
+//# sourceMappingURL=contact.module.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=5.js.map

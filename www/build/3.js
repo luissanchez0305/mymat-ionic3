@@ -1,1 +1,59 @@
-webpackJsonp([3],{277:function(_,a,n){"use strict";function e(_){return new r.a(_,"./assets/i18n/",".json")}Object.defineProperty(a,"__esModule",{value:!0});var o=n(0),t=(n(2),n(30),n(99)),u=n(18),i=n(143),r=n(213),c=function(){return function(){}}(),d=n(214),f=n(215),s=n(216),b=n(217),g=n(218),l=n(219),v=n(220),j=n(221),m=n(222),k=n(225),p=n(11),y=n(19),P=n(144),h=n(53);n.d(a,"PlayingPageModuleNgFactory",function(){return q});var q=o._0(c,[],function(_){return o._14([o._15(512,o.i,o.W,[[8,[d.a,f.a,s.a,b.a,g.a,l.a,v.a,j.a,m.a,k.a]],[3,o.i],o.v]),o._15(4608,p.k,p.j,[o.u,[2,p.s]]),o._15(4608,y.q,y.q,[]),o._15(4608,y.d,y.d,[]),o._15(5120,u.f,e,[i.c]),o._15(4608,u.c,u.e,[]),o._15(4608,u.h,u.d,[]),o._15(4608,u.b,u.a,[]),o._15(4608,u.m,u.m,[]),o._15(4608,u.j,u.j,[u.m,u.f,u.c,u.h,u.b,u.k,u.l]),o._15(512,p.b,p.b,[]),o._15(512,y.o,y.o,[]),o._15(512,y.g,y.g,[]),o._15(512,y.m,y.m,[]),o._15(512,P.a,P.a,[]),o._15(512,P.b,P.b,[]),o._15(512,u.g,u.g,[]),o._15(512,c,c,[]),o._15(256,h.a,t.a,[]),o._15(256,u.l,void 0,[]),o._15(256,u.k,void 0,[])])})}});
+webpackJsonp([3],{
+
+/***/ 308:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["HttpLoaderFactory"] = HttpLoaderFactory;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlayingPageModule", function() { return PlayingPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__playing__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_http_loader__ = __webpack_require__(218);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+function HttpLoaderFactory(http) {
+    return new __WEBPACK_IMPORTED_MODULE_5__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, './assets/i18n/', '.json');
+}
+var PlayingPageModule = (function () {
+    function PlayingPageModule() {
+    }
+    PlayingPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_2__playing__["a" /* PlayingPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__playing__["a" /* PlayingPage */]),
+                __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */].forRoot({
+                    loader: {
+                        provide: __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["a" /* TranslateLoader */],
+                        useFactory: HttpLoaderFactory,
+                        deps: [__WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */]]
+                    }
+                })
+            ],
+        })
+    ], PlayingPageModule);
+    return PlayingPageModule;
+}());
+
+//# sourceMappingURL=playing.module.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=3.js.map
