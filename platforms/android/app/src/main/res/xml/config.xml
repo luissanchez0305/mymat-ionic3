@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.esferasoluciones.mymat_light" version="8.2.6" versionCode="57" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <feature name="Badge">
+        <param name="android-package" value="de.appplant.cordova.plugin.badge.Badge" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="EmailComposer">
+        <param name="android-package" value="de.appplant.cordova.emailcomposer.EmailComposer" />
+    </feature>
+    <feature name="LocalNotification">
+        <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="networkinterface">
+        <param name="android-package" value="com.albahra.plugin.networkinterface.networkinterface" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Keyboard">
+        <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>MyMat - Light</name>
+    <description>MyMat 8</description>
+    <author email="lsanchez@esferasoluciones.com" href="https://www.esferasoluciones.com">
+        Luis Ricardo Sánchez.
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="resources/android/icon/ldpi.png" />
+    <icon density="mdpi" src="resources/android/icon/mdpi.png" />
+    <icon density="hdpi" src="resources/android/icon/hdpi.png" />
+    <icon density="xhdpi" src="resources/android/icon/xhdpi.png" />
+    <icon density="xxhdpi" src="resources/android/icon/xxhdpi.png" />
+    <icon density="xxxhdpi" src="resources/android/icon/xxxhdpi.png" />
+    <splash density="port-ldpi" src="resources/android/splash/splash-port-ldpi.png" />
+    <splash density="port-mdpi" src="resources/android/splash/splash-port-mdpi.png" />
+    <splash density="port-hdpi" src="resources/android/splash/splash-port-hdpi.png" />
+    <splash density="port-xhdpi" src="resources/android/splash/splash-port-xhdpi.png" />
+    <splash density="port-xxhdpi" src="resources/android/splash/splash-port-xxhdpi.png" />
+    <splash density="port-xxxhdpi" src="resources/android/splash/splash-port-xxxhdpi.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="ScrollEnabled" value="false" />
+    <preference name="orientation" value="portrait" />
+    <preference name="android-minSdkVersion" value="22" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="FadeSplashScreenDuration" value="300" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="phonegap-version" value="cli-8.0.0" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="CordovaWebViewEngine" value="CDVUIWebViewEngine" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
+</widget>
