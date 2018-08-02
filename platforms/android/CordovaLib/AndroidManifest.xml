@@ -19,9 +19,5 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="org.apache.cordova" android:versionName="1.0" android:versionCode="1">
-<<<<<<< HEAD
-    <uses-sdk android:minSdkVersion="16" />
-=======
     <uses-sdk android:minSdkVersion="14" />
->>>>>>> 9f734d97bc62c5804f2c3a209deeb64778e56ac9
 </manifest>

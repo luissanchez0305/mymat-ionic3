@@ -1,10 +1,6 @@
 /* eslint-disable */
 // Platform: android
-<<<<<<< HEAD
-// 4450a4cea50616e080a82e8ede9e3d6a1fe3c3ec
-=======
 // 74a4adc2d0fddb1e0cfb9be1961494ef0afc9893
->>>>>>> 9f734d97bc62c5804f2c3a209deeb64778e56ac9
 /*
  Licensed to the Apache Software Foundation (ASF) under one
  or more contributor license agreements.  See the NOTICE file
@@ -24,11 +20,7 @@
  under the License.
 */
 ;(function() {
-<<<<<<< HEAD
-var PLATFORM_VERSION_BUILD_LABEL = '7.0.0';
-=======
 var PLATFORM_VERSION_BUILD_LABEL = '6.3.0';
->>>>>>> 9f734d97bc62c5804f2c3a209deeb64778e56ac9
 // file: src/scripts/require.js
 
 /*jshint -W079 */
@@ -319,11 +311,7 @@ var cordova = {
         catch (err) {
             var msg = "Error in " + (isSuccess ? "Success" : "Error") + " callbackId: " + callbackId + " : " + err;
             console && console.log && console.log(msg);
-<<<<<<< HEAD
-            cordova.fireWindowEvent('cordovacallbackerror', { 'message': msg });
-=======
             cordova.fireWindowEvent("cordovacallbackerror", { 'message': msg });
->>>>>>> 9f734d97bc62c5804f2c3a209deeb64778e56ac9
             throw err;
         }
     },

@@ -27,18 +27,12 @@ buildscript {
         }
     }
 
-<<<<<<< HEAD
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-        classpath 'com.android.tools.build:gradle:3.0.0'
-=======
     // Switch the Android Gradle plugin version requirement depending on the
     // installed version of Gradle. This dependency is documented at
     // http://tools.android.com/tech-docs/new-build-system/version-compatibility
     // and https://issues.apache.org/jira/browse/CB-8143
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
->>>>>>> 9f734d97bc62c5804f2c3a209deeb64778e56ac9
     }
 }
 
@@ -50,14 +44,6 @@ allprojects {
             url "https://maven.google.com"
         }
     }
-<<<<<<< HEAD
-    //This replaces project.properties w.r.t. build settings
-    project.ext {
-      defaultBuildToolsVersion="25.0.2" //String
-      defaultMinSdkVersion=19 //Integer - Minimum requirement is Android 4.4
-      defaultTargetSdkVersion=26 //Integer - We ALWAYS target the latest by default
-      defaultCompileSdkVersion=26 //Integer - We ALWAYS compile with the latest by default
-=======
 }
 
 task wrapper(type: Wrapper) {
@@ -261,7 +247,6 @@ android {
     }
     if (cdvDebugSigningPropertiesFile) {
         addSigningProps(cdvDebugSigningPropertiesFile, signingConfigs.debug)
->>>>>>> 9f734d97bc62c5804f2c3a209deeb64778e56ac9
     }
 }
 
