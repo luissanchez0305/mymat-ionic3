@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
+import { NavController, NavParams, Events } from 'ionic-angular';
 import { Constants } from '../../services/constants';
 import { TranslateService } from '@ngx-translate/core';
 import { Storage } from '@ionic/storage';
@@ -11,7 +11,6 @@ import { Storage } from '@ionic/storage';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-program',
   templateUrl: 'program.html',
@@ -24,7 +23,7 @@ export class ProgramPage {
   public programNumber : number;
   public programRealName : string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage, 
+  constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage,
     public translateService: TranslateService, public events: Events) {
   }
   ionViewDidLoad(){
@@ -39,14 +38,14 @@ export class ProgramPage {
           this.programDescription = typeof prog[this.navParams.get('description')] === 'undefined' ? this.navParams.get('description') : prog[this.navParams.get('description')];
           this.programApiName = this.navParams.get('apiName');
           this.programNumber = this.navParams.get('programNumber')
-        });     
+        });
       });
   }
-  
+
   add1Program(programName, programRunningTime, programApiName){
     this.events.publish("add1ProgramEvent", this.programNumber, this.programRealName, this.programRunningTime, this.programApiName);
   }
-  
+
   isNameOnArray(names, name){
     for(var i = 0; i < names.length; i++){
       if(names[i] == name){

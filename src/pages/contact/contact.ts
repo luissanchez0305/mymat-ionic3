@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { TranslateService } from '@ngx-translate/core';
@@ -13,7 +13,6 @@ import { Constants } from '../../services/constants';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-contact',
   templateUrl: 'contact.html',

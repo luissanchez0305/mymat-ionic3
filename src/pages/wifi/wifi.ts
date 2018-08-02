@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
+import { NavController, NavParams, Platform } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { PlayingPage } from '../playing/playing';
@@ -14,7 +14,6 @@ import { TranslateService } from '@ngx-translate/core';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-wifi',
   templateUrl: 'wifi.html',
@@ -214,52 +213,72 @@ export class WifiPage {
   }
 
   startRoutine(){
-    clearInterval(this.testStatusInterval);
-    clearInterval(this.testIPInterval);
-    var program1Obj;
-    var program2Obj;
-    var program3Obj;
-    var program4Obj;
+    /* ANTES DE COCRRER RUTINA VERIFICAR SI SE ESTA CONECTADO AL WIFI DEL MYMAT */
+    this.networkInterface.getWiFiIPAddress().then((response)=>{
+        if(response === Constants.localIPAddress){
+          /* CORRER RUTINA */
+          clearInterval(this.testStatusInterval);
+          clearInterval(this.testIPInterval);
+          var program1Obj;
+          var program2Obj;
+          var program3Obj;
+          var program4Obj;
 
-    for(var i = 1; i <= 4; i++){
-      switch(i){
-        case 1:
-          this.storage.get(Constants.storageKeyBubble1).then((val) => {
-            program1Obj = val;
-          });
-          break;
-        case 2:
-          this.storage.get(Constants.storageKeyBubble2).then((val) => {
-            program2Obj = val;
-          });
-          break;
-        case 3:
-          this.storage.get(Constants.storageKeyBubble3).then((val) => {
-            program3Obj = val;
-          });
-          break;
-        case 4:
-          this.storage.get(Constants.storageKeyBubble4).then((val) => {
-            program4Obj = val;
+          for(var i = 1; i <= 4; i++){
+            switch(i){
+              case 1:
+                this.storage.get(Constants.storageKeyBubble1).then((val) => {
+                  program1Obj = val;
+                });
+                break;
+              case 2:
+                this.storage.get(Constants.storageKeyBubble2).then((val) => {
+                  program2Obj = val;
+                });
+                break;
+              case 3:
+                this.storage.get(Constants.storageKeyBubble3).then((val) => {
+                  program3Obj = val;
+                });
+                break;
+              case 4:
+                this.storage.get(Constants.storageKeyBubble4).then((val) => {
+                  program4Obj = val;
 
-            var programs = [
-                program1Obj,
-                program2Obj,
-                program3Obj,
-                program4Obj
-            ];
+                  var programs = [
+                      program1Obj,
+                      program2Obj,
+                      program3Obj,
+                      program4Obj
+                  ];
 
-            this.apiService.start(programs).then((response) => {
-              console.log(response + '');
-            }, (response) =>{
-              console.log(response + '');
-            });
+                  this.apiService.start(programs).then((response) => {
+                    console.log(response + '');
+                  }, (response) =>{
+                    console.log(response + '');
+                  });
 
-            this.navCtrl.setRoot(PlayingPage);
-          });
-          break;
-      }
-    }
+                  this.navCtrl.setRoot(PlayingPage);
+                });
+                break;
+            }
+          }
+          /* CORRER RUTINA */
+        }
+        else{
+          this.mymatWifi = true;
+          this.mymatStatus = false;
+          this.showStatusTable = false;
+          this.showLoading = true;
+          this.failIPVerification();
+        }
+      },(response)=>{
+        this.mymatWifi = true;
+        this.mymatStatus = false;
+        this.showStatusTable = false;
+        this.showLoading = true;
+        this.failIPVerification();
+      });
   }
 
   stop(){
