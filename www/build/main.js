@@ -1021,9 +1021,18 @@ var WifiPage = (function () {
                 }
                 /* CORRER RUTINA */
             }
-            else
+            else {
+                _this.mymatWifi = true;
+                _this.mymatStatus = false;
+                _this.showStatusTable = false;
+                _this.showLoading = true;
                 _this.failIPVerification();
+            }
         }, function (response) {
+            _this.mymatWifi = true;
+            _this.mymatStatus = false;
+            _this.showStatusTable = false;
+            _this.showLoading = true;
             _this.failIPVerification();
         });
     };

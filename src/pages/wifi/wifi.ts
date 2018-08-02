@@ -265,9 +265,18 @@ export class WifiPage {
           }
           /* CORRER RUTINA */
         }
-        else
+        else{
+          this.mymatWifi = true;
+          this.mymatStatus = false;
+          this.showStatusTable = false;
+          this.showLoading = true;
           this.failIPVerification();
+        }
       },(response)=>{
+        this.mymatWifi = true;
+        this.mymatStatus = false;
+        this.showStatusTable = false;
+        this.showLoading = true;
         this.failIPVerification();
       });
   }
