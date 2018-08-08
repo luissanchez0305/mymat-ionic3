@@ -2156,7 +2156,7 @@ export var Data = { Groups : [
              ]
             },
         {
-            category: 'elements',            
+            category: 'elements',
             name: 'wood-element-upper',
             programs: [
                 {
@@ -2364,9 +2364,69 @@ export var Data = { Groups : [
                     description: ''
                 }
              ]
+        },
+        {
+            category: 'pets',
+            name: 'routine-pets-upper1',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Pet_Program_1",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_Program_5",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_Program_3",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_Program_4",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'pets',
+            name: 'routine-pets-upper2',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Pet_Program_1",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_Program_4",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_Program_6",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_Program_4",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
         }
     ],
-    Programs : [        
+    Programs : [
         {
             name: 'earth-element-upper',
             apiName: "Earth_Element",
@@ -2386,7 +2446,7 @@ export var Data = { Groups : [
             description: 'metal-element-description'
         },
         {
-            name: 'water-element-upper', 
+            name: 'water-element-upper',
             apiName: "Water_Element",
             runningtime: "17:20",
             description: 'water-element-description'
@@ -2396,7 +2456,7 @@ export var Data = { Groups : [
             apiName: "Wood_Element",
             runningtime: "17:09",
             description: 'wood-element-description'
-        },   
+        },
         {
             name: 'gallbladder-meridian-upper',
             apiName: "Gallbladder_Meridian",
@@ -2433,7 +2493,7 @@ export var Data = { Groups : [
             apiName: "Lung_Meridian",
             runningtime: "16:38",
             description: 'lung-meridian-description'
-        }, 
+        },
         {
             name: 'pericardium-meridian-upper',
             apiName: "Pericardium_Meridian",
@@ -2469,7 +2529,7 @@ export var Data = { Groups : [
             apiName: "Urinary_Bladder_Meridian",
             runningtime: "14:19",
             description: 'urinary-bladder-meridian-description'
-        },            
+        },
         {
             name: "first-chakra-upper",
             apiName: "Root_Chakra",
@@ -2511,7 +2571,7 @@ export var Data = { Groups : [
             apiName: "Crown_Chakra",
             runningtime: "13:45",
             description: '7-chakra-description'
-        },         
+        },
         {
             name: 'addiction-upper',
             apiName: "Addiction",
@@ -2828,39 +2888,39 @@ export var Data = { Groups : [
             description: 'skin-conditions-description'
         },
         {
-            name: 'sleep-enhancer-upper',                       
+            name: 'sleep-enhancer-upper',
             apiName: "Sleep_Enhancer",
             runningtime: "19:58",
             description: 'sleep-enhancer-description'
         },
         {
-            name: 'stress-relief-upper',  
+            name: 'stress-relief-upper',
             apiName: "Frustration",
             runningtime: "18:55",
             description: 'stress-relief-description'
         },
         {
-            name: 'thyroid-glands-upper',  
+            name: 'thyroid-glands-upper',
             apiName: "Thyroid_Glands",
             runningtime: "17:53",
             description: 'thyroid-glands-description'
         },
 
         {
-            name: 'urinary-upper',  
+            name: 'urinary-upper',
             apiName: "Urinary_System/Cystitis",
             runningtime: "13:39",
             description: 'urinary-description'
         },
 
         {
-            name: 'vertebrae-upper', 
+            name: 'vertebrae-upper',
             apiName: "Vertebrae",
             runningtime: "12:53",
             description: 'vertebrae-description'
         },
         {
-            name: 'vitality-upper', 
+            name: 'vitality-upper',
             apiName: "Vitality",
             runningtime: "14:00",
             description: 'vitality-description'
@@ -2870,6 +2930,42 @@ export var Data = { Groups : [
             apiName: "Weight_Control",
             runningtime: "14:50",
             description: 'weight-control-description'
+        },
+        {
+            name: 'pet-program-1-upper',
+            apiName: "Pet_Program_1",
+            runningtime: "11:50",
+            description: 'pet-program-1-description'
+        },
+        {
+            name: 'pet-program-2-upper',
+            apiName: "Pet_Program_2",
+            runningtime: "12:50",
+            description: 'pet-program-2-description'
+        },
+        {
+            name: 'pet-program-3-upper',
+            apiName: "Pet_Program_3",
+            runningtime: "13:50",
+            description: 'pet-program-3-description'
+        },
+        {
+            name: 'pet-program-4-upper',
+            apiName: "Pet_Program_4",
+            runningtime: "14:50",
+            description: 'pet-program-4-description'
+        },
+        {
+            name: 'pet-program-5-upper',
+            apiName: "Pet_Program_5",
+            runningtime: "15:50",
+            description: 'pet-program-5-description'
+        },
+        {
+            name: 'pet-program-6-upper',
+            apiName: "Pet_Program_6",
+            runningtime: "16:50",
+            description: 'pet-program-6-description'
         }
     ]
 };

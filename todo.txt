@@ -46,7 +46,7 @@ x traducciones de descripcion de programas en aleman algunas estan en italiano
 
 pendientes
 x modificar el nombre del titulo en la descripcion de los programas para elementos y meridianos
-- guardar en memoria (por tiempo limitado) el utlimo kit que se metio
+x guardar en memoria (por tiempo limitado) el utlimo kit que se metio
 - intentar contactar la direccion de url del mat dese ios
 - verificar sleep enhancer sea el url correcto
 - Cambio de texto de correo "MyMatt"
