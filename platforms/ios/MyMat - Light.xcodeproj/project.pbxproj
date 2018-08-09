@@ -18,8 +18,6 @@
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		25815D1D2135471991EE91DD /* APPBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 067BF0FF2BA1422E8A660CAB /* APPBadge.m */; };
 		98BE8EFA366D4EA284473789 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 5453676CDDB047188BA1F4DE /* CDVDevice.m */; };
-		B22D658E8410438BB2EED4EF /* CDVUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 511B7B65509F45BF9EEF5CA2 /* CDVUID.m */; };
-		1BC67FB31A9146A68F535524 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9E6114690B4BB2B8E65742 /* OpenUDID.m */; };
 		4225CA0075834ADA8ECC9378 /* APPEmailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F201D67D3A4F518C7651B9 /* APPEmailComposer.m */; };
 		0297C8D7BFCF4846BB807913 /* APPEmailComposerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2184D10A925F4E6AAEAC2375 /* APPEmailComposerImpl.m */; };
 		4B18F1F1827F4B48B37B74F2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAA39BE93BA4819A2E2B5B5 /* MessageUI.framework */; };
@@ -82,10 +80,6 @@
 		6904B5A16E664FE4BAC538DA /* APPBadge.h */ = {isa = PBXFileReference; name = "APPBadge.h"; path = "cordova-plugin-badge/APPBadge.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		5453676CDDB047188BA1F4DE /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		4DA96C1F0C584DE78064E65B /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		511B7B65509F45BF9EEF5CA2 /* CDVUID.m */ = {isa = PBXFileReference; name = "CDVUID.m"; path = "cordova-plugin-dreamover-uid/CDVUID.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		6C9E6114690B4BB2B8E65742 /* OpenUDID.m */ = {isa = PBXFileReference; name = "OpenUDID.m"; path = "cordova-plugin-dreamover-uid/OpenUDID.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		FFD0A0CDD94744BFA13D0C4A /* CDVUID.h */ = {isa = PBXFileReference; name = "CDVUID.h"; path = "cordova-plugin-dreamover-uid/CDVUID.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		4622B3D33F5B4FBE80E4258D /* OpenUDID.h */ = {isa = PBXFileReference; name = "OpenUDID.h"; path = "cordova-plugin-dreamover-uid/OpenUDID.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		53F201D67D3A4F518C7651B9 /* APPEmailComposer.m */ = {isa = PBXFileReference; name = "APPEmailComposer.m"; path = "cordova-plugin-email-composer/APPEmailComposer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		2184D10A925F4E6AAEAC2375 /* APPEmailComposerImpl.m */ = {isa = PBXFileReference; name = "APPEmailComposerImpl.m"; path = "cordova-plugin-email-composer/APPEmailComposerImpl.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		A00F1C0A865D41F792AEA534 /* APPEmailComposer.h */ = {isa = PBXFileReference; name = "APPEmailComposer.h"; path = "cordova-plugin-email-composer/APPEmailComposer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
@@ -234,10 +228,6 @@
 				6904B5A16E664FE4BAC538DA /* APPBadge.h */,
 				5453676CDDB047188BA1F4DE /* CDVDevice.m */,
 				4DA96C1F0C584DE78064E65B /* CDVDevice.h */,
-				511B7B65509F45BF9EEF5CA2 /* CDVUID.m */,
-				6C9E6114690B4BB2B8E65742 /* OpenUDID.m */,
-				FFD0A0CDD94744BFA13D0C4A /* CDVUID.h */,
-				4622B3D33F5B4FBE80E4258D /* OpenUDID.h */,
 				53F201D67D3A4F518C7651B9 /* APPEmailComposer.m */,
 				2184D10A925F4E6AAEAC2375 /* APPEmailComposerImpl.m */,
 				A00F1C0A865D41F792AEA534 /* APPEmailComposer.h */,
@@ -378,8 +368,6 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				25815D1D2135471991EE91DD /* APPBadge.m in Sources */,
 				98BE8EFA366D4EA284473789 /* CDVDevice.m in Sources */,
-				B22D658E8410438BB2EED4EF /* CDVUID.m in Sources */,
-				1BC67FB31A9146A68F535524 /* OpenUDID.m in Sources */,
 				4225CA0075834ADA8ECC9378 /* APPEmailComposer.m in Sources */,
 				0297C8D7BFCF4846BB807913 /* APPEmailComposerImpl.m in Sources */,
 				5AAC937010124298AA20DD99 /* APPLocalNotification.m in Sources */,

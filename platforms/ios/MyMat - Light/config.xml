@@ -25,9 +25,6 @@
     <feature name="Device">
         <param name="ios-package" value="CDVDevice" />
     </feature>
-    <feature name="UID">
-        <param name="ios-package" value="CDVUID" />
-    </feature>
     <feature name="EmailComposer">
         <param name="ios-package" value="APPEmailComposer" />
     </feature>

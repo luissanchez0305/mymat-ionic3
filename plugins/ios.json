@@ -10,9 +10,6 @@
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
-    "cordova-plugin-dreamover-uid": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
     "cordova-plugin-email-composer": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
