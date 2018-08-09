@@ -7,7 +7,6 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NetworkInterface } from '@ionic-native/network-interface';
-//import { Network } from '@ionic-native/network';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 
 import { MyApp } from './app.component';
@@ -23,6 +22,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RoutinesProvider } from '../providers/routines/routines';
 import { APIServiceProvider } from '../providers/api-service/api-service';
+import { Network } from '@ionic-native/network';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -69,7 +69,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SplashScreen,
     RoutinesProvider,
     NetworkInterface,
-//    Network,
+    Network,
     LocalNotifications,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     APIServiceProvider

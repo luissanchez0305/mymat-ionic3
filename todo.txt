@@ -1,12 +1,14 @@
 3ra ETAPA
 
 - agregar seccion de pets
-- crear base de datos con datos basicos de usuarios
+x crear base de datos con datos basicos de usuarios
     - imei del celular
     - nombre
     - fecha de nacimiento
     - email
     - sexo
+
+- crear de verificador de conexion a internet
 - crear vista de perfil del usuario
 - crear slides de introduccion
     - conseguir libreria para mostrar carrusel automatico
