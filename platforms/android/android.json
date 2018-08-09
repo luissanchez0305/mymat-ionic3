@@ -49,16 +49,6 @@
       },
       "AndroidManifest.xml": {
         "parents": {
-          "/*": [
-            {
-              "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
-              "count": 1
-            },
-            {
-              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
-              "count": 1
-            }
-          ],
           "/manifest": [
             {
               "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
@@ -90,6 +80,16 @@
             },
             {
               "xml": "<activity android:exported=\"false\" android:launchMode=\"singleInstance\" android:name=\"de.appplant.cordova.plugin.localnotification.ClickReceiver\" android:theme=\"@android:style/Theme.Translucent\" />",
+              "count": 1
+            }
+          ],
+          "/*": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
               "count": 1
             }
           ]
