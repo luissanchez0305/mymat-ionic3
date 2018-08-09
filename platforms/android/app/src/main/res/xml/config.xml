@@ -6,6 +6,9 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
+    <feature name="UID">
+        <param name="android-package" value="org.hygieiasoft.cordova.uid.UID" />
+    </feature>
     <feature name="EmailComposer">
         <param name="android-package" value="de.appplant.cordova.emailcomposer.EmailComposer" />
     </feature>
@@ -29,9 +32,6 @@
     <feature name="Keyboard">
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
-    </feature>
-    <feature name="UID">
-        <param name="android-package" value="org.hygieiasoft.cordova.uid.UID" />
     </feature>
     <name>MyMat - Light</name>
     <description>MyMat 8</description>

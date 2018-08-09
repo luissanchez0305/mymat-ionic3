@@ -17,6 +17,14 @@ module.exports = [
     ]
   },
   {
+    "id": "cordova-plugin-dreamover-uid.uid",
+    "file": "plugins/cordova-plugin-dreamover-uid/www/uid.js",
+    "pluginId": "cordova-plugin-dreamover-uid",
+    "clobbers": [
+      "cordova.plugins.uid"
+    ]
+  },
+  {
     "id": "cordova-plugin-email-composer.EmailComposer",
     "file": "plugins/cordova-plugin-email-composer/www/email_composer.js",
     "pluginId": "cordova-plugin-email-composer",
@@ -92,14 +100,6 @@ module.exports = [
       "cordova.plugins.Keyboard"
     ],
     "runs": true
-  },
-  {
-    "id": "cordova-plugin-dreamover-uid.uid",
-    "file": "plugins/cordova-plugin-dreamover-uid/www/uid.js",
-    "pluginId": "cordova-plugin-dreamover-uid",
-    "clobbers": [
-      "cordova.plugins.uid"
-    ]
   }
 ];
 module.exports.metadata = 
@@ -107,14 +107,14 @@ module.exports.metadata =
 {
   "cordova-plugin-badge": "0.8.7",
   "cordova-plugin-device": "1.1.4",
+  "cordova-plugin-dreamover-uid": "1.3.0",
   "cordova-plugin-email-composer": "0.8.12",
   "cordova-plugin-local-notification": "0.9.0-beta.2",
   "cordova-plugin-network-information": "2.0.1",
   "cordova-plugin-networkinterface": "1.2.0",
   "cordova-plugin-splashscreen": "4.0.3",
   "cordova-plugin-whitelist": "1.3.1",
-  "ionic-plugin-keyboard": "2.2.1",
-  "cordova-plugin-dreamover-uid": "1.3.0"
+  "ionic-plugin-keyboard": "2.2.1"
 };
 // BOTTOM OF METADATA
 });
