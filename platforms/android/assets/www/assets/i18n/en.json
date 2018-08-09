@@ -79,6 +79,7 @@
     "chakra-balancing": "CHAKRA<br>BALANCING",
     "senior-upper" : "SENIOR",
     "elements-meridians": "ELEMENTS &<br>MERIDIANS<br>",
+    "pets": "PETS",
     "programs": "PROGRAMS",
     "continue": "Continue",
     "first-chakra-upper": "1st CHAKRA",
@@ -314,5 +315,19 @@
     "liver-function-upper": "LIVER FUNCTION",
     "kidney-function-upper": "KIDNEY FUNCTION",
     "large-intestine-balancing-upper": "LARGE INTESTINE BALANCING",
-    "pericardium-flow-upper": "PERICARDIUM FLOWS"
+    "pericardium-flow-upper": "PERICARDIUM FLOWS",
+    "routine-pets-upper1":"Pet Routine 1",
+    "routine-pets-upper2":"Pet Routine 2",
+    "pet-program-1-upper":"Pet Program 1",
+    "pet-program-1-description":"Pet Program 1 description",
+    "pet-program-2-upper":"Pet Program 2",
+    "pet-program-2-description":"Pet Program 2 description",
+    "pet-program-3-upper":"Pet Program 3",
+    "pet-program-3-description":"Pet Program 3 description",
+    "pet-program-4-upper":"Pet Program 4",
+    "pet-program-4-description":"Pet Program 4 description",
+    "pet-program-5-upper":"Pet Program 5",
+    "pet-program-5-description":"Pet Program 5 description",
+    "pet-program-6-upper":"Pet Program 6",
+    "pet-program-6-description":"Pet Program 6 description"
 }
