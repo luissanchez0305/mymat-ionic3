@@ -52,6 +52,11 @@ export class HomePage {
     this.network.onConnect().subscribe(() => {
       this.zone.run(() => {
         this.isDeviceOnline = true;
+        this.storage.get(Constants.deviceInfo).then((info)=>{
+          if(typeof info === 'undefined'){
+            
+          }
+        });
       });
     });
   }

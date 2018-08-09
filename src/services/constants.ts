@@ -10,6 +10,7 @@ export var Constants = {
     storageKeyBubble4 : 'MyMat_bubbleRoutineProgram4',
     storageKeyScrollTop : 'MyMat_scrollTop',
     storageKeyCurrentProgram : 'MyMat_currentProgram',
+    deviceInfo: 'MyMatDevice',
     shortTitles       : [
                         'earth-element-upper',
                         'fire-element-upper',

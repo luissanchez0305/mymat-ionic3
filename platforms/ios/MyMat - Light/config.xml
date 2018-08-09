@@ -116,4 +116,7 @@
     <preference name="phonegap-version" value="cli-8.0.0" />
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <preference name="CordovaWebViewEngine" value="CDVUIWebViewEngine" />
+    <feature name="UID">
+        <param name="ios-package" value="CDVUID" />
+    </feature>
 </widget>
