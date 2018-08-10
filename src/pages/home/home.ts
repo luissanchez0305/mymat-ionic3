@@ -41,7 +41,6 @@ export class HomePage {
         this.storage.set(Constants.storageKeyLang, lang)
         this.checkAllBubbles();
     });
-    alert(this.device.uuid);
     this.AllBubblesChecked(this.routines.getPrograms());
     this.isDeviceOnline = true;
     // watch network for a disconnect
@@ -56,7 +55,7 @@ export class HomePage {
         this.isDeviceOnline = true;
         alert('Conectado');
         this.storage.get(Constants.deviceInfo).then((info)=>{
-          if(typeof info === 'undefined'){
+          if(typeof info === 'undefined' || info == null){
             alert(this.device.uuid);
             this.storage.set(Constants.deviceInfo, this.device.uuid);
           }

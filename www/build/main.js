@@ -338,7 +338,6 @@ var HomePage = (function () {
             _this.storage.set(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang, lang);
             _this.checkAllBubbles();
         });
-        alert(this.device.uuid);
         this.AllBubblesChecked(this.routines.getPrograms());
         this.isDeviceOnline = true;
         // watch network for a disconnect
@@ -353,7 +352,7 @@ var HomePage = (function () {
                 _this.isDeviceOnline = true;
                 alert('Conectado');
                 _this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].deviceInfo).then(function (info) {
-                    if (typeof info === 'undefined') {
+                    if (typeof info === 'undefined' || info == null) {
                         alert(_this.device.uuid);
                         _this.storage.set(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].deviceInfo, _this.device.uuid);
                     }
