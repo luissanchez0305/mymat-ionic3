@@ -7,6 +7,7 @@ import { RoutinesProvider } from '../../providers/routines/routines';
 import { Constants } from '../../services/constants';
 import { TranslateService } from '@ngx-translate/core';
 import { Network } from '@ionic-native/network';
+import { Device } from '@ionic-native/device';
 
 @Component({
   selector: 'page-home',
@@ -26,7 +27,8 @@ export class HomePage {
   public isDeviceOnline : boolean;
 
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
-    private translateService: TranslateService, private network: Network, private zone: NgZone, public events: Events) {
+    private translateService: TranslateService, private network: Network, private zone: NgZone, public events: Events,
+    private device: Device) {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){
@@ -34,7 +36,6 @@ export class HomePage {
       }
       this.AllBubblesChecked(this.routines.getPrograms());
     });
-    alert(this.network.type);
     this.events.subscribe('switchLangEvent',(lang) => {
         //call methods to refresh content
         this.storage.set(Constants.storageKeyLang, lang)
@@ -54,7 +55,8 @@ export class HomePage {
         this.isDeviceOnline = true;
         this.storage.get(Constants.deviceInfo).then((info)=>{
           if(typeof info === 'undefined'){
-            
+            alert(this.device.uuid);
+            this.storage.set(Constants.deviceInfo, this.device.uuid);
           }
         });
       });

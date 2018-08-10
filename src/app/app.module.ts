@@ -23,6 +23,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { RoutinesProvider } from '../providers/routines/routines';
 import { APIServiceProvider } from '../providers/api-service/api-service';
 import { Network } from '@ionic-native/network';
+import { Device } from '@ionic-native/device';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -70,6 +71,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     RoutinesProvider,
     NetworkInterface,
     Network,
+    Device,
     LocalNotifications,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     APIServiceProvider
