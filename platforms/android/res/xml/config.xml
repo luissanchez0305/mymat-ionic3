@@ -6,9 +6,6 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
-    <feature name="UID">
-        <param name="android-package" value="org.hygieiasoft.cordova.uid.UID" />
-    </feature>
     <feature name="EmailComposer">
         <param name="android-package" value="de.appplant.cordova.emailcomposer.EmailComposer" />
     </feature>
