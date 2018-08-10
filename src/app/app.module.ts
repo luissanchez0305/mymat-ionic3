@@ -8,6 +8,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NetworkInterface } from '@ionic-native/network-interface';
 import { LocalNotifications } from '@ionic-native/local-notifications';
+import { DatePicker } from '@ionic-native/date-picker';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -17,6 +18,7 @@ import { ProgramsPage } from '../pages/programs/programs';
 import { WifiPage } from '../pages/wifi/wifi';
 import { PlayingPage } from '../pages/playing/playing';
 import { ProgramPage } from '../pages/program/program';
+import { SubscribePage } from '../pages/subscribe/subscribe';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -38,6 +40,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProgramsPage,
     WifiPage,
     PlayingPage,
+    SubscribePage,
     ProgramPage
   ],
   imports: [
@@ -63,6 +66,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProgramsPage,
     WifiPage,
     PlayingPage,
+    SubscribePage,
     ProgramPage
   ],
   providers: [
@@ -73,6 +77,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     Network,
     Device,
     LocalNotifications,
+    DatePicker,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     APIServiceProvider
   ]

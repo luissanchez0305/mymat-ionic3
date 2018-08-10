@@ -28,6 +28,22 @@ export class APIServiceProvider {
     });
   }
   
+  check_device(_uuid){
+    return new Promise((resolve, reject) => {
+      // watch network for a connection
+      /*let connectSubscription = this.network.onConnect().subscribe(() => {*/
+        let headers = new Headers();
+
+        this.http.post(Constants.myMatApiUrl + 'check_device.php', JSON.stringify({ uuid : _uuid }), {headers: headers})
+          .subscribe(res => {
+            resolve(res.json());
+          }, (err) => {
+            reject(err);
+          }); 
+      /*});*/
+    });
+  }
+  
   test(){
     let headers = new Headers();
     //headers.append('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8');
@@ -45,13 +61,13 @@ export class APIServiceProvider {
     });
   }
   
-  sendEmail(data){
+  runPost(scriptFile, data){
     return new Promise((resolve, reject) => {
       // watch network for a connection
       /*let connectSubscription = this.network.onConnect().subscribe(() => {*/
         let headers = new Headers();
 
-        this.http.post(Constants.myMatApiUrl + 'contact_us.php', JSON.stringify(data), {headers: headers})
+        this.http.post(Constants.myMatApiUrl + scriptFile, JSON.stringify(data), {headers: headers})
           .subscribe(res => {
             resolve(res.json());
           }, (err) => {

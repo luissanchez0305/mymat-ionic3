@@ -39,6 +39,10 @@
             {
               "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"DatePicker\"><param name=\"ios-package\" value=\"DatePicker\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -81,6 +85,9 @@
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+    "cordova-plugin-datepicker": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },
@@ -178,6 +185,14 @@
         "cordova.plugins.Keyboard"
       ],
       "runs": true
+    },
+    {
+      "id": "cordova-plugin-datepicker.DatePicker",
+      "file": "plugins/cordova-plugin-datepicker/www/ios/DatePicker.js",
+      "pluginId": "cordova-plugin-datepicker",
+      "clobbers": [
+        "datePicker"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -189,6 +204,7 @@
     "cordova-plugin-networkinterface": "1.2.0",
     "cordova-plugin-splashscreen": "4.0.3",
     "cordova-plugin-whitelist": "1.3.1",
-    "ionic-plugin-keyboard": "2.2.1"
+    "ionic-plugin-keyboard": "2.2.1",
+    "cordova-plugin-datepicker": "0.9.3"
   }
 }

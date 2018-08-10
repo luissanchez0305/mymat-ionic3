@@ -3,11 +3,13 @@ import { NavController, Events } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { ProgramsPage } from '../programs/programs';
 import { WifiPage } from '../wifi/wifi';
+import { SubscribePage } from '../subscribe/subscribe';
 import { RoutinesProvider } from '../../providers/routines/routines';
 import { Constants } from '../../services/constants';
 import { TranslateService } from '@ngx-translate/core';
 import { Network } from '@ionic-native/network';
 import { Device } from '@ionic-native/device';
+import { APIServiceProvider } from '../../providers/api-service/api-service';
 
 @Component({
   selector: 'page-home',
@@ -27,8 +29,8 @@ export class HomePage {
   public isDeviceOnline : boolean;
 
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
-    private translateService: TranslateService, private network: Network, private zone: NgZone, public events: Events,
-    private device: Device) {
+    private translateService: TranslateService, private network: Network, private zone: NgZone, 
+    public events: Events, private device: Device, public apiService : APIServiceProvider) {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){
@@ -53,14 +55,19 @@ export class HomePage {
     this.network.onConnect().subscribe(() => {
       this.zone.run(() => {
         this.isDeviceOnline = true;
-        alert('Conectado');
-        this.storage.get(Constants.deviceInfo).then((info)=>{
-          if(typeof info === 'undefined' || info == null){
-            alert(this.device.uuid);
-            this.storage.set(Constants.deviceInfo, this.device.uuid);
+      });
+    });
+    
+    this.storage.get(Constants.deviceInfo).then((info)=>{
+      if(typeof info === 'undefined' || info == null){
+        this.apiService.check_device(this.device.uuid).then((result) => {
+          var obj : any = result;
+          if (obj.id == "0") {
+            // TODO: despliega la vista de insercion de datos
+            this.navCtrl.push(SubscribePage);
           }
         });
-      });
+      }
     });
   }
 

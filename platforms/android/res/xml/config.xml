@@ -71,4 +71,7 @@
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <preference name="CordovaWebViewEngine" value="CDVUIWebViewEngine" />
     <preference name="loadUrlTimeoutValue" value="700000" />
+    <feature name="DatePickerPlugin">
+        <param name="android-package" value="com.plugin.datepicker.DatePickerPlugin" />
+    </feature>
 </widget>
