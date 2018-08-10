@@ -350,6 +350,7 @@ var HomePage = (function () {
         this.network.onConnect().subscribe(function () {
             _this.zone.run(function () {
                 _this.isDeviceOnline = true;
+                alert('Conectado');
                 _this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].deviceInfo).then(function (info) {
                     if (typeof info === 'undefined') {
                         alert(_this.device.uuid);
