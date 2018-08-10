@@ -338,6 +338,7 @@ var HomePage = (function () {
             _this.storage.set(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang, lang);
             _this.checkAllBubbles();
         });
+        alert(this.device.uuid);
         this.AllBubblesChecked(this.routines.getPrograms());
         this.isDeviceOnline = true;
         // watch network for a disconnect
