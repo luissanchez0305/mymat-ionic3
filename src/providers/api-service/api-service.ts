@@ -14,7 +14,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class APIServiceProvider {
   constructor(public http: Http/*, private network: Network*/) {
-    
+
   }
   test_language(){
     return new Promise((resolve, reject) => {
@@ -27,7 +27,7 @@ export class APIServiceProvider {
       });
     });
   }
-  
+
   check_device(_uuid){
     return new Promise((resolve, reject) => {
       // watch network for a connection
@@ -39,11 +39,11 @@ export class APIServiceProvider {
             resolve(res.json());
           }, (err) => {
             reject(err);
-          }); 
+          });
       /*});*/
     });
   }
-  
+
   test(){
     let headers = new Headers();
     //headers.append('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8');
@@ -60,7 +60,7 @@ export class APIServiceProvider {
       });
     });
   }
-  
+
   runPost(scriptFile, data){
     return new Promise((resolve, reject) => {
       // watch network for a connection
@@ -72,19 +72,19 @@ export class APIServiceProvider {
             resolve(res.json());
           }, (err) => {
             reject(err);
-          }); 
+          });
       /*});*/
     });
   }
-  
+
   start(programs){
     var program1 = programs[0].split("|")[3];
     var program2 = programs[1].split("|")[3];
     var program3 = programs[2].split("|")[3];
     var program4 = programs[3].split("|")[3];
-    
+
     var url = Constants.myMatApiStartUrl+"?P1="+program1+"&P2="+program2+"&P3="+program3+"&P4="+program4;
-    
+
     return new Promise((resolve, reject) => {
       this.http.get(url)
       .map(res => res.text())

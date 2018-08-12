@@ -27,9 +27,10 @@ export class HomePage {
   public bubblesCurrentState3 : boolean;
   public bubblesCurrentState4 : boolean;
   public isDeviceOnline : boolean;
+  public offline_device : string;
 
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
-    private translateService: TranslateService, private network: Network, private zone: NgZone, 
+    private translateService: TranslateService, private network: Network, private zone: NgZone,
     public events: Events, private device: Device, public apiService : APIServiceProvider) {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
@@ -49,6 +50,11 @@ export class HomePage {
     this.network.onDisconnect().subscribe(() => {
       this.zone.run(() => {
         this.isDeviceOnline = false;
+        this.storage.get(Constants.storageKeyLang).then((lang)=>{
+          this.translateService.getTranslation(lang).subscribe((value) => {
+            this.offline_device = value['offline-device-text'];
+          });
+        });
       });
     });
     // watch network for a connection
@@ -57,16 +63,27 @@ export class HomePage {
         this.isDeviceOnline = true;
       });
     });
-    
+
     this.storage.get(Constants.deviceInfo).then((info)=>{
       if(typeof info === 'undefined' || info == null){
-        this.apiService.check_device(this.device.uuid).then((result) => {
-          var obj : any = result;
-          if (obj.id == "0") {
-            // TODO: despliega la vista de insercion de datos
-            this.navCtrl.push(SubscribePage);
-          }
-        });
+        var uuid ={ uuid : this.device.uuid };
+        if(uuid != null){
+          this.apiService.runPost('check_device.php',uuid).then((result) => {
+            this.isDeviceOnline = true;
+            var obj : any = result;
+            if (obj.found == "0") {
+              // despliega la vista de insercion de datos
+              this.navCtrl.push(SubscribePage);
+            }
+          }, (result) => {
+            this.isDeviceOnline = false;
+            this.storage.get(Constants.storageKeyLang).then((lang)=>{
+              this.translateService.getTranslation(lang).subscribe((value) => {
+                this.offline_device = value['offline-device-text-2'];
+              });
+            });
+          });
+        }
       }
     });
   }
