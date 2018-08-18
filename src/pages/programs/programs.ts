@@ -35,7 +35,8 @@ export class ProgramsPage {
   public seniorButton : boolean;
   public chakraButton : boolean;
   public elementsButton : boolean;
-  public petsButton : boolean;
+  public petssButton : boolean;
+  public petsxButton : boolean;
 
   constructor(public navCtrl: NavController, private storage: Storage, public navParams: NavParams, public routines: RoutinesProvider,
     public events: Events) {
@@ -119,7 +120,8 @@ export class ProgramsPage {
     this.seniorButton = false;
     this.chakraButton = false;
     this.elementsButton = false;
-    this.petsButton = false;
+    this.petssButton = false;
+    this.petsxButton = false;
     switch(category){
       case 'basic':
         this.basicButton = true;
@@ -149,7 +151,9 @@ export class ProgramsPage {
         this.elementsButton = true;
         break;
       case 'pets':
-        this.petsButton = true;
+        this.petssButton = true;
+      case 'pets':
+        this.petsxButton = true;
         break;
     }
     var groups = [];
