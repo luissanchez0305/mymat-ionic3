@@ -2366,12 +2366,12 @@ export var Data = { Groups : [
              ]
         },
         {
-            category: 'petss',
-            name: 'Routine pets S 1',
+            category: 'pets',
+            name: 'routine-pets-upper1',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Immune_System",
                     runningtime: "",
                     description: ''
                 },
@@ -2383,85 +2383,85 @@ export var Data = { Groups : [
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Frustration",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_1",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petss',
-            name: 'Routine pets S 2',
+            category: 'pets',
+            name: 'routine-pets-upper2',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_2",
+                    apiName: "Detoxification",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Lymphatic_System",
+                    apiName: "Digestive_System",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Large_Intestine_Meridian",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_1",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petss',
-            name: 'Routine pets S 3',
+            category: 'pets',
+            name: 'routine-pets-upper3',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Digestive_System",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Lymphatic_System",
+                    apiName: "Liver_Meridian",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Intestinal_Flora",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_1",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petss',
-            name: 'Routine pets S 4',
+            category: 'pets',
+            name: 'routine-pets-upper4',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Bone_Tissues",
                     runningtime: "",
                     description: ''
                 },
@@ -2473,55 +2473,55 @@ export var Data = { Groups : [
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Injury",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_1",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petss',
-            name: 'Routine pets S 5',
+            category: 'pets',
+            name: 'routine-pets-upper5',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Skin_Conditions",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Lymphatic_System",
+                    apiName: "Connective_Tissues",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Injury",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_1",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petss',
-            name: 'Routine pets S 6',
+            category: 'pets',
+            name: 'routine-pets-upper6',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Muscle_Tissues",
                     runningtime: "",
                     description: ''
                 },
@@ -2533,85 +2533,85 @@ export var Data = { Groups : [
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Injury",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_1",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petss',
-            name: 'Routine pets S 7',
+            category: 'pets',
+            name: 'routine-pets-upper7',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Frustration",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Lymphatic_System",
+                    apiName: "Relaxation",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Energy_Balancing",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_1",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petss',
-            name: 'Routine pets S 8',
+            category: 'pets',
+            name: 'routine-pets-upper8',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Respiratory_System",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Lymphatic_System",
+                    apiName: "Immune_System",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Lung_Meridian",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_1",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petx',
-            name: 'Routine pets X 1',
+            category: 'pets',
+            name: 'routine-petx-upper1',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Immune_System",
                     runningtime: "",
                     description: ''
                 },
@@ -2623,85 +2623,85 @@ export var Data = { Groups : [
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Frustration",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_2",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petx',
-            name: 'Routine pets X 2',
+            category: 'pets',
+            name: 'routine-petx-upper2',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Detoxification",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Lymphatic_System",
+                    apiName: "Digestive_System",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Large_Intestine_Meridian",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_2",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petx',
-            name: 'Routine pets X3',
+            category: 'pets',
+            name: 'routine-petx-upper3',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Digestive_System",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Lymphatic_System",
+                    apiName: "Liver_Meridian",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Intestinal_Flora",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_2",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petx',
-            name: 'Routine pets X4',
+            category: 'pets',
+            name: 'routine-petx-upper4',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Bone_Tissues",
                     runningtime: "",
                     description: ''
                 },
@@ -2713,55 +2713,55 @@ export var Data = { Groups : [
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Injury",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_2",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petx',
-            name: 'Routine pets X5',
+            category: 'pets',
+            name: 'routine-petx-upper5',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Skin_Conditions",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Lymphatic_System",
+                    apiName: "Connective_Tissues",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Injury",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_2",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petx',
-            name: 'Routine pets X6',
+            category: 'pets',
+            name: 'routine-petx-upper6',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Muscle_Tissues",
                     runningtime: "",
                     description: ''
                 },
@@ -2773,78 +2773,78 @@ export var Data = { Groups : [
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Injury",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_2",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petx',
-            name: 'Routine pets X7',
+            category: 'pets',
+            name: 'routine-petx-upper7',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Frustration",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Lymphatic_System",
+                    apiName: "Relaxation",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Energy_Balancing",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_2",
                     runningtime: "",
                     description: ''
                 }
             ]
         },
         {
-            category: 'petx',
-            name: 'Routine pets X8',
+            category: 'pets',
+            name: 'routine-petx-upper8',
             programs: [
                 {
                     name: '',
-                    apiName: "Pet_Program_1",
+                    apiName: "Respiratory_System",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Lymphatic_System",
+                    apiName: "Immune_System",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_6",
+                    apiName: "Lung_Meridian",
                     runningtime: "",
                     description: ''
                 },
                 {
                     name: '',
-                    apiName: "Pet_Program_0",
+                    apiName: "Pet_2",
                     runningtime: "",
                     description: ''
                 }
             ]
-        },
+        }
     ],
     Programs : [
         {
@@ -3352,40 +3352,16 @@ export var Data = { Groups : [
             description: 'weight-control-description'
         },
         {
-            name: 'pet-program-1-upper',
-            apiName: "Pet_Program_1",
+            name: 'petss-program-upper',
+            apiName: "Pet_1",
             runningtime: "11:50",
-            description: 'pet-program-1-description'
+            description: 'petss-program-description'
         },
         {
-            name: 'pet-program-2-upper',
-            apiName: "Pet_Program_2",
+            name: 'petsx-program-upper',
+            apiName: "Pet_2",
             runningtime: "12:50",
-            description: 'pet-program-2-description'
-        },
-        {
-            name: 'pet-program-3-upper',
-            apiName: "Pet_Program_3",
-            runningtime: "13:50",
-            description: 'pet-program-3-description'
-        },
-        {
-            name: 'pet-program-4-upper',
-            apiName: "Pet_Program_4",
-            runningtime: "14:50",
-            description: 'pet-program-4-description'
-        },
-        {
-            name: 'pet-program-5-upper',
-            apiName: "Pet_Program_5",
-            runningtime: "15:50",
-            description: 'pet-program-5-description'
-        },
-        {
-            name: 'pet-program-6-upper',
-            apiName: "Pet_Program_6",
-            runningtime: "16:50",
-            description: 'pet-program-6-description'
+            description: 'petsx-program-description'
         }
     ]
 };

@@ -22,16 +22,15 @@ import { Constants } from '../../services/constants';
 export class SubscribePage {
   private maxDateOfPicker : string;
   private subscribeForm : FormGroup;
-  public subscribeDisabled : boolean;
   public showSubmitButton : boolean;
   private maxDate : string;
   private response_text : string;
+  private responseData : any;
   constructor(public navCtrl: NavController, public navParams: NavParams, private datePicker: DatePicker,
     private formBuilder: FormBuilder, private storage: Storage, public apiService : APIServiceProvider,
     private translateService: TranslateService, private device: Device) {
 
       this.showSubmitButton = true;
-      this.subscribeDisabled = true;
       let aDate = new Date();
       this.maxDateOfPicker = this.maxDate = aDate.toISOString();
 
@@ -57,9 +56,11 @@ export class SubscribePage {
       isUpdate : false,
       uuid: this.device.uuid
     };
+    console.log(this.device.uuid);
     this.apiService.runPost('subscribe.php',emailData).then((result) => {
-      if(result.status == 'ok'){
-        this.storage.set(Constants.deviceInfo, this.device.uuid);
+      this.responseData = result;
+      if(this.responseData.status == 'ok'){
+        this.storage.set(Constants.deviceInfo, this.responseData.uuid);
         this.showSubmitButton = false;
         this.storage.get(Constants.storageKeyLang).then((lang)=>{
           this.translateService.getTranslation(lang).subscribe((value) => {
@@ -76,14 +77,14 @@ export class SubscribePage {
         this.storage.get(Constants.storageKeyLang).then((lang)=>{
           this.translateService.getTranslation(lang).subscribe((value) => {
             var error = value['profile-error-message'] + ': ';
-            if(result.emailError != 'ok')
-              error += '('+result.emailError;
-            if(result.nameError != 'ok')
-              error += result.nameError;
-            if(result.genderError != 'ok')
-              error += result.genderError;
-            if(result.dateOfBirthError != 'ok')
-              error += result.dateOfBirthError;
+            if(this.responseData.emailError != 'ok')
+              error += '('+this.responseData.emailError;
+            if(this.responseData.nameError != 'ok')
+              error += this.responseData.nameError;
+            if(this.responseData.genderError != 'ok')
+              error += this.responseData.genderError;
+            if(this.responseData.dateOfBirthError != 'ok')
+              error += this.responseData.dateOfBirthError;
 
             this.response_text = error;
           });

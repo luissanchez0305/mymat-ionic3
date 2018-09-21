@@ -49,7 +49,7 @@
             <ion-datetime [max]="maxDateOfPicker" displayFormat="MMM DD, YYYY" pickerFormat="YYYY-MM-DD" formControlName="birthDate"></ion-datetime>
           </ion-item>
           <ion-item>
-            <button type="submit" ion-button *ngIf="showSubmitButton" [disabled]="!subscribeForm.valid" [disabled]="subscribeDisabled" class="button-contact button-calm">{{ 'button-send' | translate }}</button>
+            <button type="submit" ion-button *ngIf="showSubmitButton" [disabled]="!subscribeForm.valid" class="button-contact button-calm">{{ 'button-send' | translate }}</button>
           </ion-item>
         </ion-list>
         <div padding>
