@@ -7,6 +7,7 @@ import { Storage } from '@ionic/storage';
 import { TranslateService } from '@ngx-translate/core';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { Constants } from '../../services/constants';
+import { SliderPage } from '../slider/slider';
 
 /**
  * Generated class for the SubscribePage page.
@@ -67,7 +68,8 @@ export class SubscribePage {
             this.response_text = value['profile-success-message'];
 
             setTimeout(() => {
-              this.navCtrl.pop();
+              // despliega la vista de de instrucciones
+              this.navCtrl.push(SliderPage);
             }, 5000);
 
           });

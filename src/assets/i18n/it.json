@@ -19,6 +19,7 @@
         "home-title" : "HOME",
         "help-title" : "AIUTO",
         "contact-title" : "CONTATTACI",
+        "slider-title" : "ISTRUZIONI",
         "email-success-message": "Il tuo messaggio è stato inviato! Ti contatteremo il prima possibile",
         "email-success-title": "Inviato",
         "email-error-message": "C'è stato un errore nell'invio dell'email",

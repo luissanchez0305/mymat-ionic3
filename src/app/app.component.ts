@@ -9,6 +9,7 @@ import { Constants } from '../services/constants';
 import { HomePage } from '../pages/home/home';
 import { HelpPage } from '../pages/help/help';
 import { ContactPage } from '../pages/contact/contact';
+import { SliderPage } from '../pages/slider/slider';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -25,7 +26,7 @@ export class MyApp {
   lang_gr : boolean;
   lang_it : boolean;
 
-  pages: Array<{title: string, component: any, icon: any}>;
+  pages: Array<{title: string, component: any, icon: any, isPush: boolean}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,
     private translateService: TranslateService, public menuCtrl: MenuController, private storage: Storage,
@@ -34,19 +35,20 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'home-title', component: HomePage, icon: 'menuitemhome' },
-      { title: 'help-title', component: HelpPage, icon: 'menuitemhelp' },
-      { title: 'contact-title', component: ContactPage, icon: 'menuitemcontact' }
+      { title: 'home-title', component: HomePage, icon: 'menuitemhome', isPush: false },
+      { title: 'help-title', component: HelpPage, icon: 'menuitemhelp', isPush: false },
+      { title: 'contact-title', component: ContactPage, icon: 'menuitemcontact', isPush: false },
+      { title: 'slider-title', component: SliderPage, icon: '', isPush: true}
     ];
     platform.ready().then(() => {
       this.storage.get(Constants.storageKeyLang).then((value)=>{
         if(!value){
           value = navigator.language.split('-')[0];
-          translateService.setDefaultLang(value);  
+          translateService.setDefaultLang(value);
         }
-        translateService.use(value);  
+        translateService.use(value);
         this.switchLang(value);
-      });          
+      });
     });
   }
 
@@ -62,9 +64,12 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    if(page.isPush)
+      this.nav.push(page.component);
+    else
+      this.nav.setRoot(page.component);
   }
-  
+
   switchLang(lang){
 	  this.events.publish('switchLangEvent',lang);
     switch(lang){

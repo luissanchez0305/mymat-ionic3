@@ -19,6 +19,7 @@ import { WifiPage } from '../pages/wifi/wifi';
 import { PlayingPage } from '../pages/playing/playing';
 import { ProgramPage } from '../pages/program/program';
 import { SubscribePage } from '../pages/subscribe/subscribe';
+import { SliderPage } from '../pages/slider/slider';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -41,6 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     WifiPage,
     PlayingPage,
     SubscribePage,
+    SliderPage,
     ProgramPage
   ],
   imports: [
@@ -67,6 +69,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     WifiPage,
     PlayingPage,
     SubscribePage,
+    SliderPage,
     ProgramPage
   ],
   providers: [
