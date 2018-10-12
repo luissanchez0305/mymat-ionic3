@@ -38,7 +38,7 @@ export class MyApp {
       { title: 'home-title', component: HomePage, icon: 'menuitemhome', isPush: false },
       { title: 'help-title', component: HelpPage, icon: 'menuitemhelp', isPush: false },
       { title: 'contact-title', component: ContactPage, icon: 'menuitemcontact', isPush: false },
-      { title: 'slider-title', component: SliderPage, icon: '', isPush: true}
+      { title: 'slider-title', component: SliderPage, icon: 'menuiteminfo', isPush: true}
     ];
     platform.ready().then(() => {
       this.storage.get(Constants.storageKeyLang).then((value)=>{

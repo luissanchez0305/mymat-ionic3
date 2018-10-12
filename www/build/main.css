@@ -26321,6 +26321,14 @@ button[disabled].greenbtn {
   background-position: 7% 0px;
 }
 
+.menuiteminfo .item-content {
+  background-color: #FFF !important;
+  background-image: url(../img/i-hh_1.png) !important;
+  padding-left: 50px;
+  background-position: top right;
+  background-position: 7% -1px;
+}
+
 .menuitem {
   border: thin solid #D1D2D4;
 }
@@ -26754,6 +26762,10 @@ ion-scroll .scroll-content {
 
 page-help .item {
   background-color: #FFF;
+}
+
+page-slider img {
+  max-width: 94% !important;
 }
 
 page-wifi iframe {
