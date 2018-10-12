@@ -209,7 +209,7 @@ var SliderPage = (function () {
     };
     SliderPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-slider',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\slider\slider.html"*/'<ion-header *ngIf="showHeader">\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n  <ion-item class="no-conection" *ngIf="!isDeviceOnline">{{ offline_device }}</ion-item>\n</ion-header>\n\n<ion-content padding no-border>\n    <ion-slides>\n        <ion-slide>\n            <img src="./assets/imgs/1.png"/>\n        </ion-slide>\n        <ion-slide>\n            <img src="./assets/imgs/2.png"/>\n        </ion-slide>\n        <ion-slide>\n            <img src="./assets/imgs/3.png"/>\n        </ion-slide>\n        <ion-slide>\n            <img src="./assets/imgs/4.png"/>\n        </ion-slide>\n        <ion-slide>\n            <img src="./assets/imgs/5.png"/>\n        </ion-slide>\n    </ion-slides>\n</ion-content>\n<ion-footer>\n  <ion-toolbar color="dark">\n    <ion-buttons end>\n        <button ion-button class="button-clear" (click)="skipInstructions()">\n            Skip\n        </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\slider\slider.html"*/,
+            selector: 'page-slider',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\slider\slider.html"*/'<ion-header *ngIf="showHeader">\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n  <ion-item class="no-conection" *ngIf="!isDeviceOnline">{{ offline_device }}</ion-item>\n</ion-header>\n\n<ion-content padding no-border>\n    <ion-slides>\n        <ion-slide>\n            <img src="./assets/imgs/1.png"/>\n        </ion-slide>\n        <ion-slide>\n            <img src="./assets/imgs/2.png"/>\n        </ion-slide>\n        <ion-slide>\n            <img src="./assets/imgs/3.png"/>\n        </ion-slide>\n        <ion-slide>\n            <img src="./assets/imgs/4.png"/>\n        </ion-slide>\n        <ion-slide>\n            <img src="./assets/imgs/5.png"/>\n        </ion-slide>\n    </ion-slides>\n</ion-content>\n<ion-footer>\n  <ion-toolbar color="dark">\n    <ion-buttons end>\n        <button ion-button class="button-clear" (click)="skipInstructions()">\n            {{ \'skip\' | translate }}\n        </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\slider\slider.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */], __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
             __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_network__["a" /* Network */]])
@@ -1820,11 +1820,20 @@ var MyApp = (function () {
             _this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyLang).then(function (value) {
                 if (!value) {
                     value = navigator.language.split('-')[0];
+                    if (!value)
+                        value = 'en';
                     translateService.setDefaultLang(value);
                 }
                 translateService.use(value);
                 _this.switchLang(value);
+            })
+                .catch(function (err) {
+                var value = 'en';
+                translateService.setDefaultLang(value);
+                translateService.use(value);
+                _this.switchLang(value);
             });
+            ;
         });
     }
     MyApp.prototype.initializeApp = function () {

@@ -19,6 +19,7 @@
     "help-title" : "HELP",
     "contact-title" : "CONTACT US",
     "slider-title" : "INSTRUCTIONS",
+    "skip" : "Skip",
     "email-success-message": "Your message have been sent! We'll contact you as soon as possible",
     "email-success-title": "Sent",
     "email-error-message": "There's been an error sending the email",

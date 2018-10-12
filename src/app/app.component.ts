@@ -44,11 +44,19 @@ export class MyApp {
       this.storage.get(Constants.storageKeyLang).then((value)=>{
         if(!value){
           value = navigator.language.split('-')[0];
+          if(!value)
+            value = 'en';
           translateService.setDefaultLang(value);
         }
         translateService.use(value);
         this.switchLang(value);
-      });
+      })
+      .catch(err => {
+          var value = 'en';
+          translateService.setDefaultLang(value);
+          translateService.use(value);
+          this.switchLang(value);
+      });;
     });
   }
 
