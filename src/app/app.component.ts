@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, enableProdMode } from '@angular/core';
 import { MenuController, Events } from 'ionic-angular';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -31,6 +31,7 @@ export class MyApp {
     private translateService: TranslateService, public menuCtrl: MenuController, private storage: Storage,
     public events : Events) {
     this.initializeApp();
+    enableProdMode();
 
     // used for an example of ngFor and navigation
     this.pages = [
@@ -42,11 +43,11 @@ export class MyApp {
       this.storage.get(Constants.storageKeyLang).then((value)=>{
         if(!value){
           value = navigator.language.split('-')[0];
-          translateService.setDefaultLang(value);  
+          translateService.setDefaultLang(value);
         }
-        translateService.use(value);  
+        translateService.use(value);
         this.switchLang(value);
-      });          
+      });
     });
   }
 
@@ -64,7 +65,7 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
-  
+
   switchLang(lang){
 	  this.events.publish('switchLangEvent',lang);
     switch(lang){
