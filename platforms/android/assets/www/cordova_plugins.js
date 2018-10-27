@@ -9,6 +9,14 @@ module.exports = [
     ]
   },
   {
+    "id": "cordova-plugin-datepicker.DatePicker",
+    "file": "plugins/cordova-plugin-datepicker/www/android/DatePicker.js",
+    "pluginId": "cordova-plugin-datepicker",
+    "clobbers": [
+      "datePicker"
+    ]
+  },
+  {
     "id": "cordova-plugin-device.device",
     "file": "plugins/cordova-plugin-device/www/device.js",
     "pluginId": "cordova-plugin-device",
@@ -92,20 +100,13 @@ module.exports = [
       "cordova.plugins.Keyboard"
     ],
     "runs": true
-  },
-  {
-    "id": "cordova-plugin-datepicker.DatePicker",
-    "file": "plugins/cordova-plugin-datepicker/www/android/DatePicker.js",
-    "pluginId": "cordova-plugin-datepicker",
-    "clobbers": [
-      "datePicker"
-    ]
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
   "cordova-plugin-badge": "0.8.7",
+  "cordova-plugin-datepicker": "0.9.3",
   "cordova-plugin-device": "1.1.4",
   "cordova-plugin-email-composer": "0.8.12",
   "cordova-plugin-local-notification": "0.9.0-beta.2",
@@ -113,8 +114,7 @@ module.exports.metadata =
   "cordova-plugin-networkinterface": "1.2.0",
   "cordova-plugin-splashscreen": "4.0.3",
   "cordova-plugin-whitelist": "1.3.1",
-  "ionic-plugin-keyboard": "2.2.1",
-  "cordova-plugin-datepicker": "0.9.3"
+  "ionic-plugin-keyboard": "2.2.1"
 };
 // BOTTOM OF METADATA
 });
