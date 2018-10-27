@@ -75,4 +75,5 @@ export function HttpLoaderFactory(http: HttpClient) {
     APIServiceProvider
   ]
 })
-export class AppModule {}
+export class AppModule {
+}
