@@ -68,9 +68,14 @@
                 <div class="programdesc" [innerHTML]="'elements-meridians' | translate"><br></div>
             </ion-row>
 
-            <ion-row nowrap class="program {{ petsButton ? '' : 'opacity-50' }}" (click)="selectPreSetProgram('pets')">
+            <ion-row nowrap class="program {{ petssButton ? '' : 'opacity-50' }}" (click)="selectPreSetProgram('petss')">
+                <div class="programpic"><img src="img/Mascotas-Azul-Claro.png"></div>
+                <div class="programdesc" [innerHTML]="'petss' | translate"><br></div>
+            </ion-row>
+
+            <ion-row nowrap class="program {{ petsxButton ? '' : 'opacity-50' }}" (click)="selectPreSetProgram('petsx')">
                 <div class="programpic"><img src="img/Mascotas-Azul.png"></div>
-                <div class="programdesc" [innerHTML]="'pets' | translate"><br></div>
+                <div class="programdesc" [innerHTML]="'petsx' | translate"><br></div>
             </ion-row>
     </ion-scroll>
 
