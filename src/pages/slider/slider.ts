@@ -1,10 +1,9 @@
 import { Component, NgZone } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { Network } from '@ionic-native/network';
 import { Storage } from '@ionic/storage';
 import { TranslateService } from '@ngx-translate/core';
 import { Constants } from '../../services/constants';
-import { HomePage } from '../home/home';
 /**
  * Generated class for the SliderPage page.
  *

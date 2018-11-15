@@ -67,7 +67,7 @@ export class HomePage {
     this.storage.get(Constants.deviceInfo).then((info)=>{
       if(typeof info === 'undefined' || info == null){
         var uuid ={ uuid : this.device.uuid };
-        if(uuid != null){
+        if(uuid != null && window.cordova){
           this.apiService.runPost('check_device.php',uuid).then((result) => {
             this.isDeviceOnline = true;
             var obj : any = result;

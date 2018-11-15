@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
-import { DatePicker } from '@ionic-native/date-picker';
 import { Device } from '@ionic-native/device';
 import { Storage } from '@ionic/storage';
 import { TranslateService } from '@ngx-translate/core';
@@ -27,7 +26,7 @@ export class SubscribePage {
   private maxDate : string;
   private response_text : string;
   private responseData : any;
-  constructor(public navCtrl: NavController, public navParams: NavParams, private datePicker: DatePicker,
+  constructor(public navCtrl: NavController, public navParams: NavParams,
     private formBuilder: FormBuilder, private storage: Storage, public apiService : APIServiceProvider,
     private translateService: TranslateService, private device: Device) {
 
