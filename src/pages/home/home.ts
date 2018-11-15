@@ -66,10 +66,12 @@ export class HomePage {
 
     this.storage.get(Constants.deviceInfo).then((info)=>{
       if(typeof info === 'undefined' || info == null){
-        var uuid ={ uuid : this.device.uuid };
-        if(uuid != null && window.hasOwnProperty('cordova')){
+        if(window.hasOwnProperty('cordova')){
+          var formData = new FormData();
+          formData.append('uuid', this.device.uuid);
+          
           alert('check_device');
-          this.apiService.runPost('check_device.php',uuid).then((result) => {
+          this.apiService.runPost('check_device.php',formData).then((result) => {
             alert('check_device success');
             this.isDeviceOnline = true;
             var obj : any = result;
