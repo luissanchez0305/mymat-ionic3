@@ -7,19 +7,7 @@
     "files": {}
   },
   "installed_plugins": {
-    "ionic-plugin-keyboard": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-networkinterface": {
+    "cordova-plugin-datepicker": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "cordova-plugin-email-composer": {
@@ -28,15 +16,27 @@
     "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
-    "cordova-plugin-datepicker": {
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+    "cordova-plugin-networkinterface": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+    "ionic-plugin-keyboard": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-device": {
+    "cordova-plugin-badge": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
-    "cordova-plugin-badge": {
+    "cordova-plugin-device": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   }

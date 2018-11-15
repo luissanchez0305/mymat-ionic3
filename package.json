@@ -80,8 +80,8 @@
       "cordova-plugin-datepicker": {}
     },
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }

@@ -69,6 +69,7 @@ export class HomePage {
         var uuid ={ uuid : this.device.uuid };
         if(uuid != null && window.hasOwnProperty('cordova')){
           this.apiService.runPost('check_device.php',uuid).then((result) => {
+            alert('check_device success');
             this.isDeviceOnline = true;
             var obj : any = result;
             if (obj.found == "0") {
@@ -76,6 +77,7 @@ export class HomePage {
               this.navCtrl.push(SubscribePage);
             }
           }, (result) => {
+            alert('check_device error ' + result);
             this.isDeviceOnline = false;
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((value) => {
