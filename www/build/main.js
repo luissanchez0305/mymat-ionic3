@@ -382,6 +382,7 @@ var HomePage = (function () {
             if (typeof info === 'undefined' || info == null) {
                 var uuid = { uuid: _this.device.uuid };
                 if (uuid != null && window.hasOwnProperty('cordova')) {
+                    alert('check_device');
                     _this.apiService.runPost('check_device.php', uuid).then(function (result) {
                         alert('check_device success');
                         _this.isDeviceOnline = true;

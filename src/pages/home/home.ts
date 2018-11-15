@@ -68,6 +68,7 @@ export class HomePage {
       if(typeof info === 'undefined' || info == null){
         var uuid ={ uuid : this.device.uuid };
         if(uuid != null && window.hasOwnProperty('cordova')){
+          alert('check_device');
           this.apiService.runPost('check_device.php',uuid).then((result) => {
             alert('check_device success');
             this.isDeviceOnline = true;
