@@ -1,4 +1,3 @@
-import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 
@@ -15,7 +14,7 @@ export class RoutinesProvider {
   public program3 : string;
   public program4 : string;
   
-  constructor(public http: Http, public storage: Storage) {
+  constructor(public storage: Storage) {
     console.log('Hello RoutinesProvider Provider');
   }
   
