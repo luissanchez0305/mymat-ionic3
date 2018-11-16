@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Programs</ion-title>
+    <ion-title>{{ 'programs' | translate }}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -74,7 +74,7 @@
             </ion-row>
 
             <ion-row nowrap class="program {{ petsxButton ? '' : 'opacity-50' }}" (click)="selectPreSetProgram('petsx')">
-                <div class="programpic"><img src="img/Mascotas-Azul.png"></div>
+                <div class="programpic"><img src="img/MascotasGrandes_2.png"></div>
                 <div class="programdesc" [innerHTML]="'petsx' | translate"><br></div>
             </ion-row>
     </ion-scroll>

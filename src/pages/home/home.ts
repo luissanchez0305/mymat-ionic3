@@ -70,9 +70,8 @@ export class HomePage {
           var formData = new FormData();
           formData.append('uuid', this.device.uuid);
           
-          alert('check_device');
           this.apiService.runPost('check_device.php',formData).then((result) => {
-            alert('check_device success');
+            //console.log('check_device success');
             this.isDeviceOnline = true;
             var obj : any = result;
             if (obj.found == "0") {
@@ -80,7 +79,7 @@ export class HomePage {
               this.navCtrl.push(SubscribePage);
             }
           }, (result) => {
-            alert('check_device error ' + result);
+            //console.log('check_device error ' + result);
             this.isDeviceOnline = false;
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((value) => {
