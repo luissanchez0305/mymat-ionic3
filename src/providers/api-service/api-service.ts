@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Constants } from '../../services/constants';
 //import { Network } from '@ionic-native/network';
 import 'rxjs/add/operator/map';
@@ -28,8 +28,9 @@ export class APIServiceProvider {
   }
 
   test(){
+    let headers = new HttpHeaders({'Content-Type': 'text/html'});
     return new Promise((resolve, reject) => {
-      this.http.get(Constants.myMatApiIndexUrl)
+      this.http.get(Constants.myMatApiIndexUrl, {headers: headers})
       .subscribe(res => {
         resolve(res);
       }, (err) => {
