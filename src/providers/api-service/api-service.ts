@@ -28,7 +28,7 @@ export class APIServiceProvider {
   }
 
   test(){
-    let headers = new HttpHeaders({'Content-Type': 'text/html'});
+    let headers = new HttpHeaders({'Content-Type': 'text/html; charset=utf-8'});
     return new Promise((resolve, reject) => {
       this.http.get(Constants.myMatApiIndexUrl, {headers: headers})
       .subscribe(res => {
