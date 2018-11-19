@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Http, Headers } from '@angular/http';
 import { HttpClient } from '@angular/common/http';
 import { Constants } from '../../services/constants';
 //import { Network } from '@ionic-native/network';
@@ -13,7 +14,7 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class APIServiceProvider {
-  constructor(public http: HttpClient/*, private network: Network*/) {
+  constructor(public http: HttpClient, public httpModule: Http, /*, private network: Network*/) {
 
   }
   test_language(){
@@ -28,8 +29,10 @@ export class APIServiceProvider {
   }
 
   test(){
+    let headers = new Headers();
     return new Promise((resolve, reject) => {
-      this.http.get(Constants.myMatApiIndexUrl)
+      this.httpModule.get(Constants.myMatApiIndexUrl, { headers: headers })
+      .map(res => res.text())
       .subscribe(res => {
         resolve(res);
       }, (err) => {
@@ -58,8 +61,9 @@ export class APIServiceProvider {
 
     var url = Constants.myMatApiStartUrl+"?P1="+program1+"&P2="+program2+"&P3="+program3+"&P4="+program4;
 
-    return new Promise((resolve, reject) => {
-      this.http.get(url)
+    return new Promise((resolve, reject) => {      
+      this.httpModule.get(url)
+      .map(res => res.text())
       .subscribe(res => {
         resolve('success: ' + url);
       }, (err) => {
