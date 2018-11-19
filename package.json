@@ -83,5 +83,9 @@
       "ios",
       "android"
     ]
+  },
+  "config": {
+    "ionic_bundler": "webpack",
+    "ionic_source_map_type": "#inline-source-map"
   }
 }
