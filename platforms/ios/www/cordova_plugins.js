@@ -1,45 +1,11 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
   {
-    "id": "ionic-plugin-keyboard.keyboard",
-    "file": "plugins/ionic-plugin-keyboard/www/ios/keyboard.js",
-    "pluginId": "ionic-plugin-keyboard",
+    "id": "cordova-plugin-device.device",
+    "file": "plugins/cordova-plugin-device/www/device.js",
+    "pluginId": "cordova-plugin-device",
     "clobbers": [
-      "cordova.plugins.Keyboard"
-    ],
-    "runs": true
-  },
-  {
-    "id": "cordova-plugin-splashscreen.SplashScreen",
-    "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-    "pluginId": "cordova-plugin-splashscreen",
-    "clobbers": [
-      "navigator.splashscreen"
-    ]
-  },
-  {
-    "id": "cordova-plugin-network-information.network",
-    "file": "plugins/cordova-plugin-network-information/www/network.js",
-    "pluginId": "cordova-plugin-network-information",
-    "clobbers": [
-      "navigator.connection",
-      "navigator.network.connection"
-    ]
-  },
-  {
-    "id": "cordova-plugin-network-information.Connection",
-    "file": "plugins/cordova-plugin-network-information/www/Connection.js",
-    "pluginId": "cordova-plugin-network-information",
-    "clobbers": [
-      "Connection"
-    ]
-  },
-  {
-    "id": "cordova-plugin-networkinterface.networkinterface",
-    "file": "plugins/cordova-plugin-networkinterface/www/networkinterface.js",
-    "pluginId": "cordova-plugin-networkinterface",
-    "clobbers": [
-      "window.networkinterface"
+      "device"
     ]
   },
   {
@@ -49,14 +15,6 @@ module.exports = [
     "clobbers": [
       "cordova.plugins.email",
       "plugin.email"
-    ]
-  },
-  {
-    "id": "cordova-plugin-device.device",
-    "file": "plugins/cordova-plugin-device/www/device.js",
-    "pluginId": "cordova-plugin-device",
-    "clobbers": [
-      "device"
     ]
   },
   {
@@ -94,6 +52,48 @@ module.exports = [
     ]
   },
   {
+    "id": "cordova-plugin-network-information.network",
+    "file": "plugins/cordova-plugin-network-information/www/network.js",
+    "pluginId": "cordova-plugin-network-information",
+    "clobbers": [
+      "navigator.connection",
+      "navigator.network.connection"
+    ]
+  },
+  {
+    "id": "cordova-plugin-network-information.Connection",
+    "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+    "pluginId": "cordova-plugin-network-information",
+    "clobbers": [
+      "Connection"
+    ]
+  },
+  {
+    "id": "cordova-plugin-networkinterface.networkinterface",
+    "file": "plugins/cordova-plugin-networkinterface/www/networkinterface.js",
+    "pluginId": "cordova-plugin-networkinterface",
+    "clobbers": [
+      "window.networkinterface"
+    ]
+  },
+  {
+    "id": "cordova-plugin-splashscreen.SplashScreen",
+    "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+    "pluginId": "cordova-plugin-splashscreen",
+    "clobbers": [
+      "navigator.splashscreen"
+    ]
+  },
+  {
+    "id": "ionic-plugin-keyboard.keyboard",
+    "file": "plugins/ionic-plugin-keyboard/www/ios/keyboard.js",
+    "pluginId": "ionic-plugin-keyboard",
+    "clobbers": [
+      "cordova.plugins.Keyboard"
+    ],
+    "runs": true
+  },
+  {
     "id": "cordova-plugin-datepicker.DatePicker",
     "file": "plugins/cordova-plugin-datepicker/www/ios/DatePicker.js",
     "pluginId": "cordova-plugin-datepicker",
@@ -105,15 +105,15 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-  "ionic-plugin-keyboard": "2.2.1",
-  "cordova-plugin-whitelist": "1.3.3",
-  "cordova-plugin-splashscreen": "4.1.0",
+  "cordova-plugin-device": "1.1.7",
+  "cordova-plugin-email-composer": "0.8.15",
+  "cordova-plugin-badge": "0.8.8",
+  "cordova-plugin-local-notification": "0.9.0-beta.2",
   "cordova-plugin-network-information": "2.0.1",
   "cordova-plugin-networkinterface": "1.2.0",
-  "cordova-plugin-email-composer": "0.8.15",
-  "cordova-plugin-device": "1.1.7",
-  "cordova-plugin-badge": "0.8.7",
-  "cordova-plugin-local-notification": "0.9.0-beta.2",
+  "cordova-plugin-splashscreen": "4.1.0",
+  "cordova-plugin-whitelist": "1.3.3",
+  "ionic-plugin-keyboard": "2.2.1",
   "cordova-plugin-datepicker": "0.9.3"
 };
 // BOTTOM OF METADATA
