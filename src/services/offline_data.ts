@@ -2156,7 +2156,7 @@ export var Data = { Groups : [
              ]
             },
         {
-            category: 'elements',            
+            category: 'elements',
             name: 'wood-element-upper',
             programs: [
                 {
@@ -2364,9 +2364,489 @@ export var Data = { Groups : [
                     description: ''
                 }
              ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper1',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper2',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Detoxification",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Large_Intestine_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper3',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Liver_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Intestinal_Flora",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper4',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Bone_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper5',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Skin_Conditions",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Connective_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper6',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Muscle_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper7',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Relaxation",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper8',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Respiratory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lung_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper1',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper2',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Detoxification",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Large_Intestine_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper3',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Liver_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Intestinal_Flora",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper4',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Bone_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper5',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Skin_Conditions",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Connective_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper6',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Muscle_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper7',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Relaxation",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper8',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Respiratory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lung_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
         }
     ],
-    Programs : [        
+    Programs : [
         {
             name: 'earth-element-upper',
             apiName: "Earth_Element",
@@ -2386,7 +2866,7 @@ export var Data = { Groups : [
             description: 'metal-element-description'
         },
         {
-            name: 'water-element-upper', 
+            name: 'water-element-upper',
             apiName: "Water_Element",
             runningtime: "17:20",
             description: 'water-element-description'
@@ -2396,7 +2876,7 @@ export var Data = { Groups : [
             apiName: "Wood_Element",
             runningtime: "17:09",
             description: 'wood-element-description'
-        },   
+        },
         {
             name: 'gallbladder-meridian-upper',
             apiName: "Gallbladder_Meridian",
@@ -2433,7 +2913,7 @@ export var Data = { Groups : [
             apiName: "Lung_Meridian",
             runningtime: "16:38",
             description: 'lung-meridian-description'
-        }, 
+        },
         {
             name: 'pericardium-meridian-upper',
             apiName: "Pericardium_Meridian",
@@ -2469,7 +2949,7 @@ export var Data = { Groups : [
             apiName: "Urinary_Bladder_Meridian",
             runningtime: "14:19",
             description: 'urinary-bladder-meridian-description'
-        },            
+        },
         {
             name: "first-chakra-upper",
             apiName: "Root_Chakra",
@@ -2511,7 +2991,7 @@ export var Data = { Groups : [
             apiName: "Crown_Chakra",
             runningtime: "13:45",
             description: '7-chakra-description'
-        },         
+        },
         {
             name: 'addiction-upper',
             apiName: "Addiction",
@@ -2828,39 +3308,39 @@ export var Data = { Groups : [
             description: 'skin-conditions-description'
         },
         {
-            name: 'sleep-enhancer-upper',                       
+            name: 'sleep-enhancer-upper',
             apiName: "Sleep_Enhancer",
             runningtime: "19:58",
             description: 'sleep-enhancer-description'
         },
         {
-            name: 'stress-relief-upper',  
+            name: 'stress-relief-upper',
             apiName: "Frustration",
             runningtime: "18:55",
             description: 'stress-relief-description'
         },
         {
-            name: 'thyroid-glands-upper',  
+            name: 'thyroid-glands-upper',
             apiName: "Thyroid_Glands",
             runningtime: "17:53",
             description: 'thyroid-glands-description'
         },
 
         {
-            name: 'urinary-upper',  
+            name: 'urinary-upper',
             apiName: "Urinary_System/Cystitis",
             runningtime: "13:39",
             description: 'urinary-description'
         },
 
         {
-            name: 'vertebrae-upper', 
+            name: 'vertebrae-upper',
             apiName: "Vertebrae",
             runningtime: "12:53",
             description: 'vertebrae-description'
         },
         {
-            name: 'vitality-upper', 
+            name: 'vitality-upper',
             apiName: "Vitality",
             runningtime: "14:00",
             description: 'vitality-description'
@@ -2870,6 +3350,18 @@ export var Data = { Groups : [
             apiName: "Weight_Control",
             runningtime: "14:50",
             description: 'weight-control-description'
+        },
+        {
+            name: 'petss-program-upper',
+            apiName: "Pet_1",
+            runningtime: "11:50",
+            description: 'petss-program-description'
+        },
+        {
+            name: 'petsx-program-upper',
+            apiName: "Pet_2",
+            runningtime: "12:50",
+            description: 'petsx-program-description'
         }
     ]
 };

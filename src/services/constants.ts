@@ -2,7 +2,7 @@ export var Constants = {
     localIPAddress    : '192.168.0.100',
   	myMatApiStartUrl  : 'http://192.168.1.3/start.htm',
     myMatApiIndexUrl  : 'http://192.168.1.3/index.htm',
-  	myMatApiUrl       : 'http://www.mymat.life/api/',
+  	myMatApiUrl       : 'https://www.esferasoluciones.com/api/mymat/',
     storageKeyLang    : 'mymat_lang',
     storageKeyBubble1 : 'MyMat_bubbleRoutineProgram1',
     storageKeyBubble2 : 'MyMat_bubbleRoutineProgram2',
@@ -10,6 +10,7 @@ export var Constants = {
     storageKeyBubble4 : 'MyMat_bubbleRoutineProgram4',
     storageKeyScrollTop : 'MyMat_scrollTop',
     storageKeyCurrentProgram : 'MyMat_currentProgram',
+    deviceInfo: 'MyMatDevice',
     shortTitles       : [
                         'earth-element-upper',
                         'fire-element-upper',

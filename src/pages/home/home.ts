@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 import { NavController, Events } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { ProgramsPage } from '../programs/programs';
 import { WifiPage } from '../wifi/wifi';
+import { SubscribePage } from '../subscribe/subscribe';
 import { RoutinesProvider } from '../../providers/routines/routines';
 import { Constants } from '../../services/constants';
 import { TranslateService } from '@ngx-translate/core';
+import { Network } from '@ionic-native/network';
+import { Device } from '@ionic-native/device';
+import { APIServiceProvider } from '../../providers/api-service/api-service';
 
 @Component({
   selector: 'page-home',
@@ -22,9 +26,12 @@ export class HomePage {
   public bubblesCurrentState2 : boolean;
   public bubblesCurrentState3 : boolean;
   public bubblesCurrentState4 : boolean;
+  public isDeviceOnline : boolean;
+  public offline_device : string;
 
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
-    private translateService: TranslateService, public events: Events) {
+    private translateService: TranslateService, private network: Network, private zone: NgZone,
+    public events: Events, private device: Device, public apiService : APIServiceProvider) {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){
@@ -38,6 +45,51 @@ export class HomePage {
         this.checkAllBubbles();
     });
     this.AllBubblesChecked(this.routines.getPrograms());
+    this.isDeviceOnline = true;
+    // watch network for a disconnect
+    this.network.onDisconnect().subscribe(() => {
+      this.zone.run(() => {
+        this.isDeviceOnline = false;
+        this.storage.get(Constants.storageKeyLang).then((lang)=>{
+          this.translateService.getTranslation(lang).subscribe((value) => {
+            this.offline_device = value['offline-device-text'];
+          });
+        });
+      });
+    });
+    // watch network for a connection
+    this.network.onConnect().subscribe(() => {
+      this.zone.run(() => {
+        this.isDeviceOnline = true;
+      });
+    });
+
+    this.storage.get(Constants.deviceInfo).then((info)=>{
+      if(typeof info === 'undefined' || info == null){
+        if(window.hasOwnProperty('cordova')){
+          var formData = new FormData();
+          formData.append('uuid', this.device.uuid);
+          
+          this.apiService.runPost('check_device.php',formData).then((result) => {
+            //console.log('check_device success');
+            this.isDeviceOnline = true;
+            var obj : any = result;
+            if (obj.found == "0") {
+              // despliega la vista de insercion de datos
+              this.navCtrl.push(SubscribePage);
+            }
+          }, (result) => {
+            //console.log('check_device error ' + result);
+            this.isDeviceOnline = false;
+            this.storage.get(Constants.storageKeyLang).then((lang)=>{
+              this.translateService.getTranslation(lang).subscribe((value) => {
+                this.offline_device = value['offline-device-text-2'];
+              });
+            });
+          });
+        }
+      }
+    });
   }
 
   removeProgramFromRoutine(prg){
