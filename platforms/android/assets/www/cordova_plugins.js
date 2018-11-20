@@ -1,14 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
   {
-    "id": "cordova-plugin-badge.Badge",
-    "file": "plugins/cordova-plugin-badge/www/badge.js",
-    "pluginId": "cordova-plugin-badge",
-    "clobbers": [
-      "cordova.plugins.notification.badge"
-    ]
-  },
-  {
     "id": "cordova-plugin-device.device",
     "file": "plugins/cordova-plugin-device/www/device.js",
     "pluginId": "cordova-plugin-device",
@@ -23,6 +15,14 @@ module.exports = [
     "clobbers": [
       "cordova.plugins.email",
       "plugin.email"
+    ]
+  },
+  {
+    "id": "cordova-plugin-badge.Badge",
+    "file": "plugins/cordova-plugin-badge/www/badge.js",
+    "pluginId": "cordova-plugin-badge",
+    "clobbers": [
+      "cordova.plugins.notification.badge"
     ]
   },
   {
@@ -97,14 +97,14 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-  "cordova-plugin-badge": "0.8.7",
-  "cordova-plugin-device": "1.1.4",
-  "cordova-plugin-email-composer": "0.8.12",
+  "cordova-plugin-device": "1.1.7",
+  "cordova-plugin-email-composer": "0.8.15",
+  "cordova-plugin-badge": "0.8.8",
   "cordova-plugin-local-notification": "0.9.0-beta.2",
   "cordova-plugin-network-information": "2.0.1",
   "cordova-plugin-networkinterface": "1.2.0",
-  "cordova-plugin-splashscreen": "4.0.3",
-  "cordova-plugin-whitelist": "1.3.1",
+  "cordova-plugin-splashscreen": "4.1.0",
+  "cordova-plugin-whitelist": "1.3.3",
   "ionic-plugin-keyboard": "2.2.1"
 };
 // BOTTOM OF METADATA
