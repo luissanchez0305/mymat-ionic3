@@ -19,6 +19,7 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: 'wifi.html',
 })
 export class WifiPage {
+  public testBeginRoutineInterval : any;
   public testIPInterval : any;
   public testStatusInterval : any;
   public intervalCount : number = 0;
@@ -223,47 +224,81 @@ export class WifiPage {
           var program2Obj;
           var program3Obj;
           var program4Obj;
+          var error1Obj;
+          var error2Obj;
+          var error3Obj;
+          var error4Obj;
 
+          var isValidateSuccessProgram = 0;
+          var isValidateErrorProgram = 0;
+
+          var errors = [
           for(var i = 1; i <= 4; i++){
             switch(i){
               case 1:
                 this.storage.get(Constants.storageKeyBubble1).then((val) => {
                   program1Obj = val;
+                  isValidateSuccessProgram += 1;
+                }).catch((err) => {
+                  isValidateErrorProgram += 1;
+                  error1Obj = err;
                 });
                 break;
               case 2:
                 this.storage.get(Constants.storageKeyBubble2).then((val) => {
                   program2Obj = val;
+                  isValidateSuccessProgram += 1;
+                }).catch((err) => {
+                  isValidateErrorProgram += 1;
+                  error2Obj = err;
                 });
                 break;
               case 3:
                 this.storage.get(Constants.storageKeyBubble3).then((val) => {
                   program3Obj = val;
+                  isValidateSuccessProgram += 1;
+                }).catch((err) => {
+                  isValidateErrorProgram += 1;
+                  error3Obj = err;
                 });
                 break;
               case 4:
                 this.storage.get(Constants.storageKeyBubble4).then((val) => {
                   program4Obj = val;
-
-                  var programs = [
-                      program1Obj,
-                      program2Obj,
-                      program3Obj,
-                      program4Obj
-                  ];
-
-                  this.apiService.start(programs).then((response) => {
-                    console.log(response + '');
-                  }, (response) =>{
-                    console.log(response + '');
-                  });
-
-                  this.navCtrl.setRoot(PlayingPage);
+                  isValidateSuccessProgram += 1;
+                }).catch((err) => {
+                  isValidateErrorProgram += 1;
+                  error4Obj = err;
                 });
                 break;
             }
           }
-          /* CORRER RUTINA */
+
+          this.testBeginRoutineInterval = setInterval(() => {
+            if(isValidateSuccessProgram == 4){
+              var programs = [
+                  program1Obj,
+                  program2Obj,
+                  program3Obj,
+                  program4Obj
+              ];
+
+              this.apiService.start(programs).then((response) => {
+                console.log(response + '');
+              }, (response) =>{
+                alert('Error al cargar rutina, intente nuevamente - ' + response);
+              });
+
+              clearInterval(this.testBeginRoutineInterval);
+
+              /* CORRER RUTINA */
+              this.navCtrl.setRoot(PlayingPage);
+            }
+            else if(isValidateSuccessProgram + isValidateErrorProgram == 4){
+              alert('Error al cargar rutina, intente nuevamente - ' + error1Obj + ' - ' + error2Obj+ ' - ' + error3Obj + ' - ' + error4Obj);
+              clearInterval(this.testBeginRoutineInterval);
+            }
+          }, 1000);
         }
         else{
           this.mymatWifi = true;

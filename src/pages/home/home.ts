@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, Events } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
+import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { ProgramsPage } from '../programs/programs';
 import { WifiPage } from '../wifi/wifi';
 import { RoutinesProvider } from '../../providers/routines/routines';
@@ -24,7 +25,7 @@ export class HomePage {
   public bubblesCurrentState4 : boolean;
 
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
-    private translateService: TranslateService, public events: Events) {
+    private translateService: TranslateService, public events: Events, public apiService : APIServiceProvider) {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){
@@ -150,6 +151,11 @@ export class HomePage {
         this.updateBubbles(1,name);
         this.routines.setProgram(1,name)
       }
+    }).catch((err) => {
+      var emailData = { area : 'checkAllBubbles 1', message : err };
+      this.apiService.sendError(emailData).then((result) => {
+        console.log(err);
+      });
     });
 
     this.storage.get(Constants.storageKeyBubble2).then((val)=>{
@@ -158,6 +164,11 @@ export class HomePage {
         this.updateBubbles(2,name);
         this.routines.setProgram(2,name)
       }
+    }).catch((err) => {
+      var emailData = { area : 'checkAllBubbles 2', message : err };
+      this.apiService.sendError(emailData).then((result) => {
+        console.log(err);
+      });
     });
 
     this.storage.get(Constants.storageKeyBubble3).then((val)=>{
@@ -166,6 +177,11 @@ export class HomePage {
         this.updateBubbles(3,name);
         this.routines.setProgram(3,name)
       }
+    }).catch((err) => {
+      var emailData = { area : 'checkAllBubbles 3', message : err };
+      this.apiService.sendError(emailData).then((result) => {
+        console.log(err);
+      });
     });
 
     this.storage.get(Constants.storageKeyBubble4).then((val)=>{
@@ -175,6 +191,11 @@ export class HomePage {
         this.routines.setProgram(4,name)
       }
       this.AllBubblesChecked(this.routines.getPrograms())
+    }).catch((err) => {
+      var emailData = { area : 'checkAllBubbles 4', message : err };
+      this.apiService.sendError(emailData).then((result) => {
+        console.log(err);
+      });
     });
   }
 }
