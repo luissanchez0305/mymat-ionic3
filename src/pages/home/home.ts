@@ -69,7 +69,7 @@ export class HomePage {
         if(window.hasOwnProperty('cordova')){
           var formData = new FormData();
           formData.append('uuid', this.device.uuid);
-          
+
           this.apiService.runPost('check_device.php',formData).then((result) => {
             //console.log('check_device success');
             this.isDeviceOnline = true;
@@ -202,6 +202,11 @@ export class HomePage {
         this.updateBubbles(1,name);
         this.routines.setProgram(1,name)
       }
+    }).catch((err) => {
+      var emailData = { area : 'checkAllBubbles 1', message : err };
+      this.apiService.sendError(emailData).then((result) => {
+        console.log(err);
+      });
     });
 
     this.storage.get(Constants.storageKeyBubble2).then((val)=>{
@@ -210,6 +215,11 @@ export class HomePage {
         this.updateBubbles(2,name);
         this.routines.setProgram(2,name)
       }
+    }).catch((err) => {
+      var emailData = { area : 'checkAllBubbles 2', message : err };
+      this.apiService.sendError(emailData).then((result) => {
+        console.log(err);
+      });
     });
 
     this.storage.get(Constants.storageKeyBubble3).then((val)=>{
@@ -218,6 +228,11 @@ export class HomePage {
         this.updateBubbles(3,name);
         this.routines.setProgram(3,name)
       }
+    }).catch((err) => {
+      var emailData = { area : 'checkAllBubbles 3', message : err };
+      this.apiService.sendError(emailData).then((result) => {
+        console.log(err);
+      });
     });
 
     this.storage.get(Constants.storageKeyBubble4).then((val)=>{
@@ -227,6 +242,11 @@ export class HomePage {
         this.routines.setProgram(4,name)
       }
       this.AllBubblesChecked(this.routines.getPrograms())
+    }).catch((err) => {
+      var emailData = { area : 'checkAllBubbles 4', message : err };
+      this.apiService.sendError(emailData).then((result) => {
+        console.log(err);
+      });
     });
   }
 }

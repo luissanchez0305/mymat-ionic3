@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.esferasoluciones.mymat_light" version="8.3.7" versionCode="58" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.esferasoluciones.mymat_light" version="8.3.8" versionCode="58" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <feature name="Badge">
+        <param name="android-package" value="de.appplant.cordova.plugin.badge.Badge" />
+    </feature>
+    <feature name="DatePickerPlugin">
+        <param name="android-package" value="com.plugin.datepicker.DatePickerPlugin" />
+    </feature>
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
@@ -26,12 +32,6 @@
     <feature name="Keyboard">
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
-    </feature>
-    <feature name="DatePickerPlugin">
-        <param name="android-package" value="com.plugin.datepicker.DatePickerPlugin" />
-    </feature>
-    <feature name="Badge">
-        <param name="android-package" value="de.appplant.cordova.plugin.badge.Badge" />
     </feature>
     <name>MyMat - Light</name>
     <description>MyMat 8</description>
