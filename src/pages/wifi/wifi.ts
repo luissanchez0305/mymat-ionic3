@@ -114,6 +114,7 @@ export class WifiPage {
       this.mymatStatus = true;
       this.showStatusTable = true;
       this.showLoading = false;
+      this.isRunRoutineEnabled = true;
       clearInterval(this.testStatusInterval);
       clearInterval(this.testIPInterval);
   }
