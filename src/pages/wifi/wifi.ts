@@ -306,6 +306,8 @@ export class WifiPage {
           }, 1000);
         }
         else{
+          this.showLoading = false;
+          this.isRunRoutineEnabled = true;
           this.mymatWifi = true;
           this.mymatStatus = false;
           this.showStatusTable = false;
@@ -313,6 +315,8 @@ export class WifiPage {
           this.failIPVerification();
         }
       },(response)=>{
+        this.showLoading = false;
+        this.isRunRoutineEnabled = true;
         this.mymatWifi = true;
         this.mymatStatus = false;
         this.showStatusTable = false;
