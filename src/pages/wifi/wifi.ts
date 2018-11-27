@@ -215,8 +215,8 @@ export class WifiPage {
 
   startRoutine(){
     /* ANTES DE COCRRER RUTINA VERIFICAR SI SE ESTA CONECTADO AL WIFI DEL MYMAT */
-    this.networkInterface.getWiFiIPAddress().then((response)=>{
-        if(response === Constants.localIPAddress){
+    this.apiService.test().then((response)=>{
+        if(this.verifyValues(response)){
           /* CORRER RUTINA */
           clearInterval(this.testStatusInterval);
           clearInterval(this.testIPInterval);
