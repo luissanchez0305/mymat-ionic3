@@ -232,7 +232,6 @@ export class WifiPage {
           var isValidateSuccessProgram = 0;
           var isValidateErrorProgram = 0;
 
-          var errors = [
           for(var i = 1; i <= 4; i++){
             switch(i){
               case 1:
