@@ -20,7 +20,7 @@
         <div *ngIf="mymatWifi">
             <img src="img/wifi.png">
             <div class="titleinstructions" [innerHTML]="'please-pair' | translate"></div>
-            <br>  
+            <br>
             <p [innerHTML]="'activate-wifi' | translate">Steps to pair your MyMat</p>
             <p [innerHTML]="'activate-wifi-1' | translate">1. Turn on your MyMat</p>
             <p [innerHTML]="'activate-wifi-2' | translate">2. On your device, navigate to your Wi-Fi settings</p>
@@ -44,7 +44,7 @@
                         </div>
                         <div class="divTableHead divTableCellFirstRight">
                             <h4 id="battery">{{ batteryCharge }} <img src="{{ batteryImg }}" height="16"></h4>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -68,6 +68,7 @@
                 </div>
             </div>
             <p>&nbsp;</p>
-            <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="'start-routine' | translate">LAUNCH MYMAT</a>
+            <a class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="'start-routine' | translate" [disabled]="!isRunRoutineEnabled">LAUNCH MYMAT</a>
+            <img *ngIf="showLoading" src="img/loading.gif" width="200" />
         </div>
 </ion-content>

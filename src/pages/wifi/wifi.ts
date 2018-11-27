@@ -35,6 +35,7 @@ export class WifiPage {
   public coilText4 : string;
   public showStatusTable : boolean;
   public showLoading : boolean;
+  public isRunRoutineEnabled : boolean;
 
   public iframeUrl: any;
   public showIframeStatus : boolean;
@@ -56,6 +57,7 @@ export class WifiPage {
     this.mymatStatus = false;
     this.showIframeStatus = false;
     this.showLoading = true;
+    this.isRunRoutineEnabled = true;
     if(this.platform.is('cordova')){
       this.networkInterface.getWiFiIPAddress().then((response)=>{
         if(response === Constants.localIPAddress){
@@ -215,7 +217,11 @@ export class WifiPage {
 
   startRoutine(){
     /* ANTES DE COCRRER RUTINA VERIFICAR SI SE ESTA CONECTADO AL WIFI DEL MYMAT */
+    this.showLoading = true;
+    this.isRunRoutineEnabled = false;
     this.apiService.test().then((response)=>{
+        this.showLoading = false;
+        this.isRunRoutineEnabled = true;
         if(this.verifyValues(response)){
           /* CORRER RUTINA */
           clearInterval(this.testStatusInterval);

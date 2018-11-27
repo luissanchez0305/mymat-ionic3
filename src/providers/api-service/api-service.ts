@@ -3,6 +3,7 @@ import { Http, Headers } from '@angular/http';
 import { Constants } from '../../services/constants';
 //import { Network } from '@ionic-native/network';
 import 'rxjs/add/operator/map';
+import { timeout } from 'rxjs/operators';
 //import * as $ from "jquery";
 
 /*
@@ -36,6 +37,9 @@ export class APIServiceProvider {
     headers.append('Upgrade-Insecure-Requests', '1');*/
     return new Promise((resolve, reject) => {
       this.http.get(Constants.myMatApiIndexUrl, { headers: headers })
+      .pipe(
+            timeout(5000) //5 seconds
+       )
       .map(res => res.text())
       .subscribe(res => {
         resolve(res);
