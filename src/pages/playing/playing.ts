@@ -140,15 +140,14 @@ export class PlayingPage {
                   title: 'MyMat Light',
                   text: prog['time-expire-text'],
                   sound: 'file://assets/sounds/' + (this.plt.is('ios') ? 'gong_c5.m4r' : 'gong_c5.mp3'),
-                  trigger: { at: new Date(t.getTime() + this.getSeconds(this.displayRunningTime) * 1000) }
+                  at: new Date(t.getTime() + this.getSeconds(this.displayRunningTime) * 1000)
                 });
 
-                this.localNotifications.on("click").subscribe({ next(notification) {
+                this.localNotifications.on("click", function (notification) {
                     if (notification.id == 1) {
                       var t = new Date();
                       $this.resume(t.getTime());
                     }
-                  }
                 });
               });
             });

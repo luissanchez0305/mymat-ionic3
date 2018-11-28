@@ -80,7 +80,7 @@ export class WifiPage {
     //this.mymatStatus = true;
     //this.showStatusTable = true;
 
-    this.batteryImg = 'img/b100.png';
+    this.batteryImg = 'assets/img/b100.pn';
     this.coilText1 = 'N/A';
     this.coilText2 = 'N/A';
     this.coilText3 = 'N/A';
@@ -135,15 +135,15 @@ export class WifiPage {
 
       var powerVal = power[0].substr(0,power[0].length-1);
       if(powerVal > 75)
-          this.batteryImg = 'img/b100.png';
+          this.batteryImg = 'assets/img/b100.png';
       else if(powerVal > 50)
-          this.batteryImg = 'img/b75.png';
+          this.batteryImg = 'assets/img/b75.png';
       else if(powerVal > 25)
-          this.batteryImg = 'img/b50.png';
+          this.batteryImg = 'assets/img/b50.png';
       else if(powerVal > 10)
-          this.batteryImg = 'img/b25.png';
+          this.batteryImg = 'assets/img/b25.png';
       else
-          this.batteryImg = 'img/b10.png';
+          this.batteryImg = 'assets/img/b10.png';
 
       this.coilText1 = coil1[0];
       this.coilText2 = coil2[0];

@@ -18,7 +18,7 @@
 <ion-content padding class="home center">
         <br>
         <div *ngIf="mymatWifi">
-            <img src="img/wifi.png">
+            <img src="assets/img/wifi.png">
             <div class="titleinstructions" [innerHTML]="'please-pair' | translate"></div>
             <br>
             <p [innerHTML]="'activate-wifi' | translate">Steps to pair your MyMat</p>
@@ -32,7 +32,7 @@
                 <p [innerHTML]="'no-detect-1' | translate">We were unable to detect your MyMat</p>
                 <p [innerHTML]="'no-detect-2' | translate">Please follow the steps to do so</p>
             </div>
-            <img *ngIf="showLoading" src="img/loading.gif" width="200" />
+            <img *ngIf="showLoading" src="assets/img/loading.gif" width="200" />
         </div>
         <div *ngIf="mymatStatus">
             <iframe *ngIf="showIframeStatus" height="100%" width="100%" [src]="iframeUrl" (click)="startRoutine()"></iframe>
@@ -69,6 +69,6 @@
             </div>
             <p>&nbsp;</p>
             <button [disabled]="!isRunRoutineEnabled" class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="'start-routine' | translate">LAUNCH MYMAT</button>
-            <img *ngIf="showLoading" src="img/loading.gif" width="200" />
+            <img *ngIf="showLoading" src="assets/img/loading.gif" width="200" />
         </div>
 </ion-content>
