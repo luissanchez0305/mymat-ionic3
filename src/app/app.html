@@ -1,14 +1,14 @@
 <ion-menu [content]="content">
   <ion-content>
     <ion-list>
-      <div class="menutitle"><img src="img/logomenu.png"></div>
+      <div class="menutitle"><img src="assets/img/logomenu.png"></div>
       <ion-item class="menuitemhome" menu-close>
-        <img *ngIf="lang_en" src="img/flag-england.png" width="35" height="35" (click)="switchLang('en')">
-        <img *ngIf="lang_es" src="img/flag-spain.png" width="35" height="35" (click)="switchLang('es')">
-        <img *ngIf="lang_it" src="img/flag-italy.png" width="35" height="35" (click)="switchLang('it')">
-        <img *ngIf="lang_gr" src="img/flag-germany.png" width="35" height="35" (click)="switchLang('gr')">
-        <img *ngIf="lang_fr" src="img/flag-france.png" width="35" height="35" (click)="switchLang('fr')">
-        <img *ngIf="lang_pt" src="img/flag-brazil.png" width="35" height="35" (click)="switchLang('pt')">
+        <img *ngIf="lang_en" src="assets/img/flag-england.png" width="35" height="35" (click)="switchLang('en')">
+        <img *ngIf="lang_es" src="assets/img/flag-spain.png" width="35" height="35" (click)="switchLang('es')">
+        <img *ngIf="lang_it" src="assets/img/flag-italy.png" width="35" height="35" (click)="switchLang('it')">
+        <img *ngIf="lang_gr" src="assets/img/flag-germany.png" width="35" height="35" (click)="switchLang('gr')">
+        <img *ngIf="lang_fr" src="assets/img/flag-france.png" width="35" height="35" (click)="switchLang('fr')">
+        <img *ngIf="lang_pt" src="assets/img/flag-brazil.png" width="35" height="35" (click)="switchLang('pt')">
       </ion-item>
       <button menuClose ion-item class="item-button item-block item-md {{ p.icon }}" *ngFor="let p of pages" (click)="openPage(p)">
         <label class="item-content"></label>
