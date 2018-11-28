@@ -291,14 +291,14 @@ export class WifiPage {
 
               this.apiService.start(programs).then((response) => {
                 console.log(response + '');
+
+                /* CORRER RUTINA */
+                this.navCtrl.setRoot(PlayingPage);
               }, (response) =>{
                 alert('Error al cargar rutina, intente nuevamente - ' + response);
               });
 
               clearInterval(this.testBeginRoutineInterval);
-
-              /* CORRER RUTINA */
-              this.navCtrl.setRoot(PlayingPage);
             }
             else if(isValidateSuccessProgram + isValidateErrorProgram == 4){
               alert('Error al cargar rutina, intente nuevamente - ' + error1Obj + ' - ' + error2Obj+ ' - ' + error3Obj + ' - ' + error4Obj);
