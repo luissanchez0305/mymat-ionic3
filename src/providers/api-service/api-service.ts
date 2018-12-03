@@ -95,7 +95,7 @@ export class APIServiceProvider {
       .subscribe(res => {
         resolve('success: ' + url);
       }, (err) => {
-        reject('error: ' + url);
+        reject('error: ' + err);
       });
     });
   }
