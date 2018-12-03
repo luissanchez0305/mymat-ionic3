@@ -75,7 +75,7 @@ export class APIServiceProvider {
           });
       /*});*/
     });
-  }        
+  }
 
   runPost(scriptFile, data){
     return new Promise((resolve, reject) => {
@@ -97,7 +97,7 @@ export class APIServiceProvider {
 
     var url = Constants.myMatApiStartUrl+"?P1="+program1+"&P2="+program2+"&P3="+program3+"&P4="+program4;
 
-    return new Promise((resolve, reject) => {      
+    return new Promise((resolve, reject) => {
       this.httpModule.get(url)
       .map(res => res.text())
       .subscribe(res => {

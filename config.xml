@@ -1,9 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<<<<<<< HEAD
-<widget id="com.esferasoluciones.mymat_light" version="8.3.7" versionCode="58" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-=======
-<widget id="com.esferasoluciones.mymat_light" version="8.2.18" versionCode="60" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
->>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
+<widget id="com.esferasoluciones.mymat_light" version="8.3.9" versionCode="58" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>MyMat - Light</name>
     <description>MyMat 8</description>
     <author email="lsanchez@esferasoluciones.com" href="https://www.esferasoluciones.com">
@@ -82,8 +78,6 @@
         <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
     </platform>
-    <plugin name="cordova-plugin-datepicker" spec="^0.9.3" />
-    <plugin name="cordova-plugin-device" spec="^1.1.7" />
     <plugin name="cordova-plugin-email-composer" spec="^0.8.15" />
     <plugin name="cordova-plugin-local-notification" spec="^0.9.0-beta.2" />
     <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
@@ -93,4 +87,6 @@
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
     <engine name="android" spec="^6.4.0" />
     <engine name="ios" spec="^4.5.5" />
+    <plugin name="cordova-plugin-device" spec="^1.1.7" />
+    <plugin name="cordova-plugin-datepicker" spec="~0.9.3" />
 </widget>

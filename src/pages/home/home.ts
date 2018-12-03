@@ -1,15 +1,15 @@
-import { Component, NgZone  } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 import { NavController, Events } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
-import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { ProgramsPage } from '../programs/programs';
 import { WifiPage } from '../wifi/wifi';
+import { SubscribePage } from '../subscribe/subscribe';
 import { RoutinesProvider } from '../../providers/routines/routines';
 import { Constants } from '../../services/constants';
 import { TranslateService } from '@ngx-translate/core';
 import { Network } from '@ionic-native/network';
 import { Device } from '@ionic-native/device';
-import { SubscribePage } from '../subscribe/subscribe';
+import { APIServiceProvider } from '../../providers/api-service/api-service';
 
 @Component({
   selector: 'page-home',
@@ -30,7 +30,7 @@ export class HomePage {
   public offline_device : string;
 
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
-    private translateService: TranslateService, private network: Network, private zone: NgZone, 
+    private translateService: TranslateService, private network: Network, private zone: NgZone,
     public events: Events, private device: Device, public apiService : APIServiceProvider) {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
@@ -69,7 +69,7 @@ export class HomePage {
         if(window.hasOwnProperty('cordova')){
           var formData = new FormData();
           formData.append('uuid', this.device.uuid);
-          
+
           this.apiService.runPost('check_device.php',formData).then((result) => {
             //console.log('check_device success');
             this.isDeviceOnline = true;

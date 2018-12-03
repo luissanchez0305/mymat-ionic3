@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "prepare_queue": {
         "installed": [],
         "uninstalled": []
@@ -41,6 +42,8 @@
             "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
         }
 =======
+=======
+>>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
   "prepare_queue": {
     "installed": [],
     "uninstalled": []
@@ -49,6 +52,12 @@
     "files": {}
   },
   "installed_plugins": {
+<<<<<<< HEAD
+=======
+    "cordova-plugin-datepicker": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+>>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
@@ -77,10 +86,13 @@
   "dependent_plugins": {
     "cordova-plugin-badge": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+<<<<<<< HEAD
     },
     "cordova-plugin-datepicker": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
 >>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
+=======
+>>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
     }
   }
 }

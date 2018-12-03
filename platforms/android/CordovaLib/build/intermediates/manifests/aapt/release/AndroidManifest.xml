@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
        Licensed to the Apache Software Foundation (ASF) under one
        or more contributor license agreements.  See the NOTICE file
        distributed with this work for additional information
@@ -16,6 +19,7 @@
        "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
        KIND, either express or implied.  See the License for the
        specific language governing permissions and limitations
+<<<<<<< HEAD
 =======
        Licensed to the Apache Software Foundation (ASF) under one
        or more contributor license agreements.  See the NOTICE file
@@ -33,6 +37,8 @@
        KIND, either express or implied.  See the License for the
        specific language governing permissions and limitations
 >>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
+=======
+>>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
        under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
