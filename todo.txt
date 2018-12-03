@@ -1,19 +1,19 @@
 3ra ETAPA
 
-- agregar seccion de pets
+x agregar seccion de pets
 x crear base de datos con datos basicos de usuarios
     - imei del celular
     - nombre
     - fecha de nacimiento
     - email
     - sexo
-
-- crear de verificador de conexion a internet
-- crear vista de perfil del usuario
-- crear slides de introduccion
-    - conseguir libreria para mostrar carrusel automatico
-    - poner imagenes con instrucciones
-    - solo debe mostrarse una vez
+    
+x crear de verificador de conexion a internet
+x crear vista de perfil del usuario
+x crear slides de introduccion
+    x conseguir libreria para mostrar carrusel automatico
+    x poner imagenes con instrucciones
+    x solo debe mostrarse una vez
 - registro de rutinas favoritas
 - registro de rutinas usadas
 - interfaz de despliegue de rutinas
@@ -52,4 +52,11 @@ x guardar en memoria (por tiempo limitado) el utlimo kit que se metio
 - intentar contactar la direccion de url del mat dese ios
 - verificar sleep enhancer sea el url correcto
 - Cambio de texto de correo "MyMatt"
+
+prioridad
+- verificacion de conexion al mat al momento de correr rutina
+    - poner un loading debajo del boton de iniciar rutina
+    - deshabilitar el boton de iniciar rutina al darle click
+    - poner timeout al metodo de test() que verifica si esta conectado al mat
+    - esperar a que se valide la conexion con el mat y pasar a la pantalla tiempos o volver a loading de esperar por el mat
 

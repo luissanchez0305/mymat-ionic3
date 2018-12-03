@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Constants } from '../../services/constants';
 //import { Network } from '@ionic-native/network';
 import 'rxjs/add/operator/map';
+import { timeout } from 'rxjs/operators';
 //import * as $ from "jquery";
 
 /*
@@ -32,6 +33,9 @@ export class APIServiceProvider {
     let headers = new Headers();
     return new Promise((resolve, reject) => {
       this.httpModule.get(Constants.myMatApiIndexUrl, { headers: headers })
+      .pipe(
+            timeout(5000) //5 seconds
+       )
       .map(res => res.text())
       .subscribe(res => {
         resolve(res);
@@ -40,6 +44,38 @@ export class APIServiceProvider {
       });
     });
   }
+
+  sendError(data){
+    return new Promise((resolve, reject) => {
+      // watch network for a connection
+      /*let connectSubscription = this.network.onConnect().subscribe(() => {*/
+        let headers = new Headers();
+
+        this.httpModule.post(Constants.myMatApiUrl + 'report_error.php', JSON.stringify(data), {headers: headers})
+          .subscribe(res => {
+            resolve(res.json());
+          }, (err) => {
+            reject(err);
+          });
+      /*});*/
+    });
+  }
+
+  sendEmail(data){
+    return new Promise((resolve, reject) => {
+      // watch network for a connection
+      /*let connectSubscription = this.network.onConnect().subscribe(() => {*/
+        let headers = new Headers();
+
+        this.httpModule.post(Constants.myMatApiUrl + 'contact_us.php', JSON.stringify(data), {headers: headers})
+          .subscribe(res => {
+            resolve(res.json());
+          }, (err) => {
+            reject(err);
+          });
+      /*});*/
+    });
+  }        
 
   runPost(scriptFile, data){
     return new Promise((resolve, reject) => {
@@ -67,7 +103,7 @@ export class APIServiceProvider {
       .subscribe(res => {
         resolve('success: ' + url);
       }, (err) => {
-        reject('error: ' + url);
+        reject('error: ' + err);
       });
     });
   }

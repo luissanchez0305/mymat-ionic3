@@ -19,7 +19,7 @@
 .logo {
     width: 120px;
     height: 65px;
-    background-image: url(../img/logo.png);
+    background-image: url(../assets/img/logo.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -96,7 +96,7 @@ hr {
 .item-content {
     color: #6D6E70;
     border: none;
-    background-image: url(../img/plus.png);
+    background-image: url(../assets/img/plus.png);
     background-repeat: no-repeat;
     background-position: top right;
     background-position: 97% 15px;
@@ -232,7 +232,7 @@ ion-select {
 input {
 color: #000 !important;
 background-color: #f1f1f1 ! important;
-background-image: url(../img/fondoinput.png);
+background-image: url(../assets/img/fondoinput.png);
 background-repeat: repeat;
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
@@ -342,7 +342,7 @@ button[disabled].greenbtn {
 
 .username {
     margin: auto;
-    background-image: url(../img/username.png);
+    background-image: url(../assets/img/username.png);
     background-position: top left;
     background-size: 140% 100%;
     background-repeat: no-repeat;
@@ -351,7 +351,7 @@ button[disabled].greenbtn {
 
 .email {
     margin: auto;
-    background-image: url(../img/email.png);
+    background-image: url(../assets/img/email.png);
     background-position: top left;
     background-size: 140% 100%;
     background-repeat: no-repeat;
@@ -361,7 +361,7 @@ button[disabled].greenbtn {
 
 .gender {
     margin: auto;
-    background-image: url(../img/gender.png);
+    background-image: url(../assets/img/gender.png);
     background-position: top left;
     background-size: 200% 100%;
     background-repeat: no-repeat;
@@ -370,7 +370,7 @@ button[disabled].greenbtn {
 
 .birth {
     margin: auto;
-    background-image: url(../img/birth.png);
+    background-image: url(../assets/img/birth.png);
     background-position: top left;
     background-size: 140% 100%;
     background-repeat: no-repeat;
@@ -379,7 +379,7 @@ button[disabled].greenbtn {
 }
 .pass {
     margin: auto;
-    background-image: url(../img/pass.png);
+    background-image: url(../assets/img/pass.png);
     background-position: top left;
     background-size: 140% 100%;
     background-repeat: no-repeat;
@@ -396,7 +396,7 @@ button[disabled].greenbtn {
 }
 
 .bubbles{
-background-image: url(../img/empty-bubbles.png);
+background-image: url(../assets/img/empty-bubbles.png);
 background-repeat: no-repeat;
 
 margin-top: 75px;
@@ -406,7 +406,7 @@ height: 275px;
 margin: auto;
 }
 .empty-single-bubble {
-    background-image: url("../img/single-bubble.png");
+    background-image: url("../assets/img/single-bubble.png");
     background-repeat: no-repeat;
     background-size: 60px 60px;
     height: 60px;
@@ -414,7 +414,7 @@ margin: auto;
     width: 60px;
 }
 .single-bubble-1-empty {
-    background-image: url("../img/single-bubble.png");
+    background-image: url("../assets/img/single-bubble.png");
     background-repeat: no-repeat;
     background-size: 60px 60px;
     height: 60px;
@@ -422,7 +422,7 @@ margin: auto;
     width: 60px;
 }
 .single-bubble-1 {
-    background-image: url("../img/single-bubble.png");
+    background-image: url("../assets/img/single-bubble.png");
     background-repeat: no-repeat;
     background-size: 60px 60px;
     height: 60px;
@@ -430,7 +430,7 @@ margin: auto;
     width: 60px;
 }
 .single-bubble-2 {
-    background-image: url("../img/single-bubble.png");
+    background-image: url("../assets/img/single-bubble.png");
     background-repeat: no-repeat;
     background-size: 60px 60px;
     height: 60px;
@@ -439,7 +439,7 @@ margin: auto;
     width: 60px;
 }
 .single-bubble-3 {
-    background-image: url("../img/single-bubble.png");
+    background-image: url("../assets/img/single-bubble.png");
     background-repeat: no-repeat;
     background-size: 60px 60px;
     height: 60px;
@@ -448,7 +448,7 @@ margin: auto;
     width: 60px;
 }
 .single-bubble-4 {
-    background-image: url("../img/single-bubble.png");
+    background-image: url("../assets/img/single-bubble.png");
     background-repeat: no-repeat;
     background-size: 60px 60px;
     height: 60px;
@@ -457,7 +457,7 @@ margin: auto;
     width: 60px;
 }
 .bubbles1{
-    background-image: url(../img/bubbles1.png);
+    background-image: url(../assets/img/bubbles1.png);
     background-repeat: no-repeat;
     margin-top: 50px;
     background-size: 100%;
@@ -467,7 +467,7 @@ display:none
 }
 
 .bubbles2{
-    background-image: url(../img/bubbles2.png);
+    background-image: url(../assets/img/bubbles2.png);
     background-repeat: no-repeat;
     margin-top: 50px;
     background-size: 100%;
@@ -477,7 +477,7 @@ display:none;
 }
 
 .bubbles3{
-    background-image: url(../img/bubbles3.png);
+    background-image: url(../assets/img/bubbles3.png);
     background-repeat: no-repeat;
     margin-top: 50px;
     background-size: 100%;
@@ -489,7 +489,7 @@ display:none;
 .run{margin-bottom: 20px;}
 
 .bubbles4{
-    background-image: url(../img/bubbles4.png);
+    background-image: url(../assets/img/bubbles4.png);
     background-repeat: no-repeat;
     margin-top: 50px;
     background-size: 100%;
@@ -499,7 +499,7 @@ display:none;
 }
 
 .home, .programs {
-    background-image: url(../img/fondo.png)!important;
+    background-image: url(../assets/img/fondo.png)!important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -508,7 +508,7 @@ display:none;
 }
 
 .setup {
-    background-image: url(../img/splashhome.png)!important;
+    background-image: url(../assets/img/splashhome.png)!important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -516,7 +516,7 @@ display:none;
 }
 
 .modal {
-    background-image: url(../img/fondo.jpg)!important;
+    background-image: url(../assets/img/fondo.jpg)!important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -561,14 +561,14 @@ display:none;
 }
 .menuitemintern .item-content {
     background-color: #FFF!important;
-    background-image: url(../img/menuhome.png)!important;
+    background-image: url(../assets/img/menuhome.png)!important;
     padding-left: 50px;
     background-position: top right;
     background-position: 7% 17px;
 }
 .menuitemhome .item-content {
     background-color: #FFF!important;
-    background-image: url(../img/menuhome.png)!important;
+    background-image: url(../assets/img/menuhome.png)!important;
     border-bottom: thin solid #D1D2D4;
 
     padding-left: 50px;
@@ -590,7 +590,7 @@ display:none;
 
 .menuitemfav .item-content {
     background-color: #FFF!important;
-    background-image: url(../img/menufav.png)!important;
+    background-image: url(../assets/img/menufav.png)!important;
     border-bottom: thin solid #D1D2D4;
     padding-left: 50px;
     background-position: top right;
@@ -599,7 +599,7 @@ display:none;
 
 .menuitemusers .item-content {
     background-color: #FFF!important;
-    background-image: url(../img/menuusers.png)!important;
+    background-image: url(../assets/img/menuusers.png)!important;
     border-bottom: thin solid #D1D2D4;
     padding-left: 50px;
     background-position: top right;
@@ -608,7 +608,7 @@ display:none;
 
 .menuitemmyaccount .item-content {
     background-color: #FFF!important;
-    background-image: url(../img/menuusers.png)!important;
+    background-image: url(../assets/img/menuusers.png)!important;
     border-bottom: thin solid #D1D2D4;
     padding-left: 50px;
     background-position: top right;
@@ -617,7 +617,7 @@ display:none;
 
 .menuitemprograms .item-content {
     background-color: #FFF!important;
-    background-image: url(../img/menubrowse.png)!important;
+    background-image: url(../assets/img/menubrowse.png)!important;
     border-bottom: thin solid #D1D2D4;
     padding-left: 50px;
     background-position: top right;
@@ -626,7 +626,7 @@ display:none;
 
 .menuitemsoft .item-content {
     background-color: #FFF!important;
-    background-image: url(../img/menusoftware.png)!important;
+    background-image: url(../assets/img/menusoftware.png)!important;
     border-bottom: thin solid #D1D2D4;
     padding-left: 50px;
     background-position: top right;
@@ -635,7 +635,7 @@ display:none;
 
 .menuitemhelp .item-content {
     background-color: #FFF!important;
-    background-image: url(../img/menuhelp.png)!important;
+    background-image: url(../assets/img/menuhelp.png)!important;
     border-bottom: thin solid #D1D2D4;
     padding-left: 50px;
     background-position: top right;
@@ -644,7 +644,7 @@ display:none;
 
 .menuitemlanguages .item-content {
     background-color: #FFF!important;
-    background-image: url(../img/menulang.png)!important;
+    background-image: url(../assets/img/menulang.png)!important;
     border-bottom: thin solid #D1D2D4;
     padding-left: 50px;
     background-position: top right;
@@ -657,7 +657,7 @@ display:none;
 
 .menuitemcontact .item-content {
     background-color: #FFF!important;
-    background-image: url(../img/menucontact.png)!important;
+    background-image: url(../assets/img/menucontact.png)!important;
     padding-left: 50px;
     background-position: top right;
     background-position: 7% 0px;
@@ -708,7 +708,7 @@ display:none;
 }
 
 .modaltitle {
-    background-image: url(../img/fondotitle.png);
+    background-image: url(../assets/img/fondotitle.png);
     background-position: center center;
     background-size: 120% 100%;
     background-repeat: no-repeat;
@@ -782,7 +782,7 @@ display:none;
 }
 
 #circle1, #circle2, #circle3, #circle4{
-background-image: url(../img/circle.png);
+background-image: url(../assets/img/circle.png);
 background-size: 100%;
 width: 75px;
 height: 75px;
@@ -822,7 +822,7 @@ display: inline-block;
 }
 
 .cardprogram .item:nth-child(1) {
-    background-image: url(../img/program.png);
+    background-image: url(../assets/img/program.png);
     background-size: 100%;
     opacity: 1;
     color: #FFF;
