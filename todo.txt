@@ -59,4 +59,3 @@ prioridad
     - deshabilitar el boton de iniciar rutina al darle click
     - poner timeout al metodo de test() que verifica si esta conectado al mat
     - esperar a que se valide la conexion con el mat y pasar a la pantalla tiempos o volver a loading de esperar por el mat
-
