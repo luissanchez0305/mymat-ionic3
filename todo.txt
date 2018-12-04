@@ -55,7 +55,7 @@ x guardar en memoria (por tiempo limitado) el utlimo kit que se metio
 
 prioridad
 - verificacion de conexion al mat al momento de correr rutina
-    - poner un loading debajo del boton de iniciar rutina
-    - deshabilitar el boton de iniciar rutina al darle click
-    - poner timeout al metodo de test() que verifica si esta conectado al mat
-    - esperar a que se valide la conexion con el mat y pasar a la pantalla tiempos o volver a loading de esperar por el mat
+    x poner un loading debajo del boton de iniciar rutina
+    x deshabilitar el boton de iniciar rutina al darle click
+    x poner timeout al metodo de test() que verifica si esta conectado al mat
+    x esperar a que se valide la conexion con el mat y pasar a la pantalla tiempos o volver a loading de esperar por el mat
