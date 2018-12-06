@@ -25,8 +25,8 @@
             <div (click)="selectBubble(4)" on-hold="removeProgramFromRoutine(4)" [ngStyle]="bubblesCurrentState4 && {'background-image':'url(assets/img/bubble-green.png)'}" class="single-bubble-4"></div>
             <div class="bubbles-program-name-4" (click)="selectBubble(4,true)">{{ bubblesNames4 }}</div>
         </div>
-        <button ion-button round outline color="white" icon-end class="add-favorite">
-          Agregar
+        <button ion-button round outline color="white" icon-end class="add-favorite" *ngIf="showAddFavoriteButton" (click)="openAddFavorite()">
+          {{ 'add-favorite' | translate }}
           <ion-icon name="add"></ion-icon>
         </button>
     </div>

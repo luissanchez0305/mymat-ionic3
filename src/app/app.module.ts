@@ -20,6 +20,7 @@ import { PlayingPage } from '../pages/playing/playing';
 import { ProgramPage } from '../pages/program/program';
 import { SubscribePage } from '../pages/subscribe/subscribe';
 import { SliderPage } from '../pages/slider/slider';
+import { FavoritesPage } from '../pages/favorites/favorites;
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -43,7 +44,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     PlayingPage,
     SubscribePage,
     SliderPage,
-    ProgramPage
+    ProgramPage,
+    FavoritesPage
   ],
   imports: [
     BrowserModule,
@@ -70,7 +72,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     PlayingPage,
     SubscribePage,
     SliderPage,
-    ProgramPage
+    ProgramPage,
+    FavoritesPage
   ],
   providers: [
     StatusBar,

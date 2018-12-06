@@ -1,5 +1,5 @@
 import { Component, NgZone } from '@angular/core';
-import { NavController, Events } from 'ionic-angular';
+import { NavController, Events, ModalController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { ProgramsPage } from '../programs/programs';
 import { WifiPage } from '../wifi/wifi';
@@ -28,10 +28,11 @@ export class HomePage {
   public bubblesCurrentState4 : boolean;
   public isDeviceOnline : boolean;
   public offline_device : string;
+  public showAddFavoriteButton : boolean = false;
 
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
     private translateService: TranslateService, private network: Network, private zone: NgZone,
-    public events: Events, private device: Device, public apiService : APIServiceProvider) {
+    public events: Events, private device: Device, public apiService : APIServiceProvider, public modalCtrl: ModalController) {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){
@@ -91,6 +92,11 @@ export class HomePage {
       }
     });
   }
+  
+  openAddFavorite(){
+    let profileModal = this.modalCtrl.create(FavoritesPage, { userId: 8675309 });
+    profileModal.present();
+  }
 
   removeProgramFromRoutine(prg){
     console.log('hold: ' + prg);
@@ -114,9 +120,11 @@ export class HomePage {
     typeof programs[2] !== 'undefined' && programs[2] != null && programs[2].length > 0 &&
     typeof programs[3] !== 'undefined' && programs[3] != null && programs[3].length > 0){
         this.EnableRunRoutine = true;
+        this.showAddFavoriteButton = true;
       }
       else{
         this.EnableRunRoutine = false;
+        this.showAddFavoriteButton = false;
       }
       return this.EnableRunRoutine;
   }
@@ -132,6 +140,7 @@ export class HomePage {
     this.updateBubbles(2,'');
     this.updateBubbles(3,'');
     this.updateBubbles(4,'');
+    this.showAddFavoriteButton = false;
   }
 
   private updateBubbles(bubble,name){
