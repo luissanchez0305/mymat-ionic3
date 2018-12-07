@@ -1,22 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<widget id="com.esferasoluciones.mymat_light" version="8.3.7" versionCode="58" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-=======
-<widget id="com.esferasoluciones.mymat_light" version="8.2.18" versionCode="60" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-=======
-<widget id="com.esferasoluciones.mymat_light" version="8.3.8" versionCode="58" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
+<widget id="com.esferasoluciones.mymat_light" version="8.3.9" versionCode="58" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <feature name="Badge">
         <param name="android-package" value="de.appplant.cordova.plugin.badge.Badge" />
     </feature>
     <feature name="DatePickerPlugin">
         <param name="android-package" value="com.plugin.datepicker.DatePickerPlugin" />
     </feature>
-<<<<<<< HEAD
->>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
@@ -44,18 +33,6 @@
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
     </feature>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <feature name="DatePickerPlugin">
-        <param name="android-package" value="com.plugin.datepicker.DatePickerPlugin" />
-    </feature>
-    <feature name="Badge">
-        <param name="android-package" value="de.appplant.cordova.plugin.badge.Badge" />
-    </feature>
-=======
->>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
     <name>MyMat - Light</name>
     <description>MyMat 8</description>
     <author email="lsanchez@esferasoluciones.com" href="https://www.esferasoluciones.com">

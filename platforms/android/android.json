@@ -5,11 +5,6 @@
   },
   "config_munge": {
     "files": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
       "config.xml": {
         "parents": {
           "/*": [
@@ -20,39 +15,10 @@
           ]
         }
       },
-<<<<<<< HEAD
->>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
       "res/xml/config.xml": {
         "parents": {
           "/*": [
             {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-              "xml": "<feature name=\"DatePickerPlugin\"><param name=\"android-package\" value=\"com.plugin.datepicker.DatePickerPlugin\" /></feature>",
-              "count": 1
-            },
-            {
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
-              "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"EmailComposer\"><param name=\"android-package\" value=\"de.appplant.cordova.emailcomposer.EmailComposer\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"LocalNotification\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.localnotification.LocalNotification\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
-              "count": 1
-            },
-            {
-=======
               "xml": "<feature name=\"DatePickerPlugin\"><param name=\"android-package\" value=\"com.plugin.datepicker.DatePickerPlugin\" /></feature>",
               "count": 1
             },
@@ -73,7 +39,6 @@
               "count": 1
             },
             {
->>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
               "xml": "<feature name=\"networkinterface\"><param name=\"android-package\" value=\"com.albahra.plugin.networkinterface.networkinterface\" /></feature>",
               "count": 1
             },
@@ -88,16 +53,6 @@
             {
               "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" value=\"io.ionic.keyboard.IonicKeyboard\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-            },
-            {
-              "xml": "<feature name=\"DatePickerPlugin\"><param name=\"android-package\" value=\"com.plugin.datepicker.DatePickerPlugin\" /></feature>",
-              "count": 1
-=======
->>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
             }
           ]
         }
@@ -149,56 +104,20 @@
             }
           ]
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-      },
-      "config.xml": {
-        "parents": {
-          "/*": [
-            {
-              "xml": "<feature name=\"Badge\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.badge.Badge\" /></feature>",
-              "count": 1
-            }
-          ]
-        }
-=======
->>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
       }
     }
   },
   "installed_plugins": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "cordova-plugin-device": {
-=======
-    "cordova-plugin-badge": {
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-datepicker": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-<<<<<<< HEAD
-    "cordova-plugin-badge": {
-=======
     "cordova-plugin-badge": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "cordova-plugin-datepicker": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "cordova-plugin-email-composer": {
-<<<<<<< HEAD
->>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "cordova-plugin-local-notification": {
@@ -218,25 +137,11 @@
     },
     "ionic-plugin-keyboard": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-<<<<<<< HEAD
-<<<<<<< HEAD
-    },
-    "cordova-plugin-datepicker": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-=======
->>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
     }
   },
   "dependent_plugins": {},
   "modules": [
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
       "id": "cordova-plugin-badge.Badge",
       "file": "plugins/cordova-plugin-badge/www/badge.js",
       "pluginId": "cordova-plugin-badge",
@@ -253,10 +158,6 @@
       ]
     },
     {
-<<<<<<< HEAD
->>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
       "id": "cordova-plugin-device.device",
       "file": "plugins/cordova-plugin-device/www/device.js",
       "pluginId": "cordova-plugin-device",
@@ -274,20 +175,6 @@
       ]
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "id": "cordova-plugin-badge.Badge",
-      "file": "plugins/cordova-plugin-badge/www/badge.js",
-      "pluginId": "cordova-plugin-badge",
-      "clobbers": [
-        "cordova.plugins.notification.badge"
-      ]
-    },
-    {
-=======
->>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
       "id": "cordova-plugin-local-notification.LocalNotification",
       "file": "plugins/cordova-plugin-local-notification/www/local-notification.js",
       "pluginId": "cordova-plugin-local-notification",
@@ -354,18 +241,6 @@
         "cordova.plugins.Keyboard"
       ],
       "runs": true
-<<<<<<< HEAD
-<<<<<<< HEAD
-    },
-    {
-      "id": "cordova-plugin-datepicker.DatePicker",
-      "file": "plugins/cordova-plugin-datepicker/www/android/DatePicker.js",
-      "pluginId": "cordova-plugin-datepicker",
-      "clobbers": [
-        "datePicker"
-      ]
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
     }
   ],
   "plugin_metadata": {
@@ -373,33 +248,11 @@
     "cordova-plugin-datepicker": "0.9.3",
     "cordova-plugin-device": "1.1.7",
     "cordova-plugin-email-composer": "0.8.15",
-<<<<<<< HEAD
-    "cordova-plugin-badge": "0.8.8",
-=======
-    }
-  ],
-  "plugin_metadata": {
-    "cordova-plugin-badge": "0.8.8",
-    "cordova-plugin-datepicker": "0.9.3",
-    "cordova-plugin-device": "1.1.7",
-    "cordova-plugin-email-composer": "0.8.15",
->>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
-=======
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
     "cordova-plugin-local-notification": "0.9.0-beta.2",
     "cordova-plugin-network-information": "2.0.1",
     "cordova-plugin-networkinterface": "1.2.0",
     "cordova-plugin-splashscreen": "4.1.0",
     "cordova-plugin-whitelist": "1.3.3",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "ionic-plugin-keyboard": "2.2.1",
-    "cordova-plugin-datepicker": "0.9.3"
-=======
     "ionic-plugin-keyboard": "2.2.1"
->>>>>>> 7d69cd76f6207cce439b4becf02a722c683b45d0
-=======
-    "ionic-plugin-keyboard": "2.2.1"
->>>>>>> 1cd86144f20d6aaa2b9d8c57b08a0c3d811e3697
   }
 }
