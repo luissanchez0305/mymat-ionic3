@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavParams, ViewController } from 'ionic-angular';
+import { NavParams, ViewController } from 'ionic-angular';
 
 /**
  * Generated class for the FavoritesPage page.
@@ -8,7 +8,6 @@ import { IonicPage, NavParams, ViewController } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-favorites',
   templateUrl: 'favorites.html',
@@ -16,6 +15,7 @@ import { IonicPage, NavParams, ViewController } from 'ionic-angular';
 export class FavoritesPage {
 
   constructor(public navParams: NavParams, public viewCtrl: ViewController) {
+    console.log(this.navParams.get('userId'));
   }
 
   ionViewDidLoad() {
