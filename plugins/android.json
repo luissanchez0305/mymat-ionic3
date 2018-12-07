@@ -30,12 +30,12 @@
     },
     "ionic-plugin-keyboard": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-badge": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
     "cordova-plugin-datepicker": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }

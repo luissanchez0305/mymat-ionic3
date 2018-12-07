@@ -88,4 +88,5 @@
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
     <engine name="android" spec="6.3.0" />
     <engine name="ios" spec="^4.5.4" />
+    <plugin name="cordova-plugin-badge" spec="^0.8.8" />
 </widget>
