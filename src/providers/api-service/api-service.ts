@@ -94,7 +94,6 @@ export class APIServiceProvider {
     formData.append('P3', program3);
     formData.append('P4', program4);*/
 
-    //var url = Constants.myMatApiStartUrl+"?P1="+program1+"&P2="+program2+"&P3="+program3+"&P4="+program4;
     var params = "P1="+program1+"&P2="+program2+"&P3="+program3+"&P4="+program4;
 
     return this.httpNative.get(Constants.myMatApiStartUrl + '?' + params, "", {});

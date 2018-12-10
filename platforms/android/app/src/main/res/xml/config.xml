@@ -33,6 +33,14 @@
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="CordovaHttpPlugin">
+        <param name="android-package" value="com.synconset.cordovahttp.CordovaHttpPlugin" />
+    </feature>
     <name>MyMat - Light</name>
     <description>MyMat 8</description>
     <author email="lsanchez@esferasoluciones.com" href="https://www.esferasoluciones.com">
@@ -74,12 +82,4 @@
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <preference name="CordovaWebViewEngine" value="CDVUIWebViewEngine" />
     <preference name="loadUrlTimeoutValue" value="700000" />
-    <feature name="File">
-        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
-        <param name="onload" value="true" />
-    </feature>
-    <allow-navigation href="cdvfile:*" />
-    <feature name="CordovaHttpPlugin">
-        <param name="android-package" value="com.synconset.cordovahttp.CordovaHttpPlugin" />
-    </feature>
 </widget>
