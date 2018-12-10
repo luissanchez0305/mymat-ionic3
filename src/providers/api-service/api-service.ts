@@ -87,15 +87,16 @@ export class APIServiceProvider {
     var program2 = programs[1].split("|")[3];
     var program3 = programs[2].split("|")[3];
     var program4 = programs[3].split("|")[3];
-    
-    var formData = new FormData();
+
+    /*var formData = new FormData();
     formData.append('P1', program1);
     formData.append('P2', program2);
     formData.append('P3', program3);
-    formData.append('P4', program4);
+    formData.append('P4', program4);*/
 
     //var url = Constants.myMatApiStartUrl+"?P1="+program1+"&P2="+program2+"&P3="+program3+"&P4="+program4;
+    var params = "P1="+program1+"&P2="+program2+"&P3="+program3+"&P4="+program4;
 
-    return this.httpNative.get(Constants.myMatApiStartUrl, formData, {});
+    return this.httpNative.get(Constants.myMatApiStartUrl, params, {});
   }
 }
