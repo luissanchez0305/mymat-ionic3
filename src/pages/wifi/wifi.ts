@@ -293,13 +293,15 @@ export class WifiPage {
               this.apiService.start(programs).then((response) => {
                 console.log(response + '');
               }).catch((response) =>{
-                setTimeout(() => {
+                /*setTimeout(() => {
                   var emailData = { error : response.data };
                   this.apiService.sendError(emailData).then((result) => {
                     console.log(response.data);
                   });
-                  
-                }, 120000);
+
+                }, 120000);*/
+
+                console.log(response);
               });
 
               /* CORRER RUTINA */
