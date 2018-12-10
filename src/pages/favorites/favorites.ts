@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavParams, ViewController } from 'ionic-angular';
+import { RoutinesProvider } from '../../providers/routines/routines';
 
 /**
  * Generated class for the FavoritesPage page.
@@ -13,9 +14,17 @@ import { NavParams, ViewController } from 'ionic-angular';
   templateUrl: 'favorites.html',
 })
 export class FavoritesPage {
+  private program1 : any;
+  private program2 : any;
+  private program3 : any;
+  private program4 : any;
 
-  constructor(public navParams: NavParams, public viewCtrl: ViewController) {
-    console.log(this.navParams.get('userId'));
+  constructor(public navParams: NavParams, public viewCtrl: ViewController, public routines: RoutinesProvider) {
+    var programs = this.routines.getPrograms();
+    this.program1 = programs[0];
+    this.program2 = programs[1];
+    this.program3 = programs[2];
+    this.program4 = programs[3];
   }
 
   ionViewDidLoad() {

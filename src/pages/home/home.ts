@@ -95,7 +95,7 @@ export class HomePage {
   }
 
   openAddFavorite(){
-    let profileModal = this.modalCtrl.create(FavoritesPage, { userId: 8675309 });
+    let profileModal = this.modalCtrl.create(FavoritesPage);
     profileModal.present();
   }
 
