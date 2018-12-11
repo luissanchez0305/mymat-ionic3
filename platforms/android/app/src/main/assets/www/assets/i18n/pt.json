@@ -4,7 +4,11 @@
 	"contact-us-text": "CONTATE-NOS",
 	"remaining-time": "Tempo de execução",
 	"running-time": "Tempo Restante",
+<<<<<<< HEAD
 	"get-in-touch": "Gentre em contato conosco preenchendo o formulário abaixo.<br/>Ou contacte-nos em <a href=\"mailto:support@healinghouse.life\">support@healinghouse.life</a>",
+=======
+	"get-in-touch": "GEntre em contato conosco preenchendo o formulário abaixo.<br/>Ou contacte-nos em <a href=\"mailto:support@healinghouse.life\">support@healinghouse.life</a>",
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
     "remove-program": "Remover programa",
     "time-expire-text": "Sua rotina acabou",
     "yes": "Sim",
@@ -18,7 +22,10 @@
     "home-title" : "HOME",
     "help-title" : "SOCORRO",
     "contact-title" : "CONTATE-NOS",
+<<<<<<< HEAD
     "slider-title" : "INSTRUÇÕES",
+=======
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
     "email-success-message": "Sua mensagem foi enviada! Entraremos em contato o mais breve possível",
     "email-success-title": "Enviei",
     "email-error-message": "Ocorreu um erro ao enviar o e-mail",
@@ -80,6 +87,7 @@
     "senior-upper" : "SENIOR",
     "chakra-balancing": "EQUILIBRANDO<BR/>CHAKRA",
     "elements-meridians": "ELEMENTOS E<BR/>MERIDIOS<br>",
+<<<<<<< HEAD
     "petss": "MASCOTES S",
     "petsx": "MASCOTES X",
     "programs": "PROGRAMAS",
@@ -95,6 +103,10 @@
     "profile-success-message": "Your profile have been successful saved",
     "offline-device-text": "Your device is offline",
     "offline-device-text-2" : "There's been an error communicating your device with our services. Please make sure it's online",
+=======
+    "programs": "PROGRAMAS",
+    "continue": "Continuar",
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
     "first-chakra-upper": "1. CHAKRA",
     "second-chakra-upper": "2. CHAKRA",
     "third-chakra-upper": "3. CHAKRA",
@@ -328,6 +340,7 @@
         "liver-function-upper": "FUNÇÃO DO FÍGADO",
         "kidney-function-upper": "FUNÇÃO DO RIM",
         "large-intestine-balancing-upper": "GRANDE EQUILIBRAMENTO INTESTINO",
+<<<<<<< HEAD
         "pericardium-flow-upper": "FLUXOS DE PERICARDO",
         "routine-pets-upper1":"SISTEMA IMUNOLÓGICO",
         "routine-pets-upper2":"DESINTOXIFICAÇÃO",
@@ -349,4 +362,7 @@
         "petss-program-description":"•Este programa, em combinação com os outros, ajudará o seu animal de estimação (gato, cão pequeno ou qualquer pequeno mamífero) a recuperar muito mais rapidamente de ferimentos, doenças ou traumas de separação ou viagem.",
         "petsx-program-upper":"PET X",
         "petsx-program-description":"•Este programa em combinação com outros é indicado para ajudar seus animais de estimação maiores (cães grandes, cavalos e outros mamíferos) com menor tempo de recuperação após lesões, doença ou traumas causados por separação ou viagem"
+=======
+        "pericardium-flow-upper": "FLUXOS DE PERICARDO"
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
 }

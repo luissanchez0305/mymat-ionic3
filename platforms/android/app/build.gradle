@@ -269,6 +269,10 @@ dependencies {
     implementation(project(path: ":CordovaLib"))
     compile "com.android.support:support-v4:24.1.1+"
     compile "com.android.support:support-v4:26.+"
+<<<<<<< HEAD
+=======
+    compile "com.squareup.okhttp3:okhttp-urlconnection:3.10.0"
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
     // SUB-PROJECT DEPENDENCIES END
 }
 

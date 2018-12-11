@@ -7,7 +7,11 @@
     "files": {}
   },
   "installed_plugins": {
+<<<<<<< HEAD
     "cordova-plugin-datepicker": {
+=======
+    "cordova-plugin-badge": {
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "cordova-plugin-device": {
@@ -33,11 +37,20 @@
     },
     "ionic-plugin-keyboard": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-badge": {
+    "cordova-plugin-datepicker": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+<<<<<<< HEAD
+=======
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
     }
   }
 }

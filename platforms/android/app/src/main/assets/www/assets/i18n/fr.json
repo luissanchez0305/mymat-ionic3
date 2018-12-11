@@ -18,7 +18,10 @@
     "home-title" : "HOME",
     "help-title" : "AIDEZ-MOI",
     "contact-title" : "CONTACTEZ NOUS",
+<<<<<<< HEAD
     "slider-title" : "INSTRUCTIONS",
+=======
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
     "email-success-message": "Votre message a été envoyé! Nous vous contacterons dès que possible",
     "email-success-title": "Envoyé",
     "email-error-message": "Une erreur est survenue lors de l'envoi de l'e-mail",
@@ -81,6 +84,7 @@
     "senior-upper" : "SENIOR",
     "chakra-balancing": "CHAKRA <br> ÉQUILIBRAGE",
     "elements-meridians": "ELEMENTS & <br> MERIDIANS <br>",
+<<<<<<< HEAD
     "petss": "MASCOTTES S",
     "petsx": "MASCOTTES X",
     "programs": "PROGRAMMES",
@@ -96,6 +100,10 @@
     "profile-success-message": "Your profile have been successful saved",
     "offline-device-text": "Your device is offline",
     "offline-device-text-2" : "There's been an error communicating your device with our services. Please make sure it's online",
+=======
+    "programs": "PROGRAMMES",
+    "continue": "Continuer",
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
     "first-chakra-upper": "1er CHAKRA",
     "second-chakra-upper": "2ième CHAKRA",
     "third-chakra-upper": "3ième CHAKRA",
@@ -334,6 +342,7 @@
         "liver-function-upper": "FONCTIONS DES REINS",
         "kidney-function-upper": "FONCTIONS DES REINS",
         "large-intestine-balancing-upper": "BILAN GROS INTESTIN",
+<<<<<<< HEAD
         "pericardium-flow-upper": "CIRCULATION DU PÉRICARDE",
         "routine-pets-upper1": "SYSTÈME IMMUNITAIRE",
         "routine-pets-upper2": "DETOXICATION",
@@ -355,4 +364,7 @@
         "petss-program-description":"•Ce programme, combiné aux autres, aidera votre animal de compagnie (chat, petit chien ou tout petit mammifère) à récupérer plus rapidement des blessures, des maladies ou des traumatismes de séparation ou de voyage.",
         "petsx-program-upper":"PET X",
         "petsx-program-description":"•Ce programme en association avec d'autres est indiqué pour aider vos gros animaux de compagnie (gros chiens, chevaux et autres mammifères) avec un temps de récupération plus court après les blessures, les maladies ou les traumatismes causés par la séparation ou les voyages."
+=======
+        "pericardium-flow-upper": "CIRCULATION DU PÉRICARDE"
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
 }

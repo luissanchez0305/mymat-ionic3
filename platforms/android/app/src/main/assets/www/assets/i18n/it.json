@@ -19,7 +19,10 @@
         "home-title" : "HOME",
         "help-title" : "AIUTO",
         "contact-title" : "CONTATTACI",
+<<<<<<< HEAD
         "slider-title" : "ISTRUZIONI",
+=======
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
         "email-success-message": "Il tuo messaggio è stato inviato! Ti contatteremo il prima possibile",
         "email-success-title": "Inviato",
         "email-error-message": "C'è stato un errore nell'invio dell'email",
@@ -80,6 +83,7 @@
         "senior-upper" : "ANZIANI",
         "chakra-balancing": "EQUILIBRIO <br> CHAKRA",
         "elements-meridians": "ELEMENTS & <br> MERIDIANS <br>",
+<<<<<<< HEAD
         "petss": "ANIMALI S",
         "petsx": "ANIMALI X",
         "programs": "PROGRAMMI",
@@ -95,6 +99,10 @@
         "profile-success-message": "Your profile have been successful saved",
     "offline-device-text": "Your device is offline",
     "offline-device-text-2" : "There's been an error communicating your device with our services. Please make sure it's online",
+=======
+        "programs": "PROGRAMMI",
+        "continue": "Continua",
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
         "first-chakra-upper": "I CHAKRA",
         "second-chakra-upper": "II CHAKRA",
         "third-chakra-upper": "III CHAKRA",
@@ -330,6 +338,7 @@
         "liver-function-upper": "FUNZIONE DEL FEGATO",
         "kidney-function-upper": "FUNZIONE RENALE",
         "large-intestine-balancing-upper": "RIEQUILIBRIO INTESTINO CRASSO",
+<<<<<<< HEAD
         "pericardium-flow-upper": "FLUSSO DEL MAESTRO DEL CUORE",
         "routine-pets-upper1":"SISTEMA IMMUNITARIO",
         "routine-pets-upper2":"DISINTOSSICAZIONE",
@@ -351,4 +360,7 @@
         "petss-program-description":"•Questo programma in combinazione con gli altri, aiuterà il tuo animale domestico (gatto, piccolo cane o piccoli mammiferi) a recuperare molto più velocemente da ferite, malattie o traumi di separazione o di viaggio.",
         "petsx-program-upper":"PET X",
         "petsx-program-description":"•Questo programma in combinazione con altri è indicato per aiutare i tuoi animali più grandi (cani di grossa taglia, cavalli e altri mammiferi) con un tempo di recupero più breve dopo infortuni, malattie o traumi causati dalla separazione o dal viaggio"
+=======
+        "pericardium-flow-upper": "FLUSSO DEL MAESTRO DEL CUORE"
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
 	}

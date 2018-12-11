@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [{"outputType":{"type":"INSTANT_RUN_MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":80310},"path":"AndroidManifest.xml","properties":{"packageId":"com.esferasoluciones.mymat_light","split":"","minSdkVersion":"19"}}]
+=======
+[{"outputType":{"type":"INSTANT_RUN_MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":80220},"path":"AndroidManifest.xml","properties":{"packageId":"com.esferasoluciones.mymat_light","split":"","minSdkVersion":"19"}}]
+>>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
