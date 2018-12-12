@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":80310},"path":"app-release-unsigned.apk","properties":{"packageId":"com.esferasoluciones.mymat_light","split":"","minSdkVersion":"19"}}]
-=======
-[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":80220},"path":"app-release-unsigned.apk","properties":{"packageId":"com.esferasoluciones.mymat_light","split":"","minSdkVersion":"19"}}]
->>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
+[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":80311},"path":"app-release-unsigned.apk","properties":{"packageId":"com.esferasoluciones.mymat_light","split":"","minSdkVersion":"19"}}]

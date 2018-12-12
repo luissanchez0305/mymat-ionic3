@@ -1,20 +1,8 @@
 {
-  "cordova-plugin-device": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-device@^1.1.4"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-email-composer": {
     "source": {
       "type": "registry",
-<<<<<<< HEAD
       "id": "cordova-plugin-email-composer@^0.8.15"
-=======
-      "id": "cordova-plugin-email-composer@^0.8.12"
->>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
     },
     "is_top_level": true,
     "variables": {}
@@ -27,18 +15,20 @@
     "is_top_level": true,
     "variables": {}
   },
+  "cordova-plugin-device": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-device"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
   "cordova-plugin-badge": {
     "source": {
       "type": "registry",
-<<<<<<< HEAD
       "id": "cordova-plugin-badge@>=0.8.5"
     },
     "is_top_level": false,
-=======
-      "id": "cordova-plugin-advanced-http"
-    },
-    "is_top_level": true,
->>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
     "variables": {}
   },
   "cordova-plugin-network-information": {
@@ -60,11 +50,7 @@
   "cordova-plugin-splashscreen": {
     "source": {
       "type": "registry",
-<<<<<<< HEAD
       "id": "cordova-plugin-splashscreen@^4.1.0"
-=======
-      "id": "cordova-plugin-splashscreen@^4.0.3"
->>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
     },
     "is_top_level": true,
     "variables": {}
@@ -72,11 +58,7 @@
   "cordova-plugin-whitelist": {
     "source": {
       "type": "registry",
-<<<<<<< HEAD
       "id": "cordova-plugin-whitelist@^1.3.3"
-=======
-      "id": "cordova-plugin-whitelist@^1.3.1"
->>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
     },
     "is_top_level": true,
     "variables": {}
@@ -89,15 +71,14 @@
     "is_top_level": true,
     "variables": {}
   },
-<<<<<<< HEAD
   "cordova-plugin-datepicker": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-datepicker@^0.9.3"
+      "id": "cordova-plugin-datepicker@~0.9.3"
     },
     "is_top_level": true,
     "variables": {}
-=======
+  },
   "cordova-plugin-advanced-http": {
     "source": {
       "type": "registry",
@@ -113,6 +94,5 @@
     },
     "is_top_level": false,
     "variables": {}
->>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
   }
 }

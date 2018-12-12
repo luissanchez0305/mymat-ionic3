@@ -1,4 +1,5 @@
 {
+        "culture":"it",
         "help": "<a class=\"item-content\" ng-href=\"#/app/help\" href=\"#/app/help\"> AIUTO </a>",
         "contact-us": "<a class=\"item-content\" ng-href=\"#/app/contactus\" href=\"#/app/contactus\"> CONTATTACI </a>" ,
         "contact-us-text": "CONTATTACI",
@@ -337,7 +338,7 @@
         "routine-pets-upper4":"OSSATURA",
         "routine-pets-upper5":"PELLE",
         "routine-pets-upper6":"MUSCOLI",
-        "routine-pets-upper7":"ROUTINE PET S 7",
+        "routine-pets-upper7":"STRESS & RILASSAMENTO",
         "routine-pets-upper8":"SISTEMA RESPIRATORIO",
         "routine-petx-upper1":"SISTEMA IMMUNITARIO",
         "routine-petx-upper2":"DISINTOSSICAZIONE",
@@ -345,7 +346,7 @@
         "routine-petx-upper4":"OSSATURA",
         "routine-petx-upper5":"PELLE",
         "routine-petx-upper6":"MUSCOLI",
-        "routine-petx-upper7":"ROUTINE PET X 7",
+        "routine-petx-upper7":"STRESS & RILASSAMENTO",
         "routine-petx-upper8":"SISTEMA RESPIRATORIO",
         "petss-program-upper":"PET S",
         "petss-program-description":"•Questo programma in combinazione con gli altri, aiuterà il tuo animale domestico (gatto, piccolo cane o piccoli mammiferi) a recuperare molto più velocemente da ferite, malattie o traumi di separazione o di viaggio.",

@@ -1,4 +1,5 @@
 {
+    "culture":"gr",
     "help": "<a class=\"item-content\" ng-href=\"#/app/help\" href=\"#/app/help\"> HILFE </a>",
     "contact-us": "<a class=\"item-content\" ng-href=\"#/app/contactus\" href=\"#/app/contactus\"> KONTAKTIEREN SIE UNS </a>",
     "contact-us-text": "KONTAKTIEREN SIE UNS",
@@ -18,10 +19,7 @@
     "home-title" : "HOME",
     "help-title" : "HILFE",
     "contact-title" : "KONTAKTIERE UNS",
-<<<<<<< HEAD
     "slider-title" : "ANLEITUNG",
-=======
->>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
     "email-success-message": "Ihre Nachricht wurde gesendet! Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen",
     "email-success-title": "Gesendet",
     "email-error-message": "Beim Senden der E-Mail ist ein Fehler aufgetreten",
@@ -84,7 +82,6 @@
     "senior-upper" : "SENIOR",
     "chakra-balancing": "CHAKRAS",
     "elements-meridians": "ELEMENTE & <br> MERIDIANE",
-<<<<<<< HEAD
     "petss": "HAUSTIERE S",
     "petsx": "HAUSTIERE X",
     "programs": "PROGRAMME",
@@ -100,10 +97,6 @@
     "profile-success-message": "Your profile have been successful saved",
     "offline-device-text": "Your device is offline",
     "offline-device-text-2" : "There's been an error communicating your device with our services. Please make sure it's online",
-=======
-    "programs": "PROGRAMME",
-    "continue": "Weiter",
->>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
     "first-chakra-upper": "1. CHAKRA",
     "second-chakra-upper": "2. CHAKRA",
     "third-chakra-upper": "3. CHAKRA",
@@ -334,7 +327,6 @@
         "liver-function-upper": "LEBERFUNKTION",
         "kidney-function-upper": "NIERENFUNKTION",
         "large-intestine-balancing-upper": "GROßE INTESTIN BALANCING",
-<<<<<<< HEAD
         "pericardium-flow-upper": "PERICARDIUM-FLÜSSE",
         "routine-pets-upper1":"IMMUNSYSTEM",
         "routine-pets-upper2":"DESINTOXIZIERUNG",
@@ -342,7 +334,7 @@
         "routine-pets-upper4":"KNOCHEN",
         "routine-pets-upper5":"HAUT",
         "routine-pets-upper6":"MUSKELN",
-        "routine-pets-upper7":"PET ROUTINE S 7",
+        "routine-pets-upper7":"STRESS BEFREIUNG",
         "routine-pets-upper8":"ATEMSYSTEM",
         "routine-petx-upper1":"IMMUNSYSTEM",
         "routine-petx-upper2":"DESINTOXIZIERUNG",
@@ -350,13 +342,10 @@
         "routine-petx-upper4":"KNOCHEN",
         "routine-petx-upper5":"HAUT",
         "routine-petx-upper6":"MUSKELN",
-        "routine-petx-upper7":"PET ROUTINE X 7",
+        "routine-petx-upper7":"STRESS BEFREIUNG",
         "routine-petx-upper8":"ATEMSYSTEM",
         "petss-program-upper":"PET S",
         "petss-program-description":"•Dieses Programm in Kombination mit den anderen, hilft Ihrem Haustier (Katze, kleinem Hund oder kleinem Säugetier) sich viel schneller von Verletzungen, Krankheit oder Traumas der Trennung oder Reisen zu erholen.",
         "petsx-program-upper":"PET X",
         "petsx-program-description":"•Dieses Programm in Kombination mit anderen ist angezeigt, um Ihren größeren Haustieren (große Hunde, Pferde und andere Säugetiere)zu helfen, die  Erholungszeit nach Verletzungen, Krankheiten oder Traumas durch Trennung oder Reisen zu verkuerzen."
-=======
-        "pericardium-flow-upper": "PERICARDIUM-FLÜSSE"
->>>>>>> dddf1f1fd234951d66b143ca45fa93b0ba2f407b
 }
