@@ -1,19 +1,19 @@
 {
-  "_from": "cordova-plugin-advanced-http@2.0.2",
+  "_from": "cordova-plugin-advanced-http@^2.0.2",
   "_id": "cordova-plugin-advanced-http@2.0.2",
   "_inBundle": false,
   "_integrity": "sha512-UAzA72gkaXCSDGeFcFjeaaHhRo2t+P+wwzNM62hMOtbH0eCovwOAuMTfF26P9idl0fw9QvHfjTl0mxTUL6qFEw==",
   "_location": "/cordova-plugin-advanced-http",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "cordova-plugin-advanced-http@2.0.2",
+    "raw": "cordova-plugin-advanced-http@^2.0.2",
     "name": "cordova-plugin-advanced-http",
     "escapedName": "cordova-plugin-advanced-http",
-    "rawSpec": "2.0.2",
+    "rawSpec": "^2.0.2",
     "saveSpec": null,
-    "fetchSpec": "2.0.2"
+    "fetchSpec": "^2.0.2"
   },
   "_requiredBy": [
     "#USER",
@@ -21,8 +21,8 @@
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-advanced-http/-/cordova-plugin-advanced-http-2.0.2.tgz",
   "_shasum": "a75834249aec411a4329f58930dfc3c3a01de71b",
-  "_spec": "cordova-plugin-advanced-http@2.0.2",
-  "_where": "c:\\Users\\lsanc\\projects\\mymat-ionic3",
+  "_spec": "cordova-plugin-advanced-http@^2.0.2",
+  "_where": "/Users/macbook/Documents/mymat-ionic3",
   "author": {
     "name": "Wymsee"
   },

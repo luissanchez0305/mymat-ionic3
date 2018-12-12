@@ -94,11 +94,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		G3uMBLLJO5e/ZdEJexYZntKV5nA=
+		x3Fp3B6zbDrmGUGV2bPc4CIzQ7I=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		1o6Wcxo18Kc5dTvxWVK7Ym7dKek=
+		ggjReRzoYdKXlHaGMFX4DWH/+zY=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -106,15 +106,15 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		QqeHIA4oHbT6uAmxrHMXEVhsl4M=
+		aWGD6ixzrx2B+RzyrK9JgdqKcIk=
 		</data>
 		<key>DatePicker.nib</key>
 		<data>
-		018Vfqdvsdge7MYVSW6eY1qDl18=
+		jFVozR9j0dMlQK2DodUv+xvN0KY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qXbigsPgpcA3frM1YJvM+7dFgQM=
+		EjykmIOWOFssl52Hm7pfHScSZYY=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		sOnKXa02lW/JpZJbVKJR6mFgS0w=
+		lJAiOCp6+2jUlbJ+ydY3fUa47OA=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		vZ4EE8DgqIEJP1JjU2R/vqg38xQ=
+		XVY+PMHmx3KbzXI2NkSE9G+YywY=
 		</data>
 		<key>www/assets/fonts/ionicons.woff</key>
 		<data>
@@ -234,27 +234,27 @@
 		</data>
 		<key>www/assets/i18n/en.json</key>
 		<data>
-		gA6JdztU0XLuVzd/rEGRLWKb3+k=
+		lNZHnCtRFKUKy2w//uGZvYc0gBc=
 		</data>
 		<key>www/assets/i18n/es.json</key>
 		<data>
-		Sn6stbvfWcXT2pYqmVwMxgOpHTM=
+		Gigw03tRsyXZ76GTazg+RFEIxXE=
 		</data>
 		<key>www/assets/i18n/fr.json</key>
 		<data>
-		jqAbaeU7ksDIl1IDwG+ohYCAEJE=
+		UgS9CJIiV4TJyPt+HUqbjskRBQ8=
 		</data>
 		<key>www/assets/i18n/gr.json</key>
 		<data>
-		xTtC2wcAz9HVvM0PlhItJFWQ/yg=
+		AJqRVBk8Vj5d3lOA23sBhPqyfN0=
 		</data>
 		<key>www/assets/i18n/it.json</key>
 		<data>
-		eqqHrEKWT1u9pMv+H0qEOtt6RBg=
+		P9cvwfcsTRE4PArVqXMqclVCjLo=
 		</data>
 		<key>www/assets/i18n/pt.json</key>
 		<data>
-		EAfjZaquUKqebHnJNtqh2KHQOZ8=
+		p2rn+keJ5HYu98v89xsTQmCLLoU=
 		</data>
 		<key>www/assets/icon/favicon.ico</key>
 		<data>
@@ -283,6 +283,14 @@
 		<key>www/assets/img/FondoApp-HH.png</key>
 		<data>
 		jriFSL37DTCTPSgciARUYbaR+iE=
+		</data>
+		<key>www/assets/img/MascotasS.png</key>
+		<data>
+		DQGYWE127uCk2eBahYEUTZeJeis=
+		</data>
+		<key>www/assets/img/MascotasX.png</key>
+		<data>
+		8I8Yc7kaRlFpbU5XYGZK6X/3r9k=
 		</data>
 		<key>www/assets/img/Senior.png</key>
 		<data>
@@ -556,6 +564,126 @@
 		<data>
 		e3KcmUMvj93oBEh9D9oybyF0cSg=
 		</data>
+		<key>www/assets/imgs/instructions/en/1.png</key>
+		<data>
+		l6DaQ3fCCykNfZaXY16qbdTCUSg=
+		</data>
+		<key>www/assets/imgs/instructions/en/2.png</key>
+		<data>
+		nK0hTwX9xNjX1ygRgmBXj2d/J9s=
+		</data>
+		<key>www/assets/imgs/instructions/en/3.png</key>
+		<data>
+		hgOADh4xMjUE1mYXwL0tQDvdYAo=
+		</data>
+		<key>www/assets/imgs/instructions/en/4.png</key>
+		<data>
+		o1xiju2RkHgxps716K+M8G5iNiY=
+		</data>
+		<key>www/assets/imgs/instructions/en/5.png</key>
+		<data>
+		e5ptzEoq9nfLkm0ki8yAQthDAlU=
+		</data>
+		<key>www/assets/imgs/instructions/es/1.png</key>
+		<data>
+		ODADByQhx4kJBwlCtbbXEtsuFWo=
+		</data>
+		<key>www/assets/imgs/instructions/es/2.png</key>
+		<data>
+		jDBeU9xM+9c79EH/GEpW4Sz8Lds=
+		</data>
+		<key>www/assets/imgs/instructions/es/3.png</key>
+		<data>
+		TY73MmBcILwCqeRiQCEqb2TsoZc=
+		</data>
+		<key>www/assets/imgs/instructions/es/4.png</key>
+		<data>
+		xX4M+8N69wyR/VG6hcU6S32ppPY=
+		</data>
+		<key>www/assets/imgs/instructions/es/5.png</key>
+		<data>
+		ARjrVL9f7DFFRo8VhwvVQWjTVRY=
+		</data>
+		<key>www/assets/imgs/instructions/fr/1.png</key>
+		<data>
+		6etkeGVgh8ndJaddqXgJNEr++dA=
+		</data>
+		<key>www/assets/imgs/instructions/fr/2.png</key>
+		<data>
+		Ix7F4O0GfBkwmcAJdzhIhFIvxGU=
+		</data>
+		<key>www/assets/imgs/instructions/fr/3.png</key>
+		<data>
+		paD1JXSLgHT6TnAkG3jmBZMZ3ac=
+		</data>
+		<key>www/assets/imgs/instructions/fr/4.png</key>
+		<data>
+		ehIQr8M8aNjVyL/BYtiXUNodK90=
+		</data>
+		<key>www/assets/imgs/instructions/fr/5.png</key>
+		<data>
+		qXVDcWuQIqKvi9js/L8Qw1bBfas=
+		</data>
+		<key>www/assets/imgs/instructions/gr/1.png</key>
+		<data>
+		Olmzgkx0+45yZpADqf/GdtBMbrI=
+		</data>
+		<key>www/assets/imgs/instructions/gr/2.png</key>
+		<data>
+		5zexwsdYs6PifOYQzbcPVbSxa78=
+		</data>
+		<key>www/assets/imgs/instructions/gr/3.png</key>
+		<data>
+		aEDZggMkXWZHdUOhEFAOkMkrTcI=
+		</data>
+		<key>www/assets/imgs/instructions/gr/4.png</key>
+		<data>
+		RR8FYGjCM97E6sdX7OQR+GPpdSs=
+		</data>
+		<key>www/assets/imgs/instructions/gr/5.png</key>
+		<data>
+		3E+VdXdPVOA7EfPylVeAh7cB62Y=
+		</data>
+		<key>www/assets/imgs/instructions/it/1.png</key>
+		<data>
+		G+CYJcbFWaT36kW09XHUdEFaKTM=
+		</data>
+		<key>www/assets/imgs/instructions/it/2.png</key>
+		<data>
+		U5qF+pdMU76cm3KaWPiWayIuE1k=
+		</data>
+		<key>www/assets/imgs/instructions/it/3.png</key>
+		<data>
+		utSNoWeIsfQ3CRUURxQpNRYO+Ek=
+		</data>
+		<key>www/assets/imgs/instructions/it/4.png</key>
+		<data>
+		eI5TVd0hJ/hKIrXkJnvbvHjIN2A=
+		</data>
+		<key>www/assets/imgs/instructions/it/5.png</key>
+		<data>
+		KAXSaGdPgy/6C1a1bfz6ei4vAcM=
+		</data>
+		<key>www/assets/imgs/instructions/pt/1.png</key>
+		<data>
+		50cstLA4K4v//Exi8W1bk+7aI88=
+		</data>
+		<key>www/assets/imgs/instructions/pt/2.png</key>
+		<data>
+		0+F1GiJ199LEp417sNGrNaFf1oM=
+		</data>
+		<key>www/assets/imgs/instructions/pt/3.png</key>
+		<data>
+		+wRfPks7KOvYVuIo8ZuYwJU7K1w=
+		</data>
+		<key>www/assets/imgs/instructions/pt/4.png</key>
+		<data>
+		KZTlz4h2eAgxAPe4dGVhSh+CfTE=
+		</data>
+		<key>www/assets/imgs/instructions/pt/5.png</key>
+		<data>
+		0HojaVJlqlVYeghskAAQgpW7MGw=
+		</data>
 		<key>www/assets/imgs/logo.png</key>
 		<data>
 		nzjF+TINPh/xuCdfiTCObIKicOE=
@@ -578,11 +706,11 @@
 		</data>
 		<key>www/build/main.css</key>
 		<data>
-		4cFkuZ+10qEO/nBhMBhTlm5gtis=
+		vmVo99g3vStkKLOK5JtMdFeRZcM=
 		</data>
 		<key>www/build/main.js</key>
 		<data>
-		bUyg3QaKTwSz2Im3p6+Zy58g5Bo=
+		/k+2Y2mTaARQmVQatPsfSX3ZN+4=
 		</data>
 		<key>www/build/polyfills.js</key>
 		<data>
@@ -594,7 +722,7 @@
 		</data>
 		<key>www/build/vendor.js</key>
 		<data>
-		kaQsp0piFq8+o4miXDaWenEeQ2w=
+		vdgwO5R7BAUwR/GlcpFo8B40gQw=
 		</data>
 		<key>www/cordova-js-src/exec.js</key>
 		<data>
@@ -618,7 +746,7 @@
 		</data>
 		<key>www/cordova_plugins.js</key>
 		<data>
-		i+LzzcIDa4MuDlvCLlZYz2eZbPA=
+		lc/eGuruXio90StJ4/WApv8Um5c=
 		</data>
 		<key>www/index.html</key>
 		<data>
@@ -1045,22 +1173,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G3uMBLLJO5e/ZdEJexYZntKV5nA=
+			x3Fp3B6zbDrmGUGV2bPc4CIzQ7I=
 			</data>
 			<key>hash2</key>
 			<data>
-			pFilZbPjix6oFJeMvukk4IBG86xh4ZJs/3TUS+yY/aU=
+			kMuKMXUACA2SoZ3OKOx1X7rMumrcgwo/33WtChQylec=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1o6Wcxo18Kc5dTvxWVK7Ym7dKek=
+			ggjReRzoYdKXlHaGMFX4DWH/+zY=
 			</data>
 			<key>hash2</key>
 			<data>
-			e8BFt4iCtfd3GzsBMeqx4B9fcqwz3djgriCHj7Mx4/o=
+			sxBO2oAAqfLiSrxl5m84nxP3nrNcM6cV7STe6RwlSL4=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -1078,22 +1206,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QqeHIA4oHbT6uAmxrHMXEVhsl4M=
+			aWGD6ixzrx2B+RzyrK9JgdqKcIk=
 			</data>
 			<key>hash2</key>
 			<data>
-			P2jijUuIIVGEkUEh60LXM8wsJ7DRUQKoBdezVKiOtz4=
+			2rSbfiInZRJo3i2I8mfnxjVv6y6u2oBHlvBVcEefdtw=
 			</data>
 		</dict>
 		<key>DatePicker.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			018Vfqdvsdge7MYVSW6eY1qDl18=
+			jFVozR9j0dMlQK2DodUv+xvN0KY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jt2OYfGBKnNQXpu/lTk2bvgaDHIQ1pHRRjhJa0Wqg9U=
+			6IEdyS4YryobYv/KKOkWteDJRCYO+ZosxZpJOQgJcMs=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -1276,22 +1404,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sOnKXa02lW/JpZJbVKJR6mFgS0w=
+			lJAiOCp6+2jUlbJ+ydY3fUa47OA=
 			</data>
 			<key>hash2</key>
 			<data>
-			MtofeKGKYrJK1uEHGERdFl+LZn228BE2TpyFtjjMXz4=
+			l3ZbpieM0uBA5zcN3Eyy1kz3mDm3IoKnQ8GhMnJgBwY=
 			</data>
 		</dict>
 		<key>config.xml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vZ4EE8DgqIEJP1JjU2R/vqg38xQ=
+			XVY+PMHmx3KbzXI2NkSE9G+YywY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mO0yEh66lsmaYVXNYqMUDtwbMJ6WAGLJeD2d1lh08MQ=
+			CUt1+yIU92oD3hY72HA2PHkN7EHlh5dosO3fQ+0dteY=
 			</data>
 		</dict>
 		<key>www/assets/fonts/ionicons.woff</key>
@@ -1408,66 +1536,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gA6JdztU0XLuVzd/rEGRLWKb3+k=
+			lNZHnCtRFKUKy2w//uGZvYc0gBc=
 			</data>
 			<key>hash2</key>
 			<data>
-			z+0A5Uamwd8FFMVpxOniMwJiNT/WfXrz27GVl8axUVQ=
+			V8BJ7mIrIQCaF9hBGgeTHHkU5uHnfILcojxO7kA12bs=
 			</data>
 		</dict>
 		<key>www/assets/i18n/es.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Sn6stbvfWcXT2pYqmVwMxgOpHTM=
+			Gigw03tRsyXZ76GTazg+RFEIxXE=
 			</data>
 			<key>hash2</key>
 			<data>
-			MiWpMbhPHt4En+bgFvB5QckvrWpxfnz2ep+va0bEZMw=
+			erlgu8bW/zJUK+Cwm4fFvTQdQwmbGhFVuF8c50IisAU=
 			</data>
 		</dict>
 		<key>www/assets/i18n/fr.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jqAbaeU7ksDIl1IDwG+ohYCAEJE=
+			UgS9CJIiV4TJyPt+HUqbjskRBQ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			klSRe5Gy+0IL0gcdtNQjP4PmIrwRYbj+GLfo5yYaVBw=
+			TiuAvRdBpkrEMgob22eVVmhQnK3z/bIkThSg/l6s18Y=
 			</data>
 		</dict>
 		<key>www/assets/i18n/gr.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xTtC2wcAz9HVvM0PlhItJFWQ/yg=
+			AJqRVBk8Vj5d3lOA23sBhPqyfN0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ASwjVq1szejtLCI4s13/jrhpjNJ52Ckx+Z/wBZB8DsY=
+			7Z4Erz77kIPR/VNp1ojm+vlGSdlrRDPmesnJ6sE3TuM=
 			</data>
 		</dict>
 		<key>www/assets/i18n/it.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eqqHrEKWT1u9pMv+H0qEOtt6RBg=
+			P9cvwfcsTRE4PArVqXMqclVCjLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			lsD9sObwAPf/N6zPEVNlMtRIa6ZYwY8X+QAdJg7Q/D0=
+			XEkKRlC53wuqr4EIZxoAfO8X7eMWkoqHVk+vN9pV0GA=
 			</data>
 		</dict>
 		<key>www/assets/i18n/pt.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EAfjZaquUKqebHnJNtqh2KHQOZ8=
+			p2rn+keJ5HYu98v89xsTQmCLLoU=
 			</data>
 			<key>hash2</key>
 			<data>
-			tRVYlg7U0wApa5XC0Rn0A3oCqWxTBUct4aUmTrzNiLA=
+			WawED6tFxVziV2JznqogoJTzMC667WvCybPlU72RVyc=
 			</data>
 		</dict>
 		<key>www/assets/icon/favicon.ico</key>
@@ -1545,6 +1673,28 @@
 			<key>hash2</key>
 			<data>
 			LF6fCQ/4w6kkJZ/DeQV7nHs42V/N0qxp7FKGQPJBJhY=
+			</data>
+		</dict>
+		<key>www/assets/img/MascotasS.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DQGYWE127uCk2eBahYEUTZeJeis=
+			</data>
+			<key>hash2</key>
+			<data>
+			mgkxZFRbdSwj47S3TD6fw9cPyw2LAnqSuuRpDuTGWAc=
+			</data>
+		</dict>
+		<key>www/assets/img/MascotasX.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8I8Yc7kaRlFpbU5XYGZK6X/3r9k=
+			</data>
+			<key>hash2</key>
+			<data>
+			9QThnNSMRCGLKGWh4kPuPEPwNeBW+80vDOa9OATebpM=
 			</data>
 		</dict>
 		<key>www/assets/img/Senior.png</key>
@@ -2295,6 +2445,336 @@
 			KHVD0hALaPnmyzUPWxJNlhalmHbUyvInW8wbipkoqrM=
 			</data>
 		</dict>
+		<key>www/assets/imgs/instructions/en/1.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l6DaQ3fCCykNfZaXY16qbdTCUSg=
+			</data>
+			<key>hash2</key>
+			<data>
+			QZomAMoTM499hlCxMedDAueLJ7SkYmjwu8OEcwZbRmE=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/en/2.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nK0hTwX9xNjX1ygRgmBXj2d/J9s=
+			</data>
+			<key>hash2</key>
+			<data>
+			eH8ZvlR9Etwibxzr1urDrpsBvbJjpRa76PT3ZnVEIHk=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/en/3.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hgOADh4xMjUE1mYXwL0tQDvdYAo=
+			</data>
+			<key>hash2</key>
+			<data>
+			HOM0lbpCc3GBws63rFqNDqyRePm9BwaAhxmEuuAEK8g=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/en/4.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o1xiju2RkHgxps716K+M8G5iNiY=
+			</data>
+			<key>hash2</key>
+			<data>
+			L1BbZx5FCmGHwjrzeqgwl0pot9+wv5WsaoKknwMbGAA=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/en/5.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			e5ptzEoq9nfLkm0ki8yAQthDAlU=
+			</data>
+			<key>hash2</key>
+			<data>
+			+dDiUOvHHy/eZIQz2lOWUOm5h+r/9lX+mA+xbzr8gIs=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/es/1.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ODADByQhx4kJBwlCtbbXEtsuFWo=
+			</data>
+			<key>hash2</key>
+			<data>
+			E1k82tfF8bc1HmFIseKWwLJ+Q15nM4NxIYlIf+LE5QQ=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/es/2.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jDBeU9xM+9c79EH/GEpW4Sz8Lds=
+			</data>
+			<key>hash2</key>
+			<data>
+			p+eA0VoK8NXf5waFYqtgdc9yQcOpXRQQZpcUIQjZAn0=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/es/3.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TY73MmBcILwCqeRiQCEqb2TsoZc=
+			</data>
+			<key>hash2</key>
+			<data>
+			PbK/CmadtXlial1xpQCbbRQFxTtIYjTtimeIfzYGxHo=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/es/4.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xX4M+8N69wyR/VG6hcU6S32ppPY=
+			</data>
+			<key>hash2</key>
+			<data>
+			GT5eS9kx0N0//3UBjK9XsLsyvptEUVQxe3bF32//ONU=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/es/5.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ARjrVL9f7DFFRo8VhwvVQWjTVRY=
+			</data>
+			<key>hash2</key>
+			<data>
+			j8sMzAoWjCGybOTxF00ecDV5YCnEqKCuWk6ViKOfIu0=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/fr/1.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6etkeGVgh8ndJaddqXgJNEr++dA=
+			</data>
+			<key>hash2</key>
+			<data>
+			H1MCwujiNN/LWRGrfybKGMnDDVcXMmdW+KRA7TBftAA=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/fr/2.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ix7F4O0GfBkwmcAJdzhIhFIvxGU=
+			</data>
+			<key>hash2</key>
+			<data>
+			uRgYa6fzwLq96/VKCE4u0gYfAYdRauDR5jsP2EGvnJU=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/fr/3.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			paD1JXSLgHT6TnAkG3jmBZMZ3ac=
+			</data>
+			<key>hash2</key>
+			<data>
+			zwuWh+9BJC3VMKnnpSsakE93gKbeYYfMSZ/SKIRs2rk=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/fr/4.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ehIQr8M8aNjVyL/BYtiXUNodK90=
+			</data>
+			<key>hash2</key>
+			<data>
+			TeK8Gqt90ZlRMCsHdBaoG8ZXM4ZffJJB9HtwfSjOAwE=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/fr/5.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qXVDcWuQIqKvi9js/L8Qw1bBfas=
+			</data>
+			<key>hash2</key>
+			<data>
+			SuVspBxeJw88gR+XsvhmImovqAaxT5xYCoBoYONRD6c=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/gr/1.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Olmzgkx0+45yZpADqf/GdtBMbrI=
+			</data>
+			<key>hash2</key>
+			<data>
+			5EsLGFNeoonCv7meYIYbBAT1Y3gXdKYoCbOo0PmBnp0=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/gr/2.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5zexwsdYs6PifOYQzbcPVbSxa78=
+			</data>
+			<key>hash2</key>
+			<data>
+			g0CA29b9FrHCMF4p4taTF8/aaZmfrw7BEIJU2o3cPk8=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/gr/3.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aEDZggMkXWZHdUOhEFAOkMkrTcI=
+			</data>
+			<key>hash2</key>
+			<data>
+			zgVCfdPMgHwLRvgbcxVnBmc5jFxGlIP6inif6QINWrA=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/gr/4.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RR8FYGjCM97E6sdX7OQR+GPpdSs=
+			</data>
+			<key>hash2</key>
+			<data>
+			vdeQ+68FhoIU9sdawhHhXwIzpahVBRNyOSnEz+bfggk=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/gr/5.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3E+VdXdPVOA7EfPylVeAh7cB62Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			iwWdaXVXLyIp1K43IXSRrKoiaVZMhKeM/ZlSvaps6Qs=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/it/1.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G+CYJcbFWaT36kW09XHUdEFaKTM=
+			</data>
+			<key>hash2</key>
+			<data>
+			x2dZQVROc4d1gWdUoVeb2qTw+wLbyo7kOskw2PWr7PM=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/it/2.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U5qF+pdMU76cm3KaWPiWayIuE1k=
+			</data>
+			<key>hash2</key>
+			<data>
+			4arM9f8XGOKPBwNjcbsfqo53RVkrzI4W7NFptqLuvyk=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/it/3.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			utSNoWeIsfQ3CRUURxQpNRYO+Ek=
+			</data>
+			<key>hash2</key>
+			<data>
+			K6Anqn2umMq9lCHUCfrNLb6+qzIWYhd78hxu73I846M=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/it/4.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eI5TVd0hJ/hKIrXkJnvbvHjIN2A=
+			</data>
+			<key>hash2</key>
+			<data>
+			Z6SH/VDEuLj/7uxYi34LeuqPZSQLh4Kozde8xWKtj9U=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/it/5.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KAXSaGdPgy/6C1a1bfz6ei4vAcM=
+			</data>
+			<key>hash2</key>
+			<data>
+			iSrl5bIBmitc65Gcq2nrjyjhTmBfD8WC9IsHPd7J+LQ=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/pt/1.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			50cstLA4K4v//Exi8W1bk+7aI88=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZR2aruCO0ExuNMCHc1n9qwAZfr0HkfYZFgF+TnH8Q54=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/pt/2.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0+F1GiJ199LEp417sNGrNaFf1oM=
+			</data>
+			<key>hash2</key>
+			<data>
+			bH4b9FZ3Lk/ZNbZMCn/ILB1SThrnK5t7sj3vvVBekvs=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/pt/3.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+wRfPks7KOvYVuIo8ZuYwJU7K1w=
+			</data>
+			<key>hash2</key>
+			<data>
+			ClqWf0NmGNPiBu1AigIFqHl5YOJwjRR17FkmE94q5GA=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/pt/4.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KZTlz4h2eAgxAPe4dGVhSh+CfTE=
+			</data>
+			<key>hash2</key>
+			<data>
+			HX0mXC32r+h3PeA9H+Uq9YULkblW3xSbXn1ID11ijgE=
+			</data>
+		</dict>
+		<key>www/assets/imgs/instructions/pt/5.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0HojaVJlqlVYeghskAAQgpW7MGw=
+			</data>
+			<key>hash2</key>
+			<data>
+			T9LwfejSmpHr+Eo2UzB2oBKoX15w1qE9vXP6JHDR/Wk=
+			</data>
+		</dict>
 		<key>www/assets/imgs/logo.png</key>
 		<dict>
 			<key>hash</key>
@@ -2354,22 +2834,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4cFkuZ+10qEO/nBhMBhTlm5gtis=
+			vmVo99g3vStkKLOK5JtMdFeRZcM=
 			</data>
 			<key>hash2</key>
 			<data>
-			D6/6fOMuCkGsat7o7uXg50bOA6fkgTocEEHpnsy6g0M=
+			k2nKV5POgW38p/GegbDgM0vo8DOvzMoD7DzFR5F88yA=
 			</data>
 		</dict>
 		<key>www/build/main.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bUyg3QaKTwSz2Im3p6+Zy58g5Bo=
+			/k+2Y2mTaARQmVQatPsfSX3ZN+4=
 			</data>
 			<key>hash2</key>
 			<data>
-			3TLMIVmADqLEOzeBRh2Ff9Gpv9cPXjkGblKr4A6VpwU=
+			LVqFNEsQ66e2pxovJfshTdRyROH6tI3mTu/bvezVTl4=
 			</data>
 		</dict>
 		<key>www/build/polyfills.js</key>
@@ -2398,11 +2878,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kaQsp0piFq8+o4miXDaWenEeQ2w=
+			vdgwO5R7BAUwR/GlcpFo8B40gQw=
 			</data>
 			<key>hash2</key>
 			<data>
-			7s2KdcrEVJ9S8l5Fng80mnKn65rJ/6+90b4fEUvS8NY=
+			pBmnI4DH0snjFEOw+tdrln46VVjfL4oU9GbUedu+Zz4=
 			</data>
 		</dict>
 		<key>www/cordova-js-src/exec.js</key>
@@ -2464,11 +2944,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i+LzzcIDa4MuDlvCLlZYz2eZbPA=
+			lc/eGuruXio90StJ4/WApv8Um5c=
 			</data>
 			<key>hash2</key>
 			<data>
-			eXQq1u01DCd7jzNkkhaOanSPhqk1KO5ZaOFp0rPlZ1g=
+			gITnKiVhepyaqljDYTSza38J8KgI8JE6J6FElQnsPw0=
 			</data>
 		</dict>
 		<key>www/index.html</key>
