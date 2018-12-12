@@ -8,6 +8,6 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "com.esferasoluciones.mymat_light";
   public static final String BUILD_TYPE = "release";
   public static final String FLAVOR = "";
-  public static final int VERSION_CODE = 80310;
-  public static final String VERSION_NAME = "8.3.10";
+  public static final int VERSION_CODE = 80311;
+  public static final String VERSION_NAME = "8.3.11";
 }

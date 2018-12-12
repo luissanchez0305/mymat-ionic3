@@ -22,10 +22,10 @@ INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\mai
 	android:name
 		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:15:127-200
 manifest
-ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-28:12
 MERGED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\lsanc\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\a09133dcbc2cb1788a8bba1db98d6822\AndroidManifest.xml:2:1-52:12
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\lsanc\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\6a60e9fdfb046d9b45792dce51ccb35e\AndroidManifest.xml:17:1-31:12
 MERGED from [:CordovaLib] C:\Users\lsanc\projects\mymat-ionic3\platforms\android\CordovaLib\build\intermediates\manifests\full\release\AndroidManifest.xml:20:1-27:12
@@ -35,9 +35,9 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\lsanc\.grad
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\lsanc\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\eda3cc509ce1e3df279b0dddbf5058fa\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\lsanc\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\ec9d05398b5036d450a741ca3ee82ac7\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\lsanc\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\907a3b9982901f7d4ff4d7609354f891\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:103-145
 		INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml
@@ -192,6 +192,10 @@ uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:26:5-76
 	android:name
 		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:26:22-73
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:27:5-81
+	android:name
+		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:27:22-78
 meta-data#android.support.FILE_PROVIDER_PATHS
 ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:13:13-130
 	android:resource
