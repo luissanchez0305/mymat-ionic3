@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
 import { HttpClient } from '@angular/common/http';
+import { HTTP } from '@ionic-native/http';
 import { Constants } from '../../services/constants';
 //import { Network } from '@ionic-native/network';
 import 'rxjs/add/operator/map';
@@ -15,7 +16,7 @@ import { timeout } from 'rxjs/operators';
 */
 @Injectable()
 export class APIServiceProvider {
-  constructor(public http: HttpClient, public httpModule: Http, /*, private network: Network*/) {
+  constructor(public http: HttpClient, private httpNative: HTTP, public httpModule: Http, /*, private network: Network*/) {
 
   }
   test_language(){
@@ -95,16 +96,13 @@ export class APIServiceProvider {
     var program3 = programs[2].split("|")[3];
     var program4 = programs[3].split("|")[3];
 
-    var url = Constants.myMatApiStartUrl+"?P1="+program1+"&P2="+program2+"&P3="+program3+"&P4="+program4;
+    /*var formData = new FormData();
+    formData.append('P1', program1);
+    formData.append('P2', program2);
+    formData.append('P3', program3);
+    formData.append('P4', program4);*/
+    var params = "P1="+program1+"&P2="+program2+"&P3="+program3+"&P4="+program4;
 
-    return new Promise((resolve, reject) => {
-      this.httpModule.get(url)
-      .map(res => res.text())
-      .subscribe(res => {
-        resolve('success: ' + url);
-      }, (err) => {
-        reject('error: ' + err);
-      });
-    });
+    return this.httpNative.get(Constants.myMatApiStartUrl + '?' + params, "", {});
   }
 }

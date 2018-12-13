@@ -1,4 +1,5 @@
 {
+    "culture":"en",
     "help": "<a class=\"item-content\" ng-href=\"#/app/help\" href=\"#/app/help\">HELP</a>",
     "contact-us": "<a class=\"item-content\" ng-href=\"#/app/contactus\" href=\"#/app/contactus\">CONTACT US</a>",
     "contact-us-text": "CONTACT US",
@@ -336,7 +337,7 @@
     "routine-pets-upper4":"BONES",
     "routine-pets-upper5":"SKIN",
     "routine-pets-upper6":"MUSCLES",
-    "routine-pets-upper7":"PET ROUTINE S 7",
+    "routine-pets-upper7":"STRESS RELIEF",
     "routine-pets-upper8":"RESPIRATORY SYSTEM",
     "routine-petx-upper1":"INMUNE SYSTEM",
     "routine-petx-upper2":"DETOXIFICATION",
@@ -344,7 +345,7 @@
     "routine-petx-upper4":"BONES",
     "routine-petx-upper5":"SKIN",
     "routine-petx-upper6":"MUSCLES",
-    "routine-petx-upper7":"PET ROUTINE X 7",
+    "routine-petx-upper7":"STRESS RELIEF",
     "routine-petx-upper8":"RESPIRATORY SYSTEM",
     "petss-program-upper":"PET S",
     "petss-program-description":"•These programs will help your pet (cat, small dog or any small mammals) to recuperate much faster from injuries, sickness or traumas of separation or travel",
