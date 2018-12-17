@@ -7,7 +7,7 @@ x crear base de datos con datos basicos de usuarios
     - fecha de nacimiento
     - email
     - sexo
-    
+
 x crear de verificador de conexion a internet
 x crear vista de perfil del usuario
 x crear slides de introduccion
@@ -59,3 +59,7 @@ prioridad
     x deshabilitar el boton de iniciar rutina al darle click
     x poner timeout al metodo de test() que verifica si esta conectado al mat
     x esperar a que se valide la conexion con el mat y pasar a la pantalla tiempos o volver a loading de esperar por el mat
+
+diciembre 10
+x imagenes de instrucciones en diferentes idiomas
+x titulo de pets stress

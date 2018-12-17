@@ -4,9 +4,11 @@ import { IonicStorageModule } from '@ionic/storage';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpModule } from '@angular/http'; // solo se usa para hacer la prueba de conexion con el MyMat
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HTTP } from '@ionic-native/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NetworkInterface } from '@ionic-native/network-interface';
+//import { Network } from '@ionic-native/network';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 import { DatePicker } from '@ionic-native/date-picker';
 
@@ -85,7 +87,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     LocalNotifications,
     DatePicker,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    APIServiceProvider
+    APIServiceProvider,
+    HTTP
+
   ]
 })
 export class AppModule {}

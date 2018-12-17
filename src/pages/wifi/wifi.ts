@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, Platform } from 'ionic-angular';
+import { NavController, NavParams, Platform, ToastController  } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { PlayingPage } from '../playing/playing';
@@ -41,7 +41,7 @@ export class WifiPage {
   public showIframeStatus : boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider,
-    private translateService: TranslateService, public networkInterface : NetworkInterface, public platform: Platform) {
+    private translateService: TranslateService, public networkInterface : NetworkInterface, public platform: Platform, private toastCtrl: ToastController) {
       this.storage.get(Constants.storageKeyLang).then((lang)=>{
         this.translateService.getTranslation(lang).subscribe((value) =>{
           this.coilText = typeof value['coil'] === 'undefined' ? 'Antena' : value['coil'];
@@ -282,6 +282,7 @@ export class WifiPage {
 
           this.testBeginRoutineInterval = setInterval(() => {
             if(isValidateSuccessProgram == 4){
+              clearInterval(this.testBeginRoutineInterval);
               var programs = [
                   program1Obj,
                   program2Obj,
@@ -291,18 +292,26 @@ export class WifiPage {
 
               this.apiService.start(programs).then((response) => {
                 console.log(response + '');
-
-                /* CORRER RUTINA */
-                this.navCtrl.setRoot(PlayingPage);
-              }, (response) =>{
-                //alert('Error al cargar rutina, intente nuevamente - ' + response);
+              }).catch((response) =>{
+                setTimeout(() => {
+                  var emailData = { error : response.data };
+                  this.apiService.sendError(emailData).then((result) => {
+                    console.log(response.data);
+                  });
+                }, 120000);
               });
 
-              clearInterval(this.testBeginRoutineInterval);
+              /* CORRER RUTINA */
+              this.navCtrl.setRoot(PlayingPage);
             }
             else if(isValidateSuccessProgram + isValidateErrorProgram == 4){
-              alert('Error al cargar rutina, intente nuevamente - ' + error1Obj + ' - ' + error2Obj+ ' - ' + error3Obj + ' - ' + error4Obj);
               clearInterval(this.testBeginRoutineInterval);
+              let toast = this.toastCtrl.create({
+                message: 'Ha ocurrido un error (Code: 2)',
+                duration: 5000,
+                position: 'bottom'
+              });
+              toast.present();
             }
           }, 1000);
         }
