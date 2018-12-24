@@ -48,19 +48,19 @@ export class SubscribePage {
 
   attemptSubscribe(){
     this.response_text = '';
-    var emailData = {
-      email : this.subscribeForm.value.email,
-      name : this.subscribeForm.value.name,
-      birthDate: this.subscribeForm.value.birthDate,
-      gender: this.subscribeForm.value.gender,
-      isUpdate : false,
-      uuid: this.device.uuid
-    };
+    var formData = new FormData();
 
-    this.apiService.runPost('subscribe.php',emailData).then((result) => {
+    formData.append('email', this.subscribeForm.value.email);
+    formData.append('name', this.subscribeForm.value.name);
+    formData.append('birthDate', this.subscribeForm.value.birthDate);
+    formData.append('gender', this.subscribeForm.value.gender);
+    formData.append('isUpdate', 'false');
+    formData.append('uuid', Constants.test_uuid);
+
+    this.apiService.runPost('subscribe.php',formData).then((result) => {
       this.responseData = result;
       if(this.responseData.status == 'ok'){
-        this.storage.set(Constants.deviceInfo, this.responseData.uuid);
+        this.storage.set(Constants.deviceInfo, {'uuid': this.responseData.uuid, 'email': this.subscribeForm.value.email });
         this.showSubmitButton = false;
         this.storage.get(Constants.storageKeyLang).then((lang)=>{
           this.translateService.getTranslation(lang).subscribe((value) => {

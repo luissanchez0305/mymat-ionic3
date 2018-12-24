@@ -26,7 +26,7 @@ export class FavoritesPage {
   private response_text : string;
   private saveRoutineForm : FormGroup;
   private showSaveForm : boolean = true;
-  private device_uuid : string;
+  private favoritesList : any;
 
   constructor(public navParams: NavParams, public viewCtrl: ViewController, public routines: RoutinesProvider,
     private formBuilder: FormBuilder, private storage: Storage, public apiService : APIServiceProvider) {
@@ -40,17 +40,27 @@ export class FavoritesPage {
     this.saveRoutineForm = this.formBuilder.group({
       name: ['', Validators.required]
     });
+    if(navParams.get('showSave'))
+      this.showSaveForm = true;
+    else
+      this.showSaveForm = false;
   }
 
   ionViewDidLoad() {
-    this.storage.get(Constants.deviceInfo).then((uuid)=>{
-      this.device_uuid = uuid;
-      var data = {
-        uid: uuid
-      };
+    this.storage.get(Constants.deviceInfo).then((device)=>{
 
-      this.apiService.runPost('favorites.php',data).then((result) => {
+      var formData = new FormData();
 
+      //formData.append('uuid', uuid);
+      formData.append('type', 'get');
+      formData.append('email', device.email);
+
+      this.apiService.runPost('favorites.php',formData).then((result) => {
+        this.responseData = result;
+        this.favoritesList = this.responseData.favorites;
+
+      },(err) => {
+        console.log(err);
       });
     });
   }
@@ -59,24 +69,31 @@ export class FavoritesPage {
     this.viewCtrl.dismiss();
   }
 
+  showProgram(id){
+    console.log(id);
+  }
+
   attemptSaveFavorite(){
     this.response_text = '';
 
-    this.storage.get(Constants.deviceInfo).then((uuid)=>{
-      var data = {
-        uid: uuid,
-        name : this.saveRoutineForm.value.name,
-        program1 : this.program1,
-        program2 : this.program2,
-        program3 : this.program3,
-        program4 : this.program4
-      };
+    this.storage.get(Constants.deviceInfo).then((device)=>{
+
+      var formData = new FormData();
+
+      formData.append('type', 'new');
+      formData.append('email', device.email);
+      formData.append('name', this.saveRoutineForm.value.name);
+      formData.append('program1', this.program1);
+      formData.append('program2', this.program2);
+      formData.append('program3', this.program3);
+      formData.append('program4', this.program4);
 
 
-      this.apiService.runPost('subscribe.php',data).then((result) => {
+      this.apiService.runPost('favorites.php',formData).then((result) => {
         this.responseData = result;
         if(this.responseData.status == 'ok'){
             this.showSaveForm = false;
+            this.favoritesList = this.responseData.favorites;
         }
       });
 

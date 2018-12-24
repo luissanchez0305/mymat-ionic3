@@ -70,8 +70,13 @@ export class HomePage {
       if(typeof info === 'undefined' || info == null){
         /*if(window.hasOwnProperty('cordova')){*/
           var formData = new FormData();
-          //formData.append('uuid', this.device.uuid);
-          formData.append('uuid', 'E5F96E83-146B-4561-850F-343A73BD071E');
+          //var uuid = this.device.uuid;
+          var uuid = Constants.test_uuid;
+
+          //formData.append('uuid', uuid);
+          formData.append('uuid', uuid);
+
+          //var data = { 'uuid' : Constants.test_uuid };
 
           this.apiService.runPost('check_device.php',formData).then((result) => {
             //console.log('check_device success');
@@ -81,14 +86,17 @@ export class HomePage {
               // despliega la vista de insercion de datos
               this.navCtrl.push(SubscribePage);
             }
+            else{
+              this.storage.set(Constants.deviceInfo, { "email" : obj.email, "uuid" : uuid });
+            }
           }, (result) => {
             //console.log('check_device error ' + result);
-            this.isDeviceOnline = false;
-            this.storage.get(Constants.storageKeyLang).then((lang)=>{
+            //this.isDeviceOnline = false;
+            /*this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((value) => {
                 this.offline_device = value['offline-device-text-2'];
               });
-            });
+            });*/
           });
         /*}*/
       }
@@ -96,7 +104,7 @@ export class HomePage {
   }
 
   openAddFavorite(){
-    let profileModal = this.modalCtrl.create(FavoritesPage);
+    let profileModal = this.modalCtrl.create(FavoritesPage, { 'showSave': true });
     profileModal.present();
   }
 

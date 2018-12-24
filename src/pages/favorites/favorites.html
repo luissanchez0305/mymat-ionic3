@@ -32,16 +32,13 @@
           <p>{{ program4 | translate  }}</p>
         </ion-item>
         <ion-item>
-          <button type="submit" ion-button [disabled]="!saveRoutine.valid" class="button-contact button-calm">{{ 'button-save' | translate }}</button>
+          <button type="submit" ion-button [disabled]="!saveRoutineForm.valid" class="button-contact button-calm">{{ 'button-save' | translate }}</button>
         </ion-item>
       </ion-list>
     </form>
   </div>
 
-  <!--<ion-item *ngFor="let item of character['items']">
-    {{item.title}}
-    <ion-note item-end>
-      {{item.note}}
-    </ion-note>
-  </ion-item>-->
+  <ion-item *ngFor="let item of favoritesList" (click)="showProgram(item.id)">
+    {{item.name}}
+  </ion-item>
 </ion-content>

@@ -134,49 +134,61 @@ var FavoritesPage = (function () {
         this.saveRoutineForm = this.formBuilder.group({
             name: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required]
         });
+        if (navParams.get('showSave'))
+            this.showSaveForm = true;
+        else
+            this.showSaveForm = false;
     }
     FavoritesPage.prototype.ionViewDidLoad = function () {
         var _this = this;
-        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].deviceInfo).then(function (uuid) {
-            _this.device_uuid = uuid;
-            var data = {
-                uid: uuid
-            };
-            _this.apiService.runPost('favorites.php', data).then(function (result) {
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].deviceInfo).then(function (device) {
+            var formData = new FormData();
+            //formData.append('uuid', uuid);
+            formData.append('type', 'get');
+            formData.append('email', device.email);
+            _this.apiService.runPost('favorites.php', formData).then(function (result) {
+                _this.responseData = result;
+                _this.favoritesList = _this.responseData.favorites;
+            }, function (err) {
+                console.log(err);
             });
         });
     };
     FavoritesPage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
     };
+    FavoritesPage.prototype.showProgram = function (id) {
+        console.log(id);
+    };
     FavoritesPage.prototype.attemptSaveFavorite = function () {
         var _this = this;
         this.response_text = '';
-        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].deviceInfo).then(function (uuid) {
-            var data = {
-                uid: uuid,
-                name: _this.saveRoutineForm.value.name,
-                program1: _this.program1,
-                program2: _this.program2,
-                program3: _this.program3,
-                program4: _this.program4
-            };
-            _this.apiService.runPost('subscribe.php', data).then(function (result) {
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].deviceInfo).then(function (device) {
+            var formData = new FormData();
+            formData.append('type', 'new');
+            formData.append('email', device.email);
+            formData.append('name', _this.saveRoutineForm.value.name);
+            formData.append('program1', _this.program1);
+            formData.append('program2', _this.program2);
+            formData.append('program3', _this.program3);
+            formData.append('program4', _this.program4);
+            _this.apiService.runPost('favorites.php', formData).then(function (result) {
                 _this.responseData = result;
                 if (_this.responseData.status == 'ok') {
                     _this.showSaveForm = false;
+                    _this.favoritesList = _this.responseData.favorites;
                 }
             });
         });
     };
     FavoritesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-favorites',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\favorites\favorites.html"*/'<!--\n  Generated template for the FavoritesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Rutinas Favoritas\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div padding *ngIf="showSaveForm">\n    <form [formGroup]="saveRoutineForm" (ngSubmit)="attemptSaveFavorite()">\n      <ion-list>\n        <ion-label class="item-input contact">\n          <ion-input type="text" placeholder="{{ \'name-text\' | translate }}" formControlName="name"></ion-input>\n        </ion-label>\n        <ion-item>\n          <p>{{ program1 | translate }}</p>\n          <p>{{ program2 | translate }}</p>\n          <p>{{ program3 | translate }}</p>\n          <p>{{ program4 | translate  }}</p>\n        </ion-item>\n        <ion-item>\n          <button type="submit" ion-button [disabled]="!saveRoutine.valid" class="button-contact button-calm">{{ \'button-save\' | translate }}</button>\n        </ion-item>\n      </ion-list>\n    </form>\n  </div>\n\n  <!--<ion-item *ngFor="let item of character[\'items\']">\n    {{item.title}}\n    <ion-note item-end>\n      {{item.note}}\n    </ion-note>\n  </ion-item>-->\n</ion-content>'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\favorites\favorites.html"*/,
+            selector: 'page-favorites',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\favorites\favorites.html"*/'<!--\n  Generated template for the FavoritesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Rutinas Favoritas\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div padding *ngIf="showSaveForm">\n    <form [formGroup]="saveRoutineForm" (ngSubmit)="attemptSaveFavorite()">\n      <ion-list>\n        <ion-label class="item-input contact">\n          <ion-input type="text" placeholder="{{ \'name-text\' | translate }}" formControlName="name"></ion-input>\n        </ion-label>\n        <ion-item>\n          <p>{{ program1 | translate }}</p>\n          <p>{{ program2 | translate }}</p>\n          <p>{{ program3 | translate }}</p>\n          <p>{{ program4 | translate  }}</p>\n        </ion-item>\n        <ion-item>\n          <button type="submit" ion-button [disabled]="!saveRoutineForm.valid" class="button-contact button-calm">{{ \'button-save\' | translate }}</button>\n        </ion-item>\n      </ion-list>\n    </form>\n  </div>\n\n  <ion-item *ngFor="let item of favoritesList" (click)="showProgram(item.id)">\n    {{item.name}}\n  </ion-item>\n</ion-content>'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\favorites\favorites.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_routines_routines__["a" /* RoutinesProvider */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_4__providers_api_service_api_service__["a" /* APIServiceProvider */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ViewController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_routines_routines__["a" /* RoutinesProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_routines_routines__["a" /* RoutinesProvider */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_4__providers_api_service_api_service__["a" /* APIServiceProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__providers_api_service_api_service__["a" /* APIServiceProvider */]) === "function" && _f || Object])
     ], FavoritesPage);
     return FavoritesPage;
+    var _a, _b, _c, _d, _e, _f;
 }());
 
 //# sourceMappingURL=favorites.js.map
@@ -306,8 +318,11 @@ var HomePage = (function () {
             if (typeof info === 'undefined' || info == null) {
                 /*if(window.hasOwnProperty('cordova')){*/
                 var formData = new FormData();
-                //formData.append('uuid', this.device.uuid);
-                formData.append('uuid', 'E5F96E83-146B-4561-850F-343A73BD071E');
+                //var uuid = this.device.uuid;
+                var uuid = __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].test_uuid;
+                //formData.append('uuid', uuid);
+                formData.append('uuid', uuid);
+                //var data = { 'uuid' : Constants.test_uuid };
                 _this.apiService.runPost('check_device.php', formData).then(function (result) {
                     //console.log('check_device success');
                     _this.isDeviceOnline = true;
@@ -316,21 +331,24 @@ var HomePage = (function () {
                         // despliega la vista de insercion de datos
                         _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__subscribe_subscribe__["a" /* SubscribePage */]);
                     }
+                    else {
+                        _this.storage.set(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].deviceInfo, { "email": obj.email, "uuid": uuid });
+                    }
                 }, function (result) {
                     //console.log('check_device error ' + result);
-                    _this.isDeviceOnline = false;
-                    _this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
-                        _this.translateService.getTranslation(lang).subscribe(function (value) {
-                            _this.offline_device = value['offline-device-text-2'];
-                        });
-                    });
+                    //this.isDeviceOnline = false;
+                    /*this.storage.get(Constants.storageKeyLang).then((lang)=>{
+                      this.translateService.getTranslation(lang).subscribe((value) => {
+                        this.offline_device = value['offline-device-text-2'];
+                      });
+                    });*/
                 });
                 /*}*/
             }
         });
     }
     HomePage.prototype.openAddFavorite = function () {
-        var profileModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_12__favorites_favorites__["a" /* FavoritesPage */]);
+        var profileModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_12__favorites_favorites__["a" /* FavoritesPage */], { 'showSave': true });
         profileModal.present();
     };
     HomePage.prototype.removeProgramFromRoutine = function (prg) {
@@ -563,18 +581,17 @@ var SubscribePage = (function () {
     SubscribePage.prototype.attemptSubscribe = function () {
         var _this = this;
         this.response_text = '';
-        var emailData = {
-            email: this.subscribeForm.value.email,
-            name: this.subscribeForm.value.name,
-            birthDate: this.subscribeForm.value.birthDate,
-            gender: this.subscribeForm.value.gender,
-            isUpdate: false,
-            uuid: this.device.uuid
-        };
-        this.apiService.runPost('subscribe.php', emailData).then(function (result) {
+        var formData = new FormData();
+        formData.append('email', this.subscribeForm.value.email);
+        formData.append('name', this.subscribeForm.value.name);
+        formData.append('birthDate', this.subscribeForm.value.birthDate);
+        formData.append('gender', this.subscribeForm.value.gender);
+        formData.append('isUpdate', 'false');
+        formData.append('uuid', __WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].test_uuid);
+        this.apiService.runPost('subscribe.php', formData).then(function (result) {
             _this.responseData = result;
             if (_this.responseData.status == 'ok') {
-                _this.storage.set(__WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].deviceInfo, _this.responseData.uuid);
+                _this.storage.set(__WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].deviceInfo, { 'uuid': _this.responseData.uuid, 'email': _this.subscribeForm.value.email });
                 _this.showSubmitButton = false;
                 _this.storage.get(__WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
                     _this.translateService.getTranslation(lang).subscribe(function (value) {
@@ -861,6 +878,7 @@ var Constants = {
     storageKeyScrollTop: 'MyMat_scrollTop',
     storageKeyCurrentProgram: 'MyMat_currentProgram',
     deviceInfo: 'MyMatDevice',
+    test_uuid: 'E5F96E83-146B-4561-850F-343A73BD071A',
     shortTitles: [
         'earth-element-upper',
         'fire-element-upper',

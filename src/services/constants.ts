@@ -11,6 +11,7 @@ export var Constants = {
     storageKeyScrollTop : 'MyMat_scrollTop',
     storageKeyCurrentProgram : 'MyMat_currentProgram',
     deviceInfo: 'MyMatDevice',
+    test_uuid: 'E5F96E83-146B-4561-850F-343A73BD071A',
     shortTitles       : [
                         'earth-element-upper',
                         'fire-element-upper',
