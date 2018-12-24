@@ -136,6 +136,15 @@ var FavoritesPage = (function () {
         });
     }
     FavoritesPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].deviceInfo).then(function (uuid) {
+            _this.device_uuid = uuid;
+            var data = {
+                uid: uuid
+            };
+            _this.apiService.runPost('favorites.php', data).then(function (result) {
+            });
+        });
     };
     FavoritesPage.prototype.dismiss = function () {
         this.viewCtrl.dismiss();
