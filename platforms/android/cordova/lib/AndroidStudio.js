@@ -6,6 +6,7 @@
 
 /* jshint esnext: false */
 
+<<<<<<< HEAD
 var path = require('path');
 var fs = require('fs');
 var CordovaError = require('cordova-common').CordovaError;
@@ -39,4 +40,8 @@ module.exports.isAndroidStudioProject = function isAndroidStudioProject (root) {
         });
     }
     return (!isEclipse && isAS);
+=======
+module.exports.isAndroidStudioProject = function isAndroidStudioProject (root) {
+    return true;
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
 };

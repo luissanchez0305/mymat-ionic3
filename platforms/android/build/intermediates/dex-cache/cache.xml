@@ -3,6 +3,16 @@
 
     <item
         is-multidex="false"
+        jar="C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\build\intermediates\transforms\desugar\release\4.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.3"
+        sha1="e70bb91d0f2a6a210603265f464de009433b2818">
+        <dex dex="C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\build\intermediates\transforms\preDex\release\4.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\build\intermediates\transforms\desugar\release\0.jar"
         jumboMode="false"
         min-sdk-version="19"
@@ -10,6 +20,16 @@
         revision="27.0.3"
         sha1="9a89d8984d104516fb45a31f7d647ce381625033">
         <dex dex="C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\build\intermediates\transforms\preDex\release\1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\build\intermediates\transforms\desugar\release\3.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="27.0.3"
+        sha1="02b5f9c4933dc18a12dfae89085c68ce3b11ab20">
+        <dex dex="C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\build\intermediates\transforms\preDex\release\3.jar" />
     </item>
 
 </items>

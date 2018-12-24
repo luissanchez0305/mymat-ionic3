@@ -18,6 +18,10 @@
 */
 package org.apache.cordova;
 
+<<<<<<< HEAD
+=======
+import android.annotation.SuppressLint;
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -91,6 +95,10 @@ public class CordovaWebViewImpl implements CordovaWebView {
         init(cordova, new ArrayList<PluginEntry>(), new CordovaPreferences());
     }
 
+<<<<<<< HEAD
+=======
+    @SuppressLint("Assert")
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     @Override
     public void init(CordovaInterface cordova, List<PluginEntry> pluginEntries, CordovaPreferences preferences) {
         if (this.cordova != null) {

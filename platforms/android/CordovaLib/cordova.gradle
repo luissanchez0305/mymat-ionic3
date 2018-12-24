@@ -29,7 +29,15 @@ String doEnsureValueExists(filePath, props, key) {
 
 String doGetProjectTarget() {
     def props = new Properties()
+<<<<<<< HEAD
     file('project.properties').withReader { reader ->
+=======
+    def propertiesFile = 'project.properties';
+    if(!(file(propertiesFile).exists())) {
+      propertiesFile = '../project.properties';
+    }
+    file(propertiesFile).withReader { reader ->
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
         props.load(reader)
     }
     return doEnsureValueExists('project.properties', props, 'target')
@@ -161,7 +169,11 @@ def doPromptForPassword(msg) {
 }
 
 def doGetConfigXml() {
+<<<<<<< HEAD
     def xml = file("res/xml/config.xml").getText()
+=======
+    def xml = file("src/main/res/xml/config.xml").getText()
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     // Disable namespace awareness since Cordova doesn't use them properly
     return new XmlParser(false, false).parseText(xml)
 }

@@ -187,7 +187,13 @@ module.exports.list_images = function () {
                 var api_level = avd.target.match(/\d+/);
                 if (api_level) {
                     var level = android_versions.get(api_level);
+<<<<<<< HEAD
                     avd.target = 'Android ' + level.semver + ' (API level ' + api_level + ')';
+=======
+                    if (level) {
+                        avd.target = 'Android ' + level.semver + ' (API level ' + api_level + ')';
+                    }
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
                 }
             }
             return avd;
@@ -207,11 +213,19 @@ module.exports.best_image = function () {
 
         var closest = 9999;
         var best = images[0];
+<<<<<<< HEAD
         var project_target = check_reqs.get_target().replace('android-', '');
         for (var i in images) {
             var target = images[i].target;
             if (target) {
                 var num = target.split('(API level ')[1].replace(')', '');
+=======
+        var project_target = parseInt(check_reqs.get_target().replace('android-', ''));
+        for (var i in images) {
+            var target = images[i].target;
+            if (target && target.indexOf('API level') > -1) {
+                var num = parseInt(target.split('(API level ')[1].replace(')', ''));
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
                 if (num === project_target) {
                     return images[i];
                 } else if (project_target - num < closest && project_target > num) {
@@ -342,7 +356,12 @@ module.exports.wait_for_emulator = function (port) {
         }, function (error) {
             if ((error && error.message &&
             (error.message.indexOf('not found') > -1)) ||
+<<<<<<< HEAD
             (error.message.indexOf('device offline') > -1)) {
+=======
+            (error.message.indexOf('device offline') > -1) ||
+            (error.message.indexOf('device still connecting') > -1)) {
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
                 // emulator not yet started, continue waiting
                 return self.wait_for_emulator(port);
             } else {
@@ -432,7 +451,16 @@ module.exports.resolveTarget = function (target) {
 module.exports.install = function (givenTarget, buildResults) {
 
     var target;
+<<<<<<< HEAD
     var manifest = new AndroidManifest(path.join(__dirname, '../../AndroidManifest.xml'));
+=======
+    // We need to find the proper path to the Android Manifest
+    var manifestPath = path.join(__dirname, '..', '..', 'app', 'src', 'main', 'AndroidManifest.xml');
+    if (buildResults.buildMethod === 'gradle') {
+        manifestPath = path.join(__dirname, '../../AndroidManifest.xml');
+    }
+    var manifest = new AndroidManifest(manifestPath);
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     var pkgName = manifest.getPackageId();
 
     // resolve the target emulator

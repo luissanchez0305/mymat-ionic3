@@ -5,12 +5,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Storage } from '@ionic/storage';
 import { Constants } from '../services/constants';
+import { TranslateService } from '@ngx-translate/core';
 
 import { HomePage } from '../pages/home/home';
 import { HelpPage } from '../pages/help/help';
 import { ContactPage } from '../pages/contact/contact';
 import { SliderPage } from '../pages/slider/slider';
-import { TranslateService } from '@ngx-translate/core';
+import { FavoritesPage } from '../pages/favorites/favorites';
 
 @Component({
   templateUrl: 'app.html'
@@ -38,6 +39,7 @@ export class MyApp {
       { title: 'home-title', component: HomePage, icon: 'menuitemhome', isPush: false },
       { title: 'help-title', component: HelpPage, icon: 'menuitemhelp', isPush: false },
       { title: 'contact-title', component: ContactPage, icon: 'menuitemcontact', isPush: false },
+      { title: 'fav-title', component: FavoritesPage, icon: 'menufavorites', isPush: true },
       { title: 'slider-title', component: SliderPage, icon: 'menuiteminfo', isPush: true}
     ];
     platform.ready().then(() => {

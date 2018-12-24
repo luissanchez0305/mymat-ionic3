@@ -1,7 +1,10 @@
 /*
+<<<<<<< HEAD
  *
  * Copyright 2013 Anis Kadri
  *
+=======
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -33,8 +36,16 @@ var handlers = {
 
             var dest = path.join(obj.targetDir, path.basename(obj.src));
 
+<<<<<<< HEAD
             if (options && options.android_studio === true) {
                 dest = path.join('app/src/main/java', obj.targetDir.substring(4), path.basename(obj.src));
+=======
+            // TODO: This code needs to be replaced, since the core plugins need to be re-mapped to a different location in
+            // a later plugins release.  This is for legacy plugins to work with Cordova.
+
+            if (options && options.android_studio === true) {
+                dest = getInstallDestination(obj);
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
             }
 
             if (options && options.force) {
@@ -47,10 +58,23 @@ var handlers = {
             var dest = path.join(obj.targetDir, path.basename(obj.src));
 
             if (options && options.android_studio === true) {
+<<<<<<< HEAD
                 dest = path.join('app/src/main/java', obj.targetDir.substring(4), path.basename(obj.src));
             }
 
             deleteJava(project.projectDir, dest);
+=======
+                dest = getInstallDestination(obj);
+            }
+
+            // TODO: Add Koltin extension to uninstall, since they are handled like Java files
+            if (obj.src.endsWith('java')) {
+                deleteJava(project.projectDir, dest);
+            } else {
+                // Just remove the file, not the whole parent directory
+                removeFile(project.projectDir, dest);
+            }
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
         }
     },
     'lib-file': {
@@ -71,10 +95,25 @@ var handlers = {
     },
     'resource-file': {
         install: function (obj, plugin, project, options) {
+<<<<<<< HEAD
             copyFile(plugin.dir, obj.src, project.projectDir, path.normalize(obj.target), !!(options && options.link));
         },
         uninstall: function (obj, plugin, project, options) {
             removeFile(project.projectDir, path.normalize(obj.target));
+=======
+            var dest = path.normalize(obj.target);
+            if (options && options.android_studio === true) {
+                dest = path.join('app/src/main', dest);
+            }
+            copyFile(plugin.dir, obj.src, project.projectDir, dest, !!(options && options.link));
+        },
+        uninstall: function (obj, plugin, project, options) {
+            var dest = path.normalize(obj.target);
+            if (options && options.android_studio === true) {
+                dest = path.join('app/src/main', dest);
+            }
+            removeFile(project.projectDir, dest);
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
         }
     },
     'framework': {
@@ -302,3 +341,33 @@ function removeFileAndParents (baseDir, destFile, stopper) {
 function generateAttributeError (attribute, element, id) {
     return 'Required attribute "' + attribute + '" not specified in <' + element + '> element from plugin: ' + id;
 }
+<<<<<<< HEAD
+=======
+
+function getInstallDestination (obj) {
+    var APP_MAIN_PREFIX = 'app/src/main';
+
+    if (obj.targetDir.startsWith('app')) {
+        // If any source file is using the new app directory structure,
+        // don't penalize it
+        return path.join(obj.targetDir, path.basename(obj.src));
+    } else if (obj.src.endsWith('.java')) {
+        return path.join(APP_MAIN_PREFIX, 'java', obj.targetDir.substring(4), path.basename(obj.src));
+    } else if (obj.src.endsWith('.aidl')) {
+        return path.join(APP_MAIN_PREFIX, 'aidl', obj.targetDir.substring(4), path.basename(obj.src));
+    } else if (obj.targetDir.includes('libs')) {
+        if (obj.src.endsWith('.so')) {
+            return path.join(APP_MAIN_PREFIX, 'jniLibs', obj.targetDir.substring(5), path.basename(obj.src));
+        } else {
+            return path.join('app', obj.targetDir, path.basename(obj.src));
+        }
+    } else if (obj.targetDir.includes('src/main')) {
+        return path.join('app', obj.targetDir, path.basename(obj.src));
+    } else {
+        // For all other source files not using the new app directory structure,
+        // add 'app/src/main' to the targetDir
+        return path.join(APP_MAIN_PREFIX, obj.targetDir, path.basename(obj.src));
+    }
+
+}
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387

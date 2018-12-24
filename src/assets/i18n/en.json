@@ -94,6 +94,7 @@
     "male-text": "Male",
     "female-text": "Female",
     "button-send": "Send",
+    "button-save": "Save",
     "profile-error-message": "There's been an error saving your profile",
     "profile-success-message": "Your profile have been successful saved",
     "offline-device-text": "Your device is offline",

@@ -123,7 +123,11 @@ public class CordovaActivity extends Activity {
         if (preferences.getBoolean("Fullscreen", false)) {
             // NOTE: use the FullscreenNotImmersive configuration key to set the activity in a REAL full screen
             // (as was the case in previous cordova versions)
+<<<<<<< HEAD
             if ((Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) && !preferences.getBoolean("FullscreenNotImmersive", false)) {
+=======
+            if (!preferences.getBoolean("FullscreenNotImmersive", false)) {
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
                 immersiveMode = true;
             } else {
                 getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -319,6 +323,10 @@ public class CordovaActivity extends Activity {
     /**
      * Called when view focus is changed
      */
+<<<<<<< HEAD
+=======
+    @SuppressLint("InlinedApi")
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);

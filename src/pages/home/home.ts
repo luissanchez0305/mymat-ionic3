@@ -68,9 +68,10 @@ export class HomePage {
 
     this.storage.get(Constants.deviceInfo).then((info)=>{
       if(typeof info === 'undefined' || info == null){
-        if(window.hasOwnProperty('cordova')){
+        /*if(window.hasOwnProperty('cordova')){*/
           var formData = new FormData();
-          formData.append('uuid', this.device.uuid);
+          //formData.append('uuid', this.device.uuid);
+          formData.append('uuid', 'E5F96E83-146B-4561-850F-343A73BD071E');
 
           this.apiService.runPost('check_device.php',formData).then((result) => {
             //console.log('check_device success');
@@ -89,7 +90,7 @@ export class HomePage {
               });
             });
           });
-        }
+        /*}*/
       }
     });
   }

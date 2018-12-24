@@ -56,7 +56,7 @@ export class SubscribePage {
       isUpdate : false,
       uuid: this.device.uuid
     };
-    console.log(this.device.uuid);
+
     this.apiService.runPost('subscribe.php',emailData).then((result) => {
       this.responseData = result;
       if(this.responseData.status == 'ok'){

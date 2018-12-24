@@ -19,19 +19,29 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-      <ion-item>
-        <p>{{program1}}</p>
-        <p>{{program2}}</p>
-        <p>{{program3}}</p>
-        <p>{{program4}}</p>
-      </ion-item>
+  <div padding *ngIf="showSaveForm">
+    <form [formGroup]="saveRoutineForm" (ngSubmit)="attemptSaveFavorite()">
+      <ion-list>
+        <ion-label class="item-input contact">
+          <ion-input type="text" placeholder="{{ 'name-text' | translate }}" formControlName="name"></ion-input>
+        </ion-label>
+        <ion-item>
+          <p>{{ program1 | translate }}</p>
+          <p>{{ program2 | translate }}</p>
+          <p>{{ program3 | translate }}</p>
+          <p>{{ program4 | translate  }}</p>
+        </ion-item>
+        <ion-item>
+          <button type="submit" ion-button [disabled]="!saveRoutine.valid" class="button-contact button-calm">{{ 'button-save' | translate }}</button>
+        </ion-item>
+      </ion-list>
+    </form>
+  </div>
 
-      <!--<ion-item *ngFor="let item of character['items']">
-        {{item.title}}
-        <ion-note item-end>
-          {{item.note}}
-        </ion-note>
-      </ion-item>-->
-  </ion-list>
+  <!--<ion-item *ngFor="let item of character['items']">
+    {{item.title}}
+    <ion-note item-end>
+      {{item.note}}
+    </ion-note>
+  </ion-item>-->
 </ion-content>

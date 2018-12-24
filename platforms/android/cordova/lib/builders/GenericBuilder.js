@@ -24,20 +24,30 @@ var fs = require('fs');
 var path = require('path');
 var shell = require('shelljs');
 var events = require('cordova-common').events;
+<<<<<<< HEAD
 var CordovaError = require('cordova-common').CordovaError;
+=======
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
 
 function GenericBuilder (projectDir) {
     this.root = projectDir || path.resolve(__dirname, '../../..');
     this.binDirs = {
+<<<<<<< HEAD
         ant: path.join(this.root, hasCustomRules(this.root) ? 'ant-build' : 'bin'),
+=======
+        studio: path.join(this.root, 'app', 'build', 'outputs', 'apk'),
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
         gradle: path.join(this.root, 'build', 'outputs', 'apk')
     };
 }
 
+<<<<<<< HEAD
 function hasCustomRules (projectRoot) {
     return fs.existsSync(path.join(projectRoot, 'custom_rules.xml'));
 }
 
+=======
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
 GenericBuilder.prototype.prepEnv = function () {
     return Q();
 };
@@ -59,6 +69,7 @@ GenericBuilder.prototype.findOutputApks = function (build_type, arch) {
     }, []).sort(apkSorter);
 };
 
+<<<<<<< HEAD
 GenericBuilder.prototype.readProjectProperties = function () {
     function findAllUniq (data, r) {
         var s = {};
@@ -93,6 +104,19 @@ GenericBuilder.prototype.extractRealProjectNameFromManifest = function () {
 module.exports = GenericBuilder;
 
 function apkSorter (fileA, fileB) {
+=======
+module.exports = GenericBuilder;
+
+function apkSorter (fileA, fileB) {
+    // De-prioritize arch specific builds
+    var archSpecificRE = /-x86|-arm/;
+    if (archSpecificRE.exec(fileA)) {
+        return 1;
+    } else if (archSpecificRE.exec(fileB)) {
+        return -1;
+    }
+
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     // De-prioritize unsigned builds
     var unsignedRE = /-unsigned/;
     if (unsignedRE.exec(fileA)) {
@@ -101,7 +125,11 @@ function apkSorter (fileA, fileB) {
         return -1;
     }
 
+<<<<<<< HEAD
     var timeDiff = fs.statSync(fileA).mtime - fs.statSync(fileB).mtime;
+=======
+    var timeDiff = fs.statSync(fileB).mtime - fs.statSync(fileA).mtime;
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     return timeDiff === 0 ? fileA.length - fileB.length : timeDiff;
 }
 
@@ -109,7 +137,18 @@ function findOutputApksHelper (dir, build_type, arch) {
     var shellSilent = shell.config.silent;
     shell.config.silent = true;
 
+<<<<<<< HEAD
     var ret = shell.ls(path.join(dir, '*.apk')).filter(function (candidate) {
+=======
+    // list directory recursively
+    var ret = shell.ls('-R', dir).map(function (file) {
+        // ls does not include base directory
+        return path.join(dir, file);
+    }).filter(function (file) {
+        // find all APKs
+        return file.match(/\.apk?$/i);
+    }).filter(function (candidate) {
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
         var apkName = path.basename(candidate);
         // Need to choose between release and debug .apk.
         if (build_type === 'debug') {

@@ -29050,6 +29050,10 @@ ion-scroll .scroll-content {
   min-height: 100px !important;
 }
 
+page-favorites .bar-button-default-md {
+  color: #000 !important;
+}
+
 page-help .item {
   background-color: #FFF;
 }

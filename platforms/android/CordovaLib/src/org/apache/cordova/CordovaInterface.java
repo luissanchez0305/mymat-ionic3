@@ -19,6 +19,10 @@
 package org.apache.cordova;
 
 import android.app.Activity;
+<<<<<<< HEAD
+=======
+import android.content.Context;
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
 import android.content.Intent;
 
 import org.apache.cordova.CordovaPlugin;
@@ -51,10 +55,25 @@ public interface CordovaInterface {
     /**
      * Get the Android activity.
      *
+<<<<<<< HEAD
      * @return the Activity
      */
     public abstract Activity getActivity();
     
+=======
+     * If a custom engine lives outside of the Activity's lifecycle the return value may be null.
+     *
+     * @return the Activity
+     */
+    public abstract Activity getActivity();
+
+    /**
+     * Get the Android context.
+     *
+     * @return the Context
+     */
+    public Context getContext();
+>>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
 
     /**
      * Called when a message is sent to plugin.
