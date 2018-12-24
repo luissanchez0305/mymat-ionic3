@@ -90,4 +90,5 @@
     <plugin name="cordova-plugin-badge" spec="^0.8.8" />
     <plugin name="cordova-plugin-advanced-http" spec="2.0.2" />
     <engine name="android" spec="~6.3.0" />
+    <engine name="ios" spec="4.5.5" />
 </widget>
