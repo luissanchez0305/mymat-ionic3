@@ -29054,6 +29054,10 @@ page-favorites .bar-button-default-md {
   color: #000 !important;
 }
 
+page-favorites .preLine {
+  white-space: pre-line;
+}
+
 page-help .item {
   background-color: #FFF;
 }

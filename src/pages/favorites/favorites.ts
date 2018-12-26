@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavParams, ViewController } from 'ionic-angular';
+import { NavParams, ViewController, LoadingController, ToastController } from 'ionic-angular';
 import { RoutinesProvider } from '../../providers/routines/routines';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
@@ -29,7 +29,8 @@ export class FavoritesPage {
   private favoritesList : any;
 
   constructor(public navParams: NavParams, public viewCtrl: ViewController, public routines: RoutinesProvider,
-    private formBuilder: FormBuilder, private storage: Storage, public apiService : APIServiceProvider) {
+    private formBuilder: FormBuilder, private storage: Storage, public apiService : APIServiceProvider,
+    public loadingCtrl: LoadingController, public toastCtrl : ToastController) {
     var programs = this.routines.getPrograms();
     if(programs[0] && programs[1] && programs[2] && programs[3]){
       this.program1 = programs[0];
@@ -47,6 +48,8 @@ export class FavoritesPage {
   }
 
   ionViewDidLoad() {
+    let loading = this.loadingCtrl.create();
+    loading.present();
     this.storage.get(Constants.deviceInfo).then((device)=>{
 
       var formData = new FormData();
@@ -56,10 +59,12 @@ export class FavoritesPage {
       formData.append('email', device.email);
 
       this.apiService.runPost('favorites.php',formData).then((result) => {
+        loading.dismiss();
         this.responseData = result;
         this.favoritesList = this.responseData.favorites;
 
       },(err) => {
+        loading.dismiss();
         console.log(err);
       });
     });
@@ -69,8 +74,15 @@ export class FavoritesPage {
     this.viewCtrl.dismiss();
   }
 
-  showProgram(id){
-    console.log(id);
+  showProgram(id, program1, program2, program3, program4){
+    let toast = this.toastCtrl.create({
+      message: program1 + '\n' + program2 + '\n' + program3 + '\n' + program4,
+      showCloseButton: true,
+      closeButtonText: 'Cerrar',
+      position: 'middle',
+      cssClass: 'preLine'
+    });
+    toast.present();
   }
 
   attemptSaveFavorite(){
