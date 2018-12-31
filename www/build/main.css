@@ -28348,6 +28348,10 @@ button[disabled].greenbtn {
   display: inline-block;
 }
 
+.alert-message {
+  white-space: pre-line;
+}
+
 .bubbles {
   background-image: url(../assets/img/empty-bubbles.png);
   background-repeat: no-repeat;
@@ -28612,6 +28616,14 @@ button[disabled].greenbtn {
 }
 
 .menuiteminfo .item-content {
+  background-color: #FFF !important;
+  background-image: url(../img/i-hh_1.png) !important;
+  padding-left: 50px;
+  background-position: top right;
+  background-position: 7% -1px;
+}
+
+.menufavorites .item-content {
   background-color: #FFF !important;
   background-image: url(../img/i-hh_1.png) !important;
   padding-left: 50px;
@@ -29052,10 +29064,6 @@ ion-scroll .scroll-content {
 
 page-favorites .bar-button-default-md {
   color: #000 !important;
-}
-
-page-favorites .preLine {
-  white-space: pre-line;
 }
 
 page-help .item {

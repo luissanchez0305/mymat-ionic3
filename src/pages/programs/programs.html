@@ -87,14 +87,12 @@
 
         <div class="paddingmodal">
 
-
             <ion-list (click)="addPrograms(routine.name, routine.programs[0].apiName, routine.programs[1].apiName,
                 routine.programs[2].apiName,routine.programs[3].apiName)">
 
                 <ion-item *ngFor="let program of routine.programs" class="addiction center">
                      {{ program.name | translate }}
                 </ion-item>
-
 
             </ion-list>
 

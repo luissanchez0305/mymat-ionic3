@@ -20,11 +20,12 @@
 
 <ion-content>
   <div padding *ngIf="showSaveForm">
+    <div text-center text-uppercase>{{ 'add-favorites' | translate }}</div>
     <form [formGroup]="saveRoutineForm" (ngSubmit)="attemptSaveFavorite()">
       <ion-list>
-        <ion-label class="item-input contact">
-          <ion-input type="text" placeholder="{{ 'name-text' | translate }}" formControlName="name"></ion-input>
-        </ion-label>
+        <ion-item class="item-input contact">
+          <ion-input type="text" placeholder="{{ 'name-text' | translate }}" formControlName="name" padding></ion-input>
+        </ion-item>
         <ion-item>
           <p>{{ program1 | translate }}</p>
           <p>{{ program2 | translate }}</p>
@@ -32,13 +33,23 @@
           <p>{{ program4 | translate  }}</p>
         </ion-item>
         <ion-item>
-          <button type="submit" ion-button [disabled]="!saveRoutineForm.valid" class="button-contact button-calm">{{ 'button-save' | translate }}</button>
+          <button type="submit" ion-button item-left [disabled]="!saveRoutineForm.valid" class="button-contact button-calm">{{ 'button-save' | translate }}</button>
+          <button ion-button icon-only item-end (click)="dismiss($event)" class="button-contact button-calm">
+            <span ion-text color="primary" showWhen="ios">Cancel</span>
+            <span ion-text showWhen="android,windows">Cancel</span>
+          </button>
         </ion-item>
       </ion-list>
     </form>
   </div>
-
-  <ion-item *ngFor="let item of favoritesList" (click)="showProgram(item.id, item.program1, item.program2, item.program3, item.program4)">
-    {{item.name}}
-  </ion-item>
+  <div padding-top>
+      <div text-center text-uppercase>{{ 'my-favorites' | translate }}</div>
+      <div *ngIf="showLoadingListing" text-center>{{ 'loading' | translate }}...</div>
+      <ion-item *ngFor="let item of favoritesList" (click)="showProgram(item.id, item.name, item.program1, item.program2, item.program3, item.program4)">
+        {{item.name}}
+        <button ion-button icon-only item-end (click)="delete($event, item.id)">
+          <ion-icon name="md-close"></ion-icon>
+        </button>
+      </ion-item>
+  </div>
 </ion-content>

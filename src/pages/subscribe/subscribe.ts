@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
-import { Device } from '@ionic-native/device';
+//import { Device } from '@ionic-native/device';
 import { Storage } from '@ionic/storage';
 import { TranslateService } from '@ngx-translate/core';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
@@ -28,7 +28,7 @@ export class SubscribePage {
   private responseData : any;
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private formBuilder: FormBuilder, private storage: Storage, public apiService : APIServiceProvider,
-    private translateService: TranslateService, private device: Device) {
+    private translateService: TranslateService/*, private device: Device*/) {
 
       this.showSubmitButton = true;
       let aDate = new Date();

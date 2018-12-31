@@ -6,7 +6,7 @@ import { RoutinesProvider } from '../../providers/routines/routines';
 import { Constants } from '../../services/constants';
 import { TranslateService } from '@ngx-translate/core';
 import { Network } from '@ionic-native/network';
-import { Device } from '@ionic-native/device';
+//import { Device } from '@ionic-native/device';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { ProgramsPage } from '../programs/programs';
 import { WifiPage } from '../wifi/wifi';
@@ -33,7 +33,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
     private translateService: TranslateService, private network: Network, private zone: NgZone,
-    public events: Events, private device: Device, public apiService : APIServiceProvider, public modalCtrl: ModalController) {
+    public events: Events/*, private device: Device*/, public apiService : APIServiceProvider, public modalCtrl: ModalController) {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){

@@ -47,6 +47,10 @@ export class ProgramsPage {
         this.add1Program(programName, programRunningTime, programApiName);
         this.navCtrl.pop();
       });
+
+      this.events.subscribe('addProgramsEvent', (program1, program2, program3, program4) => {
+        this.addPrograms('', program1, program2, program3, program4);
+      });
   }
   ionViewDidLeave(){
     this.storage.set(Constants.storageKeyScrollTop, this.content.getContentDimensions().scrollTop);
@@ -104,7 +108,7 @@ export class ProgramsPage {
   private getProgram(name){
       for(var i = 0;  i < Data.Programs.length; i++){
         var program = Data.Programs[i];
-        if(program.apiName == name)
+        if(program.apiName == name || program.name == name.name)
           return program;
       }
   }

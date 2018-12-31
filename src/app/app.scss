@@ -395,6 +395,10 @@ button[disabled].greenbtn {
     display: inline-block;
 }
 
+.alert-message{
+   white-space: pre-line;
+}
+
 .bubbles{
 background-image: url(../assets/img/empty-bubbles.png);
 background-repeat: no-repeat;
@@ -664,6 +668,14 @@ display:none;
 }
 
 .menuiteminfo .item-content {
+    background-color: #FFF!important;
+    background-image: url(../img/i-hh_1.png)!important;
+    padding-left: 50px;
+    background-position: top right;
+    background-position: 7% -1px;
+}
+
+.menufavorites .item-content {
     background-color: #FFF!important;
     background-image: url(../img/i-hh_1.png)!important;
     padding-left: 50px;
