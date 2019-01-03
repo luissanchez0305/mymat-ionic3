@@ -16,6 +16,7 @@
       </button>
     </ion-buttons>
   </ion-toolbar>
+  <ion-item class="no-conection" *ngIf="!isDeviceOnline">{{ offline_device }}</ion-item>
 </ion-header>
 
 <ion-content>

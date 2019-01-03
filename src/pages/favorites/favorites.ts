@@ -4,6 +4,7 @@ import { RoutinesProvider } from '../../providers/routines/routines';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { TranslateService } from '@ngx-translate/core';
+import { Network } from '@ionic-native/network';
 import { Constants } from '../../services/constants';
 import { Storage } from '@ionic/storage';
 
@@ -29,11 +30,14 @@ export class FavoritesPage {
   private showSaveForm : boolean = true;
   private favoritesList : any;
   private showLoadingListing : boolean = false;
+  public isDeviceOnline : boolean;
+  public offline_device : string;
 
   constructor(public navParams: NavParams, public viewCtrl: ViewController, public routines: RoutinesProvider,
     private formBuilder: FormBuilder, private translateService: TranslateService, private storage: Storage,
-    public apiService : APIServiceProvider, public loadingCtrl: LoadingController, public alertCtrl : AlertController,
-    public events: Events) {
+    public apiService : APIServiceProvider, private network: Network, public loadingCtrl: LoadingController,
+    public alertCtrl : AlertController, public events: Events) {
+    this.isDeviceOnline = true;
     var programs = this.routines.getPrograms();
     if(programs[0] && programs[1] && programs[2] && programs[3]){
       this.program1 = programs[0];
@@ -48,6 +52,25 @@ export class FavoritesPage {
       this.showSaveForm = true;
     else
       this.showSaveForm = false;
+
+    // watch network for a disconnect
+    this.network.onDisconnect().subscribe(() => {
+      this.zone.run(() => {
+        this.isDeviceOnline = false;
+        this.storage.get(Constants.storageKeyLang).then((lang)=>{
+          this.translateService.getTranslation(lang).subscribe((value) => {
+            this.offline_device = value['offline-device-text'];
+          });
+        });
+      });
+    });
+
+    // watch network for a connection
+    this.network.onConnect().subscribe(() => {
+      this.zone.run(() => {
+        this.isDeviceOnline = true;
+      });
+    });
   }
 
   ionViewDidLoad() {

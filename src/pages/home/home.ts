@@ -41,6 +41,13 @@ export class HomePage {
       }
       this.AllBubblesChecked(this.routines.getPrograms());
     });
+
+    this.events.subscribe('addProgramsEvent', (program1, program2, program3, program4) => {
+      this.navCtrl.pop();
+      let bubbles = this.routines.addPrograms('', program1, program2, program3, program4);
+      this.events.publish("sharesBubbles", bubbles);
+    });
+
     this.events.subscribe('switchLangEvent',(lang) => {
         //call methods to refresh content
         this.storage.set(Constants.storageKeyLang, lang)

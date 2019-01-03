@@ -47,10 +47,6 @@ export class ProgramsPage {
         this.add1Program(programName, programRunningTime, programApiName);
         this.navCtrl.pop();
       });
-
-      this.events.subscribe('addProgramsEvent', (program1, program2, program3, program4) => {
-        this.addPrograms('', program1, program2, program3, program4);
-      });
   }
   ionViewDidLeave(){
     this.storage.set(Constants.storageKeyScrollTop, this.content.getContentDimensions().scrollTop);
@@ -103,14 +99,6 @@ export class ProgramsPage {
 
   selectPreSetProgram(category){
       this.getPrograms(category);
-  }
-
-  private getProgram(name){
-      for(var i = 0;  i < Data.Programs.length; i++){
-        var program = Data.Programs[i];
-        if(program.apiName == name || program.name == name.name)
-          return program;
-      }
   }
 
   getPrograms(category){
@@ -169,7 +157,7 @@ export class ProgramsPage {
         groups[groupIndex] = group;
         for(var j = 0; j < group.programs.length; j++){
           var program = group.programs[j];
-          group.programs[j] = this.getProgram(program.apiName);
+          group.programs[j] = this.routines.getProgram(program.apiName);
         }
         groupIndex++;
       }
@@ -178,15 +166,8 @@ export class ProgramsPage {
   }
 
   addPrograms(routineName, program1, program2, program3, program4){
-    var objProgram1 = this.getProgram(program1);
-    var objProgram2 = this.getProgram(program2);
-    var objProgram3 = this.getProgram(program3);
-    var objProgram4 = this.getProgram(program4);
-    this.routines.insertPreSetProgram(routineName, objProgram1, objProgram2, objProgram3, objProgram4);
     this.navCtrl.pop();
-    var bubbleNames = [objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name];
-
-    this.routines.setPrograms(objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name);
+    var bubbleNames = this.routines.addPrograms(routineName, program1, program2, program3, program4);
     this.events.publish("sharesBubbles", bubbleNames);
   }
 
