@@ -30,6 +30,8 @@ export class HomePage {
   public isDeviceOnline : boolean;
   public offline_device : string;
   public showAddFavoriteButton : boolean = false;
+  public showLatestSection: boolean;
+  public latestRoutines : any;
 
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
     private translateService: TranslateService, private network: Network, private zone: NgZone,
@@ -106,6 +108,18 @@ export class HomePage {
             });*/
           });
         /*}*/
+      }
+    });
+  }
+
+  ionViewDidLoad() {
+    this.storage.get(Constants.latestRoutinesKey).then((latests)=>{
+      if(latests){
+        this.showLatestSection = true;
+        this.latestRoutines = latests;
+      }
+      else{
+        this.showLatestSection = false;
       }
     });
   }

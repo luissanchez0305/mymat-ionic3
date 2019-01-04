@@ -12,6 +12,13 @@ export var Constants = {
     storageKeyCurrentProgram : 'MyMat_currentProgram',
     deviceInfo: 'MyMatDevice',
     test_uuid: 'E5F96E83-146B-4561-850F-343A73BD071A',
+    latestRoutinesKey: 'latestRoutines',
+    monthNames: [
+        "January", "February", "March",
+        "April", "May", "June", "July",
+        "August", "September", "October",
+        "November", "December"
+      ],
     shortTitles       : [
                         'earth-element-upper',
                         'fire-element-upper',

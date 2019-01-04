@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 import { NavParams, ViewController, LoadingController, AlertController, Events } from 'ionic-angular';
 import { RoutinesProvider } from '../../providers/routines/routines';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
@@ -36,7 +36,7 @@ export class FavoritesPage {
   constructor(public navParams: NavParams, public viewCtrl: ViewController, public routines: RoutinesProvider,
     private formBuilder: FormBuilder, private translateService: TranslateService, private storage: Storage,
     public apiService : APIServiceProvider, private network: Network, public loadingCtrl: LoadingController,
-    public alertCtrl : AlertController, public events: Events) {
+    public alertCtrl : AlertController, private zone: NgZone, public events: Events) {
     this.isDeviceOnline = true;
     var programs = this.routines.getPrograms();
     if(programs[0] && programs[1] && programs[2] && programs[3]){

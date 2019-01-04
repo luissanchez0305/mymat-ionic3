@@ -40,24 +40,26 @@
         <button class="graybtn" menu-close nav-transition="ios" nav-direction="forward" (click)="cleanRoutine()" href="#">{{ 'clean-routine' | translate }}</button>
 
     </div>
-    <div text-center text-uppercase padding-top>{{ 'latest-routines' | translate }}</div>
-    <div *ngFor="let routine of latestRoutines">
+    <ion-item *ngIf="showLatestSection">
+      <div text-center text-uppercase padding-top>{{ 'latest-routines' | translate }}</div>
+      <div *ngFor="let routine of latestRoutines">
 
-        {{ routine.date | translate }}
-        <!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->
+          {{ routine.date | translate }}
+          <!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->
 
-        <div class="paddingmodal">
+          <div class="paddingmodal">
 
-            <ion-list (click)="addPrograms(routine.name, routine.programs[0].apiName, routine.programs[1].apiName,
-                routine.programs[2].apiName,routine.programs[3].apiName)">
+              <ion-list (click)="addPrograms('', routine.programs[0].apiName, routine.programs[1].apiName,
+                  routine.programs[2].apiName,routine.programs[3].apiName)">
 
-                <ion-item *ngFor="let program of routine.programs" class="addiction center">
-                     {{ program.name | translate }}
-                </ion-item>
+                  <ion-item *ngFor="let program of routine.programs" class="addiction center">
+                       {{ program.name | translate }}
+                  </ion-item>
 
-            </ion-list>
+              </ion-list>
 
-        </div>
+          </div>
 
-    </div>
+      </div>
+    </ion-item>
 </ion-content>

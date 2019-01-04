@@ -301,6 +301,33 @@ export class WifiPage {
                 }, 120000);
               });
 
+              // Poner rutina en las ultimas corridas
+              this.storage.get(Constants.latestRoutinesKey).then((routines)=>{
+                let latestArray = [];
+
+                var t = new Date();
+
+                var day = t.getDate();
+                var monthIndex = t.getMonth();
+                var year = t.getFullYear();
+                var hours = t.getHours();
+                var minutes = t.getMinutes();
+
+                let programsArray = [];
+                for(let i = 0; i < programs.length; i++){
+                  programsArray.push({ "apiName" : programs[i].split('|')[3], "name" : programs[i].split('|')[1] });
+                }
+
+                latestArray.push({ "date" : day + ' ' + Constants.monthNames[monthIndex] + ' ' + year + ' ' + hours+':' + minutes, "programs" : programsArray });
+                if(routines[0] != null){
+                  latestArray.push(routines[0]);
+                }
+                if(routines[1] != null){
+                  latestArray.push(routines[1]);
+                }
+                this.storage.set(Constants.latestRoutinesKey, latestArray);
+              });
+
               /* CORRER RUTINA */
               this.navCtrl.setRoot(PlayingPage);
             }
