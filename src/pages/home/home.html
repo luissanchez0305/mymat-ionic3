@@ -41,7 +41,7 @@
 
     </div>
     <div text-center text-uppercase padding-top *ngIf="showLatestSection">{{ 'latest-routines' | translate }}</div>
-    <div *ngFor="let routine of latestRoutines" *ngIf="showLatestSection">
+    <div *ngFor="let routine of latestRoutines">
 
         {{ routine.date | translate }}
         <!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->
