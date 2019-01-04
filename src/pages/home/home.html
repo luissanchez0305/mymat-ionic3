@@ -42,8 +42,9 @@
     </div>
     <div text-center text-uppercase padding-top *ngIf="showLatestSection">{{ 'latest-routines' | translate }}</div>
     <div *ngFor="let routine of latestRoutines">
-
-        {{ routine.date | translate }}
+        <div text-center padding-top>
+          {{ routine.date | translate }}
+        </div>
         <!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->
 
         <div class="paddingmodal">
