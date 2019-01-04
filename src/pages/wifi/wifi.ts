@@ -319,10 +319,10 @@ export class WifiPage {
                 }
 
                 latestArray.push({ "date" : day + ' ' + Constants.monthNames[monthIndex] + ' ' + year + ' ' + hours+':' + minutes, "programs" : programsArray });
-                if(routines[0] != null){
+                if(routines != null && routines[0] != null){
                   latestArray.push(routines[0]);
                 }
-                if(routines[1] != null){
+                if(routines != null && routines[1] != null){
                   latestArray.push(routines[1]);
                 }
                 this.storage.set(Constants.latestRoutinesKey, latestArray);
