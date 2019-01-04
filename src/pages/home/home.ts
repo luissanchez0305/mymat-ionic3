@@ -1,5 +1,5 @@
-import { Component, NgZone } from '@angular/core';
-import { NavController, Events, ModalController } from 'ionic-angular';
+import { Component, NgZone, ViewChild } from '@angular/core';
+import { NavController, Events, ModalController, Content } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { SubscribePage } from '../subscribe/subscribe';
 import { RoutinesProvider } from '../../providers/routines/routines';
@@ -18,6 +18,7 @@ import { FavoritesPage } from '../favorites/favorites';
 })
 
 export class HomePage {
+  @ViewChild(Content) content: Content;
   public bubblesNames1 : string;
   public bubblesNames2 : string;
   public bubblesNames3 : string;
@@ -110,6 +111,11 @@ export class HomePage {
         /*}*/
       }
     });
+  }
+
+  addPrograms(routineName, program0, program1, program2, program3){
+    this.events.publish('addProgramsEvent', program0, program1, program2, program3);
+    this.content.scrollTo(0, 0, 100);
   }
 
   ionViewDidLoad() {
