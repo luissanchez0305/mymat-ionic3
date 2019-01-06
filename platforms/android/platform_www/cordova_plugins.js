@@ -1,8 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
   {
-<<<<<<< HEAD
-=======
     "id": "cordova-plugin-file.DirectoryEntry",
     "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
     "pluginId": "cordova-plugin-file",
@@ -214,7 +212,6 @@ module.exports = [
     ]
   },
   {
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     "id": "cordova-plugin-badge.Badge",
     "file": "plugins/cordova-plugin-badge/www/badge.js",
     "pluginId": "cordova-plugin-badge",
@@ -319,11 +316,8 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-<<<<<<< HEAD
-=======
   "cordova-plugin-file": "6.0.1",
   "cordova-plugin-advanced-http": "2.0.2",
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
   "cordova-plugin-badge": "0.8.8",
   "cordova-plugin-datepicker": "0.9.3",
   "cordova-plugin-device": "1.1.7",

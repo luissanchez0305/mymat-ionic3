@@ -57,11 +57,6 @@ export class FavoritesPage {
     this.network.onDisconnect().subscribe(() => {
       this.zone.run(() => {
         this.isDeviceOnline = false;
-        this.storage.get(Constants.storageKeyLang).then((lang)=>{
-          this.translateService.getTranslation(lang).subscribe((value) => {
-            this.offline_device = value['offline-device-text'];
-          });
-        });
       });
     });
 
@@ -69,6 +64,10 @@ export class FavoritesPage {
     this.network.onConnect().subscribe(() => {
       this.zone.run(() => {
         this.isDeviceOnline = true;
+
+        this.storage.get(Constants.deviceInfo).then((device)=>{
+          this.loadFavoriteList(device.email);
+        });
       });
     });
   }
@@ -80,22 +79,23 @@ export class FavoritesPage {
   }
 
   loadFavoriteList(email){
-    this.showLoadingListing = true;
     var formData = new FormData();
 
     //formData.append('uuid', uuid);
     formData.append('type', 'get');
     formData.append('email', email);
+    if(this.isDeviceOnline){
+      this.showLoadingListing = true;
+      this.apiService.runPost('favorites.php',formData).then((result) => {
+        this.showLoadingListing = false;
+        this.responseData = result;
+        this.favoritesList = this.responseData.favorites;
 
-    this.apiService.runPost('favorites.php',formData).then((result) => {
-      this.showLoadingListing = false;
-      this.responseData = result;
-      this.favoritesList = this.responseData.favorites;
-
-    },(err) => {
-      this.showLoadingListing = false;
-      console.log(err);
-    });
+      },(err) => {
+        this.showLoadingListing = false;
+        console.log(err);
+      });
+    }
   }
 
   dismiss(event : Event) {

@@ -22,18 +22,12 @@ import java.security.Principal;
 import java.security.PrivateKey;
 import java.security.cert.X509Certificate;
 
-<<<<<<< HEAD
-=======
 import android.annotation.SuppressLint;
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
 import android.webkit.ClientCertRequest;
 
 /**
  * Implementation of the ICordovaClientCertRequest for Android WebView.
-<<<<<<< HEAD
-=======
  *
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
  */
 public class CordovaClientCertRequest implements ICordovaClientCertRequest {
 
@@ -46,10 +40,7 @@ public class CordovaClientCertRequest implements ICordovaClientCertRequest {
     /**
      * Cancel this request
      */
-<<<<<<< HEAD
-=======
     @SuppressLint("NewApi")
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     public void cancel()
     {
         request.cancel();
@@ -58,10 +49,7 @@ public class CordovaClientCertRequest implements ICordovaClientCertRequest {
     /*
      * Returns the host name of the server requesting the certificate.
      */
-<<<<<<< HEAD
-=======
     @SuppressLint("NewApi")
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     public String getHost()
     {
         return request.getHost();
@@ -70,10 +58,7 @@ public class CordovaClientCertRequest implements ICordovaClientCertRequest {
     /*
      * Returns the acceptable types of asymmetric keys (can be null).
      */
-<<<<<<< HEAD
-=======
     @SuppressLint("NewApi")
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     public String[] getKeyTypes()
     {
         return request.getKeyTypes();
@@ -82,10 +67,7 @@ public class CordovaClientCertRequest implements ICordovaClientCertRequest {
     /*
      * Returns the port number of the server requesting the certificate.
      */
-<<<<<<< HEAD
-=======
     @SuppressLint("NewApi")
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     public int getPort()
     {
         return request.getPort();
@@ -94,10 +76,7 @@ public class CordovaClientCertRequest implements ICordovaClientCertRequest {
     /*
      * Returns the acceptable certificate issuers for the certificate matching the private key (can be null).
      */
-<<<<<<< HEAD
-=======
     @SuppressLint("NewApi")
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     public Principal[] getPrincipals()
     {
         return request.getPrincipals();
@@ -106,10 +85,7 @@ public class CordovaClientCertRequest implements ICordovaClientCertRequest {
     /*
      * Ignore the request for now. Do not remember user's choice.
      */
-<<<<<<< HEAD
-=======
     @SuppressLint("NewApi")
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     public void ignore()
     {
         request.ignore();
@@ -121,10 +97,7 @@ public class CordovaClientCertRequest implements ICordovaClientCertRequest {
      * @param privateKey The privateKey
      * @param chain The certificate chain 
      */
-<<<<<<< HEAD
-=======
     @SuppressLint("NewApi")
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     public void proceed(PrivateKey privateKey, X509Certificate[] chain)
     {
         request.proceed(privateKey, chain);

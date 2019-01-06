@@ -24,16 +24,6 @@ ext {
 
 buildscript {
     repositories {
-<<<<<<< HEAD
-        jcenter()
-        maven {
-            url "https://maven.google.com"
-        }
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
-=======
         maven {
             url "https://maven.google.com"
         }
@@ -42,7 +32,6 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
     }
@@ -53,11 +42,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 group = 'org.apache.cordova'
-<<<<<<< HEAD
-version = '6.3.0'
-=======
 version = '7.1.4'
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
 
 android {
     compileSdkVersion cdvCompileSdkVersion
@@ -65,13 +50,8 @@ android {
     publishNonDefault true
 
     compileOptions {
-<<<<<<< HEAD
-        sourceCompatibility JavaVersion.VERSION_1_6
-        targetCompatibility JavaVersion.VERSION_1_6
-=======
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     }
 
     sourceSets {
@@ -149,15 +129,9 @@ bintray {
         licenses = ['Apache-2.0']
         labels = ['android', 'cordova', 'phonegap']
         version {
-<<<<<<< HEAD
-            name = '6.3.0'
-            released  = new Date()
-            vcsTag = '6.3.0'
-=======
             name = '7.1.4'
             released  = new Date()
             vcsTag = '7.1.4'
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
         }
     }
 }

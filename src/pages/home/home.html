@@ -7,7 +7,7 @@
       <div class="logo"></div>
     </ion-title>
   </ion-navbar>
-  <ion-item class="no-conection" *ngIf="!isDeviceOnline">{{ offline_device }}</ion-item>
+  <ion-item class="no-conection" *ngIf="!isDeviceOnline">{{ 'offline-device-text' | translate }}</ion-item>
 </ion-header>
 
 <ion-content padding class="home">

@@ -132,7 +132,6 @@ export class WifiPage {
       var coil4 = response.split("<tr><td>4.</td><td>");
       coil4 = coil4[2].split("</td></tr>");
       this.batteryCharge = power[0];
-
       var powerVal = power[0].substr(0,power[0].length-1);
       if(powerVal > 75)
           this.batteryImg = 'assets/img/b100.png';
@@ -193,7 +192,8 @@ export class WifiPage {
           break;
         case 2:
           this.storage.get(Constants.storageKeyBubble2).then((val) => {
-            programs += "P2=" + val.split("|")[3] + '&';
+     858]
+        programs += "P2=" + val.split("|")[3] + '&';
           });
           break;
         case 3:
@@ -255,7 +255,7 @@ export class WifiPage {
                   program2Obj = val;
                   isValidateSuccessProgram += 1;
                 }).catch((err) => {
-                  isValidateErrorProgram += 1;
+                isValidateErrorProgram += 1;
                   error2Obj = err;
                 });
                 break;
@@ -318,7 +318,7 @@ export class WifiPage {
                   programsArray.push({ "apiName" : programs[i].split('|')[3], "name" : programs[i].split('|')[1] });
                 }
 
-                latestArray.push({ "date" : day + ' ' + Constants.monthNames[monthIndex] + ' ' + year + ' ' + hours+':' + minutes, "programs" : programsArray });
+                latestArray.push({ "date" : day + ' ' + Constants.monthNames[monthIndex] + ' ' + year + ' ' + this.fixZeroOnNumber(hours) + ':' + this.fixZeroOnNumber(minutes), "programs" : programsArray });
                 if(routines != null && routines[0] != null){
                   latestArray.push(routines[0]);
                 }
@@ -362,9 +362,16 @@ export class WifiPage {
       });
   }
 
+  private fixZeroOnNumber(val){
+    if(val < 10){
+      return '0' + val;
+    }
+
+    return val;
+  }
+
   stop(){
     clearInterval(this.testStatusInterval);
     clearInterval(this.testIPInterval);
   }
-
 }

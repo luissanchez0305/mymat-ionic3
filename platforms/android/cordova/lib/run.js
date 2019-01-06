@@ -108,11 +108,7 @@ module.exports.run = function (runOptions) {
         // format than emulator.install expects.
         // TODO: Update emulator/device.install to handle this change
         return build.run.call(self, runOptions, resolvedTarget).then(function (buildResults) {
-<<<<<<< HEAD
-            if (resolvedTarget.isEmulator) {
-=======
             if (resolvedTarget && resolvedTarget.isEmulator) {
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
                 return emulator.wait_for_boot(resolvedTarget.target).then(function () {
                     return emulator.install(resolvedTarget, buildResults);
                 });

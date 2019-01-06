@@ -35,11 +35,7 @@ function parseOpts (options, resolvedTarget, projectRoot) {
     options = options || {};
     options.argv = nopt({
         gradle: Boolean,
-<<<<<<< HEAD
-        ant: Boolean,
-=======
         studio: Boolean,
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
         prepenv: Boolean,
         versionCode: String,
         minSdkVersion: String,
@@ -51,24 +47,15 @@ function parseOpts (options, resolvedTarget, projectRoot) {
         keystoreType: String
     }, {}, options.argv, 0);
 
-<<<<<<< HEAD
-    var ret = {
-        buildType: options.release ? 'release' : 'debug',
-        buildMethod: process.env.ANDROID_BUILD || 'gradle',
-=======
     // Android Studio Build method is the default
     var ret = {
         buildType: options.release ? 'release' : 'debug',
         buildMethod: process.env.ANDROID_BUILD || 'studio',
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
         prepEnv: options.argv.prepenv,
         arch: resolvedTarget && resolvedTarget.arch,
         extraArgs: []
     };
 
-<<<<<<< HEAD
-    if (options.argv.ant || options.argv.gradle) { ret.buildMethod = options.argv.ant ? 'ant' : 'gradle'; }
-=======
     if (options.argv.gradle || options.argv.studio) {
         ret.buildMethod = options.argv.studio ? 'studio' : 'gradle';
     }
@@ -76,7 +63,6 @@ function parseOpts (options, resolvedTarget, projectRoot) {
     // This comes from cordova/run
     if (options.studio) ret.buildMethod = 'studio';
     if (options.gradle) ret.buildMethod = 'gradle';
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
 
     if (options.nobuild) ret.buildMethod = 'none';
 
@@ -163,10 +149,7 @@ module.exports.runClean = function (options) {
  */
 module.exports.run = function (options, optResolvedTarget) {
     var opts = parseOpts(options, optResolvedTarget, this.root);
-<<<<<<< HEAD
-=======
     console.log(opts.buildMethod);
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     var builder = builders.getBuilder(opts.buildMethod);
     return builder.prepEnv(opts).then(function () {
         if (opts.prepEnv) {

@@ -7,17 +7,10 @@
     "files": {}
   },
   "installed_plugins": {
-<<<<<<< HEAD
-    "cordova-plugin-datepicker": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-device": {
-=======
     "cordova-plugin-advanced-http": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "cordova-plugin-datepicker": {
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "cordova-plugin-email-composer": {
@@ -43,10 +36,6 @@
     }
   },
   "dependent_plugins": {
-<<<<<<< HEAD
-    "cordova-plugin-badge": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-=======
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
@@ -55,7 +44,6 @@
     },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     }
   }
 }

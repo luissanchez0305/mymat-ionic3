@@ -62,11 +62,6 @@ export class HomePage {
     this.network.onDisconnect().subscribe(() => {
       this.zone.run(() => {
         this.isDeviceOnline = false;
-        this.storage.get(Constants.storageKeyLang).then((lang)=>{
-          this.translateService.getTranslation(lang).subscribe((value) => {
-            this.offline_device = value['offline-device-text'];
-          });
-        });
       });
     });
     // watch network for a connection

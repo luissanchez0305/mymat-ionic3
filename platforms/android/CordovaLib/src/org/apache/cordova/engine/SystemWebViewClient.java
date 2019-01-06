@@ -112,11 +112,7 @@ public class SystemWebViewClient extends WebViewClient {
      * @param request
      */
     @Override
-<<<<<<< HEAD
-    @TargetApi(21)
-=======
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     public void onReceivedClientCertRequest (WebView view, ClientCertRequest request)
     {
 
@@ -223,10 +219,6 @@ public class SystemWebViewClient extends WebViewClient {
      * @param handler       An SslErrorHandler object that will handle the user's response.
      * @param error         The SSL error object.
      */
-<<<<<<< HEAD
-    @TargetApi(8)
-=======
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     @Override
     public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
 
@@ -323,10 +315,6 @@ public class SystemWebViewClient extends WebViewClient {
         this.authenticationTokens.clear();
     }
 
-<<<<<<< HEAD
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-=======
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     @Override
     public WebResourceResponse shouldInterceptRequest(WebView view, String url) {
         try {
@@ -359,11 +347,7 @@ public class SystemWebViewClient extends WebViewClient {
     }
 
     private static boolean needsKitKatContentUrlFix(Uri uri) {
-<<<<<<< HEAD
-        return android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT && "content".equals(uri.getScheme());
-=======
         return "content".equals(uri.getScheme());
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
     }
 
     private static boolean needsSpecialsInAssetUrlFix(Uri uri) {
@@ -378,14 +362,6 @@ public class SystemWebViewClient extends WebViewClient {
             return false;
         }
 
-<<<<<<< HEAD
-        switch(android.os.Build.VERSION.SDK_INT){
-            case android.os.Build.VERSION_CODES.ICE_CREAM_SANDWICH:
-            case android.os.Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1:
-                return true;
-        }
-=======
->>>>>>> 02274351aa00c6d087dc1d7775fd2c3472201387
         return false;
     }
 }

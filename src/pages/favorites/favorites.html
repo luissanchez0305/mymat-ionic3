@@ -16,7 +16,7 @@
       </button>
     </ion-buttons>
   </ion-toolbar>
-  <ion-item class="no-conection" *ngIf="!isDeviceOnline">{{ offline_device }}</ion-item>
+  <ion-item class="no-conection" *ngIf="!isDeviceOnline">{{ 'offline-device-text' | translate }}</ion-item>
 </ion-header>
 
 <ion-content>
@@ -44,13 +44,14 @@
     </form>
   </div>
   <div padding-top>
-      <div text-center text-uppercase>{{ 'my-favorites' | translate }}</div>
-      <div *ngIf="showLoadingListing" text-center>{{ 'loading' | translate }}...</div>
-      <ion-item *ngFor="let item of favoritesList" (click)="showProgram(item.id, item.name, item.program1, item.program2, item.program3, item.program4)">
-        {{item.name}}
-        <button ion-button icon-only item-end (click)="delete($event, item.id)">
-          <ion-icon name="md-close"></ion-icon>
-        </button>
-      </ion-item>
+    <div text-center text-uppercase>{{ 'my-favorites' | translate }}</div>
+    <div *ngIf="showLoadingListing" text-center>{{ 'loading' | translate }}...</div>
+    <div *ngIf="!isDeviceOnline" text-center>{{ 'connect-favorites-text' | translate }}...</div>
+    <ion-item *ngFor="let item of favoritesList" (click)="showProgram(item.id, item.name, item.program1, item.program2, item.program3, item.program4)">
+      {{item.name}}
+      <button ion-button icon-only item-end (click)="delete($event, item.id)">
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+    </ion-item>
   </div>
 </ion-content>
