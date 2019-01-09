@@ -29078,7 +29078,7 @@ page-home .add-favorite {
 }
 
 page-home .add-favorite-ios {
-  top: 4px;
+  top: 100px;
   left: 1%;
   position: fixed;
   background-color: transparent;
