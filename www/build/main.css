@@ -29078,6 +29078,7 @@ page-home .add-favorite {
 }
 
 page-home .add-favorite-ios {
+  top: 4px;
   right: 1%;
   background-color: transparent;
 }
