@@ -36,7 +36,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
     private translateService: TranslateService, private network: Network, private zone: NgZone,
-    public events: Events/*, private device: Device*/, public apiService : APIServiceProvider, public modalCtrl: ModalController) {
+    public events: Events, private device: Device, public apiService : APIServiceProvider, public modalCtrl: ModalController) {
     this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){
@@ -75,11 +75,10 @@ export class HomePage {
       if(typeof info === 'undefined' || info == null){
         /*if(window.hasOwnProperty('cordova')){*/
           var formData = new FormData();
-          //var uuid = this.device.uuid;
-          var uuid = Constants.test_uuid;
+          var _uuid = this.device.uuid;
+          //var uuid = Constants.test_uuid;
 
-          //formData.append('uuid', uuid);
-          formData.append('uuid', uuid);
+          formData.append('uuid', _uuid);
 
           //var data = { 'uuid' : Constants.test_uuid };
 
@@ -92,7 +91,7 @@ export class HomePage {
               this.navCtrl.push(SubscribePage);
             }
             else{
-              this.storage.set(Constants.deviceInfo, { "email" : obj.email, "uuid" : uuid });
+              this.storage.set(Constants.deviceInfo, { "email" : obj.email, "uuid" : _uuid });
             }
           }, (result) => {
             //console.log('check_device error ' + result);
