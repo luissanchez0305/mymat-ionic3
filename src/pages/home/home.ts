@@ -6,7 +6,7 @@ import { RoutinesProvider } from '../../providers/routines/routines';
 import { Constants } from '../../services/constants';
 import { TranslateService } from '@ngx-translate/core';
 import { Network } from '@ionic-native/network';
-//import { Device } from '@ionic-native/device';
+import { Device } from '@ionic-native/device';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { ProgramsPage } from '../programs/programs';
 import { WifiPage } from '../wifi/wifi';
