@@ -224,6 +224,7 @@ export class WifiPage {
         this.showLoading = false;
         this.isRunRoutineEnabled = true;
         if(this.verifyValues(response)){
+          let successTryCount = 0;
           /* CORRER RUTINA */
           clearInterval(this.testStatusInterval);
           clearInterval(this.testIPInterval);
@@ -314,6 +315,10 @@ export class WifiPage {
               });
               toast.present();
             }
+            else if(successTryCount >= 5){
+              clearInterval(this.testBeginRoutineInterval);
+            }
+            successTryCount = successTryCount + 1;
           }, 1000);
         }
         else{
