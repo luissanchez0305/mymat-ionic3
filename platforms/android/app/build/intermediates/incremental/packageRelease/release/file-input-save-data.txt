@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Dec 10 16:23:54 COT 2018
+#Thu Jan 17 00:38:26 COT 2019
 2.path=www/plugins/cordova-plugin-email-composer/www/email_composer.js
 14.set=ASSET
 107.baseType=DIRECTORY
