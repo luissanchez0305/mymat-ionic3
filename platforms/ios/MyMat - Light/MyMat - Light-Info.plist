@@ -21,27 +21,11 @@
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <string>8.4.2</string>
+    <string>8.4.4</string>
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleVersion</key>
-    <string>8.4.2</string>
-=======
-    <string>8.2.21</string>
-    <key>CFBundleSignature</key>
-    <string>????</string>
-    <key>CFBundleVersion</key>
-    <string>8.2.21</string>
->>>>>>> e594c50e4634db6f26076c46543c31fc8dc2a01d
-=======
-    <string>8.4.3</string>
-    <key>CFBundleSignature</key>
-    <string>????</string>
-    <key>CFBundleVersion</key>
-    <string>8.4.3</string>
->>>>>>> fafb5325b2ce187ee29f598c0071d959de22abb5
+    <string>8.4.4</string>
     <key>LSRequiresIPhoneOS</key>
     <true/>
     <key>NSMainNibFile</key>
