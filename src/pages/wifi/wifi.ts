@@ -290,6 +290,7 @@ export class WifiPage {
           this.apiService.start(programs).then((response) => {
             console.log(response + '');
           }).catch((response) =>{
+            console.log(response);
             /*setTimeout(() => {
               var emailData = { error : response.data };
               this.apiService.sendError(emailData).then((result) => {
@@ -337,15 +338,15 @@ export class WifiPage {
           this.showLoading = true;
           this.failIPVerification();
         }
-      },(response)=>{
-        this.showLoading = false;
-        this.isRunRoutineEnabled = true;
-        this.mymatWifi = true;
-        this.mymatStatus = false;
-        this.showStatusTable = false;
-        this.showLoading = true;
-        this.failIPVerification();
-      });
+    },(response)=>{
+      this.showLoading = false;
+      this.isRunRoutineEnabled = true;
+      this.mymatWifi = true;
+      this.mymatStatus = false;
+      this.showStatusTable = false;
+      this.showLoading = true;
+      this.failIPVerification();
+    });
   }
 
   private fixZeroOnNumber(val){
