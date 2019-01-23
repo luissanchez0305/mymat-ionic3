@@ -224,6 +224,7 @@ export class WifiPage {
         this.showLoading = false;
         this.isRunRoutineEnabled = true;
         if(this.verifyValues(response)){
+          let successTryCount = 0;
           /* CORRER RUTINA */
           clearInterval(this.testStatusInterval);
           clearInterval(this.testIPInterval);
@@ -293,12 +294,12 @@ export class WifiPage {
               this.apiService.start(programs).then((response) => {
                 console.log(response + '');
               }).catch((response) =>{
-                setTimeout(() => {
+                /*setTimeout(() => {
                   var emailData = { error : response.data };
                   this.apiService.sendError(emailData).then((result) => {
                     console.log(response.data);
                   });
-                }, 120000);
+                }, 120000);*/
               });
 
               // Poner rutina en las ultimas corridas
@@ -340,6 +341,11 @@ export class WifiPage {
               });
               toast.present();
             }
+            else if(successTryCount >= 5){
+              clearInterval(this.testBeginRoutineInterval);
+            }
+            alert(successTryCount);
+            successTryCount = successTryCount + 1;
           }, 1000);
         }
         else{
