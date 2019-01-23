@@ -1,9 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <widget id="com.esferasoluciones.mymat_light" version="8.4.2" versionCode="58" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 =======
 <widget id="com.esferasoluciones.mymat_light" version="8.2.21" versionCode="60" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 >>>>>>> e594c50e4634db6f26076c46543c31fc8dc2a01d
+=======
+<widget id="com.esferasoluciones.mymat_light" version="8.4.3" versionCode="58" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+>>>>>>> fafb5325b2ce187ee29f598c0071d959de22abb5
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
