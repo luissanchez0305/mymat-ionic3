@@ -264,7 +264,7 @@ var FavoritesPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-favorites',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\favorites\favorites.html"*/'<!--\n  Generated template for the FavoritesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Rutinas Favoritas\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <span ion-text color="primary" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n  <ion-item class="no-conection" *ngIf="!isDeviceOnline">{{ \'offline-device-text\' | translate }}</ion-item>\n</ion-header>\n\n<ion-content>\n  <div padding *ngIf="showSaveForm">\n    <div text-center text-uppercase>{{ \'add-favorites\' | translate }}</div>\n    <form [formGroup]="saveRoutineForm" (ngSubmit)="attemptSaveFavorite()">\n      <ion-list>\n        <ion-item class="item-input contact">\n          <ion-input type="text" placeholder="{{ \'name-text\' | translate }}" formControlName="name" padding></ion-input>\n        </ion-item>\n        <ion-item>\n          <p>{{ program1 | translate }}</p>\n          <p>{{ program2 | translate }}</p>\n          <p>{{ program3 | translate }}</p>\n          <p>{{ program4 | translate  }}</p>\n        </ion-item>\n        <ion-item>\n          <button type="submit" ion-button item-left [disabled]="!saveRoutineForm.valid" class="button-contact button-calm">{{ \'button-save\' | translate }}</button>\n          <button ion-button icon-only item-end (click)="dismiss($event)" class="button-contact button-calm">\n            <span ion-text color="primary" showWhen="ios">Cancel</span>\n            <span ion-text showWhen="android,windows">Cancel</span>\n          </button>\n        </ion-item>\n      </ion-list>\n    </form>\n  </div>\n  <div padding-top>\n    <div text-center text-uppercase>{{ \'my-favorites\' | translate }}</div>\n    <div *ngIf="showLoadingListing" text-center>{{ \'loading\' | translate }}...</div>\n    <div *ngIf="!isDeviceOnline" text-center>{{ \'connect-favorites-text\' | translate }}...</div>\n    <ion-item *ngFor="let item of favoritesList" (click)="showProgram(item.id, item.name, item.program1, item.program2, item.program3, item.program4)">\n      {{item.name}}\n      <button ion-button icon-only item-end (click)="delete($event, item.id)">\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n    </ion-item>\n  </div>\n</ion-content>'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\favorites\favorites.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_routines_routines__["a" /* RoutinesProvider */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_routines_routines__["a" /* RoutinesProvider */],
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_8__ionic_storage__["b" /* Storage */],
             __WEBPACK_IMPORTED_MODULE_4__providers_api_service_api_service__["a" /* APIServiceProvider */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]])
@@ -4424,7 +4424,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var WifiPage = (function () {
-    function WifiPage(navCtrl, navParams, storage, apiService, translateService, networkInterface, platform, toastCtrl) {
+    function WifiPage(navCtrl, navParams, storage, apiService, translateService, networkInterface, platform) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
@@ -4433,7 +4433,6 @@ var WifiPage = (function () {
         this.translateService = translateService;
         this.networkInterface = networkInterface;
         this.platform = platform;
-        this.toastCtrl = toastCtrl;
         this.intervalCount = 0;
         this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
             _this.translateService.getTranslation(lang).subscribe(function (value) {
@@ -4607,7 +4606,6 @@ var WifiPage = (function () {
             _this.showLoading = false;
             _this.isRunRoutineEnabled = true;
             if (_this.verifyValues(response)) {
-                var successTryCount_1 = 0;
                 /* CORRER RUTINA */
                 clearInterval(_this.testStatusInterval);
                 clearInterval(_this.testIPInterval);
@@ -4618,7 +4616,7 @@ var WifiPage = (function () {
                 var error1Obj;
                 var error2Obj;
                 var error3Obj;
-                //var error4Obj;
+                var error4Obj;
                 var isValidateSuccessProgram = 0;
                 var isValidateErrorProgram = 0;
                 for (var i = 1; i <= 4; i++) {
@@ -4650,67 +4648,57 @@ var WifiPage = (function () {
                                 error3Obj = err;
                             });
                             break;
+                        case 4:
+                            _this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble4).then(function (val) {
+                                program4Obj = val;
+                                isValidateSuccessProgram += 1;
+                            }).catch(function (err) {
+                                isValidateErrorProgram += 1;
+                                error4Obj = err;
+                            });
+                            break;
                     }
                 }
-                _this.testBeginRoutineInterval = setInterval(function () {
-                    if (isValidateSuccessProgram == 4) {
-                        clearInterval(_this.testBeginRoutineInterval);
-                        var programs = [
-                            program1Obj,
-                            program2Obj,
-                            program3Obj,
-                            program4Obj
-                        ];
-                        _this.apiService.start(programs).then(function (response) {
-                            console.log(response + '');
-                        }).catch(function (response) {
-                            /*setTimeout(() => {
-                              var emailData = { error : response.data };
-                              this.apiService.sendError(emailData).then((result) => {
-                                console.log(response.data);
-                              });
-                            }, 120000);*/
-                        });
-                        // Poner rutina en las ultimas corridas
-                        _this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].latestRoutinesKey).then(function (routines) {
-                            var latestArray = [];
-                            var t = new Date();
-                            var day = t.getDate();
-                            var monthIndex = t.getMonth();
-                            var year = t.getFullYear();
-                            var hours = t.getHours();
-                            var minutes = t.getMinutes();
-                            var programsArray = [];
-                            for (var i_1 = 0; i_1 < programs.length; i_1++) {
-                                programsArray.push({ "apiName": programs[i_1].split('|')[3], "name": programs[i_1].split('|')[1] });
-                            }
-                            latestArray.push({ "date": day + ' ' + __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].monthNames[monthIndex] + ' ' + year + ' ' + _this.fixZeroOnNumber(hours) + ':' + _this.fixZeroOnNumber(minutes), "programs": programsArray });
-                            if (routines != null && routines[0] != null) {
-                                latestArray.push(routines[0]);
-                            }
-                            if (routines != null && routines[1] != null) {
-                                latestArray.push(routines[1]);
-                            }
-                            _this.storage.set(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].latestRoutinesKey, latestArray);
-                        });
-                        /* CORRER RUTINA */
-                        _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__playing_playing__["a" /* PlayingPage */]);
+                var programs = [
+                    program1Obj,
+                    program2Obj,
+                    program3Obj,
+                    program4Obj
+                ];
+                _this.apiService.start(programs).then(function (response) {
+                    console.log(response + '');
+                }).catch(function (response) {
+                    /*setTimeout(() => {
+                      var emailData = { error : response.data };
+                      this.apiService.sendError(emailData).then((result) => {
+                        console.log(response.data);
+                      });
+                    }, 120000);*/
+                });
+                // Poner rutina en las ultimas corridas
+                _this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].latestRoutinesKey).then(function (routines) {
+                    var latestArray = [];
+                    var t = new Date();
+                    var day = t.getDate();
+                    var monthIndex = t.getMonth();
+                    var year = t.getFullYear();
+                    var hours = t.getHours();
+                    var minutes = t.getMinutes();
+                    var programsArray = [];
+                    for (var i_1 = 0; i_1 < programs.length; i_1++) {
+                        programsArray.push({ "apiName": programs[i_1].split('|')[3], "name": programs[i_1].split('|')[1] });
                     }
-                    else if (isValidateSuccessProgram + isValidateErrorProgram == 4) {
-                        clearInterval(_this.testBeginRoutineInterval);
-                        var toast = _this.toastCtrl.create({
-                            message: 'Ha ocurrido un error (Code: 2)',
-                            duration: 5000,
-                            position: 'bottom'
-                        });
-                        toast.present();
+                    latestArray.push({ "date": day + ' ' + __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].monthNames[monthIndex] + ' ' + year + ' ' + _this.fixZeroOnNumber(hours) + ':' + _this.fixZeroOnNumber(minutes), "programs": programsArray });
+                    if (routines != null && routines[0] != null) {
+                        latestArray.push(routines[0]);
                     }
-                    else if (successTryCount_1 >= 5) {
-                        clearInterval(_this.testBeginRoutineInterval);
+                    if (routines != null && routines[1] != null) {
+                        latestArray.push(routines[1]);
                     }
-                    alert(successTryCount_1);
-                    successTryCount_1 = successTryCount_1 + 1;
-                }, 1000);
+                    _this.storage.set(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].latestRoutinesKey, latestArray);
+                });
+                /* CORRER RUTINA */
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__playing_playing__["a" /* PlayingPage */]);
             }
             else {
                 _this.showLoading = false;
@@ -4746,7 +4734,7 @@ var WifiPage = (function () {
             selector: 'page-wifi',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\wifi\wifi.html"*/'<!--\n\n  Generated template for the WifiPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar class="bar">\n\n    <button ion-button menuToggle end class="button button-clear">\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      <div class="logo"></div>\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="home center">\n\n        <br>\n\n        <div *ngIf="mymatWifi">\n\n            <img src="assets/img/wifi.png">\n\n            <div class="titleinstructions" [innerHTML]="\'please-pair\' | translate"></div>\n\n            <br>\n\n            <p [innerHTML]="\'activate-wifi\' | translate">Steps to pair your MyMat</p>\n\n            <p [innerHTML]="\'activate-wifi-1\' | translate">1. Turn on your MyMat</p>\n\n            <p [innerHTML]="\'activate-wifi-2\' | translate">2. On your device, navigate to your Wi-Fi settings</p>\n\n            <p [innerHTML]="\'activate-wifi-3\' | translate">3. Connect your device\'s WiFi with your MyMat network</p>\n\n            <p [innerHTML]="\'activate-wifi-4\' | translate">4. Once is connected, return to the MyMat app</p>\n\n            <!--<p class="interval-counter">0</p>-->\n\n            <br/>\n\n            <div *ngIf="mymatNoStatus">\n\n                <p [innerHTML]="\'no-detect-1\' | translate">We were unable to detect your MyMat</p>\n\n                <p [innerHTML]="\'no-detect-2\' | translate">Please follow the steps to do so</p>\n\n            </div>\n\n            <img *ngIf="showLoading" src="assets/img/loading.gif" width="200" />\n\n        </div>\n\n        <div *ngIf="mymatStatus">\n\n            <iframe *ngIf="showIframeStatus" height="100%" width="100%" [src]="iframeUrl" (click)="startRoutine()"></iframe>\n\n            <div *ngIf="showStatusTable" class="status-table divTable">\n\n                <div class="divTableHeading">\n\n                    <div class="divTableRow">\n\n                        <div class="divTableHead divTableCellFirstLeft">\n\n                            <h4 [innerHTML]="\'battery-power\' | translate"></h4>\n\n                        </div>\n\n                        <div class="divTableHead divTableCellFirstRight">\n\n                            <h4 id="battery">{{ batteryCharge }} <img src="{{ batteryImg }}" height="16"></h4>\n\n\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n                <div class="divTableBody">\n\n                    <div class="divTableRow">\n\n                        <div class="divTableCell">{{ coilText }} 1</div>\n\n                        <div class="divTableCell" id="coil1">{{ coilText1 }}</div>\n\n                    </div>\n\n                    <div class="divTableRow">\n\n                        <div class="divTableCell coilOdd">{{ coilText }} 2</div>\n\n                        <div class="divTableCell coilOdd" id="coil2">{{ coilText2 }}</div>\n\n                    </div>\n\n                    <div class="divTableRow">\n\n                        <div class="divTableCell">{{ coilText }} 3</div>\n\n                        <div class="divTableCell" id="coil3">{{ coilText3 }}</div>\n\n                    </div>\n\n                    <div class="divTableRow">\n\n                        <div class="divTableCell coilOdd divTableCellLastLeft">{{ coilText }} 4</div>\n\n                        <div class="divTableCell coilOdd divTableCellLastRight" id="coil4">{{ coilText4 }}</div>\n\n                    </div>\n\n                </div>\n\n            </div>\n\n            <p>&nbsp;</p>\n\n            <button [disabled]="!isRunRoutineEnabled" class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="\'start-routine\' | translate">LAUNCH MYMAT</button>\n\n            <img *ngIf="showLoading" src="assets/img/loading.gif" width="200" />\n\n        </div>\n\n</ion-content>\n\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\wifi\wifi.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__["a" /* APIServiceProvider */],
-            __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__["a" /* NetworkInterface */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ToastController */]])
+            __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__["a" /* NetworkInterface */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */]])
     ], WifiPage);
     return WifiPage;
 }());
@@ -4789,13 +4777,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var PlayingPage = (function () {
-    function PlayingPage(navCtrl, navParams, storage, translateService, localNotifications, plt) {
+    function PlayingPage(navCtrl, navParams, storage, translateService, localNotifications, plt, zone) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.storage = storage;
         this.translateService = translateService;
         this.localNotifications = localNotifications;
         this.plt = plt;
+        this.zone = zone;
         var _this = this;
         document.addEventListener('resume', function () {
             var t = new Date();
@@ -4882,10 +4871,12 @@ var PlayingPage = (function () {
                         var t = new Date();
                         _this.finishTime = Math.round(t.getTime() / 1000) + _this.getSeconds(_this.displayRunningTime);
                         _this.timerInterval = setInterval(function () {
-                            _this.displayRunningTime = _this.decreaseSecond(_this.displayRunningTime);
-                            if (_this.displayRunningTime == '00:00') {
-                                clearInterval(_this.timerInterval);
-                            }
+                            _this.zone.run(function () {
+                                _this.displayRunningTime = _this.decreaseSecond(_this.displayRunningTime);
+                                if (_this.displayRunningTime == '00:00') {
+                                    clearInterval(_this.timerInterval);
+                                }
+                            });
                         }, 1000);
                         var $this = _this;
                         _this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
@@ -4943,7 +4934,8 @@ var PlayingPage = (function () {
             selector: 'page-playing',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\playing\playing.html"*/'<!--\n\n  Generated template for the PlayingPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar class="bar">\n\n    <button ion-button menuToggle end class="button button-clear">\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      <div class="logo"></div>\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="home center">\n\n  <div class="list card paddingSmall">\n\n      <div class="item">\n\n\n\n          <h2>{{ \'remaining-time\' | translate }} </h2>\n\n          <h3 style="color:white;">{{ displayRunningTime }}</h3>\n\n          \n\n      </div>\n\n\n\n      <div class="item item-time item-body">\n\n          <div class="program-running-left">\n\n            <div class="program-running-title">{{ programTitle1 }}</div>\n\n            <div class="program-running-duration">{{ program1CurrentTimeDecreasingAsTime }}</div>\n\n          </div>\n\n      </div>\n\n      \n\n      <div class="item item-time item-body">\n\n          <div class="program-running-left">\n\n            <div class="program-running-title">{{ programTitle2 }}</div>\n\n            <div class="program-running-duration">{{  program2CurrentTimeDecreasingAsTime }}</div>\n\n          </div>\n\n      </div>\n\n\n\n       <div class="item item-time item-body">\n\n          <div class="program-running-left">\n\n            <div class="program-running-title">{{ programTitle3 }}</div>\n\n            <div class="program-running-duration">{{  program3CurrentTimeDecreasingAsTime }}</div>\n\n          </div>\n\n      </div>\n\n      \n\n      <div class="item item-time item-body">\n\n          <div class="program-running-left">\n\n            <div class="program-running-title">{{ programTitle4 }}</div>\n\n            <div class="program-running-duration">{{  program4CurrentTimeDecreasingAsTime }}</div>\n\n          </div>\n\n      </div>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\playing\playing.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_local_notifications__["a" /* LocalNotifications */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */]])
+            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_local_notifications__["a" /* LocalNotifications */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */]])
     ], PlayingPage);
     return PlayingPage;
 }());
