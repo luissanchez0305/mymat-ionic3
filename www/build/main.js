@@ -4618,7 +4618,7 @@ var WifiPage = (function () {
                 var error1Obj;
                 var error2Obj;
                 var error3Obj;
-                var error4Obj;
+                //var error4Obj;
                 var isValidateSuccessProgram = 0;
                 var isValidateErrorProgram = 0;
                 for (var i = 1; i <= 4; i++) {
@@ -4648,15 +4648,6 @@ var WifiPage = (function () {
                             }).catch(function (err) {
                                 isValidateErrorProgram += 1;
                                 error3Obj = err;
-                            });
-                            break;
-                        case 4:
-                            _this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble4).then(function (val) {
-                                program4Obj = val;
-                                isValidateSuccessProgram += 1;
-                            }).catch(function (err) {
-                                isValidateErrorProgram += 1;
-                                error4Obj = err;
                             });
                             break;
                     }

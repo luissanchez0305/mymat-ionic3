@@ -235,7 +235,7 @@ export class WifiPage {
           var error1Obj;
           var error2Obj;
           var error3Obj;
-          var error4Obj;
+          //var error4Obj;
 
           var isValidateSuccessProgram = 0;
           var isValidateErrorProgram = 0;
@@ -269,7 +269,7 @@ export class WifiPage {
                   error3Obj = err;
                 });
                 break;
-              case 4:
+              /*case 4:
                 this.storage.get(Constants.storageKeyBubble4).then((val) => {
                   program4Obj = val;
                   isValidateSuccessProgram += 1;
@@ -277,7 +277,7 @@ export class WifiPage {
                   isValidateErrorProgram += 1;
                   error4Obj = err;
                 });
-                break;
+                break;*/
             }
           }
 
