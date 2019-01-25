@@ -20,8 +20,8 @@
       <div class="item">
 
           <h2>{{ 'remaining-time' | translate }} </h2>
-          <h3 style="color:white;">{{ displayRunningTime }}</h3>
-          
+          <countdown units="Year | Month | Days | Hours | Minutes | Seconds"  [finishTime]="finishTime"></countdown>
+
       </div>
 
       <div class="item item-time item-body">
@@ -30,7 +30,7 @@
             <div class="program-running-duration">{{ program1CurrentTimeDecreasingAsTime }}</div>
           </div>
       </div>
-      
+
       <div class="item item-time item-body">
           <div class="program-running-left">
             <div class="program-running-title">{{ programTitle2 }}</div>
@@ -44,7 +44,7 @@
             <div class="program-running-duration">{{  program3CurrentTimeDecreasingAsTime }}</div>
           </div>
       </div>
-      
+
       <div class="item item-time item-body">
           <div class="program-running-left">
             <div class="program-running-title">{{ programTitle4 }}</div>

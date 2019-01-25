@@ -28,7 +28,7 @@ export class PlayingPage {
   public programTitle4 : string;
   public displayRunningTime : string;
   public finishTime : any;
-  public timerInterval : any;
+  public timerRemain : any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage,
     public translateService: TranslateService, private localNotifications : LocalNotifications, public plt: Platform,
@@ -48,10 +48,12 @@ export class PlayingPage {
   resume(now){
     if(Math.round(now / 1000) > this.finishTime){
       this.displayRunningTime = '00:00';
-      clearInterval(this.timerInterval);
+      this.timerRemain = 0;
+      this.startTimer();
     }
     else{
-      var secondsLeft = this.finishTime - Math.round(now / 1000);
+      var secondsLeft = this.timerRemain = this.finishTime - Math.round(now / 1000);
+      this.startTimer();
       this.displayRunningTime = this.convertSecondsToTime(secondsLeft);
     }
   }
@@ -127,14 +129,9 @@ export class PlayingPage {
             var t = new Date();
             this.finishTime = Math.round(t.getTime() / 1000) + this.getSeconds(this.displayRunningTime);
 
-            this.timerInterval = setInterval(() => {
-              this.zone.run(() => {
-                this.displayRunningTime = this.decreaseSecond(this.displayRunningTime);
-                if(this.displayRunningTime == '00:00'){
-                  clearInterval(this.timerInterval);
-                }
-              });
-            }, 1000);
+            this.timerRemain = this.getSeconds(this.displayRunningTime);
+            this.startTimer();
+
             var $this = this;
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((prog) =>{
@@ -159,6 +156,21 @@ export class PlayingPage {
           break;
       }
     }
+  }
+
+  startTimer(){
+    setTimeout(() => {
+      if(this.timerRemain == 0) { return; }
+
+      this.timerRemain--;
+      this.zone.run(() => {
+        this.displayRunningTime = this.decreaseSecond(this.displayRunningTime);
+      });
+
+      if(this.timerRemain > 0){
+        this.startTimer();
+      }
+    }, 1000);
   }
 
   decreaseSecond(time){
