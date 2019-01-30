@@ -65,7 +65,7 @@ export class FavoritesPage {
       this.zone.run(() => {
         this.isDeviceOnline = true;
 
-        this.storage.get(Constants.deviceInfo).then((device)=>{
+        this.storage.get(Constants.deviceInfoKey).then((device)=>{
           this.loadFavoriteList(device.email);
         });
       });
@@ -73,8 +73,9 @@ export class FavoritesPage {
   }
 
   ionViewDidLoad() {
-    this.storage.get(Constants.deviceInfo).then((device)=>{
-      this.loadFavoriteList(device.email);
+    this.storage.get(Constants.deviceInfoKey).then((device)=>{
+      if(typeof device !== 'undefined' && device != null)
+        this.loadFavoriteList(device.email);
     });
   }
 
@@ -119,7 +120,7 @@ export class FavoritesPage {
     formData.append('id', id);
 
     this.apiService.runPost('favorites.php',formData).then((result) => {
-      this.storage.get(Constants.deviceInfo).then((device)=>{
+      this.storage.get(Constants.deviceInfoKey).then((device)=>{
         this.loadFavoriteList(device.email);
       });
     });
@@ -155,7 +156,7 @@ export class FavoritesPage {
   attemptSaveFavorite(){
     this.response_text = '';
 
-    this.storage.get(Constants.deviceInfo).then((device)=>{
+    this.storage.get(Constants.deviceInfoKey).then((device)=>{
 
       var formData = new FormData();
 

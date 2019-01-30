@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
-//import { Device } from '@ionic-native/device';
+import { Device } from '@ionic-native/device';
 import { Storage } from '@ionic/storage';
 import { TranslateService } from '@ngx-translate/core';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
@@ -28,7 +28,7 @@ export class SubscribePage {
   private responseData : any;
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private formBuilder: FormBuilder, private storage: Storage, public apiService : APIServiceProvider,
-    private translateService: TranslateService/*, private device: Device*/) {
+    private translateService: TranslateService, private device: Device) {
 
       this.showSubmitButton = true;
       let aDate = new Date();
@@ -55,12 +55,17 @@ export class SubscribePage {
     formData.append('birthDate', this.subscribeForm.value.birthDate);
     formData.append('gender', this.subscribeForm.value.gender);
     formData.append('isUpdate', 'false');
-    formData.append('uuid', Constants.test_uuid);
+    if(window.hasOwnProperty('cordova')){
+      formData.append('uuid', this.device.uuid);
+    }
+    else {
+      formData.append('uuid', Constants.test_uuid);
+    }
 
     this.apiService.runPost('subscribe.php',formData).then((result) => {
       this.responseData = result;
       if(this.responseData.status == 'ok'){
-        this.storage.set(Constants.deviceInfo, {'uuid': this.responseData.uuid, 'email': this.subscribeForm.value.email });
+        this.storage.set(Constants.deviceInfoKey, {'uuid': this.responseData.uuid, 'email': this.subscribeForm.value.email });
         this.showSubmitButton = false;
         this.storage.get(Constants.storageKeyLang).then((lang)=>{
           this.translateService.getTranslation(lang).subscribe((value) => {

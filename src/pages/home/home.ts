@@ -71,13 +71,14 @@ export class HomePage {
       });
     });
 
-    this.storage.get(Constants.deviceInfo).then((info)=>{
+    this.storage.get(Constants.deviceInfoKey).then((info)=>{
       if(typeof info === 'undefined' || info == null){
         /*if(window.hasOwnProperty('cordova')){*/
           var formData = new FormData();
-          var _uuid = this.device.uuid;
-          //var uuid = Constants.test_uuid;
-
+          var _uuid = Constants.test_uuid;
+          if(window.hasOwnProperty('cordova')){
+            _uuid = this.device.uuid;
+          }
           formData.append('uuid', _uuid);
 
           //var data = { 'uuid' : Constants.test_uuid };
@@ -91,7 +92,7 @@ export class HomePage {
               this.navCtrl.push(SubscribePage);
             }
             else{
-              this.storage.set(Constants.deviceInfo, { "email" : obj.email, "uuid" : _uuid });
+              this.storage.set(Constants.deviceInfoKey, { "email" : obj.email, "uuid" : _uuid });
             }
           }, (result) => {
             //console.log('check_device error ' + result);
