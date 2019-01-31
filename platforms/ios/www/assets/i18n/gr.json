@@ -1,4 +1,5 @@
 {
+    "back":"Rückkehr",
     "culture":"gr",
     "help": "<a class=\"item-content\" ng-href=\"#/app/help\" href=\"#/app/help\"> HILFE </a>",
     "contact-us": "<a class=\"item-content\" ng-href=\"#/app/contactus\" href=\"#/app/contactus\"> KONTAKTIEREN SIE UNS </a>",
@@ -9,7 +10,7 @@
     "remove-program": "Programm entfernen",
     "time-expire-text": "Deine Routine ist vorbei",
     "fav-title": "MEINE FAVORITEN",
-    "add-favorite": "Hinzufügen",
+    "add-favorite": "FÜGEN SIE DIESE ROUTINE HINZU",
     "add-favorites": "Fügen Sie diese Favoriten hinzu",
     "my-favorites": "Meine Favoriten",
     "loading":"Wird geladen",
