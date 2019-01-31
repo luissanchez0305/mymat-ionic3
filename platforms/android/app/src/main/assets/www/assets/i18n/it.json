@@ -1,4 +1,5 @@
 {
+        "back":"Ritorno",
         "culture":"it",
         "help": "<a class=\"item-content\" ng-href=\"#/app/help\" href=\"#/app/help\"> AIUTO </a>",
         "contact-us": "<a class=\"item-content\" ng-href=\"#/app/contactus\" href=\"#/app/contactus\"> CONTATTACI </a>" ,
@@ -9,7 +10,7 @@
         "remove-program": "Rimuovi programma",
         "time-expire-text": "La tua routine è finita",
         "fav-title": "I MIEI PREFERITI",
-        "add-favorite": "Aggiungere",
+        "add-favorite": "AGGIUNGI QUESTA ROUTINE",
         "add-favorites": "Aggiungi questi preferiti",
         "my-favorites": "I Miei Preferiti",
         "loading":"Caricamento",

@@ -158,6 +158,10 @@ export class PlayingPage {
     }
   }
 
+  ionViewWillLeave() {
+    this.timerRemain = 0;
+  }
+
   startTimer(){
     setTimeout(() => {
       if(this.timerRemain == 0) { return; }

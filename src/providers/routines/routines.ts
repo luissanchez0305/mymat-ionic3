@@ -71,7 +71,7 @@ export class RoutinesProvider {
   public getProgram(name){
       for(var i = 0;  i < Data.Programs.length; i++){
         var program = Data.Programs[i];
-        if(program.apiName == name || program.name == name.name)
+        if(program.apiName == name || program.name == name.name || program.name == name)
           return program;
       }
   }

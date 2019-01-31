@@ -11,7 +11,7 @@ export var Constants = {
     storageKeyScrollTop : 'MyMat_scrollTop',
     storageKeyCurrentProgram : 'MyMat_currentProgram',
     deviceInfoKey: 'MyMatDevice',
-    test_uuid: 'UUIDTEST-1234-5678-9100-000000000',
+    test_uuid: 'UUIDTEST-1234-5678-9100-000000003',
     latestRoutinesKey: 'latestRoutines',
     monthNames: [
         "January", "February", "March",

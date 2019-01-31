@@ -13,6 +13,7 @@
       <div class="logo"></div>
     </ion-title>
   </ion-navbar>
+  <ion-item class="no-conection" *ngIf="!isDeviceOnline">{{ 'offline-device-text' | translate }}</ion-item>
 </ion-header>
 
 

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { Component, NgZone } from '@angular/core';
+import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { Device } from '@ionic-native/device';
 import { Storage } from '@ionic/storage';
@@ -7,6 +7,8 @@ import { TranslateService } from '@ngx-translate/core';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { Constants } from '../../services/constants';
 import { SliderPage } from '../slider/slider';
+import { Network } from '@ionic-native/network';
+import { FavoritesPage } from '../favorites/favorites';
 
 /**
  * Generated class for the SubscribePage page.
@@ -26,10 +28,16 @@ export class SubscribePage {
   private maxDate : string;
   private response_text : string;
   private responseData : any;
-  constructor(public navCtrl: NavController, public navParams: NavParams,
-    private formBuilder: FormBuilder, private storage: Storage, public apiService : APIServiceProvider,
-    private translateService: TranslateService, private device: Device) {
+  private callBackPage : string;
+  public isDeviceOnline : boolean;
 
+  constructor(public navCtrl: NavController, public navParams: NavParams, private zone: NgZone,
+    private formBuilder: FormBuilder, private storage: Storage, public apiService : APIServiceProvider,
+    private translateService: TranslateService, private device: Device, private modalCtrl: ModalController,
+    private network: Network) {
+      // obtiene el parametro de que page va a correr al terminar el registro
+
+      this.callBackPage = this.navParams.get('callBackPage');
       this.showSubmitButton = true;
       let aDate = new Date();
       this.maxDateOfPicker = this.maxDate = aDate.toISOString();
@@ -39,6 +47,19 @@ export class SubscribePage {
         name: ['', Validators.required],
         gender: ['', Validators.required],
         birthDate: ['', Validators.required]
+      });
+      this.isDeviceOnline = true;
+      // watch network for a disconnect
+      this.network.onDisconnect().subscribe(() => {
+        this.zone.run(() => {
+          this.isDeviceOnline = false;
+        });
+      });
+      // watch network for a connection
+      this.network.onConnect().subscribe(() => {
+        this.zone.run(() => {
+          this.isDeviceOnline = true;
+        });
       });
   }
 
@@ -64,7 +85,7 @@ export class SubscribePage {
 
     this.apiService.runPost('subscribe.php',formData).then((result) => {
       this.responseData = result;
-      if(this.responseData.status == 'ok'){
+      if(this.responseData.status == 'ok') {
         this.storage.set(Constants.deviceInfoKey, {'uuid': this.responseData.uuid, 'email': this.subscribeForm.value.email });
         this.showSubmitButton = false;
         this.storage.get(Constants.storageKeyLang).then((lang)=>{
@@ -72,14 +93,21 @@ export class SubscribePage {
             this.response_text = value['profile-success-message'];
 
             setTimeout(() => {
-              // despliega la vista de de instrucciones
-              this.navCtrl.push(SliderPage);
+              if(this.callBackPage == 'none'){
+                // despliega la vista de de instrucciones
+                this.navCtrl.push(SliderPage);
+              }
+              else if(this.callBackPage == 'favorites'){
+                this.navCtrl.pop();
+                let profileModal = this.modalCtrl.create(FavoritesPage, { 'showSave': true });
+                profileModal.present();
+              }
             }, 5000);
 
           });
         });
       }
-      else{
+      else {
         this.storage.get(Constants.storageKeyLang).then((lang)=>{
           this.translateService.getTranslation(lang).subscribe((value) => {
             var error = value['profile-error-message'] + ': ';
