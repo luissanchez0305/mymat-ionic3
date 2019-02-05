@@ -324,6 +324,19 @@ button[disabled].greenbtn {
     padding-right: 25px;
     text-decoration: none;
 }
+button[disabled].orangebtn {
+    opacity: 0.75;
+}
+.orangebtn {
+    background-color: #f37c02;
+    border: none;
+    color: #FFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+}
 
 .redbtn a {    text-decoration: none!important;
      color: #FFF!important;

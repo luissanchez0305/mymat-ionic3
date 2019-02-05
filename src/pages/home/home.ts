@@ -47,6 +47,7 @@ export class HomePage {
 
     this.events.subscribe('addProgramsEvent', (program1, program2, program3, program4) => {
       this.navCtrl.pop();
+      console.log(program1);
       let bubbles = this.routines.addPrograms('', program1, program2, program3, program4);
       this.events.publish("sharesBubbles", bubbles);
     });
@@ -89,7 +90,7 @@ export class HomePage {
             var obj : any = result;
             if (obj.found == "0") {
               // despliega la vista de insercion de datos
-              this.navCtrl.push(SubscribePage);
+              this.navCtrl.push(SubscribePage, { callBackPage : 'none' });
             }
             else{
               this.storage.set(Constants.deviceInfoKey, { "email" : obj.email, "uuid" : _uuid });
@@ -126,8 +127,15 @@ export class HomePage {
   }
 
   openAddFavorite(){
-    let profileModal = this.modalCtrl.create(FavoritesPage, { 'showSave': true });
-    profileModal.present();
+    this.storage.get(Constants.deviceInfoKey).then((info)=>{
+      if(typeof info === 'undefined' || info == null){
+        // despliega la vista de insercion de datos
+        this.navCtrl.push(SubscribePage, { callBackPage : 'favorites' });
+      } else {
+        let profileModal = this.modalCtrl.create(FavoritesPage, { 'showSave': true });
+        profileModal.present();
+      }
+    });
   }
 
   removeProgramFromRoutine(prg){
@@ -141,7 +149,10 @@ export class HomePage {
   runRoutine(){
     var programs = this.routines.getPrograms();
     if(this.AllBubblesChecked(programs)){
-      this.navCtrl.push(WifiPage);
+      this.navCtrl.push(
+        WifiPage,
+        { prog1: this.routines.getProgram(programs[0]), prog2: this.routines.getProgram(programs[1]), prog3: this.routines.getProgram(programs[2]), prog4: this.routines.getProgram(programs[3])
+      });
     }
   }
 

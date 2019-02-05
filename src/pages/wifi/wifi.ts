@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, Platform, ToastController  } from 'ionic-angular';
+import { NavController, NavParams, Platform  } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { PlayingPage } from '../playing/playing';
@@ -36,17 +36,25 @@ export class WifiPage {
   public showStatusTable : boolean;
   public showLoading : boolean;
   public isRunRoutineEnabled : boolean;
+  private program1: any;
+  private program2: any;
+  private program3: any;
+  private program4: any;
 
   public iframeUrl: any;
   public showIframeStatus : boolean;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private storage: Storage, public apiService : APIServiceProvider,
-    private translateService: TranslateService, public networkInterface : NetworkInterface, public platform: Platform, private toastCtrl: ToastController) {
+    private translateService: TranslateService, public networkInterface : NetworkInterface, public platform: Platform) {
       this.storage.get(Constants.storageKeyLang).then((lang)=>{
         this.translateService.getTranslation(lang).subscribe((value) =>{
           this.coilText = typeof value['coil'] === 'undefined' ? 'Antena' : value['coil'];
         });
       });
+      this.program1 = this.navParams.get('prog1');
+      this.program2 = this.navParams.get('prog2');
+      this.program3 = this.navParams.get('prog3');
+      this.program4 = this.navParams.get('prog4');
   }
 
   ionViewDidLeave(){
@@ -224,128 +232,61 @@ export class WifiPage {
         this.showLoading = false;
         this.isRunRoutineEnabled = true;
         if(this.verifyValues(response)){
-          let successTryCount = 0;
           /* CORRER RUTINA */
           clearInterval(this.testStatusInterval);
           clearInterval(this.testIPInterval);
-          var program1Obj;
-          var program2Obj;
-          var program3Obj;
-          var program4Obj;
-          var error1Obj;
-          var error2Obj;
-          var error3Obj;
-          var error4Obj;
+          var program1Obj = '|' + this.program1.name + '|' + this.program1.runningtime + '|' + this.program1.apiName;
+          var program2Obj = '|' + this.program2.name + '|' + this.program2.runningtime + '|' + this.program2.apiName;
+          var program3Obj = '|' + this.program3.name + '|' + this.program3.runningtime + '|' + this.program3.apiName;
+          var program4Obj = '|' + this.program4.name + '|' + this.program4.runningtime + '|' + this.program4.apiName;
 
-          var isValidateSuccessProgram = 0;
-          var isValidateErrorProgram = 0;
+          var programs = [
+              program1Obj,
+              program2Obj,
+              program3Obj,
+              program4Obj
+          ];
 
-          for(var i = 1; i <= 4; i++){
-            switch(i){
-              case 1:
-                this.storage.get(Constants.storageKeyBubble1).then((val) => {
-                  program1Obj = val;
-                  isValidateSuccessProgram += 1;
-                }).catch((err) => {
-                  isValidateErrorProgram += 1;
-                  error1Obj = err;
-                });
-                break;
-              case 2:
-                this.storage.get(Constants.storageKeyBubble2).then((val) => {
-                  program2Obj = val;
-                  isValidateSuccessProgram += 1;
-                }).catch((err) => {
-                isValidateErrorProgram += 1;
-                  error2Obj = err;
-                });
-                break;
-              case 3:
-                this.storage.get(Constants.storageKeyBubble3).then((val) => {
-                  program3Obj = val;
-                  isValidateSuccessProgram += 1;
-                }).catch((err) => {
-                  isValidateErrorProgram += 1;
-                  error3Obj = err;
-                });
-                break;
-              case 4:
-                this.storage.get(Constants.storageKeyBubble4).then((val) => {
-                  program4Obj = val;
-                  isValidateSuccessProgram += 1;
-                }).catch((err) => {
-                  isValidateErrorProgram += 1;
-                  error4Obj = err;
-                });
-                break;
-            }
-          }
-
-          this.testBeginRoutineInterval = setInterval(() => {
-            if(isValidateSuccessProgram == 4){
-              clearInterval(this.testBeginRoutineInterval);
-              var programs = [
-                  program1Obj,
-                  program2Obj,
-                  program3Obj,
-                  program4Obj
-              ];
-
-              this.apiService.start(programs).then((response) => {
-                console.log(response + '');
-              }).catch((response) =>{
-                /*setTimeout(() => {
-                  var emailData = { error : response.data };
-                  this.apiService.sendError(emailData).then((result) => {
-                    console.log(response.data);
-                  });
-                }, 120000);*/
+          this.apiService.start(programs).then((response) => {
+            console.log(response + '');
+          }).catch((response) =>{
+            /*setTimeout(() => {
+              var emailData = { error : response.data };
+              this.apiService.sendError(emailData).then((result) => {
+                console.log(response.data);
               });
+            }, 120000);*/
+          });
 
-              // Poner rutina en las ultimas corridas
-              this.storage.get(Constants.latestRoutinesKey).then((routines)=>{
-                let latestArray = [];
+          // Poner rutina en las ultimas corridas
+          this.storage.get(Constants.latestRoutinesKey).then((routines)=>{
+            let latestArray = [];
 
-                var t = new Date();
+            var t = new Date();
 
-                var day = t.getDate();
-                var monthIndex = t.getMonth();
-                var year = t.getFullYear();
-                var hours = t.getHours();
-                var minutes = t.getMinutes();
+            var day = t.getDate();
+            var monthIndex = t.getMonth();
+            var year = t.getFullYear();
+            var hours = t.getHours();
+            var minutes = t.getMinutes();
 
-                let programsArray = [];
-                for(let i = 0; i < programs.length; i++){
-                  programsArray.push({ "apiName" : programs[i].split('|')[3], "name" : programs[i].split('|')[1] });
-                }
-
-                latestArray.push({ "date" : day + ' ' + Constants.monthNames[monthIndex] + ' ' + year + ' ' + this.fixZeroOnNumber(hours) + ':' + this.fixZeroOnNumber(minutes), "programs" : programsArray });
-                if(routines != null && routines[0] != null){
-                  latestArray.push(routines[0]);
-                }
-                if(routines != null && routines[1] != null){
-                  latestArray.push(routines[1]);
-                }
-                this.storage.set(Constants.latestRoutinesKey, latestArray);
-              });
-
-              /* CORRER RUTINA */
-              this.navCtrl.setRoot(PlayingPage);
+            let programsArray = [];
+            for(let i = 0; i < programs.length; i++){
+              programsArray.push({ "apiName" : programs[i].split('|')[3], "name" : programs[i].split('|')[1] });
             }
-            else if(isValidateSuccessProgram + isValidateErrorProgram == 4){
-              clearInterval(this.testBeginRoutineInterval);
-              let toast = this.toastCtrl.create({
-                message: 'Ha ocurrido un error (Code: 2)',
-                duration: 5000,
-                position: 'bottom'
-              });
-              toast.present();
+
+            latestArray.push({ "date" : day + ' ' + Constants.monthNames[monthIndex] + ' ' + year + ' ' + this.fixZeroOnNumber(hours) + ':' + this.fixZeroOnNumber(minutes), "programs" : programsArray });
+            if(routines != null && routines[0] != null){
+              latestArray.push(routines[0]);
             }
-            else if(successTryCount >= 5){
-              clearInterval(this.testBeginRoutineInterval);
+            if(routines != null && routines[1] != null){
+              latestArray.push(routines[1]);
             }
-            successTryCount = successTryCount + 1;
-          }, 1000);
+            this.storage.set(Constants.latestRoutinesKey, latestArray);
+          });
+
+          /* CORRER RUTINA */
+          this.navCtrl.setRoot(PlayingPage);
         }
         else{
           this.showLoading = false;
