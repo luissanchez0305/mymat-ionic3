@@ -275,7 +275,7 @@ export class WifiPage {
               programsArray.push({ "apiName" : programs[i].split('|')[3], "name" : programs[i].split('|')[1] });
             }
 
-            latestArray.push({ "date" : day + ' ' + Constants.monthNames[monthIndex] + ' ' + year + ' ' + this.fixZeroOnNumber(hours) + ':' + this.fixZeroOnNumber(minutes), "programs" : programsArray });
+            latestArray.push({ "day" : day, "month" : Constants.monthNames[monthIndex], "year" : year, "hours" : this.fixZeroOnNumber(hours), "minutes" : this.fixZeroOnNumber(minutes), "programs" : programsArray });
             if(routines != null && routines[0] != null){
               latestArray.push(routines[0]);
             }
@@ -315,6 +315,8 @@ export class WifiPage {
 
     return val;
   }
+  
+  
 
   stop(){
     clearInterval(this.testStatusInterval);
