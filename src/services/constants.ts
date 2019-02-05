@@ -14,10 +14,10 @@ export var Constants = {
     test_uuid: 'UUIDTEST-1234-5678-9100-000000000',
     latestRoutinesKey: 'latestRoutines',
     monthNames: [
-        "January", "February", "March",
-        "April", "May", "June", "July",
+        "january", "february", "march",
+        "april", "may", "june", "july",
         "August", "September", "October",
-        "November", "December"
+        "november", "december"
       ],
     shortTitles       : [
                         'earth-element-upper',
