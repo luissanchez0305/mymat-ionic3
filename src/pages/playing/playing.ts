@@ -29,6 +29,7 @@ export class PlayingPage {
   public displayRunningTime : string;
   public finishTime : any;
   public timerRemain : any;
+  public timerId : number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage,
     public translateService: TranslateService, private localNotifications : LocalNotifications, public plt: Platform,
@@ -49,11 +50,13 @@ export class PlayingPage {
     if(Math.round(now / 1000) > this.finishTime){
       this.displayRunningTime = '00:00';
       this.timerRemain = 0;
-      this.startTimer();
+      this.timerId++;
+      this.startTimer(this.timerId);
     }
     else{
       var secondsLeft = this.timerRemain = this.finishTime - Math.round(now / 1000);
-      this.startTimer();
+      this.timerId++;
+      this.startTimer(this.timerId);
       this.displayRunningTime = this.convertSecondsToTime(secondsLeft);
     }
   }
@@ -130,7 +133,8 @@ export class PlayingPage {
             this.finishTime = Math.round(t.getTime() / 1000) + this.getSeconds(this.displayRunningTime);
 
             this.timerRemain = this.getSeconds(this.displayRunningTime);
-            this.startTimer();
+            this.timerId = 1;
+            this.startTimer(this.timerId);
 
             var $this = this;
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
@@ -162,9 +166,9 @@ export class PlayingPage {
     this.timerRemain = 0;
   }
 
-  startTimer(){
+  startTimer(id){
     setTimeout(() => {
-      if(this.timerRemain == 0) { return; }
+      if(this.timerRemain == 0 || this.timerId != id) { return; }
 
       this.timerRemain--;
       this.zone.run(() => {
@@ -172,7 +176,7 @@ export class PlayingPage {
       });
 
       if(this.timerRemain > 0){
-        this.startTimer();
+        this.startTimer(this.timerId);
       }
     }, 1000);
   }
