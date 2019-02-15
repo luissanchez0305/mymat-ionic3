@@ -1,0 +1,40 @@
+<ion-header *ngIf="showHeader">
+  <ion-navbar class="bar">
+    <button ion-button menuToggle end class="button button-clear">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <div class="logo"></div>
+    </ion-title>
+  </ion-navbar>
+  <ion-item class="no-conection" *ngIf="!isDeviceOnline">{{ offline_device }}</ion-item>
+</ion-header>
+
+<ion-content padding no-border>
+    <ion-slides>
+        <ion-slide>
+            <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/1.png"/>
+        </ion-slide>
+        <ion-slide>
+            <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/2.png"/>
+        </ion-slide>
+        <ion-slide>
+            <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/3.png"/>
+        </ion-slide>
+        <ion-slide>
+            <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/4.png"/>
+        </ion-slide>
+        <ion-slide>
+            <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/5.png"/>
+        </ion-slide>
+    </ion-slides>
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-buttons end>
+        <button ion-button class="button-clear" (click)="skipInstructions()">
+            {{ 'skip' | translate }}
+        </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

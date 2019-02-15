@@ -10,6 +10,15 @@ export var Constants = {
     storageKeyBubble4 : 'MyMat_bubbleRoutineProgram4',
     storageKeyScrollTop : 'MyMat_scrollTop',
     storageKeyCurrentProgram : 'MyMat_currentProgram',
+    deviceInfoKey: 'MyMatDevice',
+    test_uuid: 'UUIDTEST-1234-5678-9100-000000003',
+    latestRoutinesKey: 'latestRoutines',
+    monthNames: [
+        "january", "february", "march",
+        "april", "may", "june", "july",
+        "August", "September", "October",
+        "november", "december"
+      ],
     shortTitles       : [
                         'earth-element-upper',
                         'fire-element-upper',

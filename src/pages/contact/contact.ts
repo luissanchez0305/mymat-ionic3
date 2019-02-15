@@ -55,7 +55,7 @@ export class ContactPage {
 
   attemptSendMail(){
     var emailData = { email : this.contactForm.value.email, name : this.contactForm.value.name, message : this.contactForm.value.message };
-    this.apiService.sendEmail(emailData).then((result) => {
+    this.apiService.runPost('contact_us.php',emailData).then((result) => {
         var obj : any = result;
         if (obj.status == "ok") {
             this.storage.get(Constants.storageKeyLang).then((lang)=>{

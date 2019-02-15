@@ -1,6 +1,6 @@
-import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
+import { Data } from '../../services/offline_data';
 
 /*
   Generated class for the RoutinesProvider provider.
@@ -14,11 +14,11 @@ export class RoutinesProvider {
   public program2 : string;
   public program3 : string;
   public program4 : string;
-  
-  constructor(public http: Http, public storage: Storage) {
+
+  constructor(public storage: Storage) {
     console.log('Hello RoutinesProvider Provider');
   }
-  
+
   public setProgram(index,prog){
     switch (index){
       case 1:
@@ -35,26 +35,45 @@ export class RoutinesProvider {
         break;
     }
   }
-  
+
   public cleanPrograms(){
     this.program1 = null;
     this.program2 = null;
     this.program3 = null;
     this.program4 = null;
   }
-  
+
   public setPrograms(prog1, prog2, prog3, prog4){
     this.program1 = prog1;
     this.program2 = prog2;
     this.program3 = prog3;
     this.program4 = prog4;
   }
-  
+
   public getPrograms(){
     return [ this.program1, this.program2, this.program3, this.program4 ];
   }
   public async getKey(key:string){
     return await this.storage.get(key);
+  }
+
+  public addPrograms(routineName, program1, program2, program3, program4){
+    var objProgram1 = this.getProgram(program1);
+    var objProgram2 = this.getProgram(program2);
+    var objProgram3 = this.getProgram(program3);
+    var objProgram4 = this.getProgram(program4);
+    this.insertPreSetProgram(routineName, objProgram1, objProgram2, objProgram3, objProgram4);
+
+    this.setPrograms(objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name);
+    return [objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name];
+  }
+
+  public getProgram(name){
+      for(var i = 0;  i < Data.Programs.length; i++){
+        var program = Data.Programs[i];
+        if(program.apiName == name || program.name == name.name || program.name == name)
+          return program;
+      }
   }
 
   public insertPreSetProgram (routineName, program1, program2, program3, program4) {
@@ -68,7 +87,7 @@ export class RoutinesProvider {
 
         this.addProgramToRoutine(4, "", program4.name, program4.runningtime, program4.apiName);
   }
-  
+
   public addProgramToRoutine (currentBubbleSlot, idProgram, programName, programRunningTime, apiName) {
         if (currentBubbleSlot == 1) {
             this.storage.set('MyMat_bubbleRoutineProgram1', idProgram + "|" + programName + "|" + programRunningTime + "|" + apiName);

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { HTTP } from '@ionic-native/http';
 import { Constants } from '../../services/constants';
 //import { Network } from '@ionic-native/network';
@@ -15,13 +16,12 @@ import { timeout } from 'rxjs/operators';
 */
 @Injectable()
 export class APIServiceProvider {
-  constructor(public http: Http, private httpNative: HTTP/*, private network: Network*/) {
+  constructor(public http: HttpClient, private httpNative: HTTP, public httpModule: Http, /*, private network: Network*/) {
 
   }
   test_language(){
     return new Promise((resolve, reject) => {
       this.http.get(Constants.myMatApiIndexUrl)
-      .map(res => res.text())
       .subscribe(res => {
         resolve(res);
       }, (err) => {
@@ -32,12 +32,8 @@ export class APIServiceProvider {
 
   test(){
     let headers = new Headers();
-    //headers.append('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8');
-    /*headers.append('Accept-Encoding', 'gzip, deflate');
-    headers.append('Accept-Language', 'en-US,en;q=0.9,es-PA;q=0.8,es;q=0.7');
-    headers.append('Upgrade-Insecure-Requests', '1');*/
     return new Promise((resolve, reject) => {
-      this.http.get(Constants.myMatApiIndexUrl, { headers: headers })
+      this.httpModule.get(Constants.myMatApiIndexUrl, { headers: headers })
       .pipe(
             timeout(5000) //5 seconds
        )
@@ -56,7 +52,7 @@ export class APIServiceProvider {
       /*let connectSubscription = this.network.onConnect().subscribe(() => {*/
         let headers = new Headers();
 
-        this.http.post(Constants.myMatApiUrl + 'report_error.php', JSON.stringify(data), {headers: headers})
+        this.httpModule.post(Constants.myMatApiUrl + 'report_error.php', JSON.stringify(data), {headers: headers})
           .subscribe(res => {
             resolve(res.json());
           }, (err) => {
@@ -72,9 +68,21 @@ export class APIServiceProvider {
       /*let connectSubscription = this.network.onConnect().subscribe(() => {*/
         let headers = new Headers();
 
-        this.http.post(Constants.myMatApiUrl + 'contact_us.php', JSON.stringify(data), {headers: headers})
+        this.httpModule.post(Constants.myMatApiUrl + 'contact_us.php', JSON.stringify(data), {headers: headers})
           .subscribe(res => {
             resolve(res.json());
+          }, (err) => {
+            reject(err);
+          });
+      /*});*/
+    });
+  }
+
+  runPost(scriptFile, data){
+    return new Promise((resolve, reject) => {
+        this.http.post(Constants.myMatApiUrl + scriptFile, data)
+          .subscribe(res => {
+            resolve(res);
           }, (err) => {
             reject(err);
           });
@@ -93,7 +101,6 @@ export class APIServiceProvider {
     formData.append('P2', program2);
     formData.append('P3', program3);
     formData.append('P4', program4);*/
-
     var params = "P1="+program1+"&P2="+program2+"&P3="+program3+"&P4="+program4;
 
     return this.httpNative.get(Constants.myMatApiStartUrl + '?' + params, "", {});

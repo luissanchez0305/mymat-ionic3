@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Programs</ion-title>
+    <ion-title>{{ 'programs' | translate }}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -67,7 +67,15 @@
                 <div class="programpic"><img src="assets/img/Elements.png"></div>
                 <div class="programdesc" [innerHTML]="'elements-meridians' | translate"><br></div>
             </ion-row>
+            <ion-row nowrap class="program {{ petssButton ? '' : 'opacity-50' }}" (click)="selectPreSetProgram('petss')">
+                <div class="programpic"><img src="assets/img/MascotasS.png"></div>
+                <div class="programdesc" [innerHTML]="'petss' | translate"><br></div>
+            </ion-row>
 
+            <ion-row nowrap class="program {{ petsxButton ? '' : 'opacity-50' }}" (click)="selectPreSetProgram('petsx')">
+                <div class="programpic"><img src="assets/img/MascotasX.png"></div>
+                <div class="programdesc" [innerHTML]="'petsx' | translate"><br></div>
+            </ion-row>
     </ion-scroll>
 
 
@@ -79,14 +87,12 @@
 
         <div class="paddingmodal">
 
-
             <ion-list (click)="addPrograms(routine.name, routine.programs[0].apiName, routine.programs[1].apiName,
                 routine.programs[2].apiName,routine.programs[3].apiName)">
 
                 <ion-item *ngFor="let program of routine.programs" class="addiction center">
                      {{ program.name | translate }}
                 </ion-item>
-
 
             </ion-list>
 

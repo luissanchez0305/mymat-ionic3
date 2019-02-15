@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { Storage } from '@ionic/storage';
@@ -28,10 +28,12 @@ export class PlayingPage {
   public programTitle4 : string;
   public displayRunningTime : string;
   public finishTime : any;
-  public timerInterval : any;
+  public timerRemain : any;
+  public timerId : number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage,
-    public translateService: TranslateService, private localNotifications : LocalNotifications, public plt: Platform) {
+    public translateService: TranslateService, private localNotifications : LocalNotifications, public plt: Platform,
+    private zone: NgZone) {
       var _this = this;
       document.addEventListener('resume', () => {
         var t = new Date();
@@ -47,10 +49,14 @@ export class PlayingPage {
   resume(now){
     if(Math.round(now / 1000) > this.finishTime){
       this.displayRunningTime = '00:00';
-      clearInterval(this.timerInterval);
+      this.timerRemain = 0;
+      this.timerId++;
+      this.startTimer(this.timerId);
     }
     else{
-      var secondsLeft = this.finishTime - Math.round(now / 1000);
+      var secondsLeft = this.timerRemain = this.finishTime - Math.round(now / 1000);
+      this.timerId++;
+      this.startTimer(this.timerId);
       this.displayRunningTime = this.convertSecondsToTime(secondsLeft);
     }
   }
@@ -126,12 +132,10 @@ export class PlayingPage {
             var t = new Date();
             this.finishTime = Math.round(t.getTime() / 1000) + this.getSeconds(this.displayRunningTime);
 
-            this.timerInterval = setInterval(() => {
-              this.displayRunningTime = this.decreaseSecond(this.displayRunningTime);
-              if(this.displayRunningTime == '00:00'){
-                clearInterval(this.timerInterval);
-              }
-            }, 1000);
+            this.timerRemain = this.getSeconds(this.displayRunningTime);
+            this.timerId = 1;
+            this.startTimer(this.timerId);
+
             var $this = this;
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((prog) =>{
@@ -156,6 +160,25 @@ export class PlayingPage {
           break;
       }
     }
+  }
+
+  ionViewWillLeave() {
+    this.timerRemain = 0;
+  }
+
+  startTimer(id){
+    setTimeout(() => {
+      if(this.timerRemain == 0 || this.timerId != id) { return; }
+
+      this.timerRemain--;
+      this.zone.run(() => {
+        this.displayRunningTime = this.decreaseSecond(this.displayRunningTime);
+      });
+
+      if(this.timerRemain > 0){
+        this.startTimer(this.timerId);
+      }
+    }, 1000);
   }
 
   decreaseSecond(time){

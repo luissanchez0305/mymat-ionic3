@@ -35,6 +35,8 @@ export class ProgramsPage {
   public seniorButton : boolean;
   public chakraButton : boolean;
   public elementsButton : boolean;
+  public petssButton : boolean;
+  public petsxButton : boolean;
 
   constructor(public navCtrl: NavController, private storage: Storage, public navParams: NavParams, public routines: RoutinesProvider,
     public events: Events) {
@@ -99,14 +101,6 @@ export class ProgramsPage {
       this.getPrograms(category);
   }
 
-  private getProgram(name){
-      for(var i = 0;  i < Data.Programs.length; i++){
-        var program = Data.Programs[i];
-        if(program.apiName == name)
-          return program;
-      }
-  }
-
   getPrograms(category){
     this.storage.set(Constants.storageKeyCurrentProgram, category);
     this.basicButton = false;
@@ -118,6 +112,8 @@ export class ProgramsPage {
     this.seniorButton = false;
     this.chakraButton = false;
     this.elementsButton = false;
+    this.petssButton = false;
+    this.petsxButton = false;
     switch(category){
       case 'basic':
         this.basicButton = true;
@@ -146,6 +142,12 @@ export class ProgramsPage {
       case 'elements':
         this.elementsButton = true;
         break;
+      case 'petss':
+        this.petssButton = true;
+        break;
+      case 'petsx':
+        this.petsxButton = true;
+        break;
     }
     var groups = [];
     var groupIndex = 0;
@@ -155,7 +157,7 @@ export class ProgramsPage {
         groups[groupIndex] = group;
         for(var j = 0; j < group.programs.length; j++){
           var program = group.programs[j];
-          group.programs[j] = this.getProgram(program.apiName);
+          group.programs[j] = this.routines.getProgram(program.apiName);
         }
         groupIndex++;
       }
@@ -164,15 +166,8 @@ export class ProgramsPage {
   }
 
   addPrograms(routineName, program1, program2, program3, program4){
-    var objProgram1 = this.getProgram(program1);
-    var objProgram2 = this.getProgram(program2);
-    var objProgram3 = this.getProgram(program3);
-    var objProgram4 = this.getProgram(program4);
-    this.routines.insertPreSetProgram(routineName, objProgram1, objProgram2, objProgram3, objProgram4);
     this.navCtrl.pop();
-    var bubbleNames = [objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name];
-
-    this.routines.setPrograms(objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name);
+    var bubbleNames = this.routines.addPrograms(routineName, program1, program2, program3, program4);
     this.events.publish("sharesBubbles", bubbleNames);
   }
 

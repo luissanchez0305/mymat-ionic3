@@ -39,17 +39,17 @@ INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\mai
 INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-28:12
 INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:1-28:12
 	package
-		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:103-145
+		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:102-144
 		INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:74-102
+		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:74-101
 		INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml
 	android:hardwareAccelerated
 		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:11-45
 	xmlns:android
-		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:146-204
+		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:145-203
 	android:versionCode
 		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:2:46-73
 		INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml
@@ -176,26 +176,26 @@ INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\mai
 		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:22:15-41
 		INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.GET_ACCOUNTS
-ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:23:5-71
-	android:name
-		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:23:22-68
-uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:24:5-68
-	android:name
-		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:24:22-65
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:25:5-79
-	android:name
-		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:25:22-76
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:26:5-76
-	android:name
-		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:26:22-73
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:27:5-81
+ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:23:5-81
 	android:name
-		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:27:22-78
+		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:23:22-78
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:24:5-71
+	android:name
+		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:24:22-68
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:25:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:26:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:27:5-76
+	android:name
+		ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:27:22-73
 meta-data#android.support.FILE_PROVIDER_PATHS
 ADDED from C:\Users\lsanc\projects\mymat-ionic3\platforms\android\app\src\main\AndroidManifest.xml:13:13-130
 	android:resource
