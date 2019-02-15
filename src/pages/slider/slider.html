@@ -7,27 +7,30 @@
       <div class="logo"></div>
     </ion-title>
   </ion-navbar>
-  <ion-item class="no-conection" *ngIf="!isDeviceOnline">{{ offline_device }}</ion-item>
 </ion-header>
 
 <ion-content padding no-border>
-    <ion-slides>
-        <ion-slide>
-            <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/1.png"/>
-        </ion-slide>
-        <ion-slide>
-            <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/2.png"/>
-        </ion-slide>
-        <ion-slide>
-            <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/3.png"/>
-        </ion-slide>
-        <ion-slide>
-            <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/4.png"/>
-        </ion-slide>
-        <ion-slide>
-            <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/5.png"/>
-        </ion-slide>
-    </ion-slides>
+        <button float-left ion-button  color="light" class="swiper-button-prev swiper-button-black" (click)="prev()" [disabled]="slides.isBeginning()"></button>
+
+        <ion-slides #slides pager="true">
+          <ion-slide>
+              <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/1.png"/>
+          </ion-slide>
+          <ion-slide>
+              <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/2.png"/>
+          </ion-slide>
+          <ion-slide>
+              <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/3.png"/>
+          </ion-slide>
+          <ion-slide>
+              <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/4.png"/>
+          </ion-slide>
+          <ion-slide>
+              <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/5.png"/>
+          </ion-slide>
+        </ion-slides>
+        <button float-right ion-button color="light" class="swiper-button-next swiper-button-black" (click)="next()" [disabled]="slides.isEnd()"></button>
+
 </ion-content>
 <ion-footer>
   <ion-toolbar color="dark">

@@ -1,9 +1,5 @@
-import { Component, NgZone } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { Network } from '@ionic-native/network';
-import { Storage } from '@ionic/storage';
-import { TranslateService } from '@ngx-translate/core';
-import { Constants } from '../../services/constants';
+import { Component, ViewChild } from '@angular/core';
+import { NavController, NavParams, Slides } from 'ionic-angular';
 /**
  * Generated class for the SliderPage page.
  *
@@ -16,42 +12,27 @@ import { Constants } from '../../services/constants';
   templateUrl: 'slider.html',
 })
 export class SliderPage {
-
-  public isDeviceOnline : boolean;
-  public offline_device : string;
   public showHeader : boolean;
+  @ViewChild('slides') slides: Slides;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private zone: NgZone, private storage: Storage,
-    private translateService: TranslateService, private network: Network) {
-    this.isDeviceOnline = true;
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.showHeader = false;
-
-    // watch network for a disconnect
-    this.network.onDisconnect().subscribe(() => {
-      this.zone.run(() => {
-        this.isDeviceOnline = false;
-        this.storage.get(Constants.storageKeyLang).then((lang)=>{
-          this.translateService.getTranslation(lang).subscribe((value) => {
-            this.offline_device = value['offline-device-text'];
-          });
-        });
-      });
-    });
-
-    // watch network for a connection
-    this.network.onConnect().subscribe(() => {
-      this.zone.run(() => {
-        this.isDeviceOnline = true;
-      });
-    });
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SliderPage');
+    //console.log('ionViewDidLoad SliderPage');
   }
 
   skipInstructions(){
     this.navCtrl.popToRoot();
+  }
+
+  next() {
+    this.slides.slideNext();
+  }
+
+  prev() {
+    this.slides.slidePrev();
   }
 
 }
