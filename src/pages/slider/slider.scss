@@ -2,4 +2,8 @@ page-slider {
     img{
         max-width: 94% !important;
     }
+    .slide-zoom{
+        position: fixed;
+        top: 0px;
+    }
 }
