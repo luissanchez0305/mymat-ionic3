@@ -12,7 +12,7 @@
 <ion-content padding no-border>
         <button float-left ion-button  color="light" class="swiper-button-prev swiper-button-black" (click)="prev()" [disabled]="slides.isBeginning()"></button>
 
-        <ion-slides #slides pager="true">
+        <ion-slides #slides>
           <ion-slide>
               <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/1.png"/>
           </ion-slide>
