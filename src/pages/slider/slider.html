@@ -13,20 +13,8 @@
         <button float-left ion-button  color="light" class="swiper-button-prev swiper-button-black" (click)="prev()" [disabled]="slides.isBeginning()"></button>
 
         <ion-slides #slides>
-          <ion-slide>
-              <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/1.png"/>
-          </ion-slide>
-          <ion-slide>
-              <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/2.png"/>
-          </ion-slide>
-          <ion-slide>
-              <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/3.png"/>
-          </ion-slide>
-          <ion-slide>
-              <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/4.png"/>
-          </ion-slide>
-          <ion-slide>
-              <img src="./assets/imgs/instructions/{{ 'culture' | translate }}/5.png"/>
+          <ion-slide *ngFor="let image of images">
+              <img src="{{ image }}"/>
           </ion-slide>
         </ion-slides>
         <button float-right ion-button color="light" class="swiper-button-next swiper-button-black" (click)="next()" [disabled]="slides.isEnd()"></button>

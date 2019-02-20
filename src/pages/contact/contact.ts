@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, Events } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { TranslateService } from '@ngx-translate/core';
@@ -27,11 +27,16 @@ export class ContactPage {
   public response_text : string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder, public apiService : APIServiceProvider,
-    private translateService: TranslateService, private storage: Storage) {
+    private translateService: TranslateService, private storage: Storage, public events : Events) {
     this.contactForm = this.formBuilder.group({
       email: ['', Validators.required],
       name: ['', Validators.required],
       message: ['', Validators.required]
+    });
+
+    this.events.subscribe('switchLangEventContact',(lang) => {
+        //call methods to refresh content
+        this.changeButtonText(lang);
     });
   }
 
@@ -39,11 +44,15 @@ export class ContactPage {
     this.cleanForm();
     this.response_text = '';
     this.storage.get(Constants.storageKeyLang).then((lang)=>{
+      this.changeButtonText(lang);
+    });
+  }
+  
+  changeButtonText(lang){
       this.translateService.getTranslation(lang).subscribe((value) => {
         this.button_send = value['send-text'];
         // Mostrar texto en label debajo del boton
       });
-    });
   }
 
   cleanForm(){

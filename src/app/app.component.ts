@@ -82,6 +82,7 @@ export class MyApp {
 
   switchLang(lang){
 	  this.events.publish('switchLangEvent',lang);
+	  this.events.publish('switchLangEventContact', lang);
     switch(lang){
       case 'es':
         this.lang_en = true;
