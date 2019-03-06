@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.esferasoluciones.mymat_light"
     android:hardwareAccelerated="true"
-    android:versionCode="80410"
-    android:versionName="8.4.10" >
+    android:versionCode="80411"
+    android:versionName="8.4.11" >
 
     <uses-sdk
         android:minSdkVersion="19"
