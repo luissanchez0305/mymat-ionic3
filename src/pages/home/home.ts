@@ -72,6 +72,7 @@ export class HomePage {
       });
     });
 
+              this.navCtrl.push(SubscribePage, { callBackPage : 'none' });
     this.storage.get(Constants.deviceInfoKey).then((info)=>{
       if(typeof info === 'undefined' || info == null){
         /*if(window.hasOwnProperty('cordova')){*/
