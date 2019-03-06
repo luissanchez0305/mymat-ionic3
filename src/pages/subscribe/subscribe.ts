@@ -111,14 +111,18 @@ export class SubscribePage {
         this.storage.get(Constants.storageKeyLang).then((lang)=>{
           this.translateService.getTranslation(lang).subscribe((value) => {
             var error = value['profile-error-message'] + ': ';
-            if(this.responseData.emailError != 'ok')
-              error += '('+this.responseData.emailError;
-            if(this.responseData.nameError != 'ok')
+            if(this.responseData.emailError != 'ok'){
+              error += this.responseData.emailError;
+            }
+            if(this.responseData.nameError != 'ok'){
               error += this.responseData.nameError;
-            if(this.responseData.genderError != 'ok')
+            }
+            if(this.responseData.genderError != 'ok'){
               error += this.responseData.genderError;
-            if(this.responseData.dateOfBirthError != 'ok')
+            }
+            if(this.responseData.dateOfBirthError != 'ok'){
               error += this.responseData.dateOfBirthError;
+            }
 
             this.response_text = error;
           });
