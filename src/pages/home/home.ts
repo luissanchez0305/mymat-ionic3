@@ -37,7 +37,7 @@ export class HomePage {
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
     private translateService: TranslateService, private network: Network, private zone: NgZone,
     public events: Events, private device: Device, public apiService : APIServiceProvider, public modalCtrl: ModalController) {
-    this.checkAllBubbles();
+    //this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){
         this.updateBubbles(i, bubbles[i - 1]);
@@ -72,7 +72,7 @@ export class HomePage {
       });
     });
 
-              this.navCtrl.push(SubscribePage, { callBackPage : 'none' });
+    // this.navCtrl.push(SubscribePage, { callBackPage : 'none' });
     this.storage.get(Constants.deviceInfoKey).then((info)=>{
       if(typeof info === 'undefined' || info == null){
         /*if(window.hasOwnProperty('cordova')){*/

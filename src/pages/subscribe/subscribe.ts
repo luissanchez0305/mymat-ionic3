@@ -30,13 +30,16 @@ export class SubscribePage {
   private responseData : any;
   private callBackPage : string;
   public isDeviceOnline : boolean;
+  public errorNameClass : string;
+  public errorEmailClass : string;
+  public errorGenderClass : string;
+  public errorDateClass : string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private zone: NgZone,
     private formBuilder: FormBuilder, private storage: Storage, public apiService : APIServiceProvider,
     private translateService: TranslateService, private device: Device, private modalCtrl: ModalController,
     private network: Network) {
       // obtiene el parametro de que page va a correr al terminar el registro
-
       this.callBackPage = this.navParams.get('callBackPage');
       this.showSubmitButton = true;
       let aDate = new Date();
@@ -113,15 +116,19 @@ export class SubscribePage {
             var error = value['profile-error-message'] + ': ';
             if(this.responseData.emailError != 'ok'){
               error += this.responseData.emailError;
+              this.errorEmailClass  = 'error';
             }
             if(this.responseData.nameError != 'ok'){
               error += this.responseData.nameError;
+              this.errorNameClass  = 'error';
             }
             if(this.responseData.genderError != 'ok'){
               error += this.responseData.genderError;
+              this.errorGenderClass  = 'error';
             }
             if(this.responseData.dateOfBirthError != 'ok'){
               error += this.responseData.dateOfBirthError;
+              this.errorDateClass  = 'error';
             }
 
             this.response_text = error;

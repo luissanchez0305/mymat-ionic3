@@ -90,6 +90,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     APIServiceProvider,
     HTTP
 
+  ],
+  exports: [
+    HomePage
   ]
 })
 export class AppModule {}

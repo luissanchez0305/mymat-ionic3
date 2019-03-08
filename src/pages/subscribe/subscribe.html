@@ -32,21 +32,21 @@
           <label>
             <p class="lorems center-forced" [innerHTML]="'one-time-profile-text' | translate">Text</p>
           </label>
-          <ion-label class="item-input contact error">
+          <ion-label class="item-input contact" [ngClass]="errorNameClass">
             <ion-input type="text" placeholder="{{ 'name-text' | translate }}" formControlName="name" value="{{ name_value }}"></ion-input>
           </ion-label>
-          <ion-label class="item-input contact">
+          <ion-label class="item-input contact" [ngClass]="errorEmailClass">
             <ion-input type="email" placeholder="Email"  autocapitalize="none" formControlName="email" value="{{ email_value }}"></ion-input>
           </ion-label>
-          <ion-item class="item-input contact">
+          <ion-item class="item-input contact" [ngClass]="errorGenderClass">
             <ion-label class="item-input contact">{{ 'gender-text' | translate }}</ion-label>
               <ion-select formControlName="gender" >
                 <ion-option value="f">{{ 'female-text' | translate }}</ion-option>
                 <ion-option value="m">{{ 'male-text' | translate }}</ion-option>
               </ion-select>
           </ion-item>
-          <ion-item class="item-input contact select">
-            <ion-label class="item-input contact">{{ 'birthdate-text' | translate }}</ion-label >
+          <ion-item class="item-input contact select" [ngClass]="errorDateClass">
+            <ion-label class="item-input contact" [ngClass]="errorGenderClass">{{ 'birthdate-text' | translate }}</ion-label >
             <ion-datetime [max]="maxDateOfPicker" displayFormat="MMM DD, YYYY" pickerFormat="YYYY-MM-DD" formControlName="birthDate"></ion-datetime>
           </ion-item>
           <ion-item>
