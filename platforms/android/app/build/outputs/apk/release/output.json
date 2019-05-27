@@ -1,1 +1,1 @@
-[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":80412},"path":"app-release-unsigned.apk","properties":{"packageId":"com.esferasoluciones.mymat_light","split":"","minSdkVersion":"19"}}]
+[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":80414,"versionName":"8.4.14","enabled":true,"outputFile":"app-release-unsigned.apk","fullName":"release","baseName":"release"},"path":"app-release-unsigned.apk","properties":{}}]
