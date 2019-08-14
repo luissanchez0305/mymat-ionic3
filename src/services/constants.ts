@@ -1,7 +1,7 @@
 export var Constants = {
     localIPAddress    : '192.168.0.100',
-  	myMatApiStartUrl  : 'https://192.168.1.3/start.htm',
-    myMatApiIndexUrl  : 'https://192.168.1.3/index.htm',
+  	myMatApiStartUrl  : 'http://192.168.1.3/start.htm',
+    myMatApiIndexUrl  : 'http://192.168.1.3/index.htm',
   	myMatApiUrl       : 'https://healinghouse.life/api/mymat/', //'https://www.esferasoluciones.com/api/mymat/',
     storageKeyLang    : 'mymat_lang',
     storageKeyBubble1 : 'MyMat_bubbleRoutineProgram1',
