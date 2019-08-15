@@ -78,9 +78,9 @@ export class HomePage {
         /*if(window.hasOwnProperty('cordova')){*/
           var formData = new FormData();
           var _uuid = Constants.test_uuid;
-          /*if(window.hasOwnProperty('cordova')){
+          if(window.hasOwnProperty('cordova')){
             _uuid = this.device.uuid;
-          }*/
+          }
           formData.append('uuid', _uuid);
 
           this.apiService.runPost('check_device.php',formData).then((result) => {
