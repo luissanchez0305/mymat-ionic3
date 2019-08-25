@@ -1,5 +1,5 @@
 export var Constants = {
-    localIPAddress    : '192.168.0.100',
+    localIPAddress    : '192.168.0.',
   	myMatApiStartUrl  : 'http://192.168.1.3/start.htm',
     myMatApiIndexUrl  : 'http://192.168.1.3/index.htm',
   	myMatApiUrl       : 'https://healinghouse.life/api/mymat/', //'https://www.esferasoluciones.com/api/mymat/',

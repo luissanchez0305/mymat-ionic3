@@ -68,7 +68,7 @@ export class WifiPage {
     this.isRunRoutineEnabled = true;
     if(this.platform.is('cordova')){
       this.networkInterface.getWiFiIPAddress().then((response)=>{
-        if(response === Constants.localIPAddress){
+        if(this.verifyInternalIpAddress(response)){
           this.showIPButton();
         }
         else
@@ -82,6 +82,15 @@ export class WifiPage {
     }
     this.mymatWifi = true;
     this.intervalCount = 0;
+  }
+
+  verifyInternalIpAddress(ip){
+    for(let i = 100; i < 256; i++){
+      if(Constants.localIPAddress + i == ip){
+        return true;
+      }
+    }
+    return false;
   }
 
   showIPButton(){
