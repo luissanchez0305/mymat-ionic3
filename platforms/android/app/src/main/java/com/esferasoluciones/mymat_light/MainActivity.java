@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.esferasoluciones.mymat;
+package com.esferasoluciones.mymat_light;
 
 import android.os.Bundle;
 import org.apache.cordova.*;
