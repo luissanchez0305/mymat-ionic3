@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.esferasoluciones.mymat_light" version="8.4.16" versionCode="63" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.esferasoluciones.mymat_light" version="8.4.18" versionCode="64" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>MyMat</name>
     <description>MyMat stimulates the bodies self-healing capacities using Pulsed Electromagnetic Field (PEMF) therapy. Its technology combines modern scientific research and ancient knowledge about the energetic structure of the human being.</description>
     <author email="lsanchez@esferasoluciones.com" href="https://www.esferasoluciones.com">
@@ -138,5 +138,5 @@
     <plugin name="cordova-plugin-datepicker" spec="~0.9.3" />
     <plugin name="cordova-plugin-badge" spec="^0.8.8" />
     <plugin name="cordova-plugin-advanced-http" spec="2.0.2" />
-    <engine name="ios" spec="^4.5.5" />
+    <engine name="ios" spec="4.5.5" />
 </widget>
