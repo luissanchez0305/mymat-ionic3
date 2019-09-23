@@ -175,8 +175,9 @@ export class WifiPage {
   failIPVerification(){
       this.testIPInterval = setInterval(() => {
         this.networkInterface.getWiFiIPAddress().then((response)=>{
-            if(response === Constants.localIPAddress)
+            if(this.verifyInternalIpAddress(response)){
               this.showIPButton();
+            }
           });
       }, 3000);
   }
