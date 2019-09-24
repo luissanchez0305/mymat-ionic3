@@ -139,7 +139,7 @@ export class WifiPage {
       this.testIPInterval = setInterval(() => {
         this.networkInterface.getWiFiIPAddress().then((response)=>{
             if(this.verifyInternalIpAddress(response)){
-              this.verifyStatusValues();
+              this.verifyStatusValues(false);
             }
           });
       }, 3000);

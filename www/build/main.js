@@ -4383,7 +4383,7 @@ var WifiPage = (function () {
         this.testIPInterval = setInterval(function () {
             _this.networkInterface.getWiFiIPAddress().then(function (response) {
                 if (_this.verifyInternalIpAddress(response)) {
-                    _this.verifyStatusValues();
+                    _this.verifyStatusValues(false);
                 }
             });
         }, 3000);
