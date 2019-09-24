@@ -191,7 +191,7 @@ export class WifiPage {
       }, 3000);
   }
 
-  failStatusVerification(){
+  /*failStatusVerification(){
     this.testStatusInterval = setInterval(() => {
       // timeout of mymat detection 180 segundos
       var failMyMatTest = this.apiService.test();
@@ -240,8 +240,8 @@ export class WifiPage {
           });
           break;
       }
-    }*/
-  }
+    }* /
+  }*/
 
   startRoutine(){
     /* ANTES DE COCRRER RUTINA VERIFICAR SI SE ESTA CONECTADO AL WIFI DEL MYMAT */
