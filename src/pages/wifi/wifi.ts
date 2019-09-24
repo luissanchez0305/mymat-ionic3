@@ -149,6 +149,13 @@ export class WifiPage {
               this.isRunRoutineEnabled = false;
               this.failIPVerification();
             }
+          },(response)=>{
+            this.mymatWifi = true;
+            this.mymatStatus = false;
+            this.showStatusTable = false;
+            this.showLoading = true;
+            this.isRunRoutineEnabled = false;
+            this.failIPVerification();
           });
       }, 3000);
   }
