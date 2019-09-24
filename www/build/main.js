@@ -4375,7 +4375,7 @@ var WifiPage = (function () {
         this.showLoading = false;
         this.isRunRoutineEnabled = true;
         clearInterval(this.testStatusInterval);
-        clearInterval(this.testIPInterval);
+        //clearInterval(this.testIPInterval);
     };
     WifiPage.prototype.verifyValues = function (response) {
         if (response.indexOf("<p><h4>Power: ") > -1) {
