@@ -4339,18 +4339,21 @@ var WifiPage = (function () {
         }
         return false;
     };
-    WifiPage.prototype.verifyStatusValues = function () {
+    WifiPage.prototype.verifyStatusValues = function (restart) {
+        var _this = this;
+        if (restart === void 0) { restart = true; }
         //this.mymatStatus = true;
         //this.showStatusTable = true;
-        var _this = this;
-        this.batteryImg = 'assets/img/b100.pn';
-        this.coilText1 = 'N/A';
-        this.coilText2 = 'N/A';
-        this.coilText3 = 'N/A';
-        this.coilText4 = 'N/A';
+        if (restart) {
+            this.batteryImg = 'assets/img/b100.pn';
+            this.coilText1 = 'N/A';
+            this.coilText2 = 'N/A';
+            this.coilText3 = 'N/A';
+            this.coilText4 = 'N/A';
+        }
         //this.mymatWifi = false;
         //this.showLoading = false;
-        //clearInterval(this.testIPInterval);
+        clearInterval(this.testIPInterval);
         // check if mymat is connected
         var myMatTest = this.apiService.test();
         myMatTest.then(function (response) {
@@ -4369,6 +4372,7 @@ var WifiPage = (function () {
         this.mymatNoStatus = true;
     };
     WifiPage.prototype.showStatus = function () {
+        var _this = this;
         this.mymatWifi = false;
         this.mymatStatus = true;
         this.showStatusTable = true;
@@ -4376,6 +4380,13 @@ var WifiPage = (function () {
         this.isRunRoutineEnabled = true;
         clearInterval(this.testStatusInterval);
         //clearInterval(this.testIPInterval);
+        this.testIPInterval = setInterval(function () {
+            _this.networkInterface.getWiFiIPAddress().then(function (response) {
+                if (_this.verifyInternalIpAddress(response)) {
+                    _this.verifyStatusValues();
+                }
+            });
+        }, 3000);
     };
     WifiPage.prototype.verifyValues = function (response) {
         if (response.indexOf("<p><h4>Power: ") > -1) {
@@ -4416,7 +4427,7 @@ var WifiPage = (function () {
         this.testIPInterval = setInterval(function () {
             _this.networkInterface.getWiFiIPAddress().then(function (response) {
                 if (_this.verifyInternalIpAddress(response)) {
-                    _this.verifyStatusValues();
+                    _this.verifyStatusValues(false);
                 }
             });
         }, 3000);
@@ -4482,7 +4493,7 @@ var WifiPage = (function () {
             if (_this.verifyValues(response)) {
                 /* CORRER RUTINA */
                 clearInterval(_this.testStatusInterval);
-                //clearInterval(this.testIPInterval);
+                clearInterval(_this.testIPInterval);
                 var program1Obj = '|' + _this.program1.name + '|' + _this.program1.runningtime + '|' + _this.program1.apiName;
                 var program2Obj = '|' + _this.program2.name + '|' + _this.program2.runningtime + '|' + _this.program2.apiName;
                 var program3Obj = '|' + _this.program3.name + '|' + _this.program3.runningtime + '|' + _this.program3.apiName;
