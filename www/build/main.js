@@ -4350,7 +4350,7 @@ var WifiPage = (function () {
         this.coilText4 = 'N/A';
         //this.mymatWifi = false;
         //this.showLoading = false;
-        clearInterval(this.testIPInterval);
+        //clearInterval(this.testIPInterval);
         // check if mymat is connected
         var myMatTest = this.apiService.test();
         myMatTest.then(function (response) {
@@ -4482,7 +4482,7 @@ var WifiPage = (function () {
             if (_this.verifyValues(response)) {
                 /* CORRER RUTINA */
                 clearInterval(_this.testStatusInterval);
-                clearInterval(_this.testIPInterval);
+                //clearInterval(this.testIPInterval);
                 var program1Obj = '|' + _this.program1.name + '|' + _this.program1.runningtime + '|' + _this.program1.apiName;
                 var program2Obj = '|' + _this.program2.name + '|' + _this.program2.runningtime + '|' + _this.program2.apiName;
                 var program3Obj = '|' + _this.program3.name + '|' + _this.program3.runningtime + '|' + _this.program3.apiName;

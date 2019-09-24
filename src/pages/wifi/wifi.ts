@@ -105,7 +105,7 @@ export class WifiPage {
 
     //this.mymatWifi = false;
     //this.showLoading = false;
-    clearInterval(this.testIPInterval);
+    //clearInterval(this.testIPInterval);
 
     // check if mymat is connected
     var myMatTest = this.apiService.test();
@@ -244,7 +244,7 @@ export class WifiPage {
         if(this.verifyValues(response)){
           /* CORRER RUTINA */
           clearInterval(this.testStatusInterval);
-          clearInterval(this.testIPInterval);
+          //clearInterval(this.testIPInterval);
           var program1Obj = '|' + this.program1.name + '|' + this.program1.runningtime + '|' + this.program1.apiName;
           var program2Obj = '|' + this.program2.name + '|' + this.program2.runningtime + '|' + this.program2.apiName;
           var program3Obj = '|' + this.program3.name + '|' + this.program3.runningtime + '|' + this.program3.apiName;
