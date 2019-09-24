@@ -141,6 +141,14 @@ export class WifiPage {
             if(this.verifyInternalIpAddress(response)){
               this.verifyStatusValues(false);
             }
+            else{
+              this.mymatWifi = true;
+              this.mymatStatus = false;
+              this.showStatusTable = false;
+              this.showLoading = true;
+              this.isRunRoutineEnabled = false;
+              this.failIPVerification();
+            }
           });
       }, 3000);
   }
