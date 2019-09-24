@@ -134,7 +134,7 @@ export class WifiPage {
       this.showLoading = false;
       this.isRunRoutineEnabled = true;
       clearInterval(this.testStatusInterval);
-      //clearInterval(this.testIPInterval);
+      clearInterval(this.testIPInterval);
 
       this.testIPInterval = setInterval(() => {
         this.networkInterface.getWiFiIPAddress().then((response)=>{
