@@ -69,7 +69,7 @@ export class WifiPage {
     if(this.platform.is('cordova')){
       this.networkInterface.getWiFiIPAddress().then((response)=>{
         if(this.verifyInternalIpAddress(response)){
-          this.showIPButton();
+          this.verifyStatusValues();
         }
         else
           this.failIPVerification();
@@ -78,7 +78,7 @@ export class WifiPage {
       });
     }
     else{
-      this.showIPButton();
+      this.verifyStatusValues();
     }
     this.mymatWifi = true;
     this.intervalCount = 0;
@@ -93,15 +93,16 @@ export class WifiPage {
     return false;
   }
 
-  showIPButton(){
+  verifyStatusValues(restart = true){
     //this.mymatStatus = true;
     //this.showStatusTable = true;
-
-    this.batteryImg = 'assets/img/b100.pn';
-    this.coilText1 = 'N/A';
-    this.coilText2 = 'N/A';
-    this.coilText3 = 'N/A';
-    this.coilText4 = 'N/A';
+    if(restart){
+      this.batteryImg = 'assets/img/b100.pn';
+      this.coilText1 = 'N/A';
+      this.coilText2 = 'N/A';
+      this.coilText3 = 'N/A';
+      this.coilText4 = 'N/A';
+    }
 
     //this.mymatWifi = false;
     //this.showLoading = false;
@@ -115,10 +116,10 @@ export class WifiPage {
         this.showStatus();
       }
       else{
-        this.failStatusVerification();
+        this.failIPVerification();
       }
     }, (response) => {
-      this.failStatusVerification();
+      this.failIPVerification();
     });
   }
 
@@ -134,6 +135,29 @@ export class WifiPage {
       this.isRunRoutineEnabled = true;
       clearInterval(this.testStatusInterval);
       clearInterval(this.testIPInterval);
+
+      this.testIPInterval = setInterval(() => {
+        this.networkInterface.getWiFiIPAddress().then((response)=>{
+            if(this.verifyInternalIpAddress(response)){
+              this.verifyStatusValues(false);
+            }
+            else{
+              this.mymatWifi = true;
+              this.mymatStatus = false;
+              this.showStatusTable = false;
+              this.showLoading = true;
+              this.isRunRoutineEnabled = false;
+              this.failIPVerification();
+            }
+          },(response)=>{
+            this.mymatWifi = true;
+            this.mymatStatus = false;
+            this.showStatusTable = false;
+            this.showLoading = true;
+            this.isRunRoutineEnabled = false;
+            this.failIPVerification();
+          });
+      }, 3000);
   }
 
   verifyValues(response){
@@ -175,13 +199,14 @@ export class WifiPage {
   failIPVerification(){
       this.testIPInterval = setInterval(() => {
         this.networkInterface.getWiFiIPAddress().then((response)=>{
-            if(response === Constants.localIPAddress)
-              this.showIPButton();
+            if(this.verifyInternalIpAddress(response)){
+              this.verifyStatusValues(false);
+            }
           });
       }, 3000);
   }
 
-  failStatusVerification(){
+  /*failStatusVerification(){
     this.testStatusInterval = setInterval(() => {
       // timeout of mymat detection 180 segundos
       var failMyMatTest = this.apiService.test();
@@ -230,8 +255,8 @@ export class WifiPage {
           });
           break;
       }
-    }*/
-  }
+    }* /
+  }*/
 
   startRoutine(){
     /* ANTES DE COCRRER RUTINA VERIFICAR SI SE ESTA CONECTADO AL WIFI DEL MYMAT */

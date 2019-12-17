@@ -311,6 +311,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
         "cordova.plugins.Keyboard"
       ],
       "runs": true
+    },
+    {
+      "id": "cordova-plugin-native-spinner.SpinnerDialog",
+      "file": "plugins/cordova-plugin-native-spinner/www/SpinnerDialog.js",
+      "pluginId": "cordova-plugin-native-spinner",
+      "clobbers": [
+        "SpinnerDialog"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -325,6 +333,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-networkinterface": "1.2.0",
     "cordova-plugin-splashscreen": "4.1.0",
     "cordova-plugin-whitelist": "1.3.3",
-    "ionic-plugin-keyboard": "2.2.1"
+    "ionic-plugin-keyboard": "2.2.1",
+    "cordova-plugin-native-spinner": "1.1.3"
   };
 });
