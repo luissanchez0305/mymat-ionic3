@@ -4739,7 +4739,7 @@ var PlayingPage = (function () {
                                     id: 1,
                                     title: 'MyMat Light',
                                     text: prog['time-expire-text'],
-                                    sound: 'file://assets/sounds/' + (_this.plt.is('ios') ? 'gong_c5.m4r' : 'gong_c5.mp3'),
+                                    sound: 'file://assets/sounds/gong_c5.mp3',
                                     trigger: { at: new Date(t.getTime() + 30 * 1000) }
                                 });
                                 _this.localNotifications.on("click").subscribe({ next: function (notification) {
