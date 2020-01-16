@@ -112,8 +112,8 @@ export class HomePage {
       id: 1,
       title: 'MyMat Light',
       text: 'prueba',
-      icon: 'android_asset/www/assets/icon/person-icon-256.png',
-      sound: 'android_asset/www/assets/sounds/gong_c5.mp3',
+      icon: 'file://assets/icon/person-icon-256.png',
+      sound: 'file://assets/sounds/gong_c5.mp3',
       trigger: { at: new Date(t.getTime() + /*this.getSeconds(this.displayRunningTime)*/ 30 * 1000) }
     });
   }
