@@ -36,7 +36,7 @@ export class HomePage {
   public latestRoutines : any;
 
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
-    private translateService: TranslateService, private network: Network, private zone: NgZone, private localNotifications : LocalNotifications,
+    private translateService: TranslateService, private network: Network, private zone: NgZone, private localNotifications: LocalNotifications,
     public events: Events, private device: Device, public apiService : APIServiceProvider, public modalCtrl: ModalController) {
     //this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
@@ -98,11 +98,11 @@ export class HomePage {
           }, (result) => {
             //console.log('check_device error ' + result);
             //this.isDeviceOnline = false;
-            /*this.storage.get(Constants.storageKeyLang).then((lang)=>{
+            this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((value) => {
                 this.offline_device = value['offline-device-text-2'];
               });
-            });*/
+            });
           });
         /*}*/
       }

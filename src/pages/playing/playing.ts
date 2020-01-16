@@ -3,7 +3,6 @@ import { NavController, NavParams } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { Storage } from '@ionic/storage';
 import { Constants } from '../../services/constants';
-import { LocalNotifications } from '@ionic-native/local-notifications';
 import { Platform } from 'ionic-angular';
 
 /**
@@ -32,7 +31,7 @@ export class PlayingPage {
   public timerId : number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage,
-    public translateService: TranslateService, private localNotifications : LocalNotifications, public plt: Platform,
+    public translateService: TranslateService, public plt: Platform,
     private zone: NgZone) {
       var _this = this;
       document.addEventListener('resume', () => {
@@ -136,10 +135,10 @@ export class PlayingPage {
             this.timerId = 1;
             this.startTimer(this.timerId);
 
-            var $this = this;
+            //var $this = this;
             this.storage.get(Constants.storageKeyLang).then((lang)=>{
               this.translateService.getTranslation(lang).subscribe((prog) =>{
-                this.localNotifications.schedule({
+                /*this.localNotifications.schedule({
                   id: 1,
                   title: 'MyMat Light',
                   text: prog['time-expire-text'],
@@ -153,7 +152,7 @@ export class PlayingPage {
                       $this.resume(t.getTime());
                     }
                   }
-                });
+                });*/
               });
             });
           });

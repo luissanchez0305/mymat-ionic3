@@ -1,1 +1,5821 @@
-webpackJsonp([0],{178:function(n,l){function e(n){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+n+"'.")})}e.keys=function(){return[]},e.resolve=e,n.exports=e,e.id=178},209:function(n,l){function e(n){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+n+"'.")})}e.keys=function(){return[]},e.resolve=e,n.exports=e,e.id=209},250:function(n,l,e){"use strict";function i(n){return new Z.a(n,"./assets/i18n/",".json")}function a(n){return $._25(0,[(n()(),$._3(0,0,null,null,0,"img",[["height","35"],["src","assets/img/flag-england.png"],["width","35"]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.switchLang("en")&&i}return i},null,null))],null,null)}function t(n){return $._25(0,[(n()(),$._3(0,0,null,null,0,"img",[["height","35"],["src","assets/img/flag-spain.png"],["width","35"]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.switchLang("es")&&i}return i},null,null))],null,null)}function u(n){return $._25(0,[(n()(),$._3(0,0,null,null,0,"img",[["height","35"],["src","assets/img/flag-italy.png"],["width","35"]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.switchLang("it")&&i}return i},null,null))],null,null)}function r(n){return $._25(0,[(n()(),$._3(0,0,null,null,0,"img",[["height","35"],["src","assets/img/flag-germany.png"],["width","35"]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.switchLang("gr")&&i}return i},null,null))],null,null)}function s(n){return $._25(0,[(n()(),$._3(0,0,null,null,0,"img",[["height","35"],["src","assets/img/flag-france.png"],["width","35"]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.switchLang("fr")&&i}return i},null,null))],null,null)}function o(n){return $._25(0,[(n()(),$._3(0,0,null,null,0,"img",[["height","35"],["src","assets/img/flag-brazil.png"],["width","35"]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.switchLang("pt")&&i}return i},null,null))],null,null)}function m(n){return $._25(0,[(n()(),$._3(0,0,null,null,10,"button",[["class","item item-block"],["ion-item",""],["menuClose",""]],[[8,"className",0]],[[null,"click"]],function(n,l,e){var i=!0,a=n.component;if("click"===l){i=!1!==$._15(n,6).close()&&i}if("click"===l){i=!1!==a.openPage(n.context.$implicit)&&i}return i},Fn.b,Fn.a)),$._2(1,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,7,{contentLabel:0}),$._21(603979776,8,{_buttons:1}),$._21(603979776,9,{_icons:1}),$._2(5,16384,null,0,Yn.a,[],null,null),$._2(6,16384,null,0,Jn.a,[Vn.a],{menuClose:[0,"menuClose"]},null),(n()(),$._23(-1,2,["\n        "])),(n()(),$._3(8,0,null,2,0,"label",[["class","item-content"],["text-uppercase",""]],null,null,null,null,null)),(n()(),$._23(9,2,["\n        ","\n      "])),$._17(131072,z.i,[z.j,$.g])],function(n,l){n(l,6,0,"")},function(n,l){n(l,0,0,$._6(1,"item-button item-block item-md ",l.context.$implicit.icon,""));n(l,9,0,$._24(l,9,0,$._15(l,10).transform(l.context.$implicit.title)))})}function c(n){return $._25(0,[$._21(402653184,1,{nav:0}),(n()(),$._3(1,0,null,null,45,"ion-menu",[["role","navigation"]],null,null,null,$n.b,$n.a)),$._19(6144,null,Wn.a,null,[Gn.a]),$._2(3,245760,null,2,Gn.a,[Vn.a,$.k,Kn.a,Un.a,$.D,qn.a,zn.l,Zn.a,Xn.a],{content:[0,"content"]},null),$._21(335544320,2,{menuContent:0}),$._21(335544320,3,{menuNav:0}),(n()(),$._23(-1,0,["\n  "])),(n()(),$._3(7,0,null,0,38,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Qn.b,Qn.a)),$._2(8,4374528,[[2,4]],0,nl.a,[Kn.a,Un.a,Zn.a,$.k,$.D,Xn.a,qn.a,$.x,[2,ll.a],[2,el.a]],null,null),(n()(),$._23(-1,1,["\n    "])),(n()(),$._3(10,0,null,1,34,"ion-list",[],null,null,null,null,null)),$._2(11,16384,null,0,il.a,[Kn.a,$.k,$.D,Un.a,zn.l,Zn.a],null,null),(n()(),$._23(-1,null,["\n      "])),(n()(),$._3(13,0,null,null,1,"div",[["class","menutitle"]],null,null,null,null,null)),(n()(),$._3(14,0,null,null,0,"img",[["src","assets/img/logomenu.png"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n      "])),(n()(),$._3(16,0,null,null,24,"ion-item",[["class","menuitemhome item item-block"],["menu-close",""]],null,null,null,Fn.b,Fn.a)),$._2(17,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,4,{contentLabel:0}),$._21(603979776,5,{_buttons:1}),$._21(603979776,6,{_icons:1}),$._2(21,16384,null,0,Yn.a,[],null,null),(n()(),$._23(-1,2,["\n        "])),(n()(),$.Y(16777216,null,2,1,null,a)),$._2(24,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,2,["\n        "])),(n()(),$.Y(16777216,null,2,1,null,t)),$._2(27,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,2,["\n        "])),(n()(),$.Y(16777216,null,2,1,null,u)),$._2(30,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,2,["\n        "])),(n()(),$.Y(16777216,null,2,1,null,r)),$._2(33,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,2,["\n        "])),(n()(),$.Y(16777216,null,2,1,null,s)),$._2(36,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,2,["\n        "])),(n()(),$.Y(16777216,null,2,1,null,o)),$._2(39,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,2,["\n      "])),(n()(),$._23(-1,null,["\n      "])),(n()(),$.Y(16777216,null,null,1,null,m)),$._2(43,802816,null,0,al.h,[$.M,$.J,$.s],{ngForOf:[0,"ngForOf"]},null),(n()(),$._23(-1,null,["\n    "])),(n()(),$._23(-1,1,["\n  "])),(n()(),$._23(-1,0,["\n\n"])),(n()(),$._23(-1,null,["\n\n"])),(n()(),$._23(-1,null,["\n"])),(n()(),$._3(49,0,null,null,2,"ion-nav",[["swipeBackEnabled","false"]],null,null,null,tl.b,tl.a)),$._19(6144,null,Wn.a,null,[ul.a]),$._2(51,4374528,[[1,4],["content",4]],0,ul.a,[[2,ll.a],[2,el.a],Xn.a,Kn.a,Un.a,$.k,$.x,$.D,$.i,zn.l,rl.a,[2,sl.a],Zn.a,$.l],{swipeBackEnabled:[0,"swipeBackEnabled"],root:[1,"root"]},null)],function(n,l){var e=l.component;n(l,3,0,$._15(l,51));n(l,24,0,e.lang_en);n(l,27,0,e.lang_es);n(l,30,0,e.lang_it);n(l,33,0,e.lang_gr);n(l,36,0,e.lang_fr);n(l,39,0,e.lang_pt);n(l,43,0,e.pages);n(l,51,0,"false",e.rootPage)},function(n,l){n(l,7,0,$._15(l,8).statusbarPadding,$._15(l,8)._hasRefresher)})}function p(n){return $._25(0,[(n()(),$._3(0,0,null,null,2,"div",[["padding-top",""],["text-center",""],["text-uppercase",""]],null,null,null,null,null)),(n()(),$._23(1,null,["",""])),$._17(131072,z.i,[z.j,$.g])],null,function(n,l){n(l,1,0,$._24(l,1,0,$._15(l,2).transform("latest-routines")))})}function _(n){return $._25(0,[(n()(),$._3(0,0,null,null,7,"ion-item",[["class","addiction center item item-block"]],null,null,null,Fn.b,Fn.a)),$._2(1,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,3,{contentLabel:0}),$._21(603979776,4,{_buttons:1}),$._21(603979776,5,{_icons:1}),$._2(5,16384,null,0,Yn.a,[],null,null),(n()(),$._23(6,2,["\n                     ","\n                "])),$._17(131072,z.i,[z.j,$.g])],null,function(n,l){n(l,6,0,$._24(l,6,0,$._15(l,7).transform(l.context.$implicit.name)))})}function g(n){return $._25(0,[(n()(),$._3(0,0,null,null,16,"div",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(2,0,null,null,2,"div",[["padding-top",""],["text-center",""]],null,null,null,null,null)),(n()(),$._23(3,null,["\n          "," "," "," ",":","\n        "])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n        "])),(n()(),$._23(-1,null,["\n\n        "])),(n()(),$._3(7,0,null,null,8,"div",[["class","paddingmodal"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n\n            "])),(n()(),$._3(9,0,null,null,5,"ion-list",[],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.addPrograms("",n.context.$implicit.programs[0].apiName,n.context.$implicit.programs[1].apiName,n.context.$implicit.programs[2].apiName,n.context.$implicit.programs[3].apiName)&&i}return i},null,null)),$._2(10,16384,null,0,il.a,[Kn.a,$.k,$.D,Un.a,zn.l,Zn.a],null,null),(n()(),$._23(-1,null,["\n\n                "])),(n()(),$.Y(16777216,null,null,1,null,_)),$._2(13,802816,null,0,al.h,[$.M,$.J,$.s],{ngForOf:[0,"ngForOf"]},null),(n()(),$._23(-1,null,["\n\n            "])),(n()(),$._23(-1,null,["\n\n        "])),(n()(),$._23(-1,null,["\n\n    "]))],function(n,l){n(l,13,0,l.context.$implicit.programs)},function(n,l){n(l,3,0,l.context.$implicit.day,$._24(l,3,1,$._15(l,4).transform(l.context.$implicit.month)),l.context.$implicit.year,l.context.$implicit.hours,l.context.$implicit.minutes)})}function d(n){return $._25(0,[$._21(402653184,1,{content:0}),(n()(),$._23(-1,null,["  "])),(n()(),$._3(2,0,null,null,22,"ion-header",[],null,null,null,null,null)),$._2(3,16384,null,0,pl.a,[Kn.a,$.k,$.D,[2,ll.a]],null,null),(n()(),$._23(-1,null,["\n  "])),(n()(),$._3(5,0,null,null,18,"ion-navbar",[["class","bar toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_l.b,_l.a)),$._2(6,49152,null,0,gl.a,[Xn.a,[2,ll.a],[2,el.a],Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(8,0,null,0,8,"button",[["class","button button-clear"],["end",""],["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==$._15(n,10).toggle()&&i}return i},dl.b,dl.a)),$._2(9,1097728,[[2,4]],0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),$._2(10,1064960,null,0,fl.a,[Vn.a,[2,ll.a],[2,hl.a],[2,gl.a]],{menuToggle:[0,"menuToggle"]},null),$._2(11,16384,null,1,bl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),$._21(603979776,2,{_buttons:1}),(n()(),$._23(-1,0,["\n      "])),(n()(),$._3(14,0,null,0,1,"ion-icon",[["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),$._2(15,147456,null,0,yl.a,[Kn.a,$.k,$.D],{name:[0,"name"]},null),(n()(),$._23(-1,0,["\n    "])),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(18,0,null,3,4,"ion-title",[],null,null,null,Nl.b,Nl.a)),$._2(19,49152,null,0,kl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),(n()(),$._23(-1,0,["\n      "])),(n()(),$._3(21,0,null,0,0,"div",[["class","logo"]],null,null,null,null,null)),(n()(),$._23(-1,0,["\n    "])),(n()(),$._23(-1,3,["\n  "])),(n()(),$._23(-1,null,["\n"])),(n()(),$._23(-1,null,["\n\n"])),(n()(),$._3(26,0,null,null,72,"ion-content",[["class","home"],["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Qn.b,Qn.a)),$._2(27,4374528,[[1,4]],0,nl.a,[Kn.a,Un.a,Zn.a,$.k,$.D,Xn.a,qn.a,$.x,[2,ll.a],[2,el.a]],null,null),(n()(),$._23(-1,1,["\n    "])),(n()(),$._3(29,0,null,1,32,"div",[["class","bubblescontainer"],["padding",""]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(31,0,null,null,29,"div",[["class","bubbles"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(33,0,null,null,2,"div",[["class","single-bubble-1"]],null,[[null,"click"],[null,"hold"]],function(n,l,e){var i=!0,a=n.component;if("click"===l){i=!1!==a.selectBubble(1)&&i}if("hold"===l){i=!1!==a.removeProgramFromRoutine(1)&&i}return i},null,null)),$._2(34,278528,null,0,al.l,[$.t,$.k,$.E],{ngStyle:[0,"ngStyle"]},null),$._18(35,{"background-image":0}),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(37,0,null,null,1,"div",[["class","bubbles-program-name-1"]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectBubble(1,!0)&&i}return i},null,null)),(n()(),$._23(38,null,["",""])),(n()(),$._23(-1,null,["\n\n            "])),(n()(),$._3(40,0,null,null,2,"div",[["class","single-bubble-2"]],null,[[null,"click"],[null,"hold"]],function(n,l,e){var i=!0,a=n.component;if("click"===l){i=!1!==a.selectBubble(2)&&i}if("hold"===l){i=!1!==a.removeProgramFromRoutine(2)&&i}return i},null,null)),$._2(41,278528,null,0,al.l,[$.t,$.k,$.E],{ngStyle:[0,"ngStyle"]},null),$._18(42,{"background-image":0}),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(44,0,null,null,1,"div",[["class","bubbles-program-name-2"]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectBubble(2,!0)&&i}return i},null,null)),(n()(),$._23(45,null,["",""])),(n()(),$._23(-1,null,["\n\n            "])),(n()(),$._3(47,0,null,null,2,"div",[["class","single-bubble-3"]],null,[[null,"click"],[null,"hold"]],function(n,l,e){var i=!0,a=n.component;if("click"===l){i=!1!==a.selectBubble(3)&&i}if("hold"===l){i=!1!==a.removeProgramFromRoutine(3)&&i}return i},null,null)),$._2(48,278528,null,0,al.l,[$.t,$.k,$.E],{ngStyle:[0,"ngStyle"]},null),$._18(49,{"background-image":0}),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(51,0,null,null,1,"div",[["class","bubbles-program-name-3"]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectBubble(3,!0)&&i}return i},null,null)),(n()(),$._23(52,null,["",""])),(n()(),$._23(-1,null,["\n\n            "])),(n()(),$._3(54,0,null,null,2,"div",[["class","single-bubble-4"]],null,[[null,"click"],[null,"hold"]],function(n,l,e){var i=!0,a=n.component;if("click"===l){i=!1!==a.selectBubble(4)&&i}if("hold"===l){i=!1!==a.removeProgramFromRoutine(4)&&i}return i},null,null)),$._2(55,278528,null,0,al.l,[$.t,$.k,$.E],{ngStyle:[0,"ngStyle"]},null),$._18(56,{"background-image":0}),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(58,0,null,null,1,"div",[["class","bubbles-program-name-4"]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectBubble(4,!0)&&i}return i},null,null)),(n()(),$._23(59,null,["",""])),(n()(),$._23(-1,null,["\n        "])),(n()(),$._23(-1,null,["\n    "])),(n()(),$._23(-1,1,["\n\n    "])),(n()(),$._3(63,0,null,1,28,"div",[["class","bubbleexplain"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(65,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(67,0,null,null,2,"b",[],null,null,null,null,null)),(n()(),$._23(68,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._3(70,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._3(71,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n        "])),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(74,0,null,null,2,"button",[["class","greenbtn"],["href","#"],["menu-close",""],["nav-direction","forward"],["nav-transition","ios"]],[[8,"disabled",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.runRoutine()&&i}return i},null,null)),(n()(),$._23(75,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(78,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._3(79,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(81,0,null,null,2,"button",[["class","orangebtn"],["href","#"],["menu-close",""],["nav-direction","forward"],["nav-transition","ios"]],[[8,"disabled",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.openAddFavorite()&&i}return i},null,null)),(n()(),$._23(82,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(85,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._3(86,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(88,0,null,null,2,"button",[["class","graybtn"],["href","#"],["menu-close",""],["nav-direction","forward"],["nav-transition","ios"]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.cleanRoutine()&&i}return i},null,null)),(n()(),$._23(89,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n\n    "])),(n()(),$._23(-1,1,["\n    "])),(n()(),$.Y(16777216,null,1,1,null,p)),$._2(94,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,1,["\n    "])),(n()(),$.Y(16777216,null,1,1,null,g)),$._2(97,802816,null,0,al.h,[$.M,$.J,$.s],{ngForOf:[0,"ngForOf"]},null),(n()(),$._23(-1,1,["\n"])),(n()(),$._23(-1,null,["\n"]))],function(n,l){var e=l.component;n(l,10,0,"");n(l,15,0,"menu");n(l,34,0,e.bubblesCurrentState1&&n(l,35,0,"url(assets/img/bubble-violet.png)"));n(l,41,0,e.bubblesCurrentState2&&n(l,42,0,"url(assets/img/bubble-red.png)"));n(l,48,0,e.bubblesCurrentState3&&n(l,49,0,"url(assets/img/bubble-yellow.png)"));n(l,55,0,e.bubblesCurrentState4&&n(l,56,0,"url(assets/img/bubble-green.png)"));n(l,94,0,e.showLatestSection);n(l,97,0,e.latestRoutines)},function(n,l){var e=l.component;n(l,5,0,$._15(l,6)._hidden,$._15(l,6)._sbPadding);n(l,8,0,$._15(l,10).isHidden);n(l,14,0,$._15(l,15)._hidden);n(l,26,0,$._15(l,27).statusbarPadding,$._15(l,27)._hasRefresher);n(l,38,0,e.bubblesNames1);n(l,45,0,e.bubblesNames2);n(l,52,0,e.bubblesNames3);n(l,59,0,e.bubblesNames4);n(l,68,0,$._24(l,68,0,$._15(l,69).transform("tap-bubble")));n(l,74,0,!e.EnableRunRoutine);n(l,75,0,$._24(l,75,0,$._15(l,76).transform("run-routine")));n(l,81,0,!e.showAddFavoriteButton);n(l,82,0,$._24(l,82,0,$._15(l,83).transform("add-favorite")));n(l,89,0,$._24(l,89,0,$._15(l,90).transform("clean-routine")))})}function h(n){return $._25(0,[(n()(),$._23(-1,null,["\n    "])),(n()(),$._3(1,0,null,null,22,"ion-header",[],null,null,null,null,null)),$._2(2,16384,null,0,pl.a,[Kn.a,$.k,$.D,[2,ll.a]],null,null),(n()(),$._23(-1,null,["\n      "])),(n()(),$._3(4,0,null,null,18,"ion-navbar",[["class","bar toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_l.b,_l.a)),$._2(5,49152,null,0,gl.a,[Xn.a,[2,ll.a],[2,el.a],Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,3,["\n        "])),(n()(),$._3(7,0,null,0,8,"button",[["class","button button-clear"],["end",""],["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==$._15(n,9).toggle()&&i}return i},dl.b,dl.a)),$._2(8,1097728,[[1,4]],0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),$._2(9,1064960,null,0,fl.a,[Vn.a,[2,ll.a],[2,hl.a],[2,gl.a]],{menuToggle:[0,"menuToggle"]},null),$._2(10,16384,null,1,bl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),$._21(603979776,1,{_buttons:1}),(n()(),$._23(-1,0,["\n          "])),(n()(),$._3(13,0,null,0,1,"ion-icon",[["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),$._2(14,147456,null,0,yl.a,[Kn.a,$.k,$.D],{name:[0,"name"]},null),(n()(),$._23(-1,0,["\n        "])),(n()(),$._23(-1,3,["\n        "])),(n()(),$._3(17,0,null,3,4,"ion-title",[],null,null,null,Nl.b,Nl.a)),$._2(18,49152,null,0,kl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),(n()(),$._23(-1,0,["\n          "])),(n()(),$._3(20,0,null,0,0,"div",[["class","logo"]],null,null,null,null,null)),(n()(),$._23(-1,0,["\n        "])),(n()(),$._23(-1,3,["\n      "])),(n()(),$._23(-1,null,["\n    "])),(n()(),$._23(-1,null,["\n\n    "])),(n()(),$._3(25,0,null,null,132,"ion-content",[["class","home"],["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Qn.b,Qn.a)),$._2(26,4374528,null,0,nl.a,[Kn.a,Un.a,Zn.a,$.k,$.D,Xn.a,qn.a,$.x,[2,ll.a],[2,el.a]],null,null),(n()(),$._23(-1,1,["\n\n        "])),(n()(),$._3(28,0,null,1,128,"div",[["class","list card cardprogram"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n\n            "])),(n()(),$._3(30,0,null,null,5,"div",[["class","item"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n\n                "])),(n()(),$._3(32,0,null,null,2,"h2",[["padding",""]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["Help"])),(n()(),$._23(-1,null,["\n\n            "])),(n()(),$._23(-1,null,["\n\n            "])),(n()(),$._3(37,0,null,null,118,"div",[["class","item item-body"],["padding",""]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(39,0,null,null,2,"div",[["class",""]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["How do I know which programs to choose?"])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(43,0,null,null,15,"p",[["class","lorems"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n                    It is always good to start with balancing the System. These are some ways you could start this with:\n                    Energy Balancing, E-Smog, Joy, Vitality"])),(n()(),$._3(46,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._3(47,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                    \n                    If you would like to enhance your sleeping pattern – choose:"])),(n()(),$._3(49,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                    Energy Balancing, E-Smog, Relax, Sleep"])),(n()(),$._3(51,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._3(52,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                    \n                    If you would like some extra energy in the morning:"])),(n()(),$._3(54,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                    Energy Balancing, Energy Booster, Concentration (and any program connected to a problem you are dealing with – as Pain, Muscle, Joints, Headache etc.) "])),(n()(),$._3(56,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._3(57,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                    \n                    For a full list of programs and their uses regarding symptoms refer to the user’s manual included with your purchase or available for free online.\n                "])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(60,0,null,null,2,"div",[["class",""]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["Which programs should I avoid in the evening?"])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(64,0,null,null,2,"p",[["class","lorems"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n                    If you want to have a good night’s sleep it is better not to over stimulate your organism. If you are used to drinking coffee in the evening and still can sleep you may use any programs but if you are more sensitive – better do not to use the following programs before bed time: Circulation, Immune System, Adrenal, Exhaustion, Concentration and Energy Booster\n                "])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(68,0,null,null,2,"div",[["class",""]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["How do electromagnetic fields affect my body?"])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(72,0,null,null,2,"p",[["class","lorems"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n                    Everything in our bodies is electric, our cells communicate with electromagnetic frequencies, our heart generates electromagnetic waves with every beat, our nervous system communicated when neurons react to electro magnetic signals through synapses. With this in mind we can understand how external magnetic, electric and electromagnetic fields react with every aspect of our body. By regulating specific low intensity frequencies we can chose exactly what we want to react with, acting on specified cells, organs and tissues.\n                "])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(76,0,null,null,2,"div",[["class",""]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["How does treatment at the cellular level help me?"])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(80,0,null,null,2,"p",[["class","lorems"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n                    By charging magnetic fields surrounding cell membranes channels open up for better nutrient penetration. Opening the channels also promotes easier waste elimination, efficiently restoring proper cell function. An efficient system of cells creates efficient tissue, which come together to make organs. Restoring proper function from the cellular level brings beneficial long term effects to all related problems and improves overall well being. Healthy cell function also diminishes the need for cell replacement, slowing down aging processes and energy waste.\n                "])),(n()(),$._23(-1,null,["\n                \n                "])),(n()(),$._3(84,0,null,null,2,"div",[["class",""]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["Can PEMF therapy protect me from future illnesses?"])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(88,0,null,null,2,"p",[["class","lorems"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,[" Operating effectively at a systematic level will reduce opportunities for diseases to develop. Diseases begin at a cellular level and injuries have to start healing at a cellular level. By using Pulsed Electromagnetic Frequencies one can improve general circulation thus accelerating reparation processes. By improving general cellular health they break down/wear out less often. Healthy operating cells will accelerate recuperation and balance bodily functions. "])),(n()(),$._23(-1,null,["\n\n                "])),(n()(),$._3(92,0,null,null,2,"div",[["class",""]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["Aren’t Magnetic Fields bad for me?"])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(96,0,null,null,2,"p",[["class","lorems"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,[" The MyMat has a frequency range between 1Hz to 200 kHz and EMF strength wont exceed 10 micro Tesla per channel. The MyMat can operate up to 4 channels simultaneously due to its 4 antennae’s, thus a maximum of 40 micro Tesla. Magnetic fields outside of the low and extremely low frequencies such as microwave, infrared, radio and ultraviolet frequencies do have varied detrimental effects on our cells and body. Most of our exposure risk comes from higher frequencies such as power lines and cell phones attached to our heads daily. These frequencies pose higher risks because we are constantly exposed to them and they can induce tissue damage, alter cellular function and create general cellular damage. It is practically impossible to live a life avoiding these frequencies, they are everywhere and penetrate everything. We cant escape E-smog, but we can use the MyMat which has several programs that can help reduce damaging effects from all our constant electronic bombardment by adding frequencies that mantain our bodies in balance, mantaining the healthy, natural frequencies. "])),(n()(),$._23(-1,null,["\n\n                "])),(n()(),$._3(100,0,null,null,2,"div",[["class",""]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["Will PEMF therapy replace my medication?"])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(104,0,null,null,2,"p",[["class","lorems"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,[" Therapy with the Pulsed Electromagnetic Frequencies can make a significant improvement in overall well-being and diminish many negative symptoms. It can be used alongside treatments and medication to improve results. It is important to discuss with medical professionals before replacing any treatments or medication. Once a proper plan is created and results are seen it is possible to reduce or eliminate treatments or medication. Always make sure to ask for medical advise or consultation before changing or replacing existing treatments. "])),(n()(),$._23(-1,null,["\n\n                "])),(n()(),$._3(108,0,null,null,2,"div",[["class",""]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["How do electromagnetic fields affect my body?"])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(112,0,null,null,2,"p",[["class","lorems"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["Everything in our bodies is electric, our cells communicate with electromagnetic frequencies, our heart generates electromagnetic waves with every beat, our nervous system communicated when neurons react to electro magnetic signals through synapses. With this in mind we can understand how external magnetic, electric and electromagnetic fields react with every aspect of our body. By regulating specific low intensity frequencies we can chose exactly what we want to react with, acting on specified cells, organs and tissues. "])),(n()(),$._23(-1,null,["\n\n                "])),(n()(),$._3(116,0,null,null,2,"div",[["class",""]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["Can I overdose on a magnetic field?"])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(120,0,null,null,2,"p",[["class","lorems"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,[" The MyMat operates with very low intensity pulsed magnetic fields. A healthy cell operates at ideal capacity so has no need for more energy and cannot accept more energy, so it ignores these frequencies. A damaged or malfunctioning cell can absorb some of this energy but it is impossible for it to overcharge because there is no possibility of storing any more energy than is needed. "])),(n()(),$._23(-1,null,["\n\n                "])),(n()(),$._3(124,0,null,null,2,"div",[["class",""]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["What are some of the basic beneficial actions PEMFs will have in my body?"])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(128,0,null,null,26,"p",[["class","lorems"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["Improving tissue healing \n         Reducing pain"])),(n()(),$._3(131,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\nIncreasing energy"])),(n()(),$._3(133,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\nImproving sleep"])),(n()(),$._3(135,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\nMaking soft tissue more flexible"])),(n()(),$._3(137,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\nMeridian Stimulation"])),(n()(),$._3(139,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\nReducing Blood Pressure"])),(n()(),$._3(141,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\nImproving clotting factors"])),(n()(),$._3(143,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\nReducing Arthritis ontake"])),(n()(),$._3(145,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\nImmune system stimulation"])),(n()(),$._3(147,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\nDetox"])),(n()(),$._3(149,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\nHelping nerve function"])),(n()(),$._3(151,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\nImproving Nutrient Absorbtion"])),(n()(),$._3(153,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\nReducing Muscle tension"])),(n()(),$._23(-1,null,["\n            "])),(n()(),$._23(-1,null,["\n        "])),(n()(),$._23(-1,1,["\n\n    "])),(n()(),$._23(-1,null,["\n"]))],function(n,l){n(l,9,0,"");n(l,14,0,"menu")},function(n,l){n(l,4,0,$._15(l,5)._hidden,$._15(l,5)._sbPadding);n(l,7,0,$._15(l,9).isHidden);n(l,13,0,$._15(l,14)._hidden);n(l,25,0,$._15(l,26).statusbarPadding,$._15(l,26)._hasRefresher);n(l,32,0,$._24(l,32,0,$._15(l,33).transform("help-text")));n(l,39,0,$._24(l,39,0,$._15(l,40).transform("help-text1")));n(l,43,0,$._24(l,43,0,$._15(l,44).transform("help-text2")));n(l,60,0,$._24(l,60,0,$._15(l,61).transform("help-text3")));n(l,64,0,$._24(l,64,0,$._15(l,65).transform("help-text4")));n(l,68,0,$._24(l,68,0,$._15(l,69).transform("help-text5")));n(l,72,0,$._24(l,72,0,$._15(l,73).transform("help-text6")));n(l,76,0,$._24(l,76,0,$._15(l,77).transform("help-text7")));n(l,80,0,$._24(l,80,0,$._15(l,81).transform("help-text8")));n(l,84,0,$._24(l,84,0,$._15(l,85).transform("help-text9")));n(l,88,0,$._24(l,88,0,$._15(l,89).transform("help-text10")));n(l,92,0,$._24(l,92,0,$._15(l,93).transform("help-text11")));n(l,96,0,$._24(l,96,0,$._15(l,97).transform("help-text12")));n(l,100,0,$._24(l,100,0,$._15(l,101).transform("help-text13")));n(l,104,0,$._24(l,104,0,$._15(l,105).transform("help-text14")));n(l,108,0,$._24(l,108,0,$._15(l,109).transform("help-text15")));n(l,112,0,$._24(l,112,0,$._15(l,113).transform("help-text16")));n(l,116,0,$._24(l,116,0,$._15(l,117).transform("help-text23")));n(l,120,0,$._24(l,120,0,$._15(l,121).transform("help-text24")));n(l,124,0,$._24(l,124,0,$._15(l,125).transform("help-text25")));n(l,128,0,$._24(l,128,0,$._15(l,129).transform("help-text26")))})}function f(n){return $._25(0,[(n()(),$._23(-1,null,["\n"])),(n()(),$._3(1,0,null,null,22,"ion-header",[],null,null,null,null,null)),$._2(2,16384,null,0,pl.a,[Kn.a,$.k,$.D,[2,ll.a]],null,null),(n()(),$._23(-1,null,["\n  "])),(n()(),$._3(4,0,null,null,18,"ion-navbar",[["class","bar toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_l.b,_l.a)),$._2(5,49152,null,0,gl.a,[Xn.a,[2,ll.a],[2,el.a],Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(7,0,null,0,8,"button",[["class","button button-clear"],["end",""],["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==$._15(n,9).toggle()&&i}return i},dl.b,dl.a)),$._2(8,1097728,[[1,4]],0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),$._2(9,1064960,null,0,fl.a,[Vn.a,[2,ll.a],[2,hl.a],[2,gl.a]],{menuToggle:[0,"menuToggle"]},null),$._2(10,16384,null,1,bl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),$._21(603979776,1,{_buttons:1}),(n()(),$._23(-1,0,["\n      "])),(n()(),$._3(13,0,null,0,1,"ion-icon",[["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),$._2(14,147456,null,0,yl.a,[Kn.a,$.k,$.D],{name:[0,"name"]},null),(n()(),$._23(-1,0,["\n    "])),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(17,0,null,3,4,"ion-title",[],null,null,null,Nl.b,Nl.a)),$._2(18,49152,null,0,kl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),(n()(),$._23(-1,0,["\n      "])),(n()(),$._3(20,0,null,0,0,"div",[["class","logo"]],null,null,null,null,null)),(n()(),$._23(-1,0,["\n    "])),(n()(),$._23(-1,3,["\n  "])),(n()(),$._23(-1,null,["\n"])),(n()(),$._23(-1,null,["\n\n\n"])),(n()(),$._3(25,0,null,null,65,"ion-content",[["class","home center"],["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Qn.b,Qn.a)),$._2(26,4374528,null,0,nl.a,[Kn.a,Un.a,Zn.a,$.k,$.D,Xn.a,qn.a,$.x,[2,ll.a],[2,el.a]],null,null),(n()(),$._23(-1,1,["\n  "])),(n()(),$._3(28,0,null,1,61,"div",[["class","list card cardprogram"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n    "])),(n()(),$._3(30,0,null,null,5,"div",[["class","item"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n\n        "])),(n()(),$._3(32,0,null,null,2,"h2",[["padding",""]],null,null,null,null,null)),(n()(),$._23(33,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n\n    "])),(n()(),$._23(-1,null,["\n\n    "])),(n()(),$._3(37,0,null,null,51,"div",[["class","item item-body"],["padding",""]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n      "])),(n()(),$._3(39,0,null,null,48,"form",[["novalidate",""]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngSubmit"],[null,"submit"],[null,"reset"]],function(n,l,e){var i=!0,a=n.component;if("submit"===l){i=!1!==$._15(n,41).onSubmit(e)&&i}if("reset"===l){i=!1!==$._15(n,41).onReset()&&i}if("ngSubmit"===l){i=!1!==a.attemptSendMail()&&i}return i},null,null)),$._2(40,16384,null,0,tn.p,[],null,null),$._2(41,540672,null,0,tn.f,[[8,null],[8,null]],{form:[0,"form"]},{ngSubmit:"ngSubmit"}),$._19(2048,null,tn.b,null,[tn.f]),$._2(43,16384,null,0,tn.k,[tn.b],null,null),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(45,0,null,null,2,"p",[["class","lorems center-forced"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["Text"])),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(49,0,null,null,8,"label",[["class","item-input contact"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(51,0,null,null,5,"ion-input",[["formControlName","name"],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],null,null,xl.b,xl.a)),$._2(52,671744,null,0,tn.e,[[3,tn.b],[8,null],[8,null],[8,null]],{name:[0,"name"]},null),$._19(2048,null,tn.i,null,[tn.e]),$._2(54,16384,null,0,tn.j,[tn.i],null,null),$._2(55,5423104,null,0,Dl.a,[Kn.a,Un.a,An.a,Xn.a,$.k,$.D,[2,nl.a],[2,Hn.a],[2,tn.i],Zn.a],{value:[0,"value"],type:[1,"type"],placeholder:[2,"placeholder"]},null),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(58,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(60,0,null,null,7,"label",[["class","item-input contact"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(62,0,null,null,4,"ion-input",[["autocapitalize","none"],["formControlName","email"],["placeholder","Email"],["type","email"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],null,null,xl.b,xl.a)),$._2(63,671744,null,0,tn.e,[[3,tn.b],[8,null],[8,null],[8,null]],{name:[0,"name"]},null),$._19(2048,null,tn.i,null,[tn.e]),$._2(65,16384,null,0,tn.j,[tn.i],null,null),$._2(66,5423104,null,0,Dl.a,[Kn.a,Un.a,An.a,Xn.a,$.k,$.D,[2,nl.a],[2,Hn.a],[2,tn.i],Zn.a],{value:[0,"value"],type:[1,"type"],placeholder:[2,"placeholder"]},null),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(68,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(70,0,null,null,8,"label",[["class","item-input contact"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(72,0,null,null,5,"ion-textarea",[["formControlName","message"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],null,null,xl.b,xl.a)),$._2(73,671744,null,0,tn.e,[[3,tn.b],[8,null],[8,null],[8,null]],{name:[0,"name"]},null),$._19(2048,null,tn.i,null,[tn.e]),$._2(75,16384,null,0,tn.j,[tn.i],null,null),$._2(76,5423104,null,0,Dl.a,[Kn.a,Un.a,An.a,Xn.a,$.k,$.D,[2,nl.a],[2,Hn.a],[2,tn.i],Zn.a],{value:[0,"value"],placeholder:[1,"placeholder"]},null),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(79,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(81,0,null,null,2,"button",[["class","button-contact button-calm"],["ion-button",""],["type","submit"]],[[8,"disabled",0],[8,"disabled",0]],null,null,dl.b,dl.a)),$._2(82,1097728,null,0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),(n()(),$._23(83,0,["",""])),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(85,0,null,null,1,"div",[["padding",""]],null,null,null,null,null)),(n()(),$._23(86,null,["\n          ","\n        "])),(n()(),$._23(-1,null,["\n      "])),(n()(),$._23(-1,null,["\n    "])),(n()(),$._23(-1,null,["\n  "])),(n()(),$._23(-1,1,["\n"])),(n()(),$._23(-1,null,["\n"]))],function(n,l){var e=l.component;n(l,9,0,"");n(l,14,0,"menu");n(l,41,0,e.contactForm);n(l,52,0,"name");n(l,55,0,$._6(1,"",e.name_value,""),"text",$._6(1,"",$._24(l,55,2,$._15(l,56).transform("name-text")),""));n(l,63,0,"email");n(l,66,0,$._6(1,"",e.email_value,""),"email","Email");n(l,73,0,"message");n(l,76,0,$._6(1,"",e.message_value,""),$._6(1,"",$._24(l,76,1,$._15(l,77).transform("message-text")),""))},function(n,l){var e=l.component;n(l,4,0,$._15(l,5)._hidden,$._15(l,5)._sbPadding);n(l,7,0,$._15(l,9).isHidden);n(l,13,0,$._15(l,14)._hidden);n(l,25,0,$._15(l,26).statusbarPadding,$._15(l,26)._hasRefresher);n(l,33,0,$._24(l,33,0,$._15(l,34).transform("contact-us-text")));n(l,39,0,$._15(l,43).ngClassUntouched,$._15(l,43).ngClassTouched,$._15(l,43).ngClassPristine,$._15(l,43).ngClassDirty,$._15(l,43).ngClassValid,$._15(l,43).ngClassInvalid,$._15(l,43).ngClassPending);n(l,45,0,$._24(l,45,0,$._15(l,46).transform("get-in-touch")));n(l,51,0,$._15(l,54).ngClassUntouched,$._15(l,54).ngClassTouched,$._15(l,54).ngClassPristine,$._15(l,54).ngClassDirty,$._15(l,54).ngClassValid,$._15(l,54).ngClassInvalid,$._15(l,54).ngClassPending);n(l,62,0,$._15(l,65).ngClassUntouched,$._15(l,65).ngClassTouched,$._15(l,65).ngClassPristine,$._15(l,65).ngClassDirty,$._15(l,65).ngClassValid,$._15(l,65).ngClassInvalid,$._15(l,65).ngClassPending);n(l,72,0,$._15(l,75).ngClassUntouched,$._15(l,75).ngClassTouched,$._15(l,75).ngClassPristine,$._15(l,75).ngClassDirty,$._15(l,75).ngClassValid,$._15(l,75).ngClassInvalid,$._15(l,75).ngClassPending);n(l,81,0,!e.contactForm.valid,e.contactDisabled);n(l,83,0,e.button_send);n(l,86,0,e.response_text)})}function b(n){return $._25(0,[(n()(),$._3(0,0,null,null,7,"ion-item",[["class","addiction center item item-block"]],null,null,null,Fn.b,Fn.a)),$._2(1,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,2,{contentLabel:0}),$._21(603979776,3,{_buttons:1}),$._21(603979776,4,{_icons:1}),$._2(5,16384,null,0,Yn.a,[],null,null),(n()(),$._23(6,2,["\n                     ","\n                "])),$._17(131072,z.i,[z.j,$.g])],null,function(n,l){n(l,6,0,$._24(l,6,0,$._15(l,7).transform(l.context.$implicit.name)))})}function v(n){return $._25(0,[(n()(),$._3(0,0,null,null,13,"div",[],null,null,null,null,null)),(n()(),$._23(1,null,["\n\n        ","\n        "])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n\n        "])),(n()(),$._3(4,0,null,null,8,"div",[["class","paddingmodal"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n\n            "])),(n()(),$._3(6,0,null,null,5,"ion-list",[],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.addPrograms(n.context.$implicit.name,n.context.$implicit.programs[0].apiName,n.context.$implicit.programs[1].apiName,n.context.$implicit.programs[2].apiName,n.context.$implicit.programs[3].apiName)&&i}return i},null,null)),$._2(7,16384,null,0,il.a,[Kn.a,$.k,$.D,Un.a,zn.l,Zn.a],null,null),(n()(),$._23(-1,null,["\n\n                "])),(n()(),$.Y(16777216,null,null,1,null,b)),$._2(10,802816,null,0,al.h,[$.M,$.J,$.s],{ngForOf:[0,"ngForOf"]},null),(n()(),$._23(-1,null,["\n\n            "])),(n()(),$._23(-1,null,["\n\n        "])),(n()(),$._23(-1,null,["\n\n    "]))],function(n,l){n(l,10,0,l.context.$implicit.programs)},function(n,l){n(l,1,0,$._24(l,1,0,$._15(l,2).transform(l.context.$implicit.name)))})}function y(n){return $._25(0,[(n()(),$._3(0,0,null,null,16,"ion-item",[["class","addiction center item item-block"],["href","#/app/routines"],["nav-direction","forward"],["nav-transition","ios"]],null,null,null,Fn.b,Fn.a)),$._2(1,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,5,{contentLabel:0}),$._21(603979776,6,{_buttons:1}),$._21(603979776,7,{_icons:1}),$._2(5,16384,null,0,Yn.a,[],null,null),(n()(),$._23(-1,2,["\n                "])),(n()(),$._3(7,0,null,2,2,"div",[["class","programAddButton"]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.add1Program(n.context.$implicit.name,n.context.$implicit.runningtime,n.context.$implicit.apiName)&&i}return i},null,null)),(n()(),$._23(8,null,["\n                    ","\n                "])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,2,["\n                "])),(n()(),$._3(11,0,null,2,4,"div",[["class","programInfoButton"],["end",""]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.moreProgramInfo(n.context.$implicit.name,n.context.$implicit.runningtime,n.context.$implicit.description,n.context.$implicit.apiName)&&i}return i},null,null)),(n()(),$._23(-1,null,["\n                    "])),(n()(),$._3(13,0,null,null,1,"ion-icon",[["ios","ios-information-circle"],["md","md-information-circle"],["role","img"]],[[2,"hide",null]],null,null,null,null)),$._2(14,147456,[[7,4]],0,yl.a,[Kn.a,$.k,$.D],{ios:[0,"ios"],md:[1,"md"]},null),(n()(),$._23(-1,null,["\n                "])),(n()(),$._23(-1,2,["\n            "]))],function(n,l){n(l,14,0,"ios-information-circle","md-information-circle")},function(n,l){n(l,8,0,$._24(l,8,0,$._15(l,9).transform(l.context.$implicit.name)));n(l,13,0,$._15(l,14)._hidden)})}function N(n){return $._25(0,[$._21(402653184,1,{content:0}),(n()(),$._23(-1,null,["\n"])),(n()(),$._3(2,0,null,null,11,"ion-header",[],null,null,null,null,null)),$._2(3,16384,null,0,pl.a,[Kn.a,$.k,$.D,[2,ll.a]],null,null),(n()(),$._23(-1,null,["\n\n  "])),(n()(),$._3(5,0,null,null,7,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_l.b,_l.a)),$._2(6,49152,null,0,gl.a,[Xn.a,[2,ll.a],[2,el.a],Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(8,0,null,3,3,"ion-title",[],null,null,null,Nl.b,Nl.a)),$._2(9,49152,null,0,kl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),(n()(),$._23(10,0,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,3,["\n  "])),(n()(),$._23(-1,null,["\n\n"])),(n()(),$._23(-1,null,["\n\n\n"])),(n()(),$._3(15,0,null,null,160,"ion-content",[["class","home center"],["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Qn.b,Qn.a)),$._2(16,4374528,[[1,4]],0,nl.a,[Kn.a,Un.a,Zn.a,$.k,$.D,Xn.a,qn.a,$.x,[2,ll.a],[2,el.a]],null,null),(n()(),$._23(-1,1,["\n    "])),(n()(),$._3(18,0,null,1,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,1,["\n    "])),(n()(),$._3(20,0,null,1,2,"div",[["class","modaltitle"]],null,null,null,null,null)),(n()(),$._23(21,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,1,["\n    "])),(n()(),$._3(24,0,null,1,2,"div",[["class","modaldesc"]],null,null,null,null,null)),(n()(),$._23(25,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,1,["\n\n    "])),(n()(),$._3(28,0,null,1,121,"ion-scroll",[["class","wide-as-needed programs"],["scrollX","true"],["scrollY","false"]],[[2,"scroll-x",null],[2,"scroll-y",null]],null,null,Bl.b,Bl.a)),$._2(29,49152,null,0,Rl.a,[],{scrollX:[0,"scrollX"],scrollY:[1,"scrollY"]},null),(n()(),$._23(-1,0,["\n\n            "])),(n()(),$._3(31,0,null,0,10,"ion-row",[["class","row"],["nowrap",""]],[[8,"className",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectPreSetProgram("basic")&&i}return i},null,null)),$._2(32,16384,null,0,El.a,[],null,null),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(34,0,null,null,1,"div",[["class","programpic"]],null,null,null,null,null)),(n()(),$._3(35,0,null,null,0,"img",[["src","assets/img/Basic.png"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(37,0,null,null,3,"div",[["class","programdesc"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._3(39,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._3(40,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._23(-1,0,["\n\n            "])),(n()(),$._3(43,0,null,0,8,"ion-row",[["class","row"],["nowrap",""]],[[8,"className",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectPreSetProgram("business and travel")&&i}return i},null,null)),$._2(44,16384,null,0,El.a,[],null,null),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(46,0,null,null,1,"div",[["class","programpic"]],null,null,null,null,null)),(n()(),$._3(47,0,null,null,0,"img",[["src","assets/img/BusinessTraveller.png"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(49,0,null,null,1,"div",[["class","programdesc"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n            "])),(n()(),$._23(-1,0,["\n\n           "])),(n()(),$._3(53,0,null,0,8,"ion-row",[["class","row"],["nowrap",""]],[[8,"className",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectPreSetProgram("family")&&i}return i},null,null)),$._2(54,16384,null,0,El.a,[],null,null),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(56,0,null,null,1,"div",[["class","programpic"]],null,null,null,null,null)),(n()(),$._3(57,0,null,null,0,"img",[["src","assets/img/family.png"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(59,0,null,null,1,"div",[["class","programdesc"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n            "])),(n()(),$._23(-1,0,["\n\n            "])),(n()(),$._3(63,0,null,0,8,"ion-row",[["class","row"],["nowrap",""]],[[8,"className",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectPreSetProgram("athlete")&&i}return i},null,null)),$._2(64,16384,null,0,El.a,[],null,null),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(66,0,null,null,1,"div",[["class","programpic"]],null,null,null,null,null)),(n()(),$._3(67,0,null,null,0,"img",[["src","assets/img/Athlete.png"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(69,0,null,null,1,"div",[["class","programdesc"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n            "])),(n()(),$._23(-1,0,["\n\n            "])),(n()(),$._3(73,0,null,0,10,"ion-row",[["class","row"],["nowrap",""]],[[8,"className",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectPreSetProgram("spa")&&i}return i},null,null)),$._2(74,16384,null,0,El.a,[],null,null),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(76,0,null,null,1,"div",[["class","programpic"]],null,null,null,null,null)),(n()(),$._3(77,0,null,null,0,"img",[["src","assets/img/Spa.png"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(79,0,null,null,3,"div",[["class","programdesc"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._3(81,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._3(82,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._23(-1,0,["\n\n\n            "])),(n()(),$._3(85,0,null,0,8,"ion-row",[["class","row"],["nowrap",""]],[[8,"className",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectPreSetProgram("stress relief")&&i}return i},null,null)),$._2(86,16384,null,0,El.a,[],null,null),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(88,0,null,null,1,"div",[["class","programpic"]],null,null,null,null,null)),(n()(),$._3(89,0,null,null,0,"img",[["src","assets/img/stress.png"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(91,0,null,null,1,"div",[["class","programdesc"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n            "])),(n()(),$._23(-1,0,["\n\n\n            "])),(n()(),$._3(95,0,null,0,10,"ion-row",[["class","row"],["nowrap",""]],[[8,"className",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectPreSetProgram("senior")&&i}return i},null,null)),$._2(96,16384,null,0,El.a,[],null,null),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(98,0,null,null,1,"div",[["class","programpic"]],null,null,null,null,null)),(n()(),$._3(99,0,null,null,0,"img",[["src","assets/img/Senior.png"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(101,0,null,null,3,"div",[["class","programdesc"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._3(103,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._3(104,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._23(-1,0,["\n\n\n            "])),(n()(),$._3(107,0,null,0,8,"ion-row",[["class","row"],["nowrap",""]],[[8,"className",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectPreSetProgram("chakra balancing")&&i}return i},null,null)),$._2(108,16384,null,0,El.a,[],null,null),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(110,0,null,null,1,"div",[["class","programpic"]],null,null,null,null,null)),(n()(),$._3(111,0,null,null,0,"img",[["src","assets/img/chakra.png"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(113,0,null,null,1,"div",[["class","programdesc"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n            "])),(n()(),$._23(-1,0,["\n\n            "])),(n()(),$._3(117,0,null,0,9,"ion-row",[["class","row"],["nowrap",""]],[[8,"className",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectPreSetProgram("elements")&&i}return i},null,null)),$._2(118,16384,null,0,El.a,[],null,null),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(120,0,null,null,1,"div",[["class","programpic"]],null,null,null,null,null)),(n()(),$._3(121,0,null,null,0,"img",[["src","assets/img/Elements.png"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(123,0,null,null,2,"div",[["class","programdesc"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._3(125,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._23(-1,0,["\n            "])),(n()(),$._3(128,0,null,0,9,"ion-row",[["class","row"],["nowrap",""]],[[8,"className",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectPreSetProgram("petss")&&i}return i},null,null)),$._2(129,16384,null,0,El.a,[],null,null),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(131,0,null,null,1,"div",[["class","programpic"]],null,null,null,null,null)),(n()(),$._3(132,0,null,null,0,"img",[["src","assets/img/MascotasS.png"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(134,0,null,null,2,"div",[["class","programdesc"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._3(136,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._23(-1,0,["\n\n            "])),(n()(),$._3(139,0,null,0,9,"ion-row",[["class","row"],["nowrap",""]],[[8,"className",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.selectPreSetProgram("petsx")&&i}return i},null,null)),$._2(140,16384,null,0,El.a,[],null,null),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(142,0,null,null,1,"div",[["class","programpic"]],null,null,null,null,null)),(n()(),$._3(143,0,null,null,0,"img",[["src","assets/img/MascotasX.png"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(145,0,null,null,2,"div",[["class","programdesc"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._3(147,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._23(-1,0,["\n    "])),(n()(),$._23(-1,1,["\n\n\n    "])),(n()(),$._3(151,0,null,1,2,"div",[["class","modaltitle"]],null,null,null,null,null)),(n()(),$._23(152,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,1,["\n    "])),(n()(),$.Y(16777216,null,1,1,null,v)),$._2(156,802816,null,0,al.h,[$.M,$.J,$.s],{ngForOf:[0,"ngForOf"]},null),(n()(),$._23(-1,1,["\n\n\n    "])),(n()(),$._3(158,0,null,1,2,"div",[["class","modaltitle"]],null,null,null,null,null)),(n()(),$._23(159,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,1,["\n    "])),(n()(),$._3(162,0,null,1,2,"div",[["class","modaldesc"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["PROGRAMS"])),(n()(),$._23(-1,1,["\n    "])),(n()(),$._3(166,0,null,1,8,"div",[["class","paddingmodal"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(168,0,null,null,5,"ion-list",[["class","programlist"]],null,null,null,null,null)),$._2(169,16384,null,0,il.a,[Kn.a,$.k,$.D,Un.a,zn.l,Zn.a],null,null),(n()(),$._23(-1,null,["\n\n\n            "])),(n()(),$.Y(16777216,null,null,1,null,y)),$._2(172,802816,null,0,al.h,[$.M,$.J,$.s],{ngForOf:[0,"ngForOf"]},null),(n()(),$._23(-1,null,["\n\n\n        "])),(n()(),$._23(-1,null,["\n    "])),(n()(),$._23(-1,1,["\n"])),(n()(),$._23(-1,null,["\n"]))],function(n,l){var e=l.component;n(l,29,0,"true","false");n(l,156,0,e.predefinedPrograms);n(l,172,0,e.programs)},function(n,l){var e=l.component;n(l,5,0,$._15(l,6)._hidden,$._15(l,6)._sbPadding);n(l,10,0,$._24(l,10,0,$._15(l,11).transform("programs")));n(l,15,0,$._15(l,16).statusbarPadding,$._15(l,16)._hasRefresher);n(l,21,0,$._24(l,21,0,$._15(l,22).transform("program-kits")));n(l,25,0,$._24(l,25,0,$._15(l,26).transform("popular-routines")));n(l,28,0,$._15(l,29).scrollX,$._15(l,29).scrollY);n(l,31,0,$._6(1,"program ",e.basicButton?"":"opacity-50",""));n(l,37,0,$._24(l,37,0,$._15(l,38).transform("basic")));n(l,43,0,$._6(1,"program ",e.businessTravelButton?"":"opacity-50",""));n(l,49,0,$._24(l,49,0,$._15(l,50).transform("business-traveler")));n(l,53,0,$._6(1,"program ",e.familiyButton?"":"opacity-50",""));n(l,59,0,$._24(l,59,0,$._15(l,60).transform("family-kit")));n(l,63,0,$._6(1,"program ",e.athleteButton?"":"opacity-50",""));n(l,69,0,$._24(l,69,0,$._15(l,70).transform("athlete")));n(l,73,0,$._6(1,"program ",e.spaButton?"":"opacity-50",""));n(l,79,0,$._24(l,79,0,$._15(l,80).transform("spa-wellness")));n(l,85,0,$._6(1,"program ",e.stressButton?"":"opacity-50",""));n(l,91,0,$._24(l,91,0,$._15(l,92).transform("stress-relief")));n(l,95,0,$._6(1,"program ",e.seniorButton?"":"opacity-50",""));n(l,101,0,$._24(l,101,0,$._15(l,102).transform("senior-upper")));n(l,107,0,$._6(1,"program ",e.chakraButton?"":"opacity-50",""));n(l,113,0,$._24(l,113,0,$._15(l,114).transform("chakra-balancing")));n(l,117,0,$._6(1,"program ",e.elementsButton?"":"opacity-50",""));n(l,123,0,$._24(l,123,0,$._15(l,124).transform("elements-meridians")));n(l,128,0,$._6(1,"program ",e.petssButton?"":"opacity-50",""));n(l,134,0,$._24(l,134,0,$._15(l,135).transform("petss")));n(l,139,0,$._6(1,"program ",e.petsxButton?"":"opacity-50",""));n(l,145,0,$._24(l,145,0,$._15(l,146).transform("petsx")));n(l,152,0,$._24(l,152,0,$._15(l,153).transform("programs")));n(l,159,0,$._24(l,159,0,$._15(l,160).transform("independent-programs")));n(l,162,0,$._24(l,162,0,$._15(l,163).transform("tap-program")))})}function k(n){return $._25(0,[(n()(),$._3(0,0,null,null,9,"div",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(2,0,null,null,2,"p",[],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["We were unable to detect your MyMat"])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(6,0,null,null,2,"p",[],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["Please follow the steps to do so"])),(n()(),$._23(-1,null,["\n            "]))],null,function(n,l){n(l,2,0,$._24(l,2,0,$._15(l,3).transform("no-detect-1")));n(l,6,0,$._24(l,6,0,$._15(l,7).transform("no-detect-2")))})}function w(n){return $._25(0,[(n()(),$._3(0,0,null,null,0,"img",[["src","assets/img/loading.gif"],["width","200"]],null,null,null,null,null))],null,null)}function S(n){return $._25(0,[(n()(),$._3(0,0,null,null,37,"div",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(2,0,null,null,0,"img",[["src","assets/img/wifi.png"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(4,0,null,null,1,"div",[["class","titleinstructions"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(7,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(9,0,null,null,2,"p",[],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["Steps to pair your MyMat"])),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(13,0,null,null,2,"p",[],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["1. Turn on your MyMat"])),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(17,0,null,null,2,"p",[],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["2. On your device, navigate to your Wi-Fi settings"])),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(21,0,null,null,2,"p",[],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["3. Connect your device's WiFi with your MyMat network"])),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(25,0,null,null,2,"p",[],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["4. Once is connected, return to the MyMat app"])),(n()(),$._23(-1,null,["\n            "])),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(30,0,null,null,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$.Y(16777216,null,null,1,null,k)),$._2(33,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,null,["\n            "])),(n()(),$.Y(16777216,null,null,1,null,w)),$._2(36,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,null,["\n        "]))],function(n,l){var e=l.component;n(l,33,0,e.mymatNoStatus);n(l,36,0,e.showLoading)},function(n,l){n(l,4,0,$._24(l,4,0,$._15(l,5).transform("please-pair")));n(l,9,0,$._24(l,9,0,$._15(l,10).transform("activate-wifi")));n(l,13,0,$._24(l,13,0,$._15(l,14).transform("activate-wifi-1")));n(l,17,0,$._24(l,17,0,$._15(l,18).transform("activate-wifi-2")));n(l,21,0,$._24(l,21,0,$._15(l,22).transform("activate-wifi-3")));n(l,25,0,$._24(l,25,0,$._15(l,26).transform("activate-wifi-4")))})}function C(n){return $._25(0,[(n()(),$._3(0,0,null,null,0,"iframe",[["height","100%"],["width","100%"]],[[8,"src",5]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.startRoutine()&&i}return i},null,null))],null,function(n,l){n(l,0,0,l.component.iframeUrl)})}function P(n){return $._25(0,[(n()(),$._3(0,0,null,null,59,"div",[["class","status-table divTable"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(2,0,null,null,17,"div",[["class","divTableHeading"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                    "])),(n()(),$._3(4,0,null,null,14,"div",[["class","divTableRow"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                        "])),(n()(),$._3(6,0,null,null,4,"div",[["class","divTableHead divTableCellFirstLeft"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                            "])),(n()(),$._3(8,0,null,null,1,"h4",[],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n                        "])),(n()(),$._23(-1,null,["\n                        "])),(n()(),$._3(12,0,null,null,5,"div",[["class","divTableHead divTableCellFirstRight"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                            "])),(n()(),$._3(14,0,null,null,2,"h4",[["id","battery"]],null,null,null,null,null)),(n()(),$._23(15,null,[""," "])),(n()(),$._3(16,0,null,null,0,"img",[["height","16"]],[[8,"src",4]],null,null,null,null)),(n()(),$._23(-1,null,["\n\n                        "])),(n()(),$._23(-1,null,["\n                    "])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(21,0,null,null,37,"div",[["class","divTableBody"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                    "])),(n()(),$._3(23,0,null,null,7,"div",[["class","divTableRow"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                        "])),(n()(),$._3(25,0,null,null,1,"div",[["class","divTableCell"]],null,null,null,null,null)),(n()(),$._23(26,null,[""," 1"])),(n()(),$._23(-1,null,["\n                        "])),(n()(),$._3(28,0,null,null,1,"div",[["class","divTableCell"],["id","coil1"]],null,null,null,null,null)),(n()(),$._23(29,null,["",""])),(n()(),$._23(-1,null,["\n                    "])),(n()(),$._23(-1,null,["\n                    "])),(n()(),$._3(32,0,null,null,7,"div",[["class","divTableRow"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                        "])),(n()(),$._3(34,0,null,null,1,"div",[["class","divTableCell coilOdd"]],null,null,null,null,null)),(n()(),$._23(35,null,[""," 2"])),(n()(),$._23(-1,null,["\n                        "])),(n()(),$._3(37,0,null,null,1,"div",[["class","divTableCell coilOdd"],["id","coil2"]],null,null,null,null,null)),(n()(),$._23(38,null,["",""])),(n()(),$._23(-1,null,["\n                    "])),(n()(),$._23(-1,null,["\n                    "])),(n()(),$._3(41,0,null,null,7,"div",[["class","divTableRow"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                        "])),(n()(),$._3(43,0,null,null,1,"div",[["class","divTableCell"]],null,null,null,null,null)),(n()(),$._23(44,null,[""," 3"])),(n()(),$._23(-1,null,["\n                        "])),(n()(),$._3(46,0,null,null,1,"div",[["class","divTableCell"],["id","coil3"]],null,null,null,null,null)),(n()(),$._23(47,null,["",""])),(n()(),$._23(-1,null,["\n                    "])),(n()(),$._23(-1,null,["\n                    "])),(n()(),$._3(50,0,null,null,7,"div",[["class","divTableRow"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n                        "])),(n()(),$._3(52,0,null,null,1,"div",[["class","divTableCell coilOdd divTableCellLastLeft"]],null,null,null,null,null)),(n()(),$._23(53,null,[""," 4"])),(n()(),$._23(-1,null,["\n                        "])),(n()(),$._3(55,0,null,null,1,"div",[["class","divTableCell coilOdd divTableCellLastRight"],["id","coil4"]],null,null,null,null,null)),(n()(),$._23(56,null,["",""])),(n()(),$._23(-1,null,["\n                    "])),(n()(),$._23(-1,null,["\n                "])),(n()(),$._23(-1,null,["\n            "]))],null,function(n,l){var e=l.component;n(l,8,0,$._24(l,8,0,$._15(l,9).transform("battery-power")));n(l,15,0,e.batteryCharge);n(l,16,0,$._6(1,"",e.batteryImg,""));n(l,26,0,e.coilText);n(l,29,0,e.coilText1);n(l,35,0,e.coilText);n(l,38,0,e.coilText2);n(l,44,0,e.coilText);n(l,47,0,e.coilText3);n(l,53,0,e.coilText);n(l,56,0,e.coilText4)})}function T(n){return $._25(0,[(n()(),$._3(0,0,null,null,0,"img",[["src","assets/img/loading.gif"],["width","200"]],null,null,null,null,null))],null,null)}function M(n){return $._25(0,[(n()(),$._3(0,0,null,null,17,"div",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$.Y(16777216,null,null,1,null,C)),$._2(3,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,null,["\n            "])),(n()(),$.Y(16777216,null,null,1,null,P)),$._2(6,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(8,0,null,null,1,"p",[],null,null,null,null,null)),(n()(),$._23(-1,null,[" "])),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(11,0,null,null,2,"button",[["class","greenbtn start-routine"],["menu-close",""],["nav-direction","forward"],["nav-transition","ios"]],[[8,"disabled",0],[8,"innerHTML",1]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.startRoutine()&&i}return i},null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["LAUNCH MYMAT"])),(n()(),$._23(-1,null,["\n            "])),(n()(),$.Y(16777216,null,null,1,null,T)),$._2(16,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,null,["\n        "]))],function(n,l){var e=l.component;n(l,3,0,e.showIframeStatus);n(l,6,0,e.showStatusTable);n(l,16,0,e.showLoading)},function(n,l){n(l,11,0,!l.component.isRunRoutineEnabled,$._24(l,11,1,$._15(l,12).transform("start-routine")))})}function x(n){return $._25(0,[(n()(),$._23(-1,null,["\n"])),(n()(),$._3(1,0,null,null,22,"ion-header",[],null,null,null,null,null)),$._2(2,16384,null,0,pl.a,[Kn.a,$.k,$.D,[2,ll.a]],null,null),(n()(),$._23(-1,null,["\n  "])),(n()(),$._3(4,0,null,null,18,"ion-navbar",[["class","bar toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_l.b,_l.a)),$._2(5,49152,null,0,gl.a,[Xn.a,[2,ll.a],[2,el.a],Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(7,0,null,0,8,"button",[["class","button button-clear"],["end",""],["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==$._15(n,9).toggle()&&i}return i},dl.b,dl.a)),$._2(8,1097728,[[1,4]],0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),$._2(9,1064960,null,0,fl.a,[Vn.a,[2,ll.a],[2,hl.a],[2,gl.a]],{menuToggle:[0,"menuToggle"]},null),$._2(10,16384,null,1,bl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),$._21(603979776,1,{_buttons:1}),(n()(),$._23(-1,0,["\n      "])),(n()(),$._3(13,0,null,0,1,"ion-icon",[["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),$._2(14,147456,null,0,yl.a,[Kn.a,$.k,$.D],{name:[0,"name"]},null),(n()(),$._23(-1,0,["\n    "])),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(17,0,null,3,4,"ion-title",[],null,null,null,Nl.b,Nl.a)),$._2(18,49152,null,0,kl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),(n()(),$._23(-1,0,["\n      "])),(n()(),$._3(20,0,null,0,0,"div",[["class","logo"]],null,null,null,null,null)),(n()(),$._23(-1,0,["\n    "])),(n()(),$._23(-1,3,["\n  "])),(n()(),$._23(-1,null,["\n"])),(n()(),$._23(-1,null,["\n\n"])),(n()(),$._3(25,0,null,null,10,"ion-content",[["class","home center"],["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Qn.b,Qn.a)),$._2(26,4374528,null,0,nl.a,[Kn.a,Un.a,Zn.a,$.k,$.D,Xn.a,qn.a,$.x,[2,ll.a],[2,el.a]],null,null),(n()(),$._23(-1,1,["\n        "])),(n()(),$._3(28,0,null,1,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,1,["\n        "])),(n()(),$.Y(16777216,null,1,1,null,S)),$._2(31,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,1,["\n        "])),(n()(),$.Y(16777216,null,1,1,null,M)),$._2(34,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,1,["\n"])),(n()(),$._23(-1,null,["\n"]))],function(n,l){var e=l.component;n(l,9,0,"");n(l,14,0,"menu");n(l,31,0,e.mymatWifi);n(l,34,0,e.mymatStatus)},function(n,l){n(l,4,0,$._15(l,5)._hidden,$._15(l,5)._sbPadding);n(l,7,0,$._15(l,9).isHidden);n(l,13,0,$._15(l,14)._hidden);n(l,25,0,$._15(l,26).statusbarPadding,$._15(l,26)._hasRefresher)})}function D(n){return $._25(0,[(n()(),$._23(-1,null,["\n"])),(n()(),$._3(1,0,null,null,22,"ion-header",[],null,null,null,null,null)),$._2(2,16384,null,0,pl.a,[Kn.a,$.k,$.D,[2,ll.a]],null,null),(n()(),$._23(-1,null,["\n  "])),(n()(),$._3(4,0,null,null,18,"ion-navbar",[["class","bar toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_l.b,_l.a)),$._2(5,49152,null,0,gl.a,[Xn.a,[2,ll.a],[2,el.a],Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(7,0,null,0,8,"button",[["class","button button-clear"],["end",""],["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==$._15(n,9).toggle()&&i}return i},dl.b,dl.a)),$._2(8,1097728,[[1,4]],0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),$._2(9,1064960,null,0,fl.a,[Vn.a,[2,ll.a],[2,hl.a],[2,gl.a]],{menuToggle:[0,"menuToggle"]},null),$._2(10,16384,null,1,bl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),$._21(603979776,1,{_buttons:1}),(n()(),$._23(-1,0,["\n      "])),(n()(),$._3(13,0,null,0,1,"ion-icon",[["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),$._2(14,147456,null,0,yl.a,[Kn.a,$.k,$.D],{name:[0,"name"]},null),(n()(),$._23(-1,0,["\n    "])),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(17,0,null,3,4,"ion-title",[],null,null,null,Nl.b,Nl.a)),$._2(18,49152,null,0,kl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),(n()(),$._23(-1,0,["\n      "])),(n()(),$._3(20,0,null,0,0,"div",[["class","logo"]],null,null,null,null,null)),(n()(),$._23(-1,0,["\n    "])),(n()(),$._23(-1,3,["\n  "])),(n()(),$._23(-1,null,["\n"])),(n()(),$._23(-1,null,["\n\n"])),(n()(),$._3(25,0,null,null,63,"ion-content",[["class","home center"],["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Qn.b,Qn.a)),$._2(26,4374528,null,0,nl.a,[Kn.a,Un.a,Zn.a,$.k,$.D,Xn.a,qn.a,$.x,[2,ll.a],[2,el.a]],null,null),(n()(),$._23(-1,1,["\n  "])),(n()(),$._3(28,0,null,1,59,"div",[["class","list card paddingSmall"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n      "])),(n()(),$._3(30,0,null,null,8,"div",[["class","item"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n\n          "])),(n()(),$._3(32,0,null,null,2,"h2",[],null,null,null,null,null)),(n()(),$._23(33,null,[""," "])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(36,0,null,null,1,"h3",[["style","color:white;"]],null,null,null,null,null)),(n()(),$._23(37,null,["",""])),(n()(),$._23(-1,null,["\n\n      "])),(n()(),$._23(-1,null,["\n\n      "])),(n()(),$._3(40,0,null,null,10,"div",[["class","item item-time item-body"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(42,0,null,null,7,"div",[["class","program-running-left"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(44,0,null,null,1,"div",[["class","program-running-title"]],null,null,null,null,null)),(n()(),$._23(45,null,["",""])),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(47,0,null,null,1,"div",[["class","program-running-duration"]],null,null,null,null,null)),(n()(),$._23(48,null,["",""])),(n()(),$._23(-1,null,["\n          "])),(n()(),$._23(-1,null,["\n      "])),(n()(),$._23(-1,null,["\n\n      "])),(n()(),$._3(52,0,null,null,10,"div",[["class","item item-time item-body"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(54,0,null,null,7,"div",[["class","program-running-left"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(56,0,null,null,1,"div",[["class","program-running-title"]],null,null,null,null,null)),(n()(),$._23(57,null,["",""])),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(59,0,null,null,1,"div",[["class","program-running-duration"]],null,null,null,null,null)),(n()(),$._23(60,null,["",""])),(n()(),$._23(-1,null,["\n          "])),(n()(),$._23(-1,null,["\n      "])),(n()(),$._23(-1,null,["\n\n       "])),(n()(),$._3(64,0,null,null,10,"div",[["class","item item-time item-body"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(66,0,null,null,7,"div",[["class","program-running-left"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(68,0,null,null,1,"div",[["class","program-running-title"]],null,null,null,null,null)),(n()(),$._23(69,null,["",""])),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(71,0,null,null,1,"div",[["class","program-running-duration"]],null,null,null,null,null)),(n()(),$._23(72,null,["",""])),(n()(),$._23(-1,null,["\n          "])),(n()(),$._23(-1,null,["\n      "])),(n()(),$._23(-1,null,["\n\n      "])),(n()(),$._3(76,0,null,null,10,"div",[["class","item item-time item-body"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(78,0,null,null,7,"div",[["class","program-running-left"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(80,0,null,null,1,"div",[["class","program-running-title"]],null,null,null,null,null)),(n()(),$._23(81,null,["",""])),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(83,0,null,null,1,"div",[["class","program-running-duration"]],null,null,null,null,null)),(n()(),$._23(84,null,["",""])),(n()(),$._23(-1,null,["\n          "])),(n()(),$._23(-1,null,["\n      "])),(n()(),$._23(-1,null,["\n  "])),(n()(),$._23(-1,1,["\n"])),(n()(),$._23(-1,null,["\n"]))],function(n,l){n(l,9,0,"");n(l,14,0,"menu")},function(n,l){var e=l.component;n(l,4,0,$._15(l,5)._hidden,$._15(l,5)._sbPadding);n(l,7,0,$._15(l,9).isHidden);n(l,13,0,$._15(l,14)._hidden);n(l,25,0,$._15(l,26).statusbarPadding,$._15(l,26)._hasRefresher);n(l,33,0,$._24(l,33,0,$._15(l,34).transform("remaining-time")));n(l,37,0,e.displayRunningTime);n(l,45,0,e.programTitle1);n(l,48,0,e.program1CurrentTimeDecreasingAsTime);n(l,57,0,e.programTitle2);n(l,60,0,e.program2CurrentTimeDecreasingAsTime);n(l,69,0,e.programTitle3);n(l,72,0,e.program3CurrentTimeDecreasingAsTime);n(l,81,0,e.programTitle4);n(l,84,0,e.program4CurrentTimeDecreasingAsTime)})}function L(n){return $._25(0,[(n()(),$._3(0,0,null,null,7,"ion-item",[["class","no-conection item item-block"]],null,null,null,Fn.b,Fn.a)),$._2(1,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,2,{contentLabel:0}),$._21(603979776,3,{_buttons:1}),$._21(603979776,4,{_icons:1}),$._2(5,16384,null,0,Yn.a,[],null,null),(n()(),$._23(6,2,["",""])),$._17(131072,z.i,[z.j,$.g])],null,function(n,l){n(l,6,0,$._24(l,6,0,$._15(l,7).transform("offline-device-text")))})}function I(n){return $._25(0,[(n()(),$._3(0,0,null,null,3,"button",[["class","button-contact button-calm"],["ion-button",""],["type","submit"]],[[8,"disabled",0]],null,null,dl.b,dl.a)),$._2(1,1097728,[[16,4]],0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),(n()(),$._23(2,0,["",""])),$._17(131072,z.i,[z.j,$.g])],null,function(n,l){n(l,0,0,!l.component.subscribeForm.valid);n(l,2,0,$._24(l,2,0,$._15(l,3).transform("button-send")))})}function B(n){return $._25(0,[(n()(),$._23(-1,null,["\n"])),(n()(),$._3(1,0,null,null,25,"ion-header",[],null,null,null,null,null)),$._2(2,16384,null,0,pl.a,[Kn.a,$.k,$.D,[2,ll.a]],null,null),(n()(),$._23(-1,null,["\n  "])),(n()(),$._3(4,0,null,null,18,"ion-navbar",[["class","bar toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_l.b,_l.a)),$._2(5,49152,null,0,gl.a,[Xn.a,[2,ll.a],[2,el.a],Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(7,0,null,0,8,"button",[["class","button button-clear"],["end",""],["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==$._15(n,9).toggle()&&i}return i},dl.b,dl.a)),$._2(8,1097728,[[1,4]],0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),$._2(9,1064960,null,0,fl.a,[Vn.a,[2,ll.a],[2,hl.a],[2,gl.a]],{menuToggle:[0,"menuToggle"]},null),$._2(10,16384,null,1,bl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),$._21(603979776,1,{_buttons:1}),(n()(),$._23(-1,0,["\n      "])),(n()(),$._3(13,0,null,0,1,"ion-icon",[["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),$._2(14,147456,null,0,yl.a,[Kn.a,$.k,$.D],{name:[0,"name"]},null),(n()(),$._23(-1,0,["\n    "])),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(17,0,null,3,4,"ion-title",[],null,null,null,Nl.b,Nl.a)),$._2(18,49152,null,0,kl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),(n()(),$._23(-1,0,["\n      "])),(n()(),$._3(20,0,null,0,0,"div",[["class","logo"]],null,null,null,null,null)),(n()(),$._23(-1,0,["\n    "])),(n()(),$._23(-1,3,["\n  "])),(n()(),$._23(-1,null,["\n  "])),(n()(),$.Y(16777216,null,null,1,null,L)),$._2(25,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,null,["\n"])),(n()(),$._23(-1,null,["\n\n\n"])),(n()(),$._3(28,0,null,null,130,"ion-content",[["class","home center"],["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Qn.b,Qn.a)),$._2(29,4374528,null,0,nl.a,[Kn.a,Un.a,Zn.a,$.k,$.D,Xn.a,qn.a,$.x,[2,ll.a],[2,el.a]],null,null),(n()(),$._23(-1,1,["\n\n  "])),(n()(),$._3(31,0,null,1,126,"div",[["class","list card cardprogram"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n    "])),(n()(),$._3(33,0,null,null,10,"ion-item",[["class","item item-block"]],null,null,null,Fn.b,Fn.a)),$._2(34,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,5,{contentLabel:0}),$._21(603979776,6,{_buttons:1}),$._21(603979776,7,{_icons:1}),$._2(38,16384,null,0,Yn.a,[],null,null),(n()(),$._23(-1,2,["\n\n        "])),(n()(),$._3(40,0,null,2,2,"h2",[["padding",""]],null,null,null,null,null)),(n()(),$._23(41,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,2,["\n\n    "])),(n()(),$._23(-1,null,["\n\n    "])),(n()(),$._3(45,0,null,null,111,"div",[["class","item item-body"],["padding",""]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n      "])),(n()(),$._3(47,0,null,null,108,"form",[["novalidate",""]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngSubmit"],[null,"submit"],[null,"reset"]],function(n,l,e){var i=!0,a=n.component;if("submit"===l){i=!1!==$._15(n,49).onSubmit(e)&&i}if("reset"===l){i=!1!==$._15(n,49).onReset()&&i}if("ngSubmit"===l){i=!1!==a.attemptSubscribe()&&i}return i},null,null)),$._2(48,16384,null,0,tn.p,[],null,null),$._2(49,540672,null,0,tn.f,[[8,null],[8,null]],{form:[0,"form"]},{ngSubmit:"ngSubmit"}),$._19(2048,null,tn.b,null,[tn.f]),$._2(51,16384,null,0,tn.k,[tn.b],null,null),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(53,0,null,null,98,"ion-list",[],null,null,null,null,null)),$._2(54,16384,null,0,il.a,[Kn.a,$.k,$.D,Un.a,zn.l,Zn.a],null,null),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(56,0,null,null,5,"label",[],null,null,null,null,null)),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(58,0,null,null,2,"p",[["class","lorems center-forced"]],[[8,"innerHTML",1]],null,null,null,null)),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["Text"])),(n()(),$._23(-1,null,["\n          "])),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(63,0,null,null,10,"ion-label",[["class","item-input contact"]],null,null,null,null,null)),$._2(64,278528,null,0,al.g,[$.s,$.t,$.k,$.E],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),$._2(65,16384,null,0,Yl.a,[Kn.a,$.k,$.D,[8,null],[8,null],[8,null],[8,null]],null,null),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(67,0,null,null,5,"ion-input",[["formControlName","name"],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],null,null,xl.b,xl.a)),$._2(68,671744,null,0,tn.e,[[3,tn.b],[8,null],[8,null],[8,null]],{name:[0,"name"]},null),$._19(2048,null,tn.i,null,[tn.e]),$._2(70,16384,null,0,tn.j,[tn.i],null,null),$._2(71,5423104,null,0,Dl.a,[Kn.a,Un.a,An.a,Xn.a,$.k,$.D,[2,nl.a],[2,Hn.a],[2,tn.i],Zn.a],{value:[0,"value"],type:[1,"type"],placeholder:[2,"placeholder"]},null),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n          "])),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(75,0,null,null,9,"ion-label",[["class","item-input contact"]],null,null,null,null,null)),$._2(76,278528,null,0,al.g,[$.s,$.t,$.k,$.E],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),$._2(77,16384,null,0,Yl.a,[Kn.a,$.k,$.D,[8,null],[8,null],[8,null],[8,null]],null,null),(n()(),$._23(-1,null,["\n            "])),(n()(),$._3(79,0,null,null,4,"ion-input",[["autocapitalize","none"],["formControlName","email"],["placeholder","Email"],["type","email"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],null,null,xl.b,xl.a)),$._2(80,671744,null,0,tn.e,[[3,tn.b],[8,null],[8,null],[8,null]],{name:[0,"name"]},null),$._19(2048,null,tn.i,null,[tn.e]),$._2(82,16384,null,0,tn.j,[tn.i],null,null),$._2(83,5423104,null,0,Dl.a,[Kn.a,Un.a,An.a,Xn.a,$.k,$.D,[2,nl.a],[2,Hn.a],[2,tn.i],Zn.a],{value:[0,"value"],type:[1,"type"],placeholder:[2,"placeholder"]},null),(n()(),$._23(-1,null,["\n          "])),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(86,0,null,null,31,"ion-item",[["class","item-input contact item item-block"]],null,null,null,Fn.b,Fn.a)),$._2(87,278528,null,0,al.g,[$.s,$.t,$.k,$.E],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),$._2(88,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,8,{contentLabel:0}),$._21(603979776,9,{_buttons:1}),$._21(603979776,10,{_icons:1}),$._2(92,16384,null,0,Yn.a,[],null,null),(n()(),$._23(-1,2,["\n            "])),(n()(),$._3(94,0,null,1,3,"ion-label",[["class","item-input contact"]],null,null,null,null,null)),$._2(95,16384,[[8,4]],0,Yl.a,[Kn.a,$.k,$.D,[8,null],[8,null],[8,null],[8,null]],null,null),(n()(),$._23(96,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,2,["\n              "])),(n()(),$._3(99,0,null,3,17,"ion-select",[["formControlName","gender"]],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"click"],[null,"keyup.space"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==$._15(n,100)._click(e)&&i}if("keyup.space"===l){i=!1!==$._15(n,100)._keyup()&&i}return i},Jl.b,Jl.a)),$._2(100,1228800,null,1,Vl.a,[Xn.a,An.a,Kn.a,$.k,$.D,[2,Hn.a],sl.a],null,null),$._21(603979776,11,{options:1}),$._19(1024,null,tn.h,function(n){return[n]},[Vl.a]),$._2(103,671744,null,0,tn.e,[[3,tn.b],[8,null],[8,null],[2,tn.h]],{name:[0,"name"]},null),$._19(2048,null,tn.i,null,[tn.e]),$._2(105,16384,null,0,tn.j,[tn.i],null,null),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(107,0,null,null,3,"ion-option",[["value","f"]],null,null,null,null,null)),$._2(108,16384,[[11,4]],0,$l.a,[$.k],{value:[0,"value"]},null),(n()(),$._23(109,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n                "])),(n()(),$._3(112,0,null,null,3,"ion-option",[["value","m"]],null,null,null,null,null)),$._2(113,16384,[[11,4]],0,$l.a,[$.k],{value:[0,"value"]},null),(n()(),$._23(114,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n              "])),(n()(),$._23(-1,2,["\n          "])),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(119,0,null,null,20,"ion-item",[["class","item-input contact select item item-block"]],null,null,null,Fn.b,Fn.a)),$._2(120,278528,null,0,al.g,[$.s,$.t,$.k,$.E],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),$._2(121,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,12,{contentLabel:0}),$._21(603979776,13,{_buttons:1}),$._21(603979776,14,{_icons:1}),$._2(125,16384,null,0,Yn.a,[],null,null),(n()(),$._23(-1,2,["\n            "])),(n()(),$._3(127,0,null,1,4,"ion-label",[["class","item-input contact"]],null,null,null,null,null)),$._2(128,278528,null,0,al.g,[$.s,$.t,$.k,$.E],{klass:[0,"klass"],ngClass:[1,"ngClass"]},null),$._2(129,16384,[[12,4]],0,Yl.a,[Kn.a,$.k,$.D,[8,null],[8,null],[8,null],[8,null]],null,null),(n()(),$._23(130,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,2,["\n            "])),(n()(),$._3(133,0,null,3,5,"ion-datetime",[["displayFormat","MMM DD, YYYY"],["formControlName","birthDate"],["pickerFormat","YYYY-MM-DD"]],[[2,"datetime-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"click"],[null,"keyup.space"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==$._15(n,134)._click(e)&&i}if("keyup.space"===l){i=!1!==$._15(n,134)._keyup()&&i}return i},Wl.b,Wl.a)),$._2(134,1228800,null,0,Gl.a,[An.a,Kn.a,$.k,$.D,[2,Hn.a],[2,Ul.a]],{max:[0,"max"],displayFormat:[1,"displayFormat"],pickerFormat:[2,"pickerFormat"]},null),$._19(1024,null,tn.h,function(n){return[n]},[Gl.a]),$._2(136,671744,null,0,tn.e,[[3,tn.b],[8,null],[8,null],[2,tn.h]],{name:[0,"name"]},null),$._19(2048,null,tn.i,null,[tn.e]),$._2(138,16384,null,0,tn.j,[tn.i],null,null),(n()(),$._23(-1,2,["\n          "])),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(141,0,null,null,9,"ion-item",[["class","item item-block"]],null,null,null,Fn.b,Fn.a)),$._2(142,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,15,{contentLabel:0}),$._21(603979776,16,{_buttons:1}),$._21(603979776,17,{_icons:1}),$._2(146,16384,null,0,Yn.a,[],null,null),(n()(),$._23(-1,2,["\n            "])),(n()(),$.Y(16777216,null,2,1,null,I)),$._2(149,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,2,["\n          "])),(n()(),$._23(-1,null,["\n        "])),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(153,0,null,null,1,"div",[["padding",""]],null,null,null,null,null)),(n()(),$._23(154,null,["\n          ","\n        "])),(n()(),$._23(-1,null,["\n      "])),(n()(),$._23(-1,null,["\n    "])),(n()(),$._23(-1,null,["\n  "])),(n()(),$._23(-1,1,["\n"])),(n()(),$._23(-1,null,["\n"]))],function(n,l){var e=l.component;n(l,9,0,"");n(l,14,0,"menu");n(l,25,0,!e.isDeviceOnline);n(l,49,0,e.subscribeForm);n(l,64,0,"item-input contact",e.errorNameClass);n(l,68,0,"name");n(l,71,0,$._6(1,"",e.name_value,""),"text",$._6(1,"",$._24(l,71,2,$._15(l,72).transform("name-text")),""));n(l,76,0,"item-input contact",e.errorEmailClass);n(l,80,0,"email");n(l,83,0,$._6(1,"",e.email_value,""),"email","Email");n(l,87,0,"item-input contact",e.errorGenderClass);n(l,103,0,"gender");n(l,108,0,"f");n(l,113,0,"m");n(l,120,0,"item-input contact select",e.errorDateClass);n(l,128,0,"item-input contact",e.errorGenderClass);n(l,134,0,e.maxDateOfPicker,"MMM DD, YYYY","YYYY-MM-DD");n(l,136,0,"birthDate");n(l,149,0,e.showSubmitButton)},function(n,l){var e=l.component;n(l,4,0,$._15(l,5)._hidden,$._15(l,5)._sbPadding);n(l,7,0,$._15(l,9).isHidden);n(l,13,0,$._15(l,14)._hidden);n(l,28,0,$._15(l,29).statusbarPadding,$._15(l,29)._hasRefresher);n(l,41,0,$._24(l,41,0,$._15(l,42).transform("profile-text")));n(l,47,0,$._15(l,51).ngClassUntouched,$._15(l,51).ngClassTouched,$._15(l,51).ngClassPristine,$._15(l,51).ngClassDirty,$._15(l,51).ngClassValid,$._15(l,51).ngClassInvalid,$._15(l,51).ngClassPending);n(l,58,0,$._24(l,58,0,$._15(l,59).transform("one-time-profile-text")));n(l,67,0,$._15(l,70).ngClassUntouched,$._15(l,70).ngClassTouched,$._15(l,70).ngClassPristine,$._15(l,70).ngClassDirty,$._15(l,70).ngClassValid,$._15(l,70).ngClassInvalid,$._15(l,70).ngClassPending);n(l,79,0,$._15(l,82).ngClassUntouched,$._15(l,82).ngClassTouched,$._15(l,82).ngClassPristine,$._15(l,82).ngClassDirty,$._15(l,82).ngClassValid,$._15(l,82).ngClassInvalid,$._15(l,82).ngClassPending);n(l,96,0,$._24(l,96,0,$._15(l,97).transform("gender-text")));n(l,99,0,$._15(l,100)._disabled,$._15(l,105).ngClassUntouched,$._15(l,105).ngClassTouched,$._15(l,105).ngClassPristine,$._15(l,105).ngClassDirty,$._15(l,105).ngClassValid,$._15(l,105).ngClassInvalid,$._15(l,105).ngClassPending);n(l,109,0,$._24(l,109,0,$._15(l,110).transform("female-text")));n(l,114,0,$._24(l,114,0,$._15(l,115).transform("male-text")));n(l,130,0,$._24(l,130,0,$._15(l,131).transform("birthdate-text")));n(l,133,0,$._15(l,134)._disabled,$._15(l,138).ngClassUntouched,$._15(l,138).ngClassTouched,$._15(l,138).ngClassPristine,$._15(l,138).ngClassDirty,$._15(l,138).ngClassValid,$._15(l,138).ngClassInvalid,$._15(l,138).ngClassPending);n(l,154,0,e.response_text)})}function R(n){return $._25(0,[(n()(),$._3(0,0,null,null,22,"ion-header",[],null,null,null,null,null)),$._2(1,16384,null,0,pl.a,[Kn.a,$.k,$.D,[2,ll.a]],null,null),(n()(),$._23(-1,null,["\n  "])),(n()(),$._3(3,0,null,null,18,"ion-navbar",[["class","bar toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_l.b,_l.a)),$._2(4,49152,null,0,gl.a,[Xn.a,[2,ll.a],[2,el.a],Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(6,0,null,0,8,"button",[["class","button button-clear"],["end",""],["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==$._15(n,8).toggle()&&i}return i},dl.b,dl.a)),$._2(7,1097728,[[2,4]],0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),$._2(8,1064960,null,0,fl.a,[Vn.a,[2,ll.a],[2,hl.a],[2,gl.a]],{menuToggle:[0,"menuToggle"]},null),$._2(9,16384,null,1,bl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),$._21(603979776,2,{_buttons:1}),(n()(),$._23(-1,0,["\n      "])),(n()(),$._3(12,0,null,0,1,"ion-icon",[["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),$._2(13,147456,null,0,yl.a,[Kn.a,$.k,$.D],{name:[0,"name"]},null),(n()(),$._23(-1,0,["\n    "])),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(16,0,null,3,4,"ion-title",[],null,null,null,Nl.b,Nl.a)),$._2(17,49152,null,0,kl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),(n()(),$._23(-1,0,["\n      "])),(n()(),$._3(19,0,null,0,0,"div",[["class","logo"]],null,null,null,null,null)),(n()(),$._23(-1,0,["\n    "])),(n()(),$._23(-1,3,["\n  "])),(n()(),$._23(-1,null,["\n"]))],function(n,l){n(l,8,0,"");n(l,13,0,"menu")},function(n,l){n(l,3,0,$._15(l,4)._hidden,$._15(l,4)._sbPadding);n(l,6,0,$._15(l,8).isHidden);n(l,12,0,$._15(l,13)._hidden)})}function E(n){return $._25(0,[(n()(),$._3(0,0,null,null,4,"ion-slide",[],null,null,null,Zl.b,Zl.a)),$._2(1,180224,null,0,Xl.a,[$.k,$.D,Ql.a],null,null),(n()(),$._23(-1,0,["\n              "])),(n()(),$._3(3,0,null,0,0,"img",[],[[8,"src",4]],null,null,null,null)),(n()(),$._23(-1,0,["\n          "]))],null,function(n,l){n(l,3,0,$._6(1,"",l.context.$implicit,""))})}function j(n){return $._25(0,[$._21(402653184,1,{slides:0}),(n()(),$.Y(16777216,null,null,1,null,R)),$._2(2,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,null,["\n\n"])),(n()(),$._3(4,0,null,null,15,"ion-content",[["no-border",""],["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Qn.b,Qn.a)),$._2(5,4374528,null,0,nl.a,[Kn.a,Un.a,Zn.a,$.k,$.D,Xn.a,qn.a,$.x,[2,ll.a],[2,el.a]],null,null),(n()(),$._23(-1,1,["\n        "])),(n()(),$._3(7,0,null,1,1,"button",[["class","swiper-button-prev swiper-button-black"],["color","light"],["float-left",""],["ion-button",""]],[[8,"disabled",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.prev()&&i}return i},dl.b,dl.a)),$._2(8,1097728,null,0,hl.a,[[8,""],Kn.a,$.k,$.D],{color:[0,"color"]},null),(n()(),$._23(-1,1,["\n\n        "])),(n()(),$._3(10,0,null,1,5,"ion-slides",[],null,null,null,ne.b,ne.a)),$._2(11,1228800,[[1,4],["slides",4]],0,Ql.a,[Kn.a,Un.a,$.x,[2,ll.a],$.k,$.D],null,null),(n()(),$._23(-1,0,["\n          "])),(n()(),$.Y(16777216,null,0,1,null,E)),$._2(14,802816,null,0,al.h,[$.M,$.J,$.s],{ngForOf:[0,"ngForOf"]},null),(n()(),$._23(-1,0,["\n        "])),(n()(),$._23(-1,1,["\n        "])),(n()(),$._3(17,0,null,1,1,"button",[["class","swiper-button-next swiper-button-black"],["color","light"],["float-right",""],["ion-button",""]],[[8,"disabled",0]],[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.next()&&i}return i},dl.b,dl.a)),$._2(18,1097728,null,0,hl.a,[[8,""],Kn.a,$.k,$.D],{color:[0,"color"]},null),(n()(),$._23(-1,1,["\n\n"])),(n()(),$._23(-1,null,["\n"])),(n()(),$._3(21,0,null,null,16,"ion-footer",[],null,null,null,null,null)),$._2(22,16384,null,0,le.a,[Kn.a,$.k,$.D,[2,ll.a]],null,null),(n()(),$._23(-1,null,["\n  "])),(n()(),$._3(24,0,null,null,12,"ion-toolbar",[["class","toolbar"],["color","dark"]],[[2,"statusbar-padding",null]],null,null,ee.b,ee.a)),$._2(25,49152,null,0,vl.a,[Kn.a,$.k,$.D],{color:[0,"color"]},null),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(27,0,null,2,8,"ion-buttons",[["end",""]],null,null,null,null,null)),$._2(28,16384,null,1,bl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),$._21(603979776,3,{_buttons:1}),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(31,0,null,null,3,"button",[["class","button-clear"],["ion-button",""]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.skipInstructions()&&i}return i},dl.b,dl.a)),$._2(32,1097728,[[3,4]],0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),(n()(),$._23(33,0,["\n            ","\n        "])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n    "])),(n()(),$._23(-1,3,["\n  "])),(n()(),$._23(-1,null,["\n"])),(n()(),$._23(-1,null,["\n"]))],function(n,l){var e=l.component;n(l,2,0,e.showHeader);n(l,8,0,"light");n(l,14,0,e.images);n(l,18,0,"light");n(l,25,0,"dark")},function(n,l){n(l,4,0,$._15(l,5).statusbarPadding,$._15(l,5)._hasRefresher);n(l,7,0,$._15(l,11).isBeginning());n(l,17,0,$._15(l,11).isEnd());n(l,24,0,$._15(l,25)._sbPadding);n(l,33,0,$._24(l,33,0,$._15(l,34).transform("skip")))})}function F(n){return $._25(0,[(n()(),$._23(-1,null,["\n"])),(n()(),$._3(1,0,null,null,10,"ion-header",[],null,null,null,null,null)),$._2(2,16384,null,0,pl.a,[Kn.a,$.k,$.D,[2,ll.a]],null,null),(n()(),$._23(-1,null,["\n\n  "])),(n()(),$._3(4,0,null,null,6,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_l.b,_l.a)),$._2(5,49152,null,0,gl.a,[Xn.a,[2,ll.a],[2,el.a],Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(7,0,null,3,2,"ion-title",[],null,null,null,Nl.b,Nl.a)),$._2(8,49152,null,0,kl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),(n()(),$._23(9,0,["",""])),(n()(),$._23(-1,3,["\n  "])),(n()(),$._23(-1,null,["\n\n"])),(n()(),$._23(-1,null,["\n\n\n"])),(n()(),$._3(13,0,null,null,32,"ion-content",[["class","home center"],["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Qn.b,Qn.a)),$._2(14,4374528,null,0,nl.a,[Kn.a,Un.a,Zn.a,$.k,$.D,Xn.a,qn.a,$.x,[2,ll.a],[2,el.a]],null,null),(n()(),$._23(-1,1,["\n\n    "])),(n()(),$._3(16,0,null,1,28,"div",[["class","program-info-modal-holder"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(18,0,null,null,8,"div",[["class","program-info-modal-header"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(20,0,null,null,2,"h2",[["class","program-info-modal-running-time-title"]],null,null,null,null,null)),(n()(),$._23(21,null,[""," "])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n        \t"])),(n()(),$._3(24,0,null,null,1,"h2",[["class","program-info-modal-running-time"]],null,null,null,null,null)),(n()(),$._23(25,null,["\n             "," \n        \t"])),(n()(),$._23(-1,null,["\n        "])),(n()(),$._23(-1,null,["\n       \n        "])),(n()(),$._3(28,0,null,null,15,"div",[["class","program-info-modal-mainbody"]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n          "])),(n()(),$._3(30,0,null,null,12,"ion-scroll",[["style","height:100%;overflow-y:scroll;"]],[[2,"scroll-x",null],[2,"scroll-y",null]],null,null,Bl.b,Bl.a)),$._2(31,49152,null,0,Rl.a,[],null,null),(n()(),$._23(-1,0,["\n            "])),(n()(),$._3(33,0,null,0,1,"div",[["style","height:100%; line-height:25px;"]],null,null,null,null,null)),(n()(),$._23(34,null,["",""])),(n()(),$._23(-1,0,["\n            "])),(n()(),$._3(36,0,null,0,0,"br",[],null,null,null,null,null)),(n()(),$._23(-1,0,["\n            "])),(n()(),$._3(38,0,null,0,3,"button",[["class","button-add-program"],["ion-button",""]],null,[[null,"click"]],function(n,l,e){var i=!0,a=n.component;if("click"===l){i=!1!==a.add1Program(a.programName,a.programRunningTime,a.programApiName)&&i}return i},dl.b,dl.a)),$._2(39,1097728,null,0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),(n()(),$._23(40,0,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,0,["\n          "])),(n()(),$._23(-1,null,["\n        "])),(n()(),$._23(-1,null,["\n    "])),(n()(),$._23(-1,1,["\n"])),(n()(),$._23(-1,null,["\n"]))],null,function(n,l){var e=l.component;n(l,4,0,$._15(l,5)._hidden,$._15(l,5)._sbPadding);n(l,9,0,e.programName);n(l,13,0,$._15(l,14).statusbarPadding,$._15(l,14)._hasRefresher);n(l,21,0,$._24(l,21,0,$._15(l,22).transform("running-time")));n(l,25,0,e.programRunningTime);n(l,30,0,$._15(l,31).scrollX,$._15(l,31).scrollY);n(l,34,0,e.programDescription);n(l,40,0,$._24(l,40,0,$._15(l,41).transform("add-program")))})}function H(n){return $._25(0,[(n()(),$._3(0,0,null,null,7,"ion-item",[["class","no-conection item item-block"]],null,null,null,Fn.b,Fn.a)),$._2(1,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,2,{contentLabel:0}),$._21(603979776,3,{_buttons:1}),$._21(603979776,4,{_icons:1}),$._2(5,16384,null,0,Yn.a,[],null,null),(n()(),$._23(6,2,["",""])),$._17(131072,z.i,[z.j,$.g])],null,function(n,l){n(l,6,0,$._24(l,6,0,$._15(l,7).transform("offline-device-text")))})}function A(n){return $._25(0,[(n()(),$._3(0,0,null,null,82,"div",[["padding",""]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n    "])),(n()(),$._3(2,0,null,null,2,"div",[["text-center",""],["text-uppercase",""]],null,null,null,null,null)),(n()(),$._23(3,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n    "])),(n()(),$._3(6,0,null,null,75,"form",[["novalidate",""]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngSubmit"],[null,"submit"],[null,"reset"]],function(n,l,e){var i=!0,a=n.component;if("submit"===l){i=!1!==$._15(n,8).onSubmit(e)&&i}if("reset"===l){i=!1!==$._15(n,8).onReset()&&i}if("ngSubmit"===l){i=!1!==a.attemptSaveFavorite()&&i}return i},null,null)),$._2(7,16384,null,0,tn.p,[],null,null),$._2(8,540672,null,0,tn.f,[[8,null],[8,null]],{form:[0,"form"]},{ngSubmit:"ngSubmit"}),$._19(2048,null,tn.b,null,[tn.f]),$._2(10,16384,null,0,tn.k,[tn.b],null,null),(n()(),$._23(-1,null,["\n      "])),(n()(),$._3(12,0,null,null,68,"ion-list",[],null,null,null,null,null)),$._2(13,16384,null,0,il.a,[Kn.a,$.k,$.D,Un.a,zn.l,Zn.a],null,null),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(15,0,null,null,13,"ion-item",[["class","item-input contact item item-block"]],null,null,null,Fn.b,Fn.a)),$._2(16,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,5,{contentLabel:0}),$._21(603979776,6,{_buttons:1}),$._21(603979776,7,{_icons:1}),$._2(20,16384,null,0,Yn.a,[],null,null),(n()(),$._23(-1,2,["\n          "])),(n()(),$._3(22,0,null,3,5,"ion-input",[["formControlName","name"],["padding",""],["type","text"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],null,null,xl.b,xl.a)),$._2(23,671744,null,0,tn.e,[[3,tn.b],[8,null],[8,null],[8,null]],{name:[0,"name"]},null),$._19(2048,null,tn.i,null,[tn.e]),$._2(25,16384,null,0,tn.j,[tn.i],null,null),$._2(26,5423104,null,0,Dl.a,[Kn.a,Un.a,An.a,Xn.a,$.k,$.D,[2,nl.a],[2,Hn.a],[2,tn.i],Zn.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,2,["\n        "])),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(30,0,null,null,22,"ion-item",[["class","item item-block"]],null,null,null,Fn.b,Fn.a)),$._2(31,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,8,{contentLabel:0}),$._21(603979776,9,{_buttons:1}),$._21(603979776,10,{_icons:1}),$._2(35,16384,null,0,Yn.a,[],null,null),(n()(),$._23(-1,2,["\n          "])),(n()(),$._3(37,0,null,2,2,"p",[],null,null,null,null,null)),(n()(),$._23(38,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,2,["\n          "])),(n()(),$._3(41,0,null,2,2,"p",[],null,null,null,null,null)),(n()(),$._23(42,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,2,["\n          "])),(n()(),$._3(45,0,null,2,2,"p",[],null,null,null,null,null)),(n()(),$._23(46,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,2,["\n          "])),(n()(),$._3(49,0,null,2,2,"p",[],null,null,null,null,null)),(n()(),$._23(50,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,2,["\n        "])),(n()(),$._23(-1,null,["\n        "])),(n()(),$._3(54,0,null,null,25,"ion-item",[["class","item item-block"]],null,null,null,Fn.b,Fn.a)),$._2(55,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,11,{contentLabel:0}),$._21(603979776,12,{_buttons:1}),$._21(603979776,13,{_icons:1}),$._2(59,16384,null,0,Yn.a,[],null,null),(n()(),$._23(-1,2,["\n          "])),(n()(),$._3(61,0,null,0,3,"button",[["class","button-contact button-calm"],["ion-button",""],["item-left",""],["type","submit"]],[[8,"disabled",0]],null,null,dl.b,dl.a)),$._2(62,1097728,[[12,4]],0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),(n()(),$._23(63,0,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,2,["\n          "])),(n()(),$._3(66,0,null,4,12,"button",[["class","button-contact button-calm"],["icon-only",""],["ion-button",""],["item-end",""]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.dismiss(e)&&i}return i},dl.b,dl.a)),$._2(67,1097728,[[12,4]],0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,0,["\n            "])),(n()(),$._3(69,0,null,0,3,"span",[["color","primary"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),$._2(70,147456,null,0,re.a,[[8,"ios"],Un.a,$.x],null,null),$._2(71,16384,null,0,se.a,[Kn.a,$.k,$.D],{color:[0,"color"]},null),(n()(),$._23(-1,null,["Cancel"])),(n()(),$._23(-1,0,["\n            "])),(n()(),$._3(74,0,null,0,3,"span",[["ion-text",""],["showWhen","android,windows"]],[[2,"hidden-show-when",null]],null,null,null,null)),$._2(75,147456,null,0,re.a,[[8,"android,windows"],Un.a,$.x],null,null),$._2(76,16384,null,0,se.a,[Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,null,["Cancel"])),(n()(),$._23(-1,0,["\n          "])),(n()(),$._23(-1,2,["\n        "])),(n()(),$._23(-1,null,["\n      "])),(n()(),$._23(-1,null,["\n    "])),(n()(),$._23(-1,null,["\n  "]))],function(n,l){n(l,8,0,l.component.saveRoutineForm);n(l,23,0,"name");n(l,26,0,"text",$._6(1,"",$._24(l,26,1,$._15(l,27).transform("name-text")),""));n(l,71,0,"primary")},function(n,l){var e=l.component;n(l,3,0,$._24(l,3,0,$._15(l,4).transform("add-favorites")));n(l,6,0,$._15(l,10).ngClassUntouched,$._15(l,10).ngClassTouched,$._15(l,10).ngClassPristine,$._15(l,10).ngClassDirty,$._15(l,10).ngClassValid,$._15(l,10).ngClassInvalid,$._15(l,10).ngClassPending);n(l,22,0,$._15(l,25).ngClassUntouched,$._15(l,25).ngClassTouched,$._15(l,25).ngClassPristine,$._15(l,25).ngClassDirty,$._15(l,25).ngClassValid,$._15(l,25).ngClassInvalid,$._15(l,25).ngClassPending);n(l,38,0,$._24(l,38,0,$._15(l,39).transform(e.program1)));n(l,42,0,$._24(l,42,0,$._15(l,43).transform(e.program2)));n(l,46,0,$._24(l,46,0,$._15(l,47).transform(e.program3)));n(l,50,0,$._24(l,50,0,$._15(l,51).transform(e.program4)));n(l,61,0,!e.saveRoutineForm.valid);n(l,63,0,$._24(l,63,0,$._15(l,64).transform("button-save")));n(l,69,0,!$._15(l,70).isMatch);n(l,74,0,!$._15(l,75).isMatch)})}function K(n){return $._25(0,[(n()(),$._3(0,0,null,null,2,"div",[["text-center",""]],null,null,null,null,null)),(n()(),$._23(1,null,["","..."])),$._17(131072,z.i,[z.j,$.g])],null,function(n,l){n(l,1,0,$._24(l,1,0,$._15(l,2).transform("loading")))})}function O(n){return $._25(0,[(n()(),$._3(0,0,null,null,2,"div",[["text-center",""]],null,null,null,null,null)),(n()(),$._23(1,null,["","..."])),$._17(131072,z.i,[z.j,$.g])],null,function(n,l){n(l,1,0,$._24(l,1,0,$._15(l,2).transform("connect-favorites-text")))})}function Y(n){return $._25(0,[(n()(),$._3(0,0,null,null,13,"ion-item",[["class","item item-block"]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.showProgram(n.context.$implicit.id,n.context.$implicit.name,n.context.$implicit.program1,n.context.$implicit.program2,n.context.$implicit.program3,n.context.$implicit.program4)&&i}return i},Fn.b,Fn.a)),$._2(1,1097728,null,3,Hn.a,[An.a,Kn.a,$.k,$.D,[2,On.a]],null,null),$._21(335544320,14,{contentLabel:0}),$._21(603979776,15,{_buttons:1}),$._21(603979776,16,{_icons:1}),$._2(5,16384,null,0,Yn.a,[],null,null),(n()(),$._23(6,2,["\n      ","\n      "])),(n()(),$._3(7,0,null,4,5,"button",[["icon-only",""],["ion-button",""],["item-end",""]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.delete(e,n.context.$implicit.id)&&i}return i},dl.b,dl.a)),$._2(8,1097728,[[15,4]],0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,0,["\n        "])),(n()(),$._3(10,0,null,0,1,"ion-icon",[["name","md-close"],["role","img"]],[[2,"hide",null]],null,null,null,null)),$._2(11,147456,null,0,yl.a,[Kn.a,$.k,$.D],{name:[0,"name"]},null),(n()(),$._23(-1,0,["\n      "])),(n()(),$._23(-1,2,["\n    "]))],function(n,l){n(l,11,0,"md-close")},function(n,l){n(l,6,0,l.context.$implicit.name);n(l,10,0,$._15(l,11)._hidden)})}function J(n){return $._25(0,[(n()(),$._23(-1,null,["\n"])),(n()(),$._3(1,0,null,null,33,"ion-header",[],null,null,null,null,null)),$._2(2,16384,null,0,pl.a,[Kn.a,$.k,$.D,[2,ll.a]],null,null),(n()(),$._23(-1,null,["\n  "])),(n()(),$._3(4,0,null,null,26,"ion-toolbar",[["class","toolbar"]],[[2,"statusbar-padding",null]],null,null,ee.b,ee.a)),$._2(5,49152,null,0,vl.a,[Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(7,0,null,3,3,"ion-title",[],null,null,null,Nl.b,Nl.a)),$._2(8,49152,null,0,kl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),(n()(),$._23(9,0,["\n      ","\n    "])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,3,["\n    "])),(n()(),$._3(12,0,null,1,17,"ion-buttons",[["start",""]],null,null,null,null,null)),$._2(13,16384,null,1,bl.a,[Kn.a,$.k,$.D,[2,vl.a],[2,gl.a]],null,null),$._21(603979776,1,{_buttons:1}),(n()(),$._23(-1,null,["\n      "])),(n()(),$._3(16,0,null,null,12,"button",[["ion-button",""]],null,[[null,"click"]],function(n,l,e){var i=!0;if("click"===l){i=!1!==n.component.dismiss()&&i}return i},dl.b,dl.a)),$._2(17,1097728,[[1,4]],0,hl.a,[[8,""],Kn.a,$.k,$.D],null,null),(n()(),$._23(-1,0,["\n        "])),(n()(),$._3(19,0,null,0,4,"span",[["color","primary"],["ion-text",""],["showWhen","ios"]],[[2,"hidden-show-when",null]],null,null,null,null)),$._2(20,147456,null,0,re.a,[[8,"ios"],Un.a,$.x],null,null),$._2(21,16384,null,0,se.a,[Kn.a,$.k,$.D],{color:[0,"color"]},null),(n()(),$._23(22,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,0,["\n        "])),(n()(),$._3(25,0,null,0,2,"ion-icon",[["name","md-close"],["role","img"],["showWhen","android,windows"]],[[2,"hide",null],[2,"hidden-show-when",null]],null,null,null,null)),$._2(26,147456,null,0,yl.a,[Kn.a,$.k,$.D],{name:[0,"name"]},null),$._2(27,147456,null,0,re.a,[[8,"android,windows"],Un.a,$.x],null,null),(n()(),$._23(-1,0,["\n      "])),(n()(),$._23(-1,null,["\n    "])),(n()(),$._23(-1,3,["\n  "])),(n()(),$._23(-1,null,["\n  "])),(n()(),$.Y(16777216,null,null,1,null,H)),$._2(33,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,null,["\n"])),(n()(),$._23(-1,null,["\n\n"])),(n()(),$._3(36,0,null,null,21,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Qn.b,Qn.a)),$._2(37,4374528,null,0,nl.a,[Kn.a,Un.a,Zn.a,$.k,$.D,Xn.a,qn.a,$.x,[2,ll.a],[2,el.a]],null,null),(n()(),$._23(-1,1,["\n  "])),(n()(),$.Y(16777216,null,1,1,null,A)),$._2(40,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,1,["\n  "])),(n()(),$._3(42,0,null,1,14,"div",[["padding-top",""]],null,null,null,null,null)),(n()(),$._23(-1,null,["\n    "])),(n()(),$._3(44,0,null,null,2,"div",[["text-center",""],["text-uppercase",""]],null,null,null,null,null)),(n()(),$._23(45,null,["",""])),$._17(131072,z.i,[z.j,$.g]),(n()(),$._23(-1,null,["\n    "])),(n()(),$.Y(16777216,null,null,1,null,K)),$._2(49,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,null,["\n    "])),(n()(),$.Y(16777216,null,null,1,null,O)),$._2(52,16384,null,0,al.i,[$.M,$.J],{ngIf:[0,"ngIf"]},null),(n()(),$._23(-1,null,["\n    "])),(n()(),$.Y(16777216,null,null,1,null,Y)),$._2(55,802816,null,0,al.h,[$.M,$.J,$.s],{ngForOf:[0,"ngForOf"]},null),(n()(),$._23(-1,null,["\n  "])),(n()(),$._23(-1,1,["\n"]))],function(n,l){var e=l.component;n(l,21,0,"primary");n(l,26,0,"md-close");n(l,33,0,!e.isDeviceOnline);n(l,40,0,e.showSaveForm);n(l,49,0,e.showLoadingListing);n(l,52,0,!e.isDeviceOnline);n(l,55,0,e.favoritesList)},function(n,l){n(l,4,0,$._15(l,5)._sbPadding);n(l,9,0,$._24(l,9,0,$._15(l,10).transform("favorite-routines")));n(l,19,0,!$._15(l,20).isMatch);n(l,22,0,$._24(l,22,0,$._15(l,23).transform("back")));n(l,25,0,$._15(l,26)._hidden,!$._15(l,27).isMatch);n(l,36,0,$._15(l,37).statusbarPadding,$._15(l,37)._hasRefresher);n(l,45,0,$._24(l,45,0,$._15(l,46).transform("my-favorites")))})}Object.defineProperty(l,"__esModule",{value:!0});var V=e(53),$=e(0),W=(e(1),e(17)),G=(e(32),e(158)),U=e(159),q=e(163),z=e(23),Z=e(268),X=e(112),Q=e(113),nn=e(234),ln=e(114),en=e(115),an={localIPAddress:"192.168.0.",myMatApiStartUrl:"http://192.168.1.3/start.htm",myMatApiIndexUrl:"http://192.168.1.3/index.htm",myMatApiUrl:"https://healinghouse.life/api/mymat/",storageKeyLang:"mymat_lang",storageKeyBubble1:"MyMat_bubbleRoutineProgram1",storageKeyBubble2:"MyMat_bubbleRoutineProgram2",storageKeyBubble3:"MyMat_bubbleRoutineProgram3",storageKeyBubble4:"MyMat_bubbleRoutineProgram4",storageKeyScrollTop:"MyMat_scrollTop",storageKeyCurrentProgram:"MyMat_currentProgram",deviceInfoKey:"MyMatDevice",test_uuid:"UUIDTEST-1234-5678-9100-0000AGO19813",latestRoutinesKey:"latestRoutines",monthNames:["january","february","march","april","may","june","july","August","September","October","november","december"],shortTitles:["earth-element-upper","fire-element-upper","metal-element-upper","water-element-upper","wood-element-upper","gallbladder-meridian-upper","kidney-meridian-upper","heart-meridian-upper","large-intestine-meridian-upper","liver-meridian-upper","lung-meridian-upper","pericardium-meridian-upper","small-intestine-meridian-upper","spleen-pancreas-meridian-upper","stomach-meridian-upper","triple-warmer-meridian-upper","urinary-bladder-meridian-upper"]},tn=e(20),un=e(74),rn=(e(269),e(270)),sn=function(){function n(n,l,e){this.http=n,this.httpNative=l,this.httpModule=e}return n.prototype.test_language=function(){var n=this;return new Promise(function(l,e){n.http.get(an.myMatApiIndexUrl).subscribe(function(n){l(n)},function(n){e(n)})})},n.prototype.test=function(){var n=this,l=new G.d;return new Promise(function(e,i){n.httpModule.get(an.myMatApiIndexUrl,{headers:l}).pipe(Object(rn.timeout)(5e3)).map(function(n){return n.text()}).subscribe(function(n){e(n)},function(n){i(n)})})},n.prototype.sendError=function(n){var l=this;return new Promise(function(e,i){var a=new G.d;l.httpModule.post(an.myMatApiUrl+"report_error.php",JSON.stringify(n),{headers:a}).subscribe(function(n){e(n.json())},function(n){i(n)})})},n.prototype.sendEmail=function(n){var l=this;return new Promise(function(e,i){var a=new G.d;l.httpModule.post(an.myMatApiUrl+"contact_us.php",JSON.stringify(n),{headers:a}).subscribe(function(n){e(n.json())},function(n){i(n)})})},n.prototype.runPost=function(n,l){var e=this;return new Promise(function(i,a){e.http.post(an.myMatApiUrl+n,l).subscribe(function(n){i(n)},function(n){a(n)})})},n.prototype.start=function(n){var l=n[0].split("|")[3],e=n[1].split("|")[3],i=n[2].split("|")[3],a=n[3].split("|")[3];return this.httpNative.get(an.myMatApiStartUrl+"?"+("P1="+l+"&P2="+e+"&P3="+i+"&P4="+a),"",{})},n}(),on=function(){function n(n,l,e,i,a){this.navCtrl=n,this.navParams=l,this.plt=e,this.storage=i,this.translateService=a,this.showHeader=!1}return n.prototype.ionViewDidLoad=function(){var n=this;this.storage.get(an.storageKeyLang).then(function(l){n.translateService.getTranslation(l).subscribe(function(l){n.culture=l.culture,n.images=new Array;for(var e=1;e<=5;e++)n.images.push("./assets/imgs/instructions/"+n.culture+"/"+e+".png")})})},n.prototype.skipInstructions=function(){this.navCtrl.popToRoot()},n.prototype.next=function(){this.slides.slideNext()},n.prototype.prev=function(){this.slides.slidePrev()},n}(),mn=e(62),cn=[{category:"basic",name:"pain-relief-upper",programs:[{name:"",apiName:"Pain_Conditions",runningtime:"",description:""},{name:"",apiName:"Nervous_System",runningtime:"",description:""},{name:"",apiName:"Peace",runningtime:"",description:""},{name:"",apiName:"Regeneration",runningtime:"",description:""}]},{category:"basic",name:"injury-upper",programs:[{name:"",apiName:"Injury",runningtime:"",description:""},{name:"",apiName:"Lymphatic_System",runningtime:"",description:""},{name:"",apiName:"Bone_Tissues",runningtime:"",description:""},{name:"",apiName:"Energy_Balancing",runningtime:"",description:""}]},{category:"basic",name:"stress-relief-upper",programs:[{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Electro_Smog",runningtime:"",description:""},{name:"",apiName:"Relaxation",runningtime:"",description:""},{name:"",apiName:"Energy_Balancing",runningtime:"",description:""}]},{category:"basic",name:"immune-system-upper",programs:[{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Lymphatic_System",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Energy_Balancing",runningtime:"",description:""}]},{category:"basic",name:"respiratory-system-upper",programs:[{name:"",apiName:"Respiratory_System",runningtime:"",description:""},{name:"",apiName:"Sinus_Cavities",runningtime:"",description:""},{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Lung_Meridian",runningtime:"",description:""}]},{category:"basic",name:"detoxification-upper",programs:[{name:"",apiName:"Detoxification",runningtime:"",description:""},{name:"",apiName:"Digestive_System",runningtime:"",description:""},{name:"",apiName:"Large_Intestine_Meridian",runningtime:"",description:""},{name:"",apiName:"Intestinal_Flora",runningtime:"",description:""}]},{category:"basic",name:"headache-upper",programs:[{name:"",apiName:"Headache",runningtime:"",description:""},{name:"",apiName:"Peace",runningtime:"",description:""},{name:"",apiName:"Energy_Balancing",runningtime:"",description:""},{name:"",apiName:"Liver_Meridian",runningtime:"",description:""}]},{category:"basic",name:"grounding-upper",programs:[{name:"",apiName:"Energy_Balancing",runningtime:"",description:""},{name:"",apiName:"Electro_Smog",runningtime:"",description:""},{name:"",apiName:"Earth_Element",runningtime:"",description:""},{name:"",apiName:"Root_Chakra",runningtime:"",description:""}]},{category:"business and travel",name:"energy-booster-upper",programs:[{name:"",apiName:"Energy_Booster",runningtime:"",description:""},{name:"",apiName:"Exhaustion",runningtime:"",description:""},{name:"",apiName:"Adrenal_Gland",runningtime:"",description:""},{name:"",apiName:"Brow_Chakra",runningtime:"",description:""}]},{category:"business and travel",name:"JET-LAG",programs:[{name:"",apiName:"Jet-Lag/Climate_Change",runningtime:"",description:""},{name:"",apiName:"Electro_Smog",runningtime:"",description:""},{name:"",apiName:"Relaxation",runningtime:"",description:""},{name:"",apiName:"Earth_Element",runningtime:"",description:""}]},{category:"business and travel",name:"JET-LAG",programs:[{name:"",apiName:"Jet-Lag/Climate_Change",runningtime:"",description:""},{name:"",apiName:"Exhaustion",runningtime:"",description:""},{name:"",apiName:"Circulatory_System",runningtime:"",description:""},{name:"",apiName:"Energy_Booster",runningtime:"",description:""}]},{category:"business and travel",name:"concentration-upper",programs:[{name:"",apiName:"Concentration",runningtime:"",description:""},{name:"",apiName:"Discernment",runningtime:"",description:""},{name:"",apiName:"Adrenal_Gland",runningtime:"",description:""},{name:"",apiName:"Brow_Chakra",runningtime:"",description:""}]},{category:"business and travel",name:"digestion-upper",programs:[{name:"",apiName:"Digestive_System",runningtime:"",description:""},{name:"",apiName:"Detoxification",runningtime:"",description:""},{name:"",apiName:"Mineral_Metabolic_Activity",runningtime:"",description:""},{name:"",apiName:"Intestinal_Flora",runningtime:"",description:""}]},{category:"business and travel",name:"respiratory-system-upper",programs:[{name:"",apiName:"Respiratory_System",runningtime:"",description:""},{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Lymphatic_System",runningtime:"",description:""},{name:"",apiName:"Lung_Meridian",runningtime:"",description:""}]},{category:"business and travel",name:"lower-backache-upper",programs:[{name:"",apiName:"Backache",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Root_Chakra",runningtime:"",description:""},{name:"",apiName:"Kidney_Meridian",runningtime:"",description:""}]},{category:"business and travel",name:"neck-shoulder-upper",programs:[{name:"",apiName:"Neck/Shoulder",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Muscle_Tissues",runningtime:"",description:""},{name:"",apiName:"Gallbladder_Meridian",runningtime:"",description:""}]},{category:"business and travel",name:"sleep-enhancer-upper",programs:[{name:"",apiName:"Sleep_Enhancer",runningtime:"",description:""},{name:"",apiName:"Electro_Smog",runningtime:"",description:""},{name:"",apiName:"Relaxation",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""}]},{category:"family",name:"children-upper",programs:[{name:"",apiName:"Child_Development",runningtime:"",description:""},{name:"",apiName:"Bone_Tissues",runningtime:"",description:""},{name:"",apiName:"Muscle_Tissues",runningtime:"",description:""},{name:"",apiName:"Nervous_System",runningtime:"",description:""}]},{category:"family",name:"female-hormonal-imbalances-upper",programs:[{name:"",apiName:"Female_Hormone_Balance",runningtime:"",description:""},{name:"",apiName:"Kidney_Meridian",runningtime:"",description:""},{name:"",apiName:"Liver_Meridian",runningtime:"",description:""},{name:"",apiName:"Sacral_Chakra",runningtime:"",description:""}]},{category:"family",name:"male-hormonal-imbalances-upper",programs:[{name:"",apiName:"Male_Hormone_Balance",runningtime:"",description:""},{name:"",apiName:"Circulatory_System",runningtime:"",description:""},{name:"",apiName:"Kidney_Meridian",runningtime:"",description:""},{name:"",apiName:"Sacral_Chakra",runningtime:"",description:""}]},{category:"family",name:"cold-flu-upper",programs:[{name:"",apiName:"Flu",runningtime:"",description:""},{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Respiratory_System",runningtime:"",description:""}]},{category:"family",name:"constipation-upper",programs:[{name:"",apiName:"Constipation",runningtime:"",description:""},{name:"",apiName:"Digestive_System",runningtime:"",description:""},{name:"",apiName:"Gallbladder_Meridian",runningtime:"",description:""},{name:"",apiName:"Large_Intestine_Meridian",runningtime:"",description:""}]},{category:"family",name:"diarrhea-upper",programs:[{name:"",apiName:"Diarrhea",runningtime:"",description:""},{name:"",apiName:"Detoxification",runningtime:"",description:""},{name:"",apiName:"Digestive_System",runningtime:"",description:""},{name:"",apiName:"Intestinal_Flora",runningtime:"",description:""}]},{category:"family",name:"ear-problems-upper",programs:[{name:"",apiName:"Auditory_System",runningtime:"",description:""},{name:"",apiName:"Triple_Warmer_Meridian",runningtime:"",description:""},{name:"",apiName:"Brow_Chakra",runningtime:"",description:""},{name:"",apiName:"Energy_Balancing",runningtime:"",description:""}]},{category:"family",name:"eyesight-upper",programs:[{name:"",apiName:"Eyesight",runningtime:"",description:""},{name:"",apiName:"Kidney_Meridian",runningtime:"",description:""},{name:"",apiName:"Liver_Meridian",runningtime:"",description:""},{name:"",apiName:"Brow_Chakra",runningtime:"",description:""}]},{category:"family",name:"intestinal-flu-upper",programs:[{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Flu",runningtime:"",description:""},{name:"",apiName:"Detoxification",runningtime:"",description:""},{name:"",apiName:"Intestinal_Flora",runningtime:"",description:""}]},{category:"athlete",name:"energy-booster-upper",programs:[{name:"",apiName:"Energy_Booster",runningtime:"",description:""},{name:"",apiName:"Adrenal_Gland",runningtime:"",description:""},{name:"",apiName:"Circulatory_System",runningtime:"",description:""},{name:"",apiName:"Pericardium_Meridian",runningtime:"",description:""}]},{category:"athlete",name:"regeneration-upper",programs:[{name:"",apiName:"Regeneration",runningtime:"",description:""},{name:"",apiName:"Lymphatic_System",runningtime:"",description:""},{name:"",apiName:"Liver_Meridian",runningtime:"",description:""},{name:"",apiName:"Vitality",runningtime:"",description:""}]},{category:"athlete",name:"respiratory-system-upper",programs:[{name:"",apiName:"Respiratory_System",runningtime:"",description:""},{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Sinus_Cavities",runningtime:"",description:""},{name:"",apiName:"Lung_Meridian",runningtime:"",description:""}]},{category:"athlete",name:"injury-upper",programs:[{name:"",apiName:"Injury",runningtime:"",description:""},{name:"",apiName:"Bone_Tissues",runningtime:"",description:""},{name:"",apiName:"Muscle_Tissues",runningtime:"",description:""},{name:"",apiName:"Pain_Conditions",runningtime:"",description:""}]},{category:"athlete",name:"pain-upper",programs:[{name:"",apiName:"Nervous_System",runningtime:"",description:""},{name:"",apiName:"Pain_Conditions",runningtime:"",description:""},{name:"",apiName:"Regeneration",runningtime:"",description:""},{name:"",apiName:"Energy_Balancing",runningtime:"",description:""}]},{category:"athlete",name:"backache-upper",programs:[{name:"",apiName:"Backache",runningtime:"",description:""},{name:"",apiName:"Neck/Shoulder",runningtime:"",description:""},{name:"",apiName:"Vertebrae",runningtime:"",description:""},{name:"",apiName:"Gallbladder_Meridian",runningtime:"",description:""}]},{category:"athlete",name:"muscles-upper",programs:[{name:"",apiName:"Muscle_Tissues",runningtime:"",description:""},{name:"",apiName:"Liver_Meridian",runningtime:"",description:""},{name:"",apiName:"Connective_Tissues",runningtime:"",description:""},{name:"",apiName:"Regeneration",runningtime:"",description:""}]},{category:"athlete",name:"immune-system-upper",programs:[{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Lymphatic_System",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Respiratory_System",runningtime:"",description:""}]},{category:"spa",name:"anti-aging-upper",programs:[{name:"",apiName:"Bone_Tissues",runningtime:"",description:""},{name:"",apiName:"Anti_Aging",runningtime:"",description:""},{name:"",apiName:"Energy_Balancing",runningtime:"",description:""},{name:"",apiName:"Connective_Tissues",runningtime:"",description:""}]},{category:"spa",name:"weight-control-upper",programs:[{name:"",apiName:"Addiction",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Weight_Control",runningtime:"",description:""},{name:"",apiName:"Triple_Warmer_Meridian",runningtime:"",description:""}]},{category:"spa",name:"detoxification-upper",programs:[{name:"",apiName:"Digestive_System",runningtime:"",description:""},{name:"",apiName:"Intestinal_Flora",runningtime:"",description:""},{name:"",apiName:"Detoxification",runningtime:"",description:""},{name:"",apiName:"Mineral_Metabolic_Activity",runningtime:"",description:""}]},{category:"spa",name:"skin-conditions-upper",programs:[{name:"",apiName:"Connective_Tissues",runningtime:"",description:""},{name:"",apiName:"Skin_Conditions",runningtime:"",description:""},{name:"",apiName:"Detoxification",runningtime:"",description:""},{name:"",apiName:"Lung_Meridian",runningtime:"",description:""}]},{category:"spa",name:"hair-growth-upper",programs:[{name:"",apiName:"Kidney_Meridian",runningtime:"",description:""},{name:"",apiName:"Hair_Growth",runningtime:"",description:""},{name:"",apiName:"Detoxification",runningtime:"",description:""},{name:"",apiName:"Sacral_Chakra",runningtime:"",description:""}]},{category:"spa",name:"low-physical-drive-upper",programs:[{name:"",apiName:"Pericardium_Meridian",runningtime:"",description:""},{name:"",apiName:"Adrenal_Gland",runningtime:"",description:""},{name:"",apiName:"Low_Physical_Drive",runningtime:"",description:""},{name:"",apiName:"Circulatory_System",runningtime:"",description:""}]},{category:"spa",name:"low-mental-drive-upper",programs:[{name:"",apiName:"Sacral_Chakra",runningtime:"",description:""},{name:"",apiName:"Low_Mental_Drive",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Nervous_System",runningtime:"",description:""}]},{category:"stress relief",name:"stress-relief-upper",programs:[{name:"",apiName:"Joy",runningtime:"",description:""},{name:"",apiName:"Energy_Balancing",runningtime:"",description:""},{name:"",apiName:"Electro_Smog",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""}]},{category:"stress relief",name:"vitality-upper",programs:[{name:"",apiName:"Nervous_System",runningtime:"",description:""},{name:"",apiName:"Joy",runningtime:"",description:""},{name:"",apiName:"Energy_Booster",runningtime:"",description:""},{name:"",apiName:"Vitality",runningtime:"",description:""}]},{category:"stress relief",name:"sleep-enhancer-upper",programs:[{name:"",apiName:"Relaxation",runningtime:"",description:""},{name:"",apiName:"Sleep_Enhancer",runningtime:"",description:""},{name:"",apiName:"Peace",runningtime:"",description:""},{name:"",apiName:"Electro_Smog",runningtime:"",description:""}]},{category:"stress relief",name:"energy-booster-upper",programs:[{name:"",apiName:"Adrenal_Gland",runningtime:"",description:""},{name:"",apiName:"Energy_Booster",runningtime:"",description:""},{name:"",apiName:"Circulatory_System",runningtime:"",description:""},{name:"",apiName:"Exhaustion",runningtime:"",description:""}]},{category:"stress relief",name:"hypertension-upper",programs:[{name:"",apiName:"Pericardium_Meridian",runningtime:"",description:""},{name:"",apiName:"Hypertension",runningtime:"",description:""},{name:"",apiName:"Circulatory_System",runningtime:"",description:""},{name:"",apiName:"Heart_Function",runningtime:"",description:""}]},{category:"stress relief",name:"thyroid-upper",programs:[{name:"",apiName:"Electro_Smog",runningtime:"",description:""},{name:"",apiName:"Thyroid_Glands",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Throat_Chakra",runningtime:"",description:""}]},{category:"stress relief",name:"low-mental-drive-upper",programs:[{name:"",apiName:"Sacral_Chakra",runningtime:"",description:""},{name:"",apiName:"Low_Mental_Drive",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Nervous_System",runningtime:"",description:""}]},{category:"senior",name:"regeneration-upper",programs:[{name:"",apiName:"Lymphatic_System",runningtime:"",description:""},{name:"",apiName:"Regeneration",runningtime:"",description:""},{name:"",apiName:"Circulatory_System",runningtime:"",description:""},{name:"",apiName:"Connective_Tissues",runningtime:"",description:""}]},{category:"senior",name:"vitality-upper",programs:[{name:"",apiName:"Energy_Booster",runningtime:"",description:""},{name:"",apiName:"Adrenal_Gland",runningtime:"",description:""},{name:"",apiName:"Vitality",runningtime:"",description:""},{name:"",apiName:"Circulatory_System",runningtime:"",description:""}]},{category:"senior",name:"joy-upper",programs:[{name:"",apiName:"Peace",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Joy",runningtime:"",description:""},{name:"",apiName:"Metal_Element",runningtime:"",description:""}]},{category:"senior",name:"sleep-enhancer-upper",programs:[{name:"",apiName:"Electro_Smog",runningtime:"",description:""},{name:"",apiName:"Relaxation",runningtime:"",description:""},{name:"",apiName:"Sleep_Enhancer",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""}]},{category:"senior",name:"heart-function-upper",programs:[{name:"",apiName:"Fire_Element",runningtime:"",description:""},{name:"",apiName:"Heart_Function",runningtime:"",description:""},{name:"",apiName:"Triple_Warmer_Meridian",runningtime:"",description:""},{name:"",apiName:"Heart_Chakra",runningtime:"",description:""}]},{category:"senior",name:"respiratory-system-upper",programs:[{name:"",apiName:"Respiratory_System",runningtime:"",description:""},{name:"",apiName:"Sinus_Cavities",runningtime:"",description:""},{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Lung_Meridian",runningtime:"",description:""}]},{category:"senior",name:"hypertension-upper",programs:[{name:"",apiName:"Pericardium_Meridian",runningtime:"",description:""},{name:"",apiName:"Hypertension",runningtime:"",description:""},{name:"",apiName:"Heart_Chakra",runningtime:"",description:""},{name:"",apiName:"Circulatory_System",runningtime:"",description:""}]},{category:"senior",name:"glucose-metabolic-disorders-upper",programs:[{name:"",apiName:"Peace",runningtime:"",description:""},{name:"",apiName:"Glucose_Metabolic_Disorders",runningtime:"",description:""},{name:"",apiName:"Spleen_Meridian",runningtime:"",description:""},{name:"",apiName:"Energy_Balancing",runningtime:"",description:""}]},{category:"senior",name:"hemorrhoids-upper",programs:[{name:"",apiName:"Hemorrhoids",runningtime:"",description:""},{name:"",apiName:"Constipation",runningtime:"",description:""},{name:"",apiName:"Relaxation",runningtime:"",description:""},{name:"",apiName:"Root_Chakra",runningtime:"",description:""}]},{category:"senior",name:"urinary-system-upper",programs:[{name:"",apiName:"Kidney_Meridian",runningtime:"",description:""},{name:"",apiName:"Urinary_System/Cystitis",runningtime:"",description:""},{name:"",apiName:"Urinary_Bladder_Meridian",runningtime:"",description:""},{name:"",apiName:"Sacral_Chakra",runningtime:"",description:""}]},{category:"senior",name:"cold-flu-upper",programs:[{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Flu",runningtime:"",description:""},{name:"",apiName:"Lymphatic_System",runningtime:"",description:""},{name:"",apiName:"Respiratory_System",runningtime:"",description:""}]},{category:"senior",name:"pain-upper",programs:[{name:"",apiName:"Nervous_System",runningtime:"",description:""},{name:"",apiName:"Pain_Conditions",runningtime:"",description:""},{name:"",apiName:"Regeneration",runningtime:"",description:""},{name:"",apiName:"Energy_Balancing",runningtime:"",description:""}]},{category:"chakra balancing",name:"lower-chakra-balancing-upper",programs:[{name:"",apiName:"Root_Chakra",runningtime:"",description:""},{name:"",apiName:"Sacral_Chakra",runningtime:"",description:""},{name:"",apiName:"Solar_Plexus_Chakra",runningtime:"",description:""},{name:"",apiName:"Earth_Element",runningtime:"",description:""}]},{category:"chakra balancing",name:"upper-chakra-balancing-upper",programs:[{name:"",apiName:"Heart_Chakra",runningtime:"",description:""},{name:"",apiName:"Throat_Chakra",runningtime:"",description:""},{name:"",apiName:"Brow_Chakra",runningtime:"",description:""},{name:"",apiName:"Crown_Chakra",runningtime:"",description:""}]},{category:"chakra balancing",name:"meditation-basics-upper",programs:[{name:"",apiName:"Meditation_1",runningtime:"",description:""},{name:"",apiName:"Root_Chakra",runningtime:"",description:""},{name:"",apiName:"Sacral_Chakra",runningtime:"",description:""},{name:"",apiName:"Solar_Plexus_Chakra",runningtime:"",description:""}]},{category:"chakra balancing",name:"meditation-medium-upper",programs:[{name:"",apiName:"Meditation_2",runningtime:"",description:""},{name:"",apiName:"Heart_Chakra",runningtime:"",description:""},{name:"",apiName:"Throat_Chakra",runningtime:"",description:""},{name:"",apiName:"Peace",runningtime:"",description:""}]},{category:"chakra balancing",name:"meditation-advanced-upper",programs:[{name:"",apiName:"Meditation_3",runningtime:"",description:""},{name:"",apiName:"Brow_Chakra",runningtime:"",description:""},{name:"",apiName:"Crown_Chakra",runningtime:"",description:""},{name:"",apiName:"Joy",runningtime:"",description:""}]},{category:"elements",name:"earth-element-upper",programs:[{name:"",apiName:"Stomach_Meridian",runningtime:"",description:""},{name:"",apiName:"Spleen_Meridian",runningtime:"",description:""},{name:"",apiName:"Earth_Element",runningtime:"",description:""},{name:"",apiName:"Muscle_Tissues",runningtime:"",description:""}]},{category:"elements",name:"fire-element-upper",programs:[{name:"",apiName:"Heart_Meridian",runningtime:"",description:""},{name:"",apiName:"Small_Intestine_Meridian",runningtime:"",description:""},{name:"",apiName:"Fire_Element",runningtime:"",description:""},{name:"",apiName:"Circulatory_System",runningtime:"",description:""}]},{category:"elements",name:"fire-element-upper",programs:[{name:"",apiName:"Pericardium_Meridian",runningtime:"",description:""},{name:"",apiName:"Triple_Warmer_Meridian",runningtime:"",description:""},{name:"",apiName:"Fire_Element",runningtime:"",description:""},{name:"",apiName:"Heart_Chakra",runningtime:"",description:""}]},{category:"elements",name:"metal-element-upper",programs:[{name:"",apiName:"Lung_Meridian",runningtime:"",description:""},{name:"",apiName:"Large_Intestine_Meridian",runningtime:"",description:""},{name:"",apiName:"Metal_Element",runningtime:"",description:""},{name:"",apiName:"Skin_Conditions",runningtime:"",description:""}]},{category:"elements",name:"water-element-upper",programs:[{name:"",apiName:"Kidney_Meridian",runningtime:"",description:""},{name:"",apiName:"Urinary_Bladder_Meridian",runningtime:"",description:""},{name:"",apiName:"Water_Element",runningtime:"",description:""},{name:"",apiName:"Bone_Tissues",runningtime:"",description:""}]},{category:"elements",name:"wood-element-upper",programs:[{name:"",apiName:"Liver_Meridian",runningtime:"",description:""},{name:"",apiName:"Gallbladder_Meridian",runningtime:"",description:""},{name:"",apiName:"Wood_Element",runningtime:"",description:""},{name:"",apiName:"Eyesight",runningtime:"",description:""}]},{category:"elements",name:"liver-function-upper",programs:[{name:"",apiName:"Liver_Meridian",runningtime:"",description:""},{name:"",apiName:"Gallbladder_Meridian",runningtime:"",description:""},{name:"",apiName:"Detoxification",runningtime:"",description:""},{name:"",apiName:"Solar_Plexus_Chakra",runningtime:"",description:""}]},{category:"elements",name:"heart-function-upper",programs:[{name:"",apiName:"Heart_Meridian",runningtime:"",description:""},{name:"",apiName:"Small_Intestine_Meridian",runningtime:"",description:""},{name:"",apiName:"Relaxation",runningtime:"",description:""},{name:"",apiName:"Heart_Chakra",runningtime:"",description:""}]},{category:"elements",name:"kidney-function-upper",programs:[{name:"",apiName:"Kidney_Meridian",runningtime:"",description:""},{name:"",apiName:"Urinary_Bladder_Meridian",runningtime:"",description:""},{name:"",apiName:"Exhaustion",runningtime:"",description:""},{name:"",apiName:"Sacral_Chakra",runningtime:"",description:""}]},{category:"elements",name:"large-intestine-balancing-upper",programs:[{name:"",apiName:"Large_Intestine_Meridian",runningtime:"",description:""},{name:"",apiName:"Lung_Meridian",runningtime:"",description:""},{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Solar_Plexus_Chakra",runningtime:"",description:""}]},{category:"elements",name:"pericardium-flow-upper",programs:[{name:"",apiName:"Pericardium_Meridian",runningtime:"",description:""},{name:"",apiName:"Triple_Warmer_Meridian",runningtime:"",description:""},{name:"",apiName:"Digestive_System",runningtime:"",description:""},{name:"",apiName:"Heart_Chakra",runningtime:"",description:""}]},{category:"elements",name:"stomach-meridian-upper",programs:[{name:"",apiName:"Stomach_Meridian",runningtime:"",description:""},{name:"",apiName:"Spleen_Meridian",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Solar_Plexus_Chakra",runningtime:"",description:""}]},{category:"petss",name:"routine-pets-upper1",programs:[{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Lymphatic_System",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Pet_1",runningtime:"",description:""}]},{category:"petss",name:"routine-pets-upper2",programs:[{name:"",apiName:"Detoxification",runningtime:"",description:""},{name:"",apiName:"Digestive_System",runningtime:"",description:""},{name:"",apiName:"Large_Intestine_Meridian",runningtime:"",description:""},{name:"",apiName:"Pet_1",runningtime:"",description:""}]},{category:"petss",name:"routine-pets-upper3",programs:[{name:"",apiName:"Digestive_System",runningtime:"",description:""},{name:"",apiName:"Liver_Meridian",runningtime:"",description:""},{name:"",apiName:"Intestinal_Flora",runningtime:"",description:""},{name:"",apiName:"Pet_1",runningtime:"",description:""}]},{category:"petss",name:"routine-pets-upper4",programs:[{name:"",apiName:"Bone_Tissues",runningtime:"",description:""},{name:"",apiName:"Lymphatic_System",runningtime:"",description:""},{name:"",apiName:"Injury",runningtime:"",description:""},{name:"",apiName:"Pet_1",runningtime:"",description:""}]},{category:"petss",name:"routine-pets-upper5",programs:[{name:"",apiName:"Skin_Conditions",runningtime:"",description:""},{name:"",apiName:"Connective_Tissues",runningtime:"",description:""},{name:"",apiName:"Injury",runningtime:"",description:""},{name:"",apiName:"Pet_1",runningtime:"",description:""}]},{category:"petss",name:"routine-pets-upper6",programs:[{name:"",apiName:"Muscle_Tissues",runningtime:"",description:""},{name:"",apiName:"Lymphatic_System",runningtime:"",description:""},{name:"",apiName:"Injury",runningtime:"",description:""},{name:"",apiName:"Pet_1",runningtime:"",description:""}]},{category:"petss",name:"routine-pets-upper7",programs:[{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Relaxation",runningtime:"",description:""},{name:"",apiName:"Energy_Balancing",runningtime:"",description:""},{name:"",apiName:"Pet_1",runningtime:"",description:""}]},{category:"petss",name:"routine-pets-upper8",programs:[{name:"",apiName:"Respiratory_System",runningtime:"",description:""},{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Lung_Meridian",runningtime:"",description:""},{name:"",apiName:"Pet_1",runningtime:"",description:""}]},{category:"petsx",name:"routine-petx-upper1",programs:[{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Lymphatic_System",runningtime:"",description:""},{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Pet_2",runningtime:"",description:""}]},{category:"petsx",name:"routine-petx-upper2",programs:[{name:"",apiName:"Detoxification",runningtime:"",description:""},{name:"",apiName:"Digestive_System",runningtime:"",description:""},{name:"",apiName:"Large_Intestine_Meridian",runningtime:"",description:""},{name:"",apiName:"Pet_2",runningtime:"",description:""}]},{category:"petsx",name:"routine-petx-upper3",programs:[{name:"",apiName:"Digestive_System",runningtime:"",description:""},{name:"",apiName:"Liver_Meridian",runningtime:"",description:""},{name:"",apiName:"Intestinal_Flora",runningtime:"",description:""},{name:"",apiName:"Pet_2",runningtime:"",description:""}]},{category:"petsx",name:"routine-petx-upper4",programs:[{name:"",apiName:"Bone_Tissues",runningtime:"",description:""},{name:"",apiName:"Lymphatic_System",runningtime:"",description:""},{name:"",apiName:"Injury",runningtime:"",description:""},{name:"",apiName:"Pet_2",runningtime:"",description:""}]},{category:"petsx",name:"routine-petx-upper5",programs:[{name:"",apiName:"Skin_Conditions",runningtime:"",description:""},{name:"",apiName:"Connective_Tissues",runningtime:"",description:""},{name:"",apiName:"Injury",runningtime:"",description:""},{name:"",apiName:"Pet_2",runningtime:"",description:""}]},{category:"petsx",name:"routine-petx-upper6",programs:[{name:"",apiName:"Muscle_Tissues",runningtime:"",description:""},{name:"",apiName:"Lymphatic_System",runningtime:"",description:""},{name:"",apiName:"Injury",runningtime:"",description:""},{name:"",apiName:"Pet_2",runningtime:"",description:""}]},{category:"petsx",name:"routine-petx-upper7",programs:[{name:"",apiName:"Frustration",runningtime:"",description:""},{name:"",apiName:"Relaxation",runningtime:"",description:""},{name:"",apiName:"Energy_Balancing",runningtime:"",description:""},{name:"",apiName:"Pet_2",runningtime:"",description:""}]},{category:"petsx",name:"routine-petx-upper8",programs:[{name:"",apiName:"Respiratory_System",runningtime:"",description:""},{name:"",apiName:"Immune_System",runningtime:"",description:""},{name:"",apiName:"Lung_Meridian",runningtime:"",description:""},{name:"",apiName:"Pet_2",runningtime:"",description:""}]}],pn=[{name:"earth-element-upper",apiName:"Earth_Element",runningtime:"16:55",description:"earth-element-description"},{name:"fire-element-upper",apiName:"Fire_Element",runningtime:"15:05",description:"fire-element-description"},{name:"metal-element-upper",apiName:"Metal_Element",runningtime:"12:39",description:"metal-element-description"},{name:"water-element-upper",apiName:"Water_Element",runningtime:"17:20",description:"water-element-description"},{name:"wood-element-upper",apiName:"Wood_Element",runningtime:"17:09",description:"wood-element-description"},{name:"gallbladder-meridian-upper",apiName:"Gallbladder_Meridian",runningtime:"20:39",description:"gallbladder-meridian-description"},{name:"heart-meridian-upper",apiName:"Heart_Meridian",runningtime:"14:45",description:"heart-meridian-description"},{name:"kidney-meridian-upper",apiName:"Kidney_Meridian",runningtime:"16:27",description:"kidney-meridian-description"},{name:"large-intestine-meridian-upper",apiName:"Large_Intestine_Meridian",runningtime:"13:53",description:"large-intestine-meridian-description"},{name:"liver-meridian-upper",apiName:"Liver_Meridian",runningtime:"16:11",description:"liver-meridian-description"},{name:"lung-meridian-upper",apiName:"Lung_Meridian",runningtime:"16:38",description:"lung-meridian-description"},{name:"pericardium-meridian-upper",apiName:"Pericardium_Meridian",runningtime:"21:55",description:"pericardium-meridian-description"},{name:"small-intestine-meridian-upper",apiName:"Small_Intestine_Meridian",runningtime:"13:25",description:"small-intestine-meridian-description"},{name:"spleen-pancreas-meridian-upper",apiName:"Spleen_Meridian",runningtime:"15:37",description:"spleen-pancreas-meridian-description"},{name:"stomach-meridian-upper",apiName:"Stomach_Meridian",runningtime:"17:15",description:"stomach-meridian-description"},{name:"triple-warmer-meridian-upper",apiName:"Triple_Warmer_Meridian",runningtime:"13:20",description:"triple-warmer-meridian-description"},{name:"urinary-bladder-meridian-upper",apiName:"Urinary_Bladder_Meridian",runningtime:"14:19",description:"urinary-bladder-meridian-description"},{name:"first-chakra-upper",apiName:"Root_Chakra",runningtime:"15:49",description:"1-chakra-description"},{name:"second-chakra-upper",apiName:"Sacral_Chakra",runningtime:"13:57",description:"2-chakra-description"},{name:"third-chakra-upper",apiName:"Solar_Plexus_Chakra",runningtime:"16:51",description:"3-chakra-description"},{name:"fourth-chakra-upper",apiName:"Heart_Chakra",runningtime:"18:16",description:"4-chakra-description"},{name:"fifth-chakra-upper",apiName:"Throat_Chakra",runningtime:"17:59",description:"5-chakra-description"},{name:"sixth-chakra-upper",apiName:"Brow_Chakra",runningtime:"16:13",description:"6-chakra-description"},{name:"seventh-chakra-upper",apiName:"Crown_Chakra",runningtime:"13:45",description:"7-chakra-description"},{name:"addiction-upper",apiName:"Addiction",runningtime:"15:05",description:"addiction-description"},{name:"adrenal-gland-upper",apiName:"Adrenal_Gland",runningtime:"15:07",description:"adrenal-gland-description"},{name:"anti-aging-upper",apiName:"Anti_Aging",runningtime:"11:01",description:"anti-aging-description"},{name:"auditory-upper",apiName:"Auditory_System",runningtime:"14:31",description:"auditory-description"},{name:"backache-upper",apiName:"Backache",runningtime:"16:30",description:"backache-description"},{name:"bones-upper",apiName:"Bone_Tissues",runningtime:"15:04",description:"bones-description"},{name:"child-developement-upper",apiName:"Child_Development",runningtime:"13:50",description:"child-developement-description"},{name:"circulatory-system-upper",apiName:"Circulatory_System",runningtime:"15:06",description:"circulatory-system-description"},{name:"concentration-upper",apiName:"Concentration",runningtime:"21:19",description:"concentration-description"},{name:"connective-tissue-upper",apiName:"Connective_Tissues",runningtime:"16:54",description:"connective-tissue-description"},{name:"constipation-upper",apiName:"Constipation",runningtime:"14:49",description:"constipation-description"},{name:"detoxification-upper",apiName:"Detoxification",runningtime:"16:13",description:"detoxification-description"},{name:"diarrhea-upper",apiName:"Diarrhea",runningtime:"13:59",description:"diarrhea-description"},{name:"digestive-system-upper",apiName:"Digestive_System",runningtime:"16:41",description:"digestive-system-description"},{name:"discernment-upper",apiName:"Discernment",runningtime:"13:37",description:"discernment-description"},{name:"E-SMOG",apiName:"Electro_Smog",runningtime:"14:51",description:"e-smog-description"},{name:"energy-balancing-upper",apiName:"Energy_Balancing",runningtime:"17:55",description:"energy-balancing-description"},{name:"energy-booster-upper",apiName:"Energy_Booster",runningtime:"13:53",description:"energy-booster-description"},{name:"exhaustion-upper",apiName:"Exhaustion",runningtime:"14:59",description:"exhaustion-description"},{name:"eyesight-upper",apiName:"Eyesight",runningtime:"16:11",description:"eyesight-description"},{name:"female-upper",apiName:"Female_Hormone_Balance",runningtime:"14:17",description:"female-description"},{name:"flu-upper",apiName:"Flu",runningtime:"13:59",description:"flu-description"},{name:"glucose-metabolic-disorders-upper",apiName:"Glucose_Metabolic_Disorders",runningtime:"16:28",description:"glucose-metabolic-disorders-description"},{name:"hair-growth-upper",apiName:"Hair_Growth",runningtime:"19:07",description:"hair-growth-description"},{name:"headache-upper",apiName:"Headache",runningtime:"18:38",description:"headache-description"},{name:"heart-function-upper",apiName:"Heart_Function",runningtime:"13:30",description:"heart-function-description"},{name:"hemorrhoids-upper",apiName:"Hemorrhoids",runningtime:"21:13",description:"hemorrhoids-description"},{name:"hypertension-upper",apiName:"Hypertension",runningtime:"18:53",description:"hypertension-description"},{name:"immune-system-upper",apiName:"Immune_System",runningtime:"14:50",description:"immune-system-description"},{name:"injury-upper",apiName:"Injury",runningtime:"18:46",description:"injury-description"},{name:"intestinal-flora-upper",apiName:"Intestinal_Flora",runningtime:"18:58",description:"intestinal-flora-description"},{name:"JET-LAG",apiName:"Jet-Lag/Climate_Change",runningtime:"16:14",description:"jet-lag-description"},{name:"joints-upper",apiName:"Joints",runningtime:"17:07",description:"joints-description"},{name:"joy-upper",apiName:"Joy",runningtime:"21:04",description:"joy-description"},{name:"low-mental-drive-upper",apiName:"Low_Mental_Drive",runningtime:"15:49",description:"low-mental-drive-description"},{name:"low-physical-drive-upper",apiName:"Low_Physical_Drive",runningtime:"16:49",description:"low-physical-drive-description"},{name:"lymphatic-system-upper",apiName:"Lymphatic_System",runningtime:"16:04",description:"lymphatic-system-description"},{name:"male-upper",apiName:"Male_Hormone_Balance",runningtime:"12:31",description:"male-description"},{name:"meditation-1-upper",apiName:"Meditation_1",runningtime:"33:15",description:"meditation-1-description"},{name:"meditation-2-upper",apiName:"Meditation_2",runningtime:"29:43",description:"meditation-2-description"},{name:"meditation-3-upper",apiName:"Meditation_3",runningtime:"22:49",description:"meditation-3-description"},{name:"mineral-metabolic-activity-upper",apiName:"Mineral_Metabolic_Activity",runningtime:"17:25",description:"mineral-metabolic-activity-description"},{name:"muscle-tissue-upper",apiName:"Muscle_Tissues",runningtime:"15:59",description:"muscle-tissue-description"},{name:"neck-shoulder-upper",apiName:"Neck/Shoulder",runningtime:"16:16",description:"neck-shoulder-description"},{name:"nervous-system-upper",apiName:"Nervous_System",runningtime:"19:10",description:"nervous-system-description"},{name:"pain-upper",apiName:"Pain_Conditions",runningtime:"15:18",description:"pain-description"},{name:"peace-upper",apiName:"Peace",runningtime:"22:08",description:"peace-description"},{name:"regeneration-upper",apiName:"Regeneration",runningtime:"17:12",description:"regeneration-description"},{name:"relaxation-upper",apiName:"Relaxation",runningtime:"19:55",description:"relaxation-description"},{name:"respiratory-system-upper",apiName:"Respiratory_System",runningtime:"15:52",description:"respiratory-system-description"},{name:"sinus-cavities-upper",apiName:"Sinus_Cavities",runningtime:"15:33",description:"sinus-cavities-description"},{name:"skin-conditions-upper",apiName:"Skin_Conditions",runningtime:"15:50",description:"skin-conditions-description"},{name:"sleep-enhancer-upper",apiName:"Sleep_Enhancer",runningtime:"19:58",description:"sleep-enhancer-description"},{name:"stress-relief-upper",apiName:"Frustration",runningtime:"18:55",description:"stress-relief-description"},{name:"thyroid-glands-upper",apiName:"Thyroid_Glands",runningtime:"17:53",description:"thyroid-glands-description"},{name:"urinary-upper",apiName:"Urinary_System/Cystitis",runningtime:"13:39",description:"urinary-description"},{name:"vertebrae-upper",apiName:"Vertebrae",runningtime:"12:53",description:"vertebrae-description"},{name:"vitality-upper",apiName:"Vitality",runningtime:"14:00",description:"vitality-description"},{name:"weight-control-upper",apiName:"Weight_Control",runningtime:"14:50",description:"weight-control-description"},{name:"petss-program-upper",apiName:"Pet_1",runningtime:"11:50",description:"petss-program-description"},{name:"petsx-program-upper",apiName:"Pet_2",runningtime:"12:50",description:"petsx-program-description"}],_n=this&&this.__awaiter||function(n,l,e,i){return new(e||(e=Promise))(function(a,t){function u(n){try{s(i.next(n))}catch(n){t(n)}}function r(n){try{s(i.throw(n))}catch(n){t(n)}}function s(n){n.done?a(n.value):new e(function(l){l(n.value)}).then(u,r)}s((i=i.apply(n,l||[])).next())})},gn=this&&this.__generator||function(n,l){function e(e){return function(u){return function(e){if(i)throw new TypeError("Generator is already executing.");for(;r;)try{if(i=1,a&&(t=a[2&e[0]?"return":e[0]?"throw":"next"])&&!(t=t.call(a,e[1])).done)return t;switch(a=0,t&&(e=[0,t.value]),e[0]){case 0:case 1:t=e;break;case 4:return r.label++,{value:e[1],done:!1};case 5:r.label++,a=e[1],e=[0];continue;case 7:e=r.ops.pop(),r.trys.pop();continue;default:if(t=r.trys,!(t=t.length>0&&t[t.length-1])&&(6===e[0]||2===e[0])){r=0;continue}if(3===e[0]&&(!t||e[1]>t[0]&&e[1]<t[3])){r.label=e[1];break}if(6===e[0]&&r.label<t[1]){r.label=t[1],t=e;break}if(t&&r.label<t[2]){r.label=t[2],r.ops.push(e);break}t[2]&&r.ops.pop(),r.trys.pop();continue}e=l.call(n,r)}catch(n){e=[6,n],a=0}finally{i=t=0}if(5&e[0])throw e[1];return{value:e[0]?e[1]:void 0,done:!0}}([e,u])}}var i,a,t,u,r={label:0,sent:function(){if(1&t[0])throw t[1];return t[1]},trys:[],ops:[]};return u={next:e(0),throw:e(1),return:e(2)},"function"==typeof Symbol&&(u[Symbol.iterator]=function(){return this}),u},dn=function(){function n(n){this.storage=n,console.log("Hello RoutinesProvider Provider")}return n.prototype.setProgram=function(n,l){switch(n){case 1:this.program1=l;break;case 2:this.program2=l;break;case 3:this.program3=l;break;case 4:this.program4=l}},n.prototype.cleanPrograms=function(){this.program1=null,this.program2=null,this.program3=null,this.program4=null},n.prototype.setPrograms=function(n,l,e,i){this.program1=n,this.program2=l,this.program3=e,this.program4=i},n.prototype.getPrograms=function(){return[this.program1,this.program2,this.program3,this.program4]},n.prototype.getKey=function(n){return _n(this,void 0,void 0,function(){return gn(this,function(l){switch(l.label){case 0:return[4,this.storage.get(n)];case 1:return[2,l.sent()]}})})},n.prototype.addPrograms=function(n,l,e,i,a){var t=this.getProgram(l),u=this.getProgram(e),r=this.getProgram(i),s=this.getProgram(a);return this.insertPreSetProgram(n,t,u,r,s),this.setPrograms(t.name,u.name,r.name,s.name),[t.name,u.name,r.name,s.name]},n.prototype.getProgram=function(n){for(var l=0;l<pn.length;l++){var e=pn[l];if(e.apiName==n||e.name==n.name||e.name==n)return e}},n.prototype.insertPreSetProgram=function(n,l,e,i,a){this.storage.set("MyMat_routineName",n),this.addProgramToRoutine(1,"",l.name,l.runningtime,l.apiName),this.addProgramToRoutine(2,"",e.name,e.runningtime,e.apiName),this.addProgramToRoutine(3,"",i.name,i.runningtime,i.apiName),this.addProgramToRoutine(4,"",a.name,a.runningtime,a.apiName)},n.prototype.addProgramToRoutine=function(n,l,e,i,a){1==n?this.storage.set("MyMat_bubbleRoutineProgram1",l+"|"+e+"|"+i+"|"+a):2==n?this.storage.set("MyMat_bubbleRoutineProgram2",l+"|"+e+"|"+i+"|"+a):3==n?this.storage.set("MyMat_bubbleRoutineProgram3",l+"|"+e+"|"+i+"|"+a):4==n&&this.storage.set("MyMat_bubbleRoutineProgram4",l+"|"+e+"|"+i+"|"+a)},n}(),hn=function(){function n(n,l,e,i,a,t,u,r,s,o,m,c){var p=this;this.navParams=n,this.viewCtrl=l,this.routines=e,this.formBuilder=i,this.translateService=a,this.storage=t,this.apiService=u,this.network=r,this.loadingCtrl=s,this.alertCtrl=o,this.zone=m,this.events=c,this.showSaveForm=!0,this.showLoadingListing=!1,this.isDeviceOnline=!0;var _=this.routines.getPrograms();_[0]&&_[1]&&_[2]&&_[3]&&(this.program1=_[0],this.program2=_[1],this.program3=_[2],this.program4=_[3]),this.saveRoutineForm=this.formBuilder.group({name:["",tn.n.required]}),this.showSaveForm=!!n.get("showSave"),this.network.onDisconnect().subscribe(function(){p.zone.run(function(){p.isDeviceOnline=!1})}),this.network.onConnect().subscribe(function(){p.zone.run(function(){p.isDeviceOnline=!0,p.storage.get(an.deviceInfoKey).then(function(n){p.loadFavoriteList(n.email)})})})}return n.prototype.ionViewDidLoad=function(){var n=this;this.storage.get(an.deviceInfoKey).then(function(l){void 0!==l&&null!=l&&n.loadFavoriteList(l.email)})},n.prototype.loadFavoriteList=function(n){var l=this,e=new FormData;e.append("type","get"),e.append("email",n),this.isDeviceOnline&&(this.showLoadingListing=!0,this.apiService.runPost("favorites.php",e).then(function(n){l.showLoadingListing=!1,l.responseData=n,l.favoritesList=l.responseData.favorites},function(n){l.showLoadingListing=!1,console.log(n)}))},n.prototype.dismiss=function(n){n&&(n.preventDefault(),n.stopPropagation()),this.viewCtrl.dismiss()},n.prototype.delete=function(n,l){var e=this;n&&(n.preventDefault(),n.stopPropagation());var i=new FormData;i.append("type","del"),i.append("id",l),this.apiService.runPost("favorites.php",i).then(function(n){e.storage.get(an.deviceInfoKey).then(function(n){e.loadFavoriteList(n.email)})})},n.prototype.showProgram=function(n,l,e,i,a,t){var u=this;this.storage.get(an.storageKeyLang).then(function(n){u.translateService.getTranslation(n).subscribe(function(n){u.alertCtrl.create({title:"Rutina - "+l,message:("E-SMOG"==e?e:n[e])+"\n"+("E-SMOG"==i?i:n[i])+"\n"+("E-SMOG"==a?a:n[a])+"\n"+("E-SMOG"==t?t:n[t]),buttons:[{text:n.choose,handler:function(n){u.events.publish("addProgramsEvent",{name:e},{name:i},{name:a},{name:t})}}]}).present()})})},n.prototype.attemptSaveFavorite=function(){var n=this;this.response_text="",this.storage.get(an.deviceInfoKey).then(function(l){var e=new FormData;e.append("type","new"),e.append("email",l.email),e.append("name",n.saveRoutineForm.value.name),e.append("program1",n.program1),e.append("program2",n.program2),e.append("program3",n.program3),e.append("program4",n.program4),n.apiService.runPost("favorites.php",e).then(function(l){n.responseData=l,"ok"==n.responseData.status&&(n.showSaveForm=!1,n.favoritesList=n.responseData.favorites)})})},n}(),fn=function(){function n(n,l,e,i,a,t,u,r,s,o){var m=this;this.navCtrl=n,this.navParams=l,this.zone=e,this.formBuilder=i,this.storage=a,this.apiService=t,this.translateService=u,this.device=r,this.modalCtrl=s,this.network=o,this.callBackPage=this.navParams.get("callBackPage"),this.showSubmitButton=!0;var c=new Date;this.maxDateOfPicker=this.maxDate=c.toISOString(),this.subscribeForm=this.formBuilder.group({email:["",tn.n.required],name:["",tn.n.required],gender:["",tn.n.required],birthDate:["",tn.n.required]}),this.isDeviceOnline=!0,this.network.onDisconnect().subscribe(function(){m.zone.run(function(){m.isDeviceOnline=!1})}),this.network.onConnect().subscribe(function(){m.zone.run(function(){m.isDeviceOnline=!0})})}return n.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad SubscribePage")},n.prototype.attemptSubscribe=function(){var n=this;this.response_text="";var l=new FormData;l.append("email",this.subscribeForm.value.email),l.append("name",this.subscribeForm.value.name),l.append("birthDate",this.subscribeForm.value.birthDate),l.append("gender",this.subscribeForm.value.gender),l.append("isUpdate","false"),window.hasOwnProperty("cordova")?l.append("uuid",this.device.uuid):l.append("uuid",an.test_uuid),this.apiService.runPost("subscribe.php",l).then(function(l){n.responseData=l,"ok"==n.responseData.status?(n.storage.set(an.deviceInfoKey,{uuid:n.responseData.uuid,email:n.subscribeForm.value.email}),n.showSubmitButton=!1,n.storage.get(an.storageKeyLang).then(function(l){n.translateService.getTranslation(l).subscribe(function(l){n.response_text=l["profile-success-message"],setTimeout(function(){if("none"==n.callBackPage)n.navCtrl.push(on);else if("favorites"==n.callBackPage){n.navCtrl.pop();n.modalCtrl.create(hn,{showSave:!0}).present()}},5e3)})})):n.storage.get(an.storageKeyLang).then(function(l){n.translateService.getTranslation(l).subscribe(function(l){var e=l["profile-error-message"]+": ";"ok"!=n.responseData.emailError&&(e+=n.responseData.emailError,n.errorEmailClass="error"),"ok"!=n.responseData.nameError&&(e+=n.responseData.nameError,n.errorNameClass="error"),"ok"!=n.responseData.genderError&&(e+=n.responseData.genderError,n.errorGenderClass="error"),"ok"!=n.responseData.dateOfBirthError&&(e+=n.responseData.dateOfBirthError,n.errorDateClass="error"),n.response_text=e})})},function(l){n.storage.get(an.storageKeyLang).then(function(l){n.translateService.getTranslation(l).subscribe(function(l){n.response_text=l["profile-error-message"]})})})},n}(),bn=function(){function n(n,l,e,i,a){this.navCtrl=n,this.navParams=l,this.storage=e,this.translateService=i,this.events=a}return n.prototype.ionViewDidLoad=function(){var n=this;this.storage.get(an.storageKeyLang).then(function(l){n.translateService.getTranslation(l).subscribe(function(l){n.programRealName=n.navParams.get("name");var e=n.navParams.get("name");n.isNameOnArray(an.shortTitles,e)&&(e=e.replace("-upper","-short")),n.programName=void 0===l[e]?e:l[e],n.programRunningTime=void 0===l[n.navParams.get("runTime")]?n.navParams.get("runTime"):l[n.navParams.get("runTime")],n.programDescription=void 0===l[n.navParams.get("description")]?n.navParams.get("description"):l[n.navParams.get("description")],n.programApiName=n.navParams.get("apiName"),n.programNumber=n.navParams.get("programNumber")})})},n.prototype.add1Program=function(n,l,e){this.events.publish("add1ProgramEvent",this.programNumber,this.programRealName,this.programRunningTime,this.programApiName)},n.prototype.isNameOnArray=function(n,l){for(var e=0;e<n.length;e++)if(n[e]==l)return!0;return!1},n}(),vn=function(){function n(n,l,e,i,a){var t=this;this.navCtrl=n,this.storage=l,this.navParams=e,this.routines=i,this.events=a,this.program=e.get("bubble"),this.events.subscribe("add1ProgramEvent",function(n,l,e,i){t.program=n,t.add1Program(l,e,i),t.navCtrl.pop()})}return n.prototype.ionViewDidLeave=function(){this.storage.set(an.storageKeyScrollTop,this.content.getContentDimensions().scrollTop)},n.prototype.ionViewDidLoad=function(){var n=this;this.storage.get(an.storageKeyCurrentProgram).then(function(l){n.getPrograms(null!=l?l:"basic")}),this.programs=pn,this.routines.getKey(an.storageKeyBubble1).then(function(l){n.programName1=1!=n.program&&null!=l&&l.length>0?l.split("|")[1]:""}),this.routines.getKey(an.storageKeyBubble2).then(function(l){n.programName2=2!=n.program&&null!=l&&l.length>0?l.split("|")[1]:""}),this.routines.getKey(an.storageKeyBubble3).then(function(l){n.programName3=3!=n.program&&null!=l&&l.length>0?l.split("|")[1]:""}),this.routines.getKey(an.storageKeyBubble4).then(function(l){n.programName4=4!=n.program&&null!=l&&l.length>0?l.split("|")[1]:""}),setTimeout(function(){n.storage.get(an.storageKeyScrollTop).then(function(l){n.content.scrollTo(0,l,100)})},500)},n.prototype.selectPreSetProgram=function(n){this.getPrograms(n)},n.prototype.getPrograms=function(n){switch(this.storage.set(an.storageKeyCurrentProgram,n),this.basicButton=!1,this.businessTravelButton=!1,this.familiyButton=!1,this.athleteButton=!1,this.spaButton=!1,this.stressButton=!1,this.seniorButton=!1,this.chakraButton=!1,this.elementsButton=!1,this.petssButton=!1,this.petsxButton=!1,n){case"basic":this.basicButton=!0;break;case"business and travel":this.businessTravelButton=!0;break;case"family":this.familiyButton=!0;break;case"athlete":this.athleteButton=!0;break;case"spa":this.spaButton=!0;break;case"stress relief":this.stressButton=!0;break;case"senior":this.seniorButton=!0;break;case"chakra balancing":this.chakraButton=!0;break;case"elements":this.elementsButton=!0;break;case"petss":this.petssButton=!0;break;case"petsx":this.petsxButton=!0}for(var l=[],e=0,i=0;i<cn.length;i++){var a=cn[i];if(a.category==n){l[e]=a;for(var t=0;t<a.programs.length;t++){a.programs[t]=this.routines.getProgram(a.programs[t].apiName)}e++}}this.predefinedPrograms=l},n.prototype.addPrograms=function(n,l,e,i,a){this.navCtrl.pop();var t=this.routines.addPrograms(n,l,e,i,a);this.events.publish("sharesBubbles",t)},n.prototype.add1Program=function(n,l,e){this.routines.addProgramToRoutine(this.program,"",n,l,e),this.programName1=1==this.program?n:this.programName1.length>0?this.programName1:"",this.programName2=2==this.program?n:this.programName2.length>0?this.programName2:"",this.programName3=3==this.program?n:this.programName3.length>0?this.programName3:"",this.programName4=4==this.program?n:this.programName4.length>0?this.programName4:"",this.routines.setPrograms(this.programName1,this.programName2,this.programName3,this.programName4);this.events.publish("sharesBubbles",[this.programName1,this.programName2,this.programName3,this.programName4]),this.navCtrl.pop()},n.prototype.moreProgramInfo=function(n,l,e,i){this.navCtrl.push(bn,{programNumber:this.program,name:n,runTime:l,description:e,apiName:i})},n}(),yn=function(){function n(n,l,e,i,a,t,u){this.navCtrl=n,this.navParams=l,this.storage=e,this.translateService=i,this.localNotifications=a,this.plt=t,this.zone=u;var r=this;document.addEventListener("resume",function(){var n=new Date;r.resume(n.getTime())})}return n.prototype.simulateResume=function(){var n=new Date;this.resume(n.getTime()+10)},n.prototype.resume=function(n){if(Math.round(n/1e3)>this.finishTime)this.displayRunningTime="00:00",this.timerRemain=0,this.timerId++,this.startTimer(this.timerId);else{var l=this.timerRemain=this.finishTime-Math.round(n/1e3);this.timerId++,this.startTimer(this.timerId),this.displayRunningTime=this.convertSecondsToTime(l)}},n.prototype.ionViewDidLoad=function(){for(var n,l,e,i,a=this,t=1;t<=4;t++)switch(t){case 1:this.storage.get(an.storageKeyBubble1).then(function(l){var e=l.split("|");a.program1CurrentTimeDecreasingAsTime=e[2],n=e[2],a.storage.get(an.storageKeyLang).then(function(n){a.translateService.getTranslation(n).subscribe(function(n){a.programTitle1=void 0===n[e[1]]?e[1]:n[e[1]]})})});break;case 2:this.storage.get(an.storageKeyBubble2).then(function(n){var e=n.split("|");a.program2CurrentTimeDecreasingAsTime=e[2],l=e[2],a.storage.get(an.storageKeyLang).then(function(n){a.translateService.getTranslation(n).subscribe(function(n){a.programTitle2=void 0===n[e[1]]?e[1]:n[e[1]]})})});break;case 3:this.storage.get(an.storageKeyBubble3).then(function(n){var l=n.split("|");a.program3CurrentTimeDecreasingAsTime=l[2],e=l[2],a.storage.get(an.storageKeyLang).then(function(n){a.translateService.getTranslation(n).subscribe(function(n){a.programTitle3=void 0===n[l[1]]?l[1]:n[l[1]]})})});break;case 4:this.storage.get(an.storageKeyBubble4).then(function(t){var u=t.split("|");a.program4CurrentTimeDecreasingAsTime=u[2],i=u[2],a.storage.get(an.storageKeyLang).then(function(n){a.translateService.getTranslation(n).subscribe(function(n){a.programTitle4=void 0===n[u[1]]?u[1]:n[u[1]]})}),a.displayRunningTime=n>l&&n>e&&n>i?n:l>e&&l>i?l:e>i?e:i,a.displayRunningTime=a.displayRunningTime;var r=new Date;a.finishTime=Math.round(r.getTime()/1e3)+a.getSeconds(a.displayRunningTime),a.timerRemain=a.getSeconds(a.displayRunningTime),a.timerId=1,a.startTimer(a.timerId);var s=a;a.storage.get(an.storageKeyLang).then(function(n){a.translateService.getTranslation(n).subscribe(function(n){a.localNotifications.schedule({id:1,title:"MyMat Light",text:n["time-expire-text"],sound:"file://assets/sounds/"+(a.plt.is("ios")?"gong_c5.m4r":"gong_c5.mp3"),trigger:{at:new Date(r.getTime()+1e3*a.getSeconds(a.displayRunningTime))}}),a.localNotifications.on("click").subscribe({next:function(n){if(1==n.id){var l=new Date;s.resume(l.getTime())}}})})})})}},n.prototype.ionViewWillLeave=function(){this.timerRemain=0},n.prototype.startTimer=function(n){var l=this;setTimeout(function(){0!=l.timerRemain&&l.timerId==n&&(l.timerRemain--,l.zone.run(function(){l.displayRunningTime=l.decreaseSecond(l.displayRunningTime)}),l.timerRemain>0&&l.startTimer(l.timerId))},1e3)},n.prototype.decreaseSecond=function(n){var l=n.substr(0,n.indexOf(":")),e="0"==l[0]?parseInt(l[1]):parseInt(l),i=n.substr(n.indexOf(":")+1),a="0"==i[0]?parseInt(i[1]):parseInt(i);return a-1==-1?(l=e-1<10&&e-1>=0?"0"+(e-1):e-1==-1?"00":""+(e-1),i="59"):i=a-1<10?"0"+(a-1):""+(a-1),l+":"+i},n.prototype.getSeconds=function(n){var l=n.substr(0,n.indexOf(":")),e="0"==l[0]?parseInt(l[1]):parseInt(l),i=n.substr(n.indexOf(":")+1);return 60*e+("0"==i[0]?parseInt(i[1]):parseInt(i))},n.prototype.convertSecondsToTime=function(n){var l=Math.floor(n/60),e="0"+(n-60*l);return("0"+l).substr(-2)+":"+e.substr(-2)},n}(),Nn=function(){function n(n,l,e,i,a,t,u){var r=this;this.navCtrl=n,this.navParams=l,this.storage=e,this.apiService=i,this.translateService=a,this.networkInterface=t,this.platform=u,this.intervalCount=0,this.storage.get(an.storageKeyLang).then(function(n){r.translateService.getTranslation(n).subscribe(function(n){r.coilText=void 0===n.coil?"Antena":n.coil})}),this.program1=this.navParams.get("prog1"),this.program2=this.navParams.get("prog2"),this.program3=this.navParams.get("prog3"),this.program4=this.navParams.get("prog4")}return n.prototype.ionViewDidLeave=function(){this.stop()},n.prototype.ionViewDidLoad=function(){var n=this;this.mymatStatus=!1,this.showIframeStatus=!1,this.showLoading=!0,this.isRunRoutineEnabled=!0,this.platform.is("cordova")?this.networkInterface.getWiFiIPAddress().then(function(l){n.verifyInternalIpAddress(l)?n.showIPButton():n.failIPVerification()},function(l){n.failIPVerification()}):this.showIPButton(),this.mymatWifi=!0,this.intervalCount=0},n.prototype.verifyInternalIpAddress=function(n){for(var l=100;l<256;l++)if(an.localIPAddress+l==n)return!0;return!1},n.prototype.showIPButton=function(){var n=this;this.batteryImg="assets/img/b100.pn",this.coilText1="N/A",this.coilText2="N/A",this.coilText3="N/A",this.coilText4="N/A",clearInterval(this.testIPInterval);this.apiService.test().then(function(l){n.verifyValues(l)?n.showStatus():n.failStatusVerification()},function(l){n.failStatusVerification()})},n.prototype.showNoStatus=function(){this.mymatNoStatus=!0},n.prototype.showStatus=function(){this.mymatWifi=!1,this.mymatStatus=!0,this.showStatusTable=!0,this.showLoading=!1,this.isRunRoutineEnabled=!0,clearInterval(this.testStatusInterval),clearInterval(this.testIPInterval)},n.prototype.verifyValues=function(n){if(n.indexOf("<p><h4>Power: ")>-1){var l=n.split("<p><h4>Power: ");l=l[1].split("</h4></p>");var e=n.split("<tr><td>1.</td><td>");e=e[2].split("</td></tr>");var i=n.split("<tr><td>2.</td><td>");i=i[2].split("</td></tr>");var a=n.split("<tr><td>3.</td><td>");a=a[2].split("</td></tr>");var t=n.split("<tr><td>4.</td><td>");t=t[2].split("</td></tr>"),this.batteryCharge=l[0];var u=l[0].substr(0,l[0].length-1);return this.batteryImg=u>75?"assets/img/b100.png":u>50?"assets/img/b75.png":u>25?"assets/img/b50.png":u>10?"assets/img/b25.png":"assets/img/b10.png",this.coilText1=e[0],this.coilText2=i[0],this.coilText3=a[0],this.coilText4=t[0],!0}return!1},n.prototype.failIPVerification=function(){var n=this;this.testIPInterval=setInterval(function(){n.networkInterface.getWiFiIPAddress().then(function(l){l===an.localIPAddress&&n.showIPButton()})},3e3)},n.prototype.failStatusVerification=function(){var n=this;this.testStatusInterval=setInterval(function(){n.apiService.test().then(function(l){n.verifyValues(l)&&n.showStatus()},function(l){n.intervalCount>=5&&n.showNoStatus()}),n.intervalCount+=1},3e3)},n.prototype.startRoutine=function(){var n=this;this.showLoading=!0,this.isRunRoutineEnabled=!1,this.apiService.test().then(function(l){if(n.showLoading=!1,n.isRunRoutineEnabled=!0,n.verifyValues(l)){clearInterval(n.testStatusInterval),clearInterval(n.testIPInterval);var e=["|"+n.program1.name+"|"+n.program1.runningtime+"|"+n.program1.apiName,"|"+n.program2.name+"|"+n.program2.runningtime+"|"+n.program2.apiName,"|"+n.program3.name+"|"+n.program3.runningtime+"|"+n.program3.apiName,"|"+n.program4.name+"|"+n.program4.runningtime+"|"+n.program4.apiName];n.apiService.start(e).then(function(n){console.log(n+"")}).catch(function(n){}),n.storage.get(an.latestRoutinesKey).then(function(l){for(var i=[],a=new Date,t=a.getDate(),u=a.getMonth(),r=a.getFullYear(),s=a.getHours(),o=a.getMinutes(),m=[],c=0;c<e.length;c++)m.push({apiName:e[c].split("|")[3],name:e[c].split("|")[1]});i.push({day:t,month:an.monthNames[u],year:r,hours:n.fixZeroOnNumber(s),minutes:n.fixZeroOnNumber(o),programs:m}),null!=l&&null!=l[0]&&i.push(l[0]),null!=l&&null!=l[1]&&i.push(l[1]),n.storage.set(an.latestRoutinesKey,i)}),n.navCtrl.setRoot(yn)}else n.showLoading=!1,n.isRunRoutineEnabled=!0,n.mymatWifi=!0,n.mymatStatus=!1,n.showStatusTable=!1,n.showLoading=!0,n.failIPVerification()},function(l){n.showLoading=!1,n.isRunRoutineEnabled=!0,n.mymatWifi=!0,n.mymatStatus=!1,n.showStatusTable=!1,n.showLoading=!0,n.failIPVerification()})},n.prototype.fixZeroOnNumber=function(n){return n<10?"0"+n:n},n.prototype.stop=function(){clearInterval(this.testStatusInterval),clearInterval(this.testIPInterval)},n}(),kn=function(){function n(n,l,e,i,a,t,u,r,s,o){var m=this;this.navCtrl=n,this.storage=l,this.routines=e,this.translateService=i,this.network=a,this.zone=t,this.events=u,this.device=r,this.apiService=s,this.modalCtrl=o,this.showAddFavoriteButton=!1,this.events.subscribe("sharesBubbles",function(n){for(var l=1;l<=n.length;l++)m.updateBubbles(l,n[l-1]);m.AllBubblesChecked(m.routines.getPrograms())}),this.events.subscribe("addProgramsEvent",function(n,l,e,i){m.navCtrl.pop(),console.log(n);var a=m.routines.addPrograms("",n,l,e,i);m.events.publish("sharesBubbles",a)}),this.events.subscribe("switchLangEvent",function(n){m.storage.set(an.storageKeyLang,n),m.checkAllBubbles()}),this.AllBubblesChecked(this.routines.getPrograms()),this.isDeviceOnline=!0,this.network.onDisconnect().subscribe(function(){m.zone.run(function(){m.isDeviceOnline=!1})}),this.network.onConnect().subscribe(function(){m.zone.run(function(){m.isDeviceOnline=!0})}),this.storage.get(an.deviceInfoKey).then(function(n){if(void 0===n||null==n){var l=new FormData,e=an.test_uuid;window.hasOwnProperty("cordova")&&(e=m.device.uuid),l.append("uuid",e),m.apiService.runPost("check_device.php",l).then(function(n){m.isDeviceOnline=!0;var l=n;"0"==l.found?m.navCtrl.push(fn,{callBackPage:"none"}):m.storage.set(an.deviceInfoKey,{email:l.email,uuid:e})},function(n){})}})}return n.prototype.addPrograms=function(n,l,e,i,a){this.events.publish("addProgramsEvent",l,e,i,a),this.content.scrollTo(0,0,100)},n.prototype.ionViewDidLoad=function(){var n=this;this.storage.get(an.latestRoutinesKey).then(function(l){l?(n.showLatestSection=!0,n.latestRoutines=l):n.showLatestSection=!1})},n.prototype.openAddFavorite=function(){var n=this;this.storage.get(an.deviceInfoKey).then(function(l){if(void 0===l||null==l)n.navCtrl.push(fn,{callBackPage:"favorites"});else{n.modalCtrl.create(hn,{showSave:!0}).present()}})},n.prototype.removeProgramFromRoutine=function(n){console.log("hold: "+n)},n.prototype.selectBubble=function(n,l){this.navCtrl.push(vn,{bubble:n})},n.prototype.runRoutine=function(){var n=this.routines.getPrograms();this.AllBubblesChecked(n)&&this.navCtrl.push(Nn,{prog1:this.routines.getProgram(n[0]),prog2:this.routines.getProgram(n[1]),prog3:this.routines.getProgram(n[2]),prog4:this.routines.getProgram(n[3])})},n.prototype.AllBubblesChecked=function(n){return void 0!==n[0]&&null!=n[0]&&n[0].length>0&&void 0!==n[1]&&null!=n[1]&&n[1].length>0&&void 0!==n[2]&&null!=n[2]&&n[2].length>0&&void 0!==n[3]&&null!=n[3]&&n[3].length>0?(this.EnableRunRoutine=!0,this.showAddFavoriteButton=!0):(this.EnableRunRoutine=!1,this.showAddFavoriteButton=!1),this.EnableRunRoutine},n.prototype.cleanRoutine=function(){this.routines.cleanPrograms(),this.AllBubblesChecked(this.routines.getPrograms()),this.storage.set(an.storageKeyBubble1,""),this.storage.set(an.storageKeyBubble2,""),this.storage.set(an.storageKeyBubble3,""),this.storage.set(an.storageKeyBubble4,""),this.updateBubbles(1,""),this.updateBubbles(2,""),this.updateBubbles(3,""),this.updateBubbles(4,""),this.showAddFavoriteButton=!1},n.prototype.updateBubbles=function(n,l){var e=this;switch(n){case 1:void 0!==l&&l.length>0?(this.bubblesCurrentState1=!0,this.storage.get(an.storageKeyLang).then(function(n){e.translateService.getTranslation(n).subscribe(function(n){e.bubblesNames1=void 0===n[l]?l:n[l]})})):(this.bubblesCurrentState1=!1,this.bubblesNames1="");break;case 2:void 0!==l&&l.length>0?(this.bubblesCurrentState2=!0,this.storage.get(an.storageKeyLang).then(function(n){e.translateService.getTranslation(n).subscribe(function(n){e.bubblesNames2=void 0===n[l]?l:n[l]})})):(this.bubblesCurrentState2=!1,this.bubblesNames2="");break;case 3:void 0!==l&&l.length>0?(this.bubblesCurrentState3=!0,this.storage.get(an.storageKeyLang).then(function(n){e.translateService.getTranslation(n).subscribe(function(n){e.bubblesNames3=void 0===n[l]?l:n[l]})})):(this.bubblesCurrentState3=!1,this.bubblesNames3="");break;case 4:void 0!==l&&l.length>0?(this.bubblesCurrentState4=!0,this.storage.get(an.storageKeyLang).then(function(n){e.translateService.getTranslation(n).subscribe(function(n){e.bubblesNames4=void 0===n[l]?l:n[l]})})):(this.bubblesCurrentState4=!1,this.bubblesNames4="")}},n.prototype.checkAllBubbles=function(){var n=this;this.storage.get(an.storageKeyBubble1).then(function(l){if(null!==l){var e=l.split("|")[1];n.updateBubbles(1,e),n.routines.setProgram(1,e)}}).catch(function(l){n.apiService.sendError({area:"checkAllBubbles 1",message:l}).then(function(n){console.log(l)})}),this.storage.get(an.storageKeyBubble2).then(function(l){if(null!==l){var e=l.split("|")[1];n.updateBubbles(2,e),n.routines.setProgram(2,e)}}).catch(function(l){n.apiService.sendError({area:"checkAllBubbles 2",message:l}).then(function(n){console.log(l)})}),this.storage.get(an.storageKeyBubble3).then(function(l){if(null!==l){var e=l.split("|")[1];n.updateBubbles(3,e),n.routines.setProgram(3,e)}}).catch(function(l){n.apiService.sendError({area:"checkAllBubbles 3",message:l}).then(function(n){console.log(l)})}),this.storage.get(an.storageKeyBubble4).then(function(l){if(null!==l){var e=l.split("|")[1];n.updateBubbles(4,e),n.routines.setProgram(4,e)}n.AllBubblesChecked(n.routines.getPrograms())}).catch(function(l){n.apiService.sendError({area:"checkAllBubbles 4",message:l}).then(function(n){console.log(l)})})},n}(),wn=function(){function n(n,l){this.navCtrl=n,this.navParams=l}return n.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad HelpPage")},n}(),Sn=function(){function n(n,l,e,i,a,t,u){var r=this;this.navCtrl=n,this.navParams=l,this.formBuilder=e,this.apiService=i,this.translateService=a,this.storage=t,this.events=u,this.contactForm=this.formBuilder.group({email:["",tn.n.required],name:["",tn.n.required],message:["",tn.n.required]}),this.events.subscribe("switchLangEventContact",function(n){r.changeButtonText(n)})}return n.prototype.ionViewDidLoad=function(){var n=this;this.cleanForm(),this.response_text="",this.storage.get(an.storageKeyLang).then(function(l){n.changeButtonText(l)})},n.prototype.changeButtonText=function(n){var l=this;this.translateService.getTranslation(n).subscribe(function(n){l.button_send=n["send-text"]})},n.prototype.cleanForm=function(){this.contactDisabled=!0,this.name_value="",this.email_value="",this.message_value=""},n.prototype.attemptSendMail=function(){var n=this;this.apiService.runPost("contact_us.php",{email:this.contactForm.value.email,name:this.contactForm.value.name,message:this.contactForm.value.message}).then(function(l){"ok"==l.status?(n.storage.get(an.storageKeyLang).then(function(l){n.translateService.getTranslation(l).subscribe(function(l){n.response_text=l["email-success-message"]})}),n.storage.get(an.storageKeyLang).then(function(l){n.translateService.getTranslation(l).subscribe(function(l){n.button_send=l["sent-text"],n.cleanForm()})})):n.storage.get(an.storageKeyLang).then(function(l){n.translateService.getTranslation(l).subscribe(function(l){n.response_text=l["email-error-message"]})})},function(l){n.storage.get(an.storageKeyLang).then(function(l){n.translateService.getTranslation(l).subscribe(function(l){n.response_text=l["email-error-message"]})})})},n}(),Cn=function(){function n(n,l,e,i,a,t,u){var r=this;this.platform=n,this.statusBar=l,this.splashScreen=e,this.translateService=i,this.menuCtrl=a,this.storage=t,this.events=u,this.rootPage=kn,this.initializeApp(),this.pages=[{title:"home-title",component:kn,icon:"menuitemhome",isPush:!1},{title:"help-title",component:wn,icon:"menuitemhelp",isPush:!1},{title:"contact-title",component:Sn,icon:"menuitemcontact",isPush:!1},{title:"fav-title",component:hn,icon:"menufavorites",isPush:!0},{title:"slider-title",component:on,icon:"menuiteminfo",isPush:!0}],n.ready().then(function(){r.storage.get(an.storageKeyLang).then(function(n){n||((n=navigator.language.split("-")[0])||(n="en"),i.setDefaultLang(n)),i.use(n),r.switchLang(n)}).catch(function(n){i.setDefaultLang("en"),i.use("en"),r.switchLang("en")})})}return n.prototype.initializeApp=function(){var n=this;this.platform.ready().then(function(){n.statusBar.styleDefault(),n.splashScreen.hide()})},n.prototype.openPage=function(n){n.isPush?this.nav.push(n.component):this.nav.setRoot(n.component)},n.prototype.switchLang=function(n){switch(this.events.publish("switchLangEvent",n),this.events.publish("switchLangEventContact",n),n){case"es":this.lang_en=!0,this.lang_es=!1,this.lang_pt=!0,this.lang_fr=!0,this.lang_gr=!0,this.lang_it=!0;break;case"en":this.lang_en=!1,this.lang_es=!0,this.lang_pt=!0,this.lang_fr=!0,this.lang_gr=!0,this.lang_it=!0;break;case"pt":this.lang_en=!0,this.lang_es=!0,this.lang_pt=!1,this.lang_fr=!0,this.lang_gr=!0,this.lang_it=!0;break;case"it":this.lang_en=!0,this.lang_es=!0,this.lang_pt=!0,this.lang_fr=!0,this.lang_gr=!0,this.lang_it=!1;break;case"gr":this.lang_en=!0,this.lang_es=!0,this.lang_pt=!0,this.lang_fr=!0,this.lang_gr=!1,this.lang_it=!0;break;case"fr":this.lang_en=!0,this.lang_es=!0,this.lang_pt=!0,this.lang_fr=!1,this.lang_gr=!0,this.lang_it=!0}this.translateService.use(n),this.storage.set(an.storageKeyLang,n),this.menuCtrl.close()},n}(),Pn=function(){return function(){}}(),Tn=e(76),Mn=e(365),xn=e(366),Dn=e(367),Ln=e(368),In=e(369),Bn=e(370),Rn=e(371),En=e(372),jn=e(373),Fn=e(75),Hn=e(21),An=e(18),Kn=e(2),On=e(44),Yn=e(59),Jn=e(136),Vn=e(27),$n=e(374),Wn=e(60),Gn=e(100),Un=e(4),qn=e(24),zn=e(9),Zn=e(8),Xn=e(7),Qn=e(41),nl=e(22),ll=e(5),el=e(19),il=e(49),al=e(15),tl=e(375),ul=e(81),rl=e(56),sl=e(28),ol=e(51),ml=$._1({encapsulation:2,styles:[],data:{}}),cl=$.Z("ng-component",Cn,function(n){return $._25(0,[(n()(),$._3(0,0,null,null,1,"ng-component",[],null,null,null,c,ml)),$._2(1,49152,null,0,Cn,[Un.a,ln.a,en.a,z.j,Vn.a,W.b,ol.a],null,null)],null,null)},{},{},[]),pl=e(39),_l=e(52),gl=e(29),dl=e(25),hl=e(16),fl=e(50),bl=e(45),vl=e(31),yl=e(33),Nl=e(46),kl=e(37),wl=e(82),Sl=$._1({encapsulation:2,styles:[],data:{}}),Cl=$.Z("page-home",kn,function(n){return $._25(0,[(n()(),$._3(0,0,null,null,1,"page-home",[],null,null,null,d,Sl)),$._2(1,49152,null,0,kn,[el.a,W.b,dn,z.j,mn.a,$.x,ol.a,un.a,sn,wl.a],null,null)],null,null)},{},{},[]),Pl=e(14),Tl=$._1({encapsulation:2,styles:[],data:{}}),Ml=$.Z("page-help",wn,function(n){return $._25(0,[(n()(),$._3(0,0,null,null,1,"page-help",[],null,null,null,h,Tl)),$._2(1,49152,null,0,wn,[el.a,Pl.a],null,null)],null,null)},{},{},[]),xl=e(168),Dl=e(71),Ll=$._1({encapsulation:2,styles:[],data:{}}),Il=$.Z("page-contact",Sn,function(n){return $._25(0,[(n()(),$._3(0,0,null,null,1,"page-contact",[],null,null,null,f,Ll)),$._2(1,49152,null,0,Sn,[el.a,Pl.a,tn.d,sn,z.j,W.b,ol.a],null,null)],null,null)},{},{},[]),Bl=e(248),Rl=e(84),El=e(132),jl=$._1({encapsulation:2,styles:[],data:{}}),Fl=$.Z("page-programs",vn,function(n){return $._25(0,[(n()(),$._3(0,0,null,null,1,"page-programs",[],null,null,null,N,jl)),$._2(1,49152,null,0,vn,[el.a,W.b,Pl.a,dn,ol.a],null,null)],null,null)},{},{},[]),Hl=$._1({encapsulation:2,styles:[],data:{}}),Al=$.Z("page-wifi",Nn,function(n){return $._25(0,[(n()(),$._3(0,0,null,null,1,"page-wifi",[],null,null,null,x,Hl)),$._2(1,49152,null,0,Nn,[el.a,Pl.a,W.b,sn,z.j,X.a,Un.a],null,null)],null,null)},{},{},[]),Kl=$._1({encapsulation:2,styles:[],data:{}}),Ol=$.Z("page-playing",yn,function(n){return $._25(0,[(n()(),$._3(0,0,null,null,1,"page-playing",[],null,null,null,D,Kl)),$._2(1,49152,null,0,yn,[el.a,Pl.a,W.b,z.j,Q.a,Un.a,$.x],null,null)],null,null)},{},{},[]),Yl=e(69),Jl=e(376),Vl=e(105),$l=e(102),Wl=e(377),Gl=e(94),Ul=e(70),ql=$._1({encapsulation:2,styles:[],data:{}}),zl=$.Z("page-subscribe",fn,function(n){return $._25(0,[(n()(),$._3(0,0,null,null,1,"page-subscribe",[],null,null,null,B,ql)),$._2(1,49152,null,0,fn,[el.a,Pl.a,$.x,tn.d,W.b,sn,z.j,un.a,wl.a,mn.a],null,null)],null,null)},{},{},[]),Zl=e(378),Xl=e(107),Ql=e(73),ne=e(379),le=e(149),ee=e(249),ie=$._1({encapsulation:2,styles:[],data:{}}),ae=$.Z("page-slider",on,function(n){return $._25(0,[(n()(),$._3(0,0,null,null,1,"page-slider",[],null,null,null,j,ie)),$._2(1,49152,null,0,on,[el.a,Pl.a,Un.a,W.b,z.j],null,null)],null,null)},{},{},[]),te=$._1({encapsulation:2,styles:[],data:{}}),ue=$.Z("page-program",bn,function(n){return $._25(0,[(n()(),$._3(0,0,null,null,1,"page-program",[],null,null,null,F,te)),$._2(1,49152,null,0,bn,[el.a,Pl.a,W.b,z.j,ol.a],null,null)],null,null)},{},{},[]),re=e(144),se=e(150),oe=e(99),me=e(93),ce=$._1({encapsulation:2,styles:[],data:{}}),pe=$.Z("page-favorites",hn,function(n){return $._25(0,[(n()(),$._3(0,0,null,null,1,"page-favorites",[],null,null,null,J,ce)),$._2(1,49152,null,0,hn,[Pl.a,ll.a,dn,tn.d,z.j,W.b,sn,mn.a,oe.a,me.a,$.x,ol.a],null,null)],null,null)},{},{},[]),_e=e(157),ge=e(128),de=e(58),he=e(227),fe=e(78),be=e(72),ve=e(141),ye=e(154),Ne=e(148),ke=e(226),we=e(155),Se=e(137),Ce=e(156),Pe=$._0(Pn,[Tn.b],function(n){return $._11([$._12(512,$.i,$.W,[[8,[Mn.a,xn.a,Dn.a,Ln.a,In.a,Bn.a,Rn.a,En.a,jn.a,cl,Cl,Ml,Il,Fl,Al,Ol,zl,ae,ue,pe]],[3,$.i],$.v]),$._12(5120,$.u,$._20,[[3,$.u]]),$._12(4608,al.k,al.j,[$.u,[2,al.s]]),$._12(5120,$.b,$._5,[]),$._12(5120,$.s,$._13,[]),$._12(5120,$.t,$._16,[]),$._12(4608,V.c,V.q,[al.c]),$._12(6144,$.H,null,[V.c]),$._12(4608,V.f,_e.a,[]),$._12(5120,V.d,function(n,l,e,i,a){return[new V.k(n,l),new V.o(e),new V.n(i,a)]},[al.c,$.x,al.c,al.c,V.f]),$._12(4608,V.e,V.e,[V.d,$.x]),$._12(135680,V.m,V.m,[al.c]),$._12(4608,V.l,V.l,[V.e,V.m]),$._12(6144,$.F,null,[V.l]),$._12(6144,V.p,null,[V.m]),$._12(4608,$.K,$.K,[$.x]),$._12(4608,V.h,V.h,[al.c]),$._12(4608,V.i,V.i,[al.c]),$._12(4608,G.c,G.c,[]),$._12(4608,G.h,G.b,[]),$._12(5120,G.j,G.k,[]),$._12(4608,G.i,G.i,[G.c,G.h,G.j]),$._12(4608,G.g,G.a,[]),$._12(5120,G.e,G.l,[G.i,G.g]),$._12(4608,U.h,U.m,[al.c,$.z,U.k]),$._12(4608,U.n,U.n,[U.h,U.l]),$._12(5120,U.a,function(n){return[n]},[U.n]),$._12(4608,U.j,U.j,[]),$._12(6144,U.i,null,[U.j]),$._12(4608,U.g,U.g,[U.i]),$._12(6144,U.b,null,[U.g]),$._12(5120,U.f,U.o,[U.b,[2,U.a]]),$._12(4608,U.c,U.c,[U.f]),$._12(4608,tn.q,tn.q,[]),$._12(4608,tn.d,tn.d,[]),$._12(4608,ge.a,ge.a,[Xn.a,Kn.a]),$._12(4608,me.a,me.a,[Xn.a,Kn.a]),$._12(4608,ol.a,ol.a,[]),$._12(4608,An.a,An.a,[]),$._12(4608,de.a,de.a,[Un.a]),$._12(4608,qn.a,qn.a,[Kn.a,Un.a,$.x,Zn.a]),$._12(4608,oe.a,oe.a,[Xn.a,Kn.a]),$._12(5120,al.f,he.b,[al.q,[2,al.a],Kn.a]),$._12(4608,al.e,al.e,[al.f]),$._12(5120,fe.b,fe.d,[Xn.a,fe.a]),$._12(5120,sl.a,sl.b,[Xn.a,fe.b,al.e,be.b,$.i]),$._12(4608,wl.a,wl.a,[Xn.a,Kn.a,sl.a]),$._12(4608,Ul.a,Ul.a,[Xn.a,Kn.a]),$._12(4608,ve.a,ve.a,[Xn.a,Kn.a,sl.a]),$._12(4608,ye.a,ye.a,[Kn.a,Un.a,Zn.a,Xn.a,zn.l]),$._12(4608,Ne.a,Ne.a,[Xn.a,Kn.a]),$._12(4608,rl.a,rl.a,[Un.a,Kn.a]),$._12(5120,W.b,W.d,[W.c]),$._12(5120,z.f,i,[U.c]),$._12(4608,z.c,z.e,[]),$._12(4608,z.h,z.d,[]),$._12(4608,z.b,z.a,[]),$._12(4608,z.m,z.m,[]),$._12(4608,z.j,z.j,[z.m,z.f,z.c,z.h,z.b,z.k,z.l]),$._12(4608,ln.a,ln.a,[]),$._12(4608,en.a,en.a,[]),$._12(4608,dn,dn,[W.b]),$._12(4608,X.a,X.a,[]),$._12(4608,mn.a,mn.a,[]),$._12(4608,un.a,un.a,[]),$._12(4608,Q.a,Q.a,[]),$._12(4608,nn.a,nn.a,[]),$._12(4608,q.a,q.a,[]),$._12(4608,sn,sn,[U.c,q.a,G.e]),$._12(512,al.b,al.b,[]),$._12(512,$.l,ke.a,[]),$._12(256,Kn.b,{},[]),$._12(1024,we.a,we.b,[]),$._12(1024,Un.a,Un.b,[V.b,we.a,$.x]),$._12(1024,Kn.a,Kn.c,[Kn.b,Un.a]),$._12(512,Zn.a,Zn.a,[Un.a]),$._12(512,Vn.a,Vn.a,[]),$._12(512,Xn.a,Xn.a,[Kn.a,Un.a,[2,Vn.a]]),$._12(512,zn.l,zn.l,[Xn.a]),$._12(256,fe.a,{links:[]},[]),$._12(512,$.h,$.h,[]),$._12(512,Se.a,Se.a,[$.h]),$._12(1024,be.b,be.c,[Se.a,$.q]),$._12(1024,$.c,function(n,l,e,i,a,t,u,r,s,o,m,c,p){return[V.s(n),Ce.a(l),ol.b(e,i),ye.b(a,t,u,r,s),be.d(o,m,c,p)]},[[2,$.w],Kn.a,Un.a,Zn.a,Kn.a,Un.a,Zn.a,Xn.a,zn.l,Kn.a,fe.a,be.b,$.x]),$._12(512,$.d,$.d,[[2,$.c]]),$._12(131584,$.f,$.f,[$.x,$.X,$.q,$.l,$.i,$.d]),$._12(512,$.e,$.e,[$.f]),$._12(512,V.a,V.a,[[3,V.a]]),$._12(512,G.f,G.f,[]),$._12(512,U.e,U.e,[]),$._12(512,U.d,U.d,[]),$._12(512,tn.o,tn.o,[]),$._12(512,tn.g,tn.g,[]),$._12(512,tn.m,tn.m,[]),$._12(512,he.a,he.a,[]),$._12(512,W.a,W.a,[]),$._12(512,z.g,z.g,[]),$._12(512,Pn,Pn,[]),$._12(256,U.k,"XSRF-TOKEN",[]),$._12(256,U.l,"X-XSRF-TOKEN",[]),$._12(256,Tn.a,Cn,[]),$._12(256,al.a,"/",[]),$._12(256,W.c,null,[]),$._12(256,z.l,void 0,[]),$._12(256,z.k,void 0,[])])});Object($.Q)(),Object(V.j)().bootstrapModuleFactory(Pe)}},[250]);
+webpackJsonp([0],{
+
+/***/ 138:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SliderPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(26);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/**
+ * Generated class for the SliderPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SliderPage = (function () {
+    function SliderPage(navCtrl, navParams, plt, storage, translateService) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.plt = plt;
+        this.storage = storage;
+        this.translateService = translateService;
+        this.showHeader = false;
+    }
+    SliderPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+            _this.translateService.getTranslation(lang).subscribe(function (value) {
+                _this.culture = value['culture'];
+                _this.images = new Array();
+                for (var i = 1; i <= 5; i++) {
+                    _this.images.push('./assets/imgs/instructions/' + _this.culture + '/' + i + '.png');
+                }
+            });
+        });
+    };
+    SliderPage.prototype.skipInstructions = function () {
+        this.navCtrl.popToRoot();
+    };
+    SliderPage.prototype.next = function () {
+        this.slides.slideNext();
+    };
+    SliderPage.prototype.prev = function () {
+        this.slides.slidePrev();
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('slides'),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */])
+    ], SliderPage.prototype, "slides", void 0);
+    SliderPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-slider',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\slider\slider.html"*/'<ion-header *ngIf="showHeader">\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding no-border>\n        <button float-left ion-button  color="light" class="swiper-button-prev swiper-button-black" (click)="prev()" [disabled]="slides.isBeginning()"></button>\n\n        <ion-slides #slides>\n          <ion-slide *ngFor="let image of images">\n              <img src="{{ image }}"/>\n          </ion-slide>\n        </ion-slides>\n        <button float-right ion-button color="light" class="swiper-button-next swiper-button-black" (click)="next()" [disabled]="slides.isEnd()"></button>\n\n</ion-content>\n<ion-footer>\n  <ion-toolbar color="dark">\n    <ion-buttons end>\n        <button ion-button class="button-clear" (click)="skipInstructions()">\n            {{ \'skip\' | translate }}\n        </button>\n    </ion-buttons>\n  </ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\slider\slider.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */]])
+    ], SliderPage);
+    return SliderPage;
+}());
+
+//# sourceMappingURL=slider.js.map
+
+/***/ }),
+
+/***/ 148:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 148;
+
+/***/ }),
+
+/***/ 192:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 192;
+
+/***/ }),
+
+/***/ 244:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__subscribe_subscribe__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_routines_routines__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_device__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_api_service_api_service__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__programs_programs__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__wifi_wifi__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__favorites_favorites__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_local_notifications__ = __webpack_require__(133);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var HomePage = (function () {
+    function HomePage(navCtrl, storage, routines, translateService, network, zone, localNotifications, events, device, apiService, modalCtrl) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.storage = storage;
+        this.routines = routines;
+        this.translateService = translateService;
+        this.network = network;
+        this.zone = zone;
+        this.localNotifications = localNotifications;
+        this.events = events;
+        this.device = device;
+        this.apiService = apiService;
+        this.modalCtrl = modalCtrl;
+        this.showAddFavoriteButton = false;
+        //this.checkAllBubbles();
+        this.events.subscribe('sharesBubbles', function (bubbles) {
+            for (var i = 1; i <= bubbles.length; i++) {
+                _this.updateBubbles(i, bubbles[i - 1]);
+            }
+            _this.AllBubblesChecked(_this.routines.getPrograms());
+        });
+        this.events.subscribe('addProgramsEvent', function (program1, program2, program3, program4) {
+            _this.navCtrl.pop();
+            console.log(program1);
+            var bubbles = _this.routines.addPrograms('', program1, program2, program3, program4);
+            _this.events.publish("sharesBubbles", bubbles);
+        });
+        this.events.subscribe('switchLangEvent', function (lang) {
+            //call methods to refresh content
+            _this.storage.set(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyLang, lang);
+            _this.checkAllBubbles();
+        });
+        this.AllBubblesChecked(this.routines.getPrograms());
+        this.isDeviceOnline = true;
+        // watch network for a disconnect
+        this.network.onDisconnect().subscribe(function () {
+            _this.zone.run(function () {
+                _this.isDeviceOnline = false;
+            });
+        });
+        // watch network for a connection
+        this.network.onConnect().subscribe(function () {
+            _this.zone.run(function () {
+                _this.isDeviceOnline = true;
+            });
+        });
+        //this.navCtrl.push(SubscribePage, { callBackPage : 'none' });
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].deviceInfoKey).then(function (info) {
+            if (typeof info === 'undefined' || info == null) {
+                /*if(window.hasOwnProperty('cordova')){*/
+                var formData = new FormData();
+                var _uuid = __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].test_uuid;
+                if (window.hasOwnProperty('cordova')) {
+                    _uuid = _this.device.uuid;
+                }
+                formData.append('uuid', _uuid);
+                _this.apiService.runPost('check_device.php', formData).then(function (result) {
+                    //console.log('check_device success');
+                    _this.isDeviceOnline = true;
+                    var obj = result;
+                    if (obj.found == "0") {
+                        // despliega la vista de insercion de datos
+                        _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__subscribe_subscribe__["a" /* SubscribePage */], { callBackPage: 'none' });
+                    }
+                    else {
+                        _this.storage.set(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].deviceInfoKey, { "email": obj.email, "uuid": _uuid });
+                    }
+                }, function (result) {
+                    //console.log('check_device error ' + result);
+                    //this.isDeviceOnline = false;
+                    /*this.storage.get(Constants.storageKeyLang).then((lang)=>{
+                      this.translateService.getTranslation(lang).subscribe((value) => {
+                        this.offline_device = value['offline-device-text-2'];
+                      });
+                    });*/
+                });
+                /*}*/
+            }
+        });
+        var t = new Date();
+        this.localNotifications.schedule({
+            id: 1,
+            title: 'MyMat Light',
+            text: 'prueba',
+            icon: 'android_asset/www/assets/icon/person-icon-256.png',
+            sound: 'android_asset/www/assets/sounds/gong_c5.mp3',
+            trigger: { at: new Date(t.getTime() + 30 * 1000) }
+        });
+    }
+    HomePage.prototype.addPrograms = function (routineName, program0, program1, program2, program3) {
+        this.events.publish('addProgramsEvent', program0, program1, program2, program3);
+        this.content.scrollTo(0, 0, 100);
+    };
+    HomePage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].latestRoutinesKey).then(function (latests) {
+            if (latests) {
+                _this.showLatestSection = true;
+                _this.latestRoutines = latests;
+            }
+            else {
+                _this.showLatestSection = false;
+            }
+        });
+    };
+    HomePage.prototype.openAddFavorite = function () {
+        var _this = this;
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].deviceInfoKey).then(function (info) {
+            if (typeof info === 'undefined' || info == null) {
+                // despliega la vista de insercion de datos
+                _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__subscribe_subscribe__["a" /* SubscribePage */], { callBackPage: 'favorites' });
+            }
+            else {
+                var profileModal = _this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_12__favorites_favorites__["a" /* FavoritesPage */], { 'showSave': true });
+                profileModal.present();
+            }
+        });
+    };
+    HomePage.prototype.removeProgramFromRoutine = function (prg) {
+        console.log('hold: ' + prg);
+    };
+    HomePage.prototype.selectBubble = function (prg, add) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_10__programs_programs__["a" /* ProgramsPage */], { bubble: prg });
+    };
+    HomePage.prototype.runRoutine = function () {
+        var programs = this.routines.getPrograms();
+        if (this.AllBubblesChecked(programs)) {
+            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_11__wifi_wifi__["a" /* WifiPage */], { prog1: this.routines.getProgram(programs[0]), prog2: this.routines.getProgram(programs[1]), prog3: this.routines.getProgram(programs[2]), prog4: this.routines.getProgram(programs[3])
+            });
+        }
+    };
+    HomePage.prototype.AllBubblesChecked = function (programs) {
+        if (typeof programs[0] !== 'undefined' && programs[0] != null && programs[0].length > 0 &&
+            typeof programs[1] !== 'undefined' && programs[1] != null && programs[1].length > 0 &&
+            typeof programs[2] !== 'undefined' && programs[2] != null && programs[2].length > 0 &&
+            typeof programs[3] !== 'undefined' && programs[3] != null && programs[3].length > 0) {
+            this.EnableRunRoutine = true;
+            this.showAddFavoriteButton = true;
+        }
+        else {
+            this.EnableRunRoutine = false;
+            this.showAddFavoriteButton = false;
+        }
+        return this.EnableRunRoutine;
+    };
+    HomePage.prototype.cleanRoutine = function () {
+        this.routines.cleanPrograms();
+        this.AllBubblesChecked(this.routines.getPrograms());
+        this.storage.set(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble1, '');
+        this.storage.set(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble2, '');
+        this.storage.set(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble3, '');
+        this.storage.set(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble4, '');
+        this.updateBubbles(1, '');
+        this.updateBubbles(2, '');
+        this.updateBubbles(3, '');
+        this.updateBubbles(4, '');
+        this.showAddFavoriteButton = false;
+    };
+    HomePage.prototype.updateBubbles = function (bubble, name) {
+        var _this = this;
+        switch (bubble) {
+            case 1:
+                if (typeof name !== 'undefined' && name.length > 0) {
+                    this.bubblesCurrentState1 = true;
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                        _this.translateService.getTranslation(lang).subscribe(function (value) {
+                            _this.bubblesNames1 = typeof value[name] === 'undefined' ? name : value[name];
+                        });
+                    });
+                }
+                else {
+                    this.bubblesCurrentState1 = false;
+                    this.bubblesNames1 = '';
+                }
+                break;
+            case 2:
+                if (typeof name !== 'undefined' && name.length > 0) {
+                    this.bubblesCurrentState2 = true;
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                        _this.translateService.getTranslation(lang).subscribe(function (value) {
+                            _this.bubblesNames2 = typeof value[name] === 'undefined' ? name : value[name];
+                        });
+                    });
+                }
+                else {
+                    this.bubblesCurrentState2 = false;
+                    this.bubblesNames2 = '';
+                }
+                break;
+            case 3:
+                if (typeof name !== 'undefined' && name.length > 0) {
+                    this.bubblesCurrentState3 = true;
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                        _this.translateService.getTranslation(lang).subscribe(function (value) {
+                            _this.bubblesNames3 = typeof value[name] === 'undefined' ? name : value[name];
+                        });
+                    });
+                }
+                else {
+                    this.bubblesCurrentState3 = false;
+                    this.bubblesNames3 = '';
+                }
+                break;
+            case 4:
+                if (typeof name !== 'undefined' && name.length > 0) {
+                    this.bubblesCurrentState4 = true;
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                        _this.translateService.getTranslation(lang).subscribe(function (value) {
+                            _this.bubblesNames4 = typeof value[name] === 'undefined' ? name : value[name];
+                        });
+                    });
+                }
+                else {
+                    this.bubblesCurrentState4 = false;
+                    this.bubblesNames4 = '';
+                }
+                break;
+        }
+    };
+    HomePage.prototype.checkAllBubbles = function () {
+        var _this = this;
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble1).then(function (val) {
+            if (val !== null) {
+                var name = val.split('|')[1];
+                _this.updateBubbles(1, name);
+                _this.routines.setProgram(1, name);
+            }
+        }).catch(function (err) {
+            var emailData = { area: 'checkAllBubbles 1', message: err };
+            _this.apiService.sendError(emailData).then(function (result) {
+                console.log(err);
+            });
+        });
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble2).then(function (val) {
+            if (val !== null) {
+                var name = val.split('|')[1];
+                _this.updateBubbles(2, name);
+                _this.routines.setProgram(2, name);
+            }
+        }).catch(function (err) {
+            var emailData = { area: 'checkAllBubbles 2', message: err };
+            _this.apiService.sendError(emailData).then(function (result) {
+                console.log(err);
+            });
+        });
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble3).then(function (val) {
+            if (val !== null) {
+                var name = val.split('|')[1];
+                _this.updateBubbles(3, name);
+                _this.routines.setProgram(3, name);
+            }
+        }).catch(function (err) {
+            var emailData = { area: 'checkAllBubbles 3', message: err };
+            _this.apiService.sendError(emailData).then(function (result) {
+                console.log(err);
+            });
+        });
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyBubble4).then(function (val) {
+            if (val !== null) {
+                var name = val.split('|')[1];
+                _this.updateBubbles(4, name);
+                _this.routines.setProgram(4, name);
+            }
+            _this.AllBubblesChecked(_this.routines.getPrograms());
+        }).catch(function (err) {
+            var emailData = { area: 'checkAllBubbles 4', message: err };
+            _this.apiService.sendError(emailData).then(function (result) {
+                console.log(err);
+            });
+        });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Content */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Content */])
+    ], HomePage.prototype, "content", void 0);
+    HomePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-home',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\home\home.html"*/'  <ion-header>\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="home">\n    <div padding class="bubblescontainer">\n        <div class="bubbles">\n            <div (click)="selectBubble(1)" on-hold="removeProgramFromRoutine(1)" [ngStyle]="bubblesCurrentState1 && {\'background-image\':\'url(assets/img/bubble-violet.png)\'}" class="single-bubble-1"></div>\n            <div class="bubbles-program-name-1" (click)="selectBubble(1,true)">{{ bubblesNames1 }}</div>\n\n            <div (click)="selectBubble(2)" on-hold="removeProgramFromRoutine(2)" [ngStyle]="bubblesCurrentState2 && {\'background-image\':\'url(assets/img/bubble-red.png)\'}" class="single-bubble-2"></div>\n            <div class="bubbles-program-name-2" (click)="selectBubble(2,true)">{{ bubblesNames2 }}</div>\n\n            <div (click)="selectBubble(3)" on-hold="removeProgramFromRoutine(3)" [ngStyle]="bubblesCurrentState3 && {\'background-image\':\'url(assets/img/bubble-yellow.png)\'}" class="single-bubble-3"></div>\n            <div class="bubbles-program-name-3" (click)="selectBubble(3,true)">{{ bubblesNames3 }}</div>\n\n            <div (click)="selectBubble(4)" on-hold="removeProgramFromRoutine(4)" [ngStyle]="bubblesCurrentState4 && {\'background-image\':\'url(assets/img/bubble-green.png)\'}" class="single-bubble-4"></div>\n            <div class="bubbles-program-name-4" (click)="selectBubble(4,true)">{{ bubblesNames4 }}</div>\n        </div>\n    </div>\n\n    <div class="bubbleexplain">\n        <br>\n        <b>{{ \'tap-bubble\' | translate }}</b><br><br>\n        <!--<p translate="press-hold"> Press and hold a hearth to remove</p>-->\n        <button [disabled]="!EnableRunRoutine" class="greenbtn" menu-close nav-transition="ios" nav-direction="forward" (click)="runRoutine()" href="#">{{ \'run-routine\' | translate }}</button>\n        <br><br>\n        <button [disabled]="!showAddFavoriteButton" class="orangebtn" menu-close nav-transition="ios" nav-direction="forward" (click)="openAddFavorite()" href="#">{{ \'add-favorite\' | translate }}</button>\n        <br><br>\n        <button class="graybtn" menu-close nav-transition="ios" nav-direction="forward" (click)="cleanRoutine()" href="#">{{ \'clean-routine\' | translate }}</button>\n\n    </div>\n    <div text-center text-uppercase padding-top *ngIf="showLatestSection">{{ \'latest-routines\' | translate }}</div>\n    <div *ngFor="let routine of latestRoutines">\n        <div text-center padding-top>\n          {{ routine.day }} {{ routine.month | translate }} {{ routine.year }} {{ routine.hours }}:{{ routine.minutes }}\n        </div>\n        <!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->\n\n        <div class="paddingmodal">\n\n            <ion-list (click)="addPrograms(\'\', routine.programs[0].apiName, routine.programs[1].apiName,\n                routine.programs[2].apiName,routine.programs[3].apiName)">\n\n                <ion-item *ngFor="let program of routine.programs" class="addiction center">\n                     {{ program.name | translate }}\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n    </div>\n</ion-content>\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\home\home.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_4__providers_routines_routines__["a" /* RoutinesProvider */],
+            __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */], __WEBPACK_IMPORTED_MODULE_13__ionic_native_local_notifications__["a" /* LocalNotifications */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */], __WEBPACK_IMPORTED_MODULE_8__ionic_native_device__["a" /* Device */], __WEBPACK_IMPORTED_MODULE_9__providers_api_service_api_service__["a" /* APIServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */]])
+    ], HomePage);
+    return HomePage;
+}());
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 245:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SubscribePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_device__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_api_service_api_service__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__slider_slider__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_network__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__favorites_favorites__ = __webpack_require__(74);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Generated class for the SubscribePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SubscribePage = (function () {
+    function SubscribePage(navCtrl, navParams, zone, formBuilder, storage, apiService, translateService, device, modalCtrl, network) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.zone = zone;
+        this.formBuilder = formBuilder;
+        this.storage = storage;
+        this.apiService = apiService;
+        this.translateService = translateService;
+        this.device = device;
+        this.modalCtrl = modalCtrl;
+        this.network = network;
+        // obtiene el parametro de que page va a correr al terminar el registro
+        this.callBackPage = this.navParams.get('callBackPage');
+        this.showSubmitButton = true;
+        var aDate = new Date();
+        this.maxDateOfPicker = this.maxDate = aDate.toISOString();
+        this.subscribeForm = this.formBuilder.group({
+            email: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required],
+            name: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required],
+            gender: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required],
+            birthDate: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required]
+        });
+        this.isDeviceOnline = true;
+        // watch network for a disconnect
+        this.network.onDisconnect().subscribe(function () {
+            _this.zone.run(function () {
+                _this.isDeviceOnline = false;
+            });
+        });
+        // watch network for a connection
+        this.network.onConnect().subscribe(function () {
+            _this.zone.run(function () {
+                _this.isDeviceOnline = true;
+            });
+        });
+    }
+    SubscribePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SubscribePage');
+    };
+    SubscribePage.prototype.attemptSubscribe = function () {
+        var _this = this;
+        this.response_text = '';
+        var formData = new FormData();
+        formData.append('email', this.subscribeForm.value.email);
+        formData.append('name', this.subscribeForm.value.name);
+        formData.append('birthDate', this.subscribeForm.value.birthDate);
+        formData.append('gender', this.subscribeForm.value.gender);
+        formData.append('isUpdate', 'false');
+        if (window.hasOwnProperty('cordova')) {
+            formData.append('uuid', this.device.uuid);
+        }
+        else {
+            formData.append('uuid', __WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].test_uuid);
+        }
+        this.apiService.runPost('subscribe.php', formData).then(function (result) {
+            _this.responseData = result;
+            if (_this.responseData.status == 'ok') {
+                _this.storage.set(__WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].deviceInfoKey, { 'uuid': _this.responseData.uuid, 'email': _this.subscribeForm.value.email });
+                _this.showSubmitButton = false;
+                _this.storage.get(__WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                    _this.translateService.getTranslation(lang).subscribe(function (value) {
+                        _this.response_text = value['profile-success-message'];
+                        setTimeout(function () {
+                            if (_this.callBackPage == 'none') {
+                                // despliega la vista de de instrucciones
+                                _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_8__slider_slider__["a" /* SliderPage */]);
+                            }
+                            else if (_this.callBackPage == 'favorites') {
+                                _this.navCtrl.pop();
+                                var profileModal = _this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_10__favorites_favorites__["a" /* FavoritesPage */], { 'showSave': true });
+                                profileModal.present();
+                            }
+                        }, 5000);
+                    });
+                });
+            }
+            else {
+                _this.storage.get(__WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                    _this.translateService.getTranslation(lang).subscribe(function (value) {
+                        var error = value['profile-error-message'] + ': ';
+                        if (_this.responseData.emailError != 'ok') {
+                            error += _this.responseData.emailError;
+                            _this.errorEmailClass = 'error';
+                        }
+                        if (_this.responseData.nameError != 'ok') {
+                            error += _this.responseData.nameError;
+                            _this.errorNameClass = 'error';
+                        }
+                        if (_this.responseData.genderError != 'ok') {
+                            error += _this.responseData.genderError;
+                            _this.errorGenderClass = 'error';
+                        }
+                        if (_this.responseData.dateOfBirthError != 'ok') {
+                            error += _this.responseData.dateOfBirthError;
+                            _this.errorDateClass = 'error';
+                        }
+                        _this.response_text = error;
+                    });
+                });
+            }
+            // TODO: poner success y desplegar pagina principal
+        }, function (result) {
+            _this.storage.get(__WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                _this.translateService.getTranslation(lang).subscribe(function (value) {
+                    _this.response_text = value['profile-error-message'];
+                });
+            });
+        });
+    };
+    SubscribePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-subscribe',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\subscribe\subscribe.html"*/'<!--\n  Generated template for the SubscribePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar class="bar">\n    <button ion-button menuToggle end class="button button-clear">\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      <div class="logo"></div>\n    </ion-title>\n  </ion-navbar>\n  <ion-item class="no-conection" *ngIf="!isDeviceOnline">{{ \'offline-device-text\' | translate }}</ion-item>\n</ion-header>\n\n\n<ion-content padding class="home center">\n\n  <div class="list card cardprogram">\n    <ion-item>\n\n        <h2 padding>{{ \'profile-text\' | translate }}</h2>\n\n    </ion-item>\n\n    <div padding class="item item-body">\n      <form [formGroup]="subscribeForm" (ngSubmit)="attemptSubscribe()">\n        <ion-list>\n          <label>\n            <p class="lorems center-forced" [innerHTML]="\'one-time-profile-text\' | translate">Text</p>\n          </label>\n          <ion-label class="item-input contact" [ngClass]="errorNameClass">\n            <ion-input type="text" placeholder="{{ \'name-text\' | translate }}" formControlName="name" value="{{ name_value }}"></ion-input>\n          </ion-label>\n          <ion-label class="item-input contact" [ngClass]="errorEmailClass">\n            <ion-input type="email" placeholder="Email"  autocapitalize="none" formControlName="email" value="{{ email_value }}"></ion-input>\n          </ion-label>\n          <ion-item class="item-input contact" [ngClass]="errorGenderClass">\n            <ion-label class="item-input contact">{{ \'gender-text\' | translate }}</ion-label>\n              <ion-select formControlName="gender" >\n                <ion-option value="f">{{ \'female-text\' | translate }}</ion-option>\n                <ion-option value="m">{{ \'male-text\' | translate }}</ion-option>\n              </ion-select>\n          </ion-item>\n          <ion-item class="item-input contact select" [ngClass]="errorDateClass">\n            <ion-label class="item-input contact" [ngClass]="errorGenderClass">{{ \'birthdate-text\' | translate }}</ion-label >\n            <ion-datetime [max]="maxDateOfPicker" displayFormat="MMM DD, YYYY" pickerFormat="YYYY-MM-DD" formControlName="birthDate"></ion-datetime>\n          </ion-item>\n          <ion-item>\n            <button type="submit" ion-button *ngIf="showSubmitButton" [disabled]="!subscribeForm.valid" class="button-contact button-calm">{{ \'button-send\' | translate }}</button>\n          </ion-item>\n        </ion-list>\n        <div padding>\n          {{ response_text }}\n        </div>\n      </form>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\subscribe\subscribe.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_6__providers_api_service_api_service__["a" /* APIServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_device__["a" /* Device */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_9__ionic_native_network__["a" /* Network */]])
+    ], SubscribePage);
+    return SubscribePage;
+}());
+
+//# sourceMappingURL=subscribe.js.map
+
+/***/ }),
+
+/***/ 259:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Data; });
+var Data = { Groups: [
+        {
+            category: 'basic',
+            name: 'pain-relief-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Pain_Conditions",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Nervous_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Peace",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Regeneration",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'basic',
+            name: 'injury-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Bone_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'basic',
+            name: 'stress-relief-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Electro_Smog",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Relaxation",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'basic',
+            name: 'immune-system-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'basic',
+            name: 'respiratory-system-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Respiratory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Sinus_Cavities",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lung_Meridian",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'basic',
+            name: 'detoxification-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Detoxification",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Large_Intestine_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Intestinal_Flora",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'basic',
+            name: 'headache-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Headache",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Peace",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Liver_Meridian",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'basic',
+            name: 'grounding-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Electro_Smog",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Earth_Element",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Root_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'business and travel',
+            name: 'energy-booster-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Energy_Booster",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Exhaustion",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Adrenal_Gland",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Brow_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'business and travel',
+            name: 'JET-LAG',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Jet-Lag/Climate_Change",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Electro_Smog",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Relaxation",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Earth_Element",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'business and travel',
+            name: 'JET-LAG',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Jet-Lag/Climate_Change",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Exhaustion",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Circulatory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Booster",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'business and travel',
+            name: 'concentration-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Concentration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Discernment",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Adrenal_Gland",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Brow_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'business and travel',
+            name: 'digestion-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Detoxification",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Mineral_Metabolic_Activity",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Intestinal_Flora",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'business and travel',
+            name: 'respiratory-system-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Respiratory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lung_Meridian",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'business and travel',
+            name: 'lower-backache-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Backache",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Root_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Kidney_Meridian",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'business and travel',
+            name: 'neck-shoulder-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Neck/Shoulder",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Muscle_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Gallbladder_Meridian",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'business and travel',
+            name: 'sleep-enhancer-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Sleep_Enhancer",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Electro_Smog",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Relaxation",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'family',
+            name: 'children-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Child_Development",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Bone_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Muscle_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Nervous_System",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'family',
+            name: 'female-hormonal-imbalances-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Female_Hormone_Balance",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Kidney_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Liver_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Sacral_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'family',
+            name: 'male-hormonal-imbalances-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Male_Hormone_Balance",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Circulatory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Kidney_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Sacral_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'family',
+            name: 'cold-flu-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Flu",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Respiratory_System",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'family',
+            name: 'constipation-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Constipation",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Gallbladder_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Large_Intestine_Meridian",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'family',
+            name: 'diarrhea-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Diarrhea",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Detoxification",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Intestinal_Flora",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'family',
+            name: 'ear-problems-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Auditory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Triple_Warmer_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Brow_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'family',
+            name: 'eyesight-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Eyesight",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Kidney_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Liver_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Brow_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'family',
+            name: 'intestinal-flu-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Flu",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Detoxification",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Intestinal_Flora",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'athlete',
+            name: 'energy-booster-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Energy_Booster",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Adrenal_Gland",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Circulatory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pericardium_Meridian",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'athlete',
+            name: 'regeneration-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Regeneration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Liver_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Vitality",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'athlete',
+            name: 'respiratory-system-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Respiratory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Sinus_Cavities",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lung_Meridian",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'athlete',
+            name: 'injury-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Bone_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Muscle_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pain_Conditions",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'athlete',
+            name: 'pain-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Nervous_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pain_Conditions",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Regeneration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'athlete',
+            name: 'backache-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Backache",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Neck/Shoulder",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Vertebrae",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Gallbladder_Meridian",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'athlete',
+            name: 'muscles-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Muscle_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Liver_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Connective_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Regeneration",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'athlete',
+            name: 'immune-system-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Respiratory_System",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'spa',
+            name: 'anti-aging-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Bone_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Anti_Aging",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Connective_Tissues",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'spa',
+            name: 'weight-control-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Addiction",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Weight_Control",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Triple_Warmer_Meridian",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'spa',
+            name: 'detoxification-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Intestinal_Flora",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Detoxification",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Mineral_Metabolic_Activity",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'spa',
+            name: 'skin-conditions-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Connective_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Skin_Conditions",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Detoxification",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lung_Meridian",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'spa',
+            name: 'hair-growth-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Kidney_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Hair_Growth",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Detoxification",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Sacral_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'spa',
+            name: 'low-physical-drive-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Pericardium_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Adrenal_Gland",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Low_Physical_Drive",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Circulatory_System",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'spa',
+            name: 'low-mental-drive-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Sacral_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Low_Mental_Drive",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Nervous_System",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'stress relief',
+            name: 'stress-relief-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Joy",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Electro_Smog",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'stress relief',
+            name: 'vitality-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Nervous_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Joy",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Booster",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Vitality",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'stress relief',
+            name: 'sleep-enhancer-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Relaxation",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Sleep_Enhancer",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Peace",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Electro_Smog",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'stress relief',
+            name: 'energy-booster-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Adrenal_Gland",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Booster",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Circulatory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Exhaustion",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'stress relief',
+            name: 'hypertension-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Pericardium_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Hypertension",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Circulatory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Heart_Function",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'stress relief',
+            name: 'thyroid-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Electro_Smog",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Thyroid_Glands",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Throat_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'stress relief',
+            name: 'low-mental-drive-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Sacral_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Low_Mental_Drive",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Nervous_System",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'senior',
+            name: 'regeneration-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Regeneration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Circulatory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Connective_Tissues",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'senior',
+            name: 'vitality-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Energy_Booster",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Adrenal_Gland",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Vitality",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Circulatory_System",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'senior',
+            name: 'joy-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Peace",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Joy",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Metal_Element",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'senior',
+            name: 'sleep-enhancer-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Electro_Smog",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Relaxation",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Sleep_Enhancer",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'senior',
+            name: 'heart-function-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Fire_Element",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Heart_Function",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Triple_Warmer_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Heart_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'senior',
+            name: 'respiratory-system-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Respiratory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Sinus_Cavities",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lung_Meridian",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'senior',
+            name: 'hypertension-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Pericardium_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Hypertension",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Heart_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Circulatory_System",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'senior',
+            name: 'glucose-metabolic-disorders-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Peace",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Glucose_Metabolic_Disorders",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Spleen_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'senior',
+            name: 'hemorrhoids-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Hemorrhoids",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Constipation",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Relaxation",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Root_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'senior',
+            name: 'urinary-system-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Kidney_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Urinary_System/Cystitis",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Urinary_Bladder_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Sacral_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'senior',
+            name: 'cold-flu-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Flu",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Respiratory_System",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'senior',
+            name: 'pain-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Nervous_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pain_Conditions",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Regeneration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'chakra balancing',
+            name: 'lower-chakra-balancing-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Root_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Sacral_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Solar_Plexus_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Earth_Element",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'chakra balancing',
+            name: 'upper-chakra-balancing-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Heart_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Throat_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Brow_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Crown_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'chakra balancing',
+            name: 'meditation-basics-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Meditation_1",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Root_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Sacral_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Solar_Plexus_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'chakra balancing',
+            name: 'meditation-medium-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Meditation_2",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Heart_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Throat_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Peace",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        }, {
+            category: 'chakra balancing',
+            name: 'meditation-advanced-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Meditation_3",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Brow_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Crown_Chakra",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Joy",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'elements',
+            name: 'earth-element-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Stomach_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Spleen_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Earth_Element",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Muscle_Tissues",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'elements',
+            name: 'fire-element-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Heart_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Small_Intestine_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Fire_Element",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Circulatory_System",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'elements',
+            name: 'fire-element-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Pericardium_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Triple_Warmer_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Fire_Element",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Heart_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'elements',
+            name: 'metal-element-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Lung_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Large_Intestine_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Metal_Element",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Skin_Conditions",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'elements',
+            name: 'water-element-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Kidney_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Urinary_Bladder_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Water_Element",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Bone_Tissues",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'elements',
+            name: 'wood-element-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Liver_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Gallbladder_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Wood_Element",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Eyesight",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'elements',
+            name: 'liver-function-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Liver_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Gallbladder_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Detoxification",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Solar_Plexus_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'elements',
+            name: 'heart-function-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Heart_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Small_Intestine_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Relaxation",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Heart_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'elements',
+            name: 'kidney-function-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Kidney_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Urinary_Bladder_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Exhaustion",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Sacral_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'elements',
+            name: 'large-intestine-balancing-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Large_Intestine_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lung_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Solar_Plexus_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'elements',
+            name: 'pericardium-flow-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Pericardium_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Triple_Warmer_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Heart_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'elements',
+            name: 'stomach-meridian-upper',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Stomach_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Spleen_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Solar_Plexus_Chakra",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper1',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper2',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Detoxification",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Large_Intestine_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper3',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Liver_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Intestinal_Flora",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper4',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Bone_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper5',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Skin_Conditions",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Connective_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper6',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Muscle_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper7',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Relaxation",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petss',
+            name: 'routine-pets-upper8',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Respiratory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lung_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_1",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper1',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper2',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Detoxification",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Large_Intestine_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper3',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Digestive_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Liver_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Intestinal_Flora",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper4',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Bone_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper5',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Skin_Conditions",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Connective_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper6',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Muscle_Tissues",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lymphatic_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Injury",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper7',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Frustration",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Relaxation",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Energy_Balancing",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        },
+        {
+            category: 'petsx',
+            name: 'routine-petx-upper8',
+            programs: [
+                {
+                    name: '',
+                    apiName: "Respiratory_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Immune_System",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Lung_Meridian",
+                    runningtime: "",
+                    description: ''
+                },
+                {
+                    name: '',
+                    apiName: "Pet_2",
+                    runningtime: "",
+                    description: ''
+                }
+            ]
+        }
+    ],
+    Programs: [
+        {
+            name: 'addiction-upper',
+            apiName: "Addiction",
+            runningtime: "15:05",
+            description: 'addiction-description'
+        },
+        {
+            name: 'adrenal-gland-upper',
+            apiName: "Adrenal_Gland",
+            runningtime: "15:07",
+            description: 'adrenal-gland-description'
+        },
+        {
+            name: 'anti-aging-upper',
+            apiName: "Anti_Aging",
+            runningtime: "11:01",
+            description: 'anti-aging-description',
+        },
+        {
+            name: 'auditory-upper',
+            apiName: "Auditory_System",
+            runningtime: "14:31",
+            description: 'auditory-description',
+        },
+        {
+            name: 'backache-upper',
+            apiName: "Backache",
+            runningtime: "16:30",
+            description: 'backache-description',
+        },
+        {
+            name: 'bones-upper',
+            apiName: "Bone_Tissues",
+            runningtime: "15:04",
+            description: 'bones-description'
+        },
+        {
+            name: 'child-developement-upper',
+            apiName: "Child_Development",
+            runningtime: "13:50",
+            description: 'child-developement-description',
+        },
+        {
+            name: 'circulatory-system-upper',
+            apiName: "Circulatory_System",
+            runningtime: "15:06",
+            description: 'circulatory-system-description',
+        },
+        {
+            name: 'concentration-upper',
+            apiName: "Concentration",
+            runningtime: "21:19",
+            description: 'concentration-description'
+        },
+        {
+            name: 'connective-tissue-upper',
+            apiName: "Connective_Tissues",
+            runningtime: "16:54",
+            description: 'connective-tissue-description',
+        },
+        {
+            name: 'constipation-upper',
+            apiName: "Constipation",
+            runningtime: "14:49",
+            description: 'constipation-description'
+        },
+        {
+            name: 'detoxification-upper',
+            apiName: "Detoxification",
+            runningtime: "16:13",
+            description: 'detoxification-description',
+        },
+        {
+            name: 'diarrhea-upper',
+            apiName: "Diarrhea",
+            runningtime: "13:59",
+            description: 'diarrhea-description'
+        },
+        {
+            name: 'digestive-system-upper',
+            apiName: "Digestive_System",
+            runningtime: "16:41",
+            description: 'digestive-system-description'
+        },
+        {
+            name: 'discernment-upper',
+            apiName: "Discernment",
+            runningtime: "13:37",
+            description: 'discernment-description'
+        },
+        {
+            name: 'energy-balancing-upper',
+            apiName: "Energy_Balancing",
+            runningtime: "17:55",
+            description: 'energy-balancing-description',
+        },
+        {
+            name: 'energy-booster-upper',
+            apiName: "Energy_Booster",
+            runningtime: "13:53",
+            description: 'energy-booster-description'
+        },
+        {
+            name: "E-SMOG",
+            apiName: "Electro_Smog",
+            runningtime: "14:51",
+            description: 'e-smog-description'
+        },
+        {
+            name: 'exhaustion-upper',
+            apiName: "Exhaustion",
+            runningtime: "14:59",
+            description: 'exhaustion-description'
+        },
+        {
+            name: 'eyesight-upper',
+            apiName: "Eyesight",
+            runningtime: "16:11",
+            description: 'eyesight-description'
+        },
+        {
+            name: 'female-upper',
+            apiName: "Female_Hormone_Balance",
+            runningtime: "14:17",
+            description: 'female-description'
+        },
+        {
+            name: 'flu-upper',
+            apiName: "Flu",
+            runningtime: "13:59",
+            description: 'flu-description'
+        },
+        {
+            name: 'glucose-metabolic-disorders-upper',
+            apiName: "Glucose_Metabolic_Disorders",
+            runningtime: "16:28",
+            description: 'glucose-metabolic-disorders-description',
+        },
+        {
+            name: 'hair-growth-upper',
+            apiName: "Hair_Growth",
+            runningtime: "19:07",
+            description: 'hair-growth-description'
+        },
+        {
+            name: 'headache-upper',
+            apiName: "Headache",
+            runningtime: "18:38",
+            description: 'headache-description'
+        },
+        {
+            name: 'heart-function-upper',
+            apiName: "Heart_Function",
+            runningtime: "13:30",
+            description: 'heart-function-description'
+        },
+        {
+            name: 'hemorrhoids-upper',
+            apiName: "Hemorrhoids",
+            runningtime: "21:13",
+            description: 'hemorrhoids-description'
+        },
+        {
+            name: 'hypertension-upper',
+            apiName: "Hypertension",
+            runningtime: "18:53",
+            description: 'hypertension-description'
+        },
+        {
+            name: 'immune-system-upper',
+            apiName: "Immune_System",
+            runningtime: "14:50",
+            description: 'immune-system-description'
+        },
+        {
+            name: 'injury-upper',
+            apiName: "Injury",
+            runningtime: "18:46",
+            description: 'injury-description'
+        },
+        {
+            name: 'intestinal-flora-upper',
+            apiName: "Intestinal_Flora",
+            runningtime: "18:58",
+            description: 'intestinal-flora-description'
+        },
+        {
+            name: 'joints-upper',
+            apiName: "Joints",
+            runningtime: "17:07",
+            description: 'joints-description'
+        },
+        {
+            name: 'joy-upper',
+            apiName: "Joy",
+            runningtime: "21:04",
+            description: 'joy-description'
+        },
+        {
+            name: "JET-LAG",
+            apiName: "Jet-Lag/Climate_Change",
+            runningtime: "16:14",
+            description: 'jet-lag-description'
+        },
+        {
+            name: 'low-mental-drive-upper',
+            apiName: "Low_Mental_Drive",
+            runningtime: "15:49",
+            description: 'low-mental-drive-description'
+        },
+        {
+            name: 'low-physical-drive-upper',
+            apiName: "Low_Physical_Drive",
+            runningtime: "16:49",
+            description: 'low-physical-drive-description'
+        },
+        {
+            name: 'lymphatic-system-upper',
+            apiName: "Lymphatic_System",
+            runningtime: "16:04",
+            description: 'lymphatic-system-description'
+        },
+        {
+            name: 'male-upper',
+            apiName: "Male_Hormone_Balance",
+            runningtime: "12:31",
+            description: 'male-description'
+        },
+        {
+            name: 'meditation-1-upper',
+            apiName: "Meditation_1",
+            runningtime: "33:15",
+            description: 'meditation-1-description'
+        },
+        {
+            name: 'meditation-2-upper',
+            apiName: "Meditation_2",
+            runningtime: "29:43",
+            description: 'meditation-2-description'
+        },
+        {
+            name: 'meditation-3-upper',
+            apiName: "Meditation_3",
+            runningtime: "22:49",
+            description: 'meditation-3-description'
+        },
+        {
+            name: 'mineral-metabolic-activity-upper',
+            apiName: "Mineral_Metabolic_Activity",
+            runningtime: "17:25",
+            description: 'mineral-metabolic-activity-description'
+        },
+        {
+            name: 'muscle-tissue-upper',
+            apiName: "Muscle_Tissues",
+            runningtime: "15:59",
+            description: 'muscle-tissue-description'
+        },
+        {
+            name: 'neck-shoulder-upper',
+            apiName: "Neck/Shoulder",
+            runningtime: "16:16",
+            description: 'neck-shoulder-description'
+        },
+        {
+            name: 'nervous-system-upper',
+            apiName: "Nervous_System",
+            runningtime: "19:10",
+            description: 'nervous-system-description'
+        },
+        {
+            name: 'peace-upper',
+            apiName: "Peace",
+            runningtime: "22:08",
+            description: 'peace-description'
+        },
+        {
+            name: 'pain-upper',
+            apiName: "Pain_Conditions",
+            runningtime: "15:18",
+            description: 'pain-description'
+        },
+        {
+            name: 'regeneration-upper',
+            apiName: "Regeneration",
+            runningtime: "17:12",
+            description: 'regeneration-description'
+        },
+        {
+            name: 'relaxation-upper',
+            apiName: "Relaxation",
+            runningtime: "19:55",
+            description: 'relaxation-description'
+        },
+        {
+            name: 'respiratory-system-upper',
+            apiName: "Respiratory_System",
+            runningtime: "15:52",
+            description: 'respiratory-system-description'
+        },
+        {
+            name: 'sinus-cavities-upper',
+            apiName: "Sinus_Cavities",
+            runningtime: "15:33",
+            description: 'sinus-cavities-description'
+        },
+        {
+            name: 'skin-conditions-upper',
+            apiName: "Skin_Conditions",
+            runningtime: "15:50",
+            description: 'skin-conditions-description'
+        },
+        {
+            name: 'sleep-enhancer-upper',
+            apiName: "Sleep_Enhancer",
+            runningtime: "19:58",
+            description: 'sleep-enhancer-description'
+        },
+        {
+            name: 'stress-relief-upper',
+            apiName: "Frustration",
+            runningtime: "18:55",
+            description: 'stress-relief-description'
+        },
+        {
+            name: 'thyroid-glands-upper',
+            apiName: "Thyroid_Glands",
+            runningtime: "17:53",
+            description: 'thyroid-glands-description'
+        },
+        {
+            name: 'urinary-upper',
+            apiName: "Urinary_System/Cystitis",
+            runningtime: "13:39",
+            description: 'urinary-description'
+        },
+        {
+            name: 'vertebrae-upper',
+            apiName: "Vertebrae",
+            runningtime: "12:53",
+            description: 'vertebrae-description'
+        },
+        {
+            name: 'vitality-upper',
+            apiName: "Vitality",
+            runningtime: "14:00",
+            description: 'vitality-description'
+        },
+        {
+            name: 'weight-control-upper',
+            apiName: "Weight_Control",
+            runningtime: "14:50",
+            description: 'weight-control-description'
+        },
+        {
+            name: 'petss-program-upper',
+            apiName: "Pet_1",
+            runningtime: "11:50",
+            description: 'petss-program-description'
+        },
+        {
+            name: 'petsx-program-upper',
+            apiName: "Pet_2",
+            runningtime: "12:50",
+            description: 'petsx-program-description'
+        },
+        {
+            name: 'stomach-meridian-upper',
+            apiName: "Stomach_Meridian",
+            runningtime: "17:15",
+            description: 'stomach-meridian-description'
+        },
+        {
+            name: 'spleen-pancreas-meridian-upper',
+            apiName: "Spleen_Meridian",
+            runningtime: "15:37",
+            description: 'spleen-pancreas-meridian-description'
+        },
+        {
+            name: 'heart-meridian-upper',
+            apiName: "Heart_Meridian",
+            runningtime: "14:45",
+            description: 'heart-meridian-description'
+        },
+        {
+            name: 'small-intestine-meridian-upper',
+            apiName: "Small_Intestine_Meridian",
+            runningtime: "13:25",
+            description: 'small-intestine-meridian-description'
+        },
+        {
+            name: 'pericardium-meridian-upper',
+            apiName: "Pericardium_Meridian",
+            runningtime: "21:55",
+            description: 'pericardium-meridian-description'
+        },
+        {
+            name: 'triple-warmer-meridian-upper',
+            apiName: "Triple_Warmer_Meridian",
+            runningtime: "13:20",
+            description: 'triple-warmer-meridian-description'
+        },
+        {
+            name: 'lung-meridian-upper',
+            apiName: "Lung_Meridian",
+            runningtime: "16:38",
+            description: 'lung-meridian-description'
+        },
+        {
+            name: 'large-intestine-meridian-upper',
+            apiName: "Large_Intestine_Meridian",
+            runningtime: "13:53",
+            description: 'large-intestine-meridian-description'
+        },
+        {
+            name: 'kidney-meridian-upper',
+            apiName: "Kidney_Meridian",
+            runningtime: "16:27",
+            description: 'kidney-meridian-description'
+        },
+        {
+            name: 'urinary-bladder-meridian-upper',
+            apiName: "Urinary_Bladder_Meridian",
+            runningtime: "14:19",
+            description: 'urinary-bladder-meridian-description'
+        },
+        {
+            name: 'liver-meridian-upper',
+            apiName: "Liver_Meridian",
+            runningtime: "16:11",
+            description: 'liver-meridian-description'
+        },
+        {
+            name: 'gallbladder-meridian-upper',
+            apiName: "Gallbladder_Meridian",
+            runningtime: "20:39",
+            description: 'gallbladder-meridian-description'
+        },
+        {
+            name: "first-chakra-upper",
+            apiName: "Root_Chakra",
+            runningtime: "15:49",
+            description: '1-chakra-description'
+        },
+        {
+            name: "second-chakra-upper",
+            apiName: "Sacral_Chakra",
+            runningtime: "13:57",
+            description: '2-chakra-description'
+        },
+        {
+            name: "third-chakra-upper",
+            apiName: "Solar_Plexus_Chakra",
+            runningtime: "16:51",
+            description: '3-chakra-description'
+        },
+        {
+            name: "fourth-chakra-upper",
+            apiName: "Heart_Chakra",
+            runningtime: "18:16",
+            description: '4-chakra-description'
+        },
+        {
+            name: "fifth-chakra-upper",
+            apiName: "Throat_Chakra",
+            runningtime: "17:59",
+            description: '5-chakra-description'
+        },
+        {
+            name: "sixth-chakra-upper",
+            apiName: "Brow_Chakra",
+            runningtime: "16:13",
+            description: '6-chakra-description'
+        },
+        {
+            name: "seventh-chakra-upper",
+            apiName: "Crown_Chakra",
+            runningtime: "13:45",
+            description: '7-chakra-description'
+        },
+        {
+            name: 'earth-element-upper',
+            apiName: "Earth_Element",
+            runningtime: "16:55",
+            description: 'earth-element-description'
+        },
+        {
+            name: 'water-element-upper',
+            apiName: "Water_Element",
+            runningtime: "17:20",
+            description: 'water-element-description'
+        },
+        {
+            name: 'fire-element-upper',
+            apiName: "Fire_Element",
+            runningtime: "15:05",
+            description: 'fire-element-description'
+        },
+        {
+            name: 'metal-element-upper',
+            apiName: "Metal_Element",
+            runningtime: "12:39",
+            description: 'metal-element-description'
+        },
+        {
+            name: 'wood-element-upper',
+            apiName: "Wood_Element",
+            runningtime: "17:09",
+            description: 'wood-element-description'
+        }
+    ]
+};
+//# sourceMappingURL=offline_data.js.map
+
+/***/ }),
+
+/***/ 26:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Constants; });
+var Constants = {
+    localIPAddress: '192.168.0.',
+    myMatApiStartUrl: 'http://192.168.1.3/start.htm',
+    myMatApiIndexUrl: 'http://192.168.1.3/index.htm',
+    myMatApiUrl: 'https://healinghouse.life/api/mymat/',
+    storageKeyLang: 'mymat_lang',
+    storageKeyBubble1: 'MyMat_bubbleRoutineProgram1',
+    storageKeyBubble2: 'MyMat_bubbleRoutineProgram2',
+    storageKeyBubble3: 'MyMat_bubbleRoutineProgram3',
+    storageKeyBubble4: 'MyMat_bubbleRoutineProgram4',
+    storageKeyScrollTop: 'MyMat_scrollTop',
+    storageKeyCurrentProgram: 'MyMat_currentProgram',
+    deviceInfoKey: 'MyMatDevice',
+    test_uuid: 'UUIDTEST-1234-5678-9100-0000AGO19813',
+    latestRoutinesKey: 'latestRoutines',
+    monthNames: [
+        "january", "february", "march",
+        "april", "may", "june", "july",
+        "August", "September", "October",
+        "november", "december"
+    ],
+    shortTitles: [
+        'earth-element-upper',
+        'fire-element-upper',
+        'metal-element-upper',
+        'water-element-upper',
+        'wood-element-upper',
+        'gallbladder-meridian-upper',
+        'kidney-meridian-upper',
+        'heart-meridian-upper',
+        'large-intestine-meridian-upper',
+        'liver-meridian-upper',
+        'lung-meridian-upper',
+        'pericardium-meridian-upper',
+        'small-intestine-meridian-upper',
+        'spleen-pancreas-meridian-upper',
+        'stomach-meridian-upper',
+        'triple-warmer-meridian-upper',
+        'urinary-bladder-meridian-upper'
+    ]
+};
+//# sourceMappingURL=constants.js.map
+
+/***/ }),
+
+/***/ 260:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__program_program__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+/**
+ * Generated class for the ProgramsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ProgramsPage = (function () {
+    function ProgramsPage(navCtrl, storage, navParams, routines, events) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.storage = storage;
+        this.navParams = navParams;
+        this.routines = routines;
+        this.events = events;
+        this.program = navParams.get('bubble');
+        this.events.subscribe('add1ProgramEvent', function (programNumber, programName, programRunningTime, programApiName) {
+            _this.program = programNumber;
+            _this.add1Program(programName, programRunningTime, programApiName);
+            _this.navCtrl.pop();
+        });
+    }
+    ProgramsPage.prototype.ionViewDidLeave = function () {
+        this.storage.set(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyScrollTop, this.content.getContentDimensions().scrollTop);
+    };
+    ProgramsPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyCurrentProgram).then(function (program) {
+            _this.getPrograms(program != null ? program : 'basic');
+        });
+        this.programs = __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs;
+        this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble1).then(function (val) {
+            if (_this.program != 1 && val != null && val.length > 0) {
+                _this.programName1 = val.split('|')[1];
+            }
+            else {
+                _this.programName1 = '';
+            }
+        });
+        this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble2).then(function (val) {
+            if (_this.program != 2 && val != null && val.length > 0) {
+                _this.programName2 = val.split('|')[1];
+            }
+            else {
+                _this.programName2 = '';
+            }
+        });
+        this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble3).then(function (val) {
+            if (_this.program != 3 && val != null && val.length > 0) {
+                _this.programName3 = val.split('|')[1];
+            }
+            else {
+                _this.programName3 = '';
+            }
+        });
+        this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble4).then(function (val) {
+            if (_this.program != 4 && val != null && val.length > 0) {
+                _this.programName4 = val.split('|')[1];
+            }
+            else {
+                _this.programName4 = '';
+            }
+        });
+        setTimeout(function () {
+            _this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyScrollTop).then(function (scroll) {
+                _this.content.scrollTo(0, scroll, 100);
+            });
+        }, 500);
+    };
+    ProgramsPage.prototype.selectPreSetProgram = function (category) {
+        this.getPrograms(category);
+    };
+    ProgramsPage.prototype.getPrograms = function (category) {
+        this.storage.set(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyCurrentProgram, category);
+        this.basicButton = false;
+        this.businessTravelButton = false;
+        this.familiyButton = false;
+        this.athleteButton = false;
+        this.spaButton = false;
+        this.stressButton = false;
+        this.seniorButton = false;
+        this.chakraButton = false;
+        this.elementsButton = false;
+        this.petssButton = false;
+        this.petsxButton = false;
+        switch (category) {
+            case 'basic':
+                this.basicButton = true;
+                break;
+            case 'business and travel':
+                this.businessTravelButton = true;
+                break;
+            case 'family':
+                this.familiyButton = true;
+                break;
+            case 'athlete':
+                this.athleteButton = true;
+                break;
+            case 'spa':
+                this.spaButton = true;
+                break;
+            case 'stress relief':
+                this.stressButton = true;
+                break;
+            case 'senior':
+                this.seniorButton = true;
+                break;
+            case 'chakra balancing':
+                this.chakraButton = true;
+                break;
+            case 'elements':
+                this.elementsButton = true;
+                break;
+            case 'petss':
+                this.petssButton = true;
+                break;
+            case 'petsx':
+                this.petsxButton = true;
+                break;
+        }
+        var groups = [];
+        var groupIndex = 0;
+        for (var i = 0; i < __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Groups.length; i++) {
+            var group = __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Groups[i];
+            if (group.category == category) {
+                groups[groupIndex] = group;
+                for (var j = 0; j < group.programs.length; j++) {
+                    var program = group.programs[j];
+                    group.programs[j] = this.routines.getProgram(program.apiName);
+                }
+                groupIndex++;
+            }
+        }
+        this.predefinedPrograms = groups;
+    };
+    ProgramsPage.prototype.addPrograms = function (routineName, program1, program2, program3, program4) {
+        this.navCtrl.pop();
+        var bubbleNames = this.routines.addPrograms(routineName, program1, program2, program3, program4);
+        this.events.publish("sharesBubbles", bubbleNames);
+    };
+    ProgramsPage.prototype.add1Program = function (programName, programRunningTime, programApiName) {
+        this.routines.addProgramToRoutine(this.program, '', programName, programRunningTime, programApiName);
+        this.programName1 = this.program == 1 ? programName : (this.programName1.length > 0 ? this.programName1 : '');
+        this.programName2 = this.program == 2 ? programName : (this.programName2.length > 0 ? this.programName2 : '');
+        this.programName3 = this.program == 3 ? programName : (this.programName3.length > 0 ? this.programName3 : '');
+        this.programName4 = this.program == 4 ? programName : (this.programName4.length > 0 ? this.programName4 : '');
+        this.routines.setPrograms(this.programName1, this.programName2, this.programName3, this.programName4);
+        var bubbleNames = [
+            this.programName1,
+            this.programName2,
+            this.programName3,
+            this.programName4
+        ];
+        this.events.publish("sharesBubbles", bubbleNames);
+        this.navCtrl.pop();
+    };
+    ProgramsPage.prototype.moreProgramInfo = function (name, runTime, description, apiName) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__program_program__["a" /* ProgramPage */], { programNumber: this.program, name: name, runTime: runTime, description: description, apiName: apiName });
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Content */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Content */])
+    ], ProgramsPage.prototype, "content", void 0);
+    ProgramsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-programs',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\programs\programs.html"*/'<!--\n  Generated template for the ProgramsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ \'programs\' | translate }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="home center">\n    <br>\n    <div class="modaltitle">{{ \'program-kits\' | translate }}</div>\n    <div class="modaldesc">{{ \'popular-routines\' | translate }}</div>\n\n    <ion-scroll scrollX="true" scrollY="false" class="wide-as-needed programs">\n\n            <ion-row nowrap class="program {{ basicButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'basic\')">\n                <div class="programpic"><img src="assets/img/Basic.png"></div>\n                <div class="programdesc" [innerHTML]="\'basic\' | translate"><br><br></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ businessTravelButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'business and travel\')">\n                <div class="programpic"><img src="assets/img/BusinessTraveller.png"></div>\n                <div class="programdesc" [innerHTML]="\'business-traveler\' | translate"></div>\n            </ion-row>\n\n           <ion-row nowrap class="program {{ familiyButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'family\')">\n                <div class="programpic"><img src="assets/img/family.png"></div>\n                <div class="programdesc" [innerHTML]="\'family-kit\' | translate"></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ athleteButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'athlete\')">\n                <div class="programpic"><img src="assets/img/Athlete.png"></div>\n                <div class="programdesc" [innerHTML]="\'athlete\' | translate"></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ spaButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'spa\')">\n                <div class="programpic"><img src="assets/img/Spa.png"></div>\n                <div class="programdesc" [innerHTML]="\'spa-wellness\' | translate"><br><br></div>\n            </ion-row>\n\n\n            <ion-row nowrap class="program {{ stressButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'stress relief\')">\n                <div class="programpic"><img src="assets/img/stress.png"></div>\n                <div class="programdesc" [innerHTML]="\'stress-relief\' | translate"></div>\n            </ion-row>\n\n\n            <ion-row nowrap class="program {{ seniorButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'senior\')">\n                <div class="programpic"><img src="assets/img/Senior.png"></div>\n                <div class="programdesc" [innerHTML]="\'senior-upper\' | translate"><br><br></div>\n            </ion-row>\n\n\n            <ion-row nowrap class="program {{ chakraButton ? \'\' : \'opacity-50\' }}"  (click)="selectPreSetProgram(\'chakra balancing\')">\n                <div class="programpic"><img src="assets/img/chakra.png"></div>\n                <div class="programdesc" [innerHTML]="\'chakra-balancing\' | translate"></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ elementsButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'elements\')">\n                <div class="programpic"><img src="assets/img/Elements.png"></div>\n                <div class="programdesc" [innerHTML]="\'elements-meridians\' | translate"><br></div>\n            </ion-row>\n            <ion-row nowrap class="program {{ petssButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'petss\')">\n                <div class="programpic"><img src="assets/img/MascotasS.png"></div>\n                <div class="programdesc" [innerHTML]="\'petss\' | translate"><br></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ petsxButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'petsx\')">\n                <div class="programpic"><img src="assets/img/MascotasX.png"></div>\n                <div class="programdesc" [innerHTML]="\'petsx\' | translate"><br></div>\n            </ion-row>\n    </ion-scroll>\n\n\n    <div class="modaltitle">{{ \'programs\' | translate }}</div>\n    <div *ngFor="let routine of predefinedPrograms">\n\n        {{ routine.name | translate }}\n        <!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->\n\n        <div class="paddingmodal">\n\n            <ion-list (click)="addPrograms(routine.name, routine.programs[0].apiName, routine.programs[1].apiName,\n                routine.programs[2].apiName,routine.programs[3].apiName)">\n\n                <ion-item *ngFor="let program of routine.programs" class="addiction center">\n                     {{ program.name | translate }}\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n    </div>\n\n\n    <div class="modaltitle">{{ \'independent-programs\' | translate }}</div>\n    <div class="modaldesc" [innerHTML]="\'tap-program\' | translate">PROGRAMS</div>\n    <div class="paddingmodal">\n        <ion-list class="programlist">\n\n\n            <ion-item class="addiction center" *ngFor="let program of programs" nav-transition="ios" nav-direction="forward" href="#/app/routines">\n                <div class="programAddButton" (click)="add1Program(program.name, program.runningtime, program.apiName)">\n                    {{ program.name | translate }}\n                </div>\n                <div class="programInfoButton" end (click)="moreProgramInfo(program.name, program.runningtime, program.description, program.apiName)">\n                    <ion-icon ios="ios-information-circle" md="md-information-circle"></ion-icon>\n                </div>\n            </ion-item>\n\n\n        </ion-list>\n    </div>\n</ion-content>\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\programs\programs.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__["a" /* RoutinesProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]])
+    ], ProgramsPage);
+    return ProgramsPage;
+}());
+
+//# sourceMappingURL=programs.js.map
+
+/***/ }),
+
+/***/ 261:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the ProgramPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ProgramPage = (function () {
+    function ProgramPage(navCtrl, navParams, storage, translateService, events) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.storage = storage;
+        this.translateService = translateService;
+        this.events = events;
+    }
+    ProgramPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+            _this.translateService.getTranslation(lang).subscribe(function (prog) {
+                _this.programRealName = _this.navParams.get('name');
+                var programTranslateName = _this.navParams.get('name');
+                if (_this.isNameOnArray(__WEBPACK_IMPORTED_MODULE_2__services_constants__["a" /* Constants */].shortTitles, programTranslateName))
+                    programTranslateName = programTranslateName.replace('-upper', '-short');
+                _this.programName = typeof prog[programTranslateName] === 'undefined' ? programTranslateName : prog[programTranslateName];
+                _this.programRunningTime = typeof prog[_this.navParams.get('runTime')] === 'undefined' ? _this.navParams.get('runTime') : prog[_this.navParams.get('runTime')];
+                _this.programDescription = typeof prog[_this.navParams.get('description')] === 'undefined' ? _this.navParams.get('description') : prog[_this.navParams.get('description')];
+                _this.programApiName = _this.navParams.get('apiName');
+                _this.programNumber = _this.navParams.get('programNumber');
+            });
+        });
+    };
+    ProgramPage.prototype.add1Program = function (programName, programRunningTime, programApiName) {
+        this.events.publish("add1ProgramEvent", this.programNumber, this.programRealName, this.programRunningTime, this.programApiName);
+    };
+    ProgramPage.prototype.isNameOnArray = function (names, name) {
+        for (var i = 0; i < names.length; i++) {
+            if (names[i] == name) {
+                return true;
+            }
+        }
+        return false;
+    };
+    ProgramPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-program',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\program\program.html"*/'<!--\n  Generated template for the ProgramPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ programName }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="home center">\n\n    <div class="program-info-modal-holder">\n        <div class="program-info-modal-header">\n          <h2 class="program-info-modal-running-time-title">{{ \'running-time\' | translate }} </h2>\n        	<h2 class="program-info-modal-running-time">\n             {{ programRunningTime  }} \n        	</h2>\n        </div>\n       \n        <div class="program-info-modal-mainbody">\n          <ion-scroll style="height:100%;overflow-y:scroll;">\n            <div style="height:100%; line-height:25px;">{{ programDescription }}</div>\n            <br/>\n            <button class="button-add-program" ion-button (click)="add1Program(programName, programRunningTime, programApiName)">{{ \'add-program\' | translate }}</button>\n          </ion-scroll>\n        </div>\n    </div>\n</ion-content>\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\program\program.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]])
+    ], ProgramPage);
+    return ProgramPage;
+}());
+
+//# sourceMappingURL=program.js.map
+
+/***/ }),
+
+/***/ 262:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WifiPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__playing_playing__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(30);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+/**
+ * Generated class for the WifiPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var WifiPage = (function () {
+    function WifiPage(navCtrl, navParams, storage, apiService, translateService, networkInterface, platform) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.storage = storage;
+        this.apiService = apiService;
+        this.translateService = translateService;
+        this.networkInterface = networkInterface;
+        this.platform = platform;
+        this.intervalCount = 0;
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+            _this.translateService.getTranslation(lang).subscribe(function (value) {
+                _this.coilText = typeof value['coil'] === 'undefined' ? 'Antena' : value['coil'];
+            });
+        });
+        this.program1 = this.navParams.get('prog1');
+        this.program2 = this.navParams.get('prog2');
+        this.program3 = this.navParams.get('prog3');
+        this.program4 = this.navParams.get('prog4');
+    }
+    WifiPage.prototype.ionViewDidLeave = function () {
+        this.stop();
+    };
+    WifiPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.mymatStatus = false;
+        this.showIframeStatus = false;
+        this.showLoading = true;
+        this.isRunRoutineEnabled = true;
+        if (this.platform.is('cordova')) {
+            this.networkInterface.getWiFiIPAddress().then(function (response) {
+                if (_this.verifyInternalIpAddress(response)) {
+                    _this.verifyStatusValues();
+                }
+                else
+                    _this.failIPVerification();
+            }, function (response) {
+                _this.failIPVerification();
+            });
+        }
+        else {
+            this.verifyStatusValues();
+        }
+        this.mymatWifi = true;
+        this.intervalCount = 0;
+    };
+    WifiPage.prototype.verifyInternalIpAddress = function (ip) {
+        for (var i = 100; i < 256; i++) {
+            if (__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].localIPAddress + i == ip) {
+                return true;
+            }
+        }
+        return false;
+    };
+    WifiPage.prototype.verifyStatusValues = function (restart) {
+        var _this = this;
+        if (restart === void 0) { restart = true; }
+        //this.mymatStatus = true;
+        //this.showStatusTable = true;
+        if (restart) {
+            this.batteryImg = 'assets/img/b100.pn';
+            this.coilText1 = 'N/A';
+            this.coilText2 = 'N/A';
+            this.coilText3 = 'N/A';
+            this.coilText4 = 'N/A';
+        }
+        //this.mymatWifi = false;
+        //this.showLoading = false;
+        clearInterval(this.testIPInterval);
+        // check if mymat is connected
+        var myMatTest = this.apiService.test();
+        myMatTest.then(function (response) {
+            // if is connected quitar imagen, textos y loading y poner status del mat
+            if (_this.verifyValues(response)) {
+                _this.showStatus();
+            }
+            else {
+                _this.failIPVerification();
+            }
+        }, function (response) {
+            _this.failIPVerification();
+        });
+    };
+    WifiPage.prototype.showNoStatus = function () {
+        this.mymatNoStatus = true;
+    };
+    WifiPage.prototype.showStatus = function () {
+        var _this = this;
+        this.mymatWifi = false;
+        this.mymatStatus = true;
+        this.showStatusTable = true;
+        this.showLoading = false;
+        this.isRunRoutineEnabled = true;
+        clearInterval(this.testStatusInterval);
+        clearInterval(this.testIPInterval);
+        this.testIPInterval = setInterval(function () {
+            _this.networkInterface.getWiFiIPAddress().then(function (response) {
+                if (_this.verifyInternalIpAddress(response)) {
+                    _this.verifyStatusValues(false);
+                }
+                else {
+                    _this.mymatWifi = true;
+                    _this.mymatStatus = false;
+                    _this.showStatusTable = false;
+                    _this.showLoading = true;
+                    _this.isRunRoutineEnabled = false;
+                    _this.failIPVerification();
+                }
+            }, function (response) {
+                _this.mymatWifi = true;
+                _this.mymatStatus = false;
+                _this.showStatusTable = false;
+                _this.showLoading = true;
+                _this.isRunRoutineEnabled = false;
+                _this.failIPVerification();
+            });
+        }, 3000);
+    };
+    WifiPage.prototype.verifyValues = function (response) {
+        if (response.indexOf("<p><h4>Power: ") > -1) {
+            var power = response.split("<p><h4>Power: ");
+            power = power[1].split("</h4></p>");
+            var coil1 = response.split("<tr><td>1.</td><td>");
+            coil1 = coil1[2].split("</td></tr>");
+            var coil2 = response.split("<tr><td>2.</td><td>");
+            coil2 = coil2[2].split("</td></tr>");
+            var coil3 = response.split("<tr><td>3.</td><td>");
+            coil3 = coil3[2].split("</td></tr>");
+            var coil4 = response.split("<tr><td>4.</td><td>");
+            coil4 = coil4[2].split("</td></tr>");
+            this.batteryCharge = power[0];
+            var powerVal = power[0].substr(0, power[0].length - 1);
+            if (powerVal > 75)
+                this.batteryImg = 'assets/img/b100.png';
+            else if (powerVal > 50)
+                this.batteryImg = 'assets/img/b75.png';
+            else if (powerVal > 25)
+                this.batteryImg = 'assets/img/b50.png';
+            else if (powerVal > 10)
+                this.batteryImg = 'assets/img/b25.png';
+            else
+                this.batteryImg = 'assets/img/b10.png';
+            this.coilText1 = coil1[0];
+            this.coilText2 = coil2[0];
+            this.coilText3 = coil3[0];
+            this.coilText4 = coil4[0];
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+    WifiPage.prototype.failIPVerification = function () {
+        var _this = this;
+        this.testIPInterval = setInterval(function () {
+            _this.networkInterface.getWiFiIPAddress().then(function (response) {
+                if (_this.verifyInternalIpAddress(response)) {
+                    _this.verifyStatusValues(false);
+                }
+            });
+        }, 3000);
+    };
+    /*failStatusVerification(){
+      this.testStatusInterval = setInterval(() => {
+        // timeout of mymat detection 180 segundos
+        var failMyMatTest = this.apiService.test();
+        failMyMatTest.then((response) => {
+          if(this.verifyValues(response)){
+            this.showStatus();
+          }
+        }, (response) => {
+          if(this.intervalCount >= 5){
+            this.showNoStatus();
+          }
+        });
+  
+        this.intervalCount += 1;
+      }, 3000);
+  
+      /*var programs = '';
+  
+      for(var i = 1; i <= 4; i++){
+        switch(i){
+          case 1:
+            this.storage.get(Constants.storageKeyBubble1).then((val) => {
+              programs += "?P1=" + val.split("|")[3] + '&';
+            });
+            break;
+          case 2:
+            this.storage.get(Constants.storageKeyBubble2).then((val) => {
+       858]
+          programs += "P2=" + val.split("|")[3] + '&';
+            });
+            break;
+          case 3:
+            this.storage.get(Constants.storageKeyBubble3).then((val) => {
+              programs += "P3=" + val.split("|")[3] + '&';
+            });
+            break;
+          case 4:
+            this.storage.get(Constants.storageKeyBubble4).then((val) => {
+              programs += "P4=" + val.split("|")[3];
+  
+              this.showIframeStatus = true;
+              this.mymatWifi = false;
+              this.mymatStatus = true;
+              this.showStatusTable = false;
+              this.iframeUrl = this.sanitize.bypassSecurityTrustResourceUrl(Constants.myMatApiIndexUrl + programs);
+            });
+            break;
+        }
+      }* /
+    }*/
+    WifiPage.prototype.startRoutine = function () {
+        var _this = this;
+        /* ANTES DE COCRRER RUTINA VERIFICAR SI SE ESTA CONECTADO AL WIFI DEL MYMAT */
+        this.showLoading = true;
+        this.isRunRoutineEnabled = false;
+        this.apiService.test().then(function (response) {
+            _this.showLoading = false;
+            _this.isRunRoutineEnabled = true;
+            if (_this.verifyValues(response)) {
+                /* CORRER RUTINA */
+                clearInterval(_this.testStatusInterval);
+                clearInterval(_this.testIPInterval);
+                var program1Obj = '|' + _this.program1.name + '|' + _this.program1.runningtime + '|' + _this.program1.apiName;
+                var program2Obj = '|' + _this.program2.name + '|' + _this.program2.runningtime + '|' + _this.program2.apiName;
+                var program3Obj = '|' + _this.program3.name + '|' + _this.program3.runningtime + '|' + _this.program3.apiName;
+                var program4Obj = '|' + _this.program4.name + '|' + _this.program4.runningtime + '|' + _this.program4.apiName;
+                var programs = [
+                    program1Obj,
+                    program2Obj,
+                    program3Obj,
+                    program4Obj
+                ];
+                _this.apiService.start(programs).then(function (response) {
+                    console.log(response + '');
+                }).catch(function (response) {
+                    /*setTimeout(() => {
+                      var emailData = { error : response.data };
+                      this.apiService.sendError(emailData).then((result) => {
+                        console.log(response.data);
+                      });
+                    }, 120000);*/
+                });
+                // Poner rutina en las ultimas corridas
+                _this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].latestRoutinesKey).then(function (routines) {
+                    var latestArray = [];
+                    var t = new Date();
+                    var day = t.getDate();
+                    var monthIndex = t.getMonth();
+                    var year = t.getFullYear();
+                    var hours = t.getHours();
+                    var minutes = t.getMinutes();
+                    var programsArray = [];
+                    for (var i = 0; i < programs.length; i++) {
+                        programsArray.push({ "apiName": programs[i].split('|')[3], "name": programs[i].split('|')[1] });
+                    }
+                    latestArray.push({ "day": day, "month": __WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].monthNames[monthIndex], "year": year, "hours": _this.fixZeroOnNumber(hours), "minutes": _this.fixZeroOnNumber(minutes), "programs": programsArray });
+                    if (routines != null && routines[0] != null) {
+                        latestArray.push(routines[0]);
+                    }
+                    if (routines != null && routines[1] != null) {
+                        latestArray.push(routines[1]);
+                    }
+                    _this.storage.set(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].latestRoutinesKey, latestArray);
+                });
+                /* CORRER RUTINA */
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_4__playing_playing__["a" /* PlayingPage */]);
+            }
+            else {
+                _this.showLoading = false;
+                _this.isRunRoutineEnabled = true;
+                _this.mymatWifi = true;
+                _this.mymatStatus = false;
+                _this.showStatusTable = false;
+                _this.showLoading = true;
+                _this.failIPVerification();
+            }
+        }, function (response) {
+            _this.showLoading = false;
+            _this.isRunRoutineEnabled = true;
+            _this.mymatWifi = true;
+            _this.mymatStatus = false;
+            _this.showStatusTable = false;
+            _this.showLoading = true;
+            _this.failIPVerification();
+        });
+    };
+    WifiPage.prototype.fixZeroOnNumber = function (val) {
+        if (val < 10) {
+            return '0' + val;
+        }
+        return val;
+    };
+    WifiPage.prototype.stop = function () {
+        clearInterval(this.testStatusInterval);
+        clearInterval(this.testIPInterval);
+    };
+    WifiPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-wifi',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\wifi\wifi.html"*/'<!--\n\n  Generated template for the WifiPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar class="bar">\n\n    <button ion-button menuToggle end class="button button-clear">\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      <div class="logo"></div>\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="home center">\n\n        <br>\n\n        <div *ngIf="mymatWifi">\n\n            <img src="assets/img/wifi.png">\n\n            <div class="titleinstructions" [innerHTML]="\'please-pair\' | translate"></div>\n\n            <br>\n\n            <p [innerHTML]="\'activate-wifi\' | translate">Steps to pair your MyMat</p>\n\n            <p [innerHTML]="\'activate-wifi-1\' | translate">1. Turn on your MyMat</p>\n\n            <p [innerHTML]="\'activate-wifi-2\' | translate">2. On your device, navigate to your Wi-Fi settings</p>\n\n            <p [innerHTML]="\'activate-wifi-3\' | translate">3. Connect your device\'s WiFi with your MyMat network</p>\n\n            <p [innerHTML]="\'activate-wifi-4\' | translate">4. Once is connected, return to the MyMat app</p>\n\n            <!--<p class="interval-counter">0</p>-->\n\n            <br/>\n\n            <div *ngIf="mymatNoStatus">\n\n                <p [innerHTML]="\'no-detect-1\' | translate">We were unable to detect your MyMat</p>\n\n                <p [innerHTML]="\'no-detect-2\' | translate">Please follow the steps to do so</p>\n\n            </div>\n\n            <img *ngIf="showLoading" src="assets/img/loading.gif" width="200" />\n\n        </div>\n\n        <div *ngIf="mymatStatus">\n\n            <iframe *ngIf="showIframeStatus" height="100%" width="100%" [src]="iframeUrl" (click)="startRoutine()"></iframe>\n\n            <div *ngIf="showStatusTable" class="status-table divTable">\n\n                <div class="divTableHeading">\n\n                    <div class="divTableRow">\n\n                        <div class="divTableHead divTableCellFirstLeft">\n\n                            <h4 [innerHTML]="\'battery-power\' | translate"></h4>\n\n                        </div>\n\n                        <div class="divTableHead divTableCellFirstRight">\n\n                            <h4 id="battery">{{ batteryCharge }} <img src="{{ batteryImg }}" height="16"></h4>\n\n\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n                <div class="divTableBody">\n\n                    <div class="divTableRow">\n\n                        <div class="divTableCell">{{ coilText }} 1</div>\n\n                        <div class="divTableCell" id="coil1">{{ coilText1 }}</div>\n\n                    </div>\n\n                    <div class="divTableRow">\n\n                        <div class="divTableCell coilOdd">{{ coilText }} 2</div>\n\n                        <div class="divTableCell coilOdd" id="coil2">{{ coilText2 }}</div>\n\n                    </div>\n\n                    <div class="divTableRow">\n\n                        <div class="divTableCell">{{ coilText }} 3</div>\n\n                        <div class="divTableCell" id="coil3">{{ coilText3 }}</div>\n\n                    </div>\n\n                    <div class="divTableRow">\n\n                        <div class="divTableCell coilOdd divTableCellLastLeft">{{ coilText }} 4</div>\n\n                        <div class="divTableCell coilOdd divTableCellLastRight" id="coil4">{{ coilText4 }}</div>\n\n                    </div>\n\n                </div>\n\n            </div>\n\n            <p>&nbsp;</p>\n\n            <button [disabled]="!isRunRoutineEnabled" class="greenbtn start-routine" menu-close nav-transition="ios" nav-direction="forward" (click)="startRoutine()" [innerHTML]="\'start-routine\' | translate">LAUNCH MYMAT</button>\n\n            <img *ngIf="showLoading" src="assets/img/loading.gif" width="200" />\n\n        </div>\n\n</ion-content>\n\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\wifi\wifi.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__["a" /* APIServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__["a" /* NetworkInterface */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */]])
+    ], WifiPage);
+    return WifiPage;
+}());
+
+//# sourceMappingURL=wifi.js.map
+
+/***/ }),
+
+/***/ 263:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PlayingPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_local_notifications__ = __webpack_require__(133);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+/**
+ * Generated class for the PlayingPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var PlayingPage = (function () {
+    function PlayingPage(navCtrl, navParams, storage, translateService, localNotifications, plt, zone) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.storage = storage;
+        this.translateService = translateService;
+        this.localNotifications = localNotifications;
+        this.plt = plt;
+        this.zone = zone;
+        var _this = this;
+        document.addEventListener('resume', function () {
+            var t = new Date();
+            _this.resume(t.getTime());
+        });
+    }
+    PlayingPage.prototype.simulateResume = function () {
+        var t = new Date();
+        this.resume(t.getTime() + 10);
+    };
+    PlayingPage.prototype.resume = function (now) {
+        if (Math.round(now / 1000) > this.finishTime) {
+            this.displayRunningTime = '00:00';
+            this.timerRemain = 0;
+            this.timerId++;
+            this.startTimer(this.timerId);
+        }
+        else {
+            var secondsLeft = this.timerRemain = this.finishTime - Math.round(now / 1000);
+            this.timerId++;
+            this.startTimer(this.timerId);
+            this.displayRunningTime = this.convertSecondsToTime(secondsLeft);
+        }
+    };
+    PlayingPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        var program1CurrentTimeDecreasing;
+        var program2CurrentTimeDecreasing;
+        var program3CurrentTimeDecreasing;
+        var program4CurrentTimeDecreasing;
+        for (var i = 1; i <= 4; i++) {
+            switch (i) {
+                case 1:
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble1).then(function (val) {
+                        var value = val.split('|');
+                        _this.program1CurrentTimeDecreasingAsTime = value[2]; //this.convertSecondsToTime(value[2]);
+                        program1CurrentTimeDecreasing = value[2];
+                        _this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                            _this.translateService.getTranslation(lang).subscribe(function (prog) {
+                                _this.programTitle1 = typeof prog[value[1]] === 'undefined' ? value[1] : prog[value[1]];
+                            });
+                        });
+                    });
+                    break;
+                case 2:
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble2).then(function (val) {
+                        var value = val.split('|');
+                        _this.program2CurrentTimeDecreasingAsTime = value[2]; //this.convertSecondsToTime(value[2]);
+                        program2CurrentTimeDecreasing = value[2];
+                        _this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                            _this.translateService.getTranslation(lang).subscribe(function (prog) {
+                                _this.programTitle2 = typeof prog[value[1]] === 'undefined' ? value[1] : prog[value[1]];
+                            });
+                        });
+                    });
+                    break;
+                case 3:
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble3).then(function (val) {
+                        var value = val.split('|');
+                        _this.program3CurrentTimeDecreasingAsTime = value[2]; //this.convertSecondsToTime(value[2]);
+                        program3CurrentTimeDecreasing = value[2];
+                        _this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                            _this.translateService.getTranslation(lang).subscribe(function (prog) {
+                                _this.programTitle3 = typeof prog[value[1]] === 'undefined' ? value[1] : prog[value[1]];
+                            });
+                        });
+                    });
+                    break;
+                case 4:
+                    this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble4).then(function (val) {
+                        var value = val.split('|');
+                        _this.program4CurrentTimeDecreasingAsTime = value[2]; //this.convertSecondsToTime(value[2]);
+                        program4CurrentTimeDecreasing = value[2];
+                        _this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                            _this.translateService.getTranslation(lang).subscribe(function (prog) {
+                                _this.programTitle4 = typeof prog[value[1]] === 'undefined' ? value[1] : prog[value[1]];
+                            });
+                        });
+                        if (program1CurrentTimeDecreasing > program2CurrentTimeDecreasing && program1CurrentTimeDecreasing > program3CurrentTimeDecreasing && program1CurrentTimeDecreasing > program4CurrentTimeDecreasing)
+                            _this.displayRunningTime = program1CurrentTimeDecreasing; //this.convertSecondsToTime(program1CurrentTimeDecreasing);
+                        else if (program2CurrentTimeDecreasing > program3CurrentTimeDecreasing && program2CurrentTimeDecreasing > program4CurrentTimeDecreasing)
+                            _this.displayRunningTime = program2CurrentTimeDecreasing; //this.convertSecondsToTime(program2CurrentTimeDecreasing);
+                        else if (program3CurrentTimeDecreasing > program4CurrentTimeDecreasing)
+                            _this.displayRunningTime = program3CurrentTimeDecreasing; //this.convertSecondsToTime(program3CurrentTimeDecreasing);
+                        else
+                            _this.displayRunningTime = program4CurrentTimeDecreasing; //this.convertSecondsToTime(program4CurrentTimeDecreasing);
+                        _this.displayRunningTime = _this.displayRunningTime;
+                        var t = new Date();
+                        _this.finishTime = Math.round(t.getTime() / 1000) + _this.getSeconds(_this.displayRunningTime);
+                        _this.timerRemain = _this.getSeconds(_this.displayRunningTime);
+                        _this.timerId = 1;
+                        _this.startTimer(_this.timerId);
+                        var $this = _this;
+                        _this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                            _this.translateService.getTranslation(lang).subscribe(function (prog) {
+                                _this.localNotifications.schedule({
+                                    id: 1,
+                                    title: 'MyMat Light',
+                                    text: prog['time-expire-text'],
+                                    sound: 'file://assets/sounds/' + (_this.plt.is('ios') ? 'gong_c5.m4r' : 'gong_c5.mp3'),
+                                    trigger: { at: new Date(t.getTime() + _this.getSeconds(_this.displayRunningTime) * 1000) }
+                                });
+                                _this.localNotifications.on("click").subscribe({ next: function (notification) {
+                                        if (notification.id == 1) {
+                                            var t = new Date();
+                                            $this.resume(t.getTime());
+                                        }
+                                    }
+                                });
+                            });
+                        });
+                    });
+                    break;
+            }
+        }
+    };
+    PlayingPage.prototype.ionViewWillLeave = function () {
+        this.timerRemain = 0;
+    };
+    PlayingPage.prototype.startTimer = function (id) {
+        var _this = this;
+        setTimeout(function () {
+            if (_this.timerRemain == 0 || _this.timerId != id) {
+                return;
+            }
+            _this.timerRemain--;
+            _this.zone.run(function () {
+                _this.displayRunningTime = _this.decreaseSecond(_this.displayRunningTime);
+            });
+            if (_this.timerRemain > 0) {
+                _this.startTimer(_this.timerId);
+            }
+        }, 1000);
+    };
+    PlayingPage.prototype.decreaseSecond = function (time) {
+        var minutesStr = time.substr(0, time.indexOf(':'));
+        var minutes = minutesStr[0] == '0' ? parseInt(minutesStr[1]) : parseInt(minutesStr);
+        var secondsStr = time.substr(time.indexOf(':') + 1);
+        var seconds = secondsStr[0] == '0' ? parseInt(secondsStr[1]) : parseInt(secondsStr);
+        if (seconds - 1 == -1) {
+            minutesStr = minutes - 1 < 10 && minutes - 1 >= 0 ? '0' + (minutes - 1) : minutes - 1 == -1 ? '00' : '' + (minutes - 1);
+            secondsStr = '59';
+        }
+        else {
+            secondsStr = seconds - 1 < 10 ? '0' + (seconds - 1) : '' + (seconds - 1);
+        }
+        return minutesStr + ':' + secondsStr;
+    };
+    PlayingPage.prototype.getSeconds = function (time) {
+        var minutesStr = time.substr(0, time.indexOf(':'));
+        var minutes = minutesStr[0] == '0' ? parseInt(minutesStr[1]) : parseInt(minutesStr);
+        var secondsStr = time.substr(time.indexOf(':') + 1);
+        var seconds = secondsStr[0] == '0' ? parseInt(secondsStr[1]) : parseInt(secondsStr);
+        return (minutes * 60) + seconds;
+    };
+    PlayingPage.prototype.convertSecondsToTime = function (timeInSeconds) {
+        var minutes = Math.floor(timeInSeconds / 60);
+        var minutesStr = "0" + minutes;
+        var seconds = "0" + (timeInSeconds - minutes * 60);
+        return minutesStr.substr(-2) + ":" + seconds.substr(-2);
+    };
+    PlayingPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-playing',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\playing\playing.html"*/'<!--\n\n  Generated template for the PlayingPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar class="bar">\n\n    <button ion-button menuToggle end class="button button-clear">\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      <div class="logo"></div>\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="home center">\n\n  <div class="list card paddingSmall">\n\n      <div class="item">\n\n\n\n          <h2>{{ \'remaining-time\' | translate }} </h2>\n\n          <h3 style="color:white;">{{ displayRunningTime }}</h3>\n\n\n\n      </div>\n\n\n\n      <div class="item item-time item-body">\n\n          <div class="program-running-left">\n\n            <div class="program-running-title">{{ programTitle1 }}</div>\n\n            <div class="program-running-duration">{{ program1CurrentTimeDecreasingAsTime }}</div>\n\n          </div>\n\n      </div>\n\n\n\n      <div class="item item-time item-body">\n\n          <div class="program-running-left">\n\n            <div class="program-running-title">{{ programTitle2 }}</div>\n\n            <div class="program-running-duration">{{  program2CurrentTimeDecreasingAsTime }}</div>\n\n          </div>\n\n      </div>\n\n\n\n       <div class="item item-time item-body">\n\n          <div class="program-running-left">\n\n            <div class="program-running-title">{{ programTitle3 }}</div>\n\n            <div class="program-running-duration">{{  program3CurrentTimeDecreasingAsTime }}</div>\n\n          </div>\n\n      </div>\n\n\n\n      <div class="item item-time item-body">\n\n          <div class="program-running-left">\n\n            <div class="program-running-title">{{ programTitle4 }}</div>\n\n            <div class="program-running-duration">{{  program4CurrentTimeDecreasingAsTime }}</div>\n\n          </div>\n\n      </div>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\playing\playing.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_local_notifications__["a" /* LocalNotifications */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */]])
+    ], PlayingPage);
+    return PlayingPage;
+}());
+
+//# sourceMappingURL=playing.js.map
+
+/***/ }),
+
+/***/ 264:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HelpPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the HelpPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var HelpPage = (function () {
+    function HelpPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    HelpPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HelpPage');
+    };
+    HelpPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-help',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\help\help.html"*/'<!--\n  Generated template for the HelpPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n    <ion-header>\n      <ion-navbar class="bar">\n        <button ion-button menuToggle end class="button button-clear">\n          <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n          <div class="logo"></div>\n        </ion-title>\n      </ion-navbar>\n    </ion-header>\n\n    <ion-content padding class="home">\n\n        <div class="list card cardprogram">\n\n            <div class="item">\n\n                <h2 padding [innerHTML]="\'help-text\' | translate">Help</h2>\n\n            </div>\n\n            <div padding class="item item-body">\n                <div class="" [innerHTML]="\'help-text1\' | translate">How do I know which programs to choose?</div>\n                <p class="lorems" [innerHTML]="\'help-text2\' | translate">\n                    It is always good to start with balancing the System. These are some ways you could start this with:\n                    Energy Balancing, E-Smog, Joy, Vitality<br><br>\n                    \n                    If you would like to enhance your sleeping pattern – choose:<br>\n                    Energy Balancing, E-Smog, Relax, Sleep<br><br>\n                    \n                    If you would like some extra energy in the morning:<br>\n                    Energy Balancing, Energy Booster, Concentration (and any program connected to a problem you are dealing with – as Pain, Muscle, Joints, Headache etc.) <br><br>\n                    \n                    For a full list of programs and their uses regarding symptoms refer to the user’s manual included with your purchase or available for free online.\n                </p>\n                <div class="" [innerHTML]="\'help-text3\' | translate">Which programs should I avoid in the evening?</div>\n                <p class="lorems" [innerHTML]="\'help-text4\' | translate">\n                    If you want to have a good night’s sleep it is better not to over stimulate your organism. If you are used to drinking coffee in the evening and still can sleep you may use any programs but if you are more sensitive – better do not to use the following programs before bed time: Circulation, Immune System, Adrenal, Exhaustion, Concentration and Energy Booster\n                </p>\n                <div class="" [innerHTML]="\'help-text5\' | translate">How do electromagnetic fields affect my body?</div>\n                <p class="lorems" [innerHTML]="\'help-text6\' | translate">\n                    Everything in our bodies is electric, our cells communicate with electromagnetic frequencies, our heart generates electromagnetic waves with every beat, our nervous system communicated when neurons react to electro magnetic signals through synapses. With this in mind we can understand how external magnetic, electric and electromagnetic fields react with every aspect of our body. By regulating specific low intensity frequencies we can chose exactly what we want to react with, acting on specified cells, organs and tissues.\n                </p>\n                <div class="" [innerHTML]="\'help-text7\' | translate">How does treatment at the cellular level help me?</div>\n                <p class="lorems" [innerHTML]="\'help-text8\' | translate">\n                    By charging magnetic fields surrounding cell membranes channels open up for better nutrient penetration. Opening the channels also promotes easier waste elimination, efficiently restoring proper cell function. An efficient system of cells creates efficient tissue, which come together to make organs. Restoring proper function from the cellular level brings beneficial long term effects to all related problems and improves overall well being. Healthy cell function also diminishes the need for cell replacement, slowing down aging processes and energy waste.\n                </p>\n                \n                <div class="" [innerHTML]="\'help-text9\' | translate">Can PEMF therapy protect me from future illnesses?</div>\n                <p class="lorems" [innerHTML]="\'help-text10\' | translate"> Operating effectively at a systematic level will reduce opportunities for diseases to develop. Diseases begin at a cellular level and injuries have to start healing at a cellular level. By using Pulsed Electromagnetic Frequencies one can improve general circulation thus accelerating reparation processes. By improving general cellular health they break down/wear out less often. Healthy operating cells will accelerate recuperation and balance bodily functions. </p>\n\n                <div class="" [innerHTML]="\'help-text11\' | translate">Aren’t Magnetic Fields bad for me?</div>\n                <p class="lorems" [innerHTML]="\'help-text12\' | translate"> The MyMat has a frequency range between 1Hz to 200 kHz and EMF strength wont exceed 10 micro Tesla per channel. The MyMat can operate up to 4 channels simultaneously due to its 4 antennae’s, thus a maximum of 40 micro Tesla. Magnetic fields outside of the low and extremely low frequencies such as microwave, infrared, radio and ultraviolet frequencies do have varied detrimental effects on our cells and body. Most of our exposure risk comes from higher frequencies such as power lines and cell phones attached to our heads daily. These frequencies pose higher risks because we are constantly exposed to them and they can induce tissue damage, alter cellular function and create general cellular damage. It is practically impossible to live a life avoiding these frequencies, they are everywhere and penetrate everything. We cant escape E-smog, but we can use the MyMat which has several programs that can help reduce damaging effects from all our constant electronic bombardment by adding frequencies that mantain our bodies in balance, mantaining the healthy, natural frequencies. </p>\n\n                <div class="" [innerHTML]="\'help-text13\' | translate">Will PEMF therapy replace my medication?</div>\n                <p class="lorems" [innerHTML]="\'help-text14\' | translate"> Therapy with the Pulsed Electromagnetic Frequencies can make a significant improvement in overall well-being and diminish many negative symptoms. It can be used alongside treatments and medication to improve results. It is important to discuss with medical professionals before replacing any treatments or medication. Once a proper plan is created and results are seen it is possible to reduce or eliminate treatments or medication. Always make sure to ask for medical advise or consultation before changing or replacing existing treatments. </p>\n\n                <div class="" [innerHTML]="\'help-text15\' | translate">How do electromagnetic fields affect my body?</div>\n                <p class="lorems" [innerHTML]="\'help-text16\' | translate">Everything in our bodies is electric, our cells communicate with electromagnetic frequencies, our heart generates electromagnetic waves with every beat, our nervous system communicated when neurons react to electro magnetic signals through synapses. With this in mind we can understand how external magnetic, electric and electromagnetic fields react with every aspect of our body. By regulating specific low intensity frequencies we can chose exactly what we want to react with, acting on specified cells, organs and tissues. </p>\n\n                <div class="" [innerHTML]="\'help-text23\' | translate">Can I overdose on a magnetic field?</div>\n                <p class="lorems" [innerHTML]="\'help-text24\' | translate"> The MyMat operates with very low intensity pulsed magnetic fields. A healthy cell operates at ideal capacity so has no need for more energy and cannot accept more energy, so it ignores these frequencies. A damaged or malfunctioning cell can absorb some of this energy but it is impossible for it to overcharge because there is no possibility of storing any more energy than is needed. </p>\n\n                <div class="" [innerHTML]="\'help-text25\' | translate">What are some of the basic beneficial actions PEMFs will have in my body?</div>\n                <p class="lorems" [innerHTML]="\'help-text26\' | translate">Improving tissue healing \n         Reducing pain<br>\nIncreasing energy<br>\nImproving sleep<br>\nMaking soft tissue more flexible<br>\nMeridian Stimulation<br>\nReducing Blood Pressure<br>\nImproving clotting factors<br>\nReducing Arthritis ontake<br>\nImmune system stimulation<br>\nDetox<br>\nHelping nerve function<br>\nImproving Nutrient Absorbtion<br>\nReducing Muscle tension</p>\n            </div>\n        </div>\n\n    </ion-content>\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\help\help.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]])
+    ], HelpPage);
+    return HelpPage;
+}());
+
+//# sourceMappingURL=help.js.map
+
+/***/ }),
+
+/***/ 265:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_constants__ = __webpack_require__(26);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+/**
+ * Generated class for the ContactPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ContactPage = (function () {
+    function ContactPage(navCtrl, navParams, formBuilder, apiService, translateService, storage, events) {
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.formBuilder = formBuilder;
+        this.apiService = apiService;
+        this.translateService = translateService;
+        this.storage = storage;
+        this.events = events;
+        this.contactForm = this.formBuilder.group({
+            email: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required],
+            name: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required],
+            message: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["f" /* Validators */].required]
+        });
+        this.events.subscribe('switchLangEventContact', function (lang) {
+            //call methods to refresh content
+            _this.changeButtonText(lang);
+        });
+    }
+    ContactPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.cleanForm();
+        this.response_text = '';
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+            _this.changeButtonText(lang);
+        });
+    };
+    ContactPage.prototype.changeButtonText = function (lang) {
+        var _this = this;
+        this.translateService.getTranslation(lang).subscribe(function (value) {
+            _this.button_send = value['send-text'];
+            // Mostrar texto en label debajo del boton
+        });
+    };
+    ContactPage.prototype.cleanForm = function () {
+        this.contactDisabled = true;
+        this.name_value = '';
+        this.email_value = '';
+        this.message_value = '';
+    };
+    ContactPage.prototype.attemptSendMail = function () {
+        var _this = this;
+        var emailData = { email: this.contactForm.value.email, name: this.contactForm.value.name, message: this.contactForm.value.message };
+        this.apiService.runPost('contact_us.php', emailData).then(function (result) {
+            var obj = result;
+            if (obj.status == "ok") {
+                _this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                    _this.translateService.getTranslation(lang).subscribe(function (value) {
+                        _this.response_text = value['email-success-message'];
+                    });
+                });
+                _this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                    _this.translateService.getTranslation(lang).subscribe(function (value) {
+                        _this.button_send = value['sent-text'];
+                        _this.cleanForm();
+                    });
+                });
+            }
+            else {
+                _this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                    _this.translateService.getTranslation(lang).subscribe(function (value) {
+                        _this.response_text = value['email-error-message'];
+                    });
+                });
+            }
+        }, function (result) {
+            _this.storage.get(__WEBPACK_IMPORTED_MODULE_6__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+                _this.translateService.getTranslation(lang).subscribe(function (value) {
+                    _this.response_text = value['email-error-message'];
+                });
+            });
+        });
+    };
+    ContactPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-contact',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\contact\contact.html"*/'<!--\n\n  Generated template for the ContactPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n  <ion-navbar class="bar">\n\n    <button ion-button menuToggle end class="button button-clear">\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>\n\n      <div class="logo"></div>\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding class="home center">\n\n  <div class="list card cardprogram">\n\n    <div class="item">\n\n\n\n        <h2 padding>{{ \'contact-us-text\' | translate }}</h2>\n\n\n\n    </div>\n\n\n\n    <div padding class="item item-body">\n\n      <form [formGroup]="contactForm" (ngSubmit)="attemptSendMail()">\n\n        <p class="lorems center-forced" [innerHTML]="\'get-in-touch\' | translate">Text</p>\n\n        <label class="item-input contact">\n\n          <ion-input type="text" placeholder="{{ \'name-text\' | translate }}" formControlName="name" value="{{ name_value }}"></ion-input>\n\n        </label><br>\n\n        <label class="item-input contact">\n\n          <ion-input type="email" placeholder="Email"  autocapitalize="none"formControlName="email" value="{{ email_value }}"></ion-input>\n\n        </label><br>\n\n        <label class="item-input contact">\n\n          <ion-textarea placeholder="{{ \'message-text\' | translate }}" formControlName="message" value="{{ message_value }}"></ion-textarea>\n\n        </label><br>\n\n        <button type="submit" ion-button [disabled]="!contactForm.valid" [disabled]="contactDisabled" class="button-contact button-calm">{{ button_send }}</button>\n\n        <div padding>\n\n          {{ response_text }}\n\n        </div>\n\n      </form>\n\n    </div>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\contact\contact.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__["a" /* APIServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]])
+    ], ContactPage);
+    return ContactPage;
+}());
+
+//# sourceMappingURL=contact.js.map
+
+/***/ }),
+
+/***/ 266:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(267);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
+
+
+
+Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_14" /* enableProdMode */])();
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 275:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export HttpLoaderFactory */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_http__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(324);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_network_interface__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_local_notifications__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_date_picker__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__app_component__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_home_home__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_help_help__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_contact_contact__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_programs_programs__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_wifi_wifi__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_playing_playing__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_program_program__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_subscribe_subscribe__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_slider_slider__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_favorites_favorites__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_status_bar__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_splash_screen__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_routines_routines__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_api_service_api_service__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_native_network__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ionic_native_device__ = __webpack_require__(134);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+ // solo se usa para hacer la prueba de conexion con el MyMat
+
+
+
+
+
+//import { Network } from '@ionic-native/network';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function HttpLoaderFactory(http) {
+    return new __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, './assets/i18n/', '.json');
+}
+var AppModule = (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_help_help__["a" /* HelpPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_contact_contact__["a" /* ContactPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_programs_programs__["a" /* ProgramsPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_wifi_wifi__["a" /* WifiPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_playing_playing__["a" /* PlayingPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_subscribe_subscribe__["a" /* SubscribePage */],
+                __WEBPACK_IMPORTED_MODULE_21__pages_slider_slider__["a" /* SliderPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_program_program__["a" /* ProgramPage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_favorites_favorites__["a" /* FavoritesPage */]
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_http__["c" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_5__angular_common_http__["b" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* MyApp */], {}, {
+                    links: []
+                }),
+                __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["b" /* TranslateModule */].forRoot({
+                    loader: {
+                        provide: __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["a" /* TranslateLoader */],
+                        useFactory: HttpLoaderFactory,
+                        deps: [__WEBPACK_IMPORTED_MODULE_5__angular_common_http__["a" /* HttpClient */]]
+                    }
+                })
+            ],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["d" /* IonicApp */]],
+            entryComponents: [
+                __WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_help_help__["a" /* HelpPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_contact_contact__["a" /* ContactPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_programs_programs__["a" /* ProgramsPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_wifi_wifi__["a" /* WifiPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_playing_playing__["a" /* PlayingPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_subscribe_subscribe__["a" /* SubscribePage */],
+                __WEBPACK_IMPORTED_MODULE_21__pages_slider_slider__["a" /* SliderPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_program_program__["a" /* ProgramPage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_favorites_favorites__["a" /* FavoritesPage */]
+            ],
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_23__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_24__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_25__providers_routines_routines__["a" /* RoutinesProvider */],
+                __WEBPACK_IMPORTED_MODULE_9__ionic_native_network_interface__["a" /* NetworkInterface */],
+                __WEBPACK_IMPORTED_MODULE_27__ionic_native_network__["a" /* Network */],
+                __WEBPACK_IMPORTED_MODULE_28__ionic_native_device__["a" /* Device */],
+                __WEBPACK_IMPORTED_MODULE_10__ionic_native_local_notifications__["a" /* LocalNotifications */],
+                __WEBPACK_IMPORTED_MODULE_11__ionic_native_date_picker__["a" /* DatePicker */],
+                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* IonicErrorHandler */] },
+                __WEBPACK_IMPORTED_MODULE_26__providers_api_service_api_service__["a" /* APIServiceProvider */],
+                __WEBPACK_IMPORTED_MODULE_6__ionic_native_http__["a" /* HTTP */]
+            ],
+            exports: [
+                __WEBPACK_IMPORTED_MODULE_13__pages_home_home__["a" /* HomePage */]
+            ]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 326:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_help_help__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_contact_contact__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_slider_slider__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_favorites_favorites__ = __webpack_require__(74);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+var MyApp = (function () {
+    function MyApp(platform, statusBar, splashScreen, translateService, menuCtrl, storage, events) {
+        var _this = this;
+        this.platform = platform;
+        this.statusBar = statusBar;
+        this.splashScreen = splashScreen;
+        this.translateService = translateService;
+        this.menuCtrl = menuCtrl;
+        this.storage = storage;
+        this.events = events;
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */];
+        this.initializeApp();
+        // used for an example of ngFor and navigation
+        this.pages = [
+            { title: 'home-title', component: __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */], icon: 'menuitemhome', isPush: false },
+            { title: 'help-title', component: __WEBPACK_IMPORTED_MODULE_8__pages_help_help__["a" /* HelpPage */], icon: 'menuitemhelp', isPush: false },
+            { title: 'contact-title', component: __WEBPACK_IMPORTED_MODULE_9__pages_contact_contact__["a" /* ContactPage */], icon: 'menuitemcontact', isPush: false },
+            { title: 'fav-title', component: __WEBPACK_IMPORTED_MODULE_11__pages_favorites_favorites__["a" /* FavoritesPage */], icon: 'menufavorites', isPush: true },
+            { title: 'slider-title', component: __WEBPACK_IMPORTED_MODULE_10__pages_slider_slider__["a" /* SliderPage */], icon: 'menuiteminfo', isPush: true }
+        ];
+        platform.ready().then(function () {
+            _this.storage.get(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyLang).then(function (value) {
+                if (!value) {
+                    value = navigator.language.split('-')[0];
+                    if (!value)
+                        value = 'en';
+                    translateService.setDefaultLang(value);
+                }
+                translateService.use(value);
+                _this.switchLang(value);
+            })
+                .catch(function (err) {
+                var value = 'en';
+                translateService.setDefaultLang(value);
+                translateService.use(value);
+                _this.switchLang(value);
+            });
+            ;
+        });
+    }
+    MyApp.prototype.initializeApp = function () {
+        var _this = this;
+        this.platform.ready().then(function () {
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            _this.statusBar.styleDefault();
+            _this.splashScreen.hide();
+        });
+    };
+    MyApp.prototype.openPage = function (page) {
+        // Reset the content nav to have just this page
+        // we wouldn't want the back button to show in this scenario
+        if (page.isPush)
+            this.nav.push(page.component);
+        else
+            this.nav.setRoot(page.component);
+    };
+    MyApp.prototype.switchLang = function (lang) {
+        this.events.publish('switchLangEvent', lang);
+        this.events.publish('switchLangEventContact', lang);
+        switch (lang) {
+            case 'es':
+                this.lang_en = true;
+                this.lang_es = false;
+                this.lang_pt = true;
+                this.lang_fr = true;
+                this.lang_gr = true;
+                this.lang_it = true;
+                break;
+            case 'en':
+                this.lang_en = false;
+                this.lang_es = true;
+                this.lang_pt = true;
+                this.lang_fr = true;
+                this.lang_gr = true;
+                this.lang_it = true;
+                break;
+            case 'pt':
+                this.lang_en = true;
+                this.lang_es = true;
+                this.lang_pt = false;
+                this.lang_fr = true;
+                this.lang_gr = true;
+                this.lang_it = true;
+                break;
+            case 'it':
+                this.lang_en = true;
+                this.lang_es = true;
+                this.lang_pt = true;
+                this.lang_fr = true;
+                this.lang_gr = true;
+                this.lang_it = false;
+                break;
+            case 'gr':
+                this.lang_en = true;
+                this.lang_es = true;
+                this.lang_pt = true;
+                this.lang_fr = true;
+                this.lang_gr = false;
+                this.lang_it = true;
+                break;
+            case 'fr':
+                this.lang_en = true;
+                this.lang_es = true;
+                this.lang_pt = true;
+                this.lang_fr = false;
+                this.lang_gr = true;
+                this.lang_it = true;
+                break;
+        }
+        this.translateService.use(lang);
+        this.storage.set(__WEBPACK_IMPORTED_MODULE_5__services_constants__["a" /* Constants */].storageKeyLang, lang);
+        this.menuCtrl.close();
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */])
+    ], MyApp.prototype, "nav", void 0);
+    MyApp = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\app\app.html"*/'<ion-menu [content]="content">\n\n  <ion-content>\n\n    <ion-list>\n\n      <div class="menutitle"><img src="assets/img/logomenu.png"></div>\n\n      <ion-item class="menuitemhome" menu-close>\n\n        <img *ngIf="lang_en" src="assets/img/flag-england.png" width="35" height="35" (click)="switchLang(\'en\')">\n\n        <img *ngIf="lang_es" src="assets/img/flag-spain.png" width="35" height="35" (click)="switchLang(\'es\')">\n\n        <img *ngIf="lang_it" src="assets/img/flag-italy.png" width="35" height="35" (click)="switchLang(\'it\')">\n\n        <img *ngIf="lang_gr" src="assets/img/flag-germany.png" width="35" height="35" (click)="switchLang(\'gr\')">\n\n        <img *ngIf="lang_fr" src="assets/img/flag-france.png" width="35" height="35" (click)="switchLang(\'fr\')">\n\n        <img *ngIf="lang_pt" src="assets/img/flag-brazil.png" width="35" height="35" (click)="switchLang(\'pt\')">\n\n      </ion-item>\n\n      <button menuClose ion-item class="item-button item-block item-md {{ p.icon }}" *ngFor="let p of pages" (click)="openPage(p)">\n\n        <label class="item-content" text-uppercase></label>\n\n        {{p.title | translate}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\app\app.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */], __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]])
+    ], MyApp);
+    return MyApp;
+}());
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 48:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return APIServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_http__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+//import { Network } from '@ionic-native/network';
+
+
+//import * as $ from "jquery";
+/*
+  Generated class for the AuthServiceProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var APIServiceProvider = (function () {
+    function APIServiceProvider(http, httpNative, httpModule) {
+        this.http = http;
+        this.httpNative = httpNative;
+        this.httpModule = httpModule;
+    }
+    APIServiceProvider.prototype.test_language = function () {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].myMatApiIndexUrl)
+                .subscribe(function (res) {
+                resolve(res);
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    APIServiceProvider.prototype.test = function () {
+        var _this = this;
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+        return new Promise(function (resolve, reject) {
+            _this.httpModule.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].myMatApiIndexUrl, { headers: headers })
+                .pipe(Object(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__["timeout"])(5000) //5 seconds
+            )
+                .map(function (res) { return res.text(); })
+                .subscribe(function (res) {
+                resolve(res);
+            }, function (err) {
+                reject(err);
+            });
+        });
+    };
+    APIServiceProvider.prototype.sendError = function (data) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            // watch network for a connection
+            /*let connectSubscription = this.network.onConnect().subscribe(() => {*/
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            _this.httpModule.post(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].myMatApiUrl + 'report_error.php', JSON.stringify(data), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                reject(err);
+            });
+            /*});*/
+        });
+    };
+    APIServiceProvider.prototype.sendEmail = function (data) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            // watch network for a connection
+            /*let connectSubscription = this.network.onConnect().subscribe(() => {*/
+            var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
+            _this.httpModule.post(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].myMatApiUrl + 'contact_us.php', JSON.stringify(data), { headers: headers })
+                .subscribe(function (res) {
+                resolve(res.json());
+            }, function (err) {
+                reject(err);
+            });
+            /*});*/
+        });
+    };
+    APIServiceProvider.prototype.runPost = function (scriptFile, data) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.http.post(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].myMatApiUrl + scriptFile, data)
+                .subscribe(function (res) {
+                resolve(res);
+            }, function (err) {
+                reject(err);
+            });
+            /*});*/
+        });
+    };
+    APIServiceProvider.prototype.start = function (programs) {
+        var program1 = programs[0].split("|")[3];
+        var program2 = programs[1].split("|")[3];
+        var program3 = programs[2].split("|")[3];
+        var program4 = programs[3].split("|")[3];
+        /*var formData = new FormData();
+        formData.append('P1', program1);
+        formData.append('P2', program2);
+        formData.append('P3', program3);
+        formData.append('P4', program4);*/
+        var params = "P1=" + program1 + "&P2=" + program2 + "&P3=" + program3 + "&P4=" + program4;
+        return this.httpNative.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].myMatApiStartUrl + '?' + params, "", {});
+    };
+    APIServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_http__["a" /* HTTP */], __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
+    ], APIServiceProvider);
+    return APIServiceProvider;
+}());
+
+//# sourceMappingURL=api-service.js.map
+
+/***/ }),
+
+/***/ 74:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FavoritesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_routines_routines__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_api_service_api_service__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_storage__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+/**
+ * Generated class for the FavoritesPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var FavoritesPage = (function () {
+    function FavoritesPage(navParams, viewCtrl, routines, formBuilder, translateService, storage, apiService, network, loadingCtrl, alertCtrl, zone, events) {
+        var _this = this;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.routines = routines;
+        this.formBuilder = formBuilder;
+        this.translateService = translateService;
+        this.storage = storage;
+        this.apiService = apiService;
+        this.network = network;
+        this.loadingCtrl = loadingCtrl;
+        this.alertCtrl = alertCtrl;
+        this.zone = zone;
+        this.events = events;
+        this.showSaveForm = true;
+        this.showLoadingListing = false;
+        this.isDeviceOnline = true;
+        var programs = this.routines.getPrograms();
+        if (programs[0] && programs[1] && programs[2] && programs[3]) {
+            this.program1 = programs[0];
+            this.program2 = programs[1];
+            this.program3 = programs[2];
+            this.program4 = programs[3];
+        }
+        this.saveRoutineForm = this.formBuilder.group({
+            name: ['', __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* Validators */].required]
+        });
+        if (navParams.get('showSave'))
+            this.showSaveForm = true;
+        else
+            this.showSaveForm = false;
+        // watch network for a disconnect
+        this.network.onDisconnect().subscribe(function () {
+            _this.zone.run(function () {
+                _this.isDeviceOnline = false;
+            });
+        });
+        // watch network for a connection
+        this.network.onConnect().subscribe(function () {
+            _this.zone.run(function () {
+                _this.isDeviceOnline = true;
+                _this.storage.get(__WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].deviceInfoKey).then(function (device) {
+                    _this.loadFavoriteList(device.email);
+                });
+            });
+        });
+    }
+    FavoritesPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].deviceInfoKey).then(function (device) {
+            if (typeof device !== 'undefined' && device != null)
+                _this.loadFavoriteList(device.email);
+        });
+    };
+    FavoritesPage.prototype.loadFavoriteList = function (email) {
+        var _this = this;
+        var formData = new FormData();
+        //formData.append('uuid', uuid);
+        formData.append('type', 'get');
+        formData.append('email', email);
+        if (this.isDeviceOnline) {
+            this.showLoadingListing = true;
+            this.apiService.runPost('favorites.php', formData).then(function (result) {
+                _this.showLoadingListing = false;
+                _this.responseData = result;
+                _this.favoritesList = _this.responseData.favorites;
+            }, function (err) {
+                _this.showLoadingListing = false;
+                console.log(err);
+            });
+        }
+    };
+    FavoritesPage.prototype.dismiss = function (event) {
+        if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        this.viewCtrl.dismiss();
+    };
+    FavoritesPage.prototype.delete = function (event, id) {
+        var _this = this;
+        if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        var formData = new FormData();
+        //formData.append('uuid', uuid);
+        formData.append('type', 'del');
+        formData.append('id', id);
+        this.apiService.runPost('favorites.php', formData).then(function (result) {
+            _this.storage.get(__WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].deviceInfoKey).then(function (device) {
+                _this.loadFavoriteList(device.email);
+            });
+        });
+    };
+    FavoritesPage.prototype.showProgram = function (id, name, program1, program2, program3, program4) {
+        var _this = this;
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+            _this.translateService.getTranslation(lang).subscribe(function (value) {
+                var program_1 = (program1 == 'E-SMOG' ? program1 : value[program1]);
+                var program_2 = (program2 == 'E-SMOG' ? program2 : value[program2]);
+                var program_3 = (program3 == 'E-SMOG' ? program3 : value[program3]);
+                var program_4 = (program4 == 'E-SMOG' ? program4 : value[program4]);
+                var alert = _this.alertCtrl.create({
+                    title: 'Rutina - ' + name,
+                    message: program_1 + '\n' + program_2 + '\n' + program_3 + '\n' + program_4,
+                    buttons: [
+                        {
+                            text: value['choose'],
+                            handler: function (data) {
+                                _this.events.publish('addProgramsEvent', { name: program1 }, { name: program2 }, { name: program3 }, { name: program4 });
+                            }
+                        }
+                    ]
+                });
+                alert.present();
+                // Mostrar texto en label debajo del boton
+            });
+        });
+    };
+    FavoritesPage.prototype.attemptSaveFavorite = function () {
+        var _this = this;
+        this.response_text = '';
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_7__services_constants__["a" /* Constants */].deviceInfoKey).then(function (device) {
+            var formData = new FormData();
+            formData.append('type', 'new');
+            formData.append('email', device.email);
+            formData.append('name', _this.saveRoutineForm.value.name);
+            formData.append('program1', _this.program1);
+            formData.append('program2', _this.program2);
+            formData.append('program3', _this.program3);
+            formData.append('program4', _this.program4);
+            _this.apiService.runPost('favorites.php', formData).then(function (result) {
+                _this.responseData = result;
+                if (_this.responseData.status == 'ok') {
+                    _this.showSaveForm = false;
+                    _this.favoritesList = _this.responseData.favorites;
+                }
+            });
+        });
+    };
+    FavoritesPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-favorites',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\favorites\favorites.html"*/'<!--\n  Generated template for the FavoritesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-toolbar>\n    <ion-title>\n      {{ \'favorite-routines\' | translate }}\n    </ion-title>\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <span ion-text color="primary" showWhen="ios">{{ \'back\' | translate }}</span>\n        <ion-icon name="md-close" showWhen="android,windows"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n  <ion-item class="no-conection" *ngIf="!isDeviceOnline">{{ \'offline-device-text\' | translate }}</ion-item>\n</ion-header>\n\n<ion-content>\n  <div padding *ngIf="showSaveForm">\n    <div text-center text-uppercase>{{ \'add-favorites\' | translate }}</div>\n    <form [formGroup]="saveRoutineForm" (ngSubmit)="attemptSaveFavorite()">\n      <ion-list>\n        <ion-item class="item-input contact">\n          <ion-input type="text" placeholder="{{ \'name-text\' | translate }}" formControlName="name" padding></ion-input>\n        </ion-item>\n        <ion-item>\n          <p>{{ program1 | translate }}</p>\n          <p>{{ program2 | translate }}</p>\n          <p>{{ program3 | translate }}</p>\n          <p>{{ program4 | translate  }}</p>\n        </ion-item>\n        <ion-item>\n          <button type="submit" ion-button item-left [disabled]="!saveRoutineForm.valid" class="button-contact button-calm">{{ \'button-save\' | translate }}</button>\n          <button ion-button icon-only item-end (click)="dismiss($event)" class="button-contact button-calm">\n            <span ion-text color="primary" showWhen="ios">Cancel</span>\n            <span ion-text showWhen="android,windows">Cancel</span>\n          </button>\n        </ion-item>\n      </ion-list>\n    </form>\n  </div>\n  <div padding-top>\n    <div text-center text-uppercase>{{ \'my-favorites\' | translate }}</div>\n    <div *ngIf="showLoadingListing" text-center>{{ \'loading\' | translate }}...</div>\n    <div *ngIf="!isDeviceOnline" text-center>{{ \'connect-favorites-text\' | translate }}...</div>\n    <ion-item *ngFor="let item of favoritesList" (click)="showProgram(item.id, item.name, item.program1, item.program2, item.program3, item.program4)">\n      {{item.name}}\n      <button ion-button icon-only item-end (click)="delete($event, item.id)">\n        <ion-icon name="md-close"></ion-icon>\n      </button>\n    </ion-item>\n  </div>\n</ion-content>'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\favorites\favorites.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_routines_routines__["a" /* RoutinesProvider */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_8__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_api_service_api_service__["a" /* APIServiceProvider */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]])
+    ], FavoritesPage);
+    return FavoritesPage;
+}());
+
+//# sourceMappingURL=favorites.js.map
+
+/***/ }),
+
+/***/ 75:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoutinesProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(259);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+/*
+  Generated class for the RoutinesProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var RoutinesProvider = (function () {
+    function RoutinesProvider(storage) {
+        this.storage = storage;
+        console.log('Hello RoutinesProvider Provider');
+    }
+    RoutinesProvider.prototype.setProgram = function (index, prog) {
+        switch (index) {
+            case 1:
+                this.program1 = prog;
+                break;
+            case 2:
+                this.program2 = prog;
+                break;
+            case 3:
+                this.program3 = prog;
+                break;
+            case 4:
+                this.program4 = prog;
+                break;
+        }
+    };
+    RoutinesProvider.prototype.cleanPrograms = function () {
+        this.program1 = null;
+        this.program2 = null;
+        this.program3 = null;
+        this.program4 = null;
+    };
+    RoutinesProvider.prototype.setPrograms = function (prog1, prog2, prog3, prog4) {
+        this.program1 = prog1;
+        this.program2 = prog2;
+        this.program3 = prog3;
+        this.program4 = prog4;
+    };
+    RoutinesProvider.prototype.getPrograms = function () {
+        return [this.program1, this.program2, this.program3, this.program4];
+    };
+    RoutinesProvider.prototype.getKey = function (key) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.storage.get(key)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                }
+            });
+        });
+    };
+    RoutinesProvider.prototype.addPrograms = function (routineName, program1, program2, program3, program4) {
+        var objProgram1 = this.getProgram(program1);
+        var objProgram2 = this.getProgram(program2);
+        var objProgram3 = this.getProgram(program3);
+        var objProgram4 = this.getProgram(program4);
+        this.insertPreSetProgram(routineName, objProgram1, objProgram2, objProgram3, objProgram4);
+        this.setPrograms(objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name);
+        return [objProgram1.name, objProgram2.name, objProgram3.name, objProgram4.name];
+    };
+    RoutinesProvider.prototype.getProgram = function (name) {
+        for (var i = 0; i < __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs.length; i++) {
+            var program = __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs[i];
+            if (program.apiName == name || program.name == name.name || program.name == name)
+                return program;
+        }
+    };
+    RoutinesProvider.prototype.insertPreSetProgram = function (routineName, program1, program2, program3, program4) {
+        this.storage.set('MyMat_routineName', routineName);
+        this.addProgramToRoutine(1, "", program1.name, program1.runningtime, program1.apiName);
+        this.addProgramToRoutine(2, "", program2.name, program2.runningtime, program2.apiName);
+        this.addProgramToRoutine(3, "", program3.name, program3.runningtime, program3.apiName);
+        this.addProgramToRoutine(4, "", program4.name, program4.runningtime, program4.apiName);
+    };
+    RoutinesProvider.prototype.addProgramToRoutine = function (currentBubbleSlot, idProgram, programName, programRunningTime, apiName) {
+        if (currentBubbleSlot == 1) {
+            this.storage.set('MyMat_bubbleRoutineProgram1', idProgram + "|" + programName + "|" + programRunningTime + "|" + apiName);
+        }
+        else if (currentBubbleSlot == 2) {
+            this.storage.set('MyMat_bubbleRoutineProgram2', idProgram + "|" + programName + "|" + programRunningTime + "|" + apiName);
+        }
+        else if (currentBubbleSlot == 3) {
+            this.storage.set('MyMat_bubbleRoutineProgram3', idProgram + "|" + programName + "|" + programRunningTime + "|" + apiName);
+        }
+        else if (currentBubbleSlot == 4) {
+            this.storage.set('MyMat_bubbleRoutineProgram4', idProgram + "|" + programName + "|" + programRunningTime + "|" + apiName);
+        }
+    };
+    RoutinesProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_storage__["b" /* Storage */]])
+    ], RoutinesProvider);
+    return RoutinesProvider;
+}());
+
+//# sourceMappingURL=routines.js.map
+
+/***/ })
+
+},[266]);
+//# sourceMappingURL=main.js.map
