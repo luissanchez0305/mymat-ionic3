@@ -11,6 +11,7 @@ import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { ProgramsPage } from '../programs/programs';
 import { WifiPage } from '../wifi/wifi';
 import { FavoritesPage } from '../favorites/favorites';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 
 @Component({
   selector: 'page-home',
@@ -35,7 +36,7 @@ export class HomePage {
   public latestRoutines : any;
 
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
-    private translateService: TranslateService, private network: Network, private zone: NgZone,
+    private translateService: TranslateService, private network: Network, private zone: NgZone, private localNotifications : LocalNotifications,
     public events: Events, private device: Device, public apiService : APIServiceProvider, public modalCtrl: ModalController) {
     //this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
@@ -105,6 +106,14 @@ export class HomePage {
           });
         /*}*/
       }
+    });
+    var t = new Date();
+    this.localNotifications.schedule({
+      id: 1,
+      title: 'MyMat Light',
+      text: 'prueba',
+      sound: 'file://assets/sounds/gong_c5.mp3',
+      trigger: { at: new Date(t.getTime() + /*this.getSeconds(this.displayRunningTime)*/ 30 * 1000) }
     });
   }
 
