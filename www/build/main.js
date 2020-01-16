@@ -239,6 +239,7 @@ var HomePage = (function () {
             id: 1,
             title: 'MyMat Light',
             text: 'prueba',
+            icon: 'android_asset/www/assets/icon/person-icon-256.png',
             sound: 'android_asset/www/assets/sounds/gong_c5.mp3',
             trigger: { at: new Date(t.getTime() + 30 * 1000) }
         });
