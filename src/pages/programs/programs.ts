@@ -5,6 +5,7 @@ import { RoutinesProvider } from '../../providers/routines/routines';
 import { Constants } from '../../services/constants';
 import { ProgramPage } from '../program/program';
 import { Storage } from '@ionic/storage';
+import { TranslateService } from '@ngx-translate/core';
 
 /**
  * Generated class for the ProgramsPage page.
@@ -38,8 +39,8 @@ export class ProgramsPage {
   public petssButton : boolean;
   public petsxButton : boolean;
 
-  constructor(public navCtrl: NavController, private storage: Storage, public navParams: NavParams, public routines: RoutinesProvider,
-    public events: Events) {
+  constructor(public navCtrl: NavController, private storage: Storage, public navParams: NavParams, 
+    private translateService: TranslateService, public routines: RoutinesProvider, public events: Events) {
       this.program = navParams.get('bubble');
 
       this.events.subscribe('add1ProgramEvent', (programNumber, programName, programRunningTime, programApiName) => {
@@ -56,7 +57,18 @@ export class ProgramsPage {
       this.storage.get(Constants.storageKeyCurrentProgram).then((program)=>{
         this.getPrograms(program != null ? program : 'basic');
       })
-      this.programs = Data.Programs;
+      let programs_raw = [];
+        this.storage.get(Constants.storageKeyLang).then((lang)=>{
+          this.translateService.getTranslation(lang).subscribe((value) =>{
+            for (var i = 0; i < Data.Programs.length; i++) {
+              let program = Data.Programs[i];        
+              program.realName = value[program.name];
+              programs_raw[i] = program;
+            }
+            this.programs = programs_raw;
+          });
+        });
+
 
       this.routines.getKey(Constants.storageKeyBubble1).then(val => {
         if(this.program != 1 && val != null && val.length > 0){

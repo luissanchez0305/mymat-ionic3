@@ -8,8 +8,8 @@ webpackJsonp([0],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(27);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -122,8 +122,8 @@ webpackEmptyAsyncContext.id = 191;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__subscribe_subscribe__ = __webpack_require__(245);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_routines_routines__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_device__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_api_service_api_service__ = __webpack_require__(48);
@@ -443,9 +443,9 @@ var HomePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_device__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_api_service_api_service__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_constants__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__slider_slider__ = __webpack_require__(137);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_network__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__favorites_favorites__ = __webpack_require__(74);
@@ -3401,510 +3401,595 @@ var Data = { Groups: [
     Programs: [
         {
             name: 'addiction-upper',
+            realName: '',
             apiName: "Addiction",
             runningtime: "15:05",
             description: 'addiction-description'
         },
         {
             name: 'adrenal-gland-upper',
+            realName: '',
             apiName: "Adrenal_Gland",
             runningtime: "15:07",
             description: 'adrenal-gland-description'
         },
         {
             name: 'anti-aging-upper',
+            realName: '',
             apiName: "Anti_Aging",
             runningtime: "11:01",
             description: 'anti-aging-description',
         },
         {
             name: 'auditory-upper',
+            realName: '',
             apiName: "Auditory_System",
             runningtime: "14:31",
             description: 'auditory-description',
         },
         {
             name: 'backache-upper',
+            realName: '',
             apiName: "Backache",
             runningtime: "16:30",
             description: 'backache-description',
         },
         {
             name: 'bones-upper',
+            realName: '',
             apiName: "Bone_Tissues",
             runningtime: "15:04",
             description: 'bones-description'
         },
         {
             name: 'child-developement-upper',
+            realName: '',
             apiName: "Child_Development",
             runningtime: "13:50",
             description: 'child-developement-description',
         },
         {
             name: 'circulatory-system-upper',
+            realName: '',
             apiName: "Circulatory_System",
             runningtime: "15:06",
             description: 'circulatory-system-description',
         },
         {
             name: 'concentration-upper',
+            realName: '',
             apiName: "Concentration",
             runningtime: "21:19",
             description: 'concentration-description'
         },
         {
             name: 'connective-tissue-upper',
+            realName: '',
             apiName: "Connective_Tissues",
             runningtime: "16:54",
             description: 'connective-tissue-description',
         },
         {
             name: 'constipation-upper',
+            realName: '',
             apiName: "Constipation",
             runningtime: "14:49",
             description: 'constipation-description'
         },
         {
             name: 'detoxification-upper',
+            realName: '',
             apiName: "Detoxification",
             runningtime: "16:13",
             description: 'detoxification-description',
         },
         {
             name: 'diarrhea-upper',
+            realName: '',
             apiName: "Diarrhea",
             runningtime: "13:59",
             description: 'diarrhea-description'
         },
         {
             name: 'digestive-system-upper',
+            realName: '',
             apiName: "Digestive_System",
             runningtime: "16:41",
             description: 'digestive-system-description'
         },
         {
             name: 'discernment-upper',
+            realName: '',
             apiName: "Discernment",
             runningtime: "13:37",
             description: 'discernment-description'
         },
         {
             name: 'energy-balancing-upper',
+            realName: '',
             apiName: "Energy_Balancing",
             runningtime: "17:55",
             description: 'energy-balancing-description',
         },
         {
             name: 'energy-booster-upper',
+            realName: '',
             apiName: "Energy_Booster",
             runningtime: "13:53",
             description: 'energy-booster-description'
         },
         {
             name: "E-SMOG",
+            realName: '',
             apiName: "Electro_Smog",
             runningtime: "14:51",
             description: 'e-smog-description'
         },
         {
             name: 'exhaustion-upper',
+            realName: '',
             apiName: "Exhaustion",
             runningtime: "14:59",
             description: 'exhaustion-description'
         },
         {
             name: 'eyesight-upper',
+            realName: '',
             apiName: "Eyesight",
             runningtime: "16:11",
             description: 'eyesight-description'
         },
         {
             name: 'female-upper',
+            realName: '',
             apiName: "Female_Hormone_Balance",
             runningtime: "14:17",
             description: 'female-description'
         },
         {
             name: 'flu-upper',
+            realName: '',
             apiName: "Flu",
             runningtime: "13:59",
             description: 'flu-description'
         },
         {
             name: 'glucose-metabolic-disorders-upper',
+            realName: '',
             apiName: "Glucose_Metabolic_Disorders",
             runningtime: "16:28",
             description: 'glucose-metabolic-disorders-description',
         },
         {
             name: 'hair-growth-upper',
+            realName: '',
             apiName: "Hair_Growth",
             runningtime: "19:07",
             description: 'hair-growth-description'
         },
         {
             name: 'headache-upper',
+            realName: '',
             apiName: "Headache",
             runningtime: "18:38",
             description: 'headache-description'
         },
         {
             name: 'heart-function-upper',
+            realName: '',
             apiName: "Heart_Function",
             runningtime: "13:30",
             description: 'heart-function-description'
         },
         {
             name: 'hemorrhoids-upper',
+            realName: '',
             apiName: "Hemorrhoids",
             runningtime: "21:13",
             description: 'hemorrhoids-description'
         },
         {
             name: 'hypertension-upper',
+            realName: '',
             apiName: "Hypertension",
             runningtime: "18:53",
             description: 'hypertension-description'
         },
         {
             name: 'immune-system-upper',
+            realName: '',
             apiName: "Immune_System",
             runningtime: "14:50",
             description: 'immune-system-description'
         },
         {
             name: 'injury-upper',
+            realName: '',
             apiName: "Injury",
             runningtime: "18:46",
             description: 'injury-description'
         },
         {
             name: 'intestinal-flora-upper',
+            realName: '',
             apiName: "Intestinal_Flora",
             runningtime: "18:58",
             description: 'intestinal-flora-description'
         },
         {
             name: 'joints-upper',
+            realName: '',
             apiName: "Joints",
             runningtime: "17:07",
             description: 'joints-description'
         },
         {
             name: 'joy-upper',
+            realName: '',
             apiName: "Joy",
             runningtime: "21:04",
             description: 'joy-description'
         },
         {
             name: "JET-LAG",
+            realName: '',
             apiName: "Jet-Lag/Climate_Change",
             runningtime: "16:14",
             description: 'jet-lag-description'
         },
         {
             name: 'low-mental-drive-upper',
+            realName: '',
             apiName: "Low_Mental_Drive",
             runningtime: "15:49",
             description: 'low-mental-drive-description'
         },
         {
             name: 'low-physical-drive-upper',
+            realName: '',
             apiName: "Low_Physical_Drive",
             runningtime: "16:49",
             description: 'low-physical-drive-description'
         },
         {
             name: 'lymphatic-system-upper',
+            realName: '',
             apiName: "Lymphatic_System",
             runningtime: "16:04",
             description: 'lymphatic-system-description'
         },
         {
             name: 'male-upper',
+            realName: '',
             apiName: "Male_Hormone_Balance",
             runningtime: "12:31",
             description: 'male-description'
         },
         {
             name: 'meditation-1-upper',
+            realName: '',
             apiName: "Meditation_1",
             runningtime: "33:15",
             description: 'meditation-1-description'
         },
         {
             name: 'meditation-2-upper',
+            realName: '',
             apiName: "Meditation_2",
             runningtime: "29:43",
             description: 'meditation-2-description'
         },
         {
             name: 'meditation-3-upper',
+            realName: '',
             apiName: "Meditation_3",
             runningtime: "22:49",
             description: 'meditation-3-description'
         },
         {
             name: 'mineral-metabolic-activity-upper',
+            realName: '',
             apiName: "Mineral_Metabolic_Activity",
             runningtime: "17:25",
             description: 'mineral-metabolic-activity-description'
         },
         {
             name: 'muscle-tissue-upper',
+            realName: '',
             apiName: "Muscle_Tissues",
             runningtime: "15:59",
             description: 'muscle-tissue-description'
         },
         {
             name: 'neck-shoulder-upper',
+            realName: '',
             apiName: "Neck/Shoulder",
             runningtime: "16:16",
             description: 'neck-shoulder-description'
         },
         {
             name: 'nervous-system-upper',
+            realName: '',
             apiName: "Nervous_System",
             runningtime: "19:10",
             description: 'nervous-system-description'
         },
         {
             name: 'peace-upper',
+            realName: '',
             apiName: "Peace",
             runningtime: "22:08",
             description: 'peace-description'
         },
         {
             name: 'pain-upper',
+            realName: '',
             apiName: "Pain_Conditions",
             runningtime: "15:18",
             description: 'pain-description'
         },
         {
             name: 'regeneration-upper',
+            realName: '',
             apiName: "Regeneration",
             runningtime: "17:12",
             description: 'regeneration-description'
         },
         {
             name: 'relaxation-upper',
+            realName: '',
             apiName: "Relaxation",
             runningtime: "19:55",
             description: 'relaxation-description'
         },
         {
             name: 'respiratory-system-upper',
+            realName: '',
             apiName: "Respiratory_System",
             runningtime: "15:52",
             description: 'respiratory-system-description'
         },
         {
             name: 'sinus-cavities-upper',
+            realName: '',
             apiName: "Sinus_Cavities",
             runningtime: "15:33",
             description: 'sinus-cavities-description'
         },
         {
             name: 'skin-conditions-upper',
+            realName: '',
             apiName: "Skin_Conditions",
             runningtime: "15:50",
             description: 'skin-conditions-description'
         },
         {
             name: 'sleep-enhancer-upper',
+            realName: '',
             apiName: "Sleep_Enhancer",
             runningtime: "19:58",
             description: 'sleep-enhancer-description'
         },
         {
             name: 'stress-relief-upper',
+            realName: '',
             apiName: "Frustration",
             runningtime: "18:55",
             description: 'stress-relief-description'
         },
         {
             name: 'thyroid-glands-upper',
+            realName: '',
             apiName: "Thyroid_Glands",
             runningtime: "17:53",
             description: 'thyroid-glands-description'
         },
         {
             name: 'urinary-upper',
+            realName: '',
             apiName: "Urinary_System/Cystitis",
             runningtime: "13:39",
             description: 'urinary-description'
         },
         {
             name: 'vertebrae-upper',
+            realName: '',
             apiName: "Vertebrae",
             runningtime: "12:53",
             description: 'vertebrae-description'
         },
         {
             name: 'vitality-upper',
+            realName: '',
             apiName: "Vitality",
             runningtime: "14:00",
             description: 'vitality-description'
         },
         {
             name: 'weight-control-upper',
+            realName: '',
             apiName: "Weight_Control",
             runningtime: "14:50",
             description: 'weight-control-description'
         },
         {
             name: 'petss-program-upper',
+            realName: '',
             apiName: "Pet_1",
             runningtime: "11:50",
             description: 'petss-program-description'
         },
         {
             name: 'petsx-program-upper',
+            realName: '',
             apiName: "Pet_2",
             runningtime: "12:50",
             description: 'petsx-program-description'
         },
         {
             name: 'stomach-meridian-upper',
+            realName: '',
             apiName: "Stomach_Meridian",
             runningtime: "17:15",
             description: 'stomach-meridian-description'
         },
         {
             name: 'spleen-pancreas-meridian-upper',
+            realName: '',
             apiName: "Spleen_Meridian",
             runningtime: "15:37",
             description: 'spleen-pancreas-meridian-description'
         },
         {
             name: 'heart-meridian-upper',
+            realName: '',
             apiName: "Heart_Meridian",
             runningtime: "14:45",
             description: 'heart-meridian-description'
         },
         {
             name: 'small-intestine-meridian-upper',
+            realName: '',
             apiName: "Small_Intestine_Meridian",
             runningtime: "13:25",
             description: 'small-intestine-meridian-description'
         },
         {
             name: 'pericardium-meridian-upper',
+            realName: '',
             apiName: "Pericardium_Meridian",
             runningtime: "21:55",
             description: 'pericardium-meridian-description'
         },
         {
             name: 'triple-warmer-meridian-upper',
+            realName: '',
             apiName: "Triple_Warmer_Meridian",
             runningtime: "13:20",
             description: 'triple-warmer-meridian-description'
         },
         {
             name: 'lung-meridian-upper',
+            realName: '',
             apiName: "Lung_Meridian",
             runningtime: "16:38",
             description: 'lung-meridian-description'
         },
         {
             name: 'large-intestine-meridian-upper',
+            realName: '',
             apiName: "Large_Intestine_Meridian",
             runningtime: "13:53",
             description: 'large-intestine-meridian-description'
         },
         {
             name: 'kidney-meridian-upper',
+            realName: '',
             apiName: "Kidney_Meridian",
             runningtime: "16:27",
             description: 'kidney-meridian-description'
         },
         {
             name: 'urinary-bladder-meridian-upper',
+            realName: '',
             apiName: "Urinary_Bladder_Meridian",
             runningtime: "14:19",
             description: 'urinary-bladder-meridian-description'
         },
         {
             name: 'liver-meridian-upper',
+            realName: '',
             apiName: "Liver_Meridian",
             runningtime: "16:11",
             description: 'liver-meridian-description'
         },
         {
             name: 'gallbladder-meridian-upper',
+            realName: '',
             apiName: "Gallbladder_Meridian",
             runningtime: "20:39",
             description: 'gallbladder-meridian-description'
         },
         {
             name: "first-chakra-upper",
+            realName: '',
             apiName: "Root_Chakra",
             runningtime: "15:49",
             description: '1-chakra-description'
         },
         {
             name: "second-chakra-upper",
+            realName: '',
             apiName: "Sacral_Chakra",
             runningtime: "13:57",
             description: '2-chakra-description'
         },
         {
             name: "third-chakra-upper",
+            realName: '',
             apiName: "Solar_Plexus_Chakra",
             runningtime: "16:51",
             description: '3-chakra-description'
         },
         {
             name: "fourth-chakra-upper",
+            realName: '',
             apiName: "Heart_Chakra",
             runningtime: "18:16",
             description: '4-chakra-description'
         },
         {
             name: "fifth-chakra-upper",
+            realName: '',
             apiName: "Throat_Chakra",
             runningtime: "17:59",
             description: '5-chakra-description'
         },
         {
             name: "sixth-chakra-upper",
+            realName: '',
             apiName: "Brow_Chakra",
             runningtime: "16:13",
             description: '6-chakra-description'
         },
         {
             name: "seventh-chakra-upper",
+            realName: '',
             apiName: "Crown_Chakra",
             runningtime: "13:45",
             description: '7-chakra-description'
         },
         {
             name: 'earth-element-upper',
+            realName: '',
             apiName: "Earth_Element",
             runningtime: "16:55",
             description: 'earth-element-description'
         },
         {
             name: 'water-element-upper',
+            realName: '',
             apiName: "Water_Element",
             runningtime: "17:20",
             description: 'water-element-description'
         },
         {
             name: 'fire-element-upper',
+            realName: '',
             apiName: "Fire_Element",
             runningtime: "15:05",
             description: 'fire-element-description'
         },
         {
             name: 'metal-element-upper',
+            realName: '',
             apiName: "Metal_Element",
             runningtime: "12:39",
             description: 'metal-element-description'
         },
         {
             name: 'wood-element-upper',
+            realName: '',
             apiName: "Wood_Element",
             runningtime: "17:09",
             description: 'wood-element-description'
@@ -3912,56 +3997,6 @@ var Data = { Groups: [
     ]
 };
 //# sourceMappingURL=offline_data.js.map
-
-/***/ }),
-
-/***/ 26:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Constants; });
-var Constants = {
-    localIPAddress: '192.168.0.',
-    myMatApiStartUrl: 'http://192.168.1.3/start.htm',
-    myMatApiIndexUrl: 'http://192.168.1.3/index.htm',
-    myMatApiUrl: 'https://healinghouse.life/api/mymat/',
-    storageKeyLang: 'mymat_lang',
-    storageKeyBubble1: 'MyMat_bubbleRoutineProgram1',
-    storageKeyBubble2: 'MyMat_bubbleRoutineProgram2',
-    storageKeyBubble3: 'MyMat_bubbleRoutineProgram3',
-    storageKeyBubble4: 'MyMat_bubbleRoutineProgram4',
-    storageKeyScrollTop: 'MyMat_scrollTop',
-    storageKeyCurrentProgram: 'MyMat_currentProgram',
-    deviceInfoKey: 'MyMatDevice',
-    test_uuid: 'UUIDTEST-1234-5678-9100-0000AGO19813',
-    latestRoutinesKey: 'latestRoutines',
-    monthNames: [
-        "january", "february", "march",
-        "april", "may", "june", "july",
-        "August", "September", "October",
-        "november", "december"
-    ],
-    shortTitles: [
-        'earth-element-upper',
-        'fire-element-upper',
-        'metal-element-upper',
-        'water-element-upper',
-        'wood-element-upper',
-        'gallbladder-meridian-upper',
-        'kidney-meridian-upper',
-        'heart-meridian-upper',
-        'large-intestine-meridian-upper',
-        'liver-meridian-upper',
-        'lung-meridian-upper',
-        'pericardium-meridian-upper',
-        'small-intestine-meridian-upper',
-        'spleen-pancreas-meridian-upper',
-        'stomach-meridian-upper',
-        'triple-warmer-meridian-upper',
-        'urinary-bladder-meridian-upper'
-    ]
-};
-//# sourceMappingURL=constants.js.map
 
 /***/ }),
 
@@ -3974,9 +4009,10 @@ var Constants = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(259);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__program_program__ = __webpack_require__(261);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(26);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3993,6 +4029,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the ProgramsPage page.
  *
@@ -4000,11 +4037,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ProgramsPage = (function () {
-    function ProgramsPage(navCtrl, storage, navParams, routines, events) {
+    function ProgramsPage(navCtrl, storage, navParams, translateService, routines, events) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.storage = storage;
         this.navParams = navParams;
+        this.translateService = translateService;
         this.routines = routines;
         this.events = events;
         this.program = navParams.get('bubble');
@@ -4022,7 +4060,17 @@ var ProgramsPage = (function () {
         this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyCurrentProgram).then(function (program) {
             _this.getPrograms(program != null ? program : 'basic');
         });
-        this.programs = __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs;
+        var programs_raw = [];
+        this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
+            _this.translateService.getTranslation(lang).subscribe(function (value) {
+                for (var i = 0; i < __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs.length; i++) {
+                    var program = __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs[i];
+                    program.realName = value[program.name];
+                    programs_raw[i] = program;
+                }
+                _this.programs = programs_raw;
+            });
+        });
         this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble1).then(function (val) {
             if (_this.program != 1 && val != null && val.length > 0) {
                 _this.programName1 = val.split('|')[1];
@@ -4153,16 +4201,16 @@ var ProgramsPage = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Content */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Content */])
+        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Content */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Content */]) === "function" && _a || Object)
     ], ProgramsPage.prototype, "content", void 0);
     ProgramsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-programs',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\programs\programs.html"*/'<!--\n  Generated template for the ProgramsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ \'programs\' | translate }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="home center">\n    <br>\n    <div class="modaltitle">{{ \'program-kits\' | translate }}</div>\n    <div class="modaldesc">{{ \'popular-routines\' | translate }}</div>\n\n    <ion-scroll scrollX="true" scrollY="false" class="wide-as-needed programs">\n\n            <ion-row nowrap class="program {{ basicButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'basic\')">\n                <div class="programpic"><img src="assets/img/Basic.png"></div>\n                <div class="programdesc" [innerHTML]="\'basic\' | translate"><br><br></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ businessTravelButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'business and travel\')">\n                <div class="programpic"><img src="assets/img/BusinessTraveller.png"></div>\n                <div class="programdesc" [innerHTML]="\'business-traveler\' | translate"></div>\n            </ion-row>\n\n           <ion-row nowrap class="program {{ familiyButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'family\')">\n                <div class="programpic"><img src="assets/img/family.png"></div>\n                <div class="programdesc" [innerHTML]="\'family-kit\' | translate"></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ athleteButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'athlete\')">\n                <div class="programpic"><img src="assets/img/Athlete.png"></div>\n                <div class="programdesc" [innerHTML]="\'athlete\' | translate"></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ spaButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'spa\')">\n                <div class="programpic"><img src="assets/img/Spa.png"></div>\n                <div class="programdesc" [innerHTML]="\'spa-wellness\' | translate"><br><br></div>\n            </ion-row>\n\n\n            <ion-row nowrap class="program {{ stressButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'stress relief\')">\n                <div class="programpic"><img src="assets/img/stress.png"></div>\n                <div class="programdesc" [innerHTML]="\'stress-relief\' | translate"></div>\n            </ion-row>\n\n\n            <ion-row nowrap class="program {{ seniorButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'senior\')">\n                <div class="programpic"><img src="assets/img/Senior.png"></div>\n                <div class="programdesc" [innerHTML]="\'senior-upper\' | translate"><br><br></div>\n            </ion-row>\n\n\n            <ion-row nowrap class="program {{ chakraButton ? \'\' : \'opacity-50\' }}"  (click)="selectPreSetProgram(\'chakra balancing\')">\n                <div class="programpic"><img src="assets/img/chakra.png"></div>\n                <div class="programdesc" [innerHTML]="\'chakra-balancing\' | translate"></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ elementsButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'elements\')">\n                <div class="programpic"><img src="assets/img/Elements.png"></div>\n                <div class="programdesc" [innerHTML]="\'elements-meridians\' | translate"><br></div>\n            </ion-row>\n            <ion-row nowrap class="program {{ petssButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'petss\')">\n                <div class="programpic"><img src="assets/img/MascotasS.png"></div>\n                <div class="programdesc" [innerHTML]="\'petss\' | translate"><br></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ petsxButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'petsx\')">\n                <div class="programpic"><img src="assets/img/MascotasX.png"></div>\n                <div class="programdesc" [innerHTML]="\'petsx\' | translate"><br></div>\n            </ion-row>\n    </ion-scroll>\n\n\n    <div class="modaltitle">{{ \'programs\' | translate }}</div>\n    <div *ngFor="let routine of predefinedPrograms">\n\n        {{ routine.name | translate }}\n        <!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->\n\n        <div class="paddingmodal">\n\n            <ion-list (click)="addPrograms(routine.name, routine.programs[0].apiName, routine.programs[1].apiName,\n                routine.programs[2].apiName,routine.programs[3].apiName)">\n\n                <ion-item *ngFor="let program of routine.programs" class="addiction center">\n                     {{ program.name | translate }}\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n    </div>\n\n\n    <div class="modaltitle">{{ \'independent-programs\' | translate }}</div>\n    <div class="modaldesc" [innerHTML]="\'tap-program\' | translate">PROGRAMS</div>\n    <div class="paddingmodal">\n        <ion-list class="programlist">\n\n\n            <ion-item class="addiction center" *ngFor="let program of programs" nav-transition="ios" nav-direction="forward" href="#/app/routines">\n                <div class="programAddButton" (click)="add1Program(program.name, program.runningtime, program.apiName)">\n                    {{ program.name | translate }}\n                </div>\n                <div class="programInfoButton" end (click)="moreProgramInfo(program.name, program.runningtime, program.description, program.apiName)">\n                    <ion-icon ios="ios-information-circle" md="md-information-circle"></ion-icon>\n                </div>\n            </ion-item>\n\n\n        </ion-list>\n    </div>\n</ion-content>\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\programs\programs.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */], __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__["a" /* RoutinesProvider */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__["a" /* RoutinesProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__["a" /* RoutinesProvider */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]) === "function" && _g || Object])
     ], ProgramsPage);
     return ProgramsPage;
+    var _a, _b, _c, _d, _e, _f, _g;
 }());
 
 //# sourceMappingURL=programs.js.map
@@ -4176,8 +4224,8 @@ var ProgramsPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_constants__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_constants__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(21);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4258,9 +4306,9 @@ var ProgramPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__playing_playing__ = __webpack_require__(263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__ = __webpack_require__(240);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(26);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4605,9 +4653,9 @@ var WifiPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PlayingPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_local_notifications__ = __webpack_require__(241);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4870,9 +4918,9 @@ var HelpPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_constants__ = __webpack_require__(27);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5000,6 +5048,56 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
+/***/ 27:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Constants; });
+var Constants = {
+    localIPAddress: '192.168.0.',
+    myMatApiStartUrl: 'http://192.168.1.3/start.htm',
+    myMatApiIndexUrl: 'http://192.168.1.3/index.htm',
+    myMatApiUrl: 'https://healinghouse.life/api/mymat/',
+    storageKeyLang: 'mymat_lang',
+    storageKeyBubble1: 'MyMat_bubbleRoutineProgram1',
+    storageKeyBubble2: 'MyMat_bubbleRoutineProgram2',
+    storageKeyBubble3: 'MyMat_bubbleRoutineProgram3',
+    storageKeyBubble4: 'MyMat_bubbleRoutineProgram4',
+    storageKeyScrollTop: 'MyMat_scrollTop',
+    storageKeyCurrentProgram: 'MyMat_currentProgram',
+    deviceInfoKey: 'MyMatDevice',
+    test_uuid: 'UUIDTEST-1234-5678-9100-0000AGO19813',
+    latestRoutinesKey: 'latestRoutines',
+    monthNames: [
+        "january", "february", "march",
+        "april", "may", "june", "july",
+        "August", "September", "October",
+        "november", "december"
+    ],
+    shortTitles: [
+        'earth-element-upper',
+        'fire-element-upper',
+        'metal-element-upper',
+        'water-element-upper',
+        'wood-element-upper',
+        'gallbladder-meridian-upper',
+        'kidney-meridian-upper',
+        'heart-meridian-upper',
+        'large-intestine-meridian-upper',
+        'liver-meridian-upper',
+        'lung-meridian-upper',
+        'pericardium-meridian-upper',
+        'small-intestine-meridian-upper',
+        'spleen-pancreas-meridian-upper',
+        'stomach-meridian-upper',
+        'triple-warmer-meridian-upper',
+        'urinary-bladder-meridian-upper'
+    ]
+};
+//# sourceMappingURL=constants.js.map
+
+/***/ }),
+
 /***/ 275:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5013,7 +5111,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_http__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(324);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_network_interface__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_local_notifications__ = __webpack_require__(241);
@@ -5157,8 +5255,8 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(242);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_help_help__ = __webpack_require__(264);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_contact_contact__ = __webpack_require__(265);
@@ -5327,7 +5425,7 @@ var MyApp = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_http__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(327);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators__ = __webpack_require__(328);
@@ -5464,9 +5562,9 @@ var APIServiceProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_routines_routines__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_api_service_api_service__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network__ = __webpack_require__(73);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_constants__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_constants__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_storage__ = __webpack_require__(21);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
