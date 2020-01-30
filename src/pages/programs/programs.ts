@@ -6,6 +6,7 @@ import { Constants } from '../../services/constants';
 import { ProgramPage } from '../program/program';
 import { Storage } from '@ionic/storage';
 import { TranslateService } from '@ngx-translate/core';
+import { SpinnerDialog } from '@ionic-native/spinner-dialog';
 
 /**
  * Generated class for the ProgramsPage page.
@@ -40,7 +41,8 @@ export class ProgramsPage {
   public petsxButton : boolean;
 
   constructor(public navCtrl: NavController, private storage: Storage, public navParams: NavParams, 
-    private translateService: TranslateService, public routines: RoutinesProvider, public events: Events) {
+    private translateService: TranslateService, public routines: RoutinesProvider, public events: Events,
+    private spinnerDialog: SpinnerDialog) {
       this.program = navParams.get('bubble');
 
       this.events.subscribe('add1ProgramEvent', (programNumber, programName, programRunningTime, programApiName) => {
@@ -53,7 +55,19 @@ export class ProgramsPage {
     this.storage.set(Constants.storageKeyScrollTop, this.content.getContentDimensions().scrollTop);
   }
 
+  compare( a, b ) {
+  if ( a.realName < b.realName ){
+    return -1;
+  }
+  if ( a.realName > b.realName ){
+    return 1;
+  }
+  return 0;
+}
+
   ionViewDidLoad(){
+      this.spinnerDialog.show();
+      let self = this;
       this.storage.get(Constants.storageKeyCurrentProgram).then((program)=>{
         this.getPrograms(program != null ? program : 'basic');
       })
@@ -61,11 +75,77 @@ export class ProgramsPage {
         this.storage.get(Constants.storageKeyLang).then((lang)=>{
           this.translateService.getTranslation(lang).subscribe((value) =>{
             for (var i = 0; i < Data.Programs.length; i++) {
-              let program = Data.Programs[i];        
-              program.realName = value[program.name];
+              let program = Data.Programs[i];   
+              let realName = value[program.name];
+
+              program.realName = realName ? realName : program.name;
               programs_raw[i] = program;
             }
-            this.programs = programs_raw;
+
+            let programs_sort = programs_raw.sort(self.compare);
+            let general = [];
+            let general_index = 0;
+            let pets = [];
+            let pets_index = 0;
+            let meridians = [];
+            let meridians_index = 0;
+            let chakras = [];
+            let chakras_index = 0;
+            let elements = [];
+            let elements_index = 0;
+            for (var j = 0; j < programs_sort.length; j++) {
+              let program = programs_sort[j];        
+              switch (program.sortCategory) {
+                case "none":
+                  general[general_index] = program;
+                  general_index += 1;
+                  break;
+                case "pets":
+                  pets[pets_index] = program;
+                  pets_index += 1;
+                  break;
+                case "meridian":
+                  meridians[meridians_index] = program;
+                  meridians_index += 1;
+                  break;
+                case "chakra":
+                  chakras[chakras_index] = program;
+                  chakras_index += 1;
+                  break;
+                case "element":
+                  elements[elements_index] = program;
+                  elements_index += 1;
+                  break;
+              }
+            }
+
+            general = general.sort(self.compare);
+            for (var k = 0; k < general.length; k++) {
+              let program = general[k];        
+              programs_sort[k] = program;
+            }
+
+            for (var l = general.length; l < general.length + pets.length; l++) {
+              let program = pets[l - general.length];   
+              programs_sort[l] = program;
+            }
+
+            for (var m = general.length + pets.length; m < general.length + pets.length + meridians.length; m++) {
+              let program = meridians[m - (general.length + pets.length)];   
+              programs_sort[m] = program;
+            }
+
+            for (var n = general.length + pets.length + meridians.length; n < general.length + pets.length + meridians.length + chakras.length; n++) {
+              let program = chakras[n - (general.length + pets.length + meridians.length)];   
+              programs_sort[n] = program;
+            }
+
+            for (var o = general.length + pets.length + meridians.length + chakras.length; o < general.length + pets.length + meridians.length + chakras.length + elements.length; o++) {
+              let program = elements[o - (general.length + pets.length + meridians.length + chakras.length)];   
+              programs_sort[o] = program;
+            }
+
+            this.programs = programs_sort;
           });
         });
 

@@ -112,7 +112,7 @@ webpackEmptyAsyncContext.id = 191;
 
 /***/ }),
 
-/***/ 244:
+/***/ 245:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -120,15 +120,15 @@ webpackEmptyAsyncContext.id = 191;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__subscribe_subscribe__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__subscribe_subscribe__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_routines_routines__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_device__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_api_service_api_service__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__programs_programs__ = __webpack_require__(260);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__wifi_wifi__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__programs_programs__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__wifi_wifi__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__favorites_favorites__ = __webpack_require__(74);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -433,7 +433,7 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 245:
+/***/ 246:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -602,7 +602,7 @@ var SubscribePage = (function () {
 
 /***/ }),
 
-/***/ 259:
+/***/ 260:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3402,6 +3402,7 @@ var Data = { Groups: [
         {
             name: 'addiction-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Addiction",
             runningtime: "15:05",
             description: 'addiction-description'
@@ -3409,6 +3410,7 @@ var Data = { Groups: [
         {
             name: 'adrenal-gland-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Adrenal_Gland",
             runningtime: "15:07",
             description: 'adrenal-gland-description'
@@ -3416,6 +3418,7 @@ var Data = { Groups: [
         {
             name: 'anti-aging-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Anti_Aging",
             runningtime: "11:01",
             description: 'anti-aging-description',
@@ -3423,6 +3426,7 @@ var Data = { Groups: [
         {
             name: 'auditory-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Auditory_System",
             runningtime: "14:31",
             description: 'auditory-description',
@@ -3430,6 +3434,7 @@ var Data = { Groups: [
         {
             name: 'backache-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Backache",
             runningtime: "16:30",
             description: 'backache-description',
@@ -3437,6 +3442,7 @@ var Data = { Groups: [
         {
             name: 'bones-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Bone_Tissues",
             runningtime: "15:04",
             description: 'bones-description'
@@ -3444,6 +3450,7 @@ var Data = { Groups: [
         {
             name: 'child-developement-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Child_Development",
             runningtime: "13:50",
             description: 'child-developement-description',
@@ -3451,6 +3458,7 @@ var Data = { Groups: [
         {
             name: 'circulatory-system-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Circulatory_System",
             runningtime: "15:06",
             description: 'circulatory-system-description',
@@ -3458,6 +3466,7 @@ var Data = { Groups: [
         {
             name: 'concentration-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Concentration",
             runningtime: "21:19",
             description: 'concentration-description'
@@ -3465,6 +3474,7 @@ var Data = { Groups: [
         {
             name: 'connective-tissue-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Connective_Tissues",
             runningtime: "16:54",
             description: 'connective-tissue-description',
@@ -3472,6 +3482,7 @@ var Data = { Groups: [
         {
             name: 'constipation-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Constipation",
             runningtime: "14:49",
             description: 'constipation-description'
@@ -3479,6 +3490,7 @@ var Data = { Groups: [
         {
             name: 'detoxification-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Detoxification",
             runningtime: "16:13",
             description: 'detoxification-description',
@@ -3486,6 +3498,7 @@ var Data = { Groups: [
         {
             name: 'diarrhea-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Diarrhea",
             runningtime: "13:59",
             description: 'diarrhea-description'
@@ -3493,6 +3506,7 @@ var Data = { Groups: [
         {
             name: 'digestive-system-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Digestive_System",
             runningtime: "16:41",
             description: 'digestive-system-description'
@@ -3500,6 +3514,7 @@ var Data = { Groups: [
         {
             name: 'discernment-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Discernment",
             runningtime: "13:37",
             description: 'discernment-description'
@@ -3507,6 +3522,7 @@ var Data = { Groups: [
         {
             name: 'energy-balancing-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Energy_Balancing",
             runningtime: "17:55",
             description: 'energy-balancing-description',
@@ -3514,6 +3530,7 @@ var Data = { Groups: [
         {
             name: 'energy-booster-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Energy_Booster",
             runningtime: "13:53",
             description: 'energy-booster-description'
@@ -3521,6 +3538,7 @@ var Data = { Groups: [
         {
             name: "E-SMOG",
             realName: '',
+            sortCategory: 'none',
             apiName: "Electro_Smog",
             runningtime: "14:51",
             description: 'e-smog-description'
@@ -3528,6 +3546,7 @@ var Data = { Groups: [
         {
             name: 'exhaustion-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Exhaustion",
             runningtime: "14:59",
             description: 'exhaustion-description'
@@ -3535,6 +3554,7 @@ var Data = { Groups: [
         {
             name: 'eyesight-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Eyesight",
             runningtime: "16:11",
             description: 'eyesight-description'
@@ -3542,6 +3562,7 @@ var Data = { Groups: [
         {
             name: 'female-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Female_Hormone_Balance",
             runningtime: "14:17",
             description: 'female-description'
@@ -3549,6 +3570,7 @@ var Data = { Groups: [
         {
             name: 'flu-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Flu",
             runningtime: "13:59",
             description: 'flu-description'
@@ -3556,6 +3578,7 @@ var Data = { Groups: [
         {
             name: 'glucose-metabolic-disorders-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Glucose_Metabolic_Disorders",
             runningtime: "16:28",
             description: 'glucose-metabolic-disorders-description',
@@ -3563,6 +3586,7 @@ var Data = { Groups: [
         {
             name: 'hair-growth-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Hair_Growth",
             runningtime: "19:07",
             description: 'hair-growth-description'
@@ -3570,6 +3594,7 @@ var Data = { Groups: [
         {
             name: 'headache-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Headache",
             runningtime: "18:38",
             description: 'headache-description'
@@ -3577,6 +3602,7 @@ var Data = { Groups: [
         {
             name: 'heart-function-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Heart_Function",
             runningtime: "13:30",
             description: 'heart-function-description'
@@ -3584,6 +3610,7 @@ var Data = { Groups: [
         {
             name: 'hemorrhoids-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Hemorrhoids",
             runningtime: "21:13",
             description: 'hemorrhoids-description'
@@ -3591,6 +3618,7 @@ var Data = { Groups: [
         {
             name: 'hypertension-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Hypertension",
             runningtime: "18:53",
             description: 'hypertension-description'
@@ -3598,6 +3626,7 @@ var Data = { Groups: [
         {
             name: 'immune-system-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Immune_System",
             runningtime: "14:50",
             description: 'immune-system-description'
@@ -3605,6 +3634,7 @@ var Data = { Groups: [
         {
             name: 'injury-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Injury",
             runningtime: "18:46",
             description: 'injury-description'
@@ -3612,6 +3642,7 @@ var Data = { Groups: [
         {
             name: 'intestinal-flora-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Intestinal_Flora",
             runningtime: "18:58",
             description: 'intestinal-flora-description'
@@ -3619,6 +3650,7 @@ var Data = { Groups: [
         {
             name: 'joints-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Joints",
             runningtime: "17:07",
             description: 'joints-description'
@@ -3626,6 +3658,7 @@ var Data = { Groups: [
         {
             name: 'joy-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Joy",
             runningtime: "21:04",
             description: 'joy-description'
@@ -3633,6 +3666,7 @@ var Data = { Groups: [
         {
             name: "JET-LAG",
             realName: '',
+            sortCategory: 'none',
             apiName: "Jet-Lag/Climate_Change",
             runningtime: "16:14",
             description: 'jet-lag-description'
@@ -3640,6 +3674,7 @@ var Data = { Groups: [
         {
             name: 'low-mental-drive-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Low_Mental_Drive",
             runningtime: "15:49",
             description: 'low-mental-drive-description'
@@ -3647,6 +3682,7 @@ var Data = { Groups: [
         {
             name: 'low-physical-drive-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Low_Physical_Drive",
             runningtime: "16:49",
             description: 'low-physical-drive-description'
@@ -3654,6 +3690,7 @@ var Data = { Groups: [
         {
             name: 'lymphatic-system-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Lymphatic_System",
             runningtime: "16:04",
             description: 'lymphatic-system-description'
@@ -3661,6 +3698,7 @@ var Data = { Groups: [
         {
             name: 'male-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Male_Hormone_Balance",
             runningtime: "12:31",
             description: 'male-description'
@@ -3668,6 +3706,7 @@ var Data = { Groups: [
         {
             name: 'meditation-1-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Meditation_1",
             runningtime: "33:15",
             description: 'meditation-1-description'
@@ -3675,6 +3714,7 @@ var Data = { Groups: [
         {
             name: 'meditation-2-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Meditation_2",
             runningtime: "29:43",
             description: 'meditation-2-description'
@@ -3682,6 +3722,7 @@ var Data = { Groups: [
         {
             name: 'meditation-3-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Meditation_3",
             runningtime: "22:49",
             description: 'meditation-3-description'
@@ -3689,6 +3730,7 @@ var Data = { Groups: [
         {
             name: 'mineral-metabolic-activity-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Mineral_Metabolic_Activity",
             runningtime: "17:25",
             description: 'mineral-metabolic-activity-description'
@@ -3696,6 +3738,7 @@ var Data = { Groups: [
         {
             name: 'muscle-tissue-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Muscle_Tissues",
             runningtime: "15:59",
             description: 'muscle-tissue-description'
@@ -3703,6 +3746,7 @@ var Data = { Groups: [
         {
             name: 'neck-shoulder-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Neck/Shoulder",
             runningtime: "16:16",
             description: 'neck-shoulder-description'
@@ -3710,6 +3754,7 @@ var Data = { Groups: [
         {
             name: 'nervous-system-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Nervous_System",
             runningtime: "19:10",
             description: 'nervous-system-description'
@@ -3717,6 +3762,7 @@ var Data = { Groups: [
         {
             name: 'peace-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Peace",
             runningtime: "22:08",
             description: 'peace-description'
@@ -3724,6 +3770,7 @@ var Data = { Groups: [
         {
             name: 'pain-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Pain_Conditions",
             runningtime: "15:18",
             description: 'pain-description'
@@ -3731,6 +3778,7 @@ var Data = { Groups: [
         {
             name: 'regeneration-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Regeneration",
             runningtime: "17:12",
             description: 'regeneration-description'
@@ -3738,6 +3786,7 @@ var Data = { Groups: [
         {
             name: 'relaxation-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Relaxation",
             runningtime: "19:55",
             description: 'relaxation-description'
@@ -3745,6 +3794,7 @@ var Data = { Groups: [
         {
             name: 'respiratory-system-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Respiratory_System",
             runningtime: "15:52",
             description: 'respiratory-system-description'
@@ -3752,6 +3802,7 @@ var Data = { Groups: [
         {
             name: 'sinus-cavities-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Sinus_Cavities",
             runningtime: "15:33",
             description: 'sinus-cavities-description'
@@ -3759,6 +3810,7 @@ var Data = { Groups: [
         {
             name: 'skin-conditions-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Skin_Conditions",
             runningtime: "15:50",
             description: 'skin-conditions-description'
@@ -3766,6 +3818,7 @@ var Data = { Groups: [
         {
             name: 'sleep-enhancer-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Sleep_Enhancer",
             runningtime: "19:58",
             description: 'sleep-enhancer-description'
@@ -3773,6 +3826,7 @@ var Data = { Groups: [
         {
             name: 'stress-relief-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Frustration",
             runningtime: "18:55",
             description: 'stress-relief-description'
@@ -3780,6 +3834,7 @@ var Data = { Groups: [
         {
             name: 'thyroid-glands-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Thyroid_Glands",
             runningtime: "17:53",
             description: 'thyroid-glands-description'
@@ -3787,6 +3842,7 @@ var Data = { Groups: [
         {
             name: 'urinary-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Urinary_System/Cystitis",
             runningtime: "13:39",
             description: 'urinary-description'
@@ -3794,6 +3850,7 @@ var Data = { Groups: [
         {
             name: 'vertebrae-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Vertebrae",
             runningtime: "12:53",
             description: 'vertebrae-description'
@@ -3801,6 +3858,7 @@ var Data = { Groups: [
         {
             name: 'vitality-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Vitality",
             runningtime: "14:00",
             description: 'vitality-description'
@@ -3808,6 +3866,7 @@ var Data = { Groups: [
         {
             name: 'weight-control-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Weight_Control",
             runningtime: "14:50",
             description: 'weight-control-description'
@@ -3815,6 +3874,7 @@ var Data = { Groups: [
         {
             name: 'petss-program-upper',
             realName: '',
+            sortCategory: 'pets',
             apiName: "Pet_1",
             runningtime: "11:50",
             description: 'petss-program-description'
@@ -3822,6 +3882,7 @@ var Data = { Groups: [
         {
             name: 'petsx-program-upper',
             realName: '',
+            sortCategory: 'pets',
             apiName: "Pet_2",
             runningtime: "12:50",
             description: 'petsx-program-description'
@@ -3829,6 +3890,7 @@ var Data = { Groups: [
         {
             name: 'stomach-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Stomach_Meridian",
             runningtime: "17:15",
             description: 'stomach-meridian-description'
@@ -3836,6 +3898,7 @@ var Data = { Groups: [
         {
             name: 'spleen-pancreas-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Spleen_Meridian",
             runningtime: "15:37",
             description: 'spleen-pancreas-meridian-description'
@@ -3843,6 +3906,7 @@ var Data = { Groups: [
         {
             name: 'heart-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Heart_Meridian",
             runningtime: "14:45",
             description: 'heart-meridian-description'
@@ -3850,6 +3914,7 @@ var Data = { Groups: [
         {
             name: 'small-intestine-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Small_Intestine_Meridian",
             runningtime: "13:25",
             description: 'small-intestine-meridian-description'
@@ -3857,6 +3922,7 @@ var Data = { Groups: [
         {
             name: 'pericardium-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Pericardium_Meridian",
             runningtime: "21:55",
             description: 'pericardium-meridian-description'
@@ -3864,6 +3930,7 @@ var Data = { Groups: [
         {
             name: 'triple-warmer-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Triple_Warmer_Meridian",
             runningtime: "13:20",
             description: 'triple-warmer-meridian-description'
@@ -3871,6 +3938,7 @@ var Data = { Groups: [
         {
             name: 'lung-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Lung_Meridian",
             runningtime: "16:38",
             description: 'lung-meridian-description'
@@ -3878,6 +3946,7 @@ var Data = { Groups: [
         {
             name: 'large-intestine-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Large_Intestine_Meridian",
             runningtime: "13:53",
             description: 'large-intestine-meridian-description'
@@ -3885,6 +3954,7 @@ var Data = { Groups: [
         {
             name: 'kidney-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Kidney_Meridian",
             runningtime: "16:27",
             description: 'kidney-meridian-description'
@@ -3892,6 +3962,7 @@ var Data = { Groups: [
         {
             name: 'urinary-bladder-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Urinary_Bladder_Meridian",
             runningtime: "14:19",
             description: 'urinary-bladder-meridian-description'
@@ -3899,6 +3970,7 @@ var Data = { Groups: [
         {
             name: 'liver-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Liver_Meridian",
             runningtime: "16:11",
             description: 'liver-meridian-description'
@@ -3906,6 +3978,7 @@ var Data = { Groups: [
         {
             name: 'gallbladder-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Gallbladder_Meridian",
             runningtime: "20:39",
             description: 'gallbladder-meridian-description'
@@ -3913,6 +3986,7 @@ var Data = { Groups: [
         {
             name: "first-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Root_Chakra",
             runningtime: "15:49",
             description: '1-chakra-description'
@@ -3920,6 +3994,7 @@ var Data = { Groups: [
         {
             name: "second-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Sacral_Chakra",
             runningtime: "13:57",
             description: '2-chakra-description'
@@ -3927,6 +4002,7 @@ var Data = { Groups: [
         {
             name: "third-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Solar_Plexus_Chakra",
             runningtime: "16:51",
             description: '3-chakra-description'
@@ -3934,6 +4010,7 @@ var Data = { Groups: [
         {
             name: "fourth-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Heart_Chakra",
             runningtime: "18:16",
             description: '4-chakra-description'
@@ -3941,6 +4018,7 @@ var Data = { Groups: [
         {
             name: "fifth-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Throat_Chakra",
             runningtime: "17:59",
             description: '5-chakra-description'
@@ -3948,6 +4026,7 @@ var Data = { Groups: [
         {
             name: "sixth-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Brow_Chakra",
             runningtime: "16:13",
             description: '6-chakra-description'
@@ -3955,6 +4034,7 @@ var Data = { Groups: [
         {
             name: "seventh-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Crown_Chakra",
             runningtime: "13:45",
             description: '7-chakra-description'
@@ -3962,6 +4042,7 @@ var Data = { Groups: [
         {
             name: 'earth-element-upper',
             realName: '',
+            sortCategory: 'element',
             apiName: "Earth_Element",
             runningtime: "16:55",
             description: 'earth-element-description'
@@ -3969,6 +4050,7 @@ var Data = { Groups: [
         {
             name: 'water-element-upper',
             realName: '',
+            sortCategory: 'element',
             apiName: "Water_Element",
             runningtime: "17:20",
             description: 'water-element-description'
@@ -3976,6 +4058,7 @@ var Data = { Groups: [
         {
             name: 'fire-element-upper',
             realName: '',
+            sortCategory: 'element',
             apiName: "Fire_Element",
             runningtime: "15:05",
             description: 'fire-element-description'
@@ -3983,6 +4066,7 @@ var Data = { Groups: [
         {
             name: 'metal-element-upper',
             realName: '',
+            sortCategory: 'element',
             apiName: "Metal_Element",
             runningtime: "12:39",
             description: 'metal-element-description'
@@ -3990,6 +4074,7 @@ var Data = { Groups: [
         {
             name: 'wood-element-upper',
             realName: '',
+            sortCategory: 'element',
             apiName: "Wood_Element",
             runningtime: "17:09",
             description: 'wood-element-description'
@@ -4000,19 +4085,20 @@ var Data = { Groups: [
 
 /***/ }),
 
-/***/ 260:
+/***/ 261:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgramsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(260);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__program_program__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__program_program__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_spinner_dialog__ = __webpack_require__(242);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4030,6 +4116,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the ProgramsPage page.
  *
@@ -4037,7 +4124,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ProgramsPage = (function () {
-    function ProgramsPage(navCtrl, storage, navParams, translateService, routines, events) {
+    function ProgramsPage(navCtrl, storage, navParams, translateService, routines, events, spinnerDialog) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.storage = storage;
@@ -4045,6 +4132,7 @@ var ProgramsPage = (function () {
         this.translateService = translateService;
         this.routines = routines;
         this.events = events;
+        this.spinnerDialog = spinnerDialog;
         this.program = navParams.get('bubble');
         this.events.subscribe('add1ProgramEvent', function (programNumber, programName, programRunningTime, programApiName) {
             _this.program = programNumber;
@@ -4055,8 +4143,19 @@ var ProgramsPage = (function () {
     ProgramsPage.prototype.ionViewDidLeave = function () {
         this.storage.set(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyScrollTop, this.content.getContentDimensions().scrollTop);
     };
+    ProgramsPage.prototype.compare = function (a, b) {
+        if (a.realName < b.realName) {
+            return -1;
+        }
+        if (a.realName > b.realName) {
+            return 1;
+        }
+        return 0;
+    };
     ProgramsPage.prototype.ionViewDidLoad = function () {
         var _this = this;
+        this.spinnerDialog.show();
+        var self = this;
         this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyCurrentProgram).then(function (program) {
             _this.getPrograms(program != null ? program : 'basic');
         });
@@ -4065,10 +4164,68 @@ var ProgramsPage = (function () {
             _this.translateService.getTranslation(lang).subscribe(function (value) {
                 for (var i = 0; i < __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs.length; i++) {
                     var program = __WEBPACK_IMPORTED_MODULE_2__services_offline_data__["a" /* Data */].Programs[i];
-                    program.realName = value[program.name];
+                    var realName = value[program.name];
+                    program.realName = realName ? realName : program.name;
                     programs_raw[i] = program;
                 }
-                _this.programs = programs_raw;
+                var programs_sort = programs_raw.sort(self.compare);
+                var general = [];
+                var general_index = 0;
+                var pets = [];
+                var pets_index = 0;
+                var meridians = [];
+                var meridians_index = 0;
+                var chakras = [];
+                var chakras_index = 0;
+                var elements = [];
+                var elements_index = 0;
+                for (var j = 0; j < programs_sort.length; j++) {
+                    var program = programs_sort[j];
+                    switch (program.sortCategory) {
+                        case "none":
+                            general[general_index] = program;
+                            general_index += 1;
+                            break;
+                        case "pets":
+                            pets[pets_index] = program;
+                            pets_index += 1;
+                            break;
+                        case "meridian":
+                            meridians[meridians_index] = program;
+                            meridians_index += 1;
+                            break;
+                        case "chakra":
+                            chakras[chakras_index] = program;
+                            chakras_index += 1;
+                            break;
+                        case "element":
+                            elements[elements_index] = program;
+                            elements_index += 1;
+                            break;
+                    }
+                }
+                general = general.sort(self.compare);
+                for (var k = 0; k < general.length; k++) {
+                    var program = general[k];
+                    programs_sort[k] = program;
+                }
+                for (var l = general.length; l < general.length + pets.length; l++) {
+                    var program = pets[l - general.length];
+                    programs_sort[l] = program;
+                }
+                for (var m = general.length + pets.length; m < general.length + pets.length + meridians.length; m++) {
+                    var program = meridians[m - (general.length + pets.length)];
+                    programs_sort[m] = program;
+                }
+                for (var n = general.length + pets.length + meridians.length; n < general.length + pets.length + meridians.length + chakras.length; n++) {
+                    var program = chakras[n - (general.length + pets.length + meridians.length)];
+                    programs_sort[n] = program;
+                }
+                for (var o = general.length + pets.length + meridians.length + chakras.length; o < general.length + pets.length + meridians.length + chakras.length + elements.length; o++) {
+                    var program = elements[o - (general.length + pets.length + meridians.length + chakras.length)];
+                    programs_sort[o] = program;
+                }
+                _this.programs = programs_sort;
             });
         });
         this.routines.getKey(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyBubble1).then(function (val) {
@@ -4207,17 +4364,17 @@ var ProgramsPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-programs',template:/*ion-inline-start:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\programs\programs.html"*/'<!--\n  Generated template for the ProgramsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ \'programs\' | translate }}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="home center">\n    <br>\n    <div class="modaltitle">{{ \'program-kits\' | translate }}</div>\n    <div class="modaldesc">{{ \'popular-routines\' | translate }}</div>\n\n    <ion-scroll scrollX="true" scrollY="false" class="wide-as-needed programs">\n\n            <ion-row nowrap class="program {{ basicButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'basic\')">\n                <div class="programpic"><img src="assets/img/Basic.png"></div>\n                <div class="programdesc" [innerHTML]="\'basic\' | translate"><br><br></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ businessTravelButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'business and travel\')">\n                <div class="programpic"><img src="assets/img/BusinessTraveller.png"></div>\n                <div class="programdesc" [innerHTML]="\'business-traveler\' | translate"></div>\n            </ion-row>\n\n           <ion-row nowrap class="program {{ familiyButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'family\')">\n                <div class="programpic"><img src="assets/img/family.png"></div>\n                <div class="programdesc" [innerHTML]="\'family-kit\' | translate"></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ athleteButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'athlete\')">\n                <div class="programpic"><img src="assets/img/Athlete.png"></div>\n                <div class="programdesc" [innerHTML]="\'athlete\' | translate"></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ spaButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'spa\')">\n                <div class="programpic"><img src="assets/img/Spa.png"></div>\n                <div class="programdesc" [innerHTML]="\'spa-wellness\' | translate"><br><br></div>\n            </ion-row>\n\n\n            <ion-row nowrap class="program {{ stressButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'stress relief\')">\n                <div class="programpic"><img src="assets/img/stress.png"></div>\n                <div class="programdesc" [innerHTML]="\'stress-relief\' | translate"></div>\n            </ion-row>\n\n\n            <ion-row nowrap class="program {{ seniorButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'senior\')">\n                <div class="programpic"><img src="assets/img/Senior.png"></div>\n                <div class="programdesc" [innerHTML]="\'senior-upper\' | translate"><br><br></div>\n            </ion-row>\n\n\n            <ion-row nowrap class="program {{ chakraButton ? \'\' : \'opacity-50\' }}"  (click)="selectPreSetProgram(\'chakra balancing\')">\n                <div class="programpic"><img src="assets/img/chakra.png"></div>\n                <div class="programdesc" [innerHTML]="\'chakra-balancing\' | translate"></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ elementsButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'elements\')">\n                <div class="programpic"><img src="assets/img/Elements.png"></div>\n                <div class="programdesc" [innerHTML]="\'elements-meridians\' | translate"><br></div>\n            </ion-row>\n            <ion-row nowrap class="program {{ petssButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'petss\')">\n                <div class="programpic"><img src="assets/img/MascotasS.png"></div>\n                <div class="programdesc" [innerHTML]="\'petss\' | translate"><br></div>\n            </ion-row>\n\n            <ion-row nowrap class="program {{ petsxButton ? \'\' : \'opacity-50\' }}" (click)="selectPreSetProgram(\'petsx\')">\n                <div class="programpic"><img src="assets/img/MascotasX.png"></div>\n                <div class="programdesc" [innerHTML]="\'petsx\' | translate"><br></div>\n            </ion-row>\n    </ion-scroll>\n\n\n    <div class="modaltitle">{{ \'programs\' | translate }}</div>\n    <div *ngFor="let routine of predefinedPrograms">\n\n        {{ routine.name | translate }}\n        <!--<div class="purchase-status">{{ routine.purchaseStatus }}</div>-->\n\n        <div class="paddingmodal">\n\n            <ion-list (click)="addPrograms(routine.name, routine.programs[0].apiName, routine.programs[1].apiName,\n                routine.programs[2].apiName,routine.programs[3].apiName)">\n\n                <ion-item *ngFor="let program of routine.programs" class="addiction center">\n                     {{ program.name | translate }}\n                </ion-item>\n\n            </ion-list>\n\n        </div>\n\n    </div>\n\n\n    <div class="modaltitle">{{ \'independent-programs\' | translate }}</div>\n    <div class="modaldesc" [innerHTML]="\'tap-program\' | translate">PROGRAMS</div>\n    <div class="paddingmodal">\n        <ion-list class="programlist">\n\n\n            <ion-item class="addiction center" *ngFor="let program of programs" nav-transition="ios" nav-direction="forward" href="#/app/routines">\n                <div class="programAddButton" (click)="add1Program(program.name, program.runningtime, program.apiName)">\n                    {{ program.name | translate }}\n                </div>\n                <div class="programInfoButton" end (click)="moreProgramInfo(program.name, program.runningtime, program.description, program.apiName)">\n                    <ion-icon ios="ios-information-circle" md="md-information-circle"></ion-icon>\n                </div>\n            </ion-item>\n\n\n        </ion-list>\n    </div>\n</ion-content>\n'/*ion-inline-end:"c:\Users\lsanc\projects\mymat-ionic3\src\pages\programs\programs.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__["a" /* RoutinesProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__["a" /* RoutinesProvider */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]) === "function" && _g || Object])
+        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavParams */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__["c" /* TranslateService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__["a" /* RoutinesProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_routines_routines__["a" /* RoutinesProvider */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_8__ionic_native_spinner_dialog__["a" /* SpinnerDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_8__ionic_native_spinner_dialog__["a" /* SpinnerDialog */]) === "function" && _h || Object])
     ], ProgramsPage);
     return ProgramsPage;
-    var _a, _b, _c, _d, _e, _f, _g;
+    var _a, _b, _c, _d, _e, _f, _g, _h;
 }());
 
 //# sourceMappingURL=programs.js.map
 
 /***/ }),
 
-/***/ 261:
+/***/ 262:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4296,7 +4453,7 @@ var ProgramPage = (function () {
 
 /***/ }),
 
-/***/ 262:
+/***/ 263:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4305,7 +4462,7 @@ var ProgramPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_service_api_service__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__playing_playing__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__playing_playing__ = __webpack_require__(264);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(26);
@@ -4646,7 +4803,7 @@ var WifiPage = (function () {
 
 /***/ }),
 
-/***/ 263:
+/***/ 264:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4864,7 +5021,7 @@ var PlayingPage = (function () {
 
 /***/ }),
 
-/***/ 264:
+/***/ 265:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4909,7 +5066,7 @@ var HelpPage = (function () {
 
 /***/ }),
 
-/***/ 265:
+/***/ 266:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5031,13 +5188,13 @@ var ContactPage = (function () {
 
 /***/ }),
 
-/***/ 266:
+/***/ 267:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(276);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 
 
@@ -5098,7 +5255,7 @@ var Constants = {
 
 /***/ }),
 
-/***/ 275:
+/***/ 276:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5112,27 +5269,28 @@ var Constants = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_http__ = __webpack_require__(233);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(324);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(325);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_network_interface__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_local_notifications__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_date_picker__ = __webpack_require__(325);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__app_component__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_home_home__ = __webpack_require__(244);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_help_help__ = __webpack_require__(264);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_contact_contact__ = __webpack_require__(265);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_programs_programs__ = __webpack_require__(260);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_wifi_wifi__ = __webpack_require__(262);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_playing_playing__ = __webpack_require__(263);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_program_program__ = __webpack_require__(261);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_subscribe_subscribe__ = __webpack_require__(245);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_slider_slider__ = __webpack_require__(137);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_favorites_favorites__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_status_bar__ = __webpack_require__(242);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_splash_screen__ = __webpack_require__(243);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_routines_routines__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_api_service_api_service__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_native_network__ = __webpack_require__(73);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ionic_native_device__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_date_picker__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_spinner_dialog__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_component__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_home_home__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_help_help__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_contact_contact__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_programs_programs__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_wifi_wifi__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_playing_playing__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_program_program__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_subscribe_subscribe__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_slider_slider__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_favorites_favorites__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_status_bar__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_splash_screen__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_routines_routines__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_api_service_api_service__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ionic_native_network__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ionic_native_device__ = __webpack_require__(133);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5169,6 +5327,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 function HttpLoaderFactory(http) {
     return new __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, './assets/i18n/', '.json');
 }
@@ -5178,23 +5337,23 @@ var AppModule = (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_help_help__["a" /* HelpPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_contact_contact__["a" /* ContactPage */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_programs_programs__["a" /* ProgramsPage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_wifi_wifi__["a" /* WifiPage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_playing_playing__["a" /* PlayingPage */],
-                __WEBPACK_IMPORTED_MODULE_20__pages_subscribe_subscribe__["a" /* SubscribePage */],
-                __WEBPACK_IMPORTED_MODULE_21__pages_slider_slider__["a" /* SliderPage */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_program_program__["a" /* ProgramPage */],
-                __WEBPACK_IMPORTED_MODULE_22__pages_favorites_favorites__["a" /* FavoritesPage */]
+                __WEBPACK_IMPORTED_MODULE_13__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_help_help__["a" /* HelpPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_contact_contact__["a" /* ContactPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_programs_programs__["a" /* ProgramsPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_wifi_wifi__["a" /* WifiPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_playing_playing__["a" /* PlayingPage */],
+                __WEBPACK_IMPORTED_MODULE_21__pages_subscribe_subscribe__["a" /* SubscribePage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_slider_slider__["a" /* SliderPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_program_program__["a" /* ProgramPage */],
+                __WEBPACK_IMPORTED_MODULE_23__pages_favorites_favorites__["a" /* FavoritesPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_http__["c" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_5__angular_common_http__["b" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_13__app_component__["a" /* MyApp */], {}, {
                     links: []
                 }),
                 __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
@@ -5208,33 +5367,34 @@ var AppModule = (function () {
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["d" /* IonicApp */]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_12__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_help_help__["a" /* HelpPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_contact_contact__["a" /* ContactPage */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_programs_programs__["a" /* ProgramsPage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_wifi_wifi__["a" /* WifiPage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_playing_playing__["a" /* PlayingPage */],
-                __WEBPACK_IMPORTED_MODULE_20__pages_subscribe_subscribe__["a" /* SubscribePage */],
-                __WEBPACK_IMPORTED_MODULE_21__pages_slider_slider__["a" /* SliderPage */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_program_program__["a" /* ProgramPage */],
-                __WEBPACK_IMPORTED_MODULE_22__pages_favorites_favorites__["a" /* FavoritesPage */]
+                __WEBPACK_IMPORTED_MODULE_13__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_help_help__["a" /* HelpPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_contact_contact__["a" /* ContactPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_programs_programs__["a" /* ProgramsPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_wifi_wifi__["a" /* WifiPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_playing_playing__["a" /* PlayingPage */],
+                __WEBPACK_IMPORTED_MODULE_21__pages_subscribe_subscribe__["a" /* SubscribePage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_slider_slider__["a" /* SliderPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_program_program__["a" /* ProgramPage */],
+                __WEBPACK_IMPORTED_MODULE_23__pages_favorites_favorites__["a" /* FavoritesPage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_23__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_24__ionic_native_splash_screen__["a" /* SplashScreen */],
-                __WEBPACK_IMPORTED_MODULE_25__providers_routines_routines__["a" /* RoutinesProvider */],
+                __WEBPACK_IMPORTED_MODULE_24__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_25__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_26__providers_routines_routines__["a" /* RoutinesProvider */],
                 __WEBPACK_IMPORTED_MODULE_9__ionic_native_network_interface__["a" /* NetworkInterface */],
-                __WEBPACK_IMPORTED_MODULE_27__ionic_native_network__["a" /* Network */],
-                __WEBPACK_IMPORTED_MODULE_28__ionic_native_device__["a" /* Device */],
+                __WEBPACK_IMPORTED_MODULE_28__ionic_native_network__["a" /* Network */],
+                __WEBPACK_IMPORTED_MODULE_29__ionic_native_device__["a" /* Device */],
                 __WEBPACK_IMPORTED_MODULE_10__ionic_native_local_notifications__["a" /* LocalNotifications */],
                 __WEBPACK_IMPORTED_MODULE_11__ionic_native_date_picker__["a" /* DatePicker */],
+                __WEBPACK_IMPORTED_MODULE_12__ionic_native_spinner_dialog__["a" /* SpinnerDialog */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["e" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_26__providers_api_service_api_service__["a" /* APIServiceProvider */],
+                __WEBPACK_IMPORTED_MODULE_27__providers_api_service_api_service__["a" /* APIServiceProvider */],
                 __WEBPACK_IMPORTED_MODULE_6__ionic_native_http__["a" /* HTTP */]
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_13__pages_home_home__["a" /* HomePage */]
+                __WEBPACK_IMPORTED_MODULE_14__pages_home_home__["a" /* HomePage */]
             ]
         })
     ], AppModule);
@@ -5245,21 +5405,21 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 326:
+/***/ 327:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(242);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_constants__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(244);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_help_help__ = __webpack_require__(264);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_contact_contact__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_help_help__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_contact_contact__ = __webpack_require__(266);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_slider_slider__ = __webpack_require__(137);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_favorites_favorites__ = __webpack_require__(74);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -5426,9 +5586,9 @@ var MyApp = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_http__ = __webpack_require__(233);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(328);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators__ = __webpack_require__(329);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5755,7 +5915,7 @@ var FavoritesPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoutinesProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_storage__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_offline_data__ = __webpack_require__(260);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5903,5 +6063,5 @@ var RoutinesProvider = (function () {
 
 /***/ })
 
-},[266]);
+},[267]);
 //# sourceMappingURL=main.js.map

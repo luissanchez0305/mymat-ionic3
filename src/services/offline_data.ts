@@ -2850,6 +2850,7 @@ export var Data = { Groups : [
         {
             name: 'addiction-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Addiction",
             runningtime: "15:05",
             description: 'addiction-description'
@@ -2857,6 +2858,7 @@ export var Data = { Groups : [
         {
             name: 'adrenal-gland-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Adrenal_Gland",
             runningtime: "15:07",
             description: 'adrenal-gland-description'
@@ -2864,6 +2866,7 @@ export var Data = { Groups : [
         {
             name: 'anti-aging-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Anti_Aging",
             runningtime: "11:01",
             description: 'anti-aging-description',
@@ -2872,6 +2875,7 @@ export var Data = { Groups : [
         {
             name: 'auditory-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Auditory_System",
             runningtime: "14:31",
             description: 'auditory-description',
@@ -2879,6 +2883,7 @@ export var Data = { Groups : [
         {
             name: 'backache-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Backache",
             runningtime: "16:30",
             description: 'backache-description',
@@ -2886,6 +2891,7 @@ export var Data = { Groups : [
         {
             name: 'bones-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Bone_Tissues",
             runningtime: "15:04",
             description: 'bones-description'
@@ -2893,6 +2899,7 @@ export var Data = { Groups : [
         {
             name: 'child-developement-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Child_Development",
             runningtime: "13:50",
             description: 'child-developement-description',
@@ -2900,6 +2907,7 @@ export var Data = { Groups : [
         {
             name: 'circulatory-system-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Circulatory_System",
             runningtime: "15:06",
             description: 'circulatory-system-description',
@@ -2907,6 +2915,7 @@ export var Data = { Groups : [
         {
             name:  'concentration-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Concentration",
             runningtime: "21:19",
             description: 'concentration-description'
@@ -2914,6 +2923,7 @@ export var Data = { Groups : [
         {
             name: 'connective-tissue-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Connective_Tissues",
             runningtime: "16:54",
             description: 'connective-tissue-description',
@@ -2921,6 +2931,7 @@ export var Data = { Groups : [
         {
             name: 'constipation-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Constipation",
             runningtime: "14:49",
             description: 'constipation-description'
@@ -2928,6 +2939,7 @@ export var Data = { Groups : [
         {
             name: 'detoxification-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Detoxification",
             runningtime: "16:13",
             description: 'detoxification-description',
@@ -2935,6 +2947,7 @@ export var Data = { Groups : [
         {
             name: 'diarrhea-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Diarrhea",
             runningtime: "13:59",
             description: 'diarrhea-description'
@@ -2942,6 +2955,7 @@ export var Data = { Groups : [
         {
             name: 'digestive-system-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Digestive_System",
             runningtime: "16:41",
             description: 'digestive-system-description'
@@ -2949,6 +2963,7 @@ export var Data = { Groups : [
         {
             name: 'discernment-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Discernment",
             runningtime: "13:37",
             description: 'discernment-description'
@@ -2956,6 +2971,7 @@ export var Data = { Groups : [
         {
             name: 'energy-balancing-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Energy_Balancing",
             runningtime: "17:55",
             description: 'energy-balancing-description',
@@ -2963,6 +2979,7 @@ export var Data = { Groups : [
         {
             name: 'energy-booster-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Energy_Booster",
             runningtime: "13:53",
             description: 'energy-booster-description'
@@ -2970,6 +2987,7 @@ export var Data = { Groups : [
         {
             name: "E-SMOG",
             realName: '',
+            sortCategory: 'none',
             apiName: "Electro_Smog",
             runningtime: "14:51",
             description: 'e-smog-description'
@@ -2977,6 +2995,7 @@ export var Data = { Groups : [
         {
             name: 'exhaustion-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Exhaustion",
             runningtime: "14:59",
             description: 'exhaustion-description'
@@ -2984,6 +3003,7 @@ export var Data = { Groups : [
         {
             name: 'eyesight-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Eyesight",
             runningtime: "16:11",
             description: 'eyesight-description'
@@ -2991,6 +3011,7 @@ export var Data = { Groups : [
         {
             name: 'female-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Female_Hormone_Balance",
             runningtime: "14:17",
             description: 'female-description'
@@ -2998,6 +3019,7 @@ export var Data = { Groups : [
         {
             name: 'flu-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Flu",
             runningtime: "13:59",
             description: 'flu-description'
@@ -3006,6 +3028,7 @@ export var Data = { Groups : [
         {
             name: 'glucose-metabolic-disorders-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Glucose_Metabolic_Disorders",
             runningtime: "16:28",
             description: 'glucose-metabolic-disorders-description',
@@ -3013,6 +3036,7 @@ export var Data = { Groups : [
         {
             name: 'hair-growth-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Hair_Growth",
             runningtime: "19:07",
             description: 'hair-growth-description'
@@ -3020,6 +3044,7 @@ export var Data = { Groups : [
         {
             name: 'headache-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Headache",
             runningtime: "18:38",
             description: 'headache-description'
@@ -3027,6 +3052,7 @@ export var Data = { Groups : [
         {
             name: 'heart-function-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Heart_Function",
             runningtime: "13:30",
             description: 'heart-function-description'
@@ -3035,6 +3061,7 @@ export var Data = { Groups : [
         {
             name: 'hemorrhoids-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Hemorrhoids",
             runningtime: "21:13",
             description: 'hemorrhoids-description'
@@ -3042,6 +3069,7 @@ export var Data = { Groups : [
         {
             name: 'hypertension-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Hypertension",
             runningtime: "18:53",
             description: 'hypertension-description'
@@ -3049,6 +3077,7 @@ export var Data = { Groups : [
         {
             name: 'immune-system-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Immune_System",
             runningtime: "14:50",
             description: 'immune-system-description'
@@ -3056,6 +3085,7 @@ export var Data = { Groups : [
         {
             name: 'injury-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Injury",
             runningtime: "18:46",
             description: 'injury-description'
@@ -3063,6 +3093,7 @@ export var Data = { Groups : [
         {
             name: 'intestinal-flora-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Intestinal_Flora",
             runningtime: "18:58",
             description: 'intestinal-flora-description'
@@ -3070,6 +3101,7 @@ export var Data = { Groups : [
         {
             name: 'joints-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Joints",
             runningtime: "17:07",
             description: 'joints-description'
@@ -3077,6 +3109,7 @@ export var Data = { Groups : [
         {
             name: 'joy-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Joy",
             runningtime: "21:04",
             description: 'joy-description'
@@ -3084,6 +3117,7 @@ export var Data = { Groups : [
         {
             name: "JET-LAG",
             realName: '',
+            sortCategory: 'none',
             apiName: "Jet-Lag/Climate_Change",
             runningtime: "16:14",
             description: 'jet-lag-description'
@@ -3091,6 +3125,7 @@ export var Data = { Groups : [
         {
             name: 'low-mental-drive-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Low_Mental_Drive",
             runningtime: "15:49",
             description: 'low-mental-drive-description'
@@ -3098,6 +3133,7 @@ export var Data = { Groups : [
         {
             name: 'low-physical-drive-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Low_Physical_Drive",
             runningtime: "16:49",
             description: 'low-physical-drive-description'
@@ -3105,6 +3141,7 @@ export var Data = { Groups : [
         {
             name: 'lymphatic-system-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Lymphatic_System",
             runningtime: "16:04",
             description: 'lymphatic-system-description'
@@ -3112,6 +3149,7 @@ export var Data = { Groups : [
         {
             name: 'male-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Male_Hormone_Balance",
             runningtime: "12:31",
             description: 'male-description'
@@ -3119,6 +3157,7 @@ export var Data = { Groups : [
         {
             name: 'meditation-1-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Meditation_1",
             runningtime: "33:15",
             description: 'meditation-1-description'
@@ -3126,6 +3165,7 @@ export var Data = { Groups : [
         {
             name: 'meditation-2-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Meditation_2",
             runningtime: "29:43",
             description: 'meditation-2-description'
@@ -3133,6 +3173,7 @@ export var Data = { Groups : [
         {
             name: 'meditation-3-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Meditation_3",
             runningtime: "22:49",
             description: 'meditation-3-description'
@@ -3140,6 +3181,7 @@ export var Data = { Groups : [
         {
             name: 'mineral-metabolic-activity-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Mineral_Metabolic_Activity",
             runningtime: "17:25",
             description: 'mineral-metabolic-activity-description'
@@ -3147,6 +3189,7 @@ export var Data = { Groups : [
         {
             name: 'muscle-tissue-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Muscle_Tissues",
             runningtime: "15:59",
             description: 'muscle-tissue-description'
@@ -3154,6 +3197,7 @@ export var Data = { Groups : [
         {
             name: 'neck-shoulder-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Neck/Shoulder",
             runningtime: "16:16",
             description: 'neck-shoulder-description'
@@ -3161,6 +3205,7 @@ export var Data = { Groups : [
         {
             name: 'nervous-system-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Nervous_System",
             runningtime: "19:10",
             description: 'nervous-system-description'
@@ -3168,6 +3213,7 @@ export var Data = { Groups : [
         {
             name: 'peace-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Peace",
             runningtime: "22:08",
             description: 'peace-description'
@@ -3175,6 +3221,7 @@ export var Data = { Groups : [
         {
             name: 'pain-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Pain_Conditions",
             runningtime: "15:18",
             description: 'pain-description'
@@ -3182,6 +3229,7 @@ export var Data = { Groups : [
         {
             name: 'regeneration-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Regeneration",
             runningtime: "17:12",
             description: 'regeneration-description'
@@ -3189,6 +3237,7 @@ export var Data = { Groups : [
         {
             name: 'relaxation-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Relaxation",
             runningtime: "19:55",
             description: 'relaxation-description'
@@ -3196,6 +3245,7 @@ export var Data = { Groups : [
         {
             name: 'respiratory-system-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Respiratory_System",
             runningtime: "15:52",
             description: 'respiratory-system-description'
@@ -3203,6 +3253,7 @@ export var Data = { Groups : [
         {
             name: 'sinus-cavities-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Sinus_Cavities",
             runningtime: "15:33",
             description: 'sinus-cavities-description'
@@ -3210,6 +3261,7 @@ export var Data = { Groups : [
         {
             name: 'skin-conditions-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Skin_Conditions",
             runningtime: "15:50",
             description: 'skin-conditions-description'
@@ -3217,6 +3269,7 @@ export var Data = { Groups : [
         {
             name: 'sleep-enhancer-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Sleep_Enhancer",
             runningtime: "19:58",
             description: 'sleep-enhancer-description'
@@ -3224,6 +3277,7 @@ export var Data = { Groups : [
         {
             name: 'stress-relief-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Frustration",
             runningtime: "18:55",
             description: 'stress-relief-description'
@@ -3231,6 +3285,7 @@ export var Data = { Groups : [
         {
             name: 'thyroid-glands-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Thyroid_Glands",
             runningtime: "17:53",
             description: 'thyroid-glands-description'
@@ -3239,6 +3294,7 @@ export var Data = { Groups : [
         {
             name: 'urinary-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Urinary_System/Cystitis",
             runningtime: "13:39",
             description: 'urinary-description'
@@ -3247,6 +3303,7 @@ export var Data = { Groups : [
         {
             name: 'vertebrae-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Vertebrae",
             runningtime: "12:53",
             description: 'vertebrae-description'
@@ -3254,6 +3311,7 @@ export var Data = { Groups : [
         {
             name: 'vitality-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Vitality",
             runningtime: "14:00",
             description: 'vitality-description'
@@ -3261,6 +3319,7 @@ export var Data = { Groups : [
         {
             name: 'weight-control-upper',
             realName: '',
+            sortCategory: 'none',
             apiName: "Weight_Control",
             runningtime: "14:50",
             description: 'weight-control-description'
@@ -3268,6 +3327,7 @@ export var Data = { Groups : [
         {
             name: 'petss-program-upper',
             realName: '',
+            sortCategory: 'pets',
             apiName: "Pet_1",
             runningtime: "11:50",
             description: 'petss-program-description'
@@ -3275,6 +3335,7 @@ export var Data = { Groups : [
         {
             name: 'petsx-program-upper',
             realName: '',
+            sortCategory: 'pets',
             apiName: "Pet_2",
             runningtime: "12:50",
             description: 'petsx-program-description'
@@ -3282,6 +3343,7 @@ export var Data = { Groups : [
         {
             name: 'stomach-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Stomach_Meridian",
             runningtime: "17:15",
             description: 'stomach-meridian-description'
@@ -3289,6 +3351,7 @@ export var Data = { Groups : [
         {
             name: 'spleen-pancreas-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Spleen_Meridian",
             runningtime: "15:37",
             description: 'spleen-pancreas-meridian-description'
@@ -3296,6 +3359,7 @@ export var Data = { Groups : [
         {
             name: 'heart-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Heart_Meridian",
             runningtime: "14:45",
             description: 'heart-meridian-description'
@@ -3303,6 +3367,7 @@ export var Data = { Groups : [
         {
             name: 'small-intestine-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Small_Intestine_Meridian",
             runningtime: "13:25",
             description: 'small-intestine-meridian-description'
@@ -3310,6 +3375,7 @@ export var Data = { Groups : [
         {
             name: 'pericardium-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Pericardium_Meridian",
             runningtime: "21:55",
             description: 'pericardium-meridian-description'
@@ -3317,6 +3383,7 @@ export var Data = { Groups : [
         {
             name: 'triple-warmer-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Triple_Warmer_Meridian",
             runningtime: "13:20",
             description: 'triple-warmer-meridian-description'
@@ -3324,6 +3391,7 @@ export var Data = { Groups : [
         {
             name: 'lung-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Lung_Meridian",
             runningtime: "16:38",
             description: 'lung-meridian-description'
@@ -3331,6 +3399,7 @@ export var Data = { Groups : [
         {
             name: 'large-intestine-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Large_Intestine_Meridian",
             runningtime: "13:53",
             description: 'large-intestine-meridian-description'
@@ -3338,6 +3407,7 @@ export var Data = { Groups : [
         {
             name: 'kidney-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Kidney_Meridian",
             runningtime: "16:27",
             description: 'kidney-meridian-description'
@@ -3345,6 +3415,7 @@ export var Data = { Groups : [
         {
             name: 'urinary-bladder-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Urinary_Bladder_Meridian",
             runningtime: "14:19",
             description: 'urinary-bladder-meridian-description'
@@ -3352,6 +3423,7 @@ export var Data = { Groups : [
         {
             name: 'liver-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Liver_Meridian",
             runningtime: "16:11",
             description: 'liver-meridian-description'
@@ -3359,6 +3431,7 @@ export var Data = { Groups : [
         {
             name: 'gallbladder-meridian-upper',
             realName: '',
+            sortCategory: 'meridian',
             apiName: "Gallbladder_Meridian",
             runningtime: "20:39",
             description: 'gallbladder-meridian-description'
@@ -3366,6 +3439,7 @@ export var Data = { Groups : [
         {
             name: "first-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Root_Chakra",
             runningtime: "15:49",
             description: '1-chakra-description'
@@ -3373,6 +3447,7 @@ export var Data = { Groups : [
         {
             name: "second-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Sacral_Chakra",
             runningtime: "13:57",
             description: '2-chakra-description'
@@ -3380,6 +3455,7 @@ export var Data = { Groups : [
         {
             name: "third-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Solar_Plexus_Chakra",
             runningtime: "16:51",
             description: '3-chakra-description'
@@ -3387,6 +3463,7 @@ export var Data = { Groups : [
         {
             name: "fourth-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Heart_Chakra",
             runningtime: "18:16",
             description: '4-chakra-description'
@@ -3394,6 +3471,7 @@ export var Data = { Groups : [
         {
             name: "fifth-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Throat_Chakra",
             runningtime: "17:59",
             description: '5-chakra-description'
@@ -3401,6 +3479,7 @@ export var Data = { Groups : [
         {
             name: "sixth-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Brow_Chakra",
             runningtime: "16:13",
             description: '6-chakra-description'
@@ -3408,6 +3487,7 @@ export var Data = { Groups : [
         {
             name: "seventh-chakra-upper",
             realName: '',
+            sortCategory: 'chakra',
             apiName: "Crown_Chakra",
             runningtime: "13:45",
             description: '7-chakra-description'
@@ -3415,6 +3495,7 @@ export var Data = { Groups : [
         {
             name: 'earth-element-upper',
             realName: '',
+            sortCategory: 'element',
             apiName: "Earth_Element",
             runningtime: "16:55",
             description: 'earth-element-description'
@@ -3422,6 +3503,7 @@ export var Data = { Groups : [
         {
             name: 'water-element-upper',
             realName: '',
+            sortCategory: 'element',
             apiName: "Water_Element",
             runningtime: "17:20",
             description: 'water-element-description'
@@ -3429,6 +3511,7 @@ export var Data = { Groups : [
         {
             name: 'fire-element-upper',
             realName: '',
+            sortCategory: 'element',
             apiName: "Fire_Element",
             runningtime: "15:05",
             description: 'fire-element-description'
@@ -3436,6 +3519,7 @@ export var Data = { Groups : [
         {
             name: 'metal-element-upper',
             realName: '',
+            sortCategory: 'element',
             apiName: "Metal_Element",
             runningtime: "12:39",
             description: 'metal-element-description'
@@ -3443,6 +3527,7 @@ export var Data = { Groups : [
         {
             name: 'wood-element-upper',
             realName: '',
+            sortCategory: 'element',
             apiName: "Wood_Element",
             runningtime: "17:09",
             description: 'wood-element-description'
