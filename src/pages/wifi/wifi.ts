@@ -85,7 +85,9 @@ export class WifiPage {
   }
 
   verifyInternalIpAddress(ip){
-    for(let i = 100; i < 256; i++){
+    for(let i = 1; i < 256; i++){
+      console.log(Constants.localIPAddress + i);
+      console.log(ip);
       if(Constants.localIPAddress + i == ip){
         return true;
       }

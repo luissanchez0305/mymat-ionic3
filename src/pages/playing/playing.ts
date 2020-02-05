@@ -144,7 +144,7 @@ export class PlayingPage {
                   title: 'MyMat Light',
                   text: prog['time-expire-text'],
                   sound: 'file://assets/sounds/gong_c5.mp3',
-                  trigger: { at: new Date(t.getTime() + /*this.getSeconds(this.displayRunningTime)*/ 30 * 1000) }
+                  trigger: { at: new Date(t.getTime() + this.getSeconds(this.displayRunningTime) * 1000) }
                 });
 
                 this.localNotifications.on("click").subscribe({ next(notification) {

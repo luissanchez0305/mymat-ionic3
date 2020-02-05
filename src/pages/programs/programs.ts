@@ -100,9 +100,9 @@ export class ProgramsPage {
                   general[general_index] = program;
                   general_index += 1;
                   break;
-                case "pets":
-                  pets[pets_index] = program;
-                  pets_index += 1;
+                case "element":
+                  elements[elements_index] = program;
+                  elements_index += 1;
                   break;
                 case "meridian":
                   meridians[meridians_index] = program;
@@ -112,9 +112,9 @@ export class ProgramsPage {
                   chakras[chakras_index] = program;
                   chakras_index += 1;
                   break;
-                case "element":
-                  elements[elements_index] = program;
-                  elements_index += 1;
+                case "pets":
+                  pets[pets_index] = program;
+                  pets_index += 1;
                   break;
               }
             }
@@ -125,27 +125,28 @@ export class ProgramsPage {
               programs_sort[k] = program;
             }
 
-            for (var l = general.length; l < general.length + pets.length; l++) {
-              let program = pets[l - general.length];   
+            for (var l = general.length; l < general.length + elements.length; l++) {
+              let program = elements[l - general.length];   
               programs_sort[l] = program;
             }
 
-            for (var m = general.length + pets.length; m < general.length + pets.length + meridians.length; m++) {
-              let program = meridians[m - (general.length + pets.length)];   
+            for (var m = general.length + elements.length; m < general.length + elements.length + meridians.length; m++) {
+              let program = meridians[m - (general.length + elements.length)];   
               programs_sort[m] = program;
             }
 
-            for (var n = general.length + pets.length + meridians.length; n < general.length + pets.length + meridians.length + chakras.length; n++) {
-              let program = chakras[n - (general.length + pets.length + meridians.length)];   
+            for (var n = general.length + elements.length + meridians.length; n < general.length + elements.length + meridians.length + chakras.length; n++) {
+              let program = chakras[n - (general.length + elements.length + meridians.length)];   
               programs_sort[n] = program;
             }
 
-            for (var o = general.length + pets.length + meridians.length + chakras.length; o < general.length + pets.length + meridians.length + chakras.length + elements.length; o++) {
-              let program = elements[o - (general.length + pets.length + meridians.length + chakras.length)];   
+            for (var o = general.length + elements.length + meridians.length + chakras.length; o < general.length + elements.length + meridians.length + chakras.length + pets.length; o++) {
+              let program = pets[o - (general.length + elements.length + meridians.length + chakras.length)];   
               programs_sort[o] = program;
             }
 
             this.programs = programs_sort;
+            this.spinnerDialog.hide();
           });
         });
 
