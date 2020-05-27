@@ -61,7 +61,7 @@
     "localforage": "^1.5.5",
     "ng2-translate": "^5.0.0",
     "ng4-date-countdown-timer": "^1.0.4",
-    "npm": "^5.6.0",
+    "npm": "^6.13.4",
     "rxjs": "5.5.2",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.18"
