@@ -11,7 +11,7 @@ import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { ProgramsPage } from '../programs/programs';
 import { WifiPage } from '../wifi/wifi';
 import { FavoritesPage } from '../favorites/favorites';
-import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
+//import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
 
 @Component({
   selector: 'page-home',
@@ -37,8 +37,8 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
     private translateService: TranslateService, private network: Network, private zone: NgZone,
-    public events: Events, private device: Device, public apiService : APIServiceProvider, public modalCtrl: ModalController, 
-    private localNotifications : LocalNotifications) {
+    public events: Events, private device: Device, public apiService : APIServiceProvider, public modalCtrl: ModalController/*, 
+    private localNotifications : LocalNotifications*/) {
     //this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){
@@ -109,14 +109,14 @@ export class HomePage {
       }
     });
     
-    var t = new Date();
+    /*var t = new Date();
     this.localNotifications.schedule({
       id: 1,
       title: 'MyMat Light',
       text: 'TESTING MODE',
       sound: 'file://assets/sounds/gong_c5.mp3',
       trigger: { at: new Date(t.getTime() + 10000) }
-    });
+    });*/
   }
 
   addPrograms(routineName, program0, program1, program2, program3){
