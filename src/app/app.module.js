@@ -15,7 +15,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NetworkInterface } from '@ionic-native/network-interface';
 //import { Network } from '@ionic-native/network';
-import { LocalNotifications } from '@ionic-native/local-notifications';
+import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
 import { DatePicker } from '@ionic-native/date-picker';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
