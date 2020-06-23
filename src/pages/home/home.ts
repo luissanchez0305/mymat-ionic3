@@ -109,14 +109,14 @@ export class HomePage {
       }
     });
     
-    /*var t = new Date();
+    var t = new Date();
     this.localNotifications.schedule({
       id: 1,
       title: 'MyMat Light',
       text: 'TESTING MODE',
       sound: 'file://assets/sounds/gong_c5.mp3',
       trigger: { at: new Date(t.getTime() + 10000) }
-    });*/
+    });
   }
 
   addPrograms(routineName, program0, program1, program2, program3){
