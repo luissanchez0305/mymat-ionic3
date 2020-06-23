@@ -85,7 +85,7 @@ export class HomePage {
           }
           formData.append('uuid', _uuid);
 
-          this.apiService.runPost('check_device.php',formData).then((result) => {
+          /*this.apiService.runPost('check_device.php',formData).then((result) => {
             //console.log('check_device success');
             this.isDeviceOnline = true;
             var obj : any = result;
@@ -103,8 +103,8 @@ export class HomePage {
               this.translateService.getTranslation(lang).subscribe((value) => {
                 this.offline_device = value['offline-device-text-2'];
               });
-            });*/
-          });
+            });* /
+          });*/
         /*}*/
       }
     });
