@@ -25,6 +25,9 @@
     "cordova-plugin-native-spinner": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
+    "cordova-plugin-nativeaudio": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
     "cordova-plugin-network-information": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
@@ -45,10 +48,10 @@
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-device": {
+    "cordova-plugin-badge": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
-    "cordova-plugin-badge": {
+    "cordova-plugin-device": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   }

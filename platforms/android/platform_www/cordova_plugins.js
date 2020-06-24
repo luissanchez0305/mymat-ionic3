@@ -212,20 +212,19 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
+      "id": "cordova-plugin-badge.Badge",
+      "file": "plugins/cordova-plugin-badge/www/badge.js",
+      "pluginId": "cordova-plugin-badge",
+      "clobbers": [
+        "cordova.plugins.notification.badge"
+      ]
+    },
+    {
       "id": "cordova-plugin-datepicker.DatePicker",
       "file": "plugins/cordova-plugin-datepicker/www/android/DatePicker.js",
       "pluginId": "cordova-plugin-datepicker",
       "clobbers": [
         "datePicker"
-      ]
-    },
-    {
-      "id": "cordova-plugin-email-composer.EmailComposer",
-      "file": "plugins/cordova-plugin-email-composer/www/email_composer.js",
-      "pluginId": "cordova-plugin-email-composer",
-      "clobbers": [
-        "cordova.plugins.email",
-        "plugin.email"
       ]
     },
     {
@@ -237,11 +236,12 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "cordova-plugin-badge.Badge",
-      "file": "plugins/cordova-plugin-badge/www/badge.js",
-      "pluginId": "cordova-plugin-badge",
+      "id": "cordova-plugin-email-composer.EmailComposer",
+      "file": "plugins/cordova-plugin-email-composer/www/email_composer.js",
+      "pluginId": "cordova-plugin-email-composer",
       "clobbers": [
-        "cordova.plugins.notification.badge"
+        "cordova.plugins.email",
+        "plugin.email"
       ]
     },
     {
@@ -276,6 +276,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "pluginId": "cordova-plugin-native-spinner",
       "clobbers": [
         "SpinnerDialog"
+      ]
+    },
+    {
+      "id": "cordova-plugin-nativeaudio.nativeaudio",
+      "file": "plugins/cordova-plugin-nativeaudio/www/nativeaudio.js",
+      "pluginId": "cordova-plugin-nativeaudio",
+      "clobbers": [
+        "window.plugins.NativeAudio"
       ]
     },
     {
@@ -332,12 +340,13 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
   module.exports.metadata = {
     "cordova-plugin-file": "6.0.1",
     "cordova-plugin-advanced-http": "2.0.2",
-    "cordova-plugin-datepicker": "0.9.3",
-    "cordova-plugin-email-composer": "0.8.15",
-    "cordova-plugin-device": "2.0.3",
     "cordova-plugin-badge": "0.8.8",
+    "cordova-plugin-datepicker": "0.9.3",
+    "cordova-plugin-device": "2.0.3",
+    "cordova-plugin-email-composer": "0.8.15",
     "cordova-plugin-local-notification": "0.9.0-beta.2",
     "cordova-plugin-native-spinner": "1.1.3",
+    "cordova-plugin-nativeaudio": "3.0.9",
     "cordova-plugin-network-information": "2.0.1",
     "cordova-plugin-networkinterface": "1.2.0",
     "cordova-plugin-splashscreen": "4.1.0",
