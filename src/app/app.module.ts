@@ -9,9 +9,10 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NetworkInterface } from '@ionic-native/network-interface';
 //import { Network } from '@ionic-native/network';
-import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 import { DatePicker } from '@ionic-native/date-picker'; 
 import { SpinnerDialog } from '@ionic-native/spinner-dialog';
+import { File } from '@ionic-native/file';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -86,6 +87,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     Network,
     Device,
     LocalNotifications,
+    File,
     DatePicker,
     SpinnerDialog,
     { provide: ErrorHandler, useClass: IonicErrorHandler },

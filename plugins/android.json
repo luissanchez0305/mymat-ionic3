@@ -36,12 +36,15 @@
     },
     "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    }
-  },
-  "dependent_plugins": {
+    },
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    }
+  },
+  "dependent_plugins": {
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
