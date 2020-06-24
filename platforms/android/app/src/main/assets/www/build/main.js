@@ -234,14 +234,6 @@ var HomePage = (function () {
                 /*}*/
             }
         });
-        var t = new Date();
-        this.localNotifications.schedule({
-            id: 1,
-            title: 'MyMat Light',
-            text: 'TESTING MODE',
-            sound: 'file://assets/sounds/gong_c5.mp3',
-            trigger: { at: new Date(t.getTime() + 10000) }
-        });
     }
     HomePage.prototype.addPrograms = function (routineName, program0, program1, program2, program3) {
         this.events.publish('addProgramsEvent', program0, program1, program2, program3);
@@ -257,6 +249,14 @@ var HomePage = (function () {
             else {
                 _this.showLatestSection = false;
             }
+        });
+        var t = new Date();
+        this.localNotifications.schedule({
+            id: 1,
+            title: 'MyMat Light',
+            text: 'TESTING MODE',
+            sound: 'file://assets/sounds/gong_c5.mp3',
+            trigger: { at: new Date(t.getTime() + 5000) }
         });
     };
     HomePage.prototype.openAddFavorite = function () {

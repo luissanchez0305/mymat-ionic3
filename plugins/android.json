@@ -16,6 +16,12 @@
     "cordova-plugin-email-composer": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+    "cordova-plugin-local-notification": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
     "cordova-plugin-native-spinner": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
@@ -28,19 +34,13 @@
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "ionic-plugin-keyboard": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-local-notification": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },

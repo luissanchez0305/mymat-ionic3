@@ -14,6 +14,12 @@
     <feature name="EmailComposer">
         <param name="android-package" value="de.appplant.cordova.emailcomposer.EmailComposer" />
     </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="LocalNotification">
+        <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
+    </feature>
     <feature name="SpinnerDialog">
         <param name="android-package" value="com.greybax.spinnerdialog.SpinnerDialog" />
     </feature>
@@ -27,22 +33,16 @@
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
     <feature name="Keyboard">
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="Device">
-        <param name="android-package" value="org.apache.cordova.device.Device" />
-    </feature>
-    <feature name="LocalNotification">
-        <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
-    </feature>
-    <feature name="StatusBar">
-        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
     </feature>
     <feature name="Badge">
