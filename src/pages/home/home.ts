@@ -13,6 +13,8 @@ import { WifiPage } from '../wifi/wifi';
 import { FavoritesPage } from '../favorites/favorites';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 
+// import { FCM } from '@ionic-native/fcm';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -38,7 +40,7 @@ export class HomePage {
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
     private translateService: TranslateService, private network: Network, private zone: NgZone,
     public events: Events, private device: Device, public apiService : APIServiceProvider, public modalCtrl: ModalController, 
-    private localNotifications : LocalNotifications) {
+    private localNotifications : LocalNotifications /* , private fcm: FCM*/ ) {
     //this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){
@@ -108,6 +110,35 @@ export class HomePage {
         /*}*/
       }
     });
+
+
+    //Seccion de FireBase
+    // this.fcm.getToken().then(
+    //   (token: string) => {
+    //     console.log("Este es el tocke para este dispositivo " + token);
+    //   }
+    // ).catch(error => {
+    //   console.log(error);
+    // });
+
+    // this.fcm.onTokenRefresh().subscribe(
+    //   (token: string) => {
+    //     console.log("tocke actualizacion " + token);
+    //   }
+    // );
+
+    // this.fcm.onNotification().subscribe(data => {
+    //   if(data.wasTapped){
+    //   //ocurre cuando la aplicacion esta en segundo plano
+    //   console.log("Estamo en segundo plano");
+    //   }else{
+    //     //ocurre cuando la aplicacion esta en primer plano
+    //     console.log("Estamo en primer plano " + JSON.stringify(data));
+    //   }
+    // },error => {
+    //   console.log("Ocurrio error " + error);
+    // });
+
   }
 
   addPrograms(routineName, program0, program1, program2, program3){

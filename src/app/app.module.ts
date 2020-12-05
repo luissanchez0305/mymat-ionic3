@@ -33,6 +33,8 @@ import { APIServiceProvider } from '../providers/api-service/api-service';
 import { Network } from '@ionic-native/network';
 import { Device } from '@ionic-native/device';
 
+// import { FCM } from '@ionic-native/fcm';
+
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -93,6 +95,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     APIServiceProvider,
     HTTP
+    // FCM
 
   ],
   exports: [

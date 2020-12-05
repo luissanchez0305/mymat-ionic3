@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "692447891372",
+    "project_id": "mymat-7b786",
+    "storage_bucket": "mymat-7b786.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692447891372:android:5cd1a52b59afc1a968f409",
+        "android_client_info": {
+          "package_name": "com.esferasoluciones.mymat_light"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692447891372-403i0pgi2v624jdq2fu6qeh72ae0a1um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNuFf4j1CZ5vb_r_M2lSPF0e6FWSb7omc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692447891372-403i0pgi2v624jdq2fu6qeh72ae0a1um.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
