@@ -11,9 +11,11 @@ import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { ProgramsPage } from '../programs/programs';
 import { WifiPage } from '../wifi/wifi';
 import { FavoritesPage } from '../favorites/favorites';
-import { LocalNotifications } from '@ionic-native/local-notifications';
-
+// import { LocalNotifications } from '@ionic-native/local-notifications';
 // import { FCM } from '@ionic-native/fcm';
+
+
+import {Platform } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -40,7 +42,7 @@ export class HomePage {
   constructor(public navCtrl: NavController, private storage: Storage, public routines: RoutinesProvider,
     private translateService: TranslateService, private network: Network, private zone: NgZone,
     public events: Events, private device: Device, public apiService : APIServiceProvider, public modalCtrl: ModalController, 
-    private localNotifications : LocalNotifications /* , private fcm: FCM*/ ) {
+    /*private localNotifications : LocalNotifications ,private fcm: FCM, */ public platform: Platform ) {
     //this.checkAllBubbles();
     this.events.subscribe('sharesBubbles', (bubbles) => {
       for(var i = 1; i <= bubbles.length; i++){
@@ -112,7 +114,64 @@ export class HomePage {
     });
 
 
-    //Seccion de FireBase
+
+    // this.platform.ready()
+    // .then(() => {
+    //   console.log(this.platform.is('android'))
+    //   this.localNotifications.schedule({
+    //     id: 1,
+    //     text: 'Single LocalNotification',
+    //     sound: 'file://assets/sounds/gong_c5.mp3',
+    //     data: { secret: 'hellloo' }
+    //   });
+    // })
+  }
+
+  
+
+  addPrograms(routineName, program0, program1, program2, program3){
+    this.events.publish('addProgramsEvent', program0, program1, program2, program3);
+    this.content.scrollTo(0, 0, 100);
+  }
+
+  ionViewDidLoad() {
+    this.storage.get(Constants.latestRoutinesKey).then((latests)=>{
+      if(latests){
+        this.showLatestSection = true;
+        this.latestRoutines = latests;
+      }
+      else{
+        this.showLatestSection = false;
+      }
+    });
+     
+    // var t = new Date();
+    // this.localNotifications.schedule({
+    //   id: 1,
+    //   title: 'MyMat Light',
+    //   text: 'TESTING MODE',
+    //   sound: 'file://assets/sounds/gong_c5.mp3',
+    //   trigger: { at: new Date(t.getTime() + 5000) }
+    // });
+    // this.localNotifications.schedule([{
+    //   id: 1,
+    //   title: 'MyMat Light',
+    //   text: 'TESTING MODE 1',
+    //   sound: "file://assets/sounds/gong_c5.mp3",
+    //   // trigger: { at: new Date(t.getTime() + 4000) },
+    //   vibrate: true
+    // },
+    // {
+    //   id: 2,
+    //   title: 'MyMat Light',
+    //   text: 'TESTING MODE 2',
+    //   sound: 'file://assets/sounds/gong_c5.mp3',
+    //   trigger: { at: new Date(t.getTime() + 8000) },
+    //   vibrate: true,
+    //   data: { secret: 'hellloo' }
+    // }]);
+
+    // console.log("************* Inciando aplicacion en el home y levanto eventos para Push Notifications *************");
     // this.fcm.getToken().then(
     //   (token: string) => {
     //     console.log("Este es el tocke para este dispositivo " + token);
@@ -139,32 +198,6 @@ export class HomePage {
     //   console.log("Ocurrio error " + error);
     // });
 
-  }
-
-  addPrograms(routineName, program0, program1, program2, program3){
-    this.events.publish('addProgramsEvent', program0, program1, program2, program3);
-    this.content.scrollTo(0, 0, 100);
-  }
-
-  ionViewDidLoad() {
-    this.storage.get(Constants.latestRoutinesKey).then((latests)=>{
-      if(latests){
-        this.showLatestSection = true;
-        this.latestRoutines = latests;
-      }
-      else{
-        this.showLatestSection = false;
-      }
-    });
-     
-    var t = new Date();
-    this.localNotifications.schedule({
-      id: 1,
-      title: 'MyMat Light',
-      text: 'TESTING MODE',
-      sound: 'file://assets/sounds/gong_c5.mp3',
-      trigger: { at: new Date(t.getTime() + 5000) }
-    });
   }
 
   openAddFavorite(){

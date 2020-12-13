@@ -12,6 +12,9 @@ import { HelpPage } from '../pages/help/help';
 import { ContactPage } from '../pages/contact/contact';
 import { SliderPage } from '../pages/slider/slider';
 import { FavoritesPage } from '../pages/favorites/favorites';
+import { OneSignal } from '@ionic-native/onesignal';
+import { NativeRingtones } from '@ionic-native/native-ringtones';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -29,9 +32,13 @@ export class MyApp {
 
   pages: Array<{title: string, component: any, icon: any, isPush: boolean}>;
 
+
+  signal_app_id : string = 'd3aad1d0-7a05-4639-8467-40c8d41f84b6';
+  firebase_id : string  = '692447891372';
+
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,
     private translateService: TranslateService, public menuCtrl: MenuController, private storage: Storage,
-    public events : Events) {
+    public events : Events,  private oneSignal: OneSignal, private ringtones: NativeRingtones) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -60,6 +67,40 @@ export class MyApp {
           this.switchLang(value);
       });;
     });
+
+
+
+    //Seccion de FireBase
+    // this.fcm.subscribeToTopic('marketing');
+    // this.fcm.getToken().then(
+    //   (token: string) => {
+    //     console.log("Este es el tocke para este dispositivo " + token);
+    //   }
+    // ).catch(error => {
+    //   console.log(error);
+    // });
+
+    // this.fcm.onTokenRefresh().subscribe(
+    //   (token: string) => {
+    //     console.log("tocke actualizacion " + token);
+    //   }
+    // );
+
+    // this.fcm.onNotification().subscribe(data => {
+    //   if(data.wasTapped){
+    //   //ocurre cuando la aplicacion esta en segundo plano
+    //   console.log("Estamo en segundo plano");
+    //   }else{
+    //     //ocurre cuando la aplicacion esta en primer plano
+    //     console.log("Estamo en primer plano " + JSON.stringify(data));
+    //   }
+    // },error => {
+    //   console.log("Ocurrio error " + error);
+    // });
+    // this.fcm.unsubscribeFromTopic('marketing');
+
+
+
   }
 
   initializeApp() {
@@ -68,8 +109,38 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      
+      this.oneSignal.startInit(this.signal_app_id, this.firebase_id);
+      this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
+      this.oneSignal.setEmail("jacob9614rod@gmail.com");
+
+      this.oneSignal.handleNotificationReceived().subscribe((res) => {
+      // do something when notification is received
+        console.log(res);
+        this.testRington();
+
+      });
+
+      this.oneSignal.handleNotificationOpened().subscribe((res) => {
+        // do something when a notification is opened
+        console.log(res);
+        
+
+      });
+
+      this.oneSignal.endInit();
     });
   }
+  testRington(){
+    console.debug(" ***** Iniciando Prueba de Sonido *******");
+    // this.ringtones.getRingtone().then((ringtones) => { 
+    //   console.log(ringtones);
+    //   ringtones.forEach(element => {
+    //     console.log("Rington : ", element);
+    //   }); 
+    // });
+    this.ringtones.playRingtone('file://assets/sounds/gong_c5.mp3');
+}
 
   openPage(page) {
     // Reset the content nav to have just this page
@@ -137,4 +208,5 @@ export class MyApp {
     this.storage.set(Constants.storageKeyLang, lang);
     this.menuCtrl.close();
   }
+
 }

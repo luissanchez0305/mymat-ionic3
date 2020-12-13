@@ -144,16 +144,16 @@ export class PlayingPage {
                   title: 'MyMat Light',
                   text: prog['time-expire-text'],
                   sound: 'file://assets/sounds/gong_c5.mp3',
-                  trigger: { at: new Date(t.getTime() + 10 /*this.getSeconds(this.displayRunningTime)*/ * 1000) }
+                  // trigger: { at: new Date(t.getTime() + 10 /*this.getSeckonds(this.displayRunningTime)*/ * 1000) }
                 });
 
-                this.localNotifications.on("click").subscribe({ next(notification) {
-                    if (notification.id == 1) {
-                      var t = new Date();
-                      $this.resume(t.getTime());
-                    }
-                  }
-                });
+                // this.localNotifications.on("click").subscribe({ next(notification) {
+                //     if (notification.id == 1) {
+                //       var t = new Date();
+                //       $this.resume(t.getTime());
+                //     }
+                //   }
+                // });
               });
             });
           });

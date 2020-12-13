@@ -34,6 +34,9 @@ import { Network } from '@ionic-native/network';
 import { Device } from '@ionic-native/device';
 
 // import { FCM } from '@ionic-native/fcm';
+import { OneSignal } from '@ionic-native/onesignal';
+import { NativeRingtones } from '@ionic-native/native-ringtones';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -94,9 +97,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     SpinnerDialog,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     APIServiceProvider,
-    HTTP
+    HTTP,
     // FCM
-
+    OneSignal ,
+    NativeRingtones
   ],
   exports: [
     HomePage

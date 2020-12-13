@@ -335,6 +335,47 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
         "cordova.plugins.Keyboard"
       ],
       "runs": true
+    },
+    {
+      "id": "onesignal-cordova-plugin.OneSignal",
+      "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+      "pluginId": "onesignal-cordova-plugin",
+      "clobbers": [
+        "OneSignal"
+      ]
+    },
+    {
+      "id": "cordova-plugin-media.MediaError",
+      "file": "plugins/cordova-plugin-media/www/MediaError.js",
+      "pluginId": "cordova-plugin-media",
+      "clobbers": [
+        "window.MediaError"
+      ]
+    },
+    {
+      "id": "cordova-plugin-media.Media",
+      "file": "plugins/cordova-plugin-media/www/Media.js",
+      "pluginId": "cordova-plugin-media",
+      "clobbers": [
+        "window.Media"
+      ]
+    },
+    {
+      "id": "cordova-plugin-native-ringtones.NativeRingtones",
+      "file": "plugins/cordova-plugin-native-ringtones/www/NativeRingtones.js",
+      "pluginId": "cordova-plugin-native-ringtones",
+      "clobbers": [
+        "cordova.plugins.NativeRingtones"
+      ]
+    },
+    {
+      "id": "cordova-plugin-background-mode.BackgroundMode",
+      "file": "plugins/cordova-plugin-background-mode/www/background-mode.js",
+      "pluginId": "cordova-plugin-background-mode",
+      "clobbers": [
+        "cordova.plugins.backgroundMode",
+        "plugin.backgroundMode"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -352,6 +393,10 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-splashscreen": "4.1.0",
     "cordova-plugin-statusbar": "2.4.3",
     "cordova-plugin-whitelist": "1.3.3",
-    "ionic-plugin-keyboard": "2.2.1"
+    "ionic-plugin-keyboard": "2.2.1",
+    "onesignal-cordova-plugin": "2.11.2",
+    "cordova-plugin-media": "5.0.3",
+    "cordova-plugin-native-ringtones": "0.2.5",
+    "cordova-plugin-background-mode": "0.7.3"
   };
 });
