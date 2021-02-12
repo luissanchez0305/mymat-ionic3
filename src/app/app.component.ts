@@ -15,6 +15,9 @@ import { FavoritesPage } from '../pages/favorites/favorites';
 import { OneSignal } from '@ionic-native/onesignal';
 import { NativeRingtones } from '@ionic-native/native-ringtones';
 
+import { BackgroundMode } from '@ionic-native/background-mode';
+import { Device } from '@ionic-native/device';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -38,7 +41,7 @@ export class MyApp {
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,
     private translateService: TranslateService, public menuCtrl: MenuController, private storage: Storage,
-    public events : Events,  private oneSignal: OneSignal, private ringtones: NativeRingtones) {
+    public events : Events,  private oneSignal: OneSignal, private ringtones: NativeRingtones, private backgroundMode: BackgroundMode, private device: Device) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -112,13 +115,19 @@ export class MyApp {
       
       this.oneSignal.startInit(this.signal_app_id, this.firebase_id);
       this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
-      this.oneSignal.setEmail("jacob9614rod@gmail.com");
+      let uuid = '';
+      if(window.hasOwnProperty('cordova')){
+        uuid = this.device.uuid;
+      }
+      else {
+        uuid = Constants.test_uuid
+      }
+      this.oneSignal.setEmail(uuid+"@mymat.com");
 
       this.oneSignal.handleNotificationReceived().subscribe((res) => {
       // do something when notification is received
         console.log(res);
         this.testRington();
-
       });
 
       this.oneSignal.handleNotificationOpened().subscribe((res) => {
@@ -129,6 +138,8 @@ export class MyApp {
       });
 
       this.oneSignal.endInit();
+      // Habilitamos el modo de fondo
+      this.backgroundMode.enable();
     });
   }
   testRington(){

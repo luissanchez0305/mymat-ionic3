@@ -36,6 +36,7 @@ import { Device } from '@ionic-native/device';
 // import { FCM } from '@ionic-native/fcm';
 import { OneSignal } from '@ionic-native/onesignal';
 import { NativeRingtones } from '@ionic-native/native-ringtones';
+import { BackgroundMode } from '@ionic-native/background-mode';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -100,7 +101,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     HTTP,
     // FCM
     OneSignal ,
-    NativeRingtones
+    NativeRingtones,
+    BackgroundMode
+
   ],
   exports: [
     HomePage

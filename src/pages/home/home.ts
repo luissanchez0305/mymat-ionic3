@@ -221,6 +221,8 @@ export class HomePage {
   }
 
   runRoutine(){
+
+
     var programs = this.routines.getPrograms();
     if(this.AllBubblesChecked(programs)){
       this.navCtrl.push(
@@ -228,6 +230,11 @@ export class HomePage {
         { prog1: this.routines.getProgram(programs[0]), prog2: this.routines.getProgram(programs[1]), prog3: this.routines.getProgram(programs[2]), prog4: this.routines.getProgram(programs[3])
       });
     }
+
+    /**
+     * CODE BETA
+     */
+    
   }
 
   private AllBubblesChecked(programs){
