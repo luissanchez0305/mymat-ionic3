@@ -3,12 +3,12 @@ import { NavController, NavParams } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { Storage } from '@ionic/storage';
 import { Constants } from '../../services/constants';
-import { LocalNotifications } from '@ionic-native/local-notifications';
+// import { LocalNotifications } from '@ionic-native/local-notifications';
 import { Platform } from 'ionic-angular';
 
 import { APIServiceProvider } from '../../providers/api-service/api-service';
 import { Device } from '@ionic-native/device';
-import { letProto } from 'rxjs/operator/let';
+// import { letProto } from 'rxjs/operator/let';
 import { Network } from '@ionic-native/network';
 
 
@@ -45,12 +45,11 @@ export class PlayingPage {
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage,
-    public translateService: TranslateService, private localNotifications: LocalNotifications, public plt: Platform,
+    public translateService: TranslateService, /*private localNotifications: LocalNotifications,*/ public plt: Platform,
     private zone: NgZone, public apiService: APIServiceProvider, private device: Device, private network: Network) {
-    var _this = this;
     document.addEventListener('resume', () => {
       var t = new Date();
-      _this.resume(t.getTime());
+      this.resume(t.getTime());
     });
 
 

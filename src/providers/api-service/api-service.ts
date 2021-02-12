@@ -96,9 +96,9 @@ export class APIServiceProvider {
       let headers = new Headers();
       let formData = new FormData();
 
-      formData.append('email', 'xxxxxx');
-      formData.append('msg', 'xxxxxx');
-      formData.append('msg', 'xxxxxx');
+      formData.append('email', datos.correo);
+      formData.append('msg', datos.msg);
+      formData.append('date', datos.fecha);
 
 
       this.httpModule.post(Constants.myMatApiUrl + 'create_notification.php', formData, { headers: headers })
