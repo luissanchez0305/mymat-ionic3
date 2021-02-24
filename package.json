@@ -39,7 +39,6 @@
     "@ngx-translate/core": "^9.1.1",
     "@ngx-translate/http-loader": "^4.0.0",
     "add": "2.0.6",
-    "cordova-android": "8.1.0",
     "cordova-plugin-advanced-http": "^2.0.9",
     "cordova-plugin-badge": "^0.8.8",
     "cordova-plugin-datepicker": "^0.9.3",
@@ -74,6 +73,7 @@
   "devDependencies": {
     "@ionic/app-scripts": "^3.2.4",
     "babel-register": "^6.26.0",
+    "cordova-android": "^9.0.0",
     "typescript": "2.4.2"
   },
   "description": "An Ionic project",
