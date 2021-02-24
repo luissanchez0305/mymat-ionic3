@@ -10,6 +10,9 @@
     "cordova-plugin-advanced-http": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
+    "cordova-plugin-background-mode": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
     "cordova-plugin-datepicker": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
@@ -20,6 +23,9 @@
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "cordova-plugin-local-notification": {
+      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
+    },
+    "cordova-plugin-native-ringtones": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "cordova-plugin-native-spinner": {
@@ -48,19 +54,13 @@
     },
     "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-native-ringtones": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
-    },
-    "cordova-plugin-background-mode": {
-      "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-badge": {
+    "cordova-plugin-device": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
-    "cordova-plugin-device": {
+    "cordova-plugin-badge": {
       "PACKAGE_NAME": "com.esferasoluciones.mymat_light"
     },
     "cordova-plugin-media": {

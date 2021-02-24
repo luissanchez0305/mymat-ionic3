@@ -112,7 +112,7 @@ export class MyApp {
       
       this.oneSignal.startInit(this.signal_app_id, this.firebase_id);
       this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
-      this.oneSignal.setEmail("jacob9614rod@gmail.com");
+      this.oneSignal.setEmail("luissanchez0305@gmail.com");
 
       this.oneSignal.handleNotificationReceived().subscribe((res) => {
       // do something when notification is received
