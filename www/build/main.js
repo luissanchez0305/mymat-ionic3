@@ -340,6 +340,15 @@ var HomePage = (function () {
         /**
          * CODE BETA
          */
+        // this.apiService.registrarNotificacion({ uuid: '98cd11411dd1c5bf', msg: 'From app', date: '2021-02-21 01:35:00' });
+        // this.apiService.registrarNotificacion({ uuid: '98cd11411dd1c5bf', msg: 'Format UTC', date: '2021-02-21T21:10:00Z' })
+        //   .then((result) => {
+        //     console.log("Resultado de create_notification");
+        //     console.log(JSON.stringify(result));
+        //   }).catch((err) => {
+        //     console.log("Error en n create_notification");
+        //     console.log(JSON.stringify(err));
+        //   })
     };
     HomePage.prototype.AllBubblesChecked = function (programs) {
         if (typeof programs[0] !== 'undefined' && programs[0] != null && programs[0].length > 0 &&
@@ -4964,6 +4973,8 @@ var PlayingPage = (function () {
         this.stateNotifRegis = false;
         this.esperaNotiRegis = false;
         this.TiempoRutina = 0;
+        this.mensajeRutina = "";
+        this.datosNotif = null;
         document.addEventListener('resume', function () {
             var t = new Date();
             _this.resume(t.getTime());
@@ -4980,7 +4991,7 @@ var PlayingPage = (function () {
             _this.zone.run(function () {
                 _this.isDeviceOnline = true;
                 if (!_this.stateNotifRegis && _this.esperaNotiRegis) {
-                    _this.setNotificacion(_this.TiempoRutina);
+                    _this.setNotificacion(_this.TiempoRutina, _this.mensajeRutina);
                 }
             });
         });
@@ -5075,19 +5086,22 @@ var PlayingPage = (function () {
                          * CODE BETA
                          */
                         var tiempoCiclo = _this.getSeconds(_this.displayRunningTime);
-                        setTimeout(function () {
-                            _this.apiService.notificacionOneSignal();
-                        }, tiempoCiclo);
-                        _this.TiempoRutina = tiempoCiclo;
-                        if (_this.isDeviceOnline) {
-                            _this.apiService.registrarNotificacion(tiempoCiclo);
-                        }
-                        else {
-                            _this.stateNotifRegis = false;
-                            _this.esperaNotiRegis = true;
-                        }
+                        // setTimeout(() => {
+                        //   this.apiService.notificacionOneSignal();
+                        // }, tiempoCiclo);
                         _this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyLang).then(function (lang) {
                             _this.translateService.getTranslation(lang).subscribe(function (prog) {
+                                _this.TiempoRutina = tiempoCiclo;
+                                _this.mensajeRutina = prog['time-expire-text'];
+                                console.log("Antes del Ternario");
+                                if (_this.isDeviceOnline) {
+                                    console.log("invocando metodo setNotificacion");
+                                    _this.setNotificacion(_this.TiempoRutina, _this.mensajeRutina);
+                                }
+                                else {
+                                    _this.stateNotifRegis = false;
+                                    _this.esperaNotiRegis = true;
+                                }
                                 // this.localNotifications.schedule({
                                 //   id: 1,
                                 //   title: 'MyMat Light',
@@ -5109,28 +5123,36 @@ var PlayingPage = (function () {
             }
         }
     };
-    PlayingPage.prototype.setNotificacion = function (segundos) {
+    PlayingPage.prototype.setNotificacion = function (segundos, mensaje) {
         return __awaiter(this, void 0, void 0, function () {
-            var datos, _a;
+            var _this = this;
+            var _a;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
-                        _a = {
-                            correo: this.getuuid()
-                        };
-                        return [4 /*yield*/, this.getMessage()];
+                        if (!(this.datosNotif === null)) return [3 /*break*/, 2];
+                        _a = this;
+                        return [4 /*yield*/, {
+                                uuid: this.getuuid(),
+                                msg: mensaje,
+                                date: this.getTiempo(segundos)
+                            }];
                     case 1:
-                        datos = (_a.msg = _b.sent(),
-                            _a.fecha = this.getTiempo(segundos),
-                            _a);
+                        _a.datosNotif = _b.sent();
+                        _b.label = 2;
+                    case 2:
                         this.stateNotifRegis = true;
-                        this.apiService.registrarNotificacion(datos).
-                            then(function (res) {
-                            console.log("Notificacion Registrada");
-                            console.log("Datos enviados: ", datos);
-                            console.log("Datos recibidos", res);
+                        this.apiService.registrarNotificacion(this.datosNotif)
+                            .then(function (result) {
+                            console.log("Resultado de create_notification");
+                            console.log(JSON.stringify(result));
+                            _this.stateNotifRegis = true;
+                            _this.esperaNotiRegis = false;
                         }).catch(function (err) {
-                            console.error(err);
+                            console.log("Error en n create_notification");
+                            console.log(JSON.stringify(err));
+                            _this.stateNotifRegis = false;
+                            _this.esperaNotiRegis = true;
                         });
                         return [2 /*return*/];
                 }
@@ -5147,29 +5169,25 @@ var PlayingPage = (function () {
         }
         return uuid;
     };
-    PlayingPage.prototype.getMessage = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var lang, msg;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.storage.get(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].storageKeyLang)];
-                    case 1:
-                        lang = _a.sent();
-                        return [4 /*yield*/, this.translateService.getTranslation(lang)];
-                    case 2:
-                        msg = _a.sent();
-                        return [2 /*return*/, msg];
-                }
-            });
-        });
-    };
     PlayingPage.prototype.getTiempo = function (duracion) {
         var fecha = new Date();
-        // fecha.setMinutes(fecha.getMinutes + duracion);
-        fecha.setSeconds(fecha.getSeconds + duracion);
-        var dateUTP = Date.UTC(fecha.getUTCFullYear(), fecha.getUTCMonth(), fecha.getUTCDay(), fecha.getUTCHours(), fecha.getUTCMinutes(), 0);
-        return dateUTP;
+        console.log("Viendo fecha actual ", fecha);
+        //fecha.setSeconds(fecha.getSeconds() + duracion);
+        fecha.setSeconds(fecha.getSeconds() + 60); //Code Test
+        fecha.setSeconds(0);
+        var dateUTC = fecha.toISOString();
+        console.log("Variable de T en UTC", dateUTC);
+        return dateUTC;
     };
+    //  reintentoSetNotification(){
+    //   if (this.isDeviceOnline) {
+    //     console.log("invocando metodo setNotificacion Reintento");
+    //     this.setNotificacion(this.TiempoRutina, this.mensajeRutina);
+    //   }else{
+    //     this.stateNotifRegis = false;
+    //     this.esperaNotiRegis = true;
+    //   }
+    //  }
     PlayingPage.prototype.ionViewWillLeave = function () {
         this.timerRemain = 0;
     };
@@ -5397,13 +5415,13 @@ var ContactPage = (function () {
 
 /***/ }),
 
-/***/ 269:
+/***/ 268:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(277);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 
 
@@ -5414,7 +5432,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 278:
+/***/ 277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5428,13 +5446,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_http__ = __webpack_require__(233);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ngx_translate_core__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ngx_translate_http_loader__ = __webpack_require__(326);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_network_interface__ = __webpack_require__(240);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_local_notifications__ = __webpack_require__(328);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_date_picker__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_local_notifications__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_date_picker__ = __webpack_require__(328);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_spinner_dialog__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_file__ = __webpack_require__(330);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__app_component__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_file__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__app_component__ = __webpack_require__(330);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_home_home__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_help_help__ = __webpack_require__(264);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_contact_contact__ = __webpack_require__(265);
@@ -5453,7 +5471,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_native_device__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__ionic_native_onesignal__ = __webpack_require__(266);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__ionic_native_native_ringtones__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__ionic_native_background_mode__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__ionic_native_background_mode__ = __webpack_require__(427);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5628,7 +5646,7 @@ var Constants = {
 
 /***/ }),
 
-/***/ 331:
+/***/ 330:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5647,8 +5665,7 @@ var Constants = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_favorites_favorites__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_onesignal__ = __webpack_require__(266);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_native_ringtones__ = __webpack_require__(267);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_background_mode__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_device__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_device__ = __webpack_require__(57);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5673,10 +5690,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
+// import { BackgroundMode } from '@ionic-native/background-mode';
 
 var MyApp = (function () {
-    function MyApp(platform, statusBar, splashScreen, translateService, menuCtrl, storage, events, oneSignal, ringtones, backgroundMode, device) {
+    function MyApp(platform, statusBar, splashScreen, translateService, menuCtrl, storage, events, oneSignal, ringtones, /*private backgroundMode: BackgroundMode,*/ device) {
         var _this = this;
         this.platform = platform;
         this.statusBar = statusBar;
@@ -5687,7 +5704,6 @@ var MyApp = (function () {
         this.events = events;
         this.oneSignal = oneSignal;
         this.ringtones = ringtones;
-        this.backgroundMode = backgroundMode;
         this.device = device;
         this.rootPage = __WEBPACK_IMPORTED_MODULE_7__pages_home_home__["a" /* HomePage */];
         this.signal_app_id = 'd3aad1d0-7a05-4639-8467-40c8d41f84b6';
@@ -5775,7 +5791,7 @@ var MyApp = (function () {
             });
             _this.oneSignal.endInit();
             // Habilitamos el modo de fondo
-            _this.backgroundMode.enable();
+            // this.backgroundMode.enable();
         });
     };
     MyApp.prototype.testRington = function () {
@@ -5862,7 +5878,7 @@ var MyApp = (function () {
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
             __WEBPACK_IMPORTED_MODULE_6__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* MenuController */], __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */], __WEBPACK_IMPORTED_MODULE_12__ionic_native_onesignal__["a" /* OneSignal */], __WEBPACK_IMPORTED_MODULE_13__ionic_native_native_ringtones__["a" /* NativeRingtones */], __WEBPACK_IMPORTED_MODULE_14__ionic_native_background_mode__["a" /* BackgroundMode */], __WEBPACK_IMPORTED_MODULE_15__ionic_native_device__["a" /* Device */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Events */], __WEBPACK_IMPORTED_MODULE_12__ionic_native_onesignal__["a" /* OneSignal */], __WEBPACK_IMPORTED_MODULE_13__ionic_native_native_ringtones__["a" /* NativeRingtones */], __WEBPACK_IMPORTED_MODULE_14__ionic_native_device__["a" /* Device */]])
     ], MyApp);
     return MyApp;
 }());
@@ -5881,9 +5897,9 @@ var MyApp = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_http__ = __webpack_require__(233);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_constants__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__(331);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators__ = __webpack_require__(332);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5985,9 +6001,9 @@ var APIServiceProvider = (function () {
         return new Promise(function (resolve, reject) {
             var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
             var formData = new FormData();
-            formData.append('email', datos.correo);
+            formData.append('uuid', datos.uuid);
             formData.append('msg', datos.msg);
-            formData.append('date', datos.fecha);
+            formData.append('date', datos.date);
             _this.httpModule.post(__WEBPACK_IMPORTED_MODULE_4__services_constants__["a" /* Constants */].myMatApiUrl + 'create_notification.php', formData, { headers: headers })
                 .subscribe(function (res) {
                 resolve(res.json());
@@ -5995,6 +6011,10 @@ var APIServiceProvider = (function () {
                 reject(err);
             });
         });
+        // return this.http.post(
+        //   Constants.myMatApiUrl + 'create_notification.php',
+        //   datos,
+        //   {responseType: 'text'})
     };
     APIServiceProvider.prototype.sendEmail = function (data) {
         var _this = this;
@@ -6398,5 +6418,5 @@ var RoutinesProvider = (function () {
 
 /***/ })
 
-},[269]);
+},[268]);
 //# sourceMappingURL=main.js.map

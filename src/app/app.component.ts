@@ -15,7 +15,7 @@ import { FavoritesPage } from '../pages/favorites/favorites';
 import { OneSignal } from '@ionic-native/onesignal';
 import { NativeRingtones } from '@ionic-native/native-ringtones';
 
-import { BackgroundMode } from '@ionic-native/background-mode';
+// import { BackgroundMode } from '@ionic-native/background-mode';
 import { Device } from '@ionic-native/device';
 
 
@@ -41,7 +41,7 @@ export class MyApp {
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,
     private translateService: TranslateService, public menuCtrl: MenuController, private storage: Storage,
-    public events : Events,  private oneSignal: OneSignal, private ringtones: NativeRingtones, private backgroundMode: BackgroundMode, private device: Device) {
+    public events : Events,  private oneSignal: OneSignal, private ringtones: NativeRingtones, /*private backgroundMode: BackgroundMode,*/ private device: Device) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -139,7 +139,7 @@ export class MyApp {
 
       this.oneSignal.endInit();
       // Habilitamos el modo de fondo
-      this.backgroundMode.enable();
+      // this.backgroundMode.enable();
     });
   }
   testRington(){

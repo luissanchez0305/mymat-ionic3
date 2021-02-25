@@ -62,6 +62,7 @@ export class APIServiceProvider {
     });
   }
 
+  
   notificacionOneSignal() {
     return new Promise((resolve, reject) => {
       let headers = new Headers(
@@ -96,11 +97,10 @@ export class APIServiceProvider {
       let headers = new Headers();
       let formData = new FormData();
 
-      formData.append('email', datos.correo);
+      formData.append('uuid', datos.uuid);
       formData.append('msg', datos.msg);
-      formData.append('date', datos.fecha);
-
-
+      formData.append('date', datos.date);
+      
       this.httpModule.post(Constants.myMatApiUrl + 'create_notification.php', formData, { headers: headers })
         .subscribe(res => {
           resolve(res.json());
@@ -108,6 +108,11 @@ export class APIServiceProvider {
           reject(err);
         });
     });
+
+    // return this.http.post(
+    //   Constants.myMatApiUrl + 'create_notification.php',
+    //   datos,
+    //   {responseType: 'text'})
   }
 
   sendEmail(data) {

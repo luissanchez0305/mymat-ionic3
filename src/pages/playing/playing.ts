@@ -41,7 +41,8 @@ export class PlayingPage {
   public stateNotifRegis : boolean = false;
   public esperaNotiRegis : boolean = false;
   public TiempoRutina: number = 0;
-
+  public mensajeRutina: String = "";
+  public datosNotif = null;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage,
@@ -55,6 +56,7 @@ export class PlayingPage {
 
     this.isDeviceOnline = true;
       // watch network for a disconnect
+
       this.network.onDisconnect().subscribe(() => {
         this.zone.run(() => {
           this.isDeviceOnline = false;
@@ -66,7 +68,7 @@ export class PlayingPage {
           this.isDeviceOnline = true;
           
           if(!this.stateNotifRegis && this.esperaNotiRegis){
-            this.setNotificacion(this.TiempoRutina);
+            this.setNotificacion(this.TiempoRutina, this.mensajeRutina);
           }
         });
       });
@@ -173,21 +175,30 @@ export class PlayingPage {
              * CODE BETA
              */
             let tiempoCiclo = this.getSeconds(this.displayRunningTime);
-            setTimeout(() => {
-              this.apiService.notificacionOneSignal();
-            }, tiempoCiclo);
+            // setTimeout(() => {
+            //   this.apiService.notificacionOneSignal();
+            // }, tiempoCiclo);
             
-            this.TiempoRutina = tiempoCiclo;
-            if (this.isDeviceOnline) {
-              this.apiService.registrarNotificacion(tiempoCiclo);
-            }else{
-              this.stateNotifRegis = false;
-              this.esperaNotiRegis = true;
-            }
+            
 
 
             this.storage.get(Constants.storageKeyLang).then((lang) => {
               this.translateService.getTranslation(lang).subscribe((prog) => {
+
+
+                this.TiempoRutina = tiempoCiclo;
+                this.mensajeRutina = prog['time-expire-text'];
+                console.log("Antes del Ternario");
+
+
+                if (this.isDeviceOnline) {
+                  console.log("invocando metodo setNotificacion");
+                  this.setNotificacion(this.TiempoRutina, this.mensajeRutina);
+                }else{
+                  this.stateNotifRegis = false;
+                  this.esperaNotiRegis = true;
+                }
+
                 // this.localNotifications.schedule({
                 //   id: 1,
                 //   title: 'MyMat Light',
@@ -218,25 +229,29 @@ export class PlayingPage {
     
    }
 
-   async setNotificacion(segundos){
-    let datos = {
-      correo: this.getuuid(),
-      msg: await this.getMessage(),
-      fecha: this.getTiempo(segundos)
+   async setNotificacion(segundos, mensaje){
+    
 
+    if(this.datosNotif === null){
+      this.datosNotif = await {
+        uuid: this.getuuid(),
+        msg: mensaje,
+        date: this.getTiempo(segundos)
+      }
     }
     this.stateNotifRegis = true;
-    this.apiService.registrarNotificacion(datos).
-    then((res) => {
-      console.log("Notificacion Registrada");
-      console.log("Datos enviados: ",datos);
-      console.log("Datos recibidos",res);
-      
-      
-    }).catch((err) => {
-      console.error(err);
-      
-    });
+    this.apiService.registrarNotificacion(this.datosNotif)
+      .then((result) => {
+        console.log("Resultado de create_notification");
+        console.log(JSON.stringify(result));
+        this.stateNotifRegis = true;
+        this.esperaNotiRegis = false;
+      }).catch((err) => {
+        console.log("Error en n create_notification");
+        console.log(JSON.stringify(err));
+        this.stateNotifRegis = false;
+        this.esperaNotiRegis = true;
+      })
    }
 
    getuuid() {
@@ -250,19 +265,28 @@ export class PlayingPage {
       return uuid;
    }
 
-   async getMessage(){
-     let lang = await this.storage.get(Constants.storageKeyLang);
-     let msg = await this.translateService.getTranslation(lang);
-     return msg;
-   }
-
    getTiempo(duracion){
     let fecha = new Date();
-    // fecha.setMinutes(fecha.getMinutes + duracion);
-    fecha.setSeconds(fecha.getSeconds + duracion);
-    let dateUTP = Date.UTC(fecha.getUTCFullYear(), fecha.getUTCMonth(), fecha.getUTCDay(), fecha.getUTCHours(), fecha.getUTCMinutes(), 0);
-    return dateUTP;
+    console.log("Viendo fecha actual ", fecha);
+    //fecha.setSeconds(fecha.getSeconds() + duracion);
+    fecha.setSeconds(fecha.getSeconds() + 60); //Code Test
+
+    fecha.setSeconds(0);
+    let dateUTC = fecha.toISOString();
+
+    console.log("Variable de T en UTC", dateUTC); 
+    return dateUTC;
    }
+
+  //  reintentoSetNotification(){
+  //   if (this.isDeviceOnline) {
+  //     console.log("invocando metodo setNotificacion Reintento");
+  //     this.setNotificacion(this.TiempoRutina, this.mensajeRutina);
+  //   }else{
+  //     this.stateNotifRegis = false;
+  //     this.esperaNotiRegis = true;
+  //   }
+  //  }
 
   ionViewWillLeave() {
     this.timerRemain = 0;
