@@ -35,7 +35,7 @@
         <button [disabled]="!showAddFavoriteButton" class="orangebtn" menu-close nav-transition="ios" nav-direction="forward" (click)="openAddFavorite()" href="#">{{ 'add-favorite' | translate }}</button>
         <br><br>
         <button class="graybtn" menu-close nav-transition="ios" nav-direction="forward" (click)="cleanRoutine()" href="#">{{ 'clean-routine' | translate }}</button>
-
+        <br><br>
     </div>
     <div text-center text-uppercase padding-top *ngIf="showLatestSection">{{ 'latest-routines' | translate }}</div>
     <div *ngFor="let routine of latestRoutines">
@@ -57,5 +57,5 @@
 
           </div>
     </div>
-    <div text-center text-uppercase><a href="https://healinghouse.life/privacy-policy-2/">Privacy Policy</a></div>
+    <div text-center text-uppercase class="url_politicas"><a href="https://healinghouse.life/privacy-policy-2/"> Policy</a></div><br>
 </ion-content>
