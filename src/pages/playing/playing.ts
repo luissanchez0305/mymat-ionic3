@@ -268,8 +268,8 @@ export class PlayingPage {
    getTiempo(duracion){
     let fecha = new Date();
     console.log("Viendo fecha actual ", fecha);
-    //fecha.setSeconds(fecha.getSeconds() + duracion);
-    fecha.setSeconds(fecha.getSeconds() + 60); //Code Test
+    fecha.setSeconds(fecha.getSeconds() + duracion);
+    //fecha.setSeconds(fecha.getSeconds() + 120); //Code Test
 
     fecha.setSeconds(0);
     let dateUTC = fecha.toISOString();

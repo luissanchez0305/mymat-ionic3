@@ -5173,7 +5173,7 @@ var PlayingPage = (function () {
         var fecha = new Date();
         console.log("Viendo fecha actual ", fecha);
         //fecha.setSeconds(fecha.getSeconds() + duracion);
-        fecha.setSeconds(fecha.getSeconds() + 60); //Code Test
+        fecha.setSeconds(fecha.getSeconds() + 120); //Code Test
         fecha.setSeconds(0);
         var dateUTC = fecha.toISOString();
         console.log("Variable de T en UTC", dateUTC);
