@@ -29103,8 +29103,12 @@ page-home .add-favorite-ios {
   background-color: transparent;
 }
 
-.url_politicas {
-  color: white !important;
+.url_politicas_home {
+  color: #bdb9b9 !important;
+}
+
+.url_politicas_home a {
+  color: #dfdbdb !important;
 }
 
 a:link {
