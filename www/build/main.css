@@ -29103,6 +29103,33 @@ page-home .add-favorite-ios {
   background-color: transparent;
 }
 
+.url_politicas_home {
+  color: #bdb9b9 !important;
+}
+
+.url_politicas_home a {
+  color: #dfdbdb !important;
+}
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
 page-slider img {
   max-width: 87% !important;
 }
@@ -29115,6 +29142,29 @@ page-slider .slide-zoom {
 
 page-subscribe .error .text-input, page-subscribe .error .item-inner {
   background-color: #ffd2d2 !important;
+}
+
+.url_politicas {
+  color: #3facff !important;
+}
+
+a:link {
+  color: #3facff;
+}
+
+/* visited link */
+a:visited {
+  color: #3facff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #3facff;
+}
+
+/* selected link */
+a:active {
+  color: #3facff;
 }
 
 page-wifi iframe {

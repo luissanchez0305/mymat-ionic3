@@ -144,60 +144,6 @@ export class HomePage {
         this.showLatestSection = false;
       }
     });
-     
-    // var t = new Date();
-    // this.localNotifications.schedule({
-    //   id: 1,
-    //   title: 'MyMat Light',
-    //   text: 'TESTING MODE',
-    //   sound: 'file://assets/sounds/gong_c5.mp3',
-    //   trigger: { at: new Date(t.getTime() + 5000) }
-    // });
-    // this.localNotifications.schedule([{
-    //   id: 1,
-    //   title: 'MyMat Light',
-    //   text: 'TESTING MODE 1',
-    //   sound: "file://assets/sounds/gong_c5.mp3",
-    //   // trigger: { at: new Date(t.getTime() + 4000) },
-    //   vibrate: true
-    // },
-    // {
-    //   id: 2,
-    //   title: 'MyMat Light',
-    //   text: 'TESTING MODE 2',
-    //   sound: 'file://assets/sounds/gong_c5.mp3',
-    //   trigger: { at: new Date(t.getTime() + 8000) },
-    //   vibrate: true,
-    //   data: { secret: 'hellloo' }
-    // }]);
-
-    // console.log("************* Inciando aplicacion en el home y levanto eventos para Push Notifications *************");
-    // this.fcm.getToken().then(
-    //   (token: string) => {
-    //     console.log("Este es el tocke para este dispositivo " + token);
-    //   }
-    // ).catch(error => {
-    //   console.log(error);
-    // });
-
-    // this.fcm.onTokenRefresh().subscribe(
-    //   (token: string) => {
-    //     console.log("tocke actualizacion " + token);
-    //   }
-    // );
-
-    // this.fcm.onNotification().subscribe(data => {
-    //   if(data.wasTapped){
-    //   //ocurre cuando la aplicacion esta en segundo plano
-    //   console.log("Estamo en segundo plano");
-    //   }else{
-    //     //ocurre cuando la aplicacion esta en primer plano
-    //     console.log("Estamo en primer plano " + JSON.stringify(data));
-    //   }
-    // },error => {
-    //   console.log("Ocurrio error " + error);
-    // });
-
   }
 
   openAddFavorite(){
