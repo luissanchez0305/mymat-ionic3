@@ -62,6 +62,8 @@ export class WifiPage {
   }
 
   ionViewDidLoad() {
+
+    
     this.mymatStatus = false;
     this.showIframeStatus = false;
     this.showLoading = true;
