@@ -137,25 +137,25 @@ export class PlayingPage {
             this.startTimer(this.timerId);
 
             var $this = this;
-            // this.storage.get(Constants.storageKeyLang).then((lang)=>{
-            //   this.translateService.getTranslation(lang).subscribe((prog) =>{
-            //     this.localNotifications.schedule({
-            //       id: 1,
-            //       title: 'MyMat Light',
-            //       text: prog['time-expire-text'],
-            //       sound: 'file://assets/sounds/gong_c5.mp3',
-            //       trigger: { at: new Date(t.getTime() + 10 /*this.getSeconds(this.displayRunningTime)*/ * 1000) }
-            //     });
+            this.storage.get(Constants.storageKeyLang).then((lang)=>{
+              this.translateService.getTranslation(lang).subscribe((prog) =>{
+                this.localNotifications.schedule({
+                  id: 1,
+                  title: 'MyMat Light',
+                  text: prog['time-expire-text'],
+                  sound: 'file://assets/sounds/gong_c5.mp3',
+                  trigger: { at: new Date(t.getTime() + this.getSeconds(this.displayRunningTime) * 1000) }
+                });
 
-            //     this.localNotifications.on("click").subscribe({ next(notification) {
-            //         if (notification.id == 1) {
-            //           var t = new Date();
-            //           $this.resume(t.getTime());
-            //         }
-            //       }
-            //     });
-            //   });
-            // });
+                this.localNotifications.on("click").subscribe({ next(notification) {
+                    if (notification.id == 1) {
+                      var t = new Date();
+                      $this.resume(t.getTime());
+                    }
+                  }
+                });
+              });
+            });
           });
           break;
       }
