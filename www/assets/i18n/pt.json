@@ -70,6 +70,8 @@
     "activate-wifi-4" : "4. Uma vez que está conectado, volte para o aplicativo MyMat",
     "start-routine" : "INICIAR ROTINA",
     "battery-power" : "Carga da bateria",
+    "msgBatteryNeedCharge": "carga de necessidade da bateria",
+    "msgBatteryFull":"carga da bateria",
     "coil" : "Antena",
     "start-your-routine" : "INICIE A SUA ROTINA",
     "no-detect-1" : "Não foi possível detectar o seu MyMat",

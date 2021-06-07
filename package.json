@@ -80,7 +80,6 @@
     "cordova-android": "^9.0.0",
     "cordova-plugin-background-mode": "^0.7.3",
     "cordova-plugin-native-ringtones": "^0.2.5",
-    "onesignal-cordova-plugin": "^2.11.2",
     "typescript": "2.4.2"
   },
   "description": "An Ionic project",
@@ -101,9 +100,9 @@
       "cordova-plugin-statusbar": {},
       "cordova-plugin-local-notification": {},
       "cordova-plugin-nativeaudio": {},
+      "cordova-plugin-background-mode": {},
       "onesignal-cordova-plugin": {},
-      "cordova-plugin-native-ringtones": {},
-      "cordova-plugin-background-mode": {}
+      "cordova-plugin-native-ringtones": {}
     },
     "platforms": [
       "android"

@@ -127,22 +127,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "onesignal-cordova-plugin": {
-    "source": {
-      "type": "registry",
-      "id": "onesignal-cordova-plugin@^2.11.2"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-native-ringtones": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-native-ringtones"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-media": {
     "source": {
       "type": "registry",
@@ -155,6 +139,22 @@
     "source": {
       "type": "registry",
       "id": "cordova-plugin-background-mode"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "onesignal-cordova-plugin": {
+    "source": {
+      "type": "registry",
+      "id": "onesignal-cordova-plugin"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-native-ringtones": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-native-ringtones"
     },
     "is_top_level": true,
     "variables": {}

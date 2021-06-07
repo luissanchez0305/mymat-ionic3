@@ -39,12 +39,15 @@
             <div *ngIf="showStatusTable" class="status-table divTable">
                 <div class="divTableHeading">
                     <div class="divTableRow">
+                        <!-- EL siguiente codigo muestra como texto bateria en diferentes idiomas y eso provoca redundancia con la traduccion del estado de la bateria  -->
+                        <!-- (POR ESO ESTA COMENTADO PARA SER UN SOLO TITULO) -->
                         <div class="divTableHead divTableCellFirstLeft">
-                            <h4 [innerHTML]="'battery-power' | translate"></h4>
+                            <!-- <h4 [innerHTML]="'battery-power' | translate"></h4> -->
                         </div>
                         <div class="divTableHead divTableCellFirstRight">
-                            <h4 id="battery">{{ batteryCharge }} <img src="{{ batteryImg }}" height="16"></h4>
-
+                            <!-- <h4 id="battery">{{ batteryCharge }} <img src="{{ batteryImg }}" height="16"></h4> -->
+                            <h4 *ngIf="powerVal==100"><p [innerHTML]="'msgBatteryFull' | translate">Charged battery</p></h4>
+                            <h4 *ngIf="powerVal!=100"><p [innerHTML]="'msgBatteryNeedCharge' | translate">Battery need charge</p></h4>
                         </div>
                     </div>
                 </div>

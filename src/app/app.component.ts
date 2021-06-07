@@ -26,22 +26,22 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
-  lang_en : boolean;
-  lang_es : boolean;
-  lang_pt : boolean;
-  lang_fr : boolean;
-  lang_gr : boolean;
-  lang_it : boolean;
+  lang_en: boolean;
+  lang_es: boolean;
+  lang_pt: boolean;
+  lang_fr: boolean;
+  lang_gr: boolean;
+  lang_it: boolean;
 
-  pages: Array<{title: string, component: any, icon: any, isPush: boolean}>;
+  pages: Array<{ title: string, component: any, icon: any, isPush: boolean }>;
 
 
-  signal_app_id : string = 'd3aad1d0-7a05-4639-8467-40c8d41f84b6';
-  firebase_id : string  = '692447891372';
+  signal_app_id: string = 'd3aad1d0-7a05-4639-8467-40c8d41f84b6';
+  firebase_id: string = '692447891372';
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,
     private translateService: TranslateService, public menuCtrl: MenuController, private storage: Storage,
-    public events : Events,  private oneSignal: OneSignal, private ringtones: NativeRingtones, /*private backgroundMode: BackgroundMode,*/ private device: Device) {
+    public events: Events, private oneSignal: OneSignal, private ringtones: NativeRingtones, /*private backgroundMode: BackgroundMode,*/ private device: Device) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -50,59 +50,26 @@ export class MyApp {
       { title: 'help-title', component: HelpPage, icon: 'menuitemhelp', isPush: false },
       { title: 'contact-title', component: ContactPage, icon: 'menuitemcontact', isPush: false },
       { title: 'fav-title', component: FavoritesPage, icon: 'menufavorites', isPush: true },
-      { title: 'slider-title', component: SliderPage, icon: 'menuiteminfo', isPush: true}
+      { title: 'slider-title', component: SliderPage, icon: 'menuiteminfo', isPush: true }
     ];
     platform.ready().then(() => {
-      this.storage.get(Constants.storageKeyLang).then((value)=>{
-        if(!value){
+      this.storage.get(Constants.storageKeyLang).then((value) => {
+        if (!value) {
           value = navigator.language.split('-')[0];
-          if(!value)
+          if (!value)
             value = 'en';
           translateService.setDefaultLang(value);
         }
         translateService.use(value);
         this.switchLang(value);
       })
-      .catch(err => {
+        .catch(err => {
           var value = 'en';
           translateService.setDefaultLang(value);
           translateService.use(value);
           this.switchLang(value);
-      });;
+        });;
     });
-
-
-
-    //Seccion de FireBase
-    // this.fcm.subscribeToTopic('marketing');
-    // this.fcm.getToken().then(
-    //   (token: string) => {
-    //     console.log("Este es el tocke para este dispositivo " + token);
-    //   }
-    // ).catch(error => {
-    //   console.log(error);
-    // });
-
-    // this.fcm.onTokenRefresh().subscribe(
-    //   (token: string) => {
-    //     console.log("tocke actualizacion " + token);
-    //   }
-    // );
-
-    // this.fcm.onNotification().subscribe(data => {
-    //   if(data.wasTapped){
-    //   //ocurre cuando la aplicacion esta en segundo plano
-    //   console.log("Estamo en segundo plano");
-    //   }else{
-    //     //ocurre cuando la aplicacion esta en primer plano
-    //     console.log("Estamo en primer plano " + JSON.stringify(data));
-    //   }
-    // },error => {
-    //   console.log("Ocurrio error " + error);
-    // });
-    // this.fcm.unsubscribeFromTopic('marketing');
-
-
 
   }
 
@@ -112,60 +79,64 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-      
-      this.oneSignal.startInit(this.signal_app_id, this.firebase_id);
-      this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
       let uuid = '';
-      if(window.hasOwnProperty('cordova')){
+      if (window.hasOwnProperty('cordova')) {
         uuid = this.device.uuid;
       }
       else {
         uuid = Constants.test_uuid
       }
-      this.oneSignal.setEmail(uuid+"@mymat.com");
 
-      this.oneSignal.handleNotificationReceived().subscribe((res) => {
-      // do something when notification is received
-        console.log(res);
-        this.testRington();
-      });
-
-      this.oneSignal.handleNotificationOpened().subscribe((res) => {
-        // do something when a notification is opened
-        console.log(res);
-        
-
-      });
-
-      this.oneSignal.endInit();
-      // Habilitamos el modo de fondo
-      // this.backgroundMode.enable();
+      if (uuid != '') {
+        this.settingOneSignal(uuid);
+      }
     });
   }
-  testRington(){
-    console.debug(" ***** Iniciando Prueba de Sonido *******");
-    // this.ringtones.getRingtone().then((ringtones) => { 
-    //   console.log(ringtones);
-    //   ringtones.forEach(element => {
-    //     console.log("Rington : ", element);
-    //   }); 
-    // });
+  sonarRington() {
     this.ringtones.playRingtone('file://assets/sounds/gong_c5.mp3');
-}
+  }
+
+  // Funcion asyncrona para evitar pantalla de demora en dispositivos con conexiones lentas
+  async settingOneSignal(prmuuid) {
+    console.debug(" Inicializando OneSignal ");
+    this.oneSignal.setLogLevel({ logLevel: 6, visualLevel: 0 });
+    // Set your iOS Settings
+    // var iosSettings = {};
+    // iosSettings["kOSSettingsKeyAutoPrompt"] = false;
+    // iosSettings["kOSSettingsKeyInAppLaunchURL"] = false;
+
+
+    this.oneSignal.startInit(this.signal_app_id, this.firebase_id);
+    this.oneSignal.handleNotificationReceived().subscribe((res) => {
+      // do something when notification is received
+      console.log(res);
+      this.sonarRington();
+    });
+    this.oneSignal.iOSSettings({ kOSSettingsKeyAutoPrompt: false, kOSSettingsKeyInAppLaunchURL: false });
+    this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.Notification);
+    // this.oneSignal.handleNotificationOpened().subscribe((res) => {
+    //   // do something when a notification is opened
+    //   console.log(res);
+    // });
+    this.oneSignal.setEmail(prmuuid + "@mymat.com");
+    this.oneSignal.endInit();
+    // Habilitamos el modo de fondo
+    // this.backgroundMode.enable();
+  }
 
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    if(page.isPush)
+    if (page.isPush)
       this.nav.push(page.component);
     else
       this.nav.setRoot(page.component);
   }
 
-  switchLang(lang){
-	  this.events.publish('switchLangEvent',lang);
-	  this.events.publish('switchLangEventContact', lang);
-    switch(lang){
+  switchLang(lang) {
+    this.events.publish('switchLangEvent', lang);
+    this.events.publish('switchLangEventContact', lang);
+    switch (lang) {
       case 'es':
         this.lang_en = true;
         this.lang_es = false;

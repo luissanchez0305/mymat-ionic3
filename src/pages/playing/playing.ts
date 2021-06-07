@@ -37,12 +37,13 @@ export class PlayingPage {
   public finishTime: any;
   public timerRemain: any;
   public timerId: number;
-  public isDeviceOnline : boolean;
-  public stateNotifRegis : boolean = false;
-  public esperaNotiRegis : boolean = false;
+  public isDeviceOnline: boolean;
+  public stateNotifRegis: boolean = false;
+  public esperaNotiRegis: boolean = false;
   public TiempoRutina: number = 0;
   public mensajeRutina: String = "";
   public datosNotif = null;
+  private uuid: string = '';
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage,
@@ -55,23 +56,28 @@ export class PlayingPage {
 
 
     this.isDeviceOnline = true;
-      // watch network for a disconnect
+    // watch network for a disconnect
 
-      this.network.onDisconnect().subscribe(() => {
-        this.zone.run(() => {
-          this.isDeviceOnline = false;
-        });
+    this.network.onDisconnect().subscribe(() => {
+      this.zone.run(() => {
+        this.isDeviceOnline = false;
       });
-      // watch network for a connection
-      this.network.onConnect().subscribe(() => {
-        this.zone.run(() => {
-          this.isDeviceOnline = true;
-          
-          if(!this.stateNotifRegis && this.esperaNotiRegis){
-            this.setNotificacion(this.TiempoRutina, this.mensajeRutina);
-          }
-        });
+    });
+    // watch network for a connection
+    this.network.onConnect().subscribe(() => {
+      this.zone.run(() => {
+        this.isDeviceOnline = true;
+
+        if (!this.stateNotifRegis && this.esperaNotiRegis) {
+          this.setNotificacion(this.TiempoRutina, this.mensajeRutina);
+        }
       });
+    });
+
+    this.storage.get(Constants.deviceInfoKey).then((info) => {
+      this.uuid = info.uuid;
+      console.debug('Obteniendo uuid desde storage: ', this.uuid)
+    });
 
   }
 
@@ -178,8 +184,8 @@ export class PlayingPage {
             // setTimeout(() => {
             //   this.apiService.notificacionOneSignal();
             // }, tiempoCiclo);
-            
-            
+
+
 
 
             this.storage.get(Constants.storageKeyLang).then((lang) => {
@@ -194,7 +200,7 @@ export class PlayingPage {
                 if (this.isDeviceOnline) {
                   console.log("invocando metodo setNotificacion");
                   this.setNotificacion(this.TiempoRutina, this.mensajeRutina);
-                }else{
+                } else {
                   this.stateNotifRegis = false;
                   this.esperaNotiRegis = true;
                 }
@@ -214,9 +220,6 @@ export class PlayingPage {
                 //     }
                 //   }
                 // });
-                
-                
-
 
               });
             });
@@ -226,115 +229,114 @@ export class PlayingPage {
       }
     }
 
-    
-   }
 
-   async setNotificacion(segundos, mensaje){
-    
+  }
 
-    if(this.datosNotif === null){
-      this.datosNotif = await {
-        uuid: this.getuuid(),
-        msg: mensaje,
-        date: this.getTiempo(segundos)
-      }
+  
+async setNotificacion(segundos, mensaje) {
+  if (this.datosNotif === null) {
+    this.datosNotif = await {
+      uuid: this.uuid,
+      msg: mensaje,
+      date: this.getTiempo(segundos)
     }
-    this.stateNotifRegis = true;
-    this.apiService.registrarNotificacion(this.datosNotif)
-      .then((result) => {
-        console.log("Resultado de create_notification");
-        console.log(JSON.stringify(result));
-        this.stateNotifRegis = true;
-        this.esperaNotiRegis = false;
-      }).catch((err) => {
-        console.log("Error en n create_notification");
-        console.log(JSON.stringify(err));
-        this.stateNotifRegis = false;
-        this.esperaNotiRegis = true;
-      })
-   }
-
-   getuuid() {
-    let uuid = '';
-      if(window.hasOwnProperty('cordova')){
-        uuid = this.device.uuid;
-      }
-      else {
-        uuid = Constants.test_uuid
-      }
-      return uuid;
-   }
-
-   getTiempo(duracion){
-    let fecha = new Date();
-    console.log("Viendo fecha actual ", fecha);
-    fecha.setSeconds(fecha.getSeconds() + duracion);
-    //fecha.setSeconds(fecha.getSeconds() + 120); //Code Test
-
-    fecha.setSeconds(0);
-    let dateUTC = fecha.toISOString();
-
-    console.log("Variable de T en UTC", dateUTC); 
-    return dateUTC;
-   }
-
-  //  reintentoSetNotification(){
-  //   if (this.isDeviceOnline) {
-  //     console.log("invocando metodo setNotificacion Reintento");
-  //     this.setNotificacion(this.TiempoRutina, this.mensajeRutina);
-  //   }else{
-  //     this.stateNotifRegis = false;
-  //     this.esperaNotiRegis = true;
-  //   }
-  //  }
-
-  ionViewWillLeave() {
-    this.timerRemain = 0;
   }
+  this.stateNotifRegis = true;
+  this.apiService.registrarNotificacion(this.datosNotif)
+    .then((result) => {
+      console.log("Resultado de create_notification");
+      console.log(JSON.stringify(result));
+      this.stateNotifRegis = true;
+      this.esperaNotiRegis = false;
+    }).catch((err) => {
+      console.log("Error en n create_notification");
+      console.log(JSON.stringify(err));
+      this.stateNotifRegis = false;
+      this.esperaNotiRegis = true;
+    })
+}
 
-  startTimer(id) {
-    setTimeout(() => {
-      if (this.timerRemain == 0 || this.timerId != id) { return; }
-
-      this.timerRemain--;
-      this.zone.run(() => {
-        this.displayRunningTime = this.decreaseSecond(this.displayRunningTime);
-      });
-
-      if (this.timerRemain > 0) {
-        this.startTimer(this.timerId);
-      }
-    }, 1000);
+getuuid() {
+  let uuid = '';
+  if (window.hasOwnProperty('cordova')) {
+    uuid = this.device.uuid;
   }
+  else {
+    uuid = Constants.test_uuid
+  }
+  return uuid;
+}
 
-  decreaseSecond(time) {
-    var minutesStr = time.substr(0, time.indexOf(':'));
-    var minutes = minutesStr[0] == '0' ? parseInt(minutesStr[1]) : parseInt(minutesStr);
-    var secondsStr = time.substr(time.indexOf(':') + 1);
-    var seconds = secondsStr[0] == '0' ? parseInt(secondsStr[1]) : parseInt(secondsStr);
-    if (seconds - 1 == -1) {
-      minutesStr = minutes - 1 < 10 && minutes - 1 >= 0 ? '0' + (minutes - 1) : minutes - 1 == -1 ? '00' : '' + (minutes - 1);
-      secondsStr = '59';
+getTiempo(duracion){
+  let fecha = new Date();
+  console.log("Viendo fecha actual ", fecha);
+  fecha.setSeconds(fecha.getSeconds() + duracion);
+  //fecha.setSeconds(fecha.getSeconds() + 120); //Code Test
+
+  fecha.setSeconds(0);
+  let dateUTC = fecha.toISOString();
+
+  console.log("Variable de T en UTC", dateUTC);
+  return dateUTC;
+}
+
+//  reintentoSetNotification(){
+//   if (this.isDeviceOnline) {
+//     console.log("invocando metodo setNotificacion Reintento");
+//     this.setNotificacion(this.TiempoRutina, this.mensajeRutina);
+//   }else{
+//     this.stateNotifRegis = false;
+//     this.esperaNotiRegis = true;
+//   }
+//  }
+
+ionViewWillLeave() {
+  this.timerRemain = 0;
+}
+
+startTimer(id) {
+  setTimeout(() => {
+    if (this.timerRemain == 0 || this.timerId != id) { return; }
+
+    this.timerRemain--;
+    this.zone.run(() => {
+      this.displayRunningTime = this.decreaseSecond(this.displayRunningTime);
+    });
+
+    if (this.timerRemain > 0) {
+      this.startTimer(this.timerId);
     }
-    else {
-      secondsStr = seconds - 1 < 10 ? '0' + (seconds - 1) : '' + (seconds - 1);
-    }
-    return minutesStr + ':' + secondsStr;
-  }
+  }, 1000);
+}
 
-  getSeconds(time) {
-    var minutesStr = time.substr(0, time.indexOf(':'));
-    var minutes = minutesStr[0] == '0' ? parseInt(minutesStr[1]) : parseInt(minutesStr);
-    var secondsStr = time.substr(time.indexOf(':') + 1);
-    var seconds = secondsStr[0] == '0' ? parseInt(secondsStr[1]) : parseInt(secondsStr);
-    return (minutes * 60) + seconds;
+decreaseSecond(time) {
+  var minutesStr = time.substr(0, time.indexOf(':'));
+  var minutes = minutesStr[0] == '0' ? parseInt(minutesStr[1]) : parseInt(minutesStr);
+  var secondsStr = time.substr(time.indexOf(':') + 1);
+  var seconds = secondsStr[0] == '0' ? parseInt(secondsStr[1]) : parseInt(secondsStr);
+  if (seconds - 1 == -1) {
+    minutesStr = minutes - 1 < 10 && minutes - 1 >= 0 ? '0' + (minutes - 1) : minutes - 1 == -1 ? '00' : '' + (minutes - 1);
+    secondsStr = '59';
   }
+  else {
+    secondsStr = seconds - 1 < 10 ? '0' + (seconds - 1) : '' + (seconds - 1);
+  }
+  return minutesStr + ':' + secondsStr;
+}
 
-  convertSecondsToTime(timeInSeconds) {
-    var minutes = Math.floor(timeInSeconds / 60);
-    var minutesStr = "0" + minutes;
-    var seconds = "0" + (timeInSeconds - minutes * 60);
-    return minutesStr.substr(-2) + ":" + seconds.substr(-2);
-  }
+getSeconds(time) {
+  var minutesStr = time.substr(0, time.indexOf(':'));
+  var minutes = minutesStr[0] == '0' ? parseInt(minutesStr[1]) : parseInt(minutesStr);
+  var secondsStr = time.substr(time.indexOf(':') + 1);
+  var seconds = secondsStr[0] == '0' ? parseInt(secondsStr[1]) : parseInt(secondsStr);
+  return (minutes * 60) + seconds;
+}
+
+convertSecondsToTime(timeInSeconds) {
+  var minutes = Math.floor(timeInSeconds / 60);
+  var minutesStr = "0" + minutes;
+  var seconds = "0" + (timeInSeconds - minutes * 60);
+  return minutesStr.substr(-2) + ":" + seconds.substr(-2);
+}
   
 }

@@ -1,28 +1,28 @@
 {
-  "_from": "onesignal-cordova-plugin",
-  "_id": "onesignal-cordova-plugin@2.11.2",
+  "_from": "onesignal-cordova-plugin@2.11.3",
+  "_id": "onesignal-cordova-plugin@2.11.3",
   "_inBundle": false,
-  "_integrity": "sha512-EXhr/Xw+KNG+EFE/HYTBjwT1Y/rDkJbjBmhmcERMeS0fi7YKwEKssSyIOM3SpBvJ6JNOva9VOrya5ntx7Ak20g==",
+  "_integrity": "sha512-vWPmXR4qML06Fg785bg6SW3mOJImQteZKqEZqKBO5vC0cvtLQXofhTdUAOFAQRlBAUavZbEIXF7ZGFeQCA1ukA==",
   "_location": "/onesignal-cordova-plugin",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "onesignal-cordova-plugin",
+    "raw": "onesignal-cordova-plugin@2.11.3",
     "name": "onesignal-cordova-plugin",
     "escapedName": "onesignal-cordova-plugin",
-    "rawSpec": "",
+    "rawSpec": "2.11.3",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "2.11.3"
   },
   "_requiredBy": [
-    "#DEV:/",
-    "#USER"
+    "#USER",
+    "/"
   ],
-  "_resolved": "https://registry.npmjs.org/onesignal-cordova-plugin/-/onesignal-cordova-plugin-2.11.2.tgz",
-  "_shasum": "6fbd0171f8fb8eb3cd3d71abc3d59859609f31f6",
-  "_spec": "onesignal-cordova-plugin",
-  "_where": "C:\\Users\\JACOB\\PROYECTOS_DEV\\ESFERA\\mymat-ionic3\\mymat-ionic3",
+  "_resolved": "https://registry.npmjs.org/onesignal-cordova-plugin/-/onesignal-cordova-plugin-2.11.3.tgz",
+  "_shasum": "3f105562f3b7dac9b40a05246df18ca52c51979b",
+  "_spec": "onesignal-cordova-plugin@2.11.3",
+  "_where": "/home/jacob/Dev/mymat-ionic3",
   "author": {
     "name": "Josh Kasten, Brad Hesse, Rodrigo Gomez-Palacio"
   },
@@ -92,5 +92,5 @@
     "type": "git",
     "url": "git+https://github.com/onesignal/OneSignal-Cordova-SDK.git"
   },
-  "version": "2.11.2"
+  "version": "2.11.3"
 }

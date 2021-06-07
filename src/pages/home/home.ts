@@ -80,6 +80,7 @@ export class HomePage {
 
     //this.navCtrl.push(SubscribePage, { callBackPage : 'none' });
     this.storage.get(Constants.deviceInfoKey).then((info) => {
+      console.debug('Viendo estructura deviceInfoKey', JSON.stringify(info));
       if (typeof info === 'undefined' || info == null) {
         /*if(window.hasOwnProperty('cordova')){*/
         var formData = new FormData();
@@ -112,19 +113,6 @@ export class HomePage {
         /*}*/
       }
     });
-
-
-
-    // this.platform.ready()
-    // .then(() => {
-    //   console.log(this.platform.is('android'))
-    //   this.localNotifications.schedule({
-    //     id: 1,
-    //     text: 'Single LocalNotification',
-    //     sound: 'file://assets/sounds/gong_c5.mp3',
-    //     data: { secret: 'hellloo' }
-    //   });
-    // })
   }
 
 
@@ -148,6 +136,7 @@ export class HomePage {
 
   openAddFavorite() {
     this.storage.get(Constants.deviceInfoKey).then((info) => {
+      console.debug('Viendo deviceInfoKey desde home', info)
       if (typeof info === 'undefined' || info == null) {
         // despliega la vista de insercion de datos
         this.navCtrl.push(SubscribePage, { callBackPage: 'favorites' });

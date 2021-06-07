@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/cordova-plugin-media/-/cordova-plugin-media-5.0.3.tgz",
   "_shasum": "366188bd4f8472651c1e8304be649af6333b0e36",
   "_spec": "cordova-plugin-media@*",
-  "_where": "C:\\Users\\JACOB\\PROYECTOS_DEV\\ESFERA\\mymat-ionic3\\mymat-ionic3\\node_modules\\cordova-plugin-native-ringtones",
+  "_where": "/home/jacob/Dev/mymat-ionic3/node_modules/cordova-plugin-native-ringtones",
   "author": {
     "name": "Apache Software Foundation"
   },
