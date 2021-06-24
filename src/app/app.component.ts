@@ -18,7 +18,6 @@ import { NativeRingtones } from '@ionic-native/native-ringtones';
 // import { BackgroundMode } from '@ionic-native/background-mode';
 import { Device } from '@ionic-native/device';
 
-
 @Component({
   templateUrl: 'app.html'
 })
@@ -36,7 +35,8 @@ export class MyApp {
   pages: Array<{ title: string, component: any, icon: any, isPush: boolean }>;
 
 
-  signal_app_id: string = 'd3aad1d0-7a05-4639-8467-40c8d41f84b6';
+  signal_app_id_ANDROID: string = 'd3aad1d0-7a05-4639-8467-40c8d41f84b6';
+  signal_app_id_IOS: string = 'ad0ffa67-dd23-4ea1-8f4f-77b553537e5a'
   firebase_id: string = '692447891372';
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,
@@ -104,9 +104,17 @@ export class MyApp {
     // var iosSettings = {};
     // iosSettings["kOSSettingsKeyAutoPrompt"] = false;
     // iosSettings["kOSSettingsKeyInAppLaunchURL"] = false;
+    let idApp: string = '';
+    if (this.platform.is('ios')) {
+      // This will only print when on iOS
+      idApp = this.signal_app_id_IOS;
+    }
+    if (this.platform.is('android')) {
+      // This will only print when on iOS
+      idApp = this.signal_app_id_ANDROID;
+    }
 
-
-    this.oneSignal.startInit(this.signal_app_id, this.firebase_id);
+    this.oneSignal.startInit(idApp, this.firebase_id);
     this.oneSignal.handleNotificationReceived().subscribe((res) => {
       // do something when notification is received
       console.log(res);

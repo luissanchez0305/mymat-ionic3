@@ -43,6 +43,7 @@
     "@ngx-translate/core": "^9.1.1",
     "@ngx-translate/http-loader": "^4.0.0",
     "add": "2.0.6",
+    "cordova-ios": "6.2.0",
     "cordova-plugin-advanced-http": "^2.0.9",
     "cordova-plugin-badge": "^0.8.8",
     "cordova-plugin-datepicker": "^0.9.3",
